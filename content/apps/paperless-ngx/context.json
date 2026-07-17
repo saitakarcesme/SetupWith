@@ -1,0 +1,36 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "consume_directory",
+    "media_root",
+    "server_port",
+    "ocr_language"
+  ],
+  "secrets": [
+    {
+      "key": "PAPERLESS_SECRET_KEY",
+      "reference": "secret://paperless/secret-key"
+    },
+    {
+      "key": "PAPERLESS_DBPASS",
+      "reference": "secret://paperless/dbpass"
+    },
+    {
+      "key": "PAPERLESS_ADMIN_PASSWORD",
+      "reference": "secret://paperless/admin-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
