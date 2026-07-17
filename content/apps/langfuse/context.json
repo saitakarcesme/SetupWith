@@ -1,0 +1,35 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "server_port",
+    "telemetry_enabled",
+    "public_url"
+  ],
+  "secrets": [
+    {
+      "key": "NEXTAUTH_SECRET",
+      "reference": "secret://nextauth/secret"
+    },
+    {
+      "key": "SALT",
+      "reference": "secret://salt/credential"
+    },
+    {
+      "key": "DATABASE_URL",
+      "reference": "secret://database/url"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
