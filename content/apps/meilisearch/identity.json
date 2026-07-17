@@ -1,0 +1,11 @@
+{
+  "index": 45,
+  "name": "Meilisearch",
+  "slug": "meilisearch",
+  "repo": "https://github.com/meilisearch/meilisearch",
+  "website": "https://www.meilisearch.com",
+  "category": "Data & Databases",
+  "description": "Fast typo-tolerant search engine providing developer-friendly APIs and configurable relevance.",
+  "accent": "#FF5CAA",
+  "simpleIconSlug": "meilisearch"
+}
