@@ -1,0 +1,11 @@
+{
+  "index": 7,
+  "name": "Helix",
+  "slug": "helix",
+  "repo": "https://github.com/helix-editor/helix",
+  "website": "https://helix-editor.com",
+  "category": "Developer Tools",
+  "description": "Modal terminal editor with built-in language servers and tree-sitter integration.",
+  "accent": "#281733",
+  "simpleIconSlug": "helix"
+}
