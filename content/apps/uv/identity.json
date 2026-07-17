@@ -1,0 +1,11 @@
+{
+  "index": 18,
+  "name": "uv",
+  "slug": "uv",
+  "repo": "https://github.com/astral-sh/uv",
+  "website": "https://docs.astral.sh/uv",
+  "category": "Developer Tools",
+  "description": "Extremely fast Python package, project, environment, and runtime management tool.",
+  "accent": "#DE5FE9",
+  "simpleIconSlug": "uv"
+}
