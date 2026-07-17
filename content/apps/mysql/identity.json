@@ -1,0 +1,11 @@
+{
+  "index": 37,
+  "name": "MySQL",
+  "slug": "mysql",
+  "repo": "https://github.com/mysql/mysql-server",
+  "website": "https://www.mysql.com",
+  "category": "Data & Databases",
+  "description": "Widely deployed relational database server for transactional and web-based applications.",
+  "accent": "#4479A1",
+  "simpleIconSlug": "mysql"
+}
