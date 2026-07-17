@@ -1,0 +1,11 @@
+{
+  "index": 1,
+  "name": "Visual Studio Code",
+  "slug": "visual-studio-code",
+  "repo": "https://github.com/microsoft/vscode",
+  "website": "https://code.visualstudio.com",
+  "category": "Developer Tools",
+  "description": "Extensible cross-platform code editor with debugging, terminals, and language integrations.",
+  "accent": "#007ACC",
+  "simpleIconSlug": "visualstudiocode"
+}
