@@ -1,0 +1,11 @@
+{
+  "index": 60,
+  "name": "Ansible",
+  "slug": "ansible",
+  "repo": "https://github.com/ansible/ansible",
+  "website": "https://www.ansible.com",
+  "category": "DevOps & Cloud",
+  "description": "Agentless automation engine for configuration management, provisioning, orchestration, and deployments.",
+  "accent": "#EE0000",
+  "simpleIconSlug": "ansible"
+}
