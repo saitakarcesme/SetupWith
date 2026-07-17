@@ -1,0 +1,11 @@
+{
+  "index": 86,
+  "name": "Bitwarden Server",
+  "slug": "bitwarden-server",
+  "repo": "https://github.com/bitwarden/server",
+  "website": "https://bitwarden.com",
+  "category": "Security & Privacy",
+  "description": "Self-hostable password management backend for encrypted credentials, organizations, and client synchronization.",
+  "accent": "#175DDC",
+  "simpleIconSlug": "bitwarden"
+}
