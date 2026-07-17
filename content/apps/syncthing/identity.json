@@ -1,0 +1,11 @@
+{
+  "index": 99,
+  "name": "Syncthing",
+  "slug": "syncthing",
+  "repo": "https://github.com/syncthing/syncthing",
+  "website": "https://syncthing.net",
+  "category": "System Utilities",
+  "description": "Continuous peer-to-peer file synchronization tool with encryption and cross-platform support.",
+  "accent": "#0891D1",
+  "simpleIconSlug": "syncthing"
+}
