@@ -1,0 +1,35 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "cache_dir",
+    "default_remote",
+    "analytics_enabled"
+  ],
+  "secrets": [
+    {
+      "key": "AWS_ACCESS_KEY_ID",
+      "reference": "secret://aws/access-key-id"
+    },
+    {
+      "key": "AWS_SECRET_ACCESS_KEY",
+      "reference": "secret://aws/secret-access-key"
+    },
+    {
+      "key": "GDRIVE_CREDENTIALS_DATA",
+      "reference": "secret://gdrive/credentials-data"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
