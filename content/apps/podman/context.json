@@ -1,0 +1,28 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "preferences": [
+    "storage_root",
+    "default_registry",
+    "machine_resources",
+    "rootless"
+  ],
+  "secrets": [
+    {
+      "key": "REGISTRY_AUTH_FILE",
+      "reference": "secret://registry/auth-file"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
