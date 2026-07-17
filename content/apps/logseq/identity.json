@@ -1,0 +1,11 @@
+{
+  "index": 68,
+  "name": "Logseq",
+  "slug": "logseq",
+  "repo": "https://github.com/logseq/logseq",
+  "website": "https://logseq.com",
+  "category": "Productivity",
+  "description": "Privacy-focused knowledge base using linked outlines, Markdown, tasks, and local files.",
+  "accent": "#85C8C8",
+  "simpleIconSlug": "logseq"
+}
