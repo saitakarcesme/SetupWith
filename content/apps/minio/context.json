@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "data_directory",
+    "api_port",
+    "console_port",
+    "server_url"
+  ],
+  "secrets": [
+    {
+      "key": "MINIO_ROOT_USER",
+      "reference": "secret://minio/root-user"
+    },
+    {
+      "key": "MINIO_ROOT_PASSWORD",
+      "reference": "secret://minio/root-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
