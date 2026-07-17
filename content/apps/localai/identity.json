@@ -1,0 +1,11 @@
+{
+  "index": 23,
+  "name": "LocalAI",
+  "slug": "localai",
+  "repo": "https://github.com/mudler/LocalAI",
+  "website": "https://localai.io",
+  "category": "AI & ML",
+  "description": "Self-hosted OpenAI-compatible inference platform supporting language, image, audio, and embeddings.",
+  "accent": "#1D9BF0",
+  "simpleIconSlug": null
+}
