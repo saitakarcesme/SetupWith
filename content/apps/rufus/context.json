@@ -1,0 +1,21 @@
+{
+  "platforms": [
+    "Windows"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Simple",
+  "preferences": [
+    "default_device",
+    "partition_scheme",
+    "filesystem",
+    "image_path"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
