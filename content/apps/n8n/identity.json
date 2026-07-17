@@ -1,0 +1,11 @@
+{
+  "index": 96,
+  "name": "n8n",
+  "slug": "n8n",
+  "repo": "https://github.com/n8n-io/n8n",
+  "website": "https://n8n.io",
+  "category": "Web & Self-hosted",
+  "description": "Workflow automation platform connecting APIs, databases, applications, AI models, and custom code.",
+  "accent": "#EA4B71",
+  "simpleIconSlug": "n8n"
+}
