@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type FormEvent } from "react";
+import { useState, useSyncExternalStore, type FormEvent } from "react";
 import { Check, Laptop, Save } from "lucide-react";
 
 interface EnvironmentValues {
@@ -22,28 +22,54 @@ const defaultValues: EnvironmentValues = {
 };
 
 const storageKey = "setupwith:environment-profile:v1";
+const storageEvent = "setupwith:environment-profile-change";
+
+function subscribe(onStoreChange: () => void) {
+  function handleStorage(event: StorageEvent) {
+    if (event.key === null || event.key === storageKey) onStoreChange();
+  }
+
+  window.addEventListener("storage", handleStorage);
+  window.addEventListener(storageEvent, onStoreChange);
+  return () => {
+    window.removeEventListener("storage", handleStorage);
+    window.removeEventListener(storageEvent, onStoreChange);
+  };
+}
+
+function getSnapshot() {
+  try {
+    return window.localStorage.getItem(storageKey);
+  } catch {
+    return null;
+  }
+}
+
+function parseProfile(snapshot: string | null): EnvironmentValues {
+  if (!snapshot) return defaultValues;
+  try {
+    return { ...defaultValues, ...JSON.parse(snapshot) } as EnvironmentValues;
+  } catch {
+    return defaultValues;
+  }
+}
 
 export function EnvironmentProfile() {
-  const [values, setValues] = useState<EnvironmentValues>(defaultValues);
+  const storedProfile = useSyncExternalStore(subscribe, getSnapshot, () => null);
+  const [draftValues, setDraftValues] = useState<EnvironmentValues | null>(null);
   const [saved, setSaved] = useState(false);
-
-  useEffect(() => {
-    try {
-      const stored = window.localStorage.getItem(storageKey);
-      if (stored) setValues({ ...defaultValues, ...JSON.parse(stored) } as EnvironmentValues);
-    } catch {
-      // Keep safe defaults when local storage is unavailable or malformed.
-    }
-  }, []);
+  const values = draftValues ?? parseProfile(storedProfile);
 
   function updateValue(key: keyof EnvironmentValues, value: string) {
-    setValues((current) => ({ ...current, [key]: value }));
+    setDraftValues((current) => ({ ...(current ?? values), [key]: value }));
     setSaved(false);
   }
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     window.localStorage.setItem(storageKey, JSON.stringify(values));
+    window.dispatchEvent(new Event(storageEvent));
+    setDraftValues(null);
     setSaved(true);
   }
 
