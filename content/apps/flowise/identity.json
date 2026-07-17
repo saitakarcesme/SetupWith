@@ -1,0 +1,11 @@
+{
+  "index": 35,
+  "name": "Flowise",
+  "slug": "flowise",
+  "repo": "https://github.com/FlowiseAI/Flowise",
+  "website": "https://flowiseai.com",
+  "category": "AI & ML",
+  "description": "Visual low-code platform for constructing and deploying language-model application workflows.",
+  "accent": "#3B81F6",
+  "simpleIconSlug": null
+}
