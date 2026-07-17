@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/site-header";
 import { apps } from "@/data/apps";
 
 export const metadata: Metadata = {
-  title: "App catalog — SetupWith",
+  title: "App catalog",
   description: "Browse 100 product-specific Codex setup prompts for popular open-source software.",
 };
 

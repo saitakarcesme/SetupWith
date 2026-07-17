@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: AppPageProps): Promise<Metada
   if (!app) return {};
 
   return {
-    title: `Install ${app.name} with Codex — SetupWith`,
+    title: `Install ${app.name} with Codex`,
     description: `${app.description} Get a tailored, permission-aware Codex setup prompt.`,
     alternates: { canonical: `/${app.slug}` },
   };
