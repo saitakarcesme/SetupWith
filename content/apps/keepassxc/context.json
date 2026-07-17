@@ -1,0 +1,23 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Simple",
+  "preferences": [
+    "database_path",
+    "browser_integration",
+    "auto_lock_minutes",
+    "key_file_path"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
