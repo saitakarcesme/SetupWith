@@ -1,0 +1,11 @@
+{
+  "index": 19,
+  "name": "Rust",
+  "slug": "rust",
+  "repo": "https://github.com/rust-lang/rust",
+  "website": "https://www.rust-lang.org",
+  "category": "Developer Tools",
+  "description": "Systems programming language focused on performance, reliability, and memory safety.",
+  "accent": "#000000",
+  "simpleIconSlug": "rust"
+}
