@@ -1,0 +1,11 @@
+{
+  "index": 50,
+  "name": "Supabase",
+  "slug": "supabase",
+  "repo": "https://github.com/supabase/supabase",
+  "website": "https://supabase.com",
+  "category": "Data & Databases",
+  "description": "Self-hostable backend platform combining PostgreSQL, authentication, storage, APIs, and realtime services.",
+  "accent": "#3FCF8E",
+  "simpleIconSlug": "supabase"
+}
