@@ -1,0 +1,11 @@
+{
+  "index": 73,
+  "name": "Taiga",
+  "slug": "taiga",
+  "repo": "https://github.com/taigaio/taiga-docker",
+  "website": "https://taiga.io",
+  "category": "Productivity",
+  "description": "Agile project management platform supporting Scrum, Kanban, issues, epics, and collaboration.",
+  "accent": "#83EEDE",
+  "simpleIconSlug": "taiga"
+}
