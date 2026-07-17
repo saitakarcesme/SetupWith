@@ -1,0 +1,28 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "storage_path",
+    "http_port",
+    "grpc_port",
+    "default_collection"
+  ],
+  "secrets": [
+    {
+      "key": "QDRANT_API_KEY",
+      "reference": "secret://qdrant/api-key"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
