@@ -1,0 +1,11 @@
+{
+  "index": 58,
+  "name": "Terraform",
+  "slug": "terraform",
+  "repo": "https://github.com/hashicorp/terraform",
+  "website": "https://www.terraform.io",
+  "category": "DevOps & Cloud",
+  "description": "Infrastructure-as-code tool for declaratively provisioning resources across numerous service providers.",
+  "accent": "#844FBA",
+  "simpleIconSlug": "terraform"
+}
