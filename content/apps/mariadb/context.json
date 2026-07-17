@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "mariadb_user",
+    "mariadb_database",
+    "mariadb_port",
+    "data_directory"
+  ],
+  "secrets": [
+    {
+      "key": "MARIADB_ROOT_PASSWORD",
+      "reference": "secret://mariadb/root-password"
+    },
+    {
+      "key": "MARIADB_PASSWORD",
+      "reference": "secret://mariadb/password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
