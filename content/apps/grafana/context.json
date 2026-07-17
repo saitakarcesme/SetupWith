@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "preferences": [
+    "admin_user",
+    "server_port",
+    "data_path",
+    "public_url"
+  ],
+  "secrets": [
+    {
+      "key": "GF_SECURITY_ADMIN_PASSWORD",
+      "reference": "secret://gf/security-admin-password"
+    },
+    {
+      "key": "GF_DATABASE_PASSWORD",
+      "reference": "secret://gf/database-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
