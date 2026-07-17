@@ -1,0 +1,28 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "preferences": [
+    "domain_name",
+    "http_port",
+    "https_port",
+    "config_path"
+  ],
+  "secrets": [
+    {
+      "key": "CLOUDFLARE_API_TOKEN",
+      "reference": "secret://cloudflare/api-token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
