@@ -1,0 +1,11 @@
+{
+  "index": 38,
+  "name": "MariaDB",
+  "slug": "mariadb",
+  "repo": "https://github.com/MariaDB/server",
+  "website": "https://mariadb.org",
+  "category": "Data & Databases",
+  "description": "Community-developed relational database maintaining broad compatibility with MySQL tools and applications.",
+  "accent": "#003545",
+  "simpleIconSlug": "mariadb"
+}
