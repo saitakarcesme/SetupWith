@@ -1,0 +1,22 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Simple",
+  "preferences": [
+    "node_version",
+    "package_manager",
+    "npm_registry"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
