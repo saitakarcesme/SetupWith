@@ -1,0 +1,11 @@
+{
+  "index": 22,
+  "name": "Open WebUI",
+  "slug": "open-webui",
+  "repo": "https://github.com/open-webui/open-webui",
+  "website": "https://openwebui.com",
+  "category": "AI & ML",
+  "description": "Self-hosted conversational interface supporting Ollama and multiple compatible AI providers.",
+  "accent": "#000000",
+  "simpleIconSlug": null
+}
