@@ -1,0 +1,11 @@
+{
+  "index": 94,
+  "name": "Zulip",
+  "slug": "zulip",
+  "repo": "https://github.com/zulip/zulip",
+  "website": "https://zulip.com",
+  "category": "Communication",
+  "description": "Organized team chat platform combining topic-based threads with real-time conversation.",
+  "accent": "#6492FE",
+  "simpleIconSlug": "zulip"
+}
