@@ -1,0 +1,28 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "preferences": [
+    "cluster_name",
+    "node_role",
+    "server_url",
+    "data_directory"
+  ],
+  "secrets": [
+    {
+      "key": "K3S_TOKEN",
+      "reference": "secret://k3s/token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
