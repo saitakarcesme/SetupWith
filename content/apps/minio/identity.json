@@ -1,0 +1,11 @@
+{
+  "index": 48,
+  "name": "MinIO",
+  "slug": "minio",
+  "repo": "https://github.com/minio/minio",
+  "website": "https://min.io",
+  "category": "Data & Databases",
+  "description": "S3-compatible object storage server designed for private and cloud-native infrastructure.",
+  "accent": "#C72E49",
+  "simpleIconSlug": "minio"
+}
