@@ -1,0 +1,11 @@
+{
+  "index": 33,
+  "name": "Label Studio",
+  "slug": "label-studio",
+  "repo": "https://github.com/HumanSignal/label-studio",
+  "website": "https://labelstud.io",
+  "category": "AI & ML",
+  "description": "Data labeling platform supporting text, images, audio, video, and time series.",
+  "accent": "#FF4A4A",
+  "simpleIconSlug": null
+}
