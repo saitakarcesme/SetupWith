@@ -1,0 +1,11 @@
+{
+  "index": 42,
+  "name": "ClickHouse",
+  "slug": "clickhouse",
+  "repo": "https://github.com/ClickHouse/ClickHouse",
+  "website": "https://clickhouse.com",
+  "category": "Data & Databases",
+  "description": "Column-oriented database designed for high-speed analytical queries over large datasets.",
+  "accent": "#FFCC01",
+  "simpleIconSlug": "clickhouse"
+}
