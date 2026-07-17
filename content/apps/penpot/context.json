@@ -1,0 +1,31 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "public_uri",
+    "server_port",
+    "database_name"
+  ],
+  "secrets": [
+    {
+      "key": "PENPOT_SECRET_KEY",
+      "reference": "secret://penpot/secret-key"
+    },
+    {
+      "key": "POSTGRES_PASSWORD",
+      "reference": "secret://postgres/password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
