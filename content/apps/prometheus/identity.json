@@ -1,0 +1,11 @@
+{
+  "index": 63,
+  "name": "Prometheus",
+  "slug": "prometheus",
+  "repo": "https://github.com/prometheus/prometheus",
+  "website": "https://prometheus.io",
+  "category": "DevOps & Cloud",
+  "description": "Monitoring system and time-series database featuring multidimensional metrics and flexible queries.",
+  "accent": "#E6522C",
+  "simpleIconSlug": "prometheus"
+}
