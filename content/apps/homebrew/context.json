@@ -1,0 +1,20 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Simple",
+  "preferences": [
+    "install_prefix",
+    "auto_update"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
