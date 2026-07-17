@@ -1,0 +1,28 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "clickhouse_user",
+    "clickhouse_database",
+    "http_port",
+    "data_directory"
+  ],
+  "secrets": [
+    {
+      "key": "CLICKHOUSE_PASSWORD",
+      "reference": "secret://clickhouse/password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
