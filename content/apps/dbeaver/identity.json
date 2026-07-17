@@ -1,0 +1,11 @@
+{
+  "index": 49,
+  "name": "DBeaver",
+  "slug": "dbeaver",
+  "repo": "https://github.com/dbeaver/dbeaver",
+  "website": "https://dbeaver.io",
+  "category": "Data & Databases",
+  "description": "Cross-platform desktop database client supporting numerous relational and nonrelational systems.",
+  "accent": "#382923",
+  "simpleIconSlug": "dbeaver"
+}
