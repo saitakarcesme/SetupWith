@@ -1,0 +1,28 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "preferences": [
+    "upload_location",
+    "server_port",
+    "timezone",
+    "machine_learning_enabled"
+  ],
+  "secrets": [
+    {
+      "key": "DB_PASSWORD",
+      "reference": "secret://db/password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
