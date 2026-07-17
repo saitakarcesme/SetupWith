@@ -1,0 +1,11 @@
+{
+  "index": 78,
+  "name": "GIMP",
+  "slug": "gimp",
+  "repo": "https://github.com/GNOME/gimp",
+  "website": "https://www.gimp.org",
+  "category": "Design & Media",
+  "description": "Desktop image editor providing painting, retouching, compositing, plugins, and format support.",
+  "accent": "#5C5543",
+  "simpleIconSlug": "gimp"
+}
