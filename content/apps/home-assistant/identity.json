@@ -1,0 +1,11 @@
+{
+  "index": 95,
+  "name": "Home Assistant",
+  "slug": "home-assistant",
+  "repo": "https://github.com/home-assistant/core",
+  "website": "https://www.home-assistant.io",
+  "category": "Web & Self-hosted",
+  "description": "Local-first home automation platform integrating devices, services, dashboards, scenes, and routines.",
+  "accent": "#18BCF2",
+  "simpleIconSlug": "homeassistant"
+}
