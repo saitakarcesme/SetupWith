@@ -1,0 +1,11 @@
+{
+  "index": 69,
+  "name": "Joplin",
+  "slug": "joplin",
+  "repo": "https://github.com/laurent22/joplin",
+  "website": "https://joplinapp.org",
+  "category": "Productivity",
+  "description": "Cross-platform note and task application supporting Markdown, encryption, synchronization, and plugins.",
+  "accent": "#1071D3",
+  "simpleIconSlug": "joplin"
+}
