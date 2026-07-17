@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "admin_user",
+    "trusted_domains",
+    "data_directory",
+    "server_port"
+  ],
+  "secrets": [
+    {
+      "key": "NEXTCLOUD_ADMIN_PASSWORD",
+      "reference": "secret://nextcloud/admin-password"
+    },
+    {
+      "key": "MYSQL_PASSWORD",
+      "reference": "secret://mysql/password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
