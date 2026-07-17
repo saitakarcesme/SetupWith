@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "server_port",
+    "database_type",
+    "public_url",
+    "files_path"
+  ],
+  "secrets": [
+    {
+      "key": "VIKUNJA_SERVICE_JWTSECRET",
+      "reference": "secret://vikunja/service-jwtsecret"
+    },
+    {
+      "key": "VIKUNJA_DATABASE_PASSWORD",
+      "reference": "secret://vikunja/database-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
