@@ -1,0 +1,11 @@
+{
+  "index": 29,
+  "name": "llama.cpp",
+  "slug": "llama-cpp",
+  "repo": "https://github.com/ggml-org/llama.cpp",
+  "website": "https://github.com/ggml-org/llama.cpp",
+  "category": "AI & ML",
+  "description": "Portable C++ inference engine optimized for quantized transformer models across hardware.",
+  "accent": "#FF6F00",
+  "simpleIconSlug": null
+}
