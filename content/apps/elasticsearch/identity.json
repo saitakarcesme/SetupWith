@@ -1,0 +1,11 @@
+{
+  "index": 46,
+  "name": "Elasticsearch",
+  "slug": "elasticsearch",
+  "repo": "https://github.com/elastic/elasticsearch",
+  "website": "https://www.elastic.co/elasticsearch",
+  "category": "Data & Databases",
+  "description": "Distributed search and analytics engine for structured, unstructured, and geospatial data.",
+  "accent": "#005571",
+  "simpleIconSlug": "elasticsearch"
+}
