@@ -1,0 +1,11 @@
+{
+  "index": 44,
+  "name": "Qdrant",
+  "slug": "qdrant",
+  "repo": "https://github.com/qdrant/qdrant",
+  "website": "https://qdrant.tech",
+  "category": "Data & Databases",
+  "description": "Vector database and similarity search engine designed for production AI applications.",
+  "accent": "#DC244C",
+  "simpleIconSlug": "qdrant"
+}
