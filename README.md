@@ -1,0 +1,47 @@
+# SetupWith
+
+SetupWith is an open catalog of product-specific Codex setup prompts. It covers 100 popular developer tools, AI runtimes, databases, infrastructure projects, desktop apps, and self-hosted software.
+
+Each app has its own `/{slug}` route with:
+
+- the project’s official repository, website, logo, and recognizable brand color;
+- platform-aware preflight and installation guidance;
+- only the environment preferences that product actually needs;
+- opaque `secret://provider/key` references instead of credential values;
+- explicit permission checkpoints, verification, and rollback instructions.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Quality checks
+
+```bash
+npm run check
+```
+
+This runs ESLint, strict TypeScript, catalog/prompt validation, and a production Next.js build that statically renders all 100 app pages.
+
+## Security model
+
+The context profile is local-first. Non-secret preferences stay in browser storage. Credentials are protected by a browser-only vault using PBKDF2-HMAC-SHA256 and AES-256-GCM. The passphrase is not stored. Generated prompts only receive aliases such as `secret://github/token`; secret values are never written into prompt text.
+
+SetupWith does not silently install software. Its prompts require Codex to inspect the machine first and ask before elevated access, overwriting files, enabling services, exposing ports, changing firewall rules, or launching browser sign-in.
+
+## Main routes
+
+- `/` — product landing page
+- `/apps` — searchable and filterable 100-app catalog
+- `/{slug}` — app-specific setup page
+- `/profile` — local environment profile and encrypted vault
+- `/security` — security and storage model
+- `/how-it-works` — end-to-end setup workflow
+
+## Stack
+
+Next.js 16 App Router, React 19, TypeScript, Tailwind CSS 4, Web Crypto, and Vercel.
