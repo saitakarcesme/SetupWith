@@ -1,0 +1,11 @@
+{
+  "index": 89,
+  "name": "WireGuard",
+  "slug": "wireguard",
+  "repo": "https://github.com/WireGuard/wireguard-tools",
+  "website": "https://www.wireguard.com",
+  "category": "Security & Privacy",
+  "description": "Modern VPN tooling providing fast, simple, and cryptographically secure network tunnels.",
+  "accent": "#88171A",
+  "simpleIconSlug": "wireguard"
+}
