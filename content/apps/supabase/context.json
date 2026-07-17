@@ -1,0 +1,40 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "site_url",
+    "api_external_url",
+    "studio_port",
+    "database_port"
+  ],
+  "secrets": [
+    {
+      "key": "POSTGRES_PASSWORD",
+      "reference": "secret://postgres/password"
+    },
+    {
+      "key": "JWT_SECRET",
+      "reference": "secret://jwt/secret"
+    },
+    {
+      "key": "ANON_KEY",
+      "reference": "secret://anon/key"
+    },
+    {
+      "key": "SERVICE_ROLE_KEY",
+      "reference": "secret://service/role-key"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
