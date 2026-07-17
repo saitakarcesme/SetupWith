@@ -1,0 +1,27 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "deno_version",
+    "default_permissions",
+    "npm_registry"
+  ],
+  "secrets": [
+    {
+      "key": "DENO_AUTH_TOKENS",
+      "reference": "secret://deno/auth-tokens"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
