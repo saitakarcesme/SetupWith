@@ -1,0 +1,11 @@
+{
+  "index": 20,
+  "name": "Go",
+  "slug": "go",
+  "repo": "https://github.com/golang/go",
+  "website": "https://go.dev",
+  "category": "Developer Tools",
+  "description": "Compiled programming language designed for simple, reliable, and scalable software development.",
+  "accent": "#00ADD8",
+  "simpleIconSlug": "go"
+}
