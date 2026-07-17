@@ -1,0 +1,28 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "model_path",
+    "output_path",
+    "listen_address",
+    "gpu_backend"
+  ],
+  "secrets": [
+    {
+      "key": "HUGGINGFACE_TOKEN",
+      "reference": "secret://huggingface/token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
