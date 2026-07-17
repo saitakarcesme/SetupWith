@@ -1,0 +1,11 @@
+{
+  "index": 8,
+  "name": "Emacs",
+  "slug": "emacs",
+  "repo": "https://github.com/emacs-mirror/emacs",
+  "website": "https://www.gnu.org/software/emacs",
+  "category": "Developer Tools",
+  "description": "Highly extensible text editor and programmable environment for diverse computing workflows.",
+  "accent": "#7F5AB6",
+  "simpleIconSlug": "gnuemacs"
+}
