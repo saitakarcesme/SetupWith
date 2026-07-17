@@ -1,0 +1,27 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "database_path",
+    "http_address",
+    "environment"
+  ],
+  "secrets": [
+    {
+      "key": "MEILI_MASTER_KEY",
+      "reference": "secret://meili/master-key"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
