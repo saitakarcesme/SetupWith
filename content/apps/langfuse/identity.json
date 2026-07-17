@@ -1,0 +1,11 @@
+{
+  "index": 34,
+  "name": "Langfuse",
+  "slug": "langfuse",
+  "repo": "https://github.com/langfuse/langfuse",
+  "website": "https://langfuse.com",
+  "category": "AI & ML",
+  "description": "Self-hosted observability, tracing, evaluation, and prompt management platform for LLM applications.",
+  "accent": "#000000",
+  "simpleIconSlug": "langfuse"
+}
