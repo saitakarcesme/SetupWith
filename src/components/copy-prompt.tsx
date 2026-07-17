@@ -9,13 +9,25 @@ interface CopyPromptProps {
 }
 
 export function CopyPrompt({ app }: CopyPromptProps) {
-  const [copied, setCopied] = useState(false);
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "error">("idle");
   const [expanded, setExpanded] = useState(false);
 
   async function copyPrompt() {
-    await navigator.clipboard.writeText(app.prompt);
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 2400);
+    try {
+      await navigator.clipboard.writeText(app.prompt);
+      setCopyState("copied");
+    } catch {
+      const fallback = document.createElement("textarea");
+      fallback.value = app.prompt;
+      fallback.setAttribute("readonly", "");
+      fallback.style.position = "fixed";
+      fallback.style.opacity = "0";
+      document.body.appendChild(fallback);
+      fallback.select();
+      const succeeded = document.execCommand("copy");
+      fallback.remove();
+      setCopyState(succeeded ? "copied" : "error");
+    }
   }
 
   return (
@@ -60,8 +72,14 @@ export function CopyPrompt({ app }: CopyPromptProps) {
       </div>
 
       <button className="copy-prompt-button" type="button" onClick={copyPrompt}>
-        {copied ? <Check size={18} aria-hidden="true" /> : <Clipboard size={18} aria-hidden="true" />}
-        <span>{copied ? "Copied — ready for Codex" : "Copy setup prompt"}</span>
+        {copyState === "copied" ? <Check size={18} aria-hidden="true" /> : <Clipboard size={18} aria-hidden="true" />}
+        <span>
+          {copyState === "copied"
+            ? "Copied — ready for Codex"
+            : copyState === "error"
+              ? "Copy blocked — review prompt"
+              : "Copy setup prompt"}
+        </span>
       </button>
       <p className="setup-note">
         Review the prompt before running it. Codex will still ask before privileged or destructive steps.
