@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "model_gallery",
+    "context_size",
+    "threads",
+    "listen_address"
+  ],
+  "secrets": [
+    {
+      "key": "LOCALAI_API_KEY",
+      "reference": "secret://localai/api-key"
+    },
+    {
+      "key": "HUGGINGFACE_TOKEN",
+      "reference": "secret://huggingface/token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
