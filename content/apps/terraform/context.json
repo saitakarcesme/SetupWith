@@ -1,0 +1,35 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "preferences": [
+    "plugin_cache_dir",
+    "default_workspace",
+    "parallelism"
+  ],
+  "secrets": [
+    {
+      "key": "TF_TOKEN_app_terraform_io",
+      "reference": "secret://tf/token-app-terraform-io"
+    },
+    {
+      "key": "AWS_ACCESS_KEY_ID",
+      "reference": "secret://aws/access-key-id"
+    },
+    {
+      "key": "AWS_SECRET_ACCESS_KEY",
+      "reference": "secret://aws/secret-access-key"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
