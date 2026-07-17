@@ -1,0 +1,31 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "server_port",
+    "data_dir",
+    "database_url"
+  ],
+  "secrets": [
+    {
+      "key": "SECRET_KEY",
+      "reference": "secret://secret/key"
+    },
+    {
+      "key": "DATABASE_PASSWORD",
+      "reference": "secret://database/password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
