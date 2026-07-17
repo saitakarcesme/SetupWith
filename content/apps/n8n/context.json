@@ -1,0 +1,36 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "preferences": [
+    "server_port",
+    "public_url",
+    "timezone",
+    "database_type"
+  ],
+  "secrets": [
+    {
+      "key": "N8N_ENCRYPTION_KEY",
+      "reference": "secret://n8n/encryption-key"
+    },
+    {
+      "key": "N8N_BASIC_AUTH_PASSWORD",
+      "reference": "secret://n8n/basic-auth-password"
+    },
+    {
+      "key": "DB_POSTGRESDB_PASSWORD",
+      "reference": "secret://db/postgresdb-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
