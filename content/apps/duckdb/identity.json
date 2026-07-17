@@ -1,0 +1,11 @@
+{
+  "index": 43,
+  "name": "DuckDB",
+  "slug": "duckdb",
+  "repo": "https://github.com/duckdb/duckdb",
+  "website": "https://duckdb.org",
+  "category": "Data & Databases",
+  "description": "Embedded analytical database optimized for fast SQL queries on local datasets.",
+  "accent": "#FFF000",
+  "simpleIconSlug": "duckdb"
+}
