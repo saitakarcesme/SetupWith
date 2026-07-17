@@ -1,0 +1,11 @@
+{
+  "index": 77,
+  "name": "Blender",
+  "slug": "blender",
+  "repo": "https://github.com/blender/blender",
+  "website": "https://www.blender.org",
+  "category": "Design & Media",
+  "description": "Comprehensive three-dimensional creation suite covering modeling, animation, rendering, compositing, and editing.",
+  "accent": "#E87D0D",
+  "simpleIconSlug": "blender"
+}
