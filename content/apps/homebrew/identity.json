@@ -1,0 +1,11 @@
+{
+  "index": 11,
+  "name": "Homebrew",
+  "slug": "homebrew",
+  "repo": "https://github.com/Homebrew/brew",
+  "website": "https://brew.sh",
+  "category": "Developer Tools",
+  "description": "Package manager simplifying software installation and maintenance on macOS and Linux.",
+  "accent": "#FBB040",
+  "simpleIconSlug": "homebrew"
+}
