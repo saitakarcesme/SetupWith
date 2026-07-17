@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "interface_name",
+    "listen_port",
+    "address_range",
+    "dns_server"
+  ],
+  "secrets": [
+    {
+      "key": "WIREGUARD_PRIVATE_KEY",
+      "reference": "secret://wireguard/private-key"
+    },
+    {
+      "key": "WIREGUARD_PRESHARED_KEY",
+      "reference": "secret://wireguard/preshared-key"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
