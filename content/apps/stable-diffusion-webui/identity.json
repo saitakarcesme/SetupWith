@@ -1,0 +1,11 @@
+{
+  "index": 25,
+  "name": "Stable Diffusion WebUI",
+  "slug": "stable-diffusion-webui",
+  "repo": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+  "website": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+  "category": "AI & ML",
+  "description": "Browser interface for generating and editing images with Stable Diffusion models.",
+  "accent": "#2563EB",
+  "simpleIconSlug": null
+}
