@@ -1,0 +1,11 @@
+{
+  "index": 97,
+  "name": "Immich",
+  "slug": "immich",
+  "repo": "https://github.com/immich-app/immich",
+  "website": "https://immich.app",
+  "category": "Web & Self-hosted",
+  "description": "Self-hosted photo and video backup platform with search, sharing, and recognition.",
+  "accent": "#4250AF",
+  "simpleIconSlug": "immich"
+}
