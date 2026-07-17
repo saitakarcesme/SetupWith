@@ -1,0 +1,28 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "notes_directory",
+    "sync_target",
+    "default_editor",
+    "theme"
+  ],
+  "secrets": [
+    {
+      "key": "JOPLIN_TOKEN",
+      "reference": "secret://joplin/token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
