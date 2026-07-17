@@ -1,0 +1,23 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Guided",
+  "preferences": [
+    "broker_id",
+    "listeners",
+    "data_directory",
+    "default_partitions"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
