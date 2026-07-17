@@ -1,0 +1,11 @@
+{
+  "index": 12,
+  "name": "Nix",
+  "slug": "nix",
+  "repo": "https://github.com/NixOS/nix",
+  "website": "https://nixos.org",
+  "category": "Developer Tools",
+  "description": "Reproducible package manager supporting declarative environments, builds, and system configurations.",
+  "accent": "#5277C3",
+  "simpleIconSlug": "nixos"
+}
