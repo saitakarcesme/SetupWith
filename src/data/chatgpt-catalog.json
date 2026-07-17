@@ -1,0 +1,1925 @@
+[
+  {
+    "index": 1,
+    "name": "Visual Studio Code",
+    "slug": "visual-studio-code",
+    "repo": "https://github.com/microsoft/vscode",
+    "website": "https://code.visualstudio.com",
+    "category": "Developer Tools",
+    "description": "Extensible cross-platform code editor with debugging, terminals, and language integrations.",
+    "accent": "#007ACC",
+    "simpleIconSlug": "visualstudiocode",
+    "secrets": [],
+    "config": [
+      "preferred_shell",
+      "editor_font_size",
+      "editor_theme"
+    ]
+  },
+  {
+    "index": 2,
+    "name": "Git",
+    "slug": "git",
+    "repo": "https://github.com/git/git",
+    "website": "https://git-scm.com",
+    "category": "Developer Tools",
+    "description": "Distributed version control system for tracking and collaborating on source code.",
+    "accent": "#F05032",
+    "simpleIconSlug": "git",
+    "secrets": [],
+    "config": [
+      "git_name",
+      "git_email",
+      "default_branch",
+      "preferred_editor"
+    ]
+  },
+  {
+    "index": 3,
+    "name": "GitHub CLI",
+    "slug": "github-cli",
+    "repo": "https://github.com/cli/cli",
+    "website": "https://cli.github.com",
+    "category": "Developer Tools",
+    "description": "Official command-line interface for repositories, pull requests, issues, and workflows.",
+    "accent": "#181717",
+    "simpleIconSlug": "github",
+    "secrets": [
+      "GITHUB_TOKEN"
+    ],
+    "config": [
+      "git_protocol",
+      "default_editor"
+    ]
+  },
+  {
+    "index": 4,
+    "name": "Neovim",
+    "slug": "neovim",
+    "repo": "https://github.com/neovim/neovim",
+    "website": "https://neovim.io",
+    "category": "Developer Tools",
+    "description": "Extensible terminal text editor emphasizing modern APIs, plugins, and usability.",
+    "accent": "#57A143",
+    "simpleIconSlug": "neovim",
+    "secrets": [],
+    "config": [
+      "preferred_shell",
+      "editor_theme",
+      "leader_key"
+    ]
+  },
+  {
+    "index": 5,
+    "name": "Zed",
+    "slug": "zed",
+    "repo": "https://github.com/zed-industries/zed",
+    "website": "https://zed.dev",
+    "category": "Developer Tools",
+    "description": "High-performance collaborative code editor built with Rust and GPU acceleration.",
+    "accent": "#084CCF",
+    "simpleIconSlug": "zedindustries",
+    "secrets": [
+      "ANTHROPIC_API_KEY",
+      "OPENAI_API_KEY"
+    ],
+    "config": [
+      "editor_theme",
+      "editor_font_size",
+      "preferred_shell"
+    ]
+  },
+  {
+    "index": 6,
+    "name": "Sublime Text",
+    "slug": "sublime-text",
+    "repo": "https://github.com/sublimehq/sublime_text",
+    "website": "https://www.sublimetext.com",
+    "category": "Developer Tools",
+    "description": "Fast cross-platform text editor supporting projects, plugins, and extensive customization.",
+    "accent": "#FF9800",
+    "simpleIconSlug": "sublimetext",
+    "secrets": [],
+    "config": [
+      "editor_theme",
+      "editor_font_size",
+      "preferred_shell"
+    ]
+  },
+  {
+    "index": 7,
+    "name": "Helix",
+    "slug": "helix",
+    "repo": "https://github.com/helix-editor/helix",
+    "website": "https://helix-editor.com",
+    "category": "Developer Tools",
+    "description": "Modal terminal editor with built-in language servers and tree-sitter integration.",
+    "accent": "#281733",
+    "simpleIconSlug": "helix",
+    "secrets": [],
+    "config": [
+      "editor_theme",
+      "preferred_shell",
+      "clipboard_provider"
+    ]
+  },
+  {
+    "index": 8,
+    "name": "Emacs",
+    "slug": "emacs",
+    "repo": "https://github.com/emacs-mirror/emacs",
+    "website": "https://www.gnu.org/software/emacs",
+    "category": "Developer Tools",
+    "description": "Highly extensible text editor and programmable environment for diverse computing workflows.",
+    "accent": "#7F5AB6",
+    "simpleIconSlug": "gnuemacs",
+    "secrets": [],
+    "config": [
+      "editor_theme",
+      "preferred_shell",
+      "font_size"
+    ]
+  },
+  {
+    "index": 9,
+    "name": "tmux",
+    "slug": "tmux",
+    "repo": "https://github.com/tmux/tmux",
+    "website": "https://github.com/tmux/tmux/wiki",
+    "category": "Developer Tools",
+    "description": "Terminal multiplexer for persistent sessions, panes, windows, and remote workflows.",
+    "accent": "#1BB91F",
+    "simpleIconSlug": "tmux",
+    "secrets": [],
+    "config": [
+      "prefix_key",
+      "default_shell",
+      "mouse_support"
+    ]
+  },
+  {
+    "index": 10,
+    "name": "Starship",
+    "slug": "starship",
+    "repo": "https://github.com/starship/starship",
+    "website": "https://starship.rs",
+    "category": "Developer Tools",
+    "description": "Fast customizable cross-shell prompt displaying contextual development and system information.",
+    "accent": "#DD0B78",
+    "simpleIconSlug": "starship",
+    "secrets": [],
+    "config": [
+      "preferred_shell",
+      "prompt_preset",
+      "nerd_font"
+    ]
+  },
+  {
+    "index": 11,
+    "name": "Homebrew",
+    "slug": "homebrew",
+    "repo": "https://github.com/Homebrew/brew",
+    "website": "https://brew.sh",
+    "category": "Developer Tools",
+    "description": "Package manager simplifying software installation and maintenance on macOS and Linux.",
+    "accent": "#FBB040",
+    "simpleIconSlug": "homebrew",
+    "secrets": [],
+    "config": [
+      "install_prefix",
+      "auto_update"
+    ]
+  },
+  {
+    "index": 12,
+    "name": "Nix",
+    "slug": "nix",
+    "repo": "https://github.com/NixOS/nix",
+    "website": "https://nixos.org",
+    "category": "Developer Tools",
+    "description": "Reproducible package manager supporting declarative environments, builds, and system configurations.",
+    "accent": "#5277C3",
+    "simpleIconSlug": "nixos",
+    "secrets": [],
+    "config": [
+      "nix_channel",
+      "experimental_features",
+      "trusted_users"
+    ]
+  },
+  {
+    "index": 13,
+    "name": "mise",
+    "slug": "mise",
+    "repo": "https://github.com/jdx/mise",
+    "website": "https://mise.jdx.dev",
+    "category": "Developer Tools",
+    "description": "Polyglot runtime manager and task runner compatible with common version files.",
+    "accent": "#70A5FD",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": [
+      "default_runtimes",
+      "activate_shell",
+      "global_config"
+    ]
+  },
+  {
+    "index": 14,
+    "name": "Node.js",
+    "slug": "nodejs",
+    "repo": "https://github.com/nodejs/node",
+    "website": "https://nodejs.org",
+    "category": "Developer Tools",
+    "description": "JavaScript runtime for building command-line, server, desktop, and networking applications.",
+    "accent": "#339933",
+    "simpleIconSlug": "nodedotjs",
+    "secrets": [],
+    "config": [
+      "node_version",
+      "package_manager",
+      "npm_registry"
+    ]
+  },
+  {
+    "index": 15,
+    "name": "Deno",
+    "slug": "deno",
+    "repo": "https://github.com/denoland/deno",
+    "website": "https://deno.com",
+    "category": "Developer Tools",
+    "description": "Secure JavaScript and TypeScript runtime with integrated tooling and package support.",
+    "accent": "#70FFAF",
+    "simpleIconSlug": "deno",
+    "secrets": [
+      "DENO_AUTH_TOKENS"
+    ],
+    "config": [
+      "deno_version",
+      "default_permissions",
+      "npm_registry"
+    ]
+  },
+  {
+    "index": 16,
+    "name": "Bun",
+    "slug": "bun",
+    "repo": "https://github.com/oven-sh/bun",
+    "website": "https://bun.sh",
+    "category": "Developer Tools",
+    "description": "Fast JavaScript runtime, package manager, bundler, and integrated testing toolkit.",
+    "accent": "#FBF0DF",
+    "simpleIconSlug": "bun",
+    "secrets": [
+      "NPM_TOKEN"
+    ],
+    "config": [
+      "bun_version",
+      "npm_registry",
+      "install_cache_dir"
+    ]
+  },
+  {
+    "index": 17,
+    "name": "Python",
+    "slug": "python",
+    "repo": "https://github.com/python/cpython",
+    "website": "https://www.python.org",
+    "category": "Developer Tools",
+    "description": "General-purpose programming runtime widely used for automation, applications, and data science.",
+    "accent": "#3776AB",
+    "simpleIconSlug": "python",
+    "secrets": [],
+    "config": [
+      "python_version",
+      "virtualenv_location",
+      "package_index"
+    ]
+  },
+  {
+    "index": 18,
+    "name": "uv",
+    "slug": "uv",
+    "repo": "https://github.com/astral-sh/uv",
+    "website": "https://docs.astral.sh/uv",
+    "category": "Developer Tools",
+    "description": "Extremely fast Python package, project, environment, and runtime management tool.",
+    "accent": "#DE5FE9",
+    "simpleIconSlug": "uv",
+    "secrets": [
+      "UV_INDEX_TOKEN"
+    ],
+    "config": [
+      "python_version",
+      "package_index",
+      "cache_dir"
+    ]
+  },
+  {
+    "index": 19,
+    "name": "Rust",
+    "slug": "rust",
+    "repo": "https://github.com/rust-lang/rust",
+    "website": "https://www.rust-lang.org",
+    "category": "Developer Tools",
+    "description": "Systems programming language focused on performance, reliability, and memory safety.",
+    "accent": "#000000",
+    "simpleIconSlug": "rust",
+    "secrets": [],
+    "config": [
+      "rust_toolchain",
+      "cargo_install_root",
+      "default_target"
+    ]
+  },
+  {
+    "index": 20,
+    "name": "Go",
+    "slug": "go",
+    "repo": "https://github.com/golang/go",
+    "website": "https://go.dev",
+    "category": "Developer Tools",
+    "description": "Compiled programming language designed for simple, reliable, and scalable software development.",
+    "accent": "#00ADD8",
+    "simpleIconSlug": "go",
+    "secrets": [
+      "GOPRIVATE"
+    ],
+    "config": [
+      "go_version",
+      "go_workspace",
+      "go_proxy"
+    ]
+  },
+  {
+    "index": 21,
+    "name": "Ollama",
+    "slug": "ollama",
+    "repo": "https://github.com/ollama/ollama",
+    "website": "https://ollama.com",
+    "category": "AI & ML",
+    "description": "Local model runtime for downloading and serving language and vision models.",
+    "accent": "#000000",
+    "simpleIconSlug": "ollama",
+    "secrets": [],
+    "config": [
+      "model_names",
+      "model_storage_path",
+      "listen_address",
+      "gpu_backend"
+    ]
+  },
+  {
+    "index": 22,
+    "name": "Open WebUI",
+    "slug": "open-webui",
+    "repo": "https://github.com/open-webui/open-webui",
+    "website": "https://openwebui.com",
+    "category": "AI & ML",
+    "description": "Self-hosted conversational interface supporting Ollama and multiple compatible AI providers.",
+    "accent": "#000000",
+    "simpleIconSlug": null,
+    "secrets": [
+      "OPENAI_API_KEY",
+      "WEBUI_SECRET_KEY"
+    ],
+    "config": [
+      "ollama_base_url",
+      "webui_port",
+      "default_models"
+    ]
+  },
+  {
+    "index": 23,
+    "name": "LocalAI",
+    "slug": "localai",
+    "repo": "https://github.com/mudler/LocalAI",
+    "website": "https://localai.io",
+    "category": "AI & ML",
+    "description": "Self-hosted OpenAI-compatible inference platform supporting language, image, audio, and embeddings.",
+    "accent": "#1D9BF0",
+    "simpleIconSlug": null,
+    "secrets": [
+      "LOCALAI_API_KEY",
+      "HUGGINGFACE_TOKEN"
+    ],
+    "config": [
+      "model_gallery",
+      "context_size",
+      "threads",
+      "listen_address"
+    ]
+  },
+  {
+    "index": 24,
+    "name": "ComfyUI",
+    "slug": "comfyui",
+    "repo": "https://github.com/Comfy-Org/ComfyUI",
+    "website": "https://www.comfy.org",
+    "category": "AI & ML",
+    "description": "Node-based generative AI interface for constructing advanced image and video workflows.",
+    "accent": "#000000",
+    "simpleIconSlug": null,
+    "secrets": [
+      "HUGGINGFACE_TOKEN"
+    ],
+    "config": [
+      "model_path",
+      "output_path",
+      "listen_address",
+      "gpu_backend"
+    ]
+  },
+  {
+    "index": 25,
+    "name": "Stable Diffusion WebUI",
+    "slug": "stable-diffusion-webui",
+    "repo": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "website": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "category": "AI & ML",
+    "description": "Browser interface for generating and editing images with Stable Diffusion models.",
+    "accent": "#2563EB",
+    "simpleIconSlug": null,
+    "secrets": [
+      "HUGGINGFACE_TOKEN"
+    ],
+    "config": [
+      "model_path",
+      "output_path",
+      "listen_address",
+      "commandline_args"
+    ]
+  },
+  {
+    "index": 26,
+    "name": "InvokeAI",
+    "slug": "invokeai",
+    "repo": "https://github.com/invoke-ai/InvokeAI",
+    "website": "https://invoke.ai",
+    "category": "AI & ML",
+    "description": "Creative engine offering professional workflows for locally generated visual media.",
+    "accent": "#4733FF",
+    "simpleIconSlug": null,
+    "secrets": [
+      "HUGGINGFACE_TOKEN"
+    ],
+    "config": [
+      "model_path",
+      "output_path",
+      "listen_address"
+    ]
+  },
+  {
+    "index": 27,
+    "name": "Jan",
+    "slug": "jan",
+    "repo": "https://github.com/janhq/jan",
+    "website": "https://jan.ai",
+    "category": "AI & ML",
+    "description": "Desktop application for running local language models through a familiar chat interface.",
+    "accent": "#000000",
+    "simpleIconSlug": null,
+    "secrets": [
+      "OPENAI_API_KEY"
+    ],
+    "config": [
+      "model_directory",
+      "inference_backend",
+      "api_port"
+    ]
+  },
+  {
+    "index": 28,
+    "name": "GPT4All",
+    "slug": "gpt4all",
+    "repo": "https://github.com/nomic-ai/gpt4all",
+    "website": "https://www.nomic.ai/gpt4all",
+    "category": "AI & ML",
+    "description": "Desktop and developer tooling for privately running language models on consumer hardware.",
+    "accent": "#F15A24",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": [
+      "model_directory",
+      "default_model",
+      "device"
+    ]
+  },
+  {
+    "index": 29,
+    "name": "llama.cpp",
+    "slug": "llama-cpp",
+    "repo": "https://github.com/ggml-org/llama.cpp",
+    "website": "https://github.com/ggml-org/llama.cpp",
+    "category": "AI & ML",
+    "description": "Portable C++ inference engine optimized for quantized transformer models across hardware.",
+    "accent": "#FF6F00",
+    "simpleIconSlug": null,
+    "secrets": [
+      "HUGGINGFACE_TOKEN"
+    ],
+    "config": [
+      "model_path",
+      "context_size",
+      "gpu_layers",
+      "server_port"
+    ]
+  },
+  {
+    "index": 30,
+    "name": "JupyterLab",
+    "slug": "jupyterlab",
+    "repo": "https://github.com/jupyterlab/jupyterlab",
+    "website": "https://jupyter.org",
+    "category": "AI & ML",
+    "description": "Interactive web development environment for notebooks, code, data, terminals, and documents.",
+    "accent": "#F37626",
+    "simpleIconSlug": "jupyter",
+    "secrets": [
+      "JUPYTER_TOKEN"
+    ],
+    "config": [
+      "workspace_dir",
+      "server_port",
+      "default_kernel"
+    ]
+  },
+  {
+    "index": 31,
+    "name": "MLflow",
+    "slug": "mlflow",
+    "repo": "https://github.com/mlflow/mlflow",
+    "website": "https://mlflow.org",
+    "category": "AI & ML",
+    "description": "Platform for tracking experiments, packaging models, managing registries, and deploying inference.",
+    "accent": "#0194E2",
+    "simpleIconSlug": "mlflow",
+    "secrets": [
+      "AWS_ACCESS_KEY_ID",
+      "AWS_SECRET_ACCESS_KEY"
+    ],
+    "config": [
+      "tracking_uri",
+      "artifact_root",
+      "server_port"
+    ]
+  },
+  {
+    "index": 32,
+    "name": "DVC",
+    "slug": "dvc",
+    "repo": "https://github.com/iterative/dvc",
+    "website": "https://dvc.org",
+    "category": "AI & ML",
+    "description": "Version control and pipeline management for datasets, models, and machine-learning experiments.",
+    "accent": "#13ADC7",
+    "simpleIconSlug": "dvc",
+    "secrets": [
+      "AWS_ACCESS_KEY_ID",
+      "AWS_SECRET_ACCESS_KEY",
+      "GDRIVE_CREDENTIALS_DATA"
+    ],
+    "config": [
+      "cache_dir",
+      "default_remote",
+      "analytics_enabled"
+    ]
+  },
+  {
+    "index": 33,
+    "name": "Label Studio",
+    "slug": "label-studio",
+    "repo": "https://github.com/HumanSignal/label-studio",
+    "website": "https://labelstud.io",
+    "category": "AI & ML",
+    "description": "Data labeling platform supporting text, images, audio, video, and time series.",
+    "accent": "#FF4A4A",
+    "simpleIconSlug": null,
+    "secrets": [
+      "SECRET_KEY",
+      "DATABASE_PASSWORD"
+    ],
+    "config": [
+      "server_port",
+      "data_dir",
+      "database_url"
+    ]
+  },
+  {
+    "index": 34,
+    "name": "Langfuse",
+    "slug": "langfuse",
+    "repo": "https://github.com/langfuse/langfuse",
+    "website": "https://langfuse.com",
+    "category": "AI & ML",
+    "description": "Self-hosted observability, tracing, evaluation, and prompt management platform for LLM applications.",
+    "accent": "#000000",
+    "simpleIconSlug": "langfuse",
+    "secrets": [
+      "NEXTAUTH_SECRET",
+      "SALT",
+      "DATABASE_URL"
+    ],
+    "config": [
+      "server_port",
+      "telemetry_enabled",
+      "public_url"
+    ]
+  },
+  {
+    "index": 35,
+    "name": "Flowise",
+    "slug": "flowise",
+    "repo": "https://github.com/FlowiseAI/Flowise",
+    "website": "https://flowiseai.com",
+    "category": "AI & ML",
+    "description": "Visual low-code platform for constructing and deploying language-model application workflows.",
+    "accent": "#3B81F6",
+    "simpleIconSlug": null,
+    "secrets": [
+      "FLOWISE_USERNAME",
+      "FLOWISE_PASSWORD",
+      "OPENAI_API_KEY"
+    ],
+    "config": [
+      "server_port",
+      "storage_path",
+      "log_level"
+    ]
+  },
+  {
+    "index": 36,
+    "name": "PostgreSQL",
+    "slug": "postgresql",
+    "repo": "https://github.com/postgres/postgres",
+    "website": "https://www.postgresql.org",
+    "category": "Data & Databases",
+    "description": "Advanced relational database emphasizing extensibility, standards compliance, reliability, and data integrity.",
+    "accent": "#4169E1",
+    "simpleIconSlug": "postgresql",
+    "secrets": [
+      "POSTGRES_PASSWORD"
+    ],
+    "config": [
+      "postgres_user",
+      "postgres_db",
+      "postgres_port",
+      "data_directory"
+    ]
+  },
+  {
+    "index": 37,
+    "name": "MySQL",
+    "slug": "mysql",
+    "repo": "https://github.com/mysql/mysql-server",
+    "website": "https://www.mysql.com",
+    "category": "Data & Databases",
+    "description": "Widely deployed relational database server for transactional and web-based applications.",
+    "accent": "#4479A1",
+    "simpleIconSlug": "mysql",
+    "secrets": [
+      "MYSQL_ROOT_PASSWORD",
+      "MYSQL_PASSWORD"
+    ],
+    "config": [
+      "mysql_user",
+      "mysql_database",
+      "mysql_port",
+      "data_directory"
+    ]
+  },
+  {
+    "index": 38,
+    "name": "MariaDB",
+    "slug": "mariadb",
+    "repo": "https://github.com/MariaDB/server",
+    "website": "https://mariadb.org",
+    "category": "Data & Databases",
+    "description": "Community-developed relational database maintaining broad compatibility with MySQL tools and applications.",
+    "accent": "#003545",
+    "simpleIconSlug": "mariadb",
+    "secrets": [
+      "MARIADB_ROOT_PASSWORD",
+      "MARIADB_PASSWORD"
+    ],
+    "config": [
+      "mariadb_user",
+      "mariadb_database",
+      "mariadb_port",
+      "data_directory"
+    ]
+  },
+  {
+    "index": 39,
+    "name": "SQLite",
+    "slug": "sqlite",
+    "repo": "https://github.com/sqlite/sqlite",
+    "website": "https://www.sqlite.org",
+    "category": "Data & Databases",
+    "description": "Embedded transactional SQL database stored within a portable single-file format.",
+    "accent": "#003B57",
+    "simpleIconSlug": "sqlite",
+    "secrets": [],
+    "config": [
+      "database_path",
+      "journal_mode",
+      "synchronous_mode"
+    ]
+  },
+  {
+    "index": 40,
+    "name": "Redis",
+    "slug": "redis",
+    "repo": "https://github.com/redis/redis",
+    "website": "https://redis.io",
+    "category": "Data & Databases",
+    "description": "In-memory data store supporting caching, streaming, messaging, and persistent structures.",
+    "accent": "#FF4438",
+    "simpleIconSlug": "redis",
+    "secrets": [
+      "REDIS_PASSWORD"
+    ],
+    "config": [
+      "redis_port",
+      "maxmemory",
+      "persistence_mode",
+      "data_directory"
+    ]
+  },
+  {
+    "index": 41,
+    "name": "MongoDB",
+    "slug": "mongodb",
+    "repo": "https://github.com/mongodb/mongo",
+    "website": "https://www.mongodb.com",
+    "category": "Data & Databases",
+    "description": "Document-oriented database supporting flexible schemas, replication, indexing, and distributed workloads.",
+    "accent": "#47A248",
+    "simpleIconSlug": "mongodb",
+    "secrets": [
+      "MONGO_INITDB_ROOT_PASSWORD"
+    ],
+    "config": [
+      "mongo_user",
+      "mongo_database",
+      "mongo_port",
+      "data_directory"
+    ]
+  },
+  {
+    "index": 42,
+    "name": "ClickHouse",
+    "slug": "clickhouse",
+    "repo": "https://github.com/ClickHouse/ClickHouse",
+    "website": "https://clickhouse.com",
+    "category": "Data & Databases",
+    "description": "Column-oriented database designed for high-speed analytical queries over large datasets.",
+    "accent": "#FFCC01",
+    "simpleIconSlug": "clickhouse",
+    "secrets": [
+      "CLICKHOUSE_PASSWORD"
+    ],
+    "config": [
+      "clickhouse_user",
+      "clickhouse_database",
+      "http_port",
+      "data_directory"
+    ]
+  },
+  {
+    "index": 43,
+    "name": "DuckDB",
+    "slug": "duckdb",
+    "repo": "https://github.com/duckdb/duckdb",
+    "website": "https://duckdb.org",
+    "category": "Data & Databases",
+    "description": "Embedded analytical database optimized for fast SQL queries on local datasets.",
+    "accent": "#FFF000",
+    "simpleIconSlug": "duckdb",
+    "secrets": [],
+    "config": [
+      "database_path",
+      "extension_directory",
+      "memory_limit",
+      "threads"
+    ]
+  },
+  {
+    "index": 44,
+    "name": "Qdrant",
+    "slug": "qdrant",
+    "repo": "https://github.com/qdrant/qdrant",
+    "website": "https://qdrant.tech",
+    "category": "Data & Databases",
+    "description": "Vector database and similarity search engine designed for production AI applications.",
+    "accent": "#DC244C",
+    "simpleIconSlug": "qdrant",
+    "secrets": [
+      "QDRANT_API_KEY"
+    ],
+    "config": [
+      "storage_path",
+      "http_port",
+      "grpc_port",
+      "default_collection"
+    ]
+  },
+  {
+    "index": 45,
+    "name": "Meilisearch",
+    "slug": "meilisearch",
+    "repo": "https://github.com/meilisearch/meilisearch",
+    "website": "https://www.meilisearch.com",
+    "category": "Data & Databases",
+    "description": "Fast typo-tolerant search engine providing developer-friendly APIs and configurable relevance.",
+    "accent": "#FF5CAA",
+    "simpleIconSlug": "meilisearch",
+    "secrets": [
+      "MEILI_MASTER_KEY"
+    ],
+    "config": [
+      "database_path",
+      "http_address",
+      "environment"
+    ]
+  },
+  {
+    "index": 46,
+    "name": "Elasticsearch",
+    "slug": "elasticsearch",
+    "repo": "https://github.com/elastic/elasticsearch",
+    "website": "https://www.elastic.co/elasticsearch",
+    "category": "Data & Databases",
+    "description": "Distributed search and analytics engine for structured, unstructured, and geospatial data.",
+    "accent": "#005571",
+    "simpleIconSlug": "elasticsearch",
+    "secrets": [
+      "ELASTIC_PASSWORD"
+    ],
+    "config": [
+      "cluster_name",
+      "http_port",
+      "data_directory",
+      "heap_size"
+    ]
+  },
+  {
+    "index": 47,
+    "name": "Apache Kafka",
+    "slug": "apache-kafka",
+    "repo": "https://github.com/apache/kafka",
+    "website": "https://kafka.apache.org",
+    "category": "Data & Databases",
+    "description": "Distributed event streaming platform for durable, scalable, high-throughput data pipelines.",
+    "accent": "#231F20",
+    "simpleIconSlug": "apachekafka",
+    "secrets": [],
+    "config": [
+      "broker_id",
+      "listeners",
+      "data_directory",
+      "default_partitions"
+    ]
+  },
+  {
+    "index": 48,
+    "name": "MinIO",
+    "slug": "minio",
+    "repo": "https://github.com/minio/minio",
+    "website": "https://min.io",
+    "category": "Data & Databases",
+    "description": "S3-compatible object storage server designed for private and cloud-native infrastructure.",
+    "accent": "#C72E49",
+    "simpleIconSlug": "minio",
+    "secrets": [
+      "MINIO_ROOT_USER",
+      "MINIO_ROOT_PASSWORD"
+    ],
+    "config": [
+      "data_directory",
+      "api_port",
+      "console_port",
+      "server_url"
+    ]
+  },
+  {
+    "index": 49,
+    "name": "DBeaver",
+    "slug": "dbeaver",
+    "repo": "https://github.com/dbeaver/dbeaver",
+    "website": "https://dbeaver.io",
+    "category": "Data & Databases",
+    "description": "Cross-platform desktop database client supporting numerous relational and nonrelational systems.",
+    "accent": "#382923",
+    "simpleIconSlug": "dbeaver",
+    "secrets": [],
+    "config": [
+      "workspace_directory",
+      "default_driver",
+      "editor_theme"
+    ]
+  },
+  {
+    "index": 50,
+    "name": "Supabase",
+    "slug": "supabase",
+    "repo": "https://github.com/supabase/supabase",
+    "website": "https://supabase.com",
+    "category": "Data & Databases",
+    "description": "Self-hostable backend platform combining PostgreSQL, authentication, storage, APIs, and realtime services.",
+    "accent": "#3FCF8E",
+    "simpleIconSlug": "supabase",
+    "secrets": [
+      "POSTGRES_PASSWORD",
+      "JWT_SECRET",
+      "ANON_KEY",
+      "SERVICE_ROLE_KEY"
+    ],
+    "config": [
+      "site_url",
+      "api_external_url",
+      "studio_port",
+      "database_port"
+    ]
+  },
+  {
+    "index": 51,
+    "name": "Docker Engine",
+    "slug": "docker-engine",
+    "repo": "https://github.com/moby/moby",
+    "website": "https://www.docker.com",
+    "category": "DevOps & Cloud",
+    "description": "Container engine for building, packaging, distributing, and running isolated application environments.",
+    "accent": "#2496ED",
+    "simpleIconSlug": "docker",
+    "secrets": [
+      "DOCKER_AUTH_CONFIG"
+    ],
+    "config": [
+      "data_root",
+      "default_registry",
+      "log_driver",
+      "storage_driver"
+    ]
+  },
+  {
+    "index": 52,
+    "name": "Podman",
+    "slug": "podman",
+    "repo": "https://github.com/containers/podman",
+    "website": "https://podman.io",
+    "category": "DevOps & Cloud",
+    "description": "Daemonless container engine supporting rootless containers, pods, images, and Docker compatibility.",
+    "accent": "#892CA0",
+    "simpleIconSlug": "podman",
+    "secrets": [
+      "REGISTRY_AUTH_FILE"
+    ],
+    "config": [
+      "storage_root",
+      "default_registry",
+      "machine_resources",
+      "rootless"
+    ]
+  },
+  {
+    "index": 53,
+    "name": "Kubernetes",
+    "slug": "kubernetes",
+    "repo": "https://github.com/kubernetes/kubernetes",
+    "website": "https://kubernetes.io",
+    "category": "DevOps & Cloud",
+    "description": "Container orchestration system automating application deployment, scaling, networking, and management.",
+    "accent": "#326CE5",
+    "simpleIconSlug": "kubernetes",
+    "secrets": [
+      "KUBECONFIG"
+    ],
+    "config": [
+      "cluster_name",
+      "context_name",
+      "namespace",
+      "container_runtime"
+    ]
+  },
+  {
+    "index": 54,
+    "name": "k3s",
+    "slug": "k3s",
+    "repo": "https://github.com/k3s-io/k3s",
+    "website": "https://k3s.io",
+    "category": "DevOps & Cloud",
+    "description": "Lightweight certified Kubernetes distribution optimized for edge, development, and small clusters.",
+    "accent": "#FFC61C",
+    "simpleIconSlug": "k3s",
+    "secrets": [
+      "K3S_TOKEN"
+    ],
+    "config": [
+      "cluster_name",
+      "node_role",
+      "server_url",
+      "data_directory"
+    ]
+  },
+  {
+    "index": 55,
+    "name": "kind",
+    "slug": "kind",
+    "repo": "https://github.com/kubernetes-sigs/kind",
+    "website": "https://kind.sigs.k8s.io",
+    "category": "DevOps & Cloud",
+    "description": "Tool for running local Kubernetes clusters using containers as cluster nodes.",
+    "accent": "#326CE5",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": [
+      "cluster_name",
+      "node_count",
+      "kubernetes_version",
+      "container_runtime"
+    ]
+  },
+  {
+    "index": 56,
+    "name": "Minikube",
+    "slug": "minikube",
+    "repo": "https://github.com/kubernetes/minikube",
+    "website": "https://minikube.sigs.k8s.io",
+    "category": "DevOps & Cloud",
+    "description": "Local Kubernetes environment supporting multiple drivers, runtimes, addons, and cluster profiles.",
+    "accent": "#326CE5",
+    "simpleIconSlug": "minikube",
+    "secrets": [],
+    "config": [
+      "profile_name",
+      "driver",
+      "container_runtime",
+      "cluster_resources"
+    ]
+  },
+  {
+    "index": 57,
+    "name": "Helm",
+    "slug": "helm",
+    "repo": "https://github.com/helm/helm",
+    "website": "https://helm.sh",
+    "category": "DevOps & Cloud",
+    "description": "Kubernetes package manager for installing, upgrading, templating, and sharing application charts.",
+    "accent": "#0F1689",
+    "simpleIconSlug": "helm",
+    "secrets": [
+      "HELM_REGISTRY_CONFIG"
+    ],
+    "config": [
+      "default_namespace",
+      "repository_cache",
+      "plugins_directory"
+    ]
+  },
+  {
+    "index": 58,
+    "name": "Terraform",
+    "slug": "terraform",
+    "repo": "https://github.com/hashicorp/terraform",
+    "website": "https://www.terraform.io",
+    "category": "DevOps & Cloud",
+    "description": "Infrastructure-as-code tool for declaratively provisioning resources across numerous service providers.",
+    "accent": "#844FBA",
+    "simpleIconSlug": "terraform",
+    "secrets": [
+      "TF_TOKEN_app_terraform_io",
+      "AWS_ACCESS_KEY_ID",
+      "AWS_SECRET_ACCESS_KEY"
+    ],
+    "config": [
+      "plugin_cache_dir",
+      "default_workspace",
+      "parallelism"
+    ]
+  },
+  {
+    "index": 59,
+    "name": "OpenTofu",
+    "slug": "opentofu",
+    "repo": "https://github.com/opentofu/opentofu",
+    "website": "https://opentofu.org",
+    "category": "DevOps & Cloud",
+    "description": "Community-driven infrastructure-as-code tool compatible with established Terraform configurations and providers.",
+    "accent": "#FFDA18",
+    "simpleIconSlug": "opentofu",
+    "secrets": [
+      "TF_TOKEN_app_terraform_io",
+      "AWS_ACCESS_KEY_ID",
+      "AWS_SECRET_ACCESS_KEY"
+    ],
+    "config": [
+      "plugin_cache_dir",
+      "default_workspace",
+      "parallelism"
+    ]
+  },
+  {
+    "index": 60,
+    "name": "Ansible",
+    "slug": "ansible",
+    "repo": "https://github.com/ansible/ansible",
+    "website": "https://www.ansible.com",
+    "category": "DevOps & Cloud",
+    "description": "Agentless automation engine for configuration management, provisioning, orchestration, and deployments.",
+    "accent": "#EE0000",
+    "simpleIconSlug": "ansible",
+    "secrets": [
+      "ANSIBLE_VAULT_PASSWORD_FILE"
+    ],
+    "config": [
+      "inventory_path",
+      "remote_user",
+      "roles_path",
+      "forks"
+    ]
+  },
+  {
+    "index": 61,
+    "name": "Pulumi",
+    "slug": "pulumi",
+    "repo": "https://github.com/pulumi/pulumi",
+    "website": "https://www.pulumi.com",
+    "category": "DevOps & Cloud",
+    "description": "Infrastructure-as-code platform using general-purpose programming languages and declarative resource providers.",
+    "accent": "#8A3391",
+    "simpleIconSlug": "pulumi",
+    "secrets": [
+      "PULUMI_ACCESS_TOKEN",
+      "PULUMI_CONFIG_PASSPHRASE"
+    ],
+    "config": [
+      "backend_url",
+      "default_organization",
+      "default_stack"
+    ]
+  },
+  {
+    "index": 62,
+    "name": "Argo CD",
+    "slug": "argo-cd",
+    "repo": "https://github.com/argoproj/argo-cd",
+    "website": "https://argo-cd.readthedocs.io",
+    "category": "DevOps & Cloud",
+    "description": "Declarative GitOps continuous delivery controller designed specifically for Kubernetes applications.",
+    "accent": "#EF7B4D",
+    "simpleIconSlug": "argo",
+    "secrets": [
+      "ARGOCD_AUTH_TOKEN"
+    ],
+    "config": [
+      "server_address",
+      "default_project",
+      "default_namespace"
+    ]
+  },
+  {
+    "index": 63,
+    "name": "Prometheus",
+    "slug": "prometheus",
+    "repo": "https://github.com/prometheus/prometheus",
+    "website": "https://prometheus.io",
+    "category": "DevOps & Cloud",
+    "description": "Monitoring system and time-series database featuring multidimensional metrics and flexible queries.",
+    "accent": "#E6522C",
+    "simpleIconSlug": "prometheus",
+    "secrets": [],
+    "config": [
+      "scrape_interval",
+      "retention_time",
+      "storage_path",
+      "web_port"
+    ]
+  },
+  {
+    "index": 64,
+    "name": "Grafana",
+    "slug": "grafana",
+    "repo": "https://github.com/grafana/grafana",
+    "website": "https://grafana.com",
+    "category": "DevOps & Cloud",
+    "description": "Observability platform for querying, visualizing, alerting on, and exploring operational data.",
+    "accent": "#F46800",
+    "simpleIconSlug": "grafana",
+    "secrets": [
+      "GF_SECURITY_ADMIN_PASSWORD",
+      "GF_DATABASE_PASSWORD"
+    ],
+    "config": [
+      "admin_user",
+      "server_port",
+      "data_path",
+      "public_url"
+    ]
+  },
+  {
+    "index": 65,
+    "name": "Caddy",
+    "slug": "caddy",
+    "repo": "https://github.com/caddyserver/caddy",
+    "website": "https://caddyserver.com",
+    "category": "DevOps & Cloud",
+    "description": "Extensible web server providing automatic HTTPS, reverse proxying, and modern protocols.",
+    "accent": "#1F88C0",
+    "simpleIconSlug": "caddy",
+    "secrets": [
+      "CLOUDFLARE_API_TOKEN"
+    ],
+    "config": [
+      "domain_name",
+      "http_port",
+      "https_port",
+      "config_path"
+    ]
+  },
+  {
+    "index": 66,
+    "name": "Nextcloud",
+    "slug": "nextcloud",
+    "repo": "https://github.com/nextcloud/server",
+    "website": "https://nextcloud.com",
+    "category": "Productivity",
+    "description": "Self-hosted collaboration platform for files, calendars, contacts, communication, and office workflows.",
+    "accent": "#0082C9",
+    "simpleIconSlug": "nextcloud",
+    "secrets": [
+      "NEXTCLOUD_ADMIN_PASSWORD",
+      "MYSQL_PASSWORD"
+    ],
+    "config": [
+      "admin_user",
+      "trusted_domains",
+      "data_directory",
+      "server_port"
+    ]
+  },
+  {
+    "index": 67,
+    "name": "AppFlowy",
+    "slug": "appflowy",
+    "repo": "https://github.com/AppFlowy-IO/AppFlowy",
+    "website": "https://appflowy.com",
+    "category": "Productivity",
+    "description": "Open-source workspace for documents, databases, tasks, and privately managed collaborative knowledge.",
+    "accent": "#00BCF0",
+    "simpleIconSlug": "appflowy",
+    "secrets": [],
+    "config": [
+      "workspace_directory",
+      "default_language",
+      "appearance"
+    ]
+  },
+  {
+    "index": 68,
+    "name": "Logseq",
+    "slug": "logseq",
+    "repo": "https://github.com/logseq/logseq",
+    "website": "https://logseq.com",
+    "category": "Productivity",
+    "description": "Privacy-focused knowledge base using linked outlines, Markdown, tasks, and local files.",
+    "accent": "#85C8C8",
+    "simpleIconSlug": "logseq",
+    "secrets": [],
+    "config": [
+      "graph_directory",
+      "preferred_format",
+      "default_theme"
+    ]
+  },
+  {
+    "index": 69,
+    "name": "Joplin",
+    "slug": "joplin",
+    "repo": "https://github.com/laurent22/joplin",
+    "website": "https://joplinapp.org",
+    "category": "Productivity",
+    "description": "Cross-platform note and task application supporting Markdown, encryption, synchronization, and plugins.",
+    "accent": "#1071D3",
+    "simpleIconSlug": "joplin",
+    "secrets": [
+      "JOPLIN_TOKEN"
+    ],
+    "config": [
+      "notes_directory",
+      "sync_target",
+      "default_editor",
+      "theme"
+    ]
+  },
+  {
+    "index": 70,
+    "name": "Memos",
+    "slug": "memos",
+    "repo": "https://github.com/usememos/memos",
+    "website": "https://www.usememos.com",
+    "category": "Productivity",
+    "description": "Lightweight self-hosted note service designed for rapid Markdown-based personal capture.",
+    "accent": "#1C7ED6",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": [
+      "server_port",
+      "data_directory",
+      "public_url"
+    ]
+  },
+  {
+    "index": 71,
+    "name": "Vikunja",
+    "slug": "vikunja",
+    "repo": "https://github.com/go-vikunja/vikunja",
+    "website": "https://vikunja.io",
+    "category": "Productivity",
+    "description": "Self-hosted task management application with projects, views, sharing, and integrations.",
+    "accent": "#196AFF",
+    "simpleIconSlug": "vikunja",
+    "secrets": [
+      "VIKUNJA_SERVICE_JWTSECRET",
+      "VIKUNJA_DATABASE_PASSWORD"
+    ],
+    "config": [
+      "server_port",
+      "database_type",
+      "public_url",
+      "files_path"
+    ]
+  },
+  {
+    "index": 72,
+    "name": "Plane",
+    "slug": "plane",
+    "repo": "https://github.com/makeplane/plane",
+    "website": "https://plane.so",
+    "category": "Productivity",
+    "description": "Open-source project management platform for issues, cycles, modules, pages, and analytics.",
+    "accent": "#3F76FF",
+    "simpleIconSlug": "plane",
+    "secrets": [
+      "SECRET_KEY",
+      "POSTGRES_PASSWORD",
+      "AWS_SECRET_ACCESS_KEY"
+    ],
+    "config": [
+      "domain_name",
+      "server_port",
+      "database_name",
+      "file_storage"
+    ]
+  },
+  {
+    "index": 73,
+    "name": "Taiga",
+    "slug": "taiga",
+    "repo": "https://github.com/taigaio/taiga-docker",
+    "website": "https://taiga.io",
+    "category": "Productivity",
+    "description": "Agile project management platform supporting Scrum, Kanban, issues, epics, and collaboration.",
+    "accent": "#83EEDE",
+    "simpleIconSlug": "taiga",
+    "secrets": [
+      "SECRET_KEY",
+      "POSTGRES_PASSWORD",
+      "RABBITMQ_PASS"
+    ],
+    "config": [
+      "domain_name",
+      "server_port",
+      "default_language"
+    ]
+  },
+  {
+    "index": 74,
+    "name": "Cal.com",
+    "slug": "cal-com",
+    "repo": "https://github.com/calcom/cal.com",
+    "website": "https://cal.com",
+    "category": "Productivity",
+    "description": "Self-hostable scheduling platform for booking meetings, routing attendees, and calendar integrations.",
+    "accent": "#292929",
+    "simpleIconSlug": "caldotcom",
+    "secrets": [
+      "NEXTAUTH_SECRET",
+      "CALENDSO_ENCRYPTION_KEY",
+      "DATABASE_URL"
+    ],
+    "config": [
+      "public_url",
+      "server_port",
+      "default_timezone"
+    ]
+  },
+  {
+    "index": 75,
+    "name": "Paperless-ngx",
+    "slug": "paperless-ngx",
+    "repo": "https://github.com/paperless-ngx/paperless-ngx",
+    "website": "https://docs.paperless-ngx.com",
+    "category": "Productivity",
+    "description": "Document management system that indexes, archives, searches, and organizes scanned records.",
+    "accent": "#17541F",
+    "simpleIconSlug": "paperlessngx",
+    "secrets": [
+      "PAPERLESS_SECRET_KEY",
+      "PAPERLESS_DBPASS",
+      "PAPERLESS_ADMIN_PASSWORD"
+    ],
+    "config": [
+      "consume_directory",
+      "media_root",
+      "server_port",
+      "ocr_language"
+    ]
+  },
+  {
+    "index": 76,
+    "name": "Penpot",
+    "slug": "penpot",
+    "repo": "https://github.com/penpot/penpot",
+    "website": "https://penpot.app",
+    "category": "Design & Media",
+    "description": "Web-based collaborative design and prototyping platform using open standards and SVG.",
+    "accent": "#000000",
+    "simpleIconSlug": "penpot",
+    "secrets": [
+      "PENPOT_SECRET_KEY",
+      "POSTGRES_PASSWORD"
+    ],
+    "config": [
+      "public_uri",
+      "server_port",
+      "database_name"
+    ]
+  },
+  {
+    "index": 77,
+    "name": "Blender",
+    "slug": "blender",
+    "repo": "https://github.com/blender/blender",
+    "website": "https://www.blender.org",
+    "category": "Design & Media",
+    "description": "Comprehensive three-dimensional creation suite covering modeling, animation, rendering, compositing, and editing.",
+    "accent": "#E87D0D",
+    "simpleIconSlug": "blender",
+    "secrets": [],
+    "config": [
+      "render_engine",
+      "asset_library_path",
+      "default_workspace",
+      "gpu_backend"
+    ]
+  },
+  {
+    "index": 78,
+    "name": "GIMP",
+    "slug": "gimp",
+    "repo": "https://github.com/GNOME/gimp",
+    "website": "https://www.gimp.org",
+    "category": "Design & Media",
+    "description": "Desktop image editor providing painting, retouching, compositing, plugins, and format support.",
+    "accent": "#5C5543",
+    "simpleIconSlug": "gimp",
+    "secrets": [],
+    "config": [
+      "theme",
+      "plugin_directory",
+      "default_export_format"
+    ]
+  },
+  {
+    "index": 79,
+    "name": "Inkscape",
+    "slug": "inkscape",
+    "repo": "https://github.com/inkscape/inkscape",
+    "website": "https://inkscape.org",
+    "category": "Design & Media",
+    "description": "Professional vector graphics editor using SVG as its primary native format.",
+    "accent": "#000000",
+    "simpleIconSlug": "inkscape",
+    "secrets": [],
+    "config": [
+      "default_template",
+      "theme",
+      "extension_directory"
+    ]
+  },
+  {
+    "index": 80,
+    "name": "Krita",
+    "slug": "krita",
+    "repo": "https://github.com/KDE/krita",
+    "website": "https://krita.org",
+    "category": "Design & Media",
+    "description": "Digital painting application offering brushes, animation, layers, assistants, and color management.",
+    "accent": "#3BABFF",
+    "simpleIconSlug": "krita",
+    "secrets": [],
+    "config": [
+      "workspace",
+      "resource_directory",
+      "color_profile",
+      "canvas_only_mode"
+    ]
+  },
+  {
+    "index": 81,
+    "name": "OBS Studio",
+    "slug": "obs-studio",
+    "repo": "https://github.com/obsproject/obs-studio",
+    "website": "https://obsproject.com",
+    "category": "Design & Media",
+    "description": "Live streaming and recording application supporting scenes, sources, filters, and plugins.",
+    "accent": "#302E31",
+    "simpleIconSlug": "obsstudio",
+    "secrets": [
+      "TWITCH_STREAM_KEY",
+      "YOUTUBE_STREAM_KEY"
+    ],
+    "config": [
+      "recording_path",
+      "video_resolution",
+      "video_fps",
+      "hardware_encoder"
+    ]
+  },
+  {
+    "index": 82,
+    "name": "Kdenlive",
+    "slug": "kdenlive",
+    "repo": "https://github.com/KDE/kdenlive",
+    "website": "https://kdenlive.org",
+    "category": "Design & Media",
+    "description": "Nonlinear video editor featuring multitrack timelines, effects, proxies, and broad formats.",
+    "accent": "#527EB2",
+    "simpleIconSlug": "kdenlive",
+    "secrets": [],
+    "config": [
+      "project_directory",
+      "proxy_enabled",
+      "default_profile",
+      "render_directory"
+    ]
+  },
+  {
+    "index": 83,
+    "name": "Audacity",
+    "slug": "audacity",
+    "repo": "https://github.com/audacity/audacity",
+    "website": "https://www.audacityteam.org",
+    "category": "Design & Media",
+    "description": "Cross-platform multitrack audio recorder and editor with effects and plugin support.",
+    "accent": "#0000CC",
+    "simpleIconSlug": "audacity",
+    "secrets": [],
+    "config": [
+      "recording_device",
+      "playback_device",
+      "sample_rate",
+      "project_directory"
+    ]
+  },
+  {
+    "index": 84,
+    "name": "FFmpeg",
+    "slug": "ffmpeg",
+    "repo": "https://github.com/FFmpeg/FFmpeg",
+    "website": "https://ffmpeg.org",
+    "category": "Design & Media",
+    "description": "Command-line multimedia framework for recording, converting, filtering, streaming, and inspecting media.",
+    "accent": "#007808",
+    "simpleIconSlug": "ffmpeg",
+    "secrets": [],
+    "config": [
+      "hardware_acceleration",
+      "default_video_codec",
+      "default_audio_codec",
+      "output_directory"
+    ]
+  },
+  {
+    "index": 85,
+    "name": "Trivy",
+    "slug": "trivy",
+    "repo": "https://github.com/aquasecurity/trivy",
+    "website": "https://trivy.dev",
+    "category": "Security & Privacy",
+    "description": "Security scanner detecting vulnerabilities, misconfigurations, secrets, and licenses across artifacts.",
+    "accent": "#1904DA",
+    "simpleIconSlug": "trivy",
+    "secrets": [
+      "GITHUB_TOKEN"
+    ],
+    "config": [
+      "cache_directory",
+      "severity_threshold",
+      "ignore_unfixed",
+      "output_format"
+    ]
+  },
+  {
+    "index": 86,
+    "name": "Bitwarden Server",
+    "slug": "bitwarden-server",
+    "repo": "https://github.com/bitwarden/server",
+    "website": "https://bitwarden.com",
+    "category": "Security & Privacy",
+    "description": "Self-hostable password management backend for encrypted credentials, organizations, and client synchronization.",
+    "accent": "#175DDC",
+    "simpleIconSlug": "bitwarden",
+    "secrets": [
+      "GLOBALSETTINGS_IDENTITYSERVER_CERTIFICATEPASSWORD",
+      "GLOBALSETTINGS_SQLSERVER_SA_PASSWORD"
+    ],
+    "config": [
+      "domain_name",
+      "database_provider",
+      "server_port"
+    ]
+  },
+  {
+    "index": 87,
+    "name": "Vaultwarden",
+    "slug": "vaultwarden",
+    "repo": "https://github.com/dani-garcia/vaultwarden",
+    "website": "https://github.com/dani-garcia/vaultwarden/wiki",
+    "category": "Security & Privacy",
+    "description": "Lightweight Bitwarden-compatible password server suitable for personal and small-team deployments.",
+    "accent": "#000000",
+    "simpleIconSlug": "vaultwarden",
+    "secrets": [
+      "ADMIN_TOKEN",
+      "DATABASE_URL",
+      "SMTP_PASSWORD"
+    ],
+    "config": [
+      "domain_name",
+      "server_port",
+      "data_directory",
+      "signups_allowed"
+    ]
+  },
+  {
+    "index": 88,
+    "name": "KeePassXC",
+    "slug": "keepassxc",
+    "repo": "https://github.com/keepassxreboot/keepassxc",
+    "website": "https://keepassxc.org",
+    "category": "Security & Privacy",
+    "description": "Offline password manager storing encrypted credentials within portable KeePass-compatible database files.",
+    "accent": "#6CAC4D",
+    "simpleIconSlug": "keepassxc",
+    "secrets": [],
+    "config": [
+      "database_path",
+      "browser_integration",
+      "auto_lock_minutes",
+      "key_file_path"
+    ]
+  },
+  {
+    "index": 89,
+    "name": "WireGuard",
+    "slug": "wireguard",
+    "repo": "https://github.com/WireGuard/wireguard-tools",
+    "website": "https://www.wireguard.com",
+    "category": "Security & Privacy",
+    "description": "Modern VPN tooling providing fast, simple, and cryptographically secure network tunnels.",
+    "accent": "#88171A",
+    "simpleIconSlug": "wireguard",
+    "secrets": [
+      "WIREGUARD_PRIVATE_KEY",
+      "WIREGUARD_PRESHARED_KEY"
+    ],
+    "config": [
+      "interface_name",
+      "listen_port",
+      "address_range",
+      "dns_server"
+    ]
+  },
+  {
+    "index": 90,
+    "name": "Tailscale",
+    "slug": "tailscale",
+    "repo": "https://github.com/tailscale/tailscale",
+    "website": "https://tailscale.com",
+    "category": "Security & Privacy",
+    "description": "Mesh networking client connecting devices securely through WireGuard-based private overlay networks.",
+    "accent": "#242424",
+    "simpleIconSlug": "tailscale",
+    "secrets": [
+      "TS_AUTHKEY"
+    ],
+    "config": [
+      "hostname",
+      "accept_dns",
+      "advertise_routes",
+      "exit_node"
+    ]
+  },
+  {
+    "index": 91,
+    "name": "Mattermost",
+    "slug": "mattermost",
+    "repo": "https://github.com/mattermost/mattermost",
+    "website": "https://mattermost.com",
+    "category": "Communication",
+    "description": "Self-hosted collaboration platform combining channels, messaging, calls, workflows, and integrations.",
+    "accent": "#0058CC",
+    "simpleIconSlug": "mattermost",
+    "secrets": [
+      "MM_SQLSETTINGS_DATASOURCE",
+      "MM_SERVICESETTINGS_SITEURL"
+    ],
+    "config": [
+      "server_port",
+      "site_url",
+      "default_team",
+      "file_storage"
+    ]
+  },
+  {
+    "index": 92,
+    "name": "Rocket.Chat",
+    "slug": "rocket-chat",
+    "repo": "https://github.com/RocketChat/Rocket.Chat",
+    "website": "https://www.rocket.chat",
+    "category": "Communication",
+    "description": "Self-hosted communications platform for team messaging, omnichannel support, calls, and integrations.",
+    "accent": "#F5455C",
+    "simpleIconSlug": "rocketdotchat",
+    "secrets": [
+      "MONGO_URL",
+      "MONGO_OPLOG_URL",
+      "ROOT_URL"
+    ],
+    "config": [
+      "server_port",
+      "site_name",
+      "default_language"
+    ]
+  },
+  {
+    "index": 93,
+    "name": "Element",
+    "slug": "element",
+    "repo": "https://github.com/element-hq/element-web",
+    "website": "https://element.io",
+    "category": "Communication",
+    "description": "Matrix-based secure messaging client supporting rooms, encryption, calls, and decentralized communication.",
+    "accent": "#0DBD8B",
+    "simpleIconSlug": "element",
+    "secrets": [],
+    "config": [
+      "homeserver_url",
+      "default_server_name",
+      "theme",
+      "brand_name"
+    ]
+  },
+  {
+    "index": 94,
+    "name": "Zulip",
+    "slug": "zulip",
+    "repo": "https://github.com/zulip/zulip",
+    "website": "https://zulip.com",
+    "category": "Communication",
+    "description": "Organized team chat platform combining topic-based threads with real-time conversation.",
+    "accent": "#6492FE",
+    "simpleIconSlug": "zulip",
+    "secrets": [
+      "ZULIP_ADMINISTRATOR",
+      "POSTGRES_PASSWORD",
+      "SECRET_KEY"
+    ],
+    "config": [
+      "external_host",
+      "server_port",
+      "default_language"
+    ]
+  },
+  {
+    "index": 95,
+    "name": "Home Assistant",
+    "slug": "home-assistant",
+    "repo": "https://github.com/home-assistant/core",
+    "website": "https://www.home-assistant.io",
+    "category": "Web & Self-hosted",
+    "description": "Local-first home automation platform integrating devices, services, dashboards, scenes, and routines.",
+    "accent": "#18BCF2",
+    "simpleIconSlug": "homeassistant",
+    "secrets": [
+      "HASS_TOKEN"
+    ],
+    "config": [
+      "config_directory",
+      "server_port",
+      "timezone",
+      "unit_system"
+    ]
+  },
+  {
+    "index": 96,
+    "name": "n8n",
+    "slug": "n8n",
+    "repo": "https://github.com/n8n-io/n8n",
+    "website": "https://n8n.io",
+    "category": "Web & Self-hosted",
+    "description": "Workflow automation platform connecting APIs, databases, applications, AI models, and custom code.",
+    "accent": "#EA4B71",
+    "simpleIconSlug": "n8n",
+    "secrets": [
+      "N8N_ENCRYPTION_KEY",
+      "N8N_BASIC_AUTH_PASSWORD",
+      "DB_POSTGRESDB_PASSWORD"
+    ],
+    "config": [
+      "server_port",
+      "public_url",
+      "timezone",
+      "database_type"
+    ]
+  },
+  {
+    "index": 97,
+    "name": "Immich",
+    "slug": "immich",
+    "repo": "https://github.com/immich-app/immich",
+    "website": "https://immich.app",
+    "category": "Web & Self-hosted",
+    "description": "Self-hosted photo and video backup platform with search, sharing, and recognition.",
+    "accent": "#4250AF",
+    "simpleIconSlug": "immich",
+    "secrets": [
+      "DB_PASSWORD"
+    ],
+    "config": [
+      "upload_location",
+      "server_port",
+      "timezone",
+      "machine_learning_enabled"
+    ]
+  },
+  {
+    "index": 98,
+    "name": "Uptime Kuma",
+    "slug": "uptime-kuma",
+    "repo": "https://github.com/louislam/uptime-kuma",
+    "website": "https://uptime.kuma.pet",
+    "category": "Web & Self-hosted",
+    "description": "Self-hosted monitoring dashboard supporting HTTP, TCP, DNS, containers, and notifications.",
+    "accent": "#5CDD8B",
+    "simpleIconSlug": "uptimekuma",
+    "secrets": [],
+    "config": [
+      "server_port",
+      "data_directory",
+      "public_url",
+      "timezone"
+    ]
+  },
+  {
+    "index": 99,
+    "name": "Syncthing",
+    "slug": "syncthing",
+    "repo": "https://github.com/syncthing/syncthing",
+    "website": "https://syncthing.net",
+    "category": "System Utilities",
+    "description": "Continuous peer-to-peer file synchronization tool with encryption and cross-platform support.",
+    "accent": "#0891D1",
+    "simpleIconSlug": "syncthing",
+    "secrets": [
+      "STGUIAPIKEY"
+    ],
+    "config": [
+      "sync_directory",
+      "device_name",
+      "gui_address",
+      "listen_address"
+    ]
+  },
+  {
+    "index": 100,
+    "name": "Rufus",
+    "slug": "rufus",
+    "repo": "https://github.com/pbatard/rufus",
+    "website": "https://rufus.ie",
+    "category": "System Utilities",
+    "description": "Windows utility for creating bootable USB drives from operating system images.",
+    "accent": "#0A78C3",
+    "simpleIconSlug": "rufus",
+    "secrets": [],
+    "config": [
+      "default_device",
+      "partition_scheme",
+      "filesystem",
+      "image_path"
+    ]
+  }
+]
+
