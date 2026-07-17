@@ -1,0 +1,35 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "server_port",
+    "storage_path",
+    "log_level"
+  ],
+  "secrets": [
+    {
+      "key": "FLOWISE_USERNAME",
+      "reference": "secret://flowise/username"
+    },
+    {
+      "key": "FLOWISE_PASSWORD",
+      "reference": "secret://flowise/password"
+    },
+    {
+      "key": "OPENAI_API_KEY",
+      "reference": "secret://openai/api-key"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
