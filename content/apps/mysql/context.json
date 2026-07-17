@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "mysql_user",
+    "mysql_database",
+    "mysql_port",
+    "data_directory"
+  ],
+  "secrets": [
+    {
+      "key": "MYSQL_ROOT_PASSWORD",
+      "reference": "secret://mysql/root-password"
+    },
+    {
+      "key": "MYSQL_PASSWORD",
+      "reference": "secret://mysql/password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
