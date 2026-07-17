@@ -1,0 +1,11 @@
+{
+  "index": 75,
+  "name": "Paperless-ngx",
+  "slug": "paperless-ngx",
+  "repo": "https://github.com/paperless-ngx/paperless-ngx",
+  "website": "https://docs.paperless-ngx.com",
+  "category": "Productivity",
+  "description": "Document management system that indexes, archives, searches, and organizes scanned records.",
+  "accent": "#17541F",
+  "simpleIconSlug": "paperlessngx"
+}
