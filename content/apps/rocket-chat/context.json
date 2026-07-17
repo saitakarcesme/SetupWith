@@ -1,0 +1,35 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "server_port",
+    "site_name",
+    "default_language"
+  ],
+  "secrets": [
+    {
+      "key": "MONGO_URL",
+      "reference": "secret://mongo/url"
+    },
+    {
+      "key": "MONGO_OPLOG_URL",
+      "reference": "secret://mongo/oplog-url"
+    },
+    {
+      "key": "ROOT_URL",
+      "reference": "secret://root/url"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
