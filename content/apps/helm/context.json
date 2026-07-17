@@ -1,0 +1,27 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "preferences": [
+    "default_namespace",
+    "repository_cache",
+    "plugins_directory"
+  ],
+  "secrets": [
+    {
+      "key": "HELM_REGISTRY_CONFIG",
+      "reference": "secret://helm/registry-config"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
