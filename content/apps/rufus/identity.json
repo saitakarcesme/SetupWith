@@ -1,0 +1,11 @@
+{
+  "index": 100,
+  "name": "Rufus",
+  "slug": "rufus",
+  "repo": "https://github.com/pbatard/rufus",
+  "website": "https://rufus.ie",
+  "category": "System Utilities",
+  "description": "Windows utility for creating bootable USB drives from operating system images.",
+  "accent": "#0A78C3",
+  "simpleIconSlug": "rufus"
+}
