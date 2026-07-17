@@ -1,0 +1,11 @@
+{
+  "index": 24,
+  "name": "ComfyUI",
+  "slug": "comfyui",
+  "repo": "https://github.com/Comfy-Org/ComfyUI",
+  "website": "https://www.comfy.org",
+  "category": "AI & ML",
+  "description": "Node-based generative AI interface for constructing advanced image and video workflows.",
+  "accent": "#000000",
+  "simpleIconSlug": null
+}
