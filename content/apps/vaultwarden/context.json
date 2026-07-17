@@ -1,0 +1,36 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "preferences": [
+    "domain_name",
+    "server_port",
+    "data_directory",
+    "signups_allowed"
+  ],
+  "secrets": [
+    {
+      "key": "ADMIN_TOKEN",
+      "reference": "secret://admin/token"
+    },
+    {
+      "key": "DATABASE_URL",
+      "reference": "secret://database/url"
+    },
+    {
+      "key": "SMTP_PASSWORD",
+      "reference": "secret://smtp/password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in"
+  ]
+}
