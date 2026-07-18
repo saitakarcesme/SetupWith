@@ -1,0 +1,16 @@
+{
+  "index": 241,
+  "name": "Pro Tools",
+  "slug": "pro-tools",
+  "source": {
+    "type": "website",
+    "url": "https://www.avid.com/pro-tools",
+    "installUrl": "https://my.avid.com/get/pro-tools-intro"
+  },
+  "website": "https://www.avid.com/pro-tools",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Avid's professional audio recording, editing, mixing, and production workstation.",
+  "accent": "#7ACB10",
+  "simpleIconSlug": "protools"
+}

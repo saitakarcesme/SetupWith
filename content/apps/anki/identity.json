@@ -1,0 +1,15 @@
+{
+  "index": 158,
+  "name": "Anki",
+  "slug": "anki",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/ankitects/anki"
+  },
+  "website": "https://apps.ankiweb.net",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Spaced-repetition flashcard application for durable learning and memorization.",
+  "accent": "#80C2EE",
+  "simpleIconSlug": "anki"
+}

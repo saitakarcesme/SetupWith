@@ -1,0 +1,15 @@
+{
+  "index": 115,
+  "name": "lazygit",
+  "slug": "lazygit",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/jesseduffield/lazygit"
+  },
+  "website": "https://github.com/jesseduffield/lazygit",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Terminal user interface for Git commands, branches, commits, rebases, and worktrees.",
+  "accent": "#00A4EF",
+  "simpleIconSlug": null
+}

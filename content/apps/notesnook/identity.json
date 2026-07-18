@@ -1,0 +1,15 @@
+{
+  "index": 161,
+  "name": "Notesnook",
+  "slug": "notesnook",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/streetwriters/notesnook"
+  },
+  "website": "https://notesnook.com",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Private open-source notes application with end-to-end encryption and cross-platform sync.",
+  "accent": "#2F6FED",
+  "simpleIconSlug": null
+}

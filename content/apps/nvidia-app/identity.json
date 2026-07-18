@@ -1,0 +1,16 @@
+{
+  "index": 260,
+  "name": "NVIDIA App",
+  "slug": "nvidia-app",
+  "source": {
+    "type": "website",
+    "url": "https://www.nvidia.com/en-us/software/nvidia-app/",
+    "installUrl": "https://www.nvidia.com/en-us/software/nvidia-app/"
+  },
+  "website": "https://www.nvidia.com/en-us/software/nvidia-app/",
+  "category": "Devices & Hardware",
+  "vertical": "hardware",
+  "description": "NVIDIA's Windows control, driver-update, game-optimization, recording, and overlay application.",
+  "accent": "#76B900",
+  "simpleIconSlug": "nvidia"
+}

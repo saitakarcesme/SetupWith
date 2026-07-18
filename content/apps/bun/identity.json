@@ -2,9 +2,13 @@
   "index": 16,
   "name": "Bun",
   "slug": "bun",
-  "repo": "https://github.com/oven-sh/bun",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/oven-sh/bun"
+  },
   "website": "https://bun.sh",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "Fast JavaScript runtime, package manager, bundler, and integrated testing toolkit.",
   "accent": "#FBF0DF",
   "simpleIconSlug": "bun"

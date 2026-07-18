@@ -2,9 +2,13 @@
   "index": 66,
   "name": "Nextcloud",
   "slug": "nextcloud",
-  "repo": "https://github.com/nextcloud/server",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/nextcloud/server"
+  },
   "website": "https://nextcloud.com",
   "category": "Productivity",
+  "vertical": "work",
   "description": "Self-hosted collaboration platform for files, calendars, contacts, communication, and office workflows.",
   "accent": "#0082C9",
   "simpleIconSlug": "nextcloud"

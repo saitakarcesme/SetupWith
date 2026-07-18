@@ -1,0 +1,16 @@
+{
+  "index": 252,
+  "name": "Mozilla Firefox",
+  "slug": "mozilla-firefox",
+  "source": {
+    "type": "website",
+    "url": "https://www.firefox.com/",
+    "installUrl": "https://www.mozilla.org/firefox/new/"
+  },
+  "website": "https://www.firefox.com/",
+  "category": "Browsers & Internet",
+  "vertical": "browsers",
+  "description": "Mozilla's independent open-source browser with strong privacy controls and add-ons.",
+  "accent": "#FF7139",
+  "simpleIconSlug": "firefoxbrowser"
+}

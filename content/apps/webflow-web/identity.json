@@ -1,0 +1,16 @@
+{
+  "index": 287,
+  "name": "Webflow",
+  "slug": "webflow-web",
+  "source": {
+    "type": "website",
+    "url": "https://webflow.com/",
+    "installUrl": "https://webflow.com/"
+  },
+  "website": "https://webflow.com/",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Visual website builder, CMS, and interaction platform.",
+  "accent": "#4353FF",
+  "simpleIconSlug": "webflow"
+}

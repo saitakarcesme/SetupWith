@@ -2,9 +2,13 @@
   "index": 79,
   "name": "Inkscape",
   "slug": "inkscape",
-  "repo": "https://github.com/inkscape/inkscape",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/inkscape/inkscape"
+  },
   "website": "https://inkscape.org",
   "category": "Design & Media",
+  "vertical": "creative",
   "description": "Professional vector graphics editor using SVG as its primary native format.",
   "accent": "#000000",
   "simpleIconSlug": "inkscape"

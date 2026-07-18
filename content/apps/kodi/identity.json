@@ -1,0 +1,16 @@
+{
+  "index": 227,
+  "name": "Kodi",
+  "slug": "kodi",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/xbmc/xbmc",
+    "installUrl": "https://kodi.tv/download/"
+  },
+  "website": "https://kodi.tv/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Open-source ten-foot media center for local libraries, add-ons, and network playback.",
+  "accent": "#17B2E7",
+  "simpleIconSlug": "kodi"
+}

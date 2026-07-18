@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true
+  },
+  "preferences": [
+    "project_library",
+    "media_storage",
+    "gpu_processing",
+    "audio_device"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

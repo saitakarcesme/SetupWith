@@ -1,0 +1,15 @@
+{
+  "index": 172,
+  "name": "MuseScore Studio",
+  "slug": "musescore-studio",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/musescore/MuseScore"
+  },
+  "website": "https://musescore.org",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Music notation application for composing, arranging, engraving, and playing scores.",
+  "accent": "#1A70B8",
+  "simpleIconSlug": null
+}

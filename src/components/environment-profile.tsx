@@ -2,63 +2,20 @@
 
 import { useState, useSyncExternalStore, type FormEvent } from "react";
 import { Check, Laptop, Save } from "lucide-react";
-
-interface EnvironmentValues {
-  operatingSystem: string;
-  architecture: string;
-  shell: string;
-  packageManager: string;
-  editor: string;
-  projectsDirectory: string;
-}
-
-const defaultValues: EnvironmentValues = {
-  operatingSystem: "auto",
-  architecture: "auto",
-  shell: "zsh",
-  packageManager: "auto",
-  editor: "Visual Studio Code",
-  projectsDirectory: "~/Developer",
-};
-
-const storageKey = "setupwith:environment-profile:v1";
-const storageEvent = "setupwith:environment-profile-change";
-
-function subscribe(onStoreChange: () => void) {
-  function handleStorage(event: StorageEvent) {
-    if (event.key === null || event.key === storageKey) onStoreChange();
-  }
-
-  window.addEventListener("storage", handleStorage);
-  window.addEventListener(storageEvent, onStoreChange);
-  return () => {
-    window.removeEventListener("storage", handleStorage);
-    window.removeEventListener(storageEvent, onStoreChange);
-  };
-}
-
-function getSnapshot() {
-  try {
-    return window.localStorage.getItem(storageKey);
-  } catch {
-    return null;
-  }
-}
-
-function parseProfile(snapshot: string | null): EnvironmentValues {
-  if (!snapshot) return defaultValues;
-  try {
-    return { ...defaultValues, ...JSON.parse(snapshot) } as EnvironmentValues;
-  } catch {
-    return defaultValues;
-  }
-}
+import {
+  environmentProfileStorageEvent,
+  environmentProfileStorageKey,
+  getEnvironmentProfileSnapshot,
+  parseEnvironmentProfile,
+  subscribeToEnvironmentProfile,
+  type EnvironmentValues,
+} from "@/lib/environment-profile";
 
 export function EnvironmentProfile() {
-  const storedProfile = useSyncExternalStore(subscribe, getSnapshot, () => null);
+  const storedProfile = useSyncExternalStore(subscribeToEnvironmentProfile, getEnvironmentProfileSnapshot, () => null);
   const [draftValues, setDraftValues] = useState<EnvironmentValues | null>(null);
   const [saved, setSaved] = useState(false);
-  const values = draftValues ?? parseProfile(storedProfile);
+  const values = draftValues ?? parseEnvironmentProfile(storedProfile);
 
   function updateValue(key: keyof EnvironmentValues, value: string) {
     setDraftValues((current) => ({ ...(current ?? values), [key]: value }));
@@ -67,8 +24,8 @@ export function EnvironmentProfile() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    window.localStorage.setItem(storageKey, JSON.stringify(values));
-    window.dispatchEvent(new Event(storageEvent));
+    window.localStorage.setItem(environmentProfileStorageKey, JSON.stringify(values));
+    window.dispatchEvent(new Event(environmentProfileStorageEvent));
     setDraftValues(null);
     setSaved(true);
   }

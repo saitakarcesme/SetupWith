@@ -1,0 +1,15 @@
+{
+  "index": 138,
+  "name": "TimescaleDB",
+  "slug": "timescaledb",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/timescale/timescaledb"
+  },
+  "website": "https://www.timescale.com",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "PostgreSQL extension for scalable time-series data, analytics, and compression.",
+  "accent": "#FDB515",
+  "simpleIconSlug": "timescale"
+}

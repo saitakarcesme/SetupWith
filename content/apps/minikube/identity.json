@@ -2,9 +2,13 @@
   "index": 56,
   "name": "Minikube",
   "slug": "minikube",
-  "repo": "https://github.com/kubernetes/minikube",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/kubernetes/minikube"
+  },
   "website": "https://minikube.sigs.k8s.io",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Local Kubernetes environment supporting multiple drivers, runtimes, addons, and cluster profiles.",
   "accent": "#326CE5",
   "simpleIconSlug": "minikube"

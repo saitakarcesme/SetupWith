@@ -1,0 +1,15 @@
+{
+  "index": 110,
+  "name": "fish",
+  "slug": "fish-shell",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/fish-shell/fish-shell"
+  },
+  "website": "https://fishshell.com",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Friendly interactive shell with autosuggestions, syntax highlighting, and discoverable completions.",
+  "accent": "#34C534",
+  "simpleIconSlug": "fishshell"
+}

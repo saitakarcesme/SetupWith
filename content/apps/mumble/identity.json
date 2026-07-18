@@ -1,0 +1,15 @@
+{
+  "index": 186,
+  "name": "Mumble",
+  "slug": "mumble",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mumble-voip/mumble"
+  },
+  "website": "https://www.mumble.info",
+  "category": "Communication",
+  "vertical": "social",
+  "description": "Low-latency encrypted voice-chat client and server with positional audio support.",
+  "accent": "#5B5BE5",
+  "simpleIconSlug": "mumble"
+}

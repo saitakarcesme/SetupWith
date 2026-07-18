@@ -1,0 +1,15 @@
+{
+  "index": 111,
+  "name": "Oh My Zsh",
+  "slug": "oh-my-zsh",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/ohmyzsh/ohmyzsh"
+  },
+  "website": "https://ohmyz.sh",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Community framework for managing Zsh configuration, themes, plug-ins, and helpers.",
+  "accent": "#1A2C34",
+  "simpleIconSlug": null
+}

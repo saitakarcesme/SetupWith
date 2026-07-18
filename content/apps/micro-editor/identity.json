@@ -1,0 +1,15 @@
+{
+  "index": 105,
+  "name": "Micro",
+  "slug": "micro-editor",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/zyedidia/micro"
+  },
+  "website": "https://micro-editor.github.io",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Approachable terminal text editor with modern keybindings, mouse support, and plug-ins.",
+  "accent": "#2EB7E5",
+  "simpleIconSlug": null
+}

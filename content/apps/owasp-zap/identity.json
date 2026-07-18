@@ -1,0 +1,15 @@
+{
+  "index": 181,
+  "name": "OWASP ZAP",
+  "slug": "owasp-zap",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/zaproxy/zaproxy"
+  },
+  "website": "https://www.zaproxy.org",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Web application security testing proxy and scanner maintained by the OWASP community.",
+  "accent": "#00549E",
+  "simpleIconSlug": "zap"
+}

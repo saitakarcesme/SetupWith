@@ -2,9 +2,13 @@
   "index": 4,
   "name": "Neovim",
   "slug": "neovim",
-  "repo": "https://github.com/neovim/neovim",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/neovim/neovim"
+  },
   "website": "https://neovim.io",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "Extensible terminal text editor emphasizing modern APIs, plugins, and usability.",
   "accent": "#57A143",
   "simpleIconSlug": "neovim"

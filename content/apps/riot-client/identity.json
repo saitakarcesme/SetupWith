@@ -1,0 +1,16 @@
+{
+  "index": 203,
+  "name": "Riot Client",
+  "slug": "riot-client",
+  "source": {
+    "type": "website",
+    "url": "https://www.riotgames.com/",
+    "installUrl": "https://www.riotgames.com/en/download"
+  },
+  "website": "https://www.riotgames.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Riot Games launcher for League of Legends, VALORANT, and related titles.",
+  "accent": "#D32936",
+  "simpleIconSlug": "riotgames"
+}

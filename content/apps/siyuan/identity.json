@@ -1,0 +1,15 @@
+{
+  "index": 160,
+  "name": "SiYuan",
+  "slug": "siyuan",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/siyuan-note/siyuan"
+  },
+  "website": "https://b3log.org/siyuan/en/",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Privacy-first personal knowledge system with block references, Markdown, and local workspaces.",
+  "accent": "#D23F31",
+  "simpleIconSlug": "siyuan"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 237,
+  "name": "Figma",
+  "slug": "figma-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.figma.com/",
+    "installUrl": "https://www.figma.com/downloads/"
+  },
+  "website": "https://www.figma.com/",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Collaborative interface design and prototyping through desktop and web clients.",
+  "accent": "#A259FF",
+  "simpleIconSlug": "figma"
+}

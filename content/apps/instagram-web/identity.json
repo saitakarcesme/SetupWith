@@ -1,0 +1,16 @@
+{
+  "index": 248,
+  "name": "Instagram",
+  "slug": "instagram-web",
+  "source": {
+    "type": "website",
+    "url": "https://www.instagram.com/",
+    "installUrl": "https://www.instagram.com/"
+  },
+  "website": "https://www.instagram.com/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "Instagram's official web application for feeds, messages, media, and publishing.",
+  "accent": "#E4405F",
+  "simpleIconSlug": "instagram"
+}

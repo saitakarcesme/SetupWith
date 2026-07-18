@@ -1,0 +1,15 @@
+{
+  "index": 128,
+  "name": "AnythingLLM",
+  "slug": "anythingllm",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/Mintplex-Labs/anything-llm"
+  },
+  "website": "https://anythingllm.com",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "Desktop and self-hosted workspace for chatting with documents using local or hosted models.",
+  "accent": "#4F46E5",
+  "simpleIconSlug": null
+}

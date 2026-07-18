@@ -1,0 +1,15 @@
+{
+  "index": 200,
+  "name": "LocalSend",
+  "slug": "localsend",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/localsend/localsend"
+  },
+  "website": "https://localsend.org",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Private local-network file and text sharing app with no account or external server.",
+  "accent": "#28A745",
+  "simpleIconSlug": "localsend"
+}

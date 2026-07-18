@@ -1,0 +1,15 @@
+{
+  "index": 108,
+  "name": "kitty",
+  "slug": "kitty-terminal",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/kovidgoyal/kitty"
+  },
+  "website": "https://sw.kovidgoyal.net/kitty/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Fast GPU-based terminal emulator with layouts, remote control, and extensible kittens.",
+  "accent": "#000000",
+  "simpleIconSlug": null
+}

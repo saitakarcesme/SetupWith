@@ -1,0 +1,16 @@
+{
+  "index": 225,
+  "name": "VLC media player",
+  "slug": "vlc-media-player",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/videolan/vlc",
+    "installUrl": "https://www.videolan.org/vlc/"
+  },
+  "website": "https://www.videolan.org/vlc/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Open-source local and network media player supporting a broad codec range.",
+  "accent": "#FF8800",
+  "simpleIconSlug": "vlcmediaplayer"
+}

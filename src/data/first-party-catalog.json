@@ -1,0 +1,37 @@
+[
+  {
+    "index": 301,
+    "name": "SetupWith",
+    "slug": "setupwith",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/saitakarcesme/SetupWith"
+    },
+    "website": "https://setupwith.vercel.app",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Local-first catalog that turns app-specific guidance and approved machine context into reviewable Codex setup prompts.",
+    "accent": "#0A0A0A",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": [
+      "projects_directory",
+      "preferred_package_manager",
+      "local_port",
+      "bind_address"
+    ],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "delivery": "source",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Clone the official SetupWith repository into the approved projects directory, inspect its lockfile and package scripts, require Node.js 20.9 or newer, install dependencies with npm from the lockfile, run the repository checks, and start the Next.js development server on 127.0.0.1 using an available local port.",
+      "preserve": "any existing SetupWith checkout, uncommitted work, environment files, generated content, browser profile and vault data, saved package drafts, and processes already using the requested port",
+      "safety": "Do not expose the server to the LAN or public internet, add authentication services, overwrite environment files, alter firewall rules, or print private profile and vault data. Explain that anything the user explicitly copies into Codex leaves SetupWith's local browser boundary and is then governed by the destination Codex service's data controls.",
+      "verify": "Run npm run check, report the exact checkout and configuration paths, open the local home, app catalog, package builder, and profile pages on 127.0.0.1, check for browser and terminal errors, and provide a rollback that stops only the new server and preserves all repository and browser data."
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "index": 179,
+  "name": "CrowdSec",
+  "slug": "crowdsec",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/crowdsecurity/crowdsec"
+  },
+  "website": "https://www.crowdsec.net",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Collaborative intrusion-detection engine that analyzes behavior and shares threat intelligence.",
+  "accent": "#6A45FF",
+  "simpleIconSlug": null
+}

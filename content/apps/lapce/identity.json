@@ -1,0 +1,15 @@
+{
+  "index": 106,
+  "name": "Lapce",
+  "slug": "lapce",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/lapce/lapce"
+  },
+  "website": "https://lapce.dev",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Native Rust code editor focused on speed, remote development, and built-in language support.",
+  "accent": "#3B82F6",
+  "simpleIconSlug": "lapce"
+}

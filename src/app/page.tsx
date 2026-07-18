@@ -1,24 +1,48 @@
 import Link from "next/link";
-import { ArrowRight, Check, KeyRound, ShieldCheck, Terminal, WandSparkles } from "lucide-react";
+import { ArrowRight, Check, GitBranch, HardDrive, KeyRound, ShieldCheck, Terminal, WandSparkles } from "lucide-react";
 import { AppCard } from "@/components/app-card";
 import { AppLogo } from "@/components/app-logo";
 import { HeroSearch } from "@/components/hero-search";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { apps, categories } from "@/data/apps";
+import { TypingHeadline } from "@/components/typing-headline";
+import { apps, bundles, categories } from "@/data/apps";
 
 const featuredSlugs = [
   "visual-studio-code",
   "ollama",
+  "blender",
+  "steam",
+  "spotify",
+  "discord",
+  "google-chrome",
+  "notion-desktop",
+];
+
+const tickerSlugs = [
+  "visual-studio-code",
+  "ollama",
+  "steam",
+  "epic-games-store",
+  "spotify",
+  "apple-music",
+  "netflix",
+  "discord",
+  "google-chrome",
+  "notion-desktop",
+  "blender",
   "docker-engine",
   "postgresql",
-  "nextcloud",
-  "blender",
   "home-assistant",
-  "n8n",
+  "obs-studio",
+  "vlc-media-player",
 ];
 
 const featuredApps = featuredSlugs
+  .map((slug) => apps.find((app) => app.slug === slug))
+  .filter((app): app is (typeof apps)[number] => Boolean(app));
+
+const tickerApps = tickerSlugs
   .map((slug) => apps.find((app) => app.slug === slug))
   .filter((app): app is (typeof apps)[number] => Boolean(app));
 
@@ -33,17 +57,17 @@ export default function Home() {
             <div className="hero-kicker">
               <span>OPEN SETUP CATALOG</span>
               <span className="hero-kicker-line" />
-              <span>100 APPS</span>
-              <span>V1.0</span>
+              <span>{apps.length} APPS</span>
+              <span>V2.0</span>
             </div>
-            <h1>
+            <TypingHeadline>
               Set up anything.
               <br />
               <span>With your context.</span>
-            </h1>
+            </TypingHeadline>
             <p className="hero-lede">
-              Purpose-built Codex prompts for the software you actually use—matched to your machine,
-              preferences, and approved secret references.
+              Purpose-built Codex prompts for the apps you actually use—from developer tools and local AI
+              to games, media, work, and devices—matched to your machine and explicit approvals.
             </p>
             <HeroSearch apps={apps.map(({ name, slug, category }) => ({ name, slug, category }))} />
             <div className="hero-footnote">
@@ -52,12 +76,12 @@ export default function Home() {
               <span><Check size={13} aria-hidden="true" /> Review before run</span>
             </div>
           </div>
-          <div className="hero-side-label" aria-hidden="true">CODEX-READY / 001–100</div>
+          <div className="hero-side-label" aria-hidden="true">CODEX-READY / 001–{apps.length}</div>
         </section>
 
-        <section className="logo-ticker" aria-label="Featured software">
+        <section className="logo-ticker" aria-label="Featured apps">
           <div className="shell logo-ticker-inner">
-            {apps.slice(0, 16).map((app) => (
+            {tickerApps.map((app) => (
               <Link key={app.slug} href={`/${app.slug}`} title={app.name}>
                 <AppLogo app={app} size={26} />
                 <span>{app.name}</span>
@@ -74,7 +98,7 @@ export default function Home() {
             </div>
             <div className="section-heading-aside">
               <p>Every page carries a setup path written for that product—not a prompt with the logo swapped.</p>
-              <Link href="/apps">Explore all 100 <ArrowRight size={15} aria-hidden="true" /></Link>
+              <Link href="/apps">Explore all {apps.length} <ArrowRight size={15} aria-hidden="true" /></Link>
             </div>
           </div>
           <div className="featured-grid">
@@ -101,7 +125,7 @@ export default function Home() {
               <div className="terminal-app-row">
                 <AppLogo app={apps.find((app) => app.slug === "github-cli") ?? apps[0]} size={42} />
                 <div><span>TARGET</span><strong>GitHub CLI</strong></div>
-                <small>03 / 100</small>
+                <small>03 / {apps.length}</small>
               </div>
               <div className="terminal-rows">
                 <div><span>OS</span><strong>Detect at run time</strong><em>automatic</em></div>
@@ -110,6 +134,31 @@ export default function Home() {
                 <div><span>Destructive steps</span><strong>Ask first</strong><em>policy</em></div>
               </div>
               <div className="terminal-command"><Terminal size={16} aria-hidden="true" /><code>Ready to copy a product-specific Codex prompt</code></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="local-install-section">
+          <div className="shell local-install-grid">
+            <div className="local-install-copy">
+              <span className="eyebrow inverse">LOCAL MODE / YOUR MACHINE</span>
+              <h2>Own the whole prompt-building loop.</h2>
+              <p>
+                Install SetupWith from its open-source repository when an automation needs personal machine
+                context. Build and review the prompt on localhost, keep secret values out of it, then copy only
+                the exact instructions you approve into Codex.
+              </p>
+              <div className="local-install-actions">
+                <Link href="/setupwith">Install SetupWith with Codex <ArrowRight size={16} aria-hidden="true" /></Link>
+                <a href="https://github.com/saitakarcesme/SetupWith" target="_blank" rel="noreferrer">
+                  <GitBranch size={15} aria-hidden="true" /> View source
+                </a>
+              </div>
+            </div>
+            <div className="local-install-steps" aria-label="Local SetupWith workflow">
+              <article><span>01</span><HardDrive size={20} aria-hidden="true" /><strong>Run on localhost</strong><p>Clone the official repository and bind it to 127.0.0.1.</p></article>
+              <article><span>02</span><KeyRound size={20} aria-hidden="true" /><strong>Review local context</strong><p>Non-secret fields are visible; credential values remain outside prompts.</p></article>
+              <article><span>03</span><Terminal size={20} aria-hidden="true" /><strong>Hand off deliberately</strong><p>Paste the approved prompt into Codex and keep every privileged step gated.</p></article>
             </div>
           </div>
         </section>
@@ -123,8 +172,8 @@ export default function Home() {
             <article>
               <span className="process-number">01</span>
               <WandSparkles size={25} strokeWidth={1.3} aria-hidden="true" />
-              <h3>Choose the software</h3>
-              <p>Pick an official project from the catalog and review exactly what its setup changes.</p>
+              <h3>Choose the app</h3>
+              <p>Pick a verified official source and review exactly what Codex may download or change.</p>
             </article>
             <article>
               <span className="process-number">02</span>
@@ -171,8 +220,8 @@ export default function Home() {
           </div>
           <div className="trust-copy">
             <p>
-              SetupWith prompts ask before admin access, overwrites, service changes, exposed ports, and browser
-              sign-in. Secret values are represented as references, not pasted into prompts.
+              SetupWith prompts stop before sign-in, MFA, payment, large downloads, admin access, drivers,
+              anti-cheat, services, firewall changes, and restarts. Secret values stay behind references.
             </p>
             <Link href="/security">Read the security model <ArrowRight size={15} aria-hidden="true" /></Link>
           </div>
@@ -180,7 +229,7 @@ export default function Home() {
 
         <section className="final-cta">
           <div className="shell final-cta-inner">
-            <p>100 official projects. 100 tailored paths.</p>
+            <p>{apps.length} official app sources. 50 extra open-source projects. {bundles.length} coordinated bundles.</p>
             <h2>What should Codex set up next?</h2>
             <Link href="/apps">Browse the catalog <ArrowRight size={18} aria-hidden="true" /></Link>
           </div>

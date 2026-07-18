@@ -1,0 +1,15 @@
+{
+  "index": 197,
+  "name": "balenaEtcher",
+  "slug": "balena-etcher",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/balena-io/etcher"
+  },
+  "website": "https://etcher.balena.io",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Cross-platform application for safely flashing operating-system images to removable drives.",
+  "accent": "#FF3C58",
+  "simpleIconSlug": null
+}

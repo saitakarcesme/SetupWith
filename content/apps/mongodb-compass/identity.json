@@ -1,0 +1,15 @@
+{
+  "index": 135,
+  "name": "MongoDB Compass",
+  "slug": "mongodb-compass",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mongodb-js/compass"
+  },
+  "website": "https://www.mongodb.com/products/tools/compass",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Official graphical interface for exploring, querying, and analyzing MongoDB deployments.",
+  "accent": "#47A248",
+  "simpleIconSlug": "mongodb"
+}

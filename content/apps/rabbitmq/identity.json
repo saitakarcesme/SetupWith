@@ -1,0 +1,15 @@
+{
+  "index": 140,
+  "name": "RabbitMQ",
+  "slug": "rabbitmq",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/rabbitmq/rabbitmq-server"
+  },
+  "website": "https://www.rabbitmq.com",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Reliable message broker implementing AMQP and supporting queues, streams, and routing.",
+  "accent": "#FF6600",
+  "simpleIconSlug": "rabbitmq"
+}

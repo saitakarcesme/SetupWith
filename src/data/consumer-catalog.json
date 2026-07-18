@@ -1,0 +1,3888 @@
+[
+  {
+    "index": 201,
+    "name": "Steam",
+    "slug": "steam",
+    "source": {
+      "type": "website",
+      "url": "https://store.steampowered.com/about/",
+      "installUrl": "https://store.steampowered.com/about/"
+    },
+    "website": "https://store.steampowered.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Valve's cross-platform game store, library, community, and update client.",
+    "accent": "#1B2838",
+    "simpleIconSlug": "steam",
+    "secrets": [],
+    "config": [
+      "library_location",
+      "download_region",
+      "bandwidth_limit",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download only the signed Steam client from Valve for the detected OS; report installer and expected client size before running it, and do not download any game yet.",
+      "preserve": "existing Steam library folders, userdata, screenshots, controller layouts, Workshop content, and bandwidth settings",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, age verification, purchases or subscriptions. Never install a game, anti-cheat or kernel driver, firewall rule, autostart item, or reboot without explicit approval; disclose every large download first.",
+      "verify": "Launch the client to the signed-out welcome screen, confirm its version and library path, then close it without signing in or starting content downloads."
+    }
+  },
+  {
+    "index": 202,
+    "name": "Epic Games Store",
+    "slug": "epic-games-store",
+    "source": {
+      "type": "website",
+      "url": "https://store.epicgames.com/",
+      "installUrl": "https://store.epicgames.com/en-US/download"
+    },
+    "website": "https://store.epicgames.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Epic's desktop storefront and library client for PC and Mac games.",
+    "accent": "#2A2A2A",
+    "simpleIconSlug": "epicgames",
+    "secrets": [],
+    "config": [
+      "library_location",
+      "download_throttling",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Fetch the Epic Games Launcher only from Epic's official download page and install the client without acquiring or installing a game.",
+      "preserve": "existing manifests, Vault Cache, game libraries, cloud-save settings, and launcher preferences",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age checks, purchases, subscriptions, or license acceptance for a game. Easy Anti-Cheat, kernel components, firewall changes, autostart, reboots, and large game downloads each require explicit approval.",
+      "verify": "Open the launcher to its signed-out screen, confirm version and install location, and verify that no game payload or anti-cheat component was queued."
+    }
+  },
+  {
+    "index": 203,
+    "name": "Riot Client",
+    "slug": "riot-client",
+    "source": {
+      "type": "website",
+      "url": "https://www.riotgames.com/",
+      "installUrl": "https://www.riotgames.com/en/download"
+    },
+    "website": "https://www.riotgames.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Riot Games launcher for League of Legends, VALORANT, and related titles.",
+    "accent": "#D32936",
+    "simpleIconSlug": "riotgames",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "update_policy",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use Riot's official installer for the requested title only to place the Riot Client; do not continue into a game or Vanguard installation automatically.",
+      "preserve": "existing Riot game folders, repair manifests, logs, client preferences, and region settings",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, purchases, subscriptions, and game EULAs. Riot Vanguard is a kernel-level anti-cheat: installing it, changing firewall or autostart settings, downloading a large game, or rebooting always needs explicit approval.",
+      "verify": "Confirm the signed Riot Client opens and reports its version, then stop at the signed-out state with no Vanguard service or game download started."
+    }
+  },
+  {
+    "index": 204,
+    "name": "Battle.net",
+    "slug": "battle-net",
+    "source": {
+      "type": "website",
+      "url": "https://www.blizzard.com/apps/battle.net/desktop",
+      "installUrl": "https://download.battle.net/en-us/desktop"
+    },
+    "website": "https://www.blizzard.com/apps/battle.net/desktop",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Blizzard's launcher, social client, and updater for Battle.net games.",
+    "accent": "#148EFF",
+    "simpleIconSlug": "battledotnet",
+    "secrets": [],
+    "config": [
+      "game_install_location",
+      "download_limit",
+      "update_policy",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download the Battle.net desktop client from Blizzard's official endpoint and install only the launcher shell.",
+      "preserve": "existing Blizzard game folders, agent data, screenshots, bandwidth limits, and update preferences",
+      "safety": "Stop before Battle.net sign-in, MFA or CAPTCHA, age verification, purchases or subscriptions. Game EULAs, anti-cheat or kernel components, firewall rules, autostart, reboots, and large title downloads require explicit approval.",
+      "verify": "Launch to the login screen, record the client version, and confirm that no game scan, repair, or content download began."
+    }
+  },
+  {
+    "index": 205,
+    "name": "EA app",
+    "slug": "ea-app",
+    "source": {
+      "type": "website",
+      "url": "https://www.ea.com/ea-app",
+      "installUrl": "https://www.ea.com/ea-app"
+    },
+    "website": "https://www.ea.com/ea-app",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Electronic Arts' desktop library, store, updater, and subscription client.",
+    "accent": "#FF4747",
+    "simpleIconSlug": "ea",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "download_limit",
+      "background_updates",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use EA's signed platform installer and install only the EA app, leaving game discovery and downloads disabled until reviewed.",
+      "preserve": "existing EA game libraries, saves, cache, download limits, and application preferences",
+      "safety": "Stop before EA sign-in, MFA or CAPTCHA, age checks, EA Play subscriptions, purchases, or game license prompts. EA AntiCheat or any kernel driver, firewall/autostart change, reboot, or large download needs explicit approval.",
+      "verify": "Open the signed-out EA app, confirm the build and install directory, and verify that no game or anti-cheat payload is scheduled."
+    }
+  },
+  {
+    "index": 206,
+    "name": "Ubisoft Connect",
+    "slug": "ubisoft-connect",
+    "source": {
+      "type": "website",
+      "url": "https://www.ubisoft.com/en-US/ubisoft-connect",
+      "installUrl": "https://ubisoftconnect.com/en-US/"
+    },
+    "website": "https://www.ubisoft.com/en-US/ubisoft-connect",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Ubisoft's Windows game library, rewards, store, and update client.",
+    "accent": "#0070FF",
+    "simpleIconSlug": "ubisoft",
+    "secrets": [],
+    "config": [
+      "game_install_location",
+      "download_limit",
+      "overlay",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Install the signed Ubisoft Connect client from Ubisoft and do not discover, repair, or download games automatically.",
+      "preserve": "existing Ubisoft game folders, cloud saves, cache, overlay state, and bandwidth settings",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, Ubisoft+ subscription, purchases, or EULAs. Anti-cheat or kernel drivers, firewall/autostart changes, reboots, and large downloads require explicit approval.",
+      "verify": "Confirm the launcher opens to its login screen, reports a version, and has not started any title or prerequisite installation."
+    }
+  },
+  {
+    "index": 207,
+    "name": "GOG GALAXY",
+    "slug": "gog-galaxy",
+    "source": {
+      "type": "website",
+      "url": "https://www.gog.com/galaxy",
+      "installUrl": "https://www.gog.com/galaxy"
+    },
+    "website": "https://www.gog.com/galaxy",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "GOG's optional library client for DRM-free games and connected platforms.",
+    "accent": "#86328A",
+    "simpleIconSlug": "gogdotcom",
+    "secrets": [],
+    "config": [
+      "game_install_location",
+      "auto_updates",
+      "platform_integrations",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download and install GOG GALAXY from GOG's official site without linking accounts or importing game libraries.",
+      "preserve": "existing GOG game folders, local installers, cloud saves, integrations, and update preferences",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, purchases, subscriptions, or third-party account linking. Ask before firewall/autostart changes, any driver or kernel component, reboot, or large game download.",
+      "verify": "Launch to the signed-out screen, confirm the version and chosen library location, and ensure integrations and downloads remain inactive."
+    }
+  },
+  {
+    "index": 208,
+    "name": "Xbox app",
+    "slug": "xbox-app",
+    "source": {
+      "type": "microsoft-store",
+      "url": "https://apps.microsoft.com/detail/9MV0B5HZVK9Z",
+      "installUrl": "https://apps.microsoft.com/detail/9MV0B5HZVK9Z"
+    },
+    "website": "https://www.xbox.com/apps/xbox-app-on-pc",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Microsoft's Windows client for PC Game Pass, Xbox social features, and game libraries.",
+    "accent": "#107C10",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": [
+      "game_install_drive",
+      "download_limit",
+      "offline_permissions",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "store",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Open the verified Microsoft Store listing and install only the Xbox app and mandatory Microsoft gaming services after showing the user exactly what will be added.",
+      "preserve": "existing Xbox game folders, Gaming Services state, offline permissions, captures, and download settings",
+      "safety": "Stop before Microsoft sign-in, MFA or CAPTCHA, age verification, Game Pass subscription, purchases, or payment. Gaming Services, anti-cheat or kernel drivers, firewall/autostart changes, reboots, and large game downloads require explicit approval.",
+      "verify": "Confirm the Store reports the Xbox app installed, open it to the signed-out state, and verify that no game or optional service download remains queued."
+    }
+  },
+  {
+    "index": 209,
+    "name": "itch.io app",
+    "slug": "itch-io-app",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/itchio/itch",
+      "installUrl": "https://itch.io/app"
+    },
+    "website": "https://itch.io/app",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Open-source desktop client for browsing, installing, and sandboxing itch.io games.",
+    "accent": "#FA5C5C",
+    "simpleIconSlug": "itchdotio",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "sandbox_mode",
+      "download_limit",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use the signed build linked by itch.io or its official GitHub project and install only the client, not bundled or featured games.",
+      "preserve": "existing cave database, game installs, sandbox choices, downloads, and user settings",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, purchases, payments, or creator support. Ask before sandbox exceptions, firewall/autostart changes, any driver or kernel component, reboot, or large game download.",
+      "verify": "Open the client to a signed-out view, confirm its build and install root, and ensure no game download or executable launch occurred."
+    }
+  },
+  {
+    "index": 210,
+    "name": "Heroic Games Launcher",
+    "slug": "heroic-games-launcher",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+      "installUrl": "https://heroicgameslauncher.com/downloads"
+    },
+    "website": "https://heroicgameslauncher.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Open-source launcher for Epic, GOG, and Amazon game libraries.",
+    "accent": "#5D4BA8",
+    "simpleIconSlug": "heroicgameslauncher",
+    "secrets": [],
+    "config": [
+      "library_location",
+      "wine_prefix_location",
+      "download_limit",
+      "auto_updates"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install a checksum-verifiable release from Heroic's official project and do not add Wine/Proton runners or game payloads yet.",
+      "preserve": "existing Heroic config, installed game manifests, Wine prefixes, cloud saves, and runner choices",
+      "safety": "Stop before Epic, GOG, or Amazon sign-in, MFA or CAPTCHA, age verification, purchases, or account linking. Runners, anti-cheat/kernel components, firewall/autostart changes, reboots, and large downloads require approval.",
+      "verify": "Check the application version and signature or checksum, open the empty signed-out library, and confirm that no runner or game was downloaded."
+    }
+  },
+  {
+    "index": 211,
+    "name": "Lutris",
+    "slug": "lutris",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/lutris/lutris",
+      "installUrl": "https://lutris.net/downloads"
+    },
+    "website": "https://lutris.net/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Open-source Linux game manager for native titles, emulators, Wine, and stores.",
+    "accent": "#FF9900",
+    "simpleIconSlug": "lutris",
+    "secrets": [],
+    "config": [
+      "game_library_location",
+      "runner_location",
+      "wine_prefix_location",
+      "runtime_updates"
+    ],
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use Lutris' documented distribution package source and install the manager only; inventory GPU drivers and runtimes without changing them.",
+      "preserve": "existing Lutris database, game directories, Wine prefixes, runners, scripts, and environment overrides",
+      "safety": "Stop before any store sign-in, MFA or CAPTCHA, age check, purchase, subscription, or game script. GPU/32-bit driver changes, kernel modules, firewall/autostart, reboots, runners, and large downloads need approval.",
+      "verify": "Run Lutris' version check and open its library without executing installers, changing graphics drivers, or downloading a runner."
+    }
+  },
+  {
+    "index": 212,
+    "name": "Modrinth App",
+    "slug": "modrinth-app",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/modrinth/code",
+      "installUrl": "https://modrinth.com/app"
+    },
+    "website": "https://modrinth.com/app",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Open-source launcher and mod manager for Minecraft instances and modpacks.",
+    "accent": "#00AF5C",
+    "simpleIconSlug": "modrinth",
+    "secrets": [],
+    "config": [
+      "instance_location",
+      "java_runtime",
+      "memory_limit",
+      "concurrent_downloads"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install a signed official Modrinth App release and leave Minecraft, Java runtimes, loaders, mods, and modpacks uninstalled until selected.",
+      "preserve": "existing instances, worlds, screenshots, Java paths, memory limits, modpacks, and authentication state",
+      "safety": "Stop before Microsoft sign-in, MFA or CAPTCHA, age verification, purchases, or account linking. Java/runtime installs, firewall/autostart changes, drivers or kernel components, reboots, and large modpack downloads require approval.",
+      "verify": "Open the app to the signed-out library, report its version and instance directory, and verify that no runtime, modpack, or game asset was fetched."
+    }
+  },
+  {
+    "index": 213,
+    "name": "CurseForge",
+    "slug": "curseforge-app",
+    "source": {
+      "type": "website",
+      "url": "https://www.curseforge.com/",
+      "installUrl": "https://www.curseforge.com/download/app"
+    },
+    "website": "https://www.curseforge.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Desktop manager for discovering and maintaining game mods and modpacks.",
+    "accent": "#F16436",
+    "simpleIconSlug": "curseforge",
+    "secrets": [],
+    "config": [
+      "modding_folders",
+      "game_detection",
+      "auto_updates",
+      "download_limit"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download CurseForge from its official page, present standalone versus Overwolf packaging where offered, and install only the chosen client.",
+      "preserve": "existing game detection paths, mod folders, profiles, backups, and update policies",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, purchases, subscriptions, or third-party bundle acceptance. Ask before firewall/autostart, drivers/kernel components, reboot, game scanning, or large modpack downloads.",
+      "verify": "Launch the client, confirm its version and package variant, and verify no game scan, mod update, or bundled application was started."
+    }
+  },
+  {
+    "index": 214,
+    "name": "NVIDIA GeForce NOW",
+    "slug": "nvidia-geforce-now",
+    "source": {
+      "type": "website",
+      "url": "https://www.nvidia.com/geforce-now/",
+      "installUrl": "https://www.nvidia.com/en-us/geforce-now/download/"
+    },
+    "website": "https://www.nvidia.com/geforce-now/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "NVIDIA's cloud-gaming client for streaming supported PC game libraries.",
+    "accent": "#76B900",
+    "simpleIconSlug": "nvidia",
+    "secrets": [],
+    "config": [
+      "streaming_quality",
+      "resolution",
+      "frame_rate",
+      "data_saver"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the signed GeForce NOW client from NVIDIA, or use its supported web client when native installation is not appropriate.",
+      "preserve": "existing streaming quality, network test history, linked stores, controller settings, and data limits",
+      "safety": "Stop before NVIDIA or store sign-in, MFA or CAPTCHA, age verification, paid membership, purchases, or account linking. Ask before firewall/autostart, drivers/kernel changes, reboot, or high-bandwidth streaming tests.",
+      "verify": "Open to the signed-out catalog, confirm the client version and a basic non-streaming network check, then stop before launching a session."
+    }
+  },
+  {
+    "index": 215,
+    "name": "Roblox",
+    "slug": "roblox-player",
+    "source": {
+      "type": "website",
+      "url": "https://www.roblox.com/",
+      "installUrl": "https://www.roblox.com/download"
+    },
+    "website": "https://www.roblox.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Roblox's player for launching community-created online experiences.",
+    "accent": "#E2231A",
+    "simpleIconSlug": "roblox",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "graphics_mode",
+      "privacy_defaults"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Obtain Roblox Player only through Roblox's official download flow and install the player without joining an experience.",
+      "preserve": "existing Roblox cache, screenshots, local settings, accessibility options, and parental controls",
+      "safety": "Stop before account creation or sign-in, MFA or CAPTCHA, age or parental verification, Robux purchases, subscriptions, or voice-chat enrollment. Ask before firewall/autostart, drivers/kernel components, reboot, or large content download.",
+      "verify": "Confirm the player is signed and launches to the website handoff or signed-out state without entering a game or requesting account data."
+    }
+  },
+  {
+    "index": 216,
+    "name": "Rockstar Games Launcher",
+    "slug": "rockstar-games-launcher",
+    "source": {
+      "type": "website",
+      "url": "https://www.rockstargames.com/",
+      "installUrl": "https://socialclub.rockstargames.com/rockstar-games-launcher"
+    },
+    "website": "https://www.rockstargames.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Rockstar's Windows launcher for its store, game library, updates, and Social Club.",
+    "accent": "#FCAF17",
+    "simpleIconSlug": "rockstargames",
+    "secrets": [],
+    "config": [
+      "game_install_location",
+      "cloud_saves",
+      "background_updates",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Install the signed Rockstar Games Launcher from Rockstar's official Social Club page and do not install or scan for games.",
+      "preserve": "existing Rockstar libraries, Social Club data, cloud-save choices, game settings, and update policy",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, purchases, subscriptions, or EULAs. Anti-cheat/kernel components, firewall/autostart changes, reboots, and large downloads require explicit approval.",
+      "verify": "Open to the signed-out launcher screen, report the build, and confirm that no game, Social Club update, or optional service is queued."
+    }
+  },
+  {
+    "index": 217,
+    "name": "Spotify",
+    "slug": "spotify",
+    "source": {
+      "type": "website",
+      "url": "https://www.spotify.com/",
+      "installUrl": "https://www.spotify.com/download/"
+    },
+    "website": "https://www.spotify.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Music, podcast, and audiobook streaming across desktop and web.",
+    "accent": "#1ED760",
+    "simpleIconSlug": "spotify",
+    "secrets": [],
+    "config": [
+      "streaming_quality",
+      "download_quality",
+      "offline_storage",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Spotify from its official download or platform package source, choosing the web player when native installation is unnecessary.",
+      "preserve": "existing offline cache, local-files index, audio quality, proxy, device, and startup settings",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, Premium subscription, payment, or device authorization. Ask before DRM permissions, firewall/autostart, drivers/kernel components, reboot, or large offline-media downloads.",
+      "verify": "Open to the signed-out home screen, confirm the version and audio device enumeration, and do not stream or cache media."
+    }
+  },
+  {
+    "index": 218,
+    "name": "Apple Music",
+    "slug": "apple-music",
+    "source": {
+      "type": "website",
+      "url": "https://music.apple.com/",
+      "installUrl": "https://support.apple.com/guide/music-windows/welcome/windows"
+    },
+    "website": "https://music.apple.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Apple's music streaming service and local library player for desktop and web.",
+    "accent": "#FA243C",
+    "simpleIconSlug": "applemusic",
+    "secrets": [],
+    "config": [
+      "audio_quality",
+      "lossless_audio",
+      "download_location",
+      "library_sync"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "store",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use the built-in Music app on supported macOS versions, the official Microsoft Store app on Windows, or music.apple.com on the web.",
+      "preserve": "existing local Music library, media folder, playlists, ratings, downloads, and sync preferences",
+      "safety": "Stop before Apple Account sign-in, MFA or CAPTCHA, age/region verification, subscription trials, purchases, payment, library sync, or device authorization. Ask before DRM permissions, autostart, reboot, or large lossless downloads.",
+      "verify": "Open the app or web client signed out, confirm the installed version or web support, and leave library sync and downloads disabled."
+    }
+  },
+  {
+    "index": 219,
+    "name": "Netflix",
+    "slug": "netflix",
+    "source": {
+      "type": "website",
+      "url": "https://www.netflix.com/",
+      "installUrl": "https://apps.microsoft.com/detail/9WZDNCRFJ3TJ"
+    },
+    "website": "https://www.netflix.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Subscription video streaming through the official web experience and Windows app.",
+    "accent": "#E50914",
+    "simpleIconSlug": "netflix",
+    "secrets": [],
+    "config": [
+      "playback_quality",
+      "data_usage",
+      "subtitle_preferences",
+      "download_location"
+    ],
+    "platforms": [
+      "Windows",
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Prefer Netflix's official web experience; on Windows, offer the verified Microsoft Store listing without creating an account or profile.",
+      "preserve": "existing browser profile, PWA data, playback preferences, subtitle choices, and offline downloads",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age/profile PIN verification, subscription, trial, payment, or DRM device authorization. Ask before notifications, autostart, firewall changes, reboot, or large offline-video downloads.",
+      "verify": "Open the official signed-out landing page or installed Store app, validate playback capability without starting protected content, and close it."
+    }
+  },
+  {
+    "index": 220,
+    "name": "Apple TV",
+    "slug": "apple-tv-app",
+    "source": {
+      "type": "website",
+      "url": "https://tv.apple.com/",
+      "installUrl": "https://support.apple.com/guide/tvapp-windows/welcome/windows"
+    },
+    "website": "https://tv.apple.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Apple's movie, TV, MLS, and Apple TV+ playback client for desktop and web.",
+    "accent": "#000000",
+    "simpleIconSlug": "appletv",
+    "secrets": [],
+    "config": [
+      "playback_quality",
+      "download_quality",
+      "subtitle_preferences",
+      "media_location"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "store",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use the built-in TV app on macOS, Apple's official Windows Store app, or tv.apple.com, without starting a subscription or rental.",
+      "preserve": "existing local media, library database, downloads, playback history, subtitles, and device authorizations",
+      "safety": "Stop before Apple Account sign-in, MFA or CAPTCHA, age/region checks, subscriptions, rentals, purchases, payment, or DRM authorization. Ask before notifications, autostart, reboot, or large offline downloads.",
+      "verify": "Open to the signed-out storefront, confirm app version or browser compatibility, and do not start protected playback or media downloads."
+    }
+  },
+  {
+    "index": 221,
+    "name": "TIDAL",
+    "slug": "tidal",
+    "source": {
+      "type": "website",
+      "url": "https://tidal.com/",
+      "installUrl": "https://tidal.com/download"
+    },
+    "website": "https://tidal.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "High-fidelity music and video streaming with native desktop clients.",
+    "accent": "#000000",
+    "simpleIconSlug": "tidal",
+    "secrets": [],
+    "config": [
+      "streaming_quality",
+      "exclusive_mode",
+      "download_location",
+      "audio_output"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download the signed TIDAL desktop app from tidal.com or use its official web player without starting a trial.",
+      "preserve": "existing offline cache, audio output, exclusive-mode choice, quality, and download settings",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age/region verification, subscription or trial, payment, and DRM/device authorization. Ask before audio drivers, autostart, firewall changes, reboot, or large lossless downloads.",
+      "verify": "Open the signed-out app, confirm its version and detected audio outputs, and avoid streaming or caching tracks."
+    }
+  },
+  {
+    "index": 222,
+    "name": "Deezer",
+    "slug": "deezer",
+    "source": {
+      "type": "website",
+      "url": "https://www.deezer.com/",
+      "installUrl": "https://www.deezer.com/explore/download/"
+    },
+    "website": "https://www.deezer.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Music and podcast streaming through official desktop and web clients.",
+    "accent": "#A238FF",
+    "simpleIconSlug": "deezer",
+    "secrets": [],
+    "config": [
+      "streaming_quality",
+      "download_quality",
+      "offline_storage",
+      "audio_output"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Deezer only from its official download page or create an official web app shortcut when requested.",
+      "preserve": "existing cache, offline music, audio quality, playback device, and application preferences",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age/region checks, Premium trials, subscriptions, payment, or DRM authorization. Ask before notifications, autostart, firewall changes, reboot, or large offline downloads.",
+      "verify": "Launch to the signed-out welcome screen, confirm the client build, and ensure no playback or download was initiated."
+    }
+  },
+  {
+    "index": 223,
+    "name": "SoundCloud",
+    "slug": "soundcloud",
+    "source": {
+      "type": "website",
+      "url": "https://soundcloud.com/",
+      "installUrl": "https://soundcloud.com/"
+    },
+    "website": "https://soundcloud.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Artist-led music and audio platform available as a full web application.",
+    "accent": "#FF5500",
+    "simpleIconSlug": "soundcloud",
+    "secrets": [],
+    "config": [
+      "playback_quality",
+      "notification_permissions",
+      "pwa_install"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open the official SoundCloud web app and optionally install it as a browser PWA after showing the permissions it will receive.",
+      "preserve": "existing browser storage, queues, playback history, notification choice, and PWA data",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age checks, Go+ subscription, payment, uploads, or account changes. Ask before notifications, background/autostart behavior, firewall changes, reboot, or large offline downloads.",
+      "verify": "Confirm the official origin, open the signed-out interface, and verify the PWA shortcut if chosen without enabling notifications or playback."
+    }
+  },
+  {
+    "index": 224,
+    "name": "YouTube Music",
+    "slug": "youtube-music",
+    "source": {
+      "type": "website",
+      "url": "https://music.youtube.com/",
+      "installUrl": "https://music.youtube.com/"
+    },
+    "website": "https://music.youtube.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Google's music streaming service delivered as an installable web app.",
+    "accent": "#FF0000",
+    "simpleIconSlug": "youtubemusic",
+    "secrets": [],
+    "config": [
+      "streaming_quality",
+      "pwa_install",
+      "notification_permissions"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open music.youtube.com in a supported browser and offer the browser's native PWA installation only after confirming the official origin.",
+      "preserve": "existing Google browser profile, cookies, PWA storage, playback settings, and notification choice",
+      "safety": "Stop before Google sign-in, MFA or CAPTCHA, age/region verification, Premium subscription or trial, payment, and account linking. Ask before notifications, autostart, reboot, or large offline downloads.",
+      "verify": "Confirm the installed web app resolves only to music.youtube.com and opens signed out without notifications, playback, or downloads."
+    }
+  },
+  {
+    "index": 225,
+    "name": "VLC media player",
+    "slug": "vlc-media-player",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/videolan/vlc",
+      "installUrl": "https://www.videolan.org/vlc/"
+    },
+    "website": "https://www.videolan.org/vlc/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Open-source local and network media player supporting a broad codec range.",
+    "accent": "#FF8800",
+    "simpleIconSlug": "vlcmediaplayer",
+    "secrets": [],
+    "config": [
+      "hardware_decoding",
+      "audio_output",
+      "subtitle_encoding",
+      "file_associations"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use VideoLAN's official signed build or documented distribution package and avoid codec packs from third parties.",
+      "preserve": "existing VLC preferences, playlists, extensions, subtitle settings, cache, and file associations",
+      "safety": "No sign-in is required; never create one. Stop before opening personal media or network streams. Ask before file-association changes, firewall/autostart, drivers/kernel components, reboot, or large network downloads.",
+      "verify": "Run `vlc --version` where available and open the empty player, confirming audio/video outputs without scanning libraries or playing user media."
+    }
+  },
+  {
+    "index": 226,
+    "name": "Plex",
+    "slug": "plex-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://www.plex.tv/",
+      "installUrl": "https://www.plex.tv/media-server-downloads/"
+    },
+    "website": "https://www.plex.tv/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Personal media playback and streaming clients for Plex libraries and services.",
+    "accent": "#E5A00D",
+    "simpleIconSlug": "plex",
+    "secrets": [],
+    "config": [
+      "client_or_server",
+      "hardware_decoding",
+      "streaming_quality",
+      "download_location"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Clarify Plex desktop client versus Media Server, then install only the requested signed package from Plex's official download selector.",
+      "preserve": "existing Plex database, metadata, media paths, transcode cache, downloads, and server claim state",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, Plex Pass subscription, payment, server claim, or library scan. Firewall/port exposure, autostart services, drivers, reboot, and large metadata downloads require approval.",
+      "verify": "Confirm the requested client or server version starts, but stop before claiming a server, adding libraries, opening ports, or streaming media."
+    }
+  },
+  {
+    "index": 227,
+    "name": "Kodi",
+    "slug": "kodi",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/xbmc/xbmc",
+      "installUrl": "https://kodi.tv/download/"
+    },
+    "website": "https://kodi.tv/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Open-source ten-foot media center for local libraries, add-ons, and network playback.",
+    "accent": "#17B2E7",
+    "simpleIconSlug": "kodi",
+    "secrets": [],
+    "config": [
+      "media_sources",
+      "audio_output",
+      "display_mode",
+      "addon_policy"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use Kodi's official signed binary or documented repository and install no third-party add-ons or repositories.",
+      "preserve": "existing Kodi profile, database, media sources, thumbnails, add-ons, keymaps, and display settings",
+      "safety": "No account is needed. Stop before adding personal/network media, credentials, add-ons, subscriptions, or DRM services. Ask before firewall/autostart, drivers/kernel components, reboot, or large metadata/library downloads.",
+      "verify": "Open Kodi with its existing or clean profile, confirm version and rendering/audio outputs, and avoid scanning media or installing add-ons."
+    }
+  },
+  {
+    "index": 228,
+    "name": "Crunchyroll",
+    "slug": "crunchyroll",
+    "source": {
+      "type": "website",
+      "url": "https://www.crunchyroll.com/",
+      "installUrl": "https://www.crunchyroll.com/"
+    },
+    "website": "https://www.crunchyroll.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Anime streaming catalog delivered through Crunchyroll's official web application.",
+    "accent": "#F47521",
+    "simpleIconSlug": "crunchyroll",
+    "secrets": [],
+    "config": [
+      "subtitle_language",
+      "playback_quality",
+      "pwa_install",
+      "notification_permissions"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use crunchyroll.com in a supported browser and offer a PWA shortcut only from that verified official origin.",
+      "preserve": "existing browser storage, watchlist, subtitle language, playback preferences, and PWA data",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age/region verification, Premium trial, subscription, payment, or mature-content controls. Ask before notifications, autostart, DRM permissions, reboot, or large downloads.",
+      "verify": "Open the official signed-out landing page or PWA, confirm origin and basic rendering, and do not begin playback or enable notifications."
+    }
+  },
+  {
+    "index": 229,
+    "name": "Google Drive for desktop",
+    "slug": "google-drive-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://workspace.google.com/products/drive/",
+      "installUrl": "https://www.google.com/drive/download/"
+    },
+    "website": "https://workspace.google.com/products/drive/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Google's desktop sync and streaming client for Drive files and shared drives.",
+    "accent": "#4285F4",
+    "simpleIconSlug": "googledrive",
+    "secrets": [],
+    "config": [
+      "stream_or_mirror",
+      "cache_location",
+      "folder_backup",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download Drive for desktop from Google's official page and install the client without connecting an account or enabling folder backup.",
+      "preserve": "existing DriveFS cache, streamed or mirrored folders, sync exclusions, account state, and Finder/Explorer integration",
+      "safety": "Stop before Google sign-in, SSO, MFA or CAPTCHA, subscription or license changes, cloud sync, backup, or file import. System extensions, drivers, firewall/autostart, reboot, and large hydration downloads require approval.",
+      "verify": "Confirm the signed client starts and reports its version, then stop at account setup with no folders mounted, backed up, or synchronized."
+    }
+  },
+  {
+    "index": 230,
+    "name": "Dropbox",
+    "slug": "dropbox-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://www.dropbox.com/",
+      "installUrl": "https://www.dropbox.com/install"
+    },
+    "website": "https://www.dropbox.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Cross-platform desktop sync client for Dropbox files, backups, and shared spaces.",
+    "accent": "#0061FF",
+    "simpleIconSlug": "dropbox",
+    "secrets": [],
+    "config": [
+      "sync_location",
+      "selective_sync",
+      "online_only",
+      "camera_uploads"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use Dropbox's official signed installer for the detected platform and do not connect an account or select folders automatically.",
+      "preserve": "existing Dropbox folder, selective-sync state, online-only markers, cache, backup choices, and account data",
+      "safety": "Stop before sign-in, SSO, MFA or CAPTCHA, paid plan changes, cloud sync, backup, or file import. File-system extensions, drivers, firewall/autostart, reboots, and large hydration downloads require explicit approval.",
+      "verify": "Launch to the account connection screen, confirm the client version, and verify that no sync root or backup job was created."
+    }
+  },
+  {
+    "index": 231,
+    "name": "Notion",
+    "slug": "notion-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://www.notion.com/",
+      "installUrl": "https://www.notion.com/desktop"
+    },
+    "website": "https://www.notion.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Desktop client for Notion documents, databases, projects, and team workspaces.",
+    "accent": "#000000",
+    "simpleIconSlug": "notion",
+    "secrets": [],
+    "config": [
+      "open_links_in_app",
+      "spellcheck",
+      "notifications",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Notion from its official desktop download page or use notion.com as a web app; do not join or create a workspace.",
+      "preserve": "existing app cache, local preferences, protocol handlers, notifications, and account sessions",
+      "safety": "Stop before sign-in, SSO, MFA or CAPTCHA, workspace invitation, paid plan, subscription, file import, or data sync. Ask before notifications, protocol/default-app changes, autostart, reboot, or large imports.",
+      "verify": "Open the signed-out app, confirm its version and official origin, and do not authenticate, import content, or enable notifications."
+    }
+  },
+  {
+    "index": 232,
+    "name": "Zoom Workplace",
+    "slug": "zoom-workplace",
+    "source": {
+      "type": "website",
+      "url": "https://www.zoom.com/",
+      "installUrl": "https://zoom.us/download"
+    },
+    "website": "https://www.zoom.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Zoom's desktop client for meetings, chat, phone, whiteboards, and collaboration.",
+    "accent": "#0B5CFF",
+    "simpleIconSlug": "zoom",
+    "secrets": [],
+    "config": [
+      "camera",
+      "microphone",
+      "speaker",
+      "virtual_background",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download the signed Zoom Workplace client from Zoom's official download center and install no optional Outlook/browser add-ins or room components.",
+      "preserve": "existing Zoom preferences, virtual backgrounds, audio/video choices, plugins, and meeting history",
+      "safety": "Stop before sign-in, SSO, MFA or CAPTCHA, paid plan, meeting join, or calendar connection. Camera/mic/screen permissions, virtual audio drivers, firewall/autostart, kernel components, reboot, and large add-ons require approval.",
+      "verify": "Open the client without joining a meeting, confirm its version and device list, and leave permissions, sign-in, and optional plugins untouched."
+    }
+  },
+  {
+    "index": 233,
+    "name": "Asana",
+    "slug": "asana-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://asana.com/",
+      "installUrl": "https://asana.com/download"
+    },
+    "website": "https://asana.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Desktop and web workspace for tasks, projects, goals, and team coordination.",
+    "accent": "#F06A6A",
+    "simpleIconSlug": "asana",
+    "secrets": [],
+    "config": [
+      "notifications",
+      "protocol_handler",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Asana from its official desktop page or retain the web app when requested; do not create or join an organization.",
+      "preserve": "existing app cache, account sessions, notification choices, protocol handlers, and startup preference",
+      "safety": "Stop before sign-in, SSO, MFA or CAPTCHA, workspace invitation, subscription, payment, or importing projects. Ask before notifications, protocol/default-app changes, autostart, reboot, or large imports.",
+      "verify": "Open the signed-out interface, confirm the version or official web origin, and leave authentication, notifications, and imports disabled."
+    }
+  },
+  {
+    "index": 234,
+    "name": "Trello",
+    "slug": "trello-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://trello.com/",
+      "installUrl": "https://trello.com/platforms"
+    },
+    "website": "https://trello.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Kanban-style project boards available through official desktop and web clients.",
+    "accent": "#0052CC",
+    "simpleIconSlug": "trello",
+    "secrets": [],
+    "config": [
+      "notifications",
+      "protocol_handler",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "store",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use Trello's official platform listing or trello.com web app and do not connect an Atlassian account automatically.",
+      "preserve": "existing browser or app storage, account sessions, notification state, and protocol handlers",
+      "safety": "Stop before Atlassian sign-in, SSO, MFA or CAPTCHA, workspace joins, Premium trials, subscription, payment, or board import. Ask before notifications, autostart, reboot, or large imports.",
+      "verify": "Open to the signed-out Trello landing screen, confirm official origin or installed package, and do not authenticate or create a board."
+    }
+  },
+  {
+    "index": 235,
+    "name": "Todoist",
+    "slug": "todoist-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://www.todoist.com/",
+      "installUrl": "https://www.todoist.com/downloads"
+    },
+    "website": "https://www.todoist.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Cross-platform personal and team task manager with desktop and web apps.",
+    "accent": "#E44332",
+    "simpleIconSlug": "todoist",
+    "secrets": [],
+    "config": [
+      "global_quick_add",
+      "notifications",
+      "calendar_integration",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Todoist from its official downloads page or supported package source without connecting an account or calendar.",
+      "preserve": "existing local cache, quick-add shortcut, notification choice, calendar links, and startup state",
+      "safety": "Stop before sign-in, SSO, MFA or CAPTCHA, workspace join, Pro trial, subscription, payment, calendar authorization, or task import. Ask before global shortcuts, notifications, autostart, reboot, or large imports.",
+      "verify": "Open the signed-out client, confirm its version and shortcut registration state, and leave account, calendar, and notifications unconfigured."
+    }
+  },
+  {
+    "index": 236,
+    "name": "Airtable",
+    "slug": "airtable-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://www.airtable.com/",
+      "installUrl": "https://www.airtable.com/downloads"
+    },
+    "website": "https://www.airtable.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Cloud database and workflow platform with desktop and web interfaces.",
+    "accent": "#18BFFF",
+    "simpleIconSlug": "airtable",
+    "secrets": [],
+    "config": [
+      "notifications",
+      "protocol_handler",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use Airtable's official desktop downloads or verified web app and do not create a base or join a workspace.",
+      "preserve": "existing application cache, sessions, notification state, protocol handlers, and startup preference",
+      "safety": "Stop before sign-in, SSO, MFA or CAPTCHA, workspace invitation, paid plan, subscription, payment, or CSV/database import. Ask before notifications, autostart, reboot, or large data imports.",
+      "verify": "Open the signed-out client or official web origin, confirm version, and leave authentication, notifications, and imports untouched."
+    }
+  },
+  {
+    "index": 237,
+    "name": "Figma",
+    "slug": "figma-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://www.figma.com/",
+      "installUrl": "https://www.figma.com/downloads/"
+    },
+    "website": "https://www.figma.com/",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Collaborative interface design and prototyping through desktop and web clients.",
+    "accent": "#A259FF",
+    "simpleIconSlug": "figma",
+    "secrets": [],
+    "config": [
+      "font_installer",
+      "notifications",
+      "protocol_handler",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Figma's official desktop client; treat the separate font installer as an optional second component requiring approval.",
+      "preserve": "existing Figma cache, font helper, plugins, preferences, protocol handlers, and account sessions",
+      "safety": "Stop before sign-in, SSO, MFA or CAPTCHA, workspace join, subscription, payment, file import, or plugin installation. Ask before font helper, notifications, autostart, firewall changes, reboot, or large asset downloads.",
+      "verify": "Open the signed-out desktop app, confirm its version, and verify that the font helper, plugins, notifications, and account remain unchanged."
+    }
+  },
+  {
+    "index": 238,
+    "name": "DaVinci Resolve",
+    "slug": "davinci-resolve",
+    "source": {
+      "type": "website",
+      "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+      "installUrl": "https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion"
+    },
+    "website": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Professional video editing, color, visual-effects, motion-graphics, and audio suite.",
+    "accent": "#E54431",
+    "simpleIconSlug": "davinciresolve",
+    "secrets": [],
+    "config": [
+      "project_library",
+      "media_storage",
+      "gpu_processing",
+      "audio_device"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download the requested Free or Studio build from Blackmagic Design's official support page and list every bundled panel, RAW, or audio component before installation.",
+      "preserve": "existing project libraries, databases, media storage, LUTs, plugins, keyboard maps, and cache locations",
+      "safety": "Stop before registration forms needing personal data, license activation, purchase, or cloud sign-in. GPU/audio drivers, kernel/system components, firewall/autostart, reboot, and multi-gigabyte content downloads require explicit approval.",
+      "verify": "Launch Resolve without opening projects, confirm version, GPU/audio detection, and project-library visibility, then close without migration or media scan."
+    }
+  },
+  {
+    "index": 239,
+    "name": "Sketch",
+    "slug": "sketch",
+    "source": {
+      "type": "website",
+      "url": "https://www.sketch.com/",
+      "installUrl": "https://www.sketch.com/get/"
+    },
+    "website": "https://www.sketch.com/",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Native macOS interface design, prototyping, collaboration, and developer handoff app.",
+    "accent": "#F7B500",
+    "simpleIconSlug": "sketch",
+    "secrets": [],
+    "config": [
+      "plugins",
+      "libraries",
+      "cloud_documents",
+      "auto_updates"
+    ],
+    "platforms": [
+      "macOS",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download Sketch only from sketch.com, verify the signed macOS application, and do not start a trial or migrate documents.",
+      "preserve": "existing documents, plugins, shared libraries, templates, preferences, and license state",
+      "safety": "Stop before sign-in, SSO, MFA or CAPTCHA, trial, subscription, purchase, license activation, cloud sync, or plugin install. Ask before file associations, autostart, reboot, or large library downloads.",
+      "verify": "Open the app without a document, confirm version and signature, and verify that licenses, plugins, libraries, and cloud sync are untouched."
+    }
+  },
+  {
+    "index": 240,
+    "name": "Aseprite",
+    "slug": "aseprite",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/aseprite/aseprite",
+      "installUrl": "https://www.aseprite.org/download/"
+    },
+    "website": "https://www.aseprite.org/",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Pixel-art and sprite-animation editor with official paid builds and source access.",
+    "accent": "#7D929E",
+    "simpleIconSlug": "aseprite",
+    "secrets": [],
+    "config": [
+      "palette_location",
+      "scripts",
+      "extensions",
+      "file_associations"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use a legitimately obtained official Aseprite build or explain source-build requirements; never bypass the paid distribution or fetch unofficial binaries.",
+      "preserve": "existing palettes, brushes, scripts, extensions, recovery files, preferences, and license receipt",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchase, payment, license retrieval, or extension installation. Ask before build toolchains, file associations, autostart, reboot, or large dependency downloads.",
+      "verify": "Confirm the official build launches, reports its version, and sees existing resources without opening user artwork or altering associations."
+    }
+  },
+  {
+    "index": 241,
+    "name": "Pro Tools",
+    "slug": "pro-tools",
+    "source": {
+      "type": "website",
+      "url": "https://www.avid.com/pro-tools",
+      "installUrl": "https://my.avid.com/get/pro-tools-intro"
+    },
+    "website": "https://www.avid.com/pro-tools",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Avid's professional audio recording, editing, mixing, and production workstation.",
+    "accent": "#7ACB10",
+    "simpleIconSlug": "protools",
+    "secrets": [],
+    "config": [
+      "audio_interface",
+      "sample_rate",
+      "plugin_location",
+      "session_location"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Clarify Intro versus paid Pro Tools, then use Avid's official installer and present every bundled plug-in, content pack, and hardware driver separately.",
+      "preserve": "existing sessions, I/O setups, plug-ins, presets, audio drivers, license state, and Avid Link preferences",
+      "safety": "Stop before Avid or iLok sign-in, MFA or CAPTCHA, trial, subscription, purchase, license activation, or cloud sync. Audio drivers/kernel components, firewall/autostart, reboot, and large sound libraries require approval.",
+      "verify": "Open Pro Tools without a session, confirm version and existing audio interface enumeration, and avoid license changes, plug-in scans, or migrations."
+    }
+  },
+  {
+    "index": 242,
+    "name": "Unity Hub",
+    "slug": "unity-hub",
+    "source": {
+      "type": "website",
+      "url": "https://unity.com/",
+      "installUrl": "https://unity.com/download"
+    },
+    "website": "https://unity.com/",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Unity's project, license, editor-version, template, and build-module manager.",
+    "accent": "#000000",
+    "simpleIconSlug": "unity",
+    "secrets": [],
+    "config": [
+      "editor_install_location",
+      "project_location",
+      "download_location",
+      "license_type"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Unity Hub from Unity's official download page only; do not install an Editor, template, SDK, or platform build module automatically.",
+      "preserve": "existing Unity editors, projects, license files, templates, caches, modules, and install locations",
+      "safety": "Stop before Unity ID sign-in, MFA or CAPTCHA, age verification, subscription, payment, or license activation. Ask before editors/SDKs, firewall/autostart, drivers/kernel components, reboot, or multi-gigabyte modules.",
+      "verify": "Open Hub to the signed-out state, confirm its version and existing editor/project discovery, and ensure no editor or module download was queued."
+    }
+  },
+  {
+    "index": 243,
+    "name": "Unreal Engine",
+    "slug": "unreal-engine",
+    "source": {
+      "type": "website",
+      "url": "https://www.unrealengine.com/",
+      "installUrl": "https://www.unrealengine.com/download"
+    },
+    "website": "https://www.unrealengine.com/",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Epic's real-time 3D engine installed and managed through Epic Games Launcher.",
+    "accent": "#0E1128",
+    "simpleIconSlug": "unrealengine",
+    "secrets": [],
+    "config": [
+      "engine_install_location",
+      "vault_cache",
+      "project_location",
+      "platform_sdks"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Explain that binary Unreal Engine installs use Epic Games Launcher; install only the approved launcher or source prerequisites, not an engine build yet.",
+      "preserve": "existing engine versions, projects, Derived Data Cache, Vault Cache, plugins, SDKs, and launcher manifests",
+      "safety": "Stop before Epic sign-in, MFA or CAPTCHA, subscription/purchase, marketplace acquisition, or EULA. Ask before compilers/SDKs, firewall/autostart, drivers/kernel components, reboot, and very large engine or sample downloads.",
+      "verify": "Confirm the approved launcher or source prerequisites are present, but leave account login, engine versions, samples, and platform modules uninstalled."
+    }
+  },
+  {
+    "index": 244,
+    "name": "Roblox Studio",
+    "slug": "roblox-studio",
+    "source": {
+      "type": "website",
+      "url": "https://create.roblox.com/",
+      "installUrl": "https://create.roblox.com/docs/studio/setup"
+    },
+    "website": "https://create.roblox.com/",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Roblox's creation environment for building, scripting, testing, and publishing experiences.",
+    "accent": "#00A2FF",
+    "simpleIconSlug": "robloxstudio",
+    "secrets": [],
+    "config": [
+      "project_location",
+      "autosave_location",
+      "plugin_policy",
+      "collaboration"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use Roblox Creator Hub's official Studio setup flow and install only the editor, without opening or publishing a place.",
+      "preserve": "existing places, autosaves, plugins, templates, Studio settings, and authentication state",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age/parental verification, purchases, payouts, publishing, collaboration, or plugin installation. Ask before firewall/autostart, reboot, or large template/asset downloads.",
+      "verify": "Launch Studio to its signed-out start screen, confirm the build and autosave path, and avoid account login, project creation, plugins, or publishing."
+    }
+  },
+  {
+    "index": 245,
+    "name": "Discord",
+    "slug": "discord",
+    "source": {
+      "type": "website",
+      "url": "https://discord.com/",
+      "installUrl": "https://discord.com/download"
+    },
+    "website": "https://discord.com/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "Voice, video, text, streaming, and community client for desktop and web.",
+    "accent": "#5865F2",
+    "simpleIconSlug": "discord",
+    "secrets": [],
+    "config": [
+      "microphone",
+      "speaker",
+      "camera",
+      "overlay",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Discord from discord.com or a documented official package and do not join servers or authorize integrations.",
+      "preserve": "existing cache, account sessions, audio/video choices, keybinds, overlay, accessibility, and startup settings",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, Nitro subscription, payment, server invite, or OAuth authorization. Mic/camera/screen permissions, overlay drivers, firewall/autostart, reboot, and large updates require approval.",
+      "verify": "Open to the login screen, confirm client version and detected devices without granting permissions, and leave servers, overlay, and autostart untouched."
+    }
+  },
+  {
+    "index": 246,
+    "name": "WhatsApp",
+    "slug": "whatsapp-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://www.whatsapp.com/",
+      "installUrl": "https://www.whatsapp.com/download"
+    },
+    "website": "https://www.whatsapp.com/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "Meta's encrypted messaging and calling client for linked desktop devices and web.",
+    "accent": "#25D366",
+    "simpleIconSlug": "whatsapp",
+    "secrets": [],
+    "config": [
+      "microphone",
+      "camera",
+      "notifications",
+      "download_location",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install WhatsApp only from whatsapp.com or the linked official store listing and do not scan the QR code or link a phone.",
+      "preserve": "existing linked-device state, local message cache, download folder, notifications, media settings, and startup choice",
+      "safety": "Stop before QR linking, phone verification, MFA/PIN or CAPTCHA, age verification, payments, contact sync, or backups. Mic/camera/contacts/notifications, firewall/autostart, reboot, and large media restoration require approval.",
+      "verify": "Open to the QR or signed-out linking screen, confirm version, and do not grant permissions, link an account, or restore messages."
+    }
+  },
+  {
+    "index": 247,
+    "name": "Messenger",
+    "slug": "messenger-web",
+    "source": {
+      "type": "website",
+      "url": "https://www.messenger.com/",
+      "installUrl": "https://www.messenger.com/"
+    },
+    "website": "https://www.messenger.com/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "Meta Messenger's official web client for messages, voice calls, and video calls.",
+    "accent": "#00B2FF",
+    "simpleIconSlug": "messenger",
+    "secrets": [],
+    "config": [
+      "pwa_install",
+      "microphone",
+      "camera",
+      "notifications"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open messenger.com at the verified official origin and optionally create a browser PWA without installing third-party desktop wrappers.",
+      "preserve": "existing browser sessions, PWA data, notification state, media permissions, and downloaded attachments",
+      "safety": "Stop before Facebook sign-in, MFA or CAPTCHA, age checks, payments, contact sync, or account changes. Mic/camera/notifications, background/autostart, firewall changes, reboot, and large media downloads require approval.",
+      "verify": "Confirm the PWA or browser page stays on messenger.com and opens signed out without permissions, notifications, or account actions."
+    }
+  },
+  {
+    "index": 248,
+    "name": "Instagram",
+    "slug": "instagram-web",
+    "source": {
+      "type": "website",
+      "url": "https://www.instagram.com/",
+      "installUrl": "https://www.instagram.com/"
+    },
+    "website": "https://www.instagram.com/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "Instagram's official web application for feeds, messages, media, and publishing.",
+    "accent": "#E4405F",
+    "simpleIconSlug": "instagram",
+    "secrets": [],
+    "config": [
+      "pwa_install",
+      "camera",
+      "microphone",
+      "notifications"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open instagram.com and optionally install the official site as a PWA; reject third-party wrappers and downloaders.",
+      "preserve": "existing browser sessions, PWA storage, notification choices, saved media, and accessibility preferences",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, account creation, purchases, publishing, or contact sync. Camera/mic/notifications, background/autostart, reboot, and large uploads/downloads require approval.",
+      "verify": "Confirm the official origin and signed-out state, with no permissions, notification subscription, upload, or account action performed."
+    }
+  },
+  {
+    "index": 249,
+    "name": "TikTok",
+    "slug": "tiktok-web",
+    "source": {
+      "type": "website",
+      "url": "https://www.tiktok.com/",
+      "installUrl": "https://www.tiktok.com/"
+    },
+    "website": "https://www.tiktok.com/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "TikTok's official web experience for video discovery, messaging, and creator uploads.",
+    "accent": "#FF0050",
+    "simpleIconSlug": "tiktok",
+    "secrets": [],
+    "config": [
+      "pwa_install",
+      "camera",
+      "microphone",
+      "notifications"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open tiktok.com at its official origin and optionally install it as a PWA; do not use unofficial downloader applications.",
+      "preserve": "existing cookies, PWA storage, playback settings, notification choices, and accessibility preferences",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age verification, account creation, purchases, coins, uploads, or contact sync. Camera/mic/notifications, background/autostart, reboot, and large media transfers require approval.",
+      "verify": "Confirm the official origin and basic signed-out browsing, with no permissions, notifications, account action, upload, or persistent autoplay changes."
+    }
+  },
+  {
+    "index": 250,
+    "name": "Reddit",
+    "slug": "reddit-web",
+    "source": {
+      "type": "website",
+      "url": "https://www.reddit.com/",
+      "installUrl": "https://www.reddit.com/"
+    },
+    "website": "https://www.reddit.com/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "Reddit's official web platform for communities, discussions, chat, and media.",
+    "accent": "#FF4500",
+    "simpleIconSlug": "reddit",
+    "secrets": [],
+    "config": [
+      "pwa_install",
+      "notifications",
+      "autoplay",
+      "content_preferences"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open reddit.com and optionally install the verified official site as a PWA, without third-party clients or browser extensions.",
+      "preserve": "existing browser sessions, PWA data, content preferences, autoplay, notification state, and accessibility settings",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, age/content verification, account creation, Premium purchase, payment, posting, or chat. Ask before notifications, background/autostart, reboot, or large media downloads.",
+      "verify": "Confirm the PWA or page resolves only to reddit.com and remains signed out without notifications, posting, chat, or account changes."
+    }
+  },
+  {
+    "index": 251,
+    "name": "Google Chrome",
+    "slug": "google-chrome",
+    "source": {
+      "type": "website",
+      "url": "https://www.google.com/chrome/",
+      "installUrl": "https://www.google.com/chrome/"
+    },
+    "website": "https://www.google.com/chrome/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "Google's cross-platform Chromium browser with profiles, extensions, and sync.",
+    "accent": "#4285F4",
+    "simpleIconSlug": "googlechrome",
+    "secrets": [],
+    "config": [
+      "default_browser",
+      "profile_location",
+      "import_source",
+      "telemetry",
+      "auto_updates"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Chrome from Google's official signed package or documented repository and create a clean local profile only if needed.",
+      "preserve": "existing profiles, bookmarks, history, cookies, passwords, extensions, policies, certificates, and default-browser choice",
+      "safety": "Stop before Google sign-in, MFA or CAPTCHA, sync, importing data, extension installation, or changing defaults. Ask before system-wide packages, firewall/autostart, certificates, reboot, or large profile downloads.",
+      "verify": "Run the version check and open a clean signed-out window, confirming existing profiles are intact and no import, sync, or default-browser change occurred."
+    }
+  },
+  {
+    "index": 252,
+    "name": "Mozilla Firefox",
+    "slug": "mozilla-firefox",
+    "source": {
+      "type": "website",
+      "url": "https://www.firefox.com/",
+      "installUrl": "https://www.mozilla.org/firefox/new/"
+    },
+    "website": "https://www.firefox.com/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "Mozilla's independent open-source browser with strong privacy controls and add-ons.",
+    "accent": "#FF7139",
+    "simpleIconSlug": "firefoxbrowser",
+    "secrets": [],
+    "config": [
+      "default_browser",
+      "profile_location",
+      "import_source",
+      "telemetry",
+      "privacy_mode"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Firefox from Mozilla's signed download or official distribution repository and avoid repackaged installers.",
+      "preserve": "existing profiles, bookmarks, history, cookies, passwords, containers, add-ons, policies, and default-browser choice",
+      "safety": "Stop before Mozilla Account sign-in, MFA or CAPTCHA, Sync, importing data, add-on installation, or changing defaults. Ask before system-wide packages, firewall/autostart, certificates, reboot, or large profile downloads.",
+      "verify": "Report the Firefox version and open the Profile Manager or a clean signed-out window, leaving profiles, imports, sync, and defaults unchanged."
+    }
+  },
+  {
+    "index": 253,
+    "name": "Brave Browser",
+    "slug": "brave-browser",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/brave/brave-browser",
+      "installUrl": "https://brave.com/download/"
+    },
+    "website": "https://brave.com/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "Privacy-focused Chromium browser with built-in tracker blocking and optional rewards.",
+    "accent": "#FB542B",
+    "simpleIconSlug": "brave",
+    "secrets": [],
+    "config": [
+      "default_browser",
+      "profile_location",
+      "import_source",
+      "shields_defaults",
+      "rewards"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use Brave's signed download or official repository and keep Rewards, Wallet, VPN, and Leo opt-ins disabled by default.",
+      "preserve": "existing profiles, bookmarks, history, cookies, passwords, extensions, Wallet data, policies, and default-browser choice",
+      "safety": "Stop before sync/sign-in, MFA or CAPTCHA, wallet creation, Rewards, VPN subscriptions, imports, extensions, or default changes. Ask before system packages, firewall/autostart, certificates, reboot, or large profile downloads.",
+      "verify": "Confirm version and open a clean local window with Shields available, while leaving sync, Wallet, Rewards, imports, and default-browser state untouched."
+    }
+  },
+  {
+    "index": 254,
+    "name": "Arc Browser",
+    "slug": "arc-browser",
+    "source": {
+      "type": "website",
+      "url": "https://arc.net/",
+      "installUrl": "https://arc.net/download"
+    },
+    "website": "https://arc.net/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "The Browser Company's workspace-oriented Chromium browser for macOS and Windows.",
+    "accent": "#FC5C7D",
+    "simpleIconSlug": "arc",
+    "secrets": [],
+    "config": [
+      "default_browser",
+      "profile_location",
+      "import_source",
+      "spaces",
+      "auto_updates"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download Arc only from arc.net, verify its signature, and do not import data or create an Arc account automatically.",
+      "preserve": "existing Arc profiles, Spaces, bookmarks, history, cookies, passwords, extensions, and default-browser choice",
+      "safety": "Stop before Arc sign-in, MFA or CAPTCHA, sync, importing browser data, extension installation, or changing defaults. Ask before firewall/autostart, certificates, reboot, or large profile downloads.",
+      "verify": "Open to Arc's account onboarding, confirm version and signature, and leave sign-in, import, sync, extensions, and default-browser state unchanged."
+    }
+  },
+  {
+    "index": 255,
+    "name": "Opera",
+    "slug": "opera-browser",
+    "source": {
+      "type": "website",
+      "url": "https://www.opera.com/",
+      "installUrl": "https://www.opera.com/download"
+    },
+    "website": "https://www.opera.com/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "Chromium browser with integrated workspaces, sidebar services, ad blocking, and VPN proxy.",
+    "accent": "#FF1B2D",
+    "simpleIconSlug": "opera",
+    "secrets": [],
+    "config": [
+      "default_browser",
+      "profile_location",
+      "import_source",
+      "sidebar_services",
+      "vpn_proxy"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use Opera's official signed installer or repository, decline promotional bundles, and keep sidebar services and VPN proxy disabled until chosen.",
+      "preserve": "existing profiles, bookmarks, history, cookies, passwords, extensions, sidebar layout, policies, and default-browser choice",
+      "safety": "Stop before Opera sign-in, MFA or CAPTCHA, sync, importing data, extensions, paid services, or changing defaults. Ask before firewall/autostart, certificates, reboot, or large profile downloads.",
+      "verify": "Confirm the version and open a clean signed-out window with no imported data, sidebar accounts, VPN session, or default-browser change."
+    }
+  },
+  {
+    "index": 256,
+    "name": "Vivaldi",
+    "slug": "vivaldi-browser",
+    "source": {
+      "type": "website",
+      "url": "https://vivaldi.com/",
+      "installUrl": "https://vivaldi.com/download/"
+    },
+    "website": "https://vivaldi.com/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "Highly customizable Chromium browser with tab tools, mail, calendar, and notes.",
+    "accent": "#EF3939",
+    "simpleIconSlug": "vivaldi",
+    "secrets": [],
+    "config": [
+      "default_browser",
+      "profile_location",
+      "import_source",
+      "mail_calendar",
+      "telemetry"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Vivaldi from its official signed package or repository and keep Mail, Calendar, Sync, and imports unconfigured.",
+      "preserve": "existing profiles, bookmarks, history, cookies, passwords, extensions, mail data, notes, policies, and default-browser choice",
+      "safety": "Stop before Vivaldi sign-in, MFA or CAPTCHA, sync, email/calendar accounts, imports, extensions, or default changes. Ask before system packages, firewall/autostart, certificates, reboot, or large profile downloads.",
+      "verify": "Report the version and open a clean local window, leaving Sync, Mail, Calendar, imports, extensions, and default-browser state untouched."
+    }
+  },
+  {
+    "index": 257,
+    "name": "Razer Synapse",
+    "slug": "razer-synapse",
+    "source": {
+      "type": "website",
+      "url": "https://www.razer.com/synapse-4",
+      "installUrl": "https://www.razer.com/synapse-4"
+    },
+    "website": "https://www.razer.com/synapse-4",
+    "vertical": "hardware",
+    "category": "Devices & Hardware",
+    "description": "Razer's Windows configuration suite for supported gaming devices, profiles, macros, and lighting.",
+    "accent": "#00FF00",
+    "simpleIconSlug": "razer",
+    "secrets": [],
+    "config": [
+      "device_modules",
+      "profiles",
+      "lighting",
+      "macros",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download Synapse 4 from Razer and enumerate the core app, device modules, Chroma components, and optional software before installing any of them.",
+      "preserve": "existing device profiles, onboard memory, macros, calibration, lighting, modules, and account state",
+      "safety": "Stop before Razer ID sign-in, MFA or CAPTCHA, purchases, subscriptions, cloud sync, macro import, or firmware update. Drivers/kernel components, firewall/autostart, telemetry, reboot, and large modules require explicit approval.",
+      "verify": "Open Synapse without signing in, confirm version and read-only device detection, and do not update firmware, write profiles, install modules, or enable autostart."
+    }
+  },
+  {
+    "index": 258,
+    "name": "Corsair iCUE",
+    "slug": "corsair-icue",
+    "source": {
+      "type": "website",
+      "url": "https://www.corsair.com/us/en/s/icue",
+      "installUrl": "https://www.corsair.com/us/en/s/downloads"
+    },
+    "website": "https://www.corsair.com/us/en/s/icue",
+    "vertical": "hardware",
+    "category": "Devices & Hardware",
+    "description": "Corsair's device control suite for cooling, lighting, performance, profiles, and macros.",
+    "accent": "#F5C518",
+    "simpleIconSlug": "corsair",
+    "secrets": [],
+    "config": [
+      "device_modules",
+      "cooling_profiles",
+      "lighting",
+      "macros",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use Corsair's official iCUE installer and show all device services, plugins, SDK integrations, and optional modules before installation.",
+      "preserve": "existing device profiles, cooling curves, fan/pump settings, lighting scenes, macros, plugins, and firmware versions",
+      "safety": "Stop before sign-in, MFA or CAPTCHA, purchases, cloud profile sync, macro import, firmware update, or cooling changes. Drivers/kernel components, firewall/autostart, reboot, and large modules require explicit approval.",
+      "verify": "Launch iCUE for read-only device detection, confirm version, and do not alter cooling, write hardware profiles, update firmware, or enable services beyond those approved."
+    }
+  },
+  {
+    "index": 259,
+    "name": "Elgato Stream Deck",
+    "slug": "elgato-stream-deck",
+    "source": {
+      "type": "website",
+      "url": "https://www.elgato.com/",
+      "installUrl": "https://www.elgato.com/downloads"
+    },
+    "website": "https://www.elgato.com/",
+    "vertical": "hardware",
+    "category": "Devices & Hardware",
+    "description": "Elgato's configuration app for Stream Deck devices, profiles, actions, and plugins.",
+    "accent": "#101010",
+    "simpleIconSlug": "elgato",
+    "secrets": [],
+    "config": [
+      "profiles",
+      "plugins",
+      "icons",
+      "marketplace",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download Stream Deck only from Elgato's official downloads page and install the core app without Marketplace plugins, device firmware, or companion tools.",
+      "preserve": "existing Stream Deck profiles, folders, icons, plugins, account links, device assignments, and firmware versions",
+      "safety": "Stop before Marketplace sign-in, MFA or CAPTCHA, purchases, account linking, plugin install, or firmware update. Device drivers/kernel components, accessibility/input permissions, firewall/autostart, reboot, and large assets need approval.",
+      "verify": "Open Stream Deck for read-only device detection, confirm version, and do not write profiles, install plugins, update firmware, or grant control permissions."
+    }
+  },
+  {
+    "index": 260,
+    "name": "NVIDIA App",
+    "slug": "nvidia-app",
+    "source": {
+      "type": "website",
+      "url": "https://www.nvidia.com/en-us/software/nvidia-app/",
+      "installUrl": "https://www.nvidia.com/en-us/software/nvidia-app/"
+    },
+    "website": "https://www.nvidia.com/en-us/software/nvidia-app/",
+    "vertical": "hardware",
+    "category": "Devices & Hardware",
+    "description": "NVIDIA's Windows control, driver-update, game-optimization, recording, and overlay application.",
+    "accent": "#76B900",
+    "simpleIconSlug": "nvidia",
+    "secrets": [],
+    "config": [
+      "driver_channel",
+      "overlay",
+      "recording_location",
+      "game_optimization",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Install the signed NVIDIA App from NVIDIA and separate the application install from any graphics-driver, HD Audio, Broadcast, or optional component update.",
+      "preserve": "existing NVIDIA driver version, profiles, recording paths, overlay shortcuts, game optimization, filters, and control-panel settings",
+      "safety": "Stop before NVIDIA sign-in, MFA or CAPTCHA, account linking, purchases, or data sharing. Graphics drivers/kernel components, clean install, firewall/autostart, overlay, optimization writes, reboot, and large driver downloads require explicit approval.",
+      "verify": "Launch the app without signing in, report its version and current driver read-only, and do not update drivers, optimize games, enable overlay, or change startup behavior."
+    }
+  },
+  {
+    "index": 261,
+    "name": "Fortnite",
+    "slug": "fortnite",
+    "source": {
+      "type": "website",
+      "url": "https://www.fortnite.com/download",
+      "installUrl": "https://www.fortnite.com/download"
+    },
+    "website": "https://www.fortnite.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Epic's battle royale and creator ecosystem.",
+    "accent": "#8B5CF6",
+    "simpleIconSlug": "fortnite",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only Fortnite's official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm Fortnite or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 262,
+    "name": "League of Legends",
+    "slug": "league-of-legends",
+    "source": {
+      "type": "website",
+      "url": "https://www.leagueoflegends.com/en-us/download/",
+      "installUrl": "https://www.leagueoflegends.com/en-us/download/"
+    },
+    "website": "https://www.leagueoflegends.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Riot's competitive multiplayer online battle arena game.",
+    "accent": "#C89B3C",
+    "simpleIconSlug": "leagueoflegends",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only League of Legends's official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm League of Legends or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 263,
+    "name": "VALORANT",
+    "slug": "valorant",
+    "source": {
+      "type": "website",
+      "url": "https://playvalorant.com/en-us/download/",
+      "installUrl": "https://playvalorant.com/en-us/download/"
+    },
+    "website": "https://playvalorant.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Riot's tactical five-versus-five shooter.",
+    "accent": "#FF4655",
+    "simpleIconSlug": "valorant",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only VALORANT's official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm VALORANT or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 264,
+    "name": "Minecraft Launcher",
+    "slug": "minecraft-launcher",
+    "source": {
+      "type": "website",
+      "url": "https://www.minecraft.net/en-us/download",
+      "installUrl": "https://www.minecraft.net/en-us/download"
+    },
+    "website": "https://www.minecraft.net/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Official launcher for Minecraft Java and Bedrock editions.",
+    "accent": "#3C8527",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Minecraft Launcher's official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm Minecraft Launcher or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 265,
+    "name": "Counter-Strike 2",
+    "slug": "counter-strike-2",
+    "source": {
+      "type": "website",
+      "url": "https://store.steampowered.com/app/730/CounterStrike_2/",
+      "installUrl": "https://store.steampowered.com/app/730/CounterStrike_2/"
+    },
+    "website": "https://www.counter-strike.net/cs2",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Valve's competitive tactical shooter delivered through Steam.",
+    "accent": "#F2A900",
+    "simpleIconSlug": "counterstrike",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Counter-Strike 2's official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm Counter-Strike 2 or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 266,
+    "name": "Dota 2",
+    "slug": "dota-2",
+    "source": {
+      "type": "website",
+      "url": "https://store.steampowered.com/app/570/Dota_2/",
+      "installUrl": "https://store.steampowered.com/app/570/Dota_2/"
+    },
+    "website": "https://www.dota2.com/home",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Valve's free-to-play multiplayer online battle arena game.",
+    "accent": "#A32C2E",
+    "simpleIconSlug": "dota2",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Dota 2's official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm Dota 2 or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 267,
+    "name": "PUBG: BATTLEGROUNDS",
+    "slug": "pubg-battlegrounds",
+    "source": {
+      "type": "website",
+      "url": "https://pubg.com/en/main",
+      "installUrl": "https://pubg.com/en/main"
+    },
+    "website": "https://pubg.com/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "KRAFTON's large-scale competitive battle royale game.",
+    "accent": "#F2A900",
+    "simpleIconSlug": "pubg",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only PUBG: BATTLEGROUNDS's official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm PUBG: BATTLEGROUNDS or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 268,
+    "name": "osu!",
+    "slug": "osu",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/ppy/osu",
+      "installUrl": "https://github.com/ppy/osu"
+    },
+    "website": "https://osu.ppy.sh/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Free rhythm game with community maps and an open-source lazer client.",
+    "accent": "#FF66AA",
+    "simpleIconSlug": "osu",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only osu!'s official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm osu! or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 269,
+    "name": "Forza Horizon 5",
+    "slug": "forza-horizon-5",
+    "source": {
+      "type": "microsoft-store",
+      "url": "https://apps.microsoft.com/detail/9NNX1VVR3KNQ",
+      "installUrl": "https://apps.microsoft.com/detail/9NNX1VVR3KNQ"
+    },
+    "website": "https://forza.net/horizon",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Xbox Game Studios' open-world driving game.",
+    "accent": "#E84D9B",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "store",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only Forza Horizon 5's official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm Forza Horizon 5 or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 270,
+    "name": "PlayStation Remote Play",
+    "slug": "playstation-remote-play",
+    "source": {
+      "type": "website",
+      "url": "https://remoteplay.dl.playstation.net/remoteplay/lang/en/",
+      "installUrl": "https://remoteplay.dl.playstation.net/remoteplay/lang/en/"
+    },
+    "website": "https://www.playstation.com/remote-play/",
+    "vertical": "gaming",
+    "category": "Games & Launchers",
+    "description": "Sony's official client for streaming a PlayStation console.",
+    "accent": "#006FCD",
+    "simpleIconSlug": "playstation",
+    "secrets": [],
+    "config": [
+      "install_location",
+      "launcher_dependency",
+      "download_limit"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only PlayStation Remote Play's official source and named launcher or store dependency; install the launcher shell first, show disk requirements, and never begin the game payload automatically.",
+      "preserve": "existing game libraries, save data, screenshots, mods, controller settings, launcher manifests, and bandwidth preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and every license prompt. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, launcher dependency, or large download requires separate explicit approval.",
+      "verify": "Confirm PlayStation Remote Play or its required launcher reaches a signed-out ready state and verify no game, anti-cheat, driver, or large asset download started."
+    }
+  },
+  {
+    "index": 271,
+    "name": "Max",
+    "slug": "max-streaming",
+    "source": {
+      "type": "website",
+      "url": "https://www.max.com/",
+      "installUrl": "https://www.max.com/"
+    },
+    "website": "https://www.max.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Warner Bros. Discovery's film and television streaming service.",
+    "accent": "#002BE7",
+    "simpleIconSlug": "max",
+    "secrets": [],
+    "config": [
+      "quality",
+      "offline_storage",
+      "notifications"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Max's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Max to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 272,
+    "name": "Stremio",
+    "slug": "stremio",
+    "source": {
+      "type": "website",
+      "url": "https://www.stremio.com/",
+      "installUrl": "https://www.stremio.com/"
+    },
+    "website": "https://www.stremio.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Cross-platform media center for legal content sources.",
+    "accent": "#7B5BF2",
+    "simpleIconSlug": "stremio",
+    "secrets": [],
+    "config": [
+      "quality",
+      "offline_storage",
+      "notifications"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Stremio's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Stremio to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 273,
+    "name": "Audible",
+    "slug": "audible",
+    "source": {
+      "type": "website",
+      "url": "https://www.audible.com/",
+      "installUrl": "https://www.audible.com/"
+    },
+    "website": "https://www.audible.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Amazon's audiobook and spoken-word listening service.",
+    "accent": "#F8991D",
+    "simpleIconSlug": "audible",
+    "secrets": [],
+    "config": [
+      "quality",
+      "offline_storage",
+      "notifications"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Audible's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Audible to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 274,
+    "name": "Pocket Casts",
+    "slug": "pocket-casts",
+    "source": {
+      "type": "website",
+      "url": "https://pocketcasts.com/",
+      "installUrl": "https://pocketcasts.com/"
+    },
+    "website": "https://pocketcasts.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Podcast player with cross-device sync and a full web app.",
+    "accent": "#F43E37",
+    "simpleIconSlug": "pocketcasts",
+    "secrets": [],
+    "config": [
+      "quality",
+      "offline_storage",
+      "notifications"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Pocket Casts's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Pocket Casts to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 275,
+    "name": "iHeartRadio",
+    "slug": "iheartradio",
+    "source": {
+      "type": "website",
+      "url": "https://www.iheart.com/",
+      "installUrl": "https://www.iheart.com/"
+    },
+    "website": "https://www.iheart.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Live radio, artist stations, music, and podcasts.",
+    "accent": "#C6002B",
+    "simpleIconSlug": "iheartradio",
+    "secrets": [],
+    "config": [
+      "quality",
+      "offline_storage",
+      "notifications"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only iHeartRadio's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch iHeartRadio to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 276,
+    "name": "Plexamp",
+    "slug": "plexamp",
+    "source": {
+      "type": "website",
+      "url": "https://www.plex.tv/plexamp/",
+      "installUrl": "https://www.plex.tv/plexamp/"
+    },
+    "website": "https://www.plex.tv/plexamp/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Plex's focused music player for personal libraries.",
+    "accent": "#E5A00D",
+    "simpleIconSlug": "plex",
+    "secrets": [],
+    "config": [
+      "quality",
+      "offline_storage",
+      "notifications"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Plexamp's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Plexamp to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 277,
+    "name": "Twitch",
+    "slug": "twitch-web",
+    "source": {
+      "type": "website",
+      "url": "https://www.twitch.tv/",
+      "installUrl": "https://www.twitch.tv/"
+    },
+    "website": "https://www.twitch.tv/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Live streaming for gaming, creators, music, and events.",
+    "accent": "#9146FF",
+    "simpleIconSlug": "twitch",
+    "secrets": [],
+    "config": [
+      "quality",
+      "offline_storage",
+      "notifications"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Twitch's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Twitch to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 278,
+    "name": "Vimeo",
+    "slug": "vimeo-web",
+    "source": {
+      "type": "website",
+      "url": "https://vimeo.com/",
+      "installUrl": "https://vimeo.com/"
+    },
+    "website": "https://vimeo.com/",
+    "vertical": "entertainment",
+    "category": "Music & Streaming",
+    "description": "Professional video hosting, review, and live streaming.",
+    "accent": "#1AB7EA",
+    "simpleIconSlug": "vimeo",
+    "secrets": [],
+    "config": [
+      "quality",
+      "offline_storage",
+      "notifications"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Vimeo's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Vimeo to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 279,
+    "name": "Linear",
+    "slug": "linear-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://linear.app/download",
+      "installUrl": "https://linear.app/download"
+    },
+    "website": "https://linear.app/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Issue tracking and product planning for software teams.",
+    "accent": "#5E6AD2",
+    "simpleIconSlug": "linear",
+    "secrets": [],
+    "config": [
+      "workspace",
+      "notifications",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Linear's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Linear to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 280,
+    "name": "ClickUp",
+    "slug": "clickup-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://clickup.com/download",
+      "installUrl": "https://clickup.com/download"
+    },
+    "website": "https://clickup.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Tasks, documents, whiteboards, and team collaboration.",
+    "accent": "#7B68EE",
+    "simpleIconSlug": "clickup",
+    "secrets": [],
+    "config": [
+      "workspace",
+      "notifications",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only ClickUp's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch ClickUp to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 281,
+    "name": "Miro",
+    "slug": "miro-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://miro.com/apps/",
+      "installUrl": "https://miro.com/apps/"
+    },
+    "website": "https://miro.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Collaborative visual workspace for planning and workshops.",
+    "accent": "#FFD02F",
+    "simpleIconSlug": "miro",
+    "secrets": [],
+    "config": [
+      "workspace",
+      "notifications",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Miro's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Miro to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 282,
+    "name": "Basecamp",
+    "slug": "basecamp-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://basecamp.com/via",
+      "installUrl": "https://basecamp.com/via"
+    },
+    "website": "https://basecamp.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Project communication, to-dos, schedules, and files.",
+    "accent": "#1D2D35",
+    "simpleIconSlug": "basecamp",
+    "secrets": [],
+    "config": [
+      "workspace",
+      "notifications",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Basecamp's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Basecamp to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 283,
+    "name": "Evernote",
+    "slug": "evernote-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://evernote.com/download",
+      "installUrl": "https://evernote.com/download"
+    },
+    "website": "https://evernote.com/",
+    "vertical": "work",
+    "category": "Work & Cloud",
+    "description": "Notes, tasks, document capture, and organization.",
+    "accent": "#00A82D",
+    "simpleIconSlug": "evernote",
+    "secrets": [],
+    "config": [
+      "workspace",
+      "notifications",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Web"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Evernote's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Evernote to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 284,
+    "name": "Cinema 4D",
+    "slug": "cinema-4d",
+    "source": {
+      "type": "website",
+      "url": "https://www.maxon.net/en/cinema-4d",
+      "installUrl": "https://www.maxon.net/en/cinema-4d"
+    },
+    "website": "https://www.maxon.net/en/cinema-4d",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Professional 3D modeling, animation, simulation, and rendering.",
+    "accent": "#011A6A",
+    "simpleIconSlug": "cinema4d",
+    "secrets": [],
+    "config": [
+      "project_location",
+      "cache_location",
+      "hardware_acceleration"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only Cinema 4D's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Cinema 4D to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 285,
+    "name": "Photopea",
+    "slug": "photopea",
+    "source": {
+      "type": "website",
+      "url": "https://www.photopea.com/",
+      "installUrl": "https://www.photopea.com/"
+    },
+    "website": "https://www.photopea.com/",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Browser-based image editor compatible with PSD files.",
+    "accent": "#18A497",
+    "simpleIconSlug": "photopea",
+    "secrets": [],
+    "config": [
+      "project_location",
+      "cache_location",
+      "hardware_acceleration"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Photopea's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Photopea to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 286,
+    "name": "Framer",
+    "slug": "framer-web",
+    "source": {
+      "type": "website",
+      "url": "https://www.framer.com/",
+      "installUrl": "https://www.framer.com/"
+    },
+    "website": "https://www.framer.com/",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Collaborative website design and publishing platform.",
+    "accent": "#0055FF",
+    "simpleIconSlug": "framer",
+    "secrets": [],
+    "config": [
+      "project_location",
+      "cache_location",
+      "hardware_acceleration"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Framer's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Framer to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 287,
+    "name": "Webflow",
+    "slug": "webflow-web",
+    "source": {
+      "type": "website",
+      "url": "https://webflow.com/",
+      "installUrl": "https://webflow.com/"
+    },
+    "website": "https://webflow.com/",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Visual website builder, CMS, and interaction platform.",
+    "accent": "#4353FF",
+    "simpleIconSlug": "webflow",
+    "secrets": [],
+    "config": [
+      "project_location",
+      "cache_location",
+      "hardware_acceleration"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Webflow's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Webflow to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 288,
+    "name": "Autodesk Fusion",
+    "slug": "autodesk-fusion",
+    "source": {
+      "type": "website",
+      "url": "https://www.autodesk.com/products/fusion-360/overview",
+      "installUrl": "https://www.autodesk.com/products/fusion-360/personal"
+    },
+    "website": "https://www.autodesk.com/products/fusion-360/overview",
+    "vertical": "creative",
+    "category": "Creative Studio",
+    "description": "Integrated CAD, CAM, electronics, and 3D product design suite.",
+    "accent": "#0696D7",
+    "simpleIconSlug": "autodesk",
+    "secrets": [],
+    "config": [
+      "project_location",
+      "cache_location",
+      "hardware_acceleration"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Autodesk Fusion's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Autodesk Fusion to a safe signed-out state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 289,
+    "name": "Snapchat for Web",
+    "slug": "snapchat-web-app",
+    "source": {
+      "type": "website",
+      "url": "https://web.snapchat.com/",
+      "installUrl": "https://web.snapchat.com/"
+    },
+    "website": "https://www.snapchat.com/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "Snapchat messaging and calling in a desktop browser.",
+    "accent": "#FFFC00",
+    "simpleIconSlug": "snapchat",
+    "secrets": [],
+    "config": [
+      "notifications",
+      "media_permissions",
+      "privacy"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Snapchat for Web's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Snapchat for Web to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 290,
+    "name": "Threads",
+    "slug": "threads-web",
+    "source": {
+      "type": "website",
+      "url": "https://www.threads.com/",
+      "installUrl": "https://www.threads.com/"
+    },
+    "website": "https://www.threads.com/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "Meta's public conversation network.",
+    "accent": "#000000",
+    "simpleIconSlug": "threads",
+    "secrets": [],
+    "config": [
+      "notifications",
+      "media_permissions",
+      "privacy"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Threads's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Threads to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 291,
+    "name": "Bluesky",
+    "slug": "bluesky-web",
+    "source": {
+      "type": "website",
+      "url": "https://bsky.app/",
+      "installUrl": "https://bsky.app/"
+    },
+    "website": "https://bsky.social/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "Decentralized social network built on the AT Protocol.",
+    "accent": "#0285FF",
+    "simpleIconSlug": "bluesky",
+    "secrets": [],
+    "config": [
+      "notifications",
+      "media_permissions",
+      "privacy"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Bluesky's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Bluesky to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 292,
+    "name": "Mastodon",
+    "slug": "mastodon-web",
+    "source": {
+      "type": "website",
+      "url": "https://joinmastodon.org/",
+      "installUrl": "https://joinmastodon.org/"
+    },
+    "website": "https://joinmastodon.org/",
+    "vertical": "social",
+    "category": "Social & Communication",
+    "description": "Federated social network using community servers.",
+    "accent": "#6364FF",
+    "simpleIconSlug": "mastodon",
+    "secrets": [],
+    "config": [
+      "notifications",
+      "media_permissions",
+      "privacy"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Mastodon's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Mastodon to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 293,
+    "name": "LibreWolf",
+    "slug": "librewolf-browser",
+    "source": {
+      "type": "website",
+      "url": "https://librewolf.net/installation/",
+      "installUrl": "https://librewolf.net/installation/"
+    },
+    "website": "https://librewolf.net/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "Privacy-focused Firefox derivative.",
+    "accent": "#00ACFF",
+    "simpleIconSlug": "librewolf",
+    "secrets": [],
+    "config": [
+      "profile_location",
+      "default_browser",
+      "import_source"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only LibreWolf's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch LibreWolf to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 294,
+    "name": "Tor Browser",
+    "slug": "tor-browser",
+    "source": {
+      "type": "website",
+      "url": "https://www.torproject.org/download/",
+      "installUrl": "https://www.torproject.org/download/"
+    },
+    "website": "https://www.torproject.org/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "Privacy browser that routes traffic through Tor.",
+    "accent": "#7D4698",
+    "simpleIconSlug": "torbrowser",
+    "secrets": [],
+    "config": [
+      "profile_location",
+      "default_browser",
+      "import_source"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Tor Browser's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Tor Browser to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 295,
+    "name": "Zen Browser",
+    "slug": "zen-browser",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/zen-browser/desktop",
+      "installUrl": "https://github.com/zen-browser/desktop"
+    },
+    "website": "https://zen-browser.app/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "Open-source Firefox-based workspace browser.",
+    "accent": "#F76F53",
+    "simpleIconSlug": "zenbrowser",
+    "secrets": [],
+    "config": [
+      "profile_location",
+      "default_browser",
+      "import_source"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only Zen Browser's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch Zen Browser to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 296,
+    "name": "DuckDuckGo Browser",
+    "slug": "duckduckgo-browser",
+    "source": {
+      "type": "website",
+      "url": "https://duckduckgo.com/app",
+      "installUrl": "https://duckduckgo.com/app"
+    },
+    "website": "https://duckduckgo.com/",
+    "vertical": "browsers",
+    "category": "Browsers & Internet",
+    "description": "Privacy browser with tracker blocking.",
+    "accent": "#DE5833",
+    "simpleIconSlug": "duckduckgo",
+    "secrets": [],
+    "config": [
+      "profile_location",
+      "default_browser",
+      "import_source"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only DuckDuckGo Browser's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch DuckDuckGo Browser to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 297,
+    "name": "HyperX NGENUITY",
+    "slug": "hyperx-ngenuity",
+    "source": {
+      "type": "microsoft-store",
+      "url": "https://apps.microsoft.com/detail/9P1TBXR6QDCX",
+      "installUrl": "https://apps.microsoft.com/detail/9P1TBXR6QDCX"
+    },
+    "website": "https://hyperx.com/pages/ngenuity",
+    "vertical": "hardware",
+    "category": "Devices & Hardware",
+    "description": "Configure supported HyperX gaming hardware.",
+    "accent": "#E4002B",
+    "simpleIconSlug": "hyperx",
+    "secrets": [],
+    "config": [
+      "device_profiles",
+      "firmware_updates",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only HyperX NGENUITY's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch HyperX NGENUITY to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 298,
+    "name": "SteelSeries GG",
+    "slug": "steelseries-gg",
+    "source": {
+      "type": "website",
+      "url": "https://steelseries.com/gg",
+      "installUrl": "https://steelseries.com/gg"
+    },
+    "website": "https://steelseries.com/gg",
+    "vertical": "hardware",
+    "category": "Devices & Hardware",
+    "description": "Device configuration, audio routing, and capture.",
+    "accent": "#FF5200",
+    "simpleIconSlug": "steelseries",
+    "secrets": [],
+    "config": [
+      "device_profiles",
+      "firmware_updates",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only SteelSeries GG's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch SteelSeries GG to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 299,
+    "name": "AMD Software: Adrenalin Edition",
+    "slug": "amd-adrenalin",
+    "source": {
+      "type": "website",
+      "url": "https://www.amd.com/en/products/software/adrenalin.html",
+      "installUrl": "https://www.amd.com/en/products/software/adrenalin.html"
+    },
+    "website": "https://www.amd.com/en/products/software/adrenalin.html",
+    "vertical": "hardware",
+    "category": "Devices & Hardware",
+    "description": "Official AMD Radeon driver and tuning suite.",
+    "accent": "#ED1C24",
+    "simpleIconSlug": "amd",
+    "secrets": [],
+    "config": [
+      "device_profiles",
+      "firmware_updates",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only AMD Software: Adrenalin Edition's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch AMD Software: Adrenalin Edition to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  },
+  {
+    "index": 300,
+    "name": "NZXT CAM",
+    "slug": "nzxt-cam",
+    "source": {
+      "type": "website",
+      "url": "https://nzxt.com/software/cam",
+      "installUrl": "https://nzxt.com/software/cam"
+    },
+    "website": "https://nzxt.com/software/cam",
+    "vertical": "hardware",
+    "category": "Devices & Hardware",
+    "description": "Monitoring and control for supported NZXT hardware.",
+    "accent": "#5100FA",
+    "simpleIconSlug": "nzxt",
+    "secrets": [],
+    "config": [
+      "device_profiles",
+      "firmware_updates",
+      "launch_on_startup"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use only NZXT CAM's official source for the detected platform, show the package and expected size, and do not enable optional integrations automatically.",
+      "preserve": "existing profiles, local data, downloads, device settings, notifications, integrations, and startup preferences",
+      "safety": "Stop before account sign-in, MFA or CAPTCHA, purchases or subscriptions, age verification, and sensitive permission prompts. Any anti-cheat or kernel driver, firewall rule, autostart change, reboot, privileged device action, or large download requires separate explicit approval.",
+      "verify": "Launch NZXT CAM to a safe signed-out or local-ready state and verify no account, driver, firewall, autostart, purchase, subscription, or reboot action occurred."
+    }
+  }
+]

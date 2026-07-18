@@ -1,0 +1,15 @@
+{
+  "index": 166,
+  "name": "FreeCAD",
+  "slug": "freecad",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/FreeCAD/FreeCAD"
+  },
+  "website": "https://www.freecad.org",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Parametric 3D CAD modeler for product design, mechanical engineering, and architecture.",
+  "accent": "#CB333B",
+  "simpleIconSlug": "freecad"
+}

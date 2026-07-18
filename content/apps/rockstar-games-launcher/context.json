@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Windows"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true
+  },
+  "preferences": [
+    "game_install_location",
+    "cloud_saves",
+    "background_updates",
+    "launch_on_startup"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

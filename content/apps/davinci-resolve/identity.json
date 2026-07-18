@@ -1,0 +1,16 @@
+{
+  "index": 238,
+  "name": "DaVinci Resolve",
+  "slug": "davinci-resolve",
+  "source": {
+    "type": "website",
+    "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "installUrl": "https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion"
+  },
+  "website": "https://www.blackmagicdesign.com/products/davinciresolve",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Professional video editing, color, visual-effects, motion-graphics, and audio suite.",
+  "accent": "#E54431",
+  "simpleIconSlug": "davinciresolve"
+}

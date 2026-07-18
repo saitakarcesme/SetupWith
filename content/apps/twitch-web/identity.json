@@ -1,0 +1,16 @@
+{
+  "index": 277,
+  "name": "Twitch",
+  "slug": "twitch-web",
+  "source": {
+    "type": "website",
+    "url": "https://www.twitch.tv/",
+    "installUrl": "https://www.twitch.tv/"
+  },
+  "website": "https://www.twitch.tv/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Live streaming for gaming, creators, music, and events.",
+  "accent": "#9146FF",
+  "simpleIconSlug": "twitch"
+}

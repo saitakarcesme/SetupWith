@@ -2,9 +2,13 @@
   "index": 14,
   "name": "Node.js",
   "slug": "nodejs",
-  "repo": "https://github.com/nodejs/node",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/nodejs/node"
+  },
   "website": "https://nodejs.org",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "JavaScript runtime for building command-line, server, desktop, and networking applications.",
   "accent": "#339933",
   "simpleIconSlug": "nodedotjs"

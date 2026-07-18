@@ -1,0 +1,15 @@
+{
+  "index": 119,
+  "name": "Transformers",
+  "slug": "hugging-face-transformers",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/huggingface/transformers"
+  },
+  "website": "https://huggingface.co/docs/transformers/",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "Hugging Face library for pretrained models across text, vision, audio, and multimodal tasks.",
+  "accent": "#FFD21E",
+  "simpleIconSlug": "huggingface"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 265,
+  "name": "Counter-Strike 2",
+  "slug": "counter-strike-2",
+  "source": {
+    "type": "website",
+    "url": "https://store.steampowered.com/app/730/CounterStrike_2/",
+    "installUrl": "https://store.steampowered.com/app/730/CounterStrike_2/"
+  },
+  "website": "https://www.counter-strike.net/cs2",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Valve's competitive tactical shooter delivered through Steam.",
+  "accent": "#F2A900",
+  "simpleIconSlug": "counterstrike"
+}

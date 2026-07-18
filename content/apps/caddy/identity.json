@@ -2,9 +2,13 @@
   "index": 65,
   "name": "Caddy",
   "slug": "caddy",
-  "repo": "https://github.com/caddyserver/caddy",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/caddyserver/caddy"
+  },
   "website": "https://caddyserver.com",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Extensible web server providing automatic HTTPS, reverse proxying, and modern protocols.",
   "accent": "#1F88C0",
   "simpleIconSlug": "caddy"

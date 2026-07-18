@@ -1,0 +1,15 @@
+{
+  "index": 130,
+  "name": "Apache Airflow",
+  "slug": "apache-airflow",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/apache/airflow"
+  },
+  "website": "https://airflow.apache.org",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Workflow orchestration platform for authoring, scheduling, and monitoring data pipelines.",
+  "accent": "#017CEE",
+  "simpleIconSlug": "apacheairflow"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 293,
+  "name": "LibreWolf",
+  "slug": "librewolf-browser",
+  "source": {
+    "type": "website",
+    "url": "https://librewolf.net/installation/",
+    "installUrl": "https://librewolf.net/installation/"
+  },
+  "website": "https://librewolf.net/",
+  "category": "Browsers & Internet",
+  "vertical": "browsers",
+  "description": "Privacy-focused Firefox derivative.",
+  "accent": "#00ACFF",
+  "simpleIconSlug": "librewolf"
+}

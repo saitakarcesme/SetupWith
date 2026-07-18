@@ -2,9 +2,13 @@
   "index": 88,
   "name": "KeePassXC",
   "slug": "keepassxc",
-  "repo": "https://github.com/keepassxreboot/keepassxc",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/keepassxreboot/keepassxc"
+  },
   "website": "https://keepassxc.org",
   "category": "Security & Privacy",
+  "vertical": "software",
   "description": "Offline password manager storing encrypted credentials within portable KeePass-compatible database files.",
   "accent": "#6CAC4D",
   "simpleIconSlug": "keepassxc"

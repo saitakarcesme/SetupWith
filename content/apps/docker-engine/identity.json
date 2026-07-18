@@ -2,9 +2,13 @@
   "index": 51,
   "name": "Docker Engine",
   "slug": "docker-engine",
-  "repo": "https://github.com/moby/moby",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/moby/moby"
+  },
   "website": "https://www.docker.com",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Container engine for building, packaging, distributing, and running isolated application environments.",
   "accent": "#2496ED",
   "simpleIconSlug": "docker"

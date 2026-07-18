@@ -1,0 +1,15 @@
+{
+  "index": 112,
+  "name": "Nushell",
+  "slug": "nushell",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/nushell/nushell"
+  },
+  "website": "https://www.nushell.sh",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Structured-data shell that brings pipelines, tables, and typed values to the command line.",
+  "accent": "#4E9A06",
+  "simpleIconSlug": "nushell"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 242,
+  "name": "Unity Hub",
+  "slug": "unity-hub",
+  "source": {
+    "type": "website",
+    "url": "https://unity.com/",
+    "installUrl": "https://unity.com/download"
+  },
+  "website": "https://unity.com/",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Unity's project, license, editor-version, template, and build-module manager.",
+  "accent": "#000000",
+  "simpleIconSlug": "unity"
+}

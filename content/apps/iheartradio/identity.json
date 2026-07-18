@@ -1,0 +1,16 @@
+{
+  "index": 275,
+  "name": "iHeartRadio",
+  "slug": "iheartradio",
+  "source": {
+    "type": "website",
+    "url": "https://www.iheart.com/",
+    "installUrl": "https://www.iheart.com/"
+  },
+  "website": "https://www.iheart.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Live radio, artist stations, music, and podcasts.",
+  "accent": "#C6002B",
+  "simpleIconSlug": "iheartradio"
+}

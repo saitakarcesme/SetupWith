@@ -1,0 +1,16 @@
+{
+  "index": 219,
+  "name": "Netflix",
+  "slug": "netflix",
+  "source": {
+    "type": "website",
+    "url": "https://www.netflix.com/",
+    "installUrl": "https://apps.microsoft.com/detail/9WZDNCRFJ3TJ"
+  },
+  "website": "https://www.netflix.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Subscription video streaming through the official web experience and Windows app.",
+  "accent": "#E50914",
+  "simpleIconSlug": "netflix"
+}

@@ -1,0 +1,15 @@
+{
+  "index": 156,
+  "name": "ONLYOFFICE Desktop Editors",
+  "slug": "onlyoffice-desktop-editors",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/ONLYOFFICE/DesktopEditors"
+  },
+  "website": "https://www.onlyoffice.com/desktop.aspx",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Desktop suite for editing documents, spreadsheets, presentations, forms, and PDFs.",
+  "accent": "#FF6F3D",
+  "simpleIconSlug": "onlyoffice"
+}

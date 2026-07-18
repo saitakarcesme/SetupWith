@@ -1,0 +1,16 @@
+{
+  "index": 234,
+  "name": "Trello",
+  "slug": "trello-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://trello.com/",
+    "installUrl": "https://trello.com/platforms"
+  },
+  "website": "https://trello.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Kanban-style project boards available through official desktop and web clients.",
+  "accent": "#0052CC",
+  "simpleIconSlug": "trello"
+}

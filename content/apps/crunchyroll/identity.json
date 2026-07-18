@@ -1,0 +1,16 @@
+{
+  "index": 228,
+  "name": "Crunchyroll",
+  "slug": "crunchyroll",
+  "source": {
+    "type": "website",
+    "url": "https://www.crunchyroll.com/",
+    "installUrl": "https://www.crunchyroll.com/"
+  },
+  "website": "https://www.crunchyroll.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Anime streaming catalog delivered through Crunchyroll's official web application.",
+  "accent": "#F47521",
+  "simpleIconSlug": "crunchyroll"
+}

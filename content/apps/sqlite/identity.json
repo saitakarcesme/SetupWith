@@ -2,9 +2,13 @@
   "index": 39,
   "name": "SQLite",
   "slug": "sqlite",
-  "repo": "https://github.com/sqlite/sqlite",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/sqlite/sqlite"
+  },
   "website": "https://www.sqlite.org",
   "category": "Data & Databases",
+  "vertical": "software",
   "description": "Embedded transactional SQL database stored within a portable single-file format.",
   "accent": "#003B57",
   "simpleIconSlug": "sqlite"

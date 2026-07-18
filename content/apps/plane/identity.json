@@ -2,9 +2,13 @@
   "index": 72,
   "name": "Plane",
   "slug": "plane",
-  "repo": "https://github.com/makeplane/plane",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/makeplane/plane"
+  },
   "website": "https://plane.so",
   "category": "Productivity",
+  "vertical": "work",
   "description": "Open-source project management platform for issues, cycles, modules, pages, and analytics.",
   "accent": "#3F76FF",
   "simpleIconSlug": "plane"

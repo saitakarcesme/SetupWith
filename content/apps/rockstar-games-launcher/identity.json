@@ -1,0 +1,16 @@
+{
+  "index": 216,
+  "name": "Rockstar Games Launcher",
+  "slug": "rockstar-games-launcher",
+  "source": {
+    "type": "website",
+    "url": "https://www.rockstargames.com/",
+    "installUrl": "https://socialclub.rockstargames.com/rockstar-games-launcher"
+  },
+  "website": "https://www.rockstargames.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Rockstar's Windows launcher for its store, game library, updates, and Social Club.",
+  "accent": "#FCAF17",
+  "simpleIconSlug": "rockstargames"
+}

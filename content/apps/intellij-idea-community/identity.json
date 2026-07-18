@@ -1,0 +1,15 @@
+{
+  "index": 102,
+  "name": "IntelliJ IDEA Community",
+  "slug": "intellij-idea-community",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/JetBrains/intellij-community"
+  },
+  "website": "https://www.jetbrains.com/idea/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Open-source JVM IDE with intelligent code analysis, refactoring, testing, and build-tool support.",
+  "accent": "#FE315D",
+  "simpleIconSlug": "intellijidea"
+}

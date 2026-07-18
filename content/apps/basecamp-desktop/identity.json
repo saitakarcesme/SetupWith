@@ -1,0 +1,16 @@
+{
+  "index": 282,
+  "name": "Basecamp",
+  "slug": "basecamp-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://basecamp.com/via",
+    "installUrl": "https://basecamp.com/via"
+  },
+  "website": "https://basecamp.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Project communication, to-dos, schedules, and files.",
+  "accent": "#1D2D35",
+  "simpleIconSlug": "basecamp"
+}

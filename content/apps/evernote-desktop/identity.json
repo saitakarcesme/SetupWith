@@ -1,0 +1,16 @@
+{
+  "index": 283,
+  "name": "Evernote",
+  "slug": "evernote-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://evernote.com/download",
+    "installUrl": "https://evernote.com/download"
+  },
+  "website": "https://evernote.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Notes, tasks, document capture, and organization.",
+  "accent": "#00A82D",
+  "simpleIconSlug": "evernote"
+}

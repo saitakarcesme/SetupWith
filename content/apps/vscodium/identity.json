@@ -1,0 +1,15 @@
+{
+  "index": 101,
+  "name": "VSCodium",
+  "slug": "vscodium",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/VSCodium/vscodium"
+  },
+  "website": "https://vscodium.com",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Community-built distribution of VS Code without Microsoft branding or telemetry defaults.",
+  "accent": "#2F80ED",
+  "simpleIconSlug": "vscodium"
+}

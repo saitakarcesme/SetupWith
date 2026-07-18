@@ -2,9 +2,13 @@
   "index": 26,
   "name": "InvokeAI",
   "slug": "invokeai",
-  "repo": "https://github.com/invoke-ai/InvokeAI",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/invoke-ai/InvokeAI"
+  },
   "website": "https://invoke.ai",
   "category": "AI & ML",
+  "vertical": "ai",
   "description": "Creative engine offering professional workflows for locally generated visual media.",
   "accent": "#4733FF",
   "simpleIconSlug": null

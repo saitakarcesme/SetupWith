@@ -1,0 +1,15 @@
+{
+  "index": 152,
+  "name": "Cilium",
+  "slug": "cilium",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/cilium/cilium"
+  },
+  "website": "https://cilium.io",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "eBPF-powered Kubernetes networking, observability, and security platform.",
+  "accent": "#F8C517",
+  "simpleIconSlug": "cilium"
+}

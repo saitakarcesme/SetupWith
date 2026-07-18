@@ -1,0 +1,16 @@
+{
+  "index": 278,
+  "name": "Vimeo",
+  "slug": "vimeo-web",
+  "source": {
+    "type": "website",
+    "url": "https://vimeo.com/",
+    "installUrl": "https://vimeo.com/"
+  },
+  "website": "https://vimeo.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Professional video hosting, review, and live streaming.",
+  "accent": "#1AB7EA",
+  "simpleIconSlug": "vimeo"
+}

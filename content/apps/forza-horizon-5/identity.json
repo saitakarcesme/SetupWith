@@ -1,0 +1,16 @@
+{
+  "index": 269,
+  "name": "Forza Horizon 5",
+  "slug": "forza-horizon-5",
+  "source": {
+    "type": "microsoft-store",
+    "url": "https://apps.microsoft.com/detail/9NNX1VVR3KNQ",
+    "installUrl": "https://apps.microsoft.com/detail/9NNX1VVR3KNQ"
+  },
+  "website": "https://forza.net/horizon",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Xbox Game Studios' open-world driving game.",
+  "accent": "#E84D9B",
+  "simpleIconSlug": null
+}

@@ -1,0 +1,16 @@
+{
+  "index": 259,
+  "name": "Elgato Stream Deck",
+  "slug": "elgato-stream-deck",
+  "source": {
+    "type": "website",
+    "url": "https://www.elgato.com/",
+    "installUrl": "https://www.elgato.com/downloads"
+  },
+  "website": "https://www.elgato.com/",
+  "category": "Devices & Hardware",
+  "vertical": "hardware",
+  "description": "Elgato's configuration app for Stream Deck devices, profiles, actions, and plugins.",
+  "accent": "#101010",
+  "simpleIconSlug": "elgato"
+}

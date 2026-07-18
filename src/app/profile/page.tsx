@@ -4,6 +4,7 @@ import { ArrowRight, Fingerprint, HardDrive, ShieldCheck } from "lucide-react";
 import { EnvironmentProfile } from "@/components/environment-profile";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { TypingHeadline } from "@/components/typing-headline";
 import { VaultPanel } from "@/components/vault-panel";
 
 export const metadata: Metadata = {
@@ -18,10 +19,10 @@ export default function ProfilePage() {
       <main className="profile-page">
         <section className="profile-hero shell">
           <span className="eyebrow">YOUR CONTEXT / LOCAL FIRST</span>
-          <h1>Brief Codex once.<br /><span>Reuse it everywhere.</span></h1>
+          <TypingHeadline>Brief Codex once.<br /><span>Reuse it everywhere.</span></TypingHeadline>
           <p>
             Store ordinary preferences as local context and protect credentials in an encrypted browser vault.
-            App pages only request the fields they genuinely need.
+            You decide whether the exact non-secret profile shown in each preview is added before copying.
           </p>
           <div className="profile-trust-row">
             <span><HardDrive size={15} aria-hidden="true" /> Stored on this device</span>

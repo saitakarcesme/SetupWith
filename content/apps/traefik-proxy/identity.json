@@ -1,0 +1,15 @@
+{
+  "index": 154,
+  "name": "Traefik Proxy",
+  "slug": "traefik-proxy",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/traefik/traefik"
+  },
+  "website": "https://traefik.io/traefik/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Cloud-native reverse proxy and ingress controller with automatic service discovery.",
+  "accent": "#24A1C1",
+  "simpleIconSlug": "traefikproxy"
+}

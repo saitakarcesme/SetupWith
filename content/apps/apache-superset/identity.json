@@ -1,0 +1,15 @@
+{
+  "index": 133,
+  "name": "Apache Superset",
+  "slug": "apache-superset",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/apache/superset"
+  },
+  "website": "https://superset.apache.org",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Modern data exploration and visualization platform for dashboards and SQL analytics.",
+  "accent": "#20A7C9",
+  "simpleIconSlug": "apachesuperset"
+}

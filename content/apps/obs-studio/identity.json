@@ -2,9 +2,13 @@
   "index": 81,
   "name": "OBS Studio",
   "slug": "obs-studio",
-  "repo": "https://github.com/obsproject/obs-studio",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/obsproject/obs-studio"
+  },
   "website": "https://obsproject.com",
   "category": "Design & Media",
+  "vertical": "creative",
   "description": "Live streaming and recording application supporting scenes, sources, filters, and plugins.",
   "accent": "#302E31",
   "simpleIconSlug": "obsstudio"

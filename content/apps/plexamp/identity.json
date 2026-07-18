@@ -1,0 +1,16 @@
+{
+  "index": 276,
+  "name": "Plexamp",
+  "slug": "plexamp",
+  "source": {
+    "type": "website",
+    "url": "https://www.plex.tv/plexamp/",
+    "installUrl": "https://www.plex.tv/plexamp/"
+  },
+  "website": "https://www.plex.tv/plexamp/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Plex's focused music player for personal libraries.",
+  "accent": "#E5A00D",
+  "simpleIconSlug": "plex"
+}

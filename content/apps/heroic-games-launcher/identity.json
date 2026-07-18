@@ -1,0 +1,16 @@
+{
+  "index": 210,
+  "name": "Heroic Games Launcher",
+  "slug": "heroic-games-launcher",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+    "installUrl": "https://heroicgameslauncher.com/downloads"
+  },
+  "website": "https://heroicgameslauncher.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Open-source launcher for Epic, GOG, and Amazon game libraries.",
+  "accent": "#5D4BA8",
+  "simpleIconSlug": "heroicgameslauncher"
+}

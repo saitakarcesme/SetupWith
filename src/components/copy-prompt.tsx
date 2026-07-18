@@ -1,8 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
+import { useState, useSyncExternalStore } from "react";
 import { Check, Clipboard, KeyRound, LockKeyhole, TerminalSquare } from "lucide-react";
 import type { SetupApp } from "@/data/apps";
+import {
+  buildEnvironmentContext,
+  getEnvironmentProfileSnapshot,
+  parseEnvironmentProfile,
+  subscribeToEnvironmentProfile,
+} from "@/lib/environment-profile";
 
 interface CopyPromptProps {
   app: SetupApp;
@@ -11,14 +18,24 @@ interface CopyPromptProps {
 export function CopyPrompt({ app }: CopyPromptProps) {
   const [copyState, setCopyState] = useState<"idle" | "copied" | "error">("idle");
   const [expanded, setExpanded] = useState(false);
+  const [includeLocalContext, setIncludeLocalContext] = useState(true);
+  const storedProfile = useSyncExternalStore(
+    subscribeToEnvironmentProfile,
+    getEnvironmentProfileSnapshot,
+    () => null,
+  );
+  const hasLocalProfile = storedProfile !== null;
+  const prompt = includeLocalContext && hasLocalProfile
+    ? `${app.prompt}\n\n${buildEnvironmentContext(parseEnvironmentProfile(storedProfile))}`
+    : app.prompt;
 
   async function copyPrompt() {
     try {
-      await navigator.clipboard.writeText(app.prompt);
+      await navigator.clipboard.writeText(prompt);
       setCopyState("copied");
     } catch {
       const fallback = document.createElement("textarea");
-      fallback.value = app.prompt;
+      fallback.value = prompt;
       fallback.setAttribute("readonly", "");
       fallback.style.position = "fixed";
       fallback.style.opacity = "0";
@@ -61,19 +78,44 @@ export function CopyPrompt({ app }: CopyPromptProps) {
         </div>
       </div>
 
+      <div className="prompt-context-option">
+        <label>
+          <input
+            type="checkbox"
+            checked={includeLocalContext && hasLocalProfile}
+            disabled={!hasLocalProfile}
+            onChange={(event) => {
+              setIncludeLocalContext(event.target.checked);
+              setCopyState("idle");
+            }}
+          />
+          <span>Include my non-secret local profile</span>
+        </label>
+        <p>
+          {hasLocalProfile
+            ? "Read from this browser and shown in the preview below."
+            : <><Link href="/profile">Create a local profile</Link> to tailor this prompt.</>}
+        </p>
+      </div>
+
       <div className={`prompt-preview ${expanded ? "expanded" : ""}`}>
         <div className="prompt-preview-bar">
           <span>SETUP PROMPT / {app.slug}</span>
-          <button type="button" onClick={() => setExpanded((value) => !value)}>
+          <button
+            aria-controls={`setup-prompt-${app.slug}`}
+            aria-expanded={expanded}
+            type="button"
+            onClick={() => setExpanded((value) => !value)}
+          >
             {expanded ? "Collapse" : "Review full prompt"}
           </button>
         </div>
-        <pre>{app.prompt}</pre>
+        <pre id={`setup-prompt-${app.slug}`}>{prompt}</pre>
       </div>
 
       <button className="copy-prompt-button" type="button" onClick={copyPrompt}>
         {copyState === "copied" ? <Check size={18} aria-hidden="true" /> : <Clipboard size={18} aria-hidden="true" />}
-        <span>
+        <span aria-live="polite">
           {copyState === "copied"
             ? "Copied — ready for Codex"
             : copyState === "error"
@@ -82,7 +124,8 @@ export function CopyPrompt({ app }: CopyPromptProps) {
         </span>
       </button>
       <p className="setup-note">
-        Review the prompt before running it. Codex will still ask before privileged or destructive steps.
+        Review before copying. SetupWith does not send this preview anywhere; once you paste it into Codex,
+        the destination Codex service&apos;s data controls apply. Codex still asks before privileged or destructive steps.
       </p>
     </aside>
   );

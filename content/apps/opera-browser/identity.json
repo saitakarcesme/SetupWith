@@ -1,0 +1,16 @@
+{
+  "index": 255,
+  "name": "Opera",
+  "slug": "opera-browser",
+  "source": {
+    "type": "website",
+    "url": "https://www.opera.com/",
+    "installUrl": "https://www.opera.com/download"
+  },
+  "website": "https://www.opera.com/",
+  "category": "Browsers & Internet",
+  "vertical": "browsers",
+  "description": "Chromium browser with integrated workspaces, sidebar services, ad blocking, and VPN proxy.",
+  "accent": "#FF1B2D",
+  "simpleIconSlug": "opera"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 281,
+  "name": "Miro",
+  "slug": "miro-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://miro.com/apps/",
+    "installUrl": "https://miro.com/apps/"
+  },
+  "website": "https://miro.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Collaborative visual workspace for planning and workshops.",
+  "accent": "#FFD02F",
+  "simpleIconSlug": "miro"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 286,
+  "name": "Framer",
+  "slug": "framer-web",
+  "source": {
+    "type": "website",
+    "url": "https://www.framer.com/",
+    "installUrl": "https://www.framer.com/"
+  },
+  "website": "https://www.framer.com/",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Collaborative website design and publishing platform.",
+  "accent": "#0055FF",
+  "simpleIconSlug": "framer"
+}

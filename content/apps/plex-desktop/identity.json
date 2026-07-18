@@ -1,0 +1,16 @@
+{
+  "index": 226,
+  "name": "Plex",
+  "slug": "plex-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.plex.tv/",
+    "installUrl": "https://www.plex.tv/media-server-downloads/"
+  },
+  "website": "https://www.plex.tv/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Personal media playback and streaming clients for Plex libraries and services.",
+  "accent": "#E5A00D",
+  "simpleIconSlug": "plex"
+}

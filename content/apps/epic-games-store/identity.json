@@ -1,0 +1,16 @@
+{
+  "index": 202,
+  "name": "Epic Games Store",
+  "slug": "epic-games-store",
+  "source": {
+    "type": "website",
+    "url": "https://store.epicgames.com/",
+    "installUrl": "https://store.epicgames.com/en-US/download"
+  },
+  "website": "https://store.epicgames.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Epic's desktop storefront and library client for PC and Mac games.",
+  "accent": "#2A2A2A",
+  "simpleIconSlug": "epicgames"
+}

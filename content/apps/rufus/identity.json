@@ -2,9 +2,13 @@
   "index": 100,
   "name": "Rufus",
   "slug": "rufus",
-  "repo": "https://github.com/pbatard/rufus",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/pbatard/rufus"
+  },
   "website": "https://rufus.ie",
   "category": "System Utilities",
+  "vertical": "software",
   "description": "Windows utility for creating bootable USB drives from operating system images.",
   "accent": "#0A78C3",
   "simpleIconSlug": "rufus"

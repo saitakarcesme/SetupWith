@@ -1,0 +1,15 @@
+{
+  "index": 132,
+  "name": "Metabase",
+  "slug": "metabase",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/metabase/metabase"
+  },
+  "website": "https://www.metabase.com",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Business intelligence platform for querying, visualizing, and sharing data without heavy tooling.",
+  "accent": "#509EE3",
+  "simpleIconSlug": "metabase"
+}

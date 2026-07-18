@@ -1,0 +1,42 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "server_name",
+    "data_directory",
+    "database_name",
+    "listen_address",
+    "listen_port"
+  ],
+  "secrets": [
+    {
+      "key": "SYNAPSE_REGISTRATION_SHARED_SECRET",
+      "reference": "secret://synapse/registration-shared-secret"
+    },
+    {
+      "key": "SYNAPSE_DATABASE_PASSWORD",
+      "reference": "secret://synapse/database-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "index": 214,
+  "name": "NVIDIA GeForce NOW",
+  "slug": "nvidia-geforce-now",
+  "source": {
+    "type": "website",
+    "url": "https://www.nvidia.com/geforce-now/",
+    "installUrl": "https://www.nvidia.com/en-us/geforce-now/download/"
+  },
+  "website": "https://www.nvidia.com/geforce-now/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "NVIDIA's cloud-gaming client for streaming supported PC game libraries.",
+  "accent": "#76B900",
+  "simpleIconSlug": "nvidia"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 271,
+  "name": "Max",
+  "slug": "max-streaming",
+  "source": {
+    "type": "website",
+    "url": "https://www.max.com/",
+    "installUrl": "https://www.max.com/"
+  },
+  "website": "https://www.max.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Warner Bros. Discovery's film and television streaming service.",
+  "accent": "#002BE7",
+  "simpleIconSlug": "max"
+}

@@ -1,0 +1,15 @@
+{
+  "index": 121,
+  "name": "TensorFlow",
+  "slug": "tensorflow",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/tensorflow/tensorflow"
+  },
+  "website": "https://www.tensorflow.org",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "End-to-end machine-learning platform for training, serving, and deploying neural networks.",
+  "accent": "#FF6F00",
+  "simpleIconSlug": "tensorflow"
+}

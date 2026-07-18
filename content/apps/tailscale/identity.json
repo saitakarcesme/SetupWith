@@ -2,9 +2,13 @@
   "index": 90,
   "name": "Tailscale",
   "slug": "tailscale",
-  "repo": "https://github.com/tailscale/tailscale",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/tailscale/tailscale"
+  },
   "website": "https://tailscale.com",
   "category": "Security & Privacy",
+  "vertical": "software",
   "description": "Mesh networking client connecting devices securely through WireGuard-based private overlay networks.",
   "accent": "#242424",
   "simpleIconSlug": "tailscale"

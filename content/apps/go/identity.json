@@ -2,9 +2,13 @@
   "index": 20,
   "name": "Go",
   "slug": "go",
-  "repo": "https://github.com/golang/go",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/golang/go"
+  },
   "website": "https://go.dev",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "Compiled programming language designed for simple, reliable, and scalable software development.",
   "accent": "#00ADD8",
   "simpleIconSlug": "go"

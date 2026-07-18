@@ -1,0 +1,16 @@
+{
+  "index": 268,
+  "name": "osu!",
+  "slug": "osu",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/ppy/osu",
+    "installUrl": "https://github.com/ppy/osu"
+  },
+  "website": "https://osu.ppy.sh/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Free rhythm game with community maps and an open-source lazer client.",
+  "accent": "#FF66AA",
+  "simpleIconSlug": "osu"
+}

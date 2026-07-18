@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Check, Clipboard, Search, TerminalSquare } from "lucide-react";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { TypingHeadline } from "@/components/typing-headline";
 
 export const metadata: Metadata = {
   title: "How it works",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const steps = [
-  { icon: Search, label: "DISCOVER", title: "Choose a real project", body: "Browse 100 installable tools linked to their canonical repository and official site." },
+  { icon: Search, label: "DISCOVER", title: "Choose a real app", body: "Browse software, AI, games, entertainment, work, creative, social, browser, and device setups linked to verified official sources." },
   { icon: Clipboard, label: "CONTEXT", title: "Review the exact prompt", body: "See platform checks, profile preferences, secret aliases, permission gates, verification, and rollback before copying." },
   { icon: TerminalSquare, label: "RUN", title: "Let Codex inspect first", body: "Codex detects the machine and existing configuration, then proposes the safest supported installation path." },
   { icon: Check, label: "VERIFY", title: "Finish with evidence", body: "The run checks the executable, application, service, or endpoint and reports every changed path." },
@@ -23,10 +24,11 @@ export default function HowItWorksPage() {
       <main className="info-page">
         <section className="info-hero shell">
           <span className="eyebrow">WORKFLOW / ONE GUIDED RUN</span>
-          <h1>From intent to installed.</h1>
+          <TypingHeadline>From intent to installed.</TypingHeadline>
           <p>
             SetupWith does not execute a mystery script. It gives Codex a product-specific brief, clear safety
-            boundaries, and an outcome to verify.
+            boundaries, and an outcome to verify. You can use the hosted catalog or install SetupWith locally
+            when you want the profile and prompt-building workflow on your own machine.
           </p>
         </section>
         <section className="shell workflow-list">
@@ -46,14 +48,14 @@ export default function HowItWorksPage() {
             <li><span>01</span><strong>Preflight</strong><p>OS, architecture, shell, package managers, existing install.</p></li>
             <li><span>02</span><strong>Official source</strong><p>Native package, signed release, or canonical repository.</p></li>
             <li><span>03</span><strong>Product configuration</strong><p>Real file paths, services, plugins, integrations, and preferences.</p></li>
-            <li><span>04</span><strong>Permission checkpoints</strong><p>Admin access, overwrite, daemon, ports, firewall, browser sign-in.</p></li>
+            <li><span>04</span><strong>Permission checkpoints</strong><p>Sign-in, payment, large downloads, admin access, anti-cheat, drivers, services, firewall, and restarts.</p></li>
             <li><span>05</span><strong>Verification</strong><p>Product-specific command, application state, service, or endpoint.</p></li>
             <li><span>06</span><strong>Rollback</strong><p>Uninstall and restore guidance that preserves user data.</p></li>
           </ol>
         </section>
         <section className="info-cta shell">
           <div><span className="eyebrow">READY WHEN YOU ARE</span><h2>Find your first setup.</h2></div>
-          <Link href="/apps">Browse 100 apps <ArrowRight size={17} aria-hidden="true" /></Link>
+          <Link href="/apps">Browse apps and guided bundles <ArrowRight size={17} aria-hidden="true" /></Link>
         </section>
       </main>
       <SiteFooter />

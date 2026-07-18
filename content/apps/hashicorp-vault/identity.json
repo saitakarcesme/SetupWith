@@ -1,0 +1,15 @@
+{
+  "index": 146,
+  "name": "HashiCorp Vault",
+  "slug": "hashicorp-vault",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/hashicorp/vault"
+  },
+  "website": "https://developer.hashicorp.com/vault",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Secrets-management service for encrypted storage, dynamic credentials, and identity-based access.",
+  "accent": "#FFEC6E",
+  "simpleIconSlug": "vault"
+}

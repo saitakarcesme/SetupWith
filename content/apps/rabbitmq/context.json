@@ -1,0 +1,44 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "data_directory",
+    "node_name",
+    "listen_address",
+    "amqp_port",
+    "management_port"
+  ],
+  "secrets": [
+    {
+      "key": "RABBITMQ_DEFAULT_PASS",
+      "reference": "secret://rabbitmq/default-pass"
+    },
+    {
+      "key": "RABBITMQ_ERLANG_COOKIE",
+      "reference": "secret://rabbitmq/erlang-cookie"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "index": 204,
+  "name": "Battle.net",
+  "slug": "battle-net",
+  "source": {
+    "type": "website",
+    "url": "https://www.blizzard.com/apps/battle.net/desktop",
+    "installUrl": "https://download.battle.net/en-us/desktop"
+  },
+  "website": "https://www.blizzard.com/apps/battle.net/desktop",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Blizzard's launcher, social client, and updater for Battle.net games.",
+  "accent": "#148EFF",
+  "simpleIconSlug": "battledotnet"
+}

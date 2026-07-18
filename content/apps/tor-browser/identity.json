@@ -1,0 +1,16 @@
+{
+  "index": 294,
+  "name": "Tor Browser",
+  "slug": "tor-browser",
+  "source": {
+    "type": "website",
+    "url": "https://www.torproject.org/download/",
+    "installUrl": "https://www.torproject.org/download/"
+  },
+  "website": "https://www.torproject.org/",
+  "category": "Browsers & Internet",
+  "vertical": "browsers",
+  "description": "Privacy browser that routes traffic through Tor.",
+  "accent": "#7D4698",
+  "simpleIconSlug": "torbrowser"
+}

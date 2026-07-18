@@ -1,0 +1,16 @@
+{
+  "index": 284,
+  "name": "Cinema 4D",
+  "slug": "cinema-4d",
+  "source": {
+    "type": "website",
+    "url": "https://www.maxon.net/en/cinema-4d",
+    "installUrl": "https://www.maxon.net/en/cinema-4d"
+  },
+  "website": "https://www.maxon.net/en/cinema-4d",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Professional 3D modeling, animation, simulation, and rendering.",
+  "accent": "#011A6A",
+  "simpleIconSlug": "cinema4d"
+}

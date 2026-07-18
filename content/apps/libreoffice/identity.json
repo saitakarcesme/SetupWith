@@ -1,0 +1,15 @@
+{
+  "index": 155,
+  "name": "LibreOffice",
+  "slug": "libreoffice",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/LibreOffice/core"
+  },
+  "website": "https://www.libreoffice.org",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Open-source office suite for documents, spreadsheets, presentations, drawings, and databases.",
+  "accent": "#18A303",
+  "simpleIconSlug": "libreoffice"
+}

@@ -2,9 +2,13 @@
   "index": 83,
   "name": "Audacity",
   "slug": "audacity",
-  "repo": "https://github.com/audacity/audacity",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/audacity/audacity"
+  },
   "website": "https://www.audacityteam.org",
   "category": "Design & Media",
+  "vertical": "creative",
   "description": "Cross-platform multitrack audio recorder and editor with effects and plugin support.",
   "accent": "#0000CC",
   "simpleIconSlug": "audacity"

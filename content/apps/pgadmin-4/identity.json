@@ -1,0 +1,15 @@
+{
+  "index": 134,
+  "name": "pgAdmin 4",
+  "slug": "pgadmin-4",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/pgadmin-org/pgadmin4"
+  },
+  "website": "https://www.pgadmin.org",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Graphical administration and development platform for PostgreSQL databases.",
+  "accent": "#336791",
+  "simpleIconSlug": null
+}

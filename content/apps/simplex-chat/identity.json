@@ -1,0 +1,15 @@
+{
+  "index": 187,
+  "name": "SimpleX Chat",
+  "slug": "simplex-chat",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/simplex-chat/simplex-chat"
+  },
+  "website": "https://simplex.chat",
+  "category": "Communication",
+  "vertical": "social",
+  "description": "Private messenger designed without user identifiers, using decentralized message relays.",
+  "accent": "#111827",
+  "simpleIconSlug": "simplex"
+}

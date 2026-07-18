@@ -2,9 +2,13 @@
   "index": 3,
   "name": "GitHub CLI",
   "slug": "github-cli",
-  "repo": "https://github.com/cli/cli",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/cli/cli"
+  },
   "website": "https://cli.github.com",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "Official command-line interface for repositories, pull requests, issues, and workflows.",
   "accent": "#181717",
   "simpleIconSlug": "github"

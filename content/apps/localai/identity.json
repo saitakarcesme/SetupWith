@@ -2,9 +2,13 @@
   "index": 23,
   "name": "LocalAI",
   "slug": "localai",
-  "repo": "https://github.com/mudler/LocalAI",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mudler/LocalAI"
+  },
   "website": "https://localai.io",
   "category": "AI & ML",
+  "vertical": "ai",
   "description": "Self-hosted OpenAI-compatible inference platform supporting language, image, audio, and embeddings.",
   "accent": "#1D9BF0",
   "simpleIconSlug": null

@@ -1,0 +1,16 @@
+{
+  "index": 207,
+  "name": "GOG GALAXY",
+  "slug": "gog-galaxy",
+  "source": {
+    "type": "website",
+    "url": "https://www.gog.com/galaxy",
+    "installUrl": "https://www.gog.com/galaxy"
+  },
+  "website": "https://www.gog.com/galaxy",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "GOG's optional library client for DRM-free games and connected platforms.",
+  "accent": "#86328A",
+  "simpleIconSlug": "gogdotcom"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 215,
+  "name": "Roblox",
+  "slug": "roblox-player",
+  "source": {
+    "type": "website",
+    "url": "https://www.roblox.com/",
+    "installUrl": "https://www.roblox.com/download"
+  },
+  "website": "https://www.roblox.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Roblox's player for launching community-created online experiences.",
+  "accent": "#E2231A",
+  "simpleIconSlug": "roblox"
+}

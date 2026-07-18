@@ -2,9 +2,13 @@
   "index": 17,
   "name": "Python",
   "slug": "python",
-  "repo": "https://github.com/python/cpython",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/python/cpython"
+  },
   "website": "https://www.python.org",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "General-purpose programming runtime widely used for automation, applications, and data science.",
   "accent": "#3776AB",
   "simpleIconSlug": "python"

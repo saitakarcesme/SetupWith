@@ -1,0 +1,16 @@
+{
+  "index": 222,
+  "name": "Deezer",
+  "slug": "deezer",
+  "source": {
+    "type": "website",
+    "url": "https://www.deezer.com/",
+    "installUrl": "https://www.deezer.com/explore/download/"
+  },
+  "website": "https://www.deezer.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Music and podcast streaming through official desktop and web clients.",
+  "accent": "#A238FF",
+  "simpleIconSlug": "deezer"
+}

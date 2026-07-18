@@ -1,0 +1,16 @@
+{
+  "index": 211,
+  "name": "Lutris",
+  "slug": "lutris",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/lutris/lutris",
+    "installUrl": "https://lutris.net/downloads"
+  },
+  "website": "https://lutris.net/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Open-source Linux game manager for native titles, emulators, Wine, and stores.",
+  "accent": "#FF9900",
+  "simpleIconSlug": "lutris"
+}

@@ -2,9 +2,13 @@
   "index": 36,
   "name": "PostgreSQL",
   "slug": "postgresql",
-  "repo": "https://github.com/postgres/postgres",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/postgres/postgres"
+  },
   "website": "https://www.postgresql.org",
   "category": "Data & Databases",
+  "vertical": "software",
   "description": "Advanced relational database emphasizing extensibility, standards compliance, reliability, and data integrity.",
   "accent": "#4169E1",
   "simpleIconSlug": "postgresql"

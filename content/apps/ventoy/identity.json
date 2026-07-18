@@ -1,0 +1,15 @@
+{
+  "index": 196,
+  "name": "Ventoy",
+  "slug": "ventoy",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/ventoy/Ventoy"
+  },
+  "website": "https://www.ventoy.net",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Bootable USB utility that stores multiple ISO, WIM, IMG, VHD, and EFI images on one drive.",
+  "accent": "#1F5AA6",
+  "simpleIconSlug": null
+}

@@ -1,0 +1,15 @@
+{
+  "index": 117,
+  "name": "direnv",
+  "slug": "direnv",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/direnv/direnv"
+  },
+  "website": "https://direnv.net",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Shell extension that loads and unloads per-directory environment variables.",
+  "accent": "#40A977",
+  "simpleIconSlug": null
+}

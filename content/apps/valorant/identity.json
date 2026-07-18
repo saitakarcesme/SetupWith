@@ -1,0 +1,16 @@
+{
+  "index": 263,
+  "name": "VALORANT",
+  "slug": "valorant",
+  "source": {
+    "type": "website",
+    "url": "https://playvalorant.com/en-us/download/",
+    "installUrl": "https://playvalorant.com/en-us/download/"
+  },
+  "website": "https://playvalorant.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Riot's tactical five-versus-five shooter.",
+  "accent": "#FF4655",
+  "simpleIconSlug": "valorant"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 299,
+  "name": "AMD Software: Adrenalin Edition",
+  "slug": "amd-adrenalin",
+  "source": {
+    "type": "website",
+    "url": "https://www.amd.com/en/products/software/adrenalin.html",
+    "installUrl": "https://www.amd.com/en/products/software/adrenalin.html"
+  },
+  "website": "https://www.amd.com/en/products/software/adrenalin.html",
+  "category": "Devices & Hardware",
+  "vertical": "hardware",
+  "description": "Official AMD Radeon driver and tuning suite.",
+  "accent": "#ED1C24",
+  "simpleIconSlug": "amd"
+}

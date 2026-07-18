@@ -1,0 +1,16 @@
+{
+  "index": 240,
+  "name": "Aseprite",
+  "slug": "aseprite",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/aseprite/aseprite",
+    "installUrl": "https://www.aseprite.org/download/"
+  },
+  "website": "https://www.aseprite.org/",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Pixel-art and sprite-animation editor with official paid builds and source access.",
+  "accent": "#7D929E",
+  "simpleIconSlug": "aseprite"
+}

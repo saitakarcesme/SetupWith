@@ -2,9 +2,13 @@
   "index": 80,
   "name": "Krita",
   "slug": "krita",
-  "repo": "https://github.com/KDE/krita",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/KDE/krita"
+  },
   "website": "https://krita.org",
   "category": "Design & Media",
+  "vertical": "creative",
   "description": "Digital painting application offering brushes, animation, layers, assistants, and color management.",
   "accent": "#3BABFF",
   "simpleIconSlug": "krita"

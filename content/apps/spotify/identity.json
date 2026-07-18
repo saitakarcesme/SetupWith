@@ -1,0 +1,16 @@
+{
+  "index": 217,
+  "name": "Spotify",
+  "slug": "spotify",
+  "source": {
+    "type": "website",
+    "url": "https://www.spotify.com/",
+    "installUrl": "https://www.spotify.com/download/"
+  },
+  "website": "https://www.spotify.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Music, podcast, and audiobook streaming across desktop and web.",
+  "accent": "#1ED760",
+  "simpleIconSlug": "spotify"
+}

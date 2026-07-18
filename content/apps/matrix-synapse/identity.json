@@ -1,0 +1,15 @@
+{
+  "index": 188,
+  "name": "Matrix Synapse",
+  "slug": "matrix-synapse",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/element-hq/synapse"
+  },
+  "website": "https://element-hq.github.io/synapse/latest/",
+  "category": "Communication",
+  "vertical": "social",
+  "description": "Mature Matrix homeserver implementation for federated real-time communication.",
+  "accent": "#0DBD8B",
+  "simpleIconSlug": "matrix"
+}

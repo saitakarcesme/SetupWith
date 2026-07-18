@@ -1,0 +1,15 @@
+{
+  "index": 127,
+  "name": "KoboldCpp",
+  "slug": "koboldcpp",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/LostRuins/koboldcpp"
+  },
+  "website": "https://github.com/LostRuins/koboldcpp",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "Portable llama.cpp-based local inference server and interface for GGUF language models.",
+  "accent": "#5B3A29",
+  "simpleIconSlug": null
+}

@@ -1,0 +1,16 @@
+{
+  "index": 245,
+  "name": "Discord",
+  "slug": "discord",
+  "source": {
+    "type": "website",
+    "url": "https://discord.com/",
+    "installUrl": "https://discord.com/download"
+  },
+  "website": "https://discord.com/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "Voice, video, text, streaming, and community client for desktop and web.",
+  "accent": "#5865F2",
+  "simpleIconSlug": "discord"
+}

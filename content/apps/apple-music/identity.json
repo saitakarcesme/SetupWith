@@ -1,0 +1,16 @@
+{
+  "index": 218,
+  "name": "Apple Music",
+  "slug": "apple-music",
+  "source": {
+    "type": "website",
+    "url": "https://music.apple.com/",
+    "installUrl": "https://support.apple.com/guide/music-windows/welcome/windows"
+  },
+  "website": "https://music.apple.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Apple's music streaming service and local library player for desktop and web.",
+  "accent": "#FA243C",
+  "simpleIconSlug": "applemusic"
+}

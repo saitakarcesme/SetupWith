@@ -1,0 +1,15 @@
+{
+  "index": 193,
+  "name": "Directus",
+  "slug": "directus",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/directus/directus"
+  },
+  "website": "https://directus.io",
+  "category": "Web & Self-hosted",
+  "vertical": "software",
+  "description": "Data platform that adds APIs, authentication, automation, and an admin app to SQL databases.",
+  "accent": "#6644FF",
+  "simpleIconSlug": "directus"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 289,
+  "name": "Snapchat for Web",
+  "slug": "snapchat-web-app",
+  "source": {
+    "type": "website",
+    "url": "https://web.snapchat.com/",
+    "installUrl": "https://web.snapchat.com/"
+  },
+  "website": "https://www.snapchat.com/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "Snapchat messaging and calling in a desktop browser.",
+  "accent": "#FFFC00",
+  "simpleIconSlug": "snapchat"
+}

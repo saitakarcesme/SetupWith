@@ -1,0 +1,15 @@
+{
+  "index": 136,
+  "name": "Beekeeper Studio",
+  "slug": "beekeeper-studio",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/beekeeper-studio/beekeeper-studio"
+  },
+  "website": "https://www.beekeeperstudio.io",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Cross-platform SQL client for browsing, querying, and managing relational databases.",
+  "accent": "#FAD83B",
+  "simpleIconSlug": "beekeeperstudio"
+}

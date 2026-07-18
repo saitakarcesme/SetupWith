@@ -1,0 +1,15 @@
+{
+  "index": 162,
+  "name": "Super Productivity",
+  "slug": "super-productivity",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/johannesjo/super-productivity"
+  },
+  "website": "https://super-productivity.com",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Task, time, and focus manager with offline-first storage and issue-tracker integrations.",
+  "accent": "#C2185B",
+  "simpleIconSlug": null
+}

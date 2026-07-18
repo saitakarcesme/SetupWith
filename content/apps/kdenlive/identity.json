@@ -2,9 +2,13 @@
   "index": 82,
   "name": "Kdenlive",
   "slug": "kdenlive",
-  "repo": "https://github.com/KDE/kdenlive",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/KDE/kdenlive"
+  },
   "website": "https://kdenlive.org",
   "category": "Design & Media",
+  "vertical": "creative",
   "description": "Nonlinear video editor featuring multitrack timelines, effects, proxies, and broad formats.",
   "accent": "#527EB2",
   "simpleIconSlug": "kdenlive"

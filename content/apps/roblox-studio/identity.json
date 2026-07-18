@@ -1,0 +1,16 @@
+{
+  "index": 244,
+  "name": "Roblox Studio",
+  "slug": "roblox-studio",
+  "source": {
+    "type": "website",
+    "url": "https://create.roblox.com/",
+    "installUrl": "https://create.roblox.com/docs/studio/setup"
+  },
+  "website": "https://create.roblox.com/",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Roblox's creation environment for building, scripting, testing, and publishing experiences.",
+  "accent": "#00A2FF",
+  "simpleIconSlug": "robloxstudio"
+}

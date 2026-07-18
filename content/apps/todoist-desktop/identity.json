@@ -1,0 +1,16 @@
+{
+  "index": 235,
+  "name": "Todoist",
+  "slug": "todoist-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.todoist.com/",
+    "installUrl": "https://www.todoist.com/downloads"
+  },
+  "website": "https://www.todoist.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Cross-platform personal and team task manager with desktop and web apps.",
+  "accent": "#E44332",
+  "simpleIconSlug": "todoist"
+}

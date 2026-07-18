@@ -1,0 +1,16 @@
+{
+  "index": 243,
+  "name": "Unreal Engine",
+  "slug": "unreal-engine",
+  "source": {
+    "type": "website",
+    "url": "https://www.unrealengine.com/",
+    "installUrl": "https://www.unrealengine.com/download"
+  },
+  "website": "https://www.unrealengine.com/",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Epic's real-time 3D engine installed and managed through Epic Games Launcher.",
+  "accent": "#0E1128",
+  "simpleIconSlug": "unrealengine"
+}

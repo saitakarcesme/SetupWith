@@ -2,9 +2,13 @@
   "index": 91,
   "name": "Mattermost",
   "slug": "mattermost",
-  "repo": "https://github.com/mattermost/mattermost",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mattermost/mattermost"
+  },
   "website": "https://mattermost.com",
   "category": "Communication",
+  "vertical": "social",
   "description": "Self-hosted collaboration platform combining channels, messaging, calls, workflows, and integrations.",
   "accent": "#0058CC",
   "simpleIconSlug": "mattermost"

@@ -1,0 +1,15 @@
+{
+  "index": 142,
+  "name": "Vagrant",
+  "slug": "vagrant",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/hashicorp/vagrant"
+  },
+  "website": "https://developer.hashicorp.com/vagrant",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Reproducible development-environment manager for virtual machines and supported providers.",
+  "accent": "#1868F2",
+  "simpleIconSlug": "vagrant"
+}

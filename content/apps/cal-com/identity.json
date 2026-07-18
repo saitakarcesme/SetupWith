@@ -2,9 +2,13 @@
   "index": 74,
   "name": "Cal.com",
   "slug": "cal-com",
-  "repo": "https://github.com/calcom/cal.com",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/calcom/cal.com"
+  },
   "website": "https://cal.com",
   "category": "Productivity",
+  "vertical": "work",
   "description": "Self-hostable scheduling platform for booking meetings, routing attendees, and calendar integrations.",
   "accent": "#292929",
   "simpleIconSlug": "caldotcom"

@@ -1,0 +1,15 @@
+{
+  "index": 149,
+  "name": "GitLab Runner",
+  "slug": "gitlab-runner",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/gitlabhq/gitlab-runner"
+  },
+  "website": "https://docs.gitlab.com/runner/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Agent that executes GitLab CI/CD jobs through shell, Docker, Kubernetes, and other executors.",
+  "accent": "#FC6D26",
+  "simpleIconSlug": "gitlab"
+}

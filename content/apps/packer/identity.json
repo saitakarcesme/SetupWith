@@ -1,0 +1,15 @@
+{
+  "index": 143,
+  "name": "Packer",
+  "slug": "packer",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/hashicorp/packer"
+  },
+  "website": "https://developer.hashicorp.com/packer",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Machine-image automation tool for producing consistent artifacts across infrastructure providers.",
+  "accent": "#02A8EF",
+  "simpleIconSlug": "packer"
+}

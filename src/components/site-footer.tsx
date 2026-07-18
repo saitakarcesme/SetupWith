@@ -7,13 +7,15 @@ export function SiteFooter() {
       <div className="shell footer-grid">
         <div className="footer-statement">
           <p className="eyebrow">SETUPWITH / OPEN CATALOG</p>
-          <h2>Software, installed with context.</h2>
-          <p>Real sources. Purpose-built prompts. Your environment stays yours.</p>
+          <h2>Anything, set up with context.</h2>
+          <p>Official sources. Purpose-built prompts. Your accounts and environment stay yours.</p>
         </div>
         <div className="footer-links">
           <div>
             <span>Product</span>
             <Link href="/apps">All apps</Link>
+            <Link href="/open-source">Open source</Link>
+            <Link href="/setupwith">Install SetupWith locally</Link>
             <Link href="/how-it-works">How it works</Link>
             <Link href="/profile">Context profile</Link>
           </div>
@@ -28,7 +30,7 @@ export function SiteFooter() {
       </div>
       <div className="shell footer-bottom">
         <span>© {new Date().getFullYear()} SetupWith</span>
-        <span>100 tools / 100 tailored setup paths</span>
+        <span>Curated apps / tailored setup paths</span>
       </div>
     </footer>
   );

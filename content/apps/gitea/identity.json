@@ -1,0 +1,15 @@
+{
+  "index": 195,
+  "name": "Gitea",
+  "slug": "gitea",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/go-gitea/gitea"
+  },
+  "website": "https://about.gitea.com",
+  "category": "Web & Self-hosted",
+  "vertical": "software",
+  "description": "Lightweight self-hosted Git service with repositories, issues, pull requests, and actions.",
+  "accent": "#609926",
+  "simpleIconSlug": "gitea"
+}

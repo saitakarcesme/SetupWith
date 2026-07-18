@@ -9,14 +9,18 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "generate:content": "node scripts/generate-content.mjs",
+    "generate:logos": "node scripts/generate-logos.mjs",
     "validate:catalog": "node scripts/validate-catalog.mjs",
+    "check:responsive": "node scripts/check-responsive.mjs",
     "check": "npm run lint && npm run typecheck && npm run validate:catalog && npm run build"
   },
   "dependencies": {
+    "@clerk/nextjs": "^7.5.20",
     "lucide-react": "^1.25.0",
     "next": "16.2.10",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -25,6 +29,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "simple-icons": "^16.26.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

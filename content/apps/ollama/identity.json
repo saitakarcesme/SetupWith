@@ -2,9 +2,13 @@
   "index": 21,
   "name": "Ollama",
   "slug": "ollama",
-  "repo": "https://github.com/ollama/ollama",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/ollama/ollama"
+  },
   "website": "https://ollama.com",
   "category": "AI & ML",
+  "vertical": "ai",
   "description": "Local model runtime for downloading and serving language and vision models.",
   "accent": "#000000",
   "simpleIconSlug": "ollama"

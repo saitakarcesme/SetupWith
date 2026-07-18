@@ -1,0 +1,16 @@
+{
+  "index": 285,
+  "name": "Photopea",
+  "slug": "photopea",
+  "source": {
+    "type": "website",
+    "url": "https://www.photopea.com/",
+    "installUrl": "https://www.photopea.com/"
+  },
+  "website": "https://www.photopea.com/",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Browser-based image editor compatible with PSD files.",
+  "accent": "#18A497",
+  "simpleIconSlug": "photopea"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 230,
+  "name": "Dropbox",
+  "slug": "dropbox-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.dropbox.com/",
+    "installUrl": "https://www.dropbox.com/install"
+  },
+  "website": "https://www.dropbox.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Cross-platform desktop sync client for Dropbox files, backups, and shared spaces.",
+  "accent": "#0061FF",
+  "simpleIconSlug": "dropbox"
+}

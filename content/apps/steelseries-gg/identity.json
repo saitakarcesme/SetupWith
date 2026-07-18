@@ -1,0 +1,16 @@
+{
+  "index": 298,
+  "name": "SteelSeries GG",
+  "slug": "steelseries-gg",
+  "source": {
+    "type": "website",
+    "url": "https://steelseries.com/gg",
+    "installUrl": "https://steelseries.com/gg"
+  },
+  "website": "https://steelseries.com/gg",
+  "category": "Devices & Hardware",
+  "vertical": "hardware",
+  "description": "Device configuration, audio routing, and capture.",
+  "accent": "#FF5200",
+  "simpleIconSlug": "steelseries"
+}
