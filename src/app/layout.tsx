@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { AuthProviderBoundary } from "@/components/auth-provider-boundary";
+import { isAuthConfigured } from "@/lib/auth-config";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -36,12 +38,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const authEnabled = isAuthConfigured();
+
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <AuthProviderBoundary enabled={authEnabled}>{children}</AuthProviderBoundary>
+      </body>
     </html>
   );
 }

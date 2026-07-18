@@ -4,6 +4,7 @@ import { useState } from "react";
 import { CatalogExplorer } from "@/components/catalog-explorer";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { TypingHeadline } from "@/components/typing-headline";
 import {
   categories,
   experiences,
@@ -117,7 +118,7 @@ export function CatalogPageShell({
           <div className="catalog-hero-index">001—{apps.length}</div>
           <div>
             <span className="eyebrow">{copy.eyebrow} / V3.0</span>
-            <h1>{copy.title}</h1>
+            <TypingHeadline>{copy.title}</TypingHeadline>
             <p>{copy.description}</p>
           </div>
           <dl>

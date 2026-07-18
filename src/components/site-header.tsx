@@ -4,9 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, ArrowUpRight, GitBranch, Menu, Search, X } from "lucide-react";
+import { HeaderAccountActions } from "@/components/header-account-actions";
 
 const primaryLinks = [
   { href: "/apps", label: "Apps" },
+  { href: "/packages/new", label: "Packages" },
   { href: "/how-it-works", label: "How it works" },
   { href: "/security", label: "Security" },
 ] as const;
@@ -87,6 +89,7 @@ export function SiteHeader() {
             Build profile
             <ArrowUpRight size={14} aria-hidden="true" />
           </Link>
+          <HeaderAccountActions />
         </div>
 
         <button
@@ -140,6 +143,7 @@ export function SiteHeader() {
               Build profile
               <ArrowUpRight aria-hidden="true" size={15} />
             </Link>
+            <HeaderAccountActions mobile onNavigate={closeMobileNav} />
             <a
               href="https://github.com/saitakarcesme/SetupWith"
               onClick={closeMobileNav}

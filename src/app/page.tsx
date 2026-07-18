@@ -5,6 +5,7 @@ import { AppLogo } from "@/components/app-logo";
 import { HeroSearch } from "@/components/hero-search";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { TypingHeadline } from "@/components/typing-headline";
 import { apps, bundles, categories } from "@/data/apps";
 
 const featuredSlugs = [
@@ -59,11 +60,11 @@ export default function Home() {
               <span>{apps.length} APPS</span>
               <span>V2.0</span>
             </div>
-            <h1>
+            <TypingHeadline>
               Set up anything.
               <br />
               <span>With your context.</span>
-            </h1>
+            </TypingHeadline>
             <p className="hero-lede">
               Purpose-built Codex prompts for the apps you actually use—from developer tools and local AI
               to games, media, work, and devices—matched to your machine and explicit approvals.

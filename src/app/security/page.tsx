@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, EyeOff, KeyRound, LockKeyhole, ShieldCheck } from "lucide-react";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { TypingHeadline } from "@/components/typing-headline";
 
 export const metadata: Metadata = {
   title: "Security model",
@@ -23,7 +24,7 @@ export default function SecurityPage() {
       <main className="info-page">
         <section className="info-hero shell">
           <span className="eyebrow">SECURITY / THREAT MODEL</span>
-          <h1>Trust begins before install.</h1>
+          <TypingHeadline>Trust begins before install.</TypingHeadline>
           <p>
             SetupWith is designed around a simple boundary: the catalog can know what a tool needs without putting
             your credential values into a generated prompt.

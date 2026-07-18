@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Check, Clipboard, Search, TerminalSquare } from "lucide-react";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { TypingHeadline } from "@/components/typing-headline";
 
 export const metadata: Metadata = {
   title: "How it works",
@@ -23,7 +24,7 @@ export default function HowItWorksPage() {
       <main className="info-page">
         <section className="info-hero shell">
           <span className="eyebrow">WORKFLOW / ONE GUIDED RUN</span>
-          <h1>From intent to installed.</h1>
+          <TypingHeadline>From intent to installed.</TypingHeadline>
           <p>
             SetupWith does not execute a mystery script. It gives Codex a product-specific brief, clear safety
             boundaries, and an outcome to verify.

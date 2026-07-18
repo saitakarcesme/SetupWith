@@ -19,6 +19,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## Accounts and saved packages
+
+The catalog and multi-app package prompt builder work without an account. To enable sign-up, sign-in, and each user's private named package library, configure Clerk:
+
+```bash
+cp .env.example .env.local
+```
+
+Then provide `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY`, or connect the free Clerk Marketplace integration to the Vercel project. Only package names, descriptions, shared instructions, and catalog slugs are stored in Clerk private metadata. Local environment profiles and Vault secrets remain browser-local and are never synchronized to the account.
+
 ## Quality checks
 
 ```bash
@@ -39,6 +49,9 @@ SetupWith does not silently install software or content. Its prompts require Cod
 - `/apps` — searchable catalog with Software, AI Lab, Gaming, Entertainment, Work, Creative, Social, Browsers, and Hardware experiences
 - `/{slug}` — app-specific setup page
 - `/profile` — local environment profile and encrypted vault
+- `/packages/new` — multi-app package builder and one coordinated prompt
+- `/account` — signed-in user's private saved package library
+- `/sign-up` and `/sign-in` — Clerk-managed account flow
 - `/security` — security and storage model
 - `/how-it-works` — end-to-end setup workflow
 

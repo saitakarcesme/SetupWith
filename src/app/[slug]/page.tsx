@@ -7,6 +7,7 @@ import { AppLogo } from "@/components/app-logo";
 import { CopyPrompt } from "@/components/copy-prompt";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { TypingHeadline } from "@/components/typing-headline";
 import { apps, getApp, getRelatedApps, getSourceLabel, humanizeKey, secretAlias } from "@/data/apps";
 
 export const dynamicParams = false;
@@ -55,7 +56,7 @@ export default async function AppDetailPage({ params }: AppPageProps) {
                   <span>Source linked</span>
                   <span>Prompt v1.0</span>
                 </div>
-                <h1>{app.name}</h1>
+                <TypingHeadline>{app.name}</TypingHeadline>
                 <p>{app.description}</p>
               </div>
             </div>

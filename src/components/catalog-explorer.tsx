@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
-import { Search, SlidersHorizontal, X } from "lucide-react";
+import { ArrowRight, Layers3, Search, SlidersHorizontal, X } from "lucide-react";
 import { AppCard } from "@/components/app-card";
 import { BundleCard } from "@/components/bundle-card";
 import {
@@ -73,6 +74,14 @@ export function CatalogExplorer({
 
   return (
     <div className="catalog-explorer">
+      <Link className="package-builder-entry" href="/packages/new">
+        <Layers3 aria-hidden="true" size={20} />
+        <span>
+          <strong>Build your own package</strong>
+          Select multiple apps and generate one coordinated install prompt.
+        </span>
+        <ArrowRight aria-hidden="true" size={18} />
+      </Link>
       <div className="experience-switcher" aria-label="Choose catalog experience" role="group">
         <span>Experience</span>
         <div>
