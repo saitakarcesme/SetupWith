@@ -2,9 +2,13 @@
   "index": 15,
   "name": "Deno",
   "slug": "deno",
-  "repo": "https://github.com/denoland/deno",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/denoland/deno"
+  },
   "website": "https://deno.com",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "Secure JavaScript and TypeScript runtime with integrated tooling and package support.",
   "accent": "#70FFAF",
   "simpleIconSlug": "deno"

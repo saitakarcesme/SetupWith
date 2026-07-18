@@ -48,9 +48,9 @@ export function HeroSearch({ apps }: HeroSearchProps) {
         </button>
       </form>
       {results.length > 0 ? (
-        <div className="search-results" role="listbox" aria-label="Matching apps">
+        <nav className="search-results" aria-label="Matching apps">
           {results.map((app) => (
-            <Link key={app.slug} href={`/${app.slug}`} role="option" aria-selected="false">
+            <Link key={app.slug} href={`/${app.slug}`}>
               <span>{app.name}</span>
               <small>{app.category}</small>
               <ArrowRight size={14} aria-hidden="true" />
@@ -59,7 +59,7 @@ export function HeroSearch({ apps }: HeroSearchProps) {
           <Link href={`/apps?q=${encodeURIComponent(query)}`} className="search-results-all">
             View all results
           </Link>
-        </div>
+        </nav>
       ) : null}
     </div>
   );

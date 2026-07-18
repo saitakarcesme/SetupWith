@@ -2,9 +2,13 @@
   "index": 27,
   "name": "Jan",
   "slug": "jan",
-  "repo": "https://github.com/janhq/jan",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/janhq/jan"
+  },
   "website": "https://jan.ai",
   "category": "AI & ML",
+  "vertical": "ai",
   "description": "Desktop application for running local language models through a familiar chat interface.",
   "accent": "#000000",
   "simpleIconSlug": null

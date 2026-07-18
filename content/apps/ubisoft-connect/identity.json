@@ -1,0 +1,16 @@
+{
+  "index": 206,
+  "name": "Ubisoft Connect",
+  "slug": "ubisoft-connect",
+  "source": {
+    "type": "website",
+    "url": "https://www.ubisoft.com/en-US/ubisoft-connect",
+    "installUrl": "https://ubisoftconnect.com/en-US/"
+  },
+  "website": "https://www.ubisoft.com/en-US/ubisoft-connect",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Ubisoft's Windows game library, rewards, store, and update client.",
+  "accent": "#0070FF",
+  "simpleIconSlug": "ubisoft"
+}

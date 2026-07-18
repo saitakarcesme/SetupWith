@@ -1,0 +1,15 @@
+{
+  "index": 125,
+  "name": "vLLM",
+  "slug": "vllm",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/vllm-project/vllm"
+  },
+  "website": "https://docs.vllm.ai",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "High-throughput inference and serving engine for large language models.",
+  "accent": "#654FF0",
+  "simpleIconSlug": "vllm"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 232,
+  "name": "Zoom Workplace",
+  "slug": "zoom-workplace",
+  "source": {
+    "type": "website",
+    "url": "https://www.zoom.com/",
+    "installUrl": "https://zoom.us/download"
+  },
+  "website": "https://www.zoom.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Zoom's desktop client for meetings, chat, phone, whiteboards, and collaboration.",
+  "accent": "#0B5CFF",
+  "simpleIconSlug": "zoom"
+}

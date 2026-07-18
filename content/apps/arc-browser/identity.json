@@ -1,0 +1,16 @@
+{
+  "index": 254,
+  "name": "Arc Browser",
+  "slug": "arc-browser",
+  "source": {
+    "type": "website",
+    "url": "https://arc.net/",
+    "installUrl": "https://arc.net/download"
+  },
+  "website": "https://arc.net/",
+  "category": "Browsers & Internet",
+  "vertical": "browsers",
+  "description": "The Browser Company's workspace-oriented Chromium browser for macOS and Windows.",
+  "accent": "#FC5C7D",
+  "simpleIconSlug": "arc"
+}

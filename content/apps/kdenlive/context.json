@@ -6,6 +6,14 @@
   ],
   "installTime": "2–5 min",
   "complexity": "Simple",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
   "preferences": [
     "project_directory",
     "proxy_enabled",
@@ -18,6 +26,9 @@
     "configuration overwrite",
     "service or daemon changes",
     "ports and firewall rules",
-    "browser sign-in"
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
   ]
 }

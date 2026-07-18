@@ -1,0 +1,15 @@
+{
+  "index": 107,
+  "name": "WezTerm",
+  "slug": "wezterm",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/wezterm/wezterm"
+  },
+  "website": "https://wezterm.org",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "GPU-accelerated terminal emulator and multiplexer configured through Lua.",
+  "accent": "#4E49EE",
+  "simpleIconSlug": "wezterm"
+}

@@ -1,0 +1,15 @@
+{
+  "index": 114,
+  "name": "GitHub Desktop",
+  "slug": "github-desktop",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/desktop/desktop"
+  },
+  "website": "https://desktop.github.com",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Official graphical Git client for GitHub workflows, branches, commits, and pull requests.",
+  "accent": "#6E5494",
+  "simpleIconSlug": "github"
+}

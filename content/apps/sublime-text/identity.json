@@ -2,9 +2,13 @@
   "index": 6,
   "name": "Sublime Text",
   "slug": "sublime-text",
-  "repo": "https://github.com/sublimehq/sublime_text",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/sublimehq/sublime_text"
+  },
   "website": "https://www.sublimetext.com",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "Fast cross-platform text editor supporting projects, plugins, and extensive customization.",
   "accent": "#FF9800",
   "simpleIconSlug": "sublimetext"

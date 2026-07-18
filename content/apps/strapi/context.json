@@ -1,0 +1,44 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "node_version",
+    "package_manager",
+    "project_directory",
+    "database_name",
+    "listen_port"
+  ],
+  "secrets": [
+    {
+      "key": "STRAPI_APP_KEYS",
+      "reference": "secret://strapi/app-keys"
+    },
+    {
+      "key": "STRAPI_DATABASE_PASSWORD",
+      "reference": "secret://strapi/database-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

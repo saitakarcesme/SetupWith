@@ -2,9 +2,13 @@
   "index": 92,
   "name": "Rocket.Chat",
   "slug": "rocket-chat",
-  "repo": "https://github.com/RocketChat/Rocket.Chat",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/RocketChat/Rocket.Chat"
+  },
   "website": "https://www.rocket.chat",
   "category": "Communication",
+  "vertical": "social",
   "description": "Self-hosted communications platform for team messaging, omnichannel support, calls, and integrations.",
   "accent": "#F5455C",
   "simpleIconSlug": "rocketdotchat"

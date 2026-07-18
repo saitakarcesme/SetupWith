@@ -1,0 +1,15 @@
+{
+  "index": 165,
+  "name": "Godot Engine",
+  "slug": "godot-engine",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/godotengine/godot"
+  },
+  "website": "https://godotengine.org",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Open-source 2D and 3D game engine with an integrated editor and flexible scripting.",
+  "accent": "#478CBF",
+  "simpleIconSlug": "godotengine"
+}

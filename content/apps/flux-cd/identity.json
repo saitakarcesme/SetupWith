@@ -1,0 +1,15 @@
+{
+  "index": 147,
+  "name": "Flux CD",
+  "slug": "flux-cd",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/fluxcd/flux2"
+  },
+  "website": "https://fluxcd.io",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "GitOps toolkit for continuously reconciling Kubernetes clusters from version-controlled state.",
+  "accent": "#5468FF",
+  "simpleIconSlug": "flux"
+}

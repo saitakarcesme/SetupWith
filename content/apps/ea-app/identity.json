@@ -1,0 +1,16 @@
+{
+  "index": 205,
+  "name": "EA app",
+  "slug": "ea-app",
+  "source": {
+    "type": "website",
+    "url": "https://www.ea.com/ea-app",
+    "installUrl": "https://www.ea.com/ea-app"
+  },
+  "website": "https://www.ea.com/ea-app",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Electronic Arts' desktop library, store, updater, and subscription client.",
+  "accent": "#FF4747",
+  "simpleIconSlug": "ea"
+}

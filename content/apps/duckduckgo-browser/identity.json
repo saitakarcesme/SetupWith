@@ -1,0 +1,16 @@
+{
+  "index": 296,
+  "name": "DuckDuckGo Browser",
+  "slug": "duckduckgo-browser",
+  "source": {
+    "type": "website",
+    "url": "https://duckduckgo.com/app",
+    "installUrl": "https://duckduckgo.com/app"
+  },
+  "website": "https://duckduckgo.com/",
+  "category": "Browsers & Internet",
+  "vertical": "browsers",
+  "description": "Privacy browser with tracker blocking.",
+  "accent": "#DE5833",
+  "simpleIconSlug": "duckduckgo"
+}

@@ -1,0 +1,15 @@
+{
+  "index": 104,
+  "name": "Vim",
+  "slug": "vim",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/vim/vim"
+  },
+  "website": "https://www.vim.org",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Ubiquitous modal text editor with a mature scripting ecosystem and terminal-first workflow.",
+  "accent": "#019733",
+  "simpleIconSlug": "vim"
+}

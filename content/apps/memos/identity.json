@@ -2,9 +2,13 @@
   "index": 70,
   "name": "Memos",
   "slug": "memos",
-  "repo": "https://github.com/usememos/memos",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/usememos/memos"
+  },
   "website": "https://www.usememos.com",
   "category": "Productivity",
+  "vertical": "work",
   "description": "Lightweight self-hosted note service designed for rapid Markdown-based personal capture.",
   "accent": "#1C7ED6",
   "simpleIconSlug": null

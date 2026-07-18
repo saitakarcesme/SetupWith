@@ -1,0 +1,16 @@
+{
+  "index": 266,
+  "name": "Dota 2",
+  "slug": "dota-2",
+  "source": {
+    "type": "website",
+    "url": "https://store.steampowered.com/app/570/Dota_2/",
+    "installUrl": "https://store.steampowered.com/app/570/Dota_2/"
+  },
+  "website": "https://www.dota2.com/home",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Valve's free-to-play multiplayer online battle arena game.",
+  "accent": "#A32C2E",
+  "simpleIconSlug": "dota2"
+}

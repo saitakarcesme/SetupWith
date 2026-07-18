@@ -2,9 +2,13 @@
   "index": 84,
   "name": "FFmpeg",
   "slug": "ffmpeg",
-  "repo": "https://github.com/FFmpeg/FFmpeg",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/FFmpeg/FFmpeg"
+  },
   "website": "https://ffmpeg.org",
   "category": "Design & Media",
+  "vertical": "creative",
   "description": "Command-line multimedia framework for recording, converting, filtering, streaming, and inspecting media.",
   "accent": "#007808",
   "simpleIconSlug": "ffmpeg"

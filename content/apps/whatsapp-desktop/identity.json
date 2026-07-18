@@ -1,0 +1,16 @@
+{
+  "index": 246,
+  "name": "WhatsApp",
+  "slug": "whatsapp-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.whatsapp.com/",
+    "installUrl": "https://www.whatsapp.com/download"
+  },
+  "website": "https://www.whatsapp.com/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "Meta's encrypted messaging and calling client for linked desktop devices and web.",
+  "accent": "#25D366",
+  "simpleIconSlug": "whatsapp"
+}

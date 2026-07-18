@@ -1,0 +1,16 @@
+{
+  "index": 290,
+  "name": "Threads",
+  "slug": "threads-web",
+  "source": {
+    "type": "website",
+    "url": "https://www.threads.com/",
+    "installUrl": "https://www.threads.com/"
+  },
+  "website": "https://www.threads.com/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "Meta's public conversation network.",
+  "accent": "#000000",
+  "simpleIconSlug": "threads"
+}

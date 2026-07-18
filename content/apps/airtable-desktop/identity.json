@@ -1,0 +1,16 @@
+{
+  "index": 236,
+  "name": "Airtable",
+  "slug": "airtable-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.airtable.com/",
+    "installUrl": "https://www.airtable.com/downloads"
+  },
+  "website": "https://www.airtable.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Cloud database and workflow platform with desktop and web interfaces.",
+  "accent": "#18BFFF",
+  "simpleIconSlug": "airtable"
+}

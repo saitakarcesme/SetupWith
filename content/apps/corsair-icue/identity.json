@@ -1,0 +1,16 @@
+{
+  "index": 258,
+  "name": "Corsair iCUE",
+  "slug": "corsair-icue",
+  "source": {
+    "type": "website",
+    "url": "https://www.corsair.com/us/en/s/icue",
+    "installUrl": "https://www.corsair.com/us/en/s/downloads"
+  },
+  "website": "https://www.corsair.com/us/en/s/icue",
+  "category": "Devices & Hardware",
+  "vertical": "hardware",
+  "description": "Corsair's device control suite for cooling, lighting, performance, profiles, and macros.",
+  "accent": "#F5C518",
+  "simpleIconSlug": "corsair"
+}

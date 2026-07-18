@@ -1,0 +1,16 @@
+{
+  "index": 213,
+  "name": "CurseForge",
+  "slug": "curseforge-app",
+  "source": {
+    "type": "website",
+    "url": "https://www.curseforge.com/",
+    "installUrl": "https://www.curseforge.com/download/app"
+  },
+  "website": "https://www.curseforge.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Desktop manager for discovering and maintaining game mods and modpacks.",
+  "accent": "#F16436",
+  "simpleIconSlug": "curseforge"
+}

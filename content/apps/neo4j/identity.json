@@ -1,0 +1,15 @@
+{
+  "index": 139,
+  "name": "Neo4j",
+  "slug": "neo4j",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/neo4j/neo4j"
+  },
+  "website": "https://neo4j.com",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Native graph database for connected data, Cypher queries, and graph applications.",
+  "accent": "#4581C3",
+  "simpleIconSlug": "neo4j"
+}

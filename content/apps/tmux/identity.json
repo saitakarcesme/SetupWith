@@ -2,9 +2,13 @@
   "index": 9,
   "name": "tmux",
   "slug": "tmux",
-  "repo": "https://github.com/tmux/tmux",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/tmux/tmux"
+  },
   "website": "https://github.com/tmux/tmux/wiki",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "Terminal multiplexer for persistent sessions, panes, windows, and remote workflows.",
   "accent": "#1BB91F",
   "simpleIconSlug": "tmux"

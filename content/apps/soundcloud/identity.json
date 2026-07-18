@@ -1,0 +1,16 @@
+{
+  "index": 223,
+  "name": "SoundCloud",
+  "slug": "soundcloud",
+  "source": {
+    "type": "website",
+    "url": "https://soundcloud.com/",
+    "installUrl": "https://soundcloud.com/"
+  },
+  "website": "https://soundcloud.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Artist-led music and audio platform available as a full web application.",
+  "accent": "#FF5500",
+  "simpleIconSlug": "soundcloud"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 251,
+  "name": "Google Chrome",
+  "slug": "google-chrome",
+  "source": {
+    "type": "website",
+    "url": "https://www.google.com/chrome/",
+    "installUrl": "https://www.google.com/chrome/"
+  },
+  "website": "https://www.google.com/chrome/",
+  "category": "Browsers & Internet",
+  "vertical": "browsers",
+  "description": "Google's cross-platform Chromium browser with profiles, extensions, and sync.",
+  "accent": "#4285F4",
+  "simpleIconSlug": "googlechrome"
+}

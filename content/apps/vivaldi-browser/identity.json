@@ -1,0 +1,16 @@
+{
+  "index": 256,
+  "name": "Vivaldi",
+  "slug": "vivaldi-browser",
+  "source": {
+    "type": "website",
+    "url": "https://vivaldi.com/",
+    "installUrl": "https://vivaldi.com/download/"
+  },
+  "website": "https://vivaldi.com/",
+  "category": "Browsers & Internet",
+  "vertical": "browsers",
+  "description": "Highly customizable Chromium browser with tab tools, mail, calendar, and notes.",
+  "accent": "#EF3939",
+  "simpleIconSlug": "vivaldi"
+}

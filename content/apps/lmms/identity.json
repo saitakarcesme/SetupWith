@@ -1,0 +1,15 @@
+{
+  "index": 173,
+  "name": "LMMS",
+  "slug": "lmms",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/LMMS/lmms"
+  },
+  "website": "https://lmms.io",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Digital audio workstation for composing, sequencing, synthesizing, and mixing music.",
+  "accent": "#10B146",
+  "simpleIconSlug": "lmms"
+}

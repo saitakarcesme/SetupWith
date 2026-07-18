@@ -1,0 +1,15 @@
+{
+  "index": 145,
+  "name": "Consul",
+  "slug": "consul",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/hashicorp/consul"
+  },
+  "website": "https://developer.hashicorp.com/consul",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Service discovery, health checking, configuration, and service-mesh control plane.",
+  "accent": "#E03875",
+  "simpleIconSlug": "consul"
+}

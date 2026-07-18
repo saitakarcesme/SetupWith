@@ -2,9 +2,13 @@
   "index": 53,
   "name": "Kubernetes",
   "slug": "kubernetes",
-  "repo": "https://github.com/kubernetes/kubernetes",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/kubernetes/kubernetes"
+  },
   "website": "https://kubernetes.io",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Container orchestration system automating application deployment, scaling, networking, and management.",
   "accent": "#326CE5",
   "simpleIconSlug": "kubernetes"

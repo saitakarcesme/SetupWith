@@ -1,0 +1,16 @@
+{
+  "index": 264,
+  "name": "Minecraft Launcher",
+  "slug": "minecraft-launcher",
+  "source": {
+    "type": "website",
+    "url": "https://www.minecraft.net/en-us/download",
+    "installUrl": "https://www.minecraft.net/en-us/download"
+  },
+  "website": "https://www.minecraft.net/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Official launcher for Minecraft Java and Bedrock editions.",
+  "accent": "#3C8527",
+  "simpleIconSlug": null
+}

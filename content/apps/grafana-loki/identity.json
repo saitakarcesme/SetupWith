@@ -1,0 +1,15 @@
+{
+  "index": 151,
+  "name": "Grafana Loki",
+  "slug": "grafana-loki",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/grafana/loki"
+  },
+  "website": "https://grafana.com/oss/loki/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Horizontally scalable log aggregation system designed to pair with Grafana and Prometheus labels.",
+  "accent": "#F2CC0C",
+  "simpleIconSlug": "grafana"
+}

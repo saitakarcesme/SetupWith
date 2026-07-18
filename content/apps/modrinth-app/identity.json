@@ -1,0 +1,16 @@
+{
+  "index": 212,
+  "name": "Modrinth App",
+  "slug": "modrinth-app",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/modrinth/code",
+    "installUrl": "https://modrinth.com/app"
+  },
+  "website": "https://modrinth.com/app",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Open-source launcher and mod manager for Minecraft instances and modpacks.",
+  "accent": "#00AF5C",
+  "simpleIconSlug": "modrinth"
+}

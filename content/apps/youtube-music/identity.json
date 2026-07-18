@@ -1,0 +1,16 @@
+{
+  "index": 224,
+  "name": "YouTube Music",
+  "slug": "youtube-music",
+  "source": {
+    "type": "website",
+    "url": "https://music.youtube.com/",
+    "installUrl": "https://music.youtube.com/"
+  },
+  "website": "https://music.youtube.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Google's music streaming service delivered as an installable web app.",
+  "accent": "#FF0000",
+  "simpleIconSlug": "youtubemusic"
+}

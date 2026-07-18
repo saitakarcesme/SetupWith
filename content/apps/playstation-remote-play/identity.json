@@ -1,0 +1,16 @@
+{
+  "index": 270,
+  "name": "PlayStation Remote Play",
+  "slug": "playstation-remote-play",
+  "source": {
+    "type": "website",
+    "url": "https://remoteplay.dl.playstation.net/remoteplay/lang/en/",
+    "installUrl": "https://remoteplay.dl.playstation.net/remoteplay/lang/en/"
+  },
+  "website": "https://www.playstation.com/remote-play/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Sony's official client for streaming a PlayStation console.",
+  "accent": "#006FCD",
+  "simpleIconSlug": "playstation"
+}

@@ -1,0 +1,15 @@
+{
+  "index": 178,
+  "name": "AdGuard Home",
+  "slug": "adguard-home",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/AdguardTeam/AdGuardHome"
+  },
+  "website": "https://adguard.com/adguard-home/overview.html",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Self-hosted DNS filtering service for blocking ads, trackers, and malicious domains.",
+  "accent": "#68BC71",
+  "simpleIconSlug": "adguard"
+}

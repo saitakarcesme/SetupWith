@@ -2,9 +2,13 @@
   "index": 55,
   "name": "kind",
   "slug": "kind",
-  "repo": "https://github.com/kubernetes-sigs/kind",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/kubernetes-sigs/kind"
+  },
   "website": "https://kind.sigs.k8s.io",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Tool for running local Kubernetes clusters using containers as cluster nodes.",
   "accent": "#326CE5",
   "simpleIconSlug": null

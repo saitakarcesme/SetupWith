@@ -1,0 +1,15 @@
+{
+  "index": 184,
+  "name": "Telegram Desktop",
+  "slug": "telegram-desktop",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/telegramdesktop/tdesktop"
+  },
+  "website": "https://desktop.telegram.org",
+  "category": "Communication",
+  "vertical": "social",
+  "description": "Cross-platform desktop client for Telegram messaging, groups, channels, and calls.",
+  "accent": "#26A5E4",
+  "simpleIconSlug": "telegram"
+}

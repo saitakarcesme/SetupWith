@@ -1,0 +1,15 @@
+{
+  "index": 183,
+  "name": "Signal Desktop",
+  "slug": "signal-desktop",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/signalapp/Signal-Desktop"
+  },
+  "website": "https://signal.org/download/",
+  "category": "Communication",
+  "vertical": "social",
+  "description": "Private desktop messenger with end-to-end encrypted chats, calls, and linked-device support.",
+  "accent": "#3A76F0",
+  "simpleIconSlug": "signal"
+}

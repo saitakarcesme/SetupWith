@@ -1,0 +1,16 @@
+{
+  "index": 231,
+  "name": "Notion",
+  "slug": "notion-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.notion.com/",
+    "installUrl": "https://www.notion.com/desktop"
+  },
+  "website": "https://www.notion.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Desktop client for Notion documents, databases, projects, and team workspaces.",
+  "accent": "#000000",
+  "simpleIconSlug": "notion"
+}

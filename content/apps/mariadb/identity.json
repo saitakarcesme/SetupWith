@@ -2,9 +2,13 @@
   "index": 38,
   "name": "MariaDB",
   "slug": "mariadb",
-  "repo": "https://github.com/MariaDB/server",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/MariaDB/server"
+  },
   "website": "https://mariadb.org",
   "category": "Data & Databases",
+  "vertical": "software",
   "description": "Community-developed relational database maintaining broad compatibility with MySQL tools and applications.",
   "accent": "#003545",
   "simpleIconSlug": "mariadb"

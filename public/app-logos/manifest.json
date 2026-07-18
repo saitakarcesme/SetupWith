@@ -1,0 +1,1502 @@
+{
+  "visual-studio-code": {
+    "file": "visual-studio-code.svg",
+    "source": "https://raw.githubusercontent.com/microsoft/vscode/main/resources/linux/code.png",
+    "sourceType": "official-project-asset"
+  },
+  "git": {
+    "file": "git.svg",
+    "source": "https://git-scm.com/community/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "github-cli": {
+    "file": "github-cli.svg",
+    "source": "https://github.com/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "neovim": {
+    "file": "neovim.svg",
+    "source": "https://neovim.io",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "zed": {
+    "file": "zed.svg",
+    "source": "https://github.com/zed-industries/zed/blob/ccc939124fa2f366b3029926447fd0a0c46a85c7/assets/icons/logo_96.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "sublime-text": {
+    "file": "sublime-text.svg",
+    "source": "https://www.sublimetext.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "helix": {
+    "file": "helix.svg",
+    "source": "https://helix-editor.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "emacs": {
+    "file": "emacs.svg",
+    "source": "https://git.savannah.gnu.org/cgit/emacs.git/tree/etc/images/icons/hicolor/scalable/apps/emacs.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "tmux": {
+    "file": "tmux.svg",
+    "source": "https://github.com/tmux/tmux/blob/e26356607e38cbb4676a7c91815ae2d5734443c3/logo/tmux-logo-1-color.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "starship": {
+    "file": "starship.svg",
+    "source": "https://starship.rs",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "homebrew": {
+    "file": "homebrew.svg",
+    "source": "https://github.com/Homebrew/brew.sh/blob/2e576aaca83e62dda41a188597bb4bd20e75e385/assets/img/homebrew.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "nix": {
+    "file": "nix.svg",
+    "source": "https://brand.nixos.org/logos/nixos-logomark-black-flat-minimal.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mise": {
+    "file": "mise.svg",
+    "source": "https://raw.githubusercontent.com/jdx/mise/main/docs/public/favicon.svg",
+    "sourceType": "official-project-asset"
+  },
+  "nodejs": {
+    "file": "nodejs.svg",
+    "source": "https://nodejs.org/en/about/branding",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "deno": {
+    "file": "deno.svg",
+    "source": "https://github.com/denoland/docs/blob/5dee713844c7447f80acd4093caa9d350d80bf36/static/img/logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "bun": {
+    "file": "bun.svg",
+    "source": "https://bun.sh/press-kit",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "python": {
+    "file": "python.svg",
+    "source": "https://www.python.org/community/logos/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "uv": {
+    "file": "uv.svg",
+    "source": "https://docs.astral.sh/uv/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "rust": {
+    "file": "rust.svg",
+    "source": "https://www.rust-lang.org",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "go": {
+    "file": "go.svg",
+    "source": "https://blog.golang.org/go-brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "ollama": {
+    "file": "ollama.svg",
+    "source": "https://github.com/ollama/ollama/issues/2152#issuecomment-1905286922",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "open-webui": {
+    "file": "open-webui.svg",
+    "source": "https://raw.githubusercontent.com/open-webui/open-webui/main/backend/open_webui/static/favicon.svg",
+    "sourceType": "official-project-asset"
+  },
+  "localai": {
+    "file": "localai.svg",
+    "source": "https://raw.githubusercontent.com/mudler/LocalAI/master/docs/assets/images/logos/logo.svg",
+    "sourceType": "official-project-asset"
+  },
+  "comfyui": {
+    "file": "comfyui.svg",
+    "source": "https://www.comfy.org/favicon.svg",
+    "sourceType": "official-project-asset"
+  },
+  "stable-diffusion-webui": {
+    "file": "stable-diffusion-webui.svg",
+    "source": "https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/HEAD/screenshot.png",
+    "sourceType": "official-project-asset"
+  },
+  "invokeai": {
+    "file": "invokeai.svg",
+    "source": "https://raw.githubusercontent.com/invoke-ai/InvokeAI/main/docs/src/assets/invoke-icon.svg",
+    "sourceType": "official-project-asset"
+  },
+  "jan": {
+    "file": "jan.svg",
+    "source": "https://raw.githubusercontent.com/janhq/jan/main/docs/public/assets/images/general/logo-mark.svg",
+    "sourceType": "official-project-asset"
+  },
+  "gpt4all": {
+    "file": "gpt4all.svg",
+    "source": "https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/icons/gpt4all.svg",
+    "sourceType": "official-project-asset"
+  },
+  "llama-cpp": {
+    "file": "llama-cpp.svg",
+    "source": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/media/llama1-icon.svg",
+    "sourceType": "official-project-asset"
+  },
+  "jupyterlab": {
+    "file": "jupyterlab.svg",
+    "source": "https://github.com/jupyter/design/blob/80716ee75dd7b2a6ec6abcd89922d020483589b1/logos/Logo%20Mark/logomark-whitebody-whitemoons/logomark-whitebody-whitemoons.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mlflow": {
+    "file": "mlflow.svg",
+    "source": "https://github.com/mlflow/mlflow/blob/855881f93703b15ffe643003fb4d7c84f0ec2502/assets/icon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "dvc": {
+    "file": "dvc.svg",
+    "source": "https://iterative.ai/brand/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "label-studio": {
+    "file": "label-studio.svg",
+    "source": "https://raw.githubusercontent.com/HumanSignal/label-studio/develop/docs/themes/v2/source/images/new/logo.svg",
+    "sourceType": "official-project-asset"
+  },
+  "langfuse": {
+    "file": "langfuse.svg",
+    "source": "https://raw.githubusercontent.com/langfuse/langfuse/main/web/public/icon.svg",
+    "sourceType": "official-project-asset"
+  },
+  "flowise": {
+    "file": "flowise.svg",
+    "source": "https://raw.githubusercontent.com/FlowiseAI/Flowise/main/packages/ui/public/logo512.png",
+    "sourceType": "official-project-asset"
+  },
+  "postgresql": {
+    "file": "postgresql.svg",
+    "source": "https://wiki.postgresql.org/wiki/Logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mysql": {
+    "file": "mysql.svg",
+    "source": "https://www.mysql.com/about/legal/logos.html",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mariadb": {
+    "file": "mariadb.svg",
+    "source": "https://mariadb.com/about-us/logos/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "sqlite": {
+    "file": "sqlite.svg",
+    "source": "https://github.com/sqlite/sqlite/blob/43e862723ec680542ca6f608f9963c0993dd7324/art/sqlite370.eps",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "redis": {
+    "file": "redis.svg",
+    "source": "https://redis.io/brand-guidelines",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mongodb": {
+    "file": "mongodb.svg",
+    "source": "https://www.mongodb.com/pressroom",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "clickhouse": {
+    "file": "clickhouse.svg",
+    "source": "https://github.com/ClickHouse/ClickHouse/blob/12bd453a43819176d25ecf247033f6cb1af54beb/website/images/logo-clickhouse.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "duckdb": {
+    "file": "duckdb.svg",
+    "source": "https://duckdb.org",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "qdrant": {
+    "file": "qdrant.svg",
+    "source": "https://qdrant.tech/img/brand-resources-logos/qdrant-brandmark-white.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "meilisearch": {
+    "file": "meilisearch.svg",
+    "source": "https://www.meilisearch.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "elasticsearch": {
+    "file": "elasticsearch.svg",
+    "source": "https://www.elastic.co/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "apache-kafka": {
+    "file": "apache-kafka.svg",
+    "source": "https://apache.org/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "minio": {
+    "file": "minio.svg",
+    "source": "https://min.io",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "dbeaver": {
+    "file": "dbeaver.svg",
+    "source": "https://dbeaver.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "supabase": {
+    "file": "supabase.svg",
+    "source": "https://github.com/supabase/supabase/blob/4031a7549f5d46da7bc79c01d56be4177dc7c114/packages/common/assets/images/supabase-logo-wordmark--light.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "docker-engine": {
+    "file": "docker-engine.svg",
+    "source": "https://www.docker.com/company/newsroom/media-resources",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "podman": {
+    "file": "podman.svg",
+    "source": "https://podman.io",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "kubernetes": {
+    "file": "kubernetes.svg",
+    "source": "https://github.com/kubernetes/kubernetes/tree/cac53883f4714452f3084a22e4be20d042a9df33/logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "k3s": {
+    "file": "k3s.svg",
+    "source": "https://k3s.io",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "kind": {
+    "file": "kind.svg",
+    "source": "https://raw.githubusercontent.com/kubernetes-sigs/kind/main/logo/logo.svg",
+    "sourceType": "official-project-asset"
+  },
+  "minikube": {
+    "file": "minikube.svg",
+    "source": "https://raw.githubusercontent.com/kubernetes/minikube/master/images/logo/logo.svg",
+    "sourceType": "official-project-asset"
+  },
+  "helm": {
+    "file": "helm.svg",
+    "source": "https://helm.sh",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "terraform": {
+    "file": "terraform.svg",
+    "source": "https://www.hashicorp.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "opentofu": {
+    "file": "opentofu.svg",
+    "source": "https://github.com/opentofu/brand-artifacts/blob/0d4d0d6050ca0ff06471400bc3249a64c145f659/symbol-only/transparent/SVG/on-light-mono.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "ansible": {
+    "file": "ansible.svg",
+    "source": "https://www.ansible.com/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "pulumi": {
+    "file": "pulumi.svg",
+    "source": "https://www.pulumi.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "argo-cd": {
+    "file": "argo-cd.svg",
+    "source": "https://github.com/cncf/artwork/blob/c2e619cdf85e8bac090ceca7c0834c5cfedf9426/projects/argo/icon/black/argo-icon-black.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "prometheus": {
+    "file": "prometheus.svg",
+    "source": "https://prometheus.io",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "grafana": {
+    "file": "grafana.svg",
+    "source": "https://grafana.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "caddy": {
+    "file": "caddy.svg",
+    "source": "https://caddyserver.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "nextcloud": {
+    "file": "nextcloud.svg",
+    "source": "https://nextcloud.com/press/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "appflowy": {
+    "file": "appflowy.svg",
+    "source": "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy/main/frontend/appflowy_flutter/assets/images/flowy_logo.svg",
+    "sourceType": "official-project-asset"
+  },
+  "logseq": {
+    "file": "logseq.svg",
+    "source": "https://github.com/logseq/logseq/blob/c4d15ec8487c9fb6b6f41780fc1abddab89491e4/resources/icon.png",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "joplin": {
+    "file": "joplin.svg",
+    "source": "https://github.com/laurent22/joplin/blob/45e35576bd8b1bb0ffe958309cc1ab3736cc266b/Assets/JoplinLetter.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "memos": {
+    "file": "memos.svg",
+    "source": "https://raw.githubusercontent.com/usememos/memos/main/web/public/apple-touch-icon.png",
+    "sourceType": "official-project-asset"
+  },
+  "vikunja": {
+    "file": "vikunja.svg",
+    "source": "https://github.com/go-vikunja/website/blob/45328fa981e7b038cd957a995528706617069420/public/favicon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "plane": {
+    "file": "plane.svg",
+    "source": "https://plane.so/brand-logos/logo-with-wordmark.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "taiga": {
+    "file": "taiga.svg",
+    "source": "https://taiga.io/media/images/favicon.2e16d0ba.fill-192x192.png",
+    "sourceType": "official-project-asset"
+  },
+  "cal-com": {
+    "file": "cal-com.svg",
+    "source": "https://design.cal.com/assets/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "paperless-ngx": {
+    "file": "paperless-ngx.svg",
+    "source": "https://github.com/paperless-ngx/paperless-ngx/blob/e16645b146da24f07004eb772a455450354a37a7/resources/logo/web/svg/square.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "penpot": {
+    "file": "penpot.svg",
+    "source": "https://penpot.app",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "blender": {
+    "file": "blender.svg",
+    "source": "https://www.blender.org/about/logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "gimp": {
+    "file": "gimp.svg",
+    "source": "https://gitlab.gnome.org/GNOME/gimp-data/-/blob/e62f1905dcef7ec831ea6c052bb035eb37eaa69e/images/logo/gimp-logo-unicolor.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "inkscape": {
+    "file": "inkscape.svg",
+    "source": "https://inkscape.org/gallery/=inkscape-branding/inkscape-brand-assets/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "krita": {
+    "file": "krita.svg",
+    "source": "https://krita.org/en/about/press/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "obs-studio": {
+    "file": "obs-studio.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:OBS.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "kdenlive": {
+    "file": "kdenlive.svg",
+    "source": "https://kdenlive.org/trademark-logo/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "audacity": {
+    "file": "audacity.svg",
+    "source": "https://github.com/audacity/audacity/blob/c818449c69193f5311b430fbf600d8d6cbe49047/images/audacity.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "ffmpeg": {
+    "file": "ffmpeg.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:FFmpeg_Logo_new.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "trivy": {
+    "file": "trivy.svg",
+    "source": "https://www.aquasec.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "bitwarden-server": {
+    "file": "bitwarden-server.svg",
+    "source": "https://bitwarden.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "vaultwarden": {
+    "file": "vaultwarden.svg",
+    "source": "https://github.com/dani-garcia/vaultwarden/blob/44e9e1a58ed37bf4b352bb499fd3e97adcd3b26b/resources/vaultwarden-icon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "keepassxc": {
+    "file": "keepassxc.svg",
+    "source": "https://github.com/keepassxreboot/keepassxc/tree/3fdafc6d25e85050976e0cc645db579086db3f45",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "wireguard": {
+    "file": "wireguard.svg",
+    "source": "https://www.wireguard.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "tailscale": {
+    "file": "tailscale.svg",
+    "source": "https://tailscale.com/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mattermost": {
+    "file": "mattermost.svg",
+    "source": "https://www.mattermost.org/brand-guidelines/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "rocket-chat": {
+    "file": "rocket-chat.svg",
+    "source": "https://docs.rocket.chat/docs/media-kit",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "element": {
+    "file": "element.svg",
+    "source": "https://element.io",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "zulip": {
+    "file": "zulip.svg",
+    "source": "https://github.com/zulip/zulip/blob/df9e40491dc77b658d943cff36a816d46e32ce1b/static/images/logo/zulip-org-logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "home-assistant": {
+    "file": "home-assistant.svg",
+    "source": "https://github.com/home-assistant/assets/blob/0f69676da79c3881e7dfca6d6c0a5739f88273d8/logo/home-assistant-logo.zip",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "n8n": {
+    "file": "n8n.svg",
+    "source": "https://n8n.io/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "immich": {
+    "file": "immich.svg",
+    "source": "https://github.com/immich-app/immich/blob/25c9b779e4d19bc34551f8b137266a459e0d70e1/design/immich-logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "uptime-kuma": {
+    "file": "uptime-kuma.svg",
+    "source": "https://uptime.kuma.pet",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "syncthing": {
+    "file": "syncthing.svg",
+    "source": "https://github.com/syncthing/syncthing/blob/bdfd0f0548d2f6fc4b5500690dbd383baa3b0561/assets/logo-only.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "rufus": {
+    "file": "rufus.svg",
+    "source": "https://raw.githubusercontent.com/pbatard/rufus/master/res/appstore/Images/Square44x44Logo.targetsize-256.png",
+    "sourceType": "official-project-asset"
+  },
+  "vscodium": {
+    "file": "vscodium.svg",
+    "source": "https://github.com/VSCodium/vscodium.github.io/blob/ed028c57f10e6432ec55dfc34d4db1a83fba941d/img/codium_cnl.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "intellij-idea-community": {
+    "file": "intellij-idea-community.svg",
+    "source": "https://www.jetbrains.com/idea/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "eclipse-ide": {
+    "file": "eclipse-ide.svg",
+    "source": "https://www.eclipse.org/artwork/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "vim": {
+    "file": "vim.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Vimlogo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "micro-editor": {
+    "file": "micro-editor.svg",
+    "source": "https://raw.githubusercontent.com/zyedidia/micro/HEAD/assets/micro-logo-mark.svg",
+    "sourceType": "official-project-asset"
+  },
+  "lapce": {
+    "file": "lapce.svg",
+    "source": "https://github.com/lapce/lapce/blob/95c4cf2d87083e348c0b621d0be0ea17f79ed703/extra/images/logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "wezterm": {
+    "file": "wezterm.svg",
+    "source": "https://github.com/wez/wezterm/blob/fe78b5821fc106c1061f4c1cc454ff01e74bf97d/assets/icon/wezterm-icon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "kitty-terminal": {
+    "file": "kitty-terminal.svg",
+    "source": "https://raw.githubusercontent.com/kovidgoyal/kitty/HEAD/logo/kitty.svg",
+    "sourceType": "official-project-asset"
+  },
+  "alacritty": {
+    "file": "alacritty.svg",
+    "source": "https://github.com/alacritty/alacritty/blob/6d8db6b9dfadd6164c4be7a053f25db8ef6b7998/extra/logo/alacritty-simple.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "fish-shell": {
+    "file": "fish-shell.svg",
+    "source": "https://github.com/fish-shell/fish-site/blob/1364b2e794c9aba7492c8962bae0f7fbe4886317/artwork/ascii%20fish.eps",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "oh-my-zsh": {
+    "file": "oh-my-zsh.svg",
+    "source": "https://ohmyz.sh/favicon.ico",
+    "sourceType": "official-project-asset"
+  },
+  "nushell": {
+    "file": "nushell.svg",
+    "source": "https://github.com/nushell/nushell/blob/3016d7a64ccb2c2eac9f735f6144fc896ea724a5/assets/icons/nushell-original.png",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "powershell": {
+    "file": "powershell.svg",
+    "source": "https://raw.githubusercontent.com/PowerShell/PowerShell/HEAD/assets/Square150x150Logo.png",
+    "sourceType": "official-project-asset"
+  },
+  "github-desktop": {
+    "file": "github-desktop.svg",
+    "source": "https://github.com/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "lazygit": {
+    "file": "lazygit.svg",
+    "source": "https://user-images.githubusercontent.com/8456633/174470852-339b5011-5800-4bb9-a628-ff230aa8cd4e.png",
+    "sourceType": "official-project-asset"
+  },
+  "jujutsu": {
+    "file": "jujutsu.svg",
+    "source": "https://raw.githubusercontent.com/jj-vcs/jj/HEAD/docs/images/jj-logo.svg",
+    "sourceType": "official-project-asset"
+  },
+  "direnv": {
+    "file": "direnv.svg",
+    "source": "https://github.com/direnv.png?size=256",
+    "sourceType": "official-project-asset"
+  },
+  "asdf-version-manager": {
+    "file": "asdf-version-manager.svg",
+    "source": "https://github.com/asdf-vm.png?size=256",
+    "sourceType": "official-project-asset"
+  },
+  "hugging-face-transformers": {
+    "file": "hugging-face-transformers.svg",
+    "source": "https://huggingface.co/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "pytorch": {
+    "file": "pytorch.svg",
+    "source": "https://github.com/pytorch/pytorch.github.io/blob/8f083bd12192ca12d5e1c1f3d236f4831d823d8f/assets/images/logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "tensorflow": {
+    "file": "tensorflow.svg",
+    "source": "https://www.tensorflow.org",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "jax": {
+    "file": "jax.svg",
+    "source": "https://raw.githubusercontent.com/jax-ml/jax/HEAD/images/jax_logo.svg",
+    "sourceType": "official-project-asset"
+  },
+  "scikit-learn": {
+    "file": "scikit-learn.svg",
+    "source": "https://github.com/scikit-learn/scikit-learn/blob/c5ef2e985c13119001aa697e446ebb3dbcb326e5/doc/logos/scikit-learn-logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "keras": {
+    "file": "keras.svg",
+    "source": "https://keras.io",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "vllm": {
+    "file": "vllm.svg",
+    "source": "https://github.com/vllm-project/media-kit/blob/79b2ea5db25b723f2d81dae203a87c5b9a076722/vLLM-Logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "text-generation-webui": {
+    "file": "text-generation-webui.svg",
+    "source": "https://raw.githubusercontent.com/oobabooga/text-generation-webui/HEAD/css/icon.png",
+    "sourceType": "official-project-asset"
+  },
+  "koboldcpp": {
+    "file": "koboldcpp.svg",
+    "source": "https://raw.githubusercontent.com/LostRuins/koboldcpp/HEAD/tools/ui/src/lib/assets/logo.svg",
+    "sourceType": "official-project-asset"
+  },
+  "anythingllm": {
+    "file": "anythingllm.svg",
+    "source": "https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/HEAD/frontend/src/media/logo/anything-llm-icon.png",
+    "sourceType": "official-project-asset"
+  },
+  "apache-spark": {
+    "file": "apache-spark.svg",
+    "source": "https://apache.org/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "apache-airflow": {
+    "file": "apache-airflow.svg",
+    "source": "https://apache.org/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "dbt-core": {
+    "file": "dbt-core.svg",
+    "source": "https://raw.githubusercontent.com/dbt-labs/dbt-core/HEAD/crates/dbt-jinja/artwork/logo-square.png",
+    "sourceType": "official-project-asset"
+  },
+  "metabase": {
+    "file": "metabase.svg",
+    "source": "https://www.metabase.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "apache-superset": {
+    "file": "apache-superset.svg",
+    "source": "https://apache.org/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "pgadmin-4": {
+    "file": "pgadmin-4.svg",
+    "source": "https://raw.githubusercontent.com/pgadmin-org/pgadmin4/HEAD/web/pgadmin/static/img/logo-256.png",
+    "sourceType": "official-project-asset"
+  },
+  "mongodb-compass": {
+    "file": "mongodb-compass.svg",
+    "source": "https://www.mongodb.com/pressroom",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "beekeeper-studio": {
+    "file": "beekeeper-studio.svg",
+    "source": "https://www.beekeeperstudio.io/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "influxdb": {
+    "file": "influxdb.svg",
+    "source": "https://influxdata.github.io/branding/logo/downloads/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "timescaledb": {
+    "file": "timescaledb.svg",
+    "source": "https://www.timescale.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "neo4j": {
+    "file": "neo4j.svg",
+    "source": "https://neo4j.com/brand/#logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "rabbitmq": {
+    "file": "rabbitmq.svg",
+    "source": "https://www.rabbitmq.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "docker-compose": {
+    "file": "docker-compose.svg",
+    "source": "https://www.docker.com/company/newsroom/media-resources",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "vagrant": {
+    "file": "vagrant.svg",
+    "source": "https://www.hashicorp.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "packer": {
+    "file": "packer.svg",
+    "source": "https://www.hashicorp.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "nomad": {
+    "file": "nomad.svg",
+    "source": "https://www.hashicorp.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "consul": {
+    "file": "consul.svg",
+    "source": "https://www.hashicorp.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "hashicorp-vault": {
+    "file": "hashicorp-vault.svg",
+    "source": "https://www.hashicorp.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "flux-cd": {
+    "file": "flux-cd.svg",
+    "source": "https://github.com/cncf/artwork/blob/c2e619cdf85e8bac090ceca7c0834c5cfedf9426/projects/flux/icon/black/flux-icon-black.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "jenkins": {
+    "file": "jenkins.svg",
+    "source": "https://get.jenkins.io/art/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "gitlab-runner": {
+    "file": "gitlab-runner.svg",
+    "source": "https://about.gitlab.com/press/press-kit/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "opentelemetry-collector": {
+    "file": "opentelemetry-collector.svg",
+    "source": "https://cncf-branding.netlify.app/projects/opentelemetry/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "grafana-loki": {
+    "file": "grafana-loki.svg",
+    "source": "https://grafana.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "cilium": {
+    "file": "cilium.svg",
+    "source": "https://github.com/cilium/cilium/blob/774a91f0e7497d9c9085234005ec81f1065c3783/Documentation/images/logo-solo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "istio": {
+    "file": "istio.svg",
+    "source": "https://github.com/istio/istio/blob/5a047251817eb2523af297607b7614120812e47a/logo/istio-bluelogo-whitebackground-unframed.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "traefik-proxy": {
+    "file": "traefik-proxy.svg",
+    "source": "https://traefik.io/traefik",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "libreoffice": {
+    "file": "libreoffice.svg",
+    "source": "https://wiki.documentfoundation.org/Marketing/Branding",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "onlyoffice-desktop-editors": {
+    "file": "onlyoffice-desktop-editors.svg",
+    "source": "https://www.onlyoffice.com/en/press-downloads.aspx",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "zotero": {
+    "file": "zotero.svg",
+    "source": "https://www.zotero.org/support/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "anki": {
+    "file": "anki.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Anki-icon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "standard-notes": {
+    "file": "standard-notes.svg",
+    "source": "https://raw.githubusercontent.com/standardnotes/app/HEAD/packages/desktop/app/icon/Icon-512x512.png",
+    "sourceType": "official-project-asset"
+  },
+  "siyuan": {
+    "file": "siyuan.svg",
+    "source": "https://b3log.org/brand-marking.html",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "notesnook": {
+    "file": "notesnook.svg",
+    "source": "https://raw.githubusercontent.com/streetwriters/notesnook/HEAD/apps/desktop/assets/icons/512x512.png",
+    "sourceType": "official-project-asset"
+  },
+  "super-productivity": {
+    "file": "super-productivity.svg",
+    "source": "https://raw.githubusercontent.com/johannesjo/super-productivity/HEAD/build/icon.png",
+    "sourceType": "official-project-asset"
+  },
+  "triliumnext-notes": {
+    "file": "triliumnext-notes.svg",
+    "source": "https://raw.githubusercontent.com/TriliumNext/Trilium/HEAD/apps/client/src/assets/icon.svg",
+    "sourceType": "official-project-asset"
+  },
+  "bookstack": {
+    "file": "bookstack.svg",
+    "source": "https://www.bookstackapp.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "godot-engine": {
+    "file": "godot-engine.svg",
+    "source": "https://godotengine.org/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "freecad": {
+    "file": "freecad.svg",
+    "source": "https://fpa.freecad.org/handbook/process/logo.html",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "openscad": {
+    "file": "openscad.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Openscad.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "shotcut": {
+    "file": "shotcut.svg",
+    "source": "https://raw.githubusercontent.com/mltframework/shotcut/HEAD/icons/shotcut-logo-320x320.png",
+    "sourceType": "official-project-asset"
+  },
+  "handbrake": {
+    "file": "handbrake.svg",
+    "source": "https://raw.githubusercontent.com/HandBrake/HandBrake/HEAD/graphics/Logo/HandBrake-v1-128x128.png",
+    "sourceType": "official-project-asset"
+  },
+  "darktable": {
+    "file": "darktable.svg",
+    "source": "https://raw.githubusercontent.com/darktable-org/darktable/HEAD/data/pixmaps/dt_logo_128x128.png",
+    "sourceType": "official-project-asset"
+  },
+  "rawtherapee": {
+    "file": "rawtherapee.svg",
+    "source": "https://raw.githubusercontent.com/Beep6581/RawTherapee/HEAD/rtdata/icons/hicolor/scalable/apps/rawtherapee.svg",
+    "sourceType": "official-project-asset"
+  },
+  "musescore-studio": {
+    "file": "musescore-studio.svg",
+    "source": "https://raw.githubusercontent.com/musescore/MuseScore/HEAD/share/icons/AppIcon/MS4_AppIcon_512x512.png",
+    "sourceType": "official-project-asset"
+  },
+  "lmms": {
+    "file": "lmms.svg",
+    "source": "https://lmms.io/branding",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mixxx": {
+    "file": "mixxx.svg",
+    "source": "https://raw.githubusercontent.com/mixxxdj/mixxx/HEAD/res/images/icons/scalable/apps/mixxx.svg",
+    "sourceType": "official-project-asset"
+  },
+  "veracrypt": {
+    "file": "veracrypt.svg",
+    "source": "https://raw.githubusercontent.com/veracrypt/VeraCrypt/HEAD/src/Resources/Icons/VeraCrypt.svg",
+    "sourceType": "official-project-asset"
+  },
+  "openvpn-community": {
+    "file": "openvpn-community.svg",
+    "source": "https://openvpn.net",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "pi-hole": {
+    "file": "pi-hole.svg",
+    "source": "https://docs.pi-hole.net",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "adguard-home": {
+    "file": "adguard-home.svg",
+    "source": "https://adguard.com/en/media-materials.html",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "crowdsec": {
+    "file": "crowdsec.svg",
+    "source": "https://raw.githubusercontent.com/crowdsecurity/crowdsec-docs/HEAD/crowdsec-docs/static/img/crowdsec_logo.png",
+    "sourceType": "official-project-asset"
+  },
+  "clamav": {
+    "file": "clamav.svg",
+    "source": "https://raw.githubusercontent.com/Cisco-Talos/clamav/HEAD/logo.png",
+    "sourceType": "official-project-asset"
+  },
+  "owasp-zap": {
+    "file": "owasp-zap.svg",
+    "source": "https://raw.githubusercontent.com/zaproxy/zaproxy/HEAD/snap/snap/gui/icon.png",
+    "sourceType": "official-project-asset"
+  },
+  "keycloak": {
+    "file": "keycloak.svg",
+    "source": "https://github.com/keycloak/keycloak-misc/blob/dee033f2d6d6b5c3a6ce8eb84e285f7e5626dbf6/logo/icon-black.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "signal-desktop": {
+    "file": "signal-desktop.svg",
+    "source": "https://signal.org/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "telegram-desktop": {
+    "file": "telegram-desktop.svg",
+    "source": "https://telegram.org/tour/screenshots",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "jitsi-meet": {
+    "file": "jitsi-meet.svg",
+    "source": "https://github.com/jitsi/jitsi-meet/blob/767101497c9a52abf8cef7893e8d6e7e4283bbfc/images/watermark.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mumble": {
+    "file": "mumble.svg",
+    "source": "https://github.com/mumble-voip/mumble/blob/d40a19eb88cda61084da245a1b6cb8f32ef1b6e4/icons/mumble_small.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "simplex-chat": {
+    "file": "simplex-chat.svg",
+    "source": "https://github.com/simplex-chat/simplex-chat/blob/2f730d54e9858452e87e641b7fd618c669da68aa/website/src/img/new/logo-symbol-light.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "matrix-synapse": {
+    "file": "matrix-synapse.svg",
+    "source": "https://matrix.org",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "thunderbird": {
+    "file": "thunderbird.svg",
+    "source": "https://design.thunderbird.net/resources/logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "wordpress": {
+    "file": "wordpress.svg",
+    "source": "https://wordpress.org/about/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "ghost": {
+    "file": "ghost.svg",
+    "source": "https://github.com/TryGhost/Admin/blob/e3e1fa3353767c3729b1658ad42cc35f883470c5/public/assets/icons/icon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "strapi": {
+    "file": "strapi.svg",
+    "source": "https://handbook.strapi.io/strapi-brand-book-2022/strapi-logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "directus": {
+    "file": "directus.svg",
+    "source": "https://directus.io",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "jellyfin": {
+    "file": "jellyfin.svg",
+    "source": "https://jellyfin.org/docs/general/contributing/branding.html",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "gitea": {
+    "file": "gitea.svg",
+    "source": "https://github.com/go-gitea/gitea/blob/e0c753e770a64cda5e3900aa1da3d7e1f3263c9a/assets/logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "ventoy": {
+    "file": "ventoy.svg",
+    "source": "https://raw.githubusercontent.com/ventoy/Ventoy/HEAD/ICON/logo_512.png",
+    "sourceType": "official-project-asset"
+  },
+  "balena-etcher": {
+    "file": "balena-etcher.svg",
+    "source": "https://raw.githubusercontent.com/balena-io/etcher/HEAD/assets/iconset/512x512.png",
+    "sourceType": "official-project-asset"
+  },
+  "7-zip": {
+    "file": "7-zip.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:7ziplogo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "flameshot": {
+    "file": "flameshot.svg",
+    "source": "https://raw.githubusercontent.com/flameshot-org/flameshot/HEAD/data/img/app/flameshot.svg",
+    "sourceType": "official-project-asset"
+  },
+  "localsend": {
+    "file": "localsend.svg",
+    "source": "https://github.com/localsend/localsend/blob/f57cae55616e6d2f0ab20cad41e0697cba7885e5/app/assets/img/logo-512.png",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "steam": {
+    "file": "steam.svg",
+    "source": "https://partner.steamgames.com/doc/marketing/branding",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "epic-games-store": {
+    "file": "epic-games-store.svg",
+    "source": "https://dev.epicgames.com/docs/services/en-US/EpicAccountServices/DesignGuidelines/index.html#epicgamesbrandguidelines",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "riot-client": {
+    "file": "riot-client.svg",
+    "source": "https://www.riotgames.com/en/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "battle-net": {
+    "file": "battle-net.svg",
+    "source": "https://battle.net",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "ea-app": {
+    "file": "ea-app.svg",
+    "source": "https://www.ea.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "ubisoft-connect": {
+    "file": "ubisoft-connect.svg",
+    "source": "https://www.ubisoft.com/en-US/company/overview.aspx",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "gog-galaxy": {
+    "file": "gog-galaxy.svg",
+    "source": "https://www.cdprojekt.com/en/media/logotypes/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "xbox-app": {
+    "file": "xbox-app.svg",
+    "source": "https://store-images.s-microsoft.com/image/apps.60199.13798539581762600.abe1643f-1704-4a4d-a61b-47ccc25da012.2d0f53d6-e474-4958-bb99-2b237faa877d",
+    "sourceType": "official-project-asset"
+  },
+  "itch-io-app": {
+    "file": "itch-io-app.svg",
+    "source": "https://itch.io/press-kit",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "heroic-games-launcher": {
+    "file": "heroic-games-launcher.svg",
+    "source": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/aefe212367acbce1964491c8e254826b124e34cb/src/frontend/assets/heroic-icon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "lutris": {
+    "file": "lutris.svg",
+    "source": "https://github.com/lutris/lutris/blob/f62feaef063868cb39afddefbb9ba7a5928bd978/share/icons/hicolor/scalable/apps/lutris.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "modrinth-app": {
+    "file": "modrinth-app.svg",
+    "source": "https://github.com/modrinth/art/blob/d5ab4f965b0b4cea7201967483885ecd8d04a562/Branding/Favicon/favicon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "curseforge-app": {
+    "file": "curseforge-app.svg",
+    "source": "https://www.curseforge.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "nvidia-geforce-now": {
+    "file": "nvidia-geforce-now.svg",
+    "source": "https://www.nvidia.com/en-us",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "roblox-player": {
+    "file": "roblox-player.svg",
+    "source": "https://www.roblox.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "rockstar-games-launcher": {
+    "file": "rockstar-games-launcher.svg",
+    "source": "https://www.rockstargames.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "spotify": {
+    "file": "spotify.svg",
+    "source": "https://developer.spotify.com/documentation/general/design-and-branding/#using-our-logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "apple-music": {
+    "file": "apple-music.svg",
+    "source": "https://www.apple.com/itunes/marketing-on-music/identity-guidelines.html#apple-music-icon",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "netflix": {
+    "file": "netflix.svg",
+    "source": "https://brand.netflix.com/en/assets/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "apple-tv-app": {
+    "file": "apple-tv-app.svg",
+    "source": "https://en.wikipedia.org/wiki/File:Apple_TV_(logo).svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "tidal": {
+    "file": "tidal.svg",
+    "source": "https://tidal.com/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "deezer": {
+    "file": "deezer.svg",
+    "source": "https://deezerbrand.com/document/37#/-/logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "soundcloud": {
+    "file": "soundcloud.svg",
+    "source": "https://press.soundcloud.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "youtube-music": {
+    "file": "youtube-music.svg",
+    "source": "https://partnermarketinghub.withgoogle.com/#/brands",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "vlc-media-player": {
+    "file": "vlc-media-player.svg",
+    "source": "https://code.videolan.org/videolan/vlc/-/blob/1ce7f686ee17a028d2d79627ae69f22d905f2e23/extras/package/macosx/asset_sources/vlc_app_icon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "plex-desktop": {
+    "file": "plex-desktop.svg",
+    "source": "https://brand.plex.tv",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "kodi": {
+    "file": "kodi.svg",
+    "source": "https://kodi.tv",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "crunchyroll": {
+    "file": "crunchyroll.svg",
+    "source": "https://www.crunchyroll.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "google-drive-desktop": {
+    "file": "google-drive-desktop.svg",
+    "source": "https://developers.google.com/drive/web/branding",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "dropbox-desktop": {
+    "file": "dropbox-desktop.svg",
+    "source": "https://www.dropbox.com/branding",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "notion-desktop": {
+    "file": "notion-desktop.svg",
+    "source": "https://www.notion.so",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "zoom-workplace": {
+    "file": "zoom-workplace.svg",
+    "source": "https://brand.zoom.us/media-library/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "asana-desktop": {
+    "file": "asana-desktop.svg",
+    "source": "https://asana.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "trello-desktop": {
+    "file": "trello-desktop.svg",
+    "source": "https://atlassian.design/resources/logo-library",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "todoist-desktop": {
+    "file": "todoist-desktop.svg",
+    "source": "https://doist.com/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "airtable-desktop": {
+    "file": "airtable-desktop.svg",
+    "source": "https://airtable.com/newsroom",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "figma-desktop": {
+    "file": "figma-desktop.svg",
+    "source": "https://www.figma.com/using-the-figma-brand/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "davinci-resolve": {
+    "file": "davinci-resolve.svg",
+    "source": "https://www.blackmagicdesign.com/media/images/davinci-resolve-logo-square",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "sketch": {
+    "file": "sketch.svg",
+    "source": "https://www.sketch.com/about-us/#press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "aseprite": {
+    "file": "aseprite.svg",
+    "source": "https://www.aseprite.org",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "pro-tools": {
+    "file": "pro-tools.svg",
+    "source": "https://cdn-www.avid.com/Content/fonts/avidmoon.ttf",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "unity-hub": {
+    "file": "unity-hub.svg",
+    "source": "https://brand.unity.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "unreal-engine": {
+    "file": "unreal-engine.svg",
+    "source": "https://www.unrealengine.com/en-US/branding",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "roblox-studio": {
+    "file": "roblox-studio.svg",
+    "source": "https://create.roblox.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "discord": {
+    "file": "discord.svg",
+    "source": "https://discord.com/branding",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "whatsapp-desktop": {
+    "file": "whatsapp-desktop.svg",
+    "source": "https://about.meta.com/brand/resources/whatsapp/whatsapp-brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "messenger-web": {
+    "file": "messenger-web.svg",
+    "source": "https://about.meta.com/brand/resources/facebook/messenger-icon",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "instagram-web": {
+    "file": "instagram-web.svg",
+    "source": "https://about.meta.com/brand/resources/instagram",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "tiktok-web": {
+    "file": "tiktok-web.svg",
+    "source": "https://tiktok.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "reddit-web": {
+    "file": "reddit-web.svg",
+    "source": "https://www.redditinc.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "google-chrome": {
+    "file": "google-chrome.svg",
+    "source": "https://www.google.com/chrome",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mozilla-firefox": {
+    "file": "mozilla-firefox.svg",
+    "source": "https://mozilla.design/firefox/logos-usage/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "brave-browser": {
+    "file": "brave-browser.svg",
+    "source": "https://brave.com/brave-branding-assets",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "arc-browser": {
+    "file": "arc-browser.svg",
+    "source": "https://arc.net",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "opera-browser": {
+    "file": "opera-browser.svg",
+    "source": "https://brand.opera.com/1472-2/opera-logos/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "vivaldi-browser": {
+    "file": "vivaldi-browser.svg",
+    "source": "https://vivaldi.com/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "razer-synapse": {
+    "file": "razer-synapse.svg",
+    "source": "https://press.razer.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "corsair-icue": {
+    "file": "corsair-icue.svg",
+    "source": "https://www.corsair.com/newsroom/company-logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "elgato-stream-deck": {
+    "file": "elgato-stream-deck.svg",
+    "source": "https://www.elgato.com/en/media-room",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "nvidia-app": {
+    "file": "nvidia-app.svg",
+    "source": "https://www.nvidia.com/en-us",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "fortnite": {
+    "file": "fortnite.svg",
+    "source": "https://www.fortnite.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "league-of-legends": {
+    "file": "league-of-legends.svg",
+    "source": "https://www.leagueoflegends.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "valorant": {
+    "file": "valorant.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Valorant_logo_-_black_color_version.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "minecraft-launcher": {
+    "file": "minecraft-launcher.svg",
+    "source": "https://store-images.s-microsoft.com/image/apps.1815.14247769038588514.a7fa20d7-bc1c-464b-bf78-16dfcd742fe5.20b70e8c-ab2e-45b9-b8c3-2390ebb38f59",
+    "sourceType": "official-project-asset"
+  },
+  "counter-strike-2": {
+    "file": "counter-strike-2.svg",
+    "source": "https://www.counter-strike.net",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "dota-2": {
+    "file": "dota-2.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dota_logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "pubg-battlegrounds": {
+    "file": "pubg-battlegrounds.svg",
+    "source": "https://krafton.com/en/about/brandcenter",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "osu": {
+    "file": "osu.svg",
+    "source": "https://osu.ppy.sh/wiki/Brand_identity_guidelines",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "forza-horizon-5": {
+    "file": "forza-horizon-5.svg",
+    "source": "https://cdn.forza.net/strapi-uploads/assets/logo_horizon_main_0cfd64e624.svg",
+    "sourceType": "official-project-asset"
+  },
+  "playstation-remote-play": {
+    "file": "playstation-remote-play.svg",
+    "source": "https://www.playstation.com/en-us/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "max-streaming": {
+    "file": "max-streaming.svg",
+    "source": "https://cycling74.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "stremio": {
+    "file": "stremio.svg",
+    "source": "https://github.com/Stremio/stremio-brand/blob/3f3743087b11e81374cf943aaf1e041af1c97ee3/logos/SVG/stremio-logo-icon-only-fullcolor.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "audible": {
+    "file": "audible.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Audible_logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "pocket-casts": {
+    "file": "pocket-casts.svg",
+    "source": "https://blog.pocketcasts.com/press/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "iheartradio": {
+    "file": "iheartradio.svg",
+    "source": "https://brand.iheart.com/logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "plexamp": {
+    "file": "plexamp.svg",
+    "source": "https://brand.plex.tv",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "twitch-web": {
+    "file": "twitch-web.svg",
+    "source": "https://brand.twitch.tv",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "vimeo-web": {
+    "file": "vimeo-web.svg",
+    "source": "https://press.vimeo.com/brand-guidelines",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "linear-desktop": {
+    "file": "linear-desktop.svg",
+    "source": "https://linear.app",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "clickup-desktop": {
+    "file": "clickup-desktop.svg",
+    "source": "https://clickup.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "miro-desktop": {
+    "file": "miro-desktop.svg",
+    "source": "https://miro.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "basecamp-desktop": {
+    "file": "basecamp-desktop.svg",
+    "source": "https://basecamp.com/about/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "evernote-desktop": {
+    "file": "evernote-desktop.svg",
+    "source": "https://evernote.com/about-us",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "cinema-4d": {
+    "file": "cinema-4d.svg",
+    "source": "https://www.maxon.net/en/about-maxon/branding",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "photopea": {
+    "file": "photopea.svg",
+    "source": "https://github.com/photopea/photopea/blob/d5c532e8ad8ece246e2ea8646aac7df768407c64/logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "framer-web": {
+    "file": "framer-web.svg",
+    "source": "https://framer.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "webflow-web": {
+    "file": "webflow-web.svg",
+    "source": "https://brand-at.webflow.io/resources#logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "autodesk-fusion": {
+    "file": "autodesk-fusion.svg",
+    "source": "https://brand.autodesk.com/brand-system/logo",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "snapchat-web-app": {
+    "file": "snapchat-web-app.svg",
+    "source": "https://www.snapchat.com/brand-guidelines",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "threads-web": {
+    "file": "threads-web.svg",
+    "source": "https://about.meta.com/brand/resources/instagram/threads",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "bluesky-web": {
+    "file": "bluesky-web.svg",
+    "source": "https://bsky.social/about/blog/press-faq",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mastodon-web": {
+    "file": "mastodon-web.svg",
+    "source": "https://github.com/mastodon/mastodon/blob/7ccf7a73f1c47a8c03712c39f7c591e837cf6d08/app/javascript/images/logo-symbol-icon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "librewolf-browser": {
+    "file": "librewolf-browser.svg",
+    "source": "https://librewolf.net",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "tor-browser": {
+    "file": "tor-browser.svg",
+    "source": "https://styleguide.torproject.org/brand-assets",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "zen-browser": {
+    "file": "zen-browser.svg",
+    "source": "https://github.com/zen-browser/branding/blob/4b99730c9d3c8fe3ec71d31a07e74cfd488fc27f/Official/Word%20Marks/SVG/zen_logo_icon_color.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "duckduckgo-browser": {
+    "file": "duckduckgo-browser.svg",
+    "source": "https://github.com/duckduckgo/duckduckgo-privacy-extension/blob/5c6ac8d6a07421adbfb97ee2ff855dd7655f8d71/shared/img/logo-small-grayscale.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "hyperx-ngenuity": {
+    "file": "hyperx-ngenuity.svg",
+    "source": "https://ca.hyperx.com/cdn/shop/files/image_placeholder.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "steelseries-gg": {
+    "file": "steelseries-gg.svg",
+    "source": "https://techblog.steelseries.com/ux-guide/index.html",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "amd-adrenalin": {
+    "file": "amd-adrenalin.svg",
+    "source": "https://www.amd.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "nzxt-cam": {
+    "file": "nzxt-cam.svg",
+    "source": "https://nzxt.com",
+    "sourceType": "simple-icons-official-glyph"
+  }
+}

@@ -1,6 +1,6 @@
 # SetupWith
 
-SetupWith is an open catalog of product-specific Codex setup prompts. It covers 100 popular developer tools, AI runtimes, databases, infrastructure projects, desktop apps, and self-hosted software.
+SetupWith is an open catalog of product-specific Codex setup prompts. It covers hundreds of popular developer tools, AI runtimes, games and launchers, entertainment services, workspaces, creative suites, browsers, device utilities, and self-hosted software.
 
 Each app has its own `/{slug}` route with:
 
@@ -25,18 +25,18 @@ Open [http://localhost:3000](http://localhost:3000).
 npm run check
 ```
 
-This runs ESLint, strict TypeScript, catalog/prompt validation, and a production Next.js build that statically renders all 100 app pages.
+This runs ESLint, strict TypeScript, catalog/prompt validation, and a production Next.js build that statically renders every app page.
 
 ## Security model
 
 The context profile is local-first. Non-secret preferences stay in browser storage. Credentials are protected by a browser-only vault using PBKDF2-HMAC-SHA256 and AES-256-GCM. The passphrase is not stored. Generated prompts only receive aliases such as `secret://github/token`; secret values are never written into prompt text.
 
-SetupWith does not silently install software. Its prompts require Codex to inspect the machine first and ask before elevated access, overwriting files, enabling services, exposing ports, changing firewall rules, or launching browser sign-in.
+SetupWith does not silently install software or content. Its prompts require Codex to inspect the machine first and stop before account creation, sign-in, MFA, CAPTCHA, purchases, subscriptions, large downloads, elevated access, overwriting files, anti-cheat or driver installation, services, firewall changes, and restarts.
 
 ## Main routes
 
 - `/` — product landing page
-- `/apps` — searchable and filterable 100-app catalog
+- `/apps` — searchable catalog with Software, AI Lab, Gaming, Entertainment, Work, Creative, Social, Browsers, and Hardware experiences
 - `/{slug}` — app-specific setup page
 - `/profile` — local environment profile and encrypted vault
 - `/security` — security and storage model

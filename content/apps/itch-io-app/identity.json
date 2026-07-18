@@ -1,0 +1,16 @@
+{
+  "index": 209,
+  "name": "itch.io app",
+  "slug": "itch-io-app",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/itchio/itch",
+    "installUrl": "https://itch.io/app"
+  },
+  "website": "https://itch.io/app",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Open-source desktop client for browsing, installing, and sandboxing itch.io games.",
+  "accent": "#FA5C5C",
+  "simpleIconSlug": "itchdotio"
+}

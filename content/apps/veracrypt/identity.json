@@ -1,0 +1,15 @@
+{
+  "index": 175,
+  "name": "VeraCrypt",
+  "slug": "veracrypt",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/veracrypt/VeraCrypt"
+  },
+  "website": "https://www.veracrypt.fr",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Disk-encryption utility for creating and mounting encrypted volumes and system partitions.",
+  "accent": "#1C4E80",
+  "simpleIconSlug": null
+}

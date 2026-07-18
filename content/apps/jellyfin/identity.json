@@ -1,0 +1,15 @@
+{
+  "index": 194,
+  "name": "Jellyfin",
+  "slug": "jellyfin",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/jellyfin/jellyfin"
+  },
+  "website": "https://jellyfin.org",
+  "category": "Web & Self-hosted",
+  "vertical": "software",
+  "description": "Free media system for organizing and streaming movies, television, music, and photos.",
+  "accent": "#AA5CC3",
+  "simpleIconSlug": "jellyfin"
+}

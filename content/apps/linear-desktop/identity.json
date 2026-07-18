@@ -1,0 +1,16 @@
+{
+  "index": 279,
+  "name": "Linear",
+  "slug": "linear-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://linear.app/download",
+    "installUrl": "https://linear.app/download"
+  },
+  "website": "https://linear.app/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Issue tracking and product planning for software teams.",
+  "accent": "#5E6AD2",
+  "simpleIconSlug": "linear"
+}

@@ -1,0 +1,15 @@
+{
+  "index": 167,
+  "name": "OpenSCAD",
+  "slug": "openscad",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/openscad/openscad"
+  },
+  "website": "https://openscad.org",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Programmer-oriented solid 3D CAD modeler driven by a declarative scripting language.",
+  "accent": "#F9D72C",
+  "simpleIconSlug": "openscad"
+}

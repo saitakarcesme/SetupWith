@@ -1,0 +1,15 @@
+{
+  "index": 120,
+  "name": "PyTorch",
+  "slug": "pytorch",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/pytorch/pytorch"
+  },
+  "website": "https://pytorch.org",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "Widely used tensor and deep-learning framework with dynamic graphs and accelerator support.",
+  "accent": "#EE4C2C",
+  "simpleIconSlug": "pytorch"
+}

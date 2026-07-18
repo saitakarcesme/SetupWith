@@ -2,9 +2,13 @@
   "index": 5,
   "name": "Zed",
   "slug": "zed",
-  "repo": "https://github.com/zed-industries/zed",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/zed-industries/zed"
+  },
   "website": "https://zed.dev",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "High-performance collaborative code editor built with Rust and GPU acceleration.",
   "accent": "#084CCF",
   "simpleIconSlug": "zedindustries"

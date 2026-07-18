@@ -1,0 +1,15 @@
+{
+  "index": 137,
+  "name": "InfluxDB",
+  "slug": "influxdb",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/influxdata/influxdb"
+  },
+  "website": "https://www.influxdata.com/products/influxdb-overview/",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Time-series database optimized for metrics, events, observability, and real-time analytics.",
+  "accent": "#22ADF6",
+  "simpleIconSlug": "influxdb"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 261,
+  "name": "Fortnite",
+  "slug": "fortnite",
+  "source": {
+    "type": "website",
+    "url": "https://www.fortnite.com/download",
+    "installUrl": "https://www.fortnite.com/download"
+  },
+  "website": "https://www.fortnite.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Epic's battle royale and creator ecosystem.",
+  "accent": "#8B5CF6",
+  "simpleIconSlug": "fortnite"
+}

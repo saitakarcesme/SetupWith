@@ -1,0 +1,15 @@
+{
+  "index": 131,
+  "name": "dbt Core",
+  "slug": "dbt-core",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/dbt-labs/dbt-core"
+  },
+  "website": "https://docs.getdbt.com/docs/core/installation-overview",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Command-line analytics engineering framework for transforming warehouse data with SQL.",
+  "accent": "#FF694B",
+  "simpleIconSlug": null
+}

@@ -1,0 +1,15 @@
+{
+  "index": 171,
+  "name": "RawTherapee",
+  "slug": "rawtherapee",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/Beep6581/RawTherapee"
+  },
+  "website": "https://rawtherapee.com",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Powerful RAW photo processor with advanced color, detail, and batch controls.",
+  "accent": "#7CB342",
+  "simpleIconSlug": null
+}

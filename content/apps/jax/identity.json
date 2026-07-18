@@ -1,0 +1,15 @@
+{
+  "index": 122,
+  "name": "JAX",
+  "slug": "jax",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/jax-ml/jax"
+  },
+  "website": "https://docs.jax.dev",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "High-performance array computing and automatic differentiation with XLA compilation.",
+  "accent": "#5A9FD4",
+  "simpleIconSlug": null
+}

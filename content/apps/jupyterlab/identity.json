@@ -2,9 +2,13 @@
   "index": 30,
   "name": "JupyterLab",
   "slug": "jupyterlab",
-  "repo": "https://github.com/jupyterlab/jupyterlab",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/jupyterlab/jupyterlab"
+  },
   "website": "https://jupyter.org",
   "category": "AI & ML",
+  "vertical": "ai",
   "description": "Interactive web development environment for notebooks, code, data, terminals, and documents.",
   "accent": "#F37626",
   "simpleIconSlug": "jupyter"

@@ -5,20 +5,43 @@ import { AppLogo } from "@/components/app-logo";
 import { HeroSearch } from "@/components/hero-search";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { apps, categories } from "@/data/apps";
+import { apps, bundles, categories } from "@/data/apps";
 
 const featuredSlugs = [
   "visual-studio-code",
   "ollama",
+  "blender",
+  "steam",
+  "spotify",
+  "discord",
+  "google-chrome",
+  "notion-desktop",
+];
+
+const tickerSlugs = [
+  "visual-studio-code",
+  "ollama",
+  "steam",
+  "epic-games-store",
+  "spotify",
+  "apple-music",
+  "netflix",
+  "discord",
+  "google-chrome",
+  "notion-desktop",
+  "blender",
   "docker-engine",
   "postgresql",
-  "nextcloud",
-  "blender",
   "home-assistant",
-  "n8n",
+  "obs-studio",
+  "vlc-media-player",
 ];
 
 const featuredApps = featuredSlugs
+  .map((slug) => apps.find((app) => app.slug === slug))
+  .filter((app): app is (typeof apps)[number] => Boolean(app));
+
+const tickerApps = tickerSlugs
   .map((slug) => apps.find((app) => app.slug === slug))
   .filter((app): app is (typeof apps)[number] => Boolean(app));
 
@@ -33,8 +56,8 @@ export default function Home() {
             <div className="hero-kicker">
               <span>OPEN SETUP CATALOG</span>
               <span className="hero-kicker-line" />
-              <span>100 APPS</span>
-              <span>V1.0</span>
+              <span>{apps.length} APPS</span>
+              <span>V2.0</span>
             </div>
             <h1>
               Set up anything.
@@ -42,8 +65,8 @@ export default function Home() {
               <span>With your context.</span>
             </h1>
             <p className="hero-lede">
-              Purpose-built Codex prompts for the software you actually use—matched to your machine,
-              preferences, and approved secret references.
+              Purpose-built Codex prompts for the apps you actually use—from developer tools and local AI
+              to games, media, work, and devices—matched to your machine and explicit approvals.
             </p>
             <HeroSearch apps={apps.map(({ name, slug, category }) => ({ name, slug, category }))} />
             <div className="hero-footnote">
@@ -52,12 +75,12 @@ export default function Home() {
               <span><Check size={13} aria-hidden="true" /> Review before run</span>
             </div>
           </div>
-          <div className="hero-side-label" aria-hidden="true">CODEX-READY / 001–100</div>
+          <div className="hero-side-label" aria-hidden="true">CODEX-READY / 001–{apps.length}</div>
         </section>
 
-        <section className="logo-ticker" aria-label="Featured software">
+        <section className="logo-ticker" aria-label="Featured apps">
           <div className="shell logo-ticker-inner">
-            {apps.slice(0, 16).map((app) => (
+            {tickerApps.map((app) => (
               <Link key={app.slug} href={`/${app.slug}`} title={app.name}>
                 <AppLogo app={app} size={26} />
                 <span>{app.name}</span>
@@ -74,7 +97,7 @@ export default function Home() {
             </div>
             <div className="section-heading-aside">
               <p>Every page carries a setup path written for that product—not a prompt with the logo swapped.</p>
-              <Link href="/apps">Explore all 100 <ArrowRight size={15} aria-hidden="true" /></Link>
+              <Link href="/apps">Explore all {apps.length} <ArrowRight size={15} aria-hidden="true" /></Link>
             </div>
           </div>
           <div className="featured-grid">
@@ -101,7 +124,7 @@ export default function Home() {
               <div className="terminal-app-row">
                 <AppLogo app={apps.find((app) => app.slug === "github-cli") ?? apps[0]} size={42} />
                 <div><span>TARGET</span><strong>GitHub CLI</strong></div>
-                <small>03 / 100</small>
+                <small>03 / {apps.length}</small>
               </div>
               <div className="terminal-rows">
                 <div><span>OS</span><strong>Detect at run time</strong><em>automatic</em></div>
@@ -123,8 +146,8 @@ export default function Home() {
             <article>
               <span className="process-number">01</span>
               <WandSparkles size={25} strokeWidth={1.3} aria-hidden="true" />
-              <h3>Choose the software</h3>
-              <p>Pick an official project from the catalog and review exactly what its setup changes.</p>
+              <h3>Choose the app</h3>
+              <p>Pick a verified official source and review exactly what Codex may download or change.</p>
             </article>
             <article>
               <span className="process-number">02</span>
@@ -171,8 +194,8 @@ export default function Home() {
           </div>
           <div className="trust-copy">
             <p>
-              SetupWith prompts ask before admin access, overwrites, service changes, exposed ports, and browser
-              sign-in. Secret values are represented as references, not pasted into prompts.
+              SetupWith prompts stop before sign-in, MFA, payment, large downloads, admin access, drivers,
+              anti-cheat, services, firewall changes, and restarts. Secret values stay behind references.
             </p>
             <Link href="/security">Read the security model <ArrowRight size={15} aria-hidden="true" /></Link>
           </div>
@@ -180,7 +203,7 @@ export default function Home() {
 
         <section className="final-cta">
           <div className="shell final-cta-inner">
-            <p>100 official projects. 100 tailored paths.</p>
+            <p>{apps.length} official app sources. {bundles.length} coordinated bundles.</p>
             <h2>What should Codex set up next?</h2>
             <Link href="/apps">Browse the catalog <ArrowRight size={18} aria-hidden="true" /></Link>
           </div>

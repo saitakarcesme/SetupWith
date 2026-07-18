@@ -1,0 +1,15 @@
+{
+  "index": 191,
+  "name": "Ghost",
+  "slug": "ghost",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/TryGhost/Ghost"
+  },
+  "website": "https://ghost.org",
+  "category": "Web & Self-hosted",
+  "vertical": "software",
+  "description": "Publishing platform for professional blogs, newsletters, memberships, and subscriptions.",
+  "accent": "#15171A",
+  "simpleIconSlug": "ghost"
+}

@@ -2,9 +2,13 @@
   "index": 64,
   "name": "Grafana",
   "slug": "grafana",
-  "repo": "https://github.com/grafana/grafana",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/grafana/grafana"
+  },
   "website": "https://grafana.com",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Observability platform for querying, visualizing, alerting on, and exploring operational data.",
   "accent": "#F46800",
   "simpleIconSlug": "grafana"

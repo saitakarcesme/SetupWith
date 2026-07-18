@@ -1,0 +1,15 @@
+{
+  "index": 144,
+  "name": "Nomad",
+  "slug": "nomad",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/hashicorp/nomad"
+  },
+  "website": "https://developer.hashicorp.com/nomad",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Workload orchestrator for deploying containers, binaries, and batch jobs across clusters.",
+  "accent": "#00CA8E",
+  "simpleIconSlug": "nomad"
+}

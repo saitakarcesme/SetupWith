@@ -1,0 +1,15 @@
+{
+  "index": 159,
+  "name": "Standard Notes",
+  "slug": "standard-notes",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/standardnotes/app"
+  },
+  "website": "https://standardnotes.com",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "End-to-end encrypted notes application with cross-platform clients and self-hosting support.",
+  "accent": "#0F65FE",
+  "simpleIconSlug": null
+}

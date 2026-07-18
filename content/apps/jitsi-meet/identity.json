@@ -1,0 +1,15 @@
+{
+  "index": 185,
+  "name": "Jitsi Meet",
+  "slug": "jitsi-meet",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/jitsi/jitsi-meet"
+  },
+  "website": "https://jitsi.org/jitsi-meet/",
+  "category": "Communication",
+  "vertical": "social",
+  "description": "Open-source video-conferencing platform for browser, mobile, and self-hosted meetings.",
+  "accent": "#979797",
+  "simpleIconSlug": "jitsi"
+}

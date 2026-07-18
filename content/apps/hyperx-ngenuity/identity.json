@@ -1,0 +1,16 @@
+{
+  "index": 297,
+  "name": "HyperX NGENUITY",
+  "slug": "hyperx-ngenuity",
+  "source": {
+    "type": "microsoft-store",
+    "url": "https://apps.microsoft.com/detail/9P1TBXR6QDCX",
+    "installUrl": "https://apps.microsoft.com/detail/9P1TBXR6QDCX"
+  },
+  "website": "https://hyperx.com/pages/ngenuity",
+  "category": "Devices & Hardware",
+  "vertical": "hardware",
+  "description": "Configure supported HyperX gaming hardware.",
+  "accent": "#E4002B",
+  "simpleIconSlug": "hyperx"
+}

@@ -1,0 +1,15 @@
+{
+  "index": 129,
+  "name": "Apache Spark",
+  "slug": "apache-spark",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/apache/spark"
+  },
+  "website": "https://spark.apache.org",
+  "category": "Data & Databases",
+  "vertical": "software",
+  "description": "Distributed engine for large-scale data processing, SQL, streaming, and machine learning.",
+  "accent": "#E25A1C",
+  "simpleIconSlug": "apachespark"
+}

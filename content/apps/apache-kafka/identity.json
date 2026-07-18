@@ -2,9 +2,13 @@
   "index": 47,
   "name": "Apache Kafka",
   "slug": "apache-kafka",
-  "repo": "https://github.com/apache/kafka",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/apache/kafka"
+  },
   "website": "https://kafka.apache.org",
   "category": "Data & Databases",
+  "vertical": "software",
   "description": "Distributed event streaming platform for durable, scalable, high-throughput data pipelines.",
   "accent": "#231F20",
   "simpleIconSlug": "apachekafka"

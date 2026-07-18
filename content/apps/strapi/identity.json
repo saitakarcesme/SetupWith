@@ -1,0 +1,15 @@
+{
+  "index": 192,
+  "name": "Strapi",
+  "slug": "strapi",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/strapi/strapi"
+  },
+  "website": "https://strapi.io",
+  "category": "Web & Self-hosted",
+  "vertical": "software",
+  "description": "Headless content-management system for building customizable APIs and editorial workflows.",
+  "accent": "#4945FF",
+  "simpleIconSlug": "strapi"
+}

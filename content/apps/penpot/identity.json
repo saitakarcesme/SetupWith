@@ -2,9 +2,13 @@
   "index": 76,
   "name": "Penpot",
   "slug": "penpot",
-  "repo": "https://github.com/penpot/penpot",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/penpot/penpot"
+  },
   "website": "https://penpot.app",
   "category": "Design & Media",
+  "vertical": "creative",
   "description": "Web-based collaborative design and prototyping platform using open standards and SVG.",
   "accent": "#000000",
   "simpleIconSlug": "penpot"

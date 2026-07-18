@@ -1,0 +1,16 @@
+{
+  "index": 288,
+  "name": "Autodesk Fusion",
+  "slug": "autodesk-fusion",
+  "source": {
+    "type": "website",
+    "url": "https://www.autodesk.com/products/fusion-360/overview",
+    "installUrl": "https://www.autodesk.com/products/fusion-360/personal"
+  },
+  "website": "https://www.autodesk.com/products/fusion-360/overview",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Integrated CAD, CAM, electronics, and 3D product design suite.",
+  "accent": "#0696D7",
+  "simpleIconSlug": "autodesk"
+}

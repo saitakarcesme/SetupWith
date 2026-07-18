@@ -1,0 +1,2002 @@
+[
+  {
+    "index": 101,
+    "name": "VSCodium",
+    "slug": "vscodium",
+    "repo": "https://github.com/VSCodium/vscodium",
+    "website": "https://vscodium.com",
+    "category": "Developer Tools",
+    "description": "Community-built distribution of VS Code without Microsoft branding or telemetry defaults.",
+    "accent": "#2F80ED",
+    "simpleIconSlug": "vscodium",
+    "secrets": [],
+    "config": ["preferred_shell", "editor_font_size", "editor_theme", "settings_sync"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Prefer the official VSCodium repository, signed package, or release artifact for the detected platform, and keep it separate from any existing Visual Studio Code profile unless the user asks to migrate.",
+      "preserve": "existing VSCodium and VS Code user-data directories, extensions, keyboard shortcuts, settings, and workspace trust decisions",
+      "safety": "Do not import profiles, enable Settings Sync, install extensions, or change the default editor without approval.",
+      "verify": "Verify the installed binary with `codium --version`, launch one clean window, and confirm the expected user-data and extensions directories without opening an untrusted workspace."
+    }
+  },
+  {
+    "index": 102,
+    "name": "IntelliJ IDEA Community",
+    "slug": "intellij-idea-community",
+    "repo": "https://github.com/JetBrains/intellij-community",
+    "website": "https://www.jetbrains.com/idea/",
+    "category": "Developer Tools",
+    "description": "Open-source JVM IDE with intelligent code analysis, refactoring, testing, and build-tool support.",
+    "accent": "#FE315D",
+    "simpleIconSlug": "intellijidea",
+    "secrets": [],
+    "config": ["jdk_path", "editor_theme", "editor_font_size", "project_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use JetBrains Toolbox or the official Community Edition package for the current platform; select a stable release compatible with the user's JDK and avoid silently replacing another JetBrains edition.",
+      "preserve": "IDE settings, plugins, trusted-project records, local history, custom VM options, and existing project metadata",
+      "safety": "Do not import settings, install plugins, associate file types, or open and index private projects without approval.",
+      "verify": "Launch the Community edition, report its build and runtime JDK, create no project, and verify the configured JDK and command-line launcher only if requested."
+    }
+  },
+  {
+    "index": 103,
+    "name": "Eclipse IDE",
+    "slug": "eclipse-ide",
+    "repo": "https://github.com/eclipse-platform/eclipse.platform",
+    "website": "https://www.eclipse.org/ide/",
+    "category": "Developer Tools",
+    "description": "Extensible IDE platform used for Java, C/C++, web, and enterprise development workflows.",
+    "accent": "#2C2255",
+    "simpleIconSlug": "eclipseide",
+    "secrets": [],
+    "config": ["jdk_path", "workspace_directory", "editor_theme", "installed_plugins"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official Eclipse Installer or a verified package matching the machine architecture, and choose only the requested IDE package with a supported JDK.",
+      "preserve": "existing Eclipse installations, workspaces, `.metadata`, preferences, plug-ins, secure storage, and project files",
+      "safety": "Do not reuse, migrate, or index an existing workspace and do not install marketplace plug-ins without approval.",
+      "verify": "Start Eclipse with a new empty temporary workspace, confirm the IDE and Java runtime versions, then close it without importing projects or altering the user's default workspace."
+    }
+  },
+  {
+    "index": 104,
+    "name": "Vim",
+    "slug": "vim",
+    "repo": "https://github.com/vim/vim",
+    "website": "https://www.vim.org",
+    "category": "Developer Tools",
+    "description": "Ubiquitous modal text editor with a mature scripting ecosystem and terminal-first workflow.",
+    "accent": "#019733",
+    "simpleIconSlug": "vim",
+    "secrets": [],
+    "config": ["preferred_shell", "editor_theme", "tab_width", "config_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Prefer the operating system's trusted package channel or an official Vim release, and do not replace the system-provided `vi` or change alternatives automatically.",
+      "preserve": "`.vimrc`, `.vim`, vimfiles, plug-in lock state, swap and undo directories, and system editor alternatives",
+      "safety": "Do not install plug-in managers, download plug-ins, change `$EDITOR`, or edit system-wide Vim configuration without approval.",
+      "verify": "Run `vim --version`, confirm the binary path and required features, then use a disposable file for a noninteractive read/write check without loading untrusted project configuration."
+    }
+  },
+  {
+    "index": 105,
+    "name": "Micro",
+    "slug": "micro-editor",
+    "repo": "https://github.com/zyedidia/micro",
+    "website": "https://micro-editor.github.io",
+    "category": "Developer Tools",
+    "description": "Approachable terminal text editor with modern keybindings, mouse support, and plug-ins.",
+    "accent": "#2EB7E5",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["preferred_shell", "editor_theme", "tab_width", "clipboard_integration"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official release archive or a trusted native package and place the executable in a user-owned path unless a system-wide installation is explicitly approved.",
+      "preserve": "Micro's configuration, bindings, plug-ins, buffers, and any existing executable earlier on `PATH`",
+      "safety": "Do not install plug-ins, enable clipboard helpers, or change `$EDITOR` and file associations without approval.",
+      "verify": "Run `micro --version`, inspect configuration resolution, and edit a disposable text file to confirm launch and save behavior without touching user documents."
+    }
+  },
+  {
+    "index": 106,
+    "name": "Lapce",
+    "slug": "lapce",
+    "repo": "https://github.com/lapce/lapce",
+    "website": "https://lapce.dev",
+    "category": "Developer Tools",
+    "description": "Native Rust code editor focused on speed, remote development, and built-in language support.",
+    "accent": "#3B82F6",
+    "simpleIconSlug": "lapce",
+    "secrets": [],
+    "config": ["preferred_shell", "editor_theme", "editor_font_size", "workspace_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install a signed stable Lapce package from the official release channel for the detected architecture; use a user-scoped application location unless elevated installation is requested.",
+      "preserve": "Lapce settings, keymaps, plug-ins, workspace history, remote targets, and any previous application version",
+      "safety": "Do not install plug-ins, connect to remote hosts, open workspaces, or alter default editor associations without approval.",
+      "verify": "Launch Lapce to an empty window, report the application version and settings location, and confirm the configured shell without opening or indexing an existing project."
+    }
+  },
+  {
+    "index": 107,
+    "name": "WezTerm",
+    "slug": "wezterm",
+    "repo": "https://github.com/wezterm/wezterm",
+    "website": "https://wezterm.org",
+    "category": "Developer Tools",
+    "description": "GPU-accelerated terminal emulator and multiplexer configured through Lua.",
+    "accent": "#4E49EE",
+    "simpleIconSlug": "wezterm",
+    "secrets": [],
+    "config": ["preferred_shell", "terminal_font", "terminal_theme", "config_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official signed package or release for the current platform and architecture, keeping preview builds and shell-integration changes opt-in.",
+      "preserve": "`.wezterm.lua`, XDG WezTerm configuration, state directories, SSH domains, mux sessions, and existing terminal defaults",
+      "safety": "Do not execute existing Lua configuration, connect to SSH domains, enable a mux server, or make WezTerm the default terminal without approval.",
+      "verify": "Run `wezterm --version` and `wezterm show-keys --lua` only if safe, then launch one local tab with the selected shell and no remote domains."
+    }
+  },
+  {
+    "index": 108,
+    "name": "kitty",
+    "slug": "kitty-terminal",
+    "repo": "https://github.com/kovidgoyal/kitty",
+    "website": "https://sw.kovidgoyal.net/kitty/",
+    "category": "Developer Tools",
+    "description": "Fast GPU-based terminal emulator with layouts, remote control, and extensible kittens.",
+    "accent": "#000000",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["preferred_shell", "terminal_font", "terminal_theme", "config_directory"],
+    "platforms": ["macOS", "Linux"],
+    "setup": {
+      "install": "Use kitty's official binary installer, signed macOS application, or trusted distribution package and keep user and system installs distinct.",
+      "preserve": "kitty configuration, session files, themes, kittens, shell integration, and desktop or file associations",
+      "safety": "Do not run custom kittens, enable remote control, modify login shells, or change the default terminal without approval.",
+      "verify": "Run `kitty --version`, validate the intended configuration path, and open one local window without restoring sessions or executing startup commands."
+    }
+  },
+  {
+    "index": 109,
+    "name": "Alacritty",
+    "slug": "alacritty",
+    "repo": "https://github.com/alacritty/alacritty",
+    "website": "https://alacritty.org",
+    "category": "Developer Tools",
+    "description": "Cross-platform OpenGL terminal emulator designed for simplicity and performance.",
+    "accent": "#F46D01",
+    "simpleIconSlug": "alacritty",
+    "secrets": [],
+    "config": ["preferred_shell", "terminal_font", "terminal_theme", "config_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable binary or a trusted native package that matches the graphics stack and architecture; do not build from source unless requested.",
+      "preserve": "Alacritty TOML or YAML configuration, themes, shell integration, desktop entries, and any previous executable",
+      "safety": "Do not migrate legacy configuration, change the login shell, or make Alacritty the default terminal without approval.",
+      "verify": "Run `alacritty --version`, check configuration parsing for warnings, and launch one local window using the current shell without executing project startup hooks."
+    }
+  },
+  {
+    "index": 110,
+    "name": "fish",
+    "slug": "fish-shell",
+    "repo": "https://github.com/fish-shell/fish-shell",
+    "website": "https://fishshell.com",
+    "category": "Developer Tools",
+    "description": "Friendly interactive shell with autosuggestions, syntax highlighting, and discoverable completions.",
+    "accent": "#34C534",
+    "simpleIconSlug": "fishshell",
+    "secrets": [],
+    "config": ["shell_prompt", "config_directory", "environment_variables", "default_shell"],
+    "platforms": ["macOS", "Linux"],
+    "setup": {
+      "install": "Use the official fish package channel for the detected Unix-like environment and confirm the installed version is supported by any existing shell framework.",
+      "preserve": "fish configuration, functions, completions, universal variables, abbreviations, history, and the current login shell",
+      "safety": "Do not source unknown scripts, import environment variables, install plug-ins, or run `chsh` without approval.",
+      "verify": "Run `fish --version` and start `fish --no-config` for a clean interactive smoke test; inspect rather than execute the user's existing configuration."
+    }
+  },
+  {
+    "index": 111,
+    "name": "Oh My Zsh",
+    "slug": "oh-my-zsh",
+    "repo": "https://github.com/ohmyzsh/ohmyzsh",
+    "website": "https://ohmyz.sh",
+    "category": "Developer Tools",
+    "description": "Community framework for managing Zsh configuration, themes, plug-ins, and helpers.",
+    "accent": "#1A2C34",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["shell_theme", "shell_plugins", "config_directory", "default_shell"],
+    "platforms": ["macOS", "Linux"],
+    "setup": {
+      "install": "Confirm Zsh works first, inspect the official installer before execution, and prefer a documented unattended path that does not launch a new shell or replace files implicitly.",
+      "preserve": "`.zshrc`, `.zprofile`, custom themes and plug-ins, shell history, completion caches, and any existing Oh My Zsh directory",
+      "safety": "Do not pipe a remote script directly to a shell, run `chsh`, enable plug-ins, or replace dotfiles without approval.",
+      "verify": "Start a non-login Zsh with the backed-up configuration disabled, confirm `$ZSH` and framework version state, then report any plug-in or theme errors without auto-fixing them."
+    }
+  },
+  {
+    "index": 112,
+    "name": "Nushell",
+    "slug": "nushell",
+    "repo": "https://github.com/nushell/nushell",
+    "website": "https://www.nushell.sh",
+    "category": "Developer Tools",
+    "description": "Structured-data shell that brings pipelines, tables, and typed values to the command line.",
+    "accent": "#4E9A06",
+    "simpleIconSlug": "nushell",
+    "secrets": [],
+    "config": ["shell_prompt", "config_directory", "environment_variables", "default_shell"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official Nushell release or trusted package for the platform and avoid mixing package-manager and manually installed binaries on `PATH`.",
+      "preserve": "Nushell `config.nu` and `env.nu`, history and database files, plug-ins, login-shell settings, and existing environment initialization",
+      "safety": "Do not register plug-ins, translate shell startup files, import secrets, or change the login shell without approval.",
+      "verify": "Run `nu --version` and a clean `nu --no-config-file` command that emits a small table; report configuration paths without evaluating the user's startup scripts."
+    }
+  },
+  {
+    "index": 113,
+    "name": "PowerShell",
+    "slug": "powershell",
+    "repo": "https://github.com/PowerShell/PowerShell",
+    "website": "https://learn.microsoft.com/powershell/",
+    "category": "Developer Tools",
+    "description": "Cross-platform automation shell and scripting language built around structured objects.",
+    "accent": "#5391FE",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["execution_policy", "profile_path", "module_path", "default_shell"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use Microsoft's official stable package or repository for PowerShell 7, keeping Windows PowerShell 5.1 side by side and avoiding preview channels unless requested.",
+      "preserve": "all PowerShell profiles, installed modules, PSReadLine history, remoting configuration, execution policy, and Windows PowerShell",
+      "safety": "Do not weaken execution policy, trust repositories, install modules, enable remoting, or change the default shell without approval.",
+      "verify": "Run `pwsh -NoProfile -Command '$PSVersionTable'`, confirm the executable path and edition, and perform no profile loading or remote connection."
+    }
+  },
+  {
+    "index": 114,
+    "name": "GitHub Desktop",
+    "slug": "github-desktop",
+    "repo": "https://github.com/desktop/desktop",
+    "website": "https://desktop.github.com",
+    "category": "Developer Tools",
+    "description": "Official graphical Git client for GitHub workflows, branches, commits, and pull requests.",
+    "accent": "#6E5494",
+    "simpleIconSlug": "github",
+    "secrets": ["GITHUB_TOKEN"],
+    "config": ["git_name", "git_email", "git_protocol", "repository_directory"],
+    "platforms": ["macOS", "Windows"],
+    "setup": {
+      "install": "Install the signed official application for macOS or Windows and confirm whether the user wants it alongside an existing Git client.",
+      "preserve": "Git configuration, credential helpers, SSH keys, known repositories, application preferences, and existing GitHub authentication",
+      "safety": "Do not sign in, clone repositories, change global Git identity, install command-line tools, or alter credential helpers without approval.",
+      "verify": "Launch GitHub Desktop signed out or in its current state, report the application and bundled Git versions, and do not open or scan repository directories."
+    }
+  },
+  {
+    "index": 115,
+    "name": "lazygit",
+    "slug": "lazygit",
+    "repo": "https://github.com/jesseduffield/lazygit",
+    "website": "https://github.com/jesseduffield/lazygit",
+    "category": "Developer Tools",
+    "description": "Terminal user interface for Git commands, branches, commits, rebases, and worktrees.",
+    "accent": "#00A4EF",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["git_protocol", "config_directory", "default_branch", "editor_command"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use a verified official release or trusted package and ensure the selected lazygit binary matches the machine architecture and existing Git version.",
+      "preserve": "lazygit configuration and state, Git global configuration, credential helpers, repository data, hooks, and worktrees",
+      "safety": "Do not open a working repository, stage files, rewrite history, run custom commands, or change Git configuration without approval.",
+      "verify": "Run `lazygit --version` and `lazygit --print-config-dir`; use only a disposable initialized repository for an optional launch smoke test."
+    }
+  },
+  {
+    "index": 116,
+    "name": "Jujutsu",
+    "slug": "jujutsu",
+    "repo": "https://github.com/jj-vcs/jj",
+    "website": "https://jj-vcs.github.io/jj/latest/",
+    "category": "Developer Tools",
+    "description": "Git-compatible version control system with first-class conflicts, operation logs, and automatic rebasing.",
+    "accent": "#5A45FF",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["git_name", "git_email", "default_branch", "editor_command"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install a stable `jj` release from an official package or artifact and keep it independent from existing Git tooling and repositories.",
+      "preserve": "Jujutsu configuration, Git configuration, repository metadata, colocated workspaces, operation logs, and user identity",
+      "safety": "Do not initialize, colocate, migrate, clone, or rewrite any existing repository and do not set global identity without approval.",
+      "verify": "Run `jj version`, inspect configuration sources, and create a disposable temporary repository for `jj status` without touching user worktrees."
+    }
+  },
+  {
+    "index": 117,
+    "name": "direnv",
+    "slug": "direnv",
+    "repo": "https://github.com/direnv/direnv",
+    "website": "https://direnv.net",
+    "category": "Developer Tools",
+    "description": "Shell extension that loads and unloads per-directory environment variables.",
+    "accent": "#40A977",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["preferred_shell", "config_directory", "environment_variables", "project_directory"],
+    "platforms": ["macOS", "Linux"],
+    "setup": {
+      "install": "Use the trusted platform package or official binary, then show the exact shell-hook line appropriate to the detected shell before editing startup files.",
+      "preserve": "shell startup files, existing direnv configuration, allow records, `.envrc` files, environment variables, and project secrets",
+      "safety": "Do not allow or execute any existing `.envrc`, read secret values, or add a shell hook without explicit approval.",
+      "verify": "Run `direnv version` and test hook behavior in a disposable directory containing a harmless variable; confirm it unloads after leaving the directory."
+    }
+  },
+  {
+    "index": 118,
+    "name": "asdf",
+    "slug": "asdf-version-manager",
+    "repo": "https://github.com/asdf-vm/asdf",
+    "website": "https://asdf-vm.com",
+    "category": "Developer Tools",
+    "description": "Single version manager for language runtimes and developer tools through a plug-in ecosystem.",
+    "accent": "#589DF6",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["preferred_shell", "runtime_versions", "plugin_sources", "project_directory"],
+    "platforms": ["macOS", "Linux"],
+    "setup": {
+      "install": "Install the current stable asdf core through its documented method, first checking its release-specific dependencies and whether another runtime manager already owns the requested tools.",
+      "preserve": "`.tool-versions`, asdf data and configuration, installed runtimes, shims, shell startup files, and competing version-manager state",
+      "safety": "Do not add community plug-ins, download runtimes, reshim executables, or modify shell startup files without approval.",
+      "verify": "Run `asdf version`, report active configuration and shim paths, and perform no plug-in or runtime installation unless each source and version is approved."
+    }
+  },
+  {
+    "index": 119,
+    "name": "Transformers",
+    "slug": "hugging-face-transformers",
+    "repo": "https://github.com/huggingface/transformers",
+    "website": "https://huggingface.co/docs/transformers/",
+    "category": "AI & ML",
+    "description": "Hugging Face library for pretrained models across text, vision, audio, and multimodal tasks.",
+    "accent": "#FFD21E",
+    "simpleIconSlug": "huggingface",
+    "secrets": ["HF_TOKEN"],
+    "config": ["python_version", "virtual_environment", "model_cache_directory", "compute_backend"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Create or reuse an approved isolated Python environment, choose PyTorch, TensorFlow, or Flax support deliberately, and install a stable Transformers release compatible with that backend.",
+      "preserve": "Python environments, dependency lockfiles, Hugging Face cache directories, offline settings, local models, and existing authentication",
+      "safety": "Do not authenticate, download models, trust remote model code, change shared caches, or enable GPU packages without approval.",
+      "verify": "Import `transformers`, print only its version and backend availability, and instantiate a local configuration object without contacting the Hub or downloading weights."
+    }
+  },
+  {
+    "index": 120,
+    "name": "PyTorch",
+    "slug": "pytorch",
+    "repo": "https://github.com/pytorch/pytorch",
+    "website": "https://pytorch.org",
+    "category": "AI & ML",
+    "description": "Widely used tensor and deep-learning framework with dynamic graphs and accelerator support.",
+    "accent": "#EE4C2C",
+    "simpleIconSlug": "pytorch",
+    "secrets": [],
+    "config": ["python_version", "virtual_environment", "compute_backend", "model_cache_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use PyTorch's official selector to choose a stable wheel for CPU, CUDA, or ROCm that matches the OS, Python, driver, and hardware; install it only inside an approved environment.",
+      "preserve": "Python environments, dependency locks, model and extension caches, compiler toolchains, GPU drivers, and other framework installations",
+      "safety": "Do not install or replace GPU drivers, download model weights, compile extensions, or alter global Python packages without approval.",
+      "verify": "Import `torch`, report its version and detected backend, allocate a tiny tensor, and run a small operation without downloading data or exhausting accelerator memory."
+    }
+  },
+  {
+    "index": 121,
+    "name": "TensorFlow",
+    "slug": "tensorflow",
+    "repo": "https://github.com/tensorflow/tensorflow",
+    "website": "https://www.tensorflow.org",
+    "category": "AI & ML",
+    "description": "End-to-end machine-learning platform for training, serving, and deploying neural networks.",
+    "accent": "#FF6F00",
+    "simpleIconSlug": "tensorflow",
+    "secrets": [],
+    "config": ["python_version", "virtual_environment", "compute_backend", "model_cache_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Create an isolated Python environment and select the official stable TensorFlow package compatible with the platform, Python release, CPU instruction set, and supported accelerator path.",
+      "preserve": "Python environments, lockfiles, Keras configuration, model caches, CUDA libraries, GPU drivers, and existing TensorFlow installations",
+      "safety": "Do not replace system CUDA components, enable unsupported GPU paths, download datasets, or modify global Python without approval.",
+      "verify": "Import TensorFlow, report its version and physical devices, then execute a tiny constant addition while suppressing no diagnostic errors and using no external data."
+    }
+  },
+  {
+    "index": 122,
+    "name": "JAX",
+    "slug": "jax",
+    "repo": "https://github.com/jax-ml/jax",
+    "website": "https://docs.jax.dev",
+    "category": "AI & ML",
+    "description": "High-performance array computing and automatic differentiation with XLA compilation.",
+    "accent": "#5A9FD4",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["python_version", "virtual_environment", "compute_backend", "xla_memory_fraction"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install JAX and the matching `jaxlib` wheel in an isolated environment, following the official CPU, NVIDIA, AMD, or Apple guidance and treating native Windows support conservatively.",
+      "preserve": "Python environments, dependency locks, XLA caches, CUDA or ROCm libraries, GPU drivers, and existing JAX installations",
+      "safety": "Do not replace accelerator drivers, use unofficial wheels, reserve large device memory, or change global Python packages without approval.",
+      "verify": "Import `jax`, report versions and `jax.devices()`, then run a tiny jitted array calculation without compiling a large workload or downloading data."
+    }
+  },
+  {
+    "index": 123,
+    "name": "scikit-learn",
+    "slug": "scikit-learn",
+    "repo": "https://github.com/scikit-learn/scikit-learn",
+    "website": "https://scikit-learn.org",
+    "category": "AI & ML",
+    "description": "Python machine-learning toolkit for preprocessing, classical models, pipelines, and evaluation.",
+    "accent": "#F7931E",
+    "simpleIconSlug": "scikitlearn",
+    "secrets": [],
+    "config": ["python_version", "virtual_environment", "numeric_backend", "dataset_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install a stable scikit-learn wheel in an isolated Python environment with compatible NumPy and SciPy versions, respecting an existing project lockfile when present.",
+      "preserve": "Python environments, lockfiles, local datasets, joblib caches, trained estimators, and numeric-library configuration",
+      "safety": "Do not upgrade a shared scientific stack, download example datasets, deserialize untrusted model files, or change global Python without approval.",
+      "verify": "Import `sklearn`, print its version and dependency display, then fit and predict a tiny in-memory estimator using synthetic values only."
+    }
+  },
+  {
+    "index": 124,
+    "name": "Keras",
+    "slug": "keras",
+    "repo": "https://github.com/keras-team/keras",
+    "website": "https://keras.io",
+    "category": "AI & ML",
+    "description": "High-level deep-learning API supporting TensorFlow, JAX, and PyTorch backends.",
+    "accent": "#D00000",
+    "simpleIconSlug": "keras",
+    "secrets": [],
+    "config": ["python_version", "virtual_environment", "compute_backend", "float_precision"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Create an isolated Python environment, choose one supported Keras backend explicitly, and install mutually compatible stable versions rather than every accelerator stack.",
+      "preserve": "Python environments, dependency locks, Keras configuration, model files, caches, and existing backend installations",
+      "safety": "Do not switch a project's backend, replace GPU drivers, download model weights, or load serialized models without approval.",
+      "verify": "Import Keras, report its version and active backend, then build and run a tiny untrained in-memory model without saving artifacts or fetching data."
+    }
+  },
+  {
+    "index": 125,
+    "name": "vLLM",
+    "slug": "vllm",
+    "repo": "https://github.com/vllm-project/vllm",
+    "website": "https://docs.vllm.ai",
+    "category": "AI & ML",
+    "description": "High-throughput inference and serving engine for large language models.",
+    "accent": "#654FF0",
+    "simpleIconSlug": "vllm",
+    "secrets": ["HF_TOKEN"],
+    "config": ["python_version", "virtual_environment", "compute_backend", "model_cache_directory", "listen_address", "listen_port"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Confirm supported Linux hardware, drivers, Python, and accelerator libraries before installing the matching stable vLLM wheel in a dedicated environment; prefer containers only when requested.",
+      "preserve": "Python environments, model caches, serving configuration, container volumes, GPU drivers, and existing inference services",
+      "safety": "Do not download gated models, expose an API port, start a persistent server, replace accelerator drivers, or enable remote code without approval.",
+      "verify": "Import `vllm`, report its version and detected device, and stop there unless the user approves downloading a small model and running a loopback-only smoke test."
+    }
+  },
+  {
+    "index": 126,
+    "name": "Text generation web UI",
+    "slug": "text-generation-webui",
+    "repo": "https://github.com/oobabooga/text-generation-webui",
+    "website": "https://github.com/oobabooga/text-generation-webui",
+    "category": "AI & ML",
+    "description": "Local web interface for running and experimenting with a broad range of language models.",
+    "accent": "#7C3AED",
+    "simpleIconSlug": null,
+    "secrets": ["HF_TOKEN"],
+    "config": ["model_cache_directory", "compute_backend", "listen_address", "listen_port", "default_model"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the project's documented one-click installer or a dedicated environment that matches the detected CPU and accelerator; review installer scripts and select a stable release before execution.",
+      "preserve": "model directories, characters, presets, extensions, training data, command flags, installer files, and existing Python or Conda environments",
+      "safety": "Do not download models, trust remote code, install third-party extensions, expose the web UI beyond loopback, or enable its API without approval.",
+      "verify": "Verify the launcher and environment versions, then start the UI on a loopback-only address with no model loaded and confirm the local health page before stopping it."
+    }
+  },
+  {
+    "index": 127,
+    "name": "KoboldCpp",
+    "slug": "koboldcpp",
+    "repo": "https://github.com/LostRuins/koboldcpp",
+    "website": "https://github.com/LostRuins/koboldcpp",
+    "category": "AI & ML",
+    "description": "Portable llama.cpp-based local inference server and interface for GGUF language models.",
+    "accent": "#5B3A29",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["model_directory", "compute_backend", "context_length", "listen_address", "listen_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Choose the official stable executable or source build that matches the OS, architecture, and available CPU, CUDA, ROCm, or Metal backend; verify release checksums where published.",
+      "preserve": "GGUF models, presets, saved stories, launch arguments, configuration, generated content, and any previous KoboldCpp binary",
+      "safety": "Do not download models, execute model-adjacent scripts, expose a network listener, enable remote tunnels, or allocate most system memory without approval.",
+      "verify": "Run the binary's version or help command first; only with approval load a small local GGUF and confirm one loopback request before cleanly stopping the server."
+    }
+  },
+  {
+    "index": 128,
+    "name": "AnythingLLM",
+    "slug": "anythingllm",
+    "repo": "https://github.com/Mintplex-Labs/anything-llm",
+    "website": "https://anythingllm.com",
+    "category": "AI & ML",
+    "description": "Desktop and self-hosted workspace for chatting with documents using local or hosted models.",
+    "accent": "#4F46E5",
+    "simpleIconSlug": null,
+    "secrets": ["OPENAI_API_KEY", "HF_TOKEN"],
+    "config": ["deployment_mode", "llm_provider", "embedding_provider", "storage_directory", "listen_address"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Choose either the signed desktop application or documented Docker deployment after confirming the desired trust boundary; use only official release artifacts and keep data storage explicit.",
+      "preserve": "workspaces, vector data, uploaded documents, application databases, Docker volumes, provider settings, and existing credentials",
+      "safety": "Do not ingest documents, connect an external provider, reveal API keys, enable multi-user access, or expose the service beyond loopback without approval.",
+      "verify": "Launch to the onboarding screen or check the loopback health endpoint with no provider configured, report storage paths, and stop any test container cleanly."
+    }
+  },
+  {
+    "index": 129,
+    "name": "Apache Spark",
+    "slug": "apache-spark",
+    "repo": "https://github.com/apache/spark",
+    "website": "https://spark.apache.org",
+    "category": "Data & Databases",
+    "description": "Distributed engine for large-scale data processing, SQL, streaming, and machine learning.",
+    "accent": "#E25A1C",
+    "simpleIconSlug": "apachespark",
+    "secrets": [],
+    "config": ["java_home", "spark_home", "python_version", "worker_memory", "local_data_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install an official Spark binary release built for the required Hadoop compatibility, confirm a supported Java runtime, and keep local development separate from cluster configuration.",
+      "preserve": "Spark and Hadoop configuration, event logs, warehouses, checkpoints, local datasets, Python environments, and existing Java settings",
+      "safety": "Do not connect to a cluster, overwrite warehouse data, start daemons, open web UI ports, or download large examples without approval.",
+      "verify": "Run `spark-submit --version` and execute a tiny local-mode calculation with one worker and temporary storage; confirm the process and local UI stop afterward."
+    }
+  },
+  {
+    "index": 130,
+    "name": "Apache Airflow",
+    "slug": "apache-airflow",
+    "repo": "https://github.com/apache/airflow",
+    "website": "https://airflow.apache.org",
+    "category": "Data & Databases",
+    "description": "Workflow orchestration platform for authoring, scheduling, and monitoring data pipelines.",
+    "accent": "#017CEE",
+    "simpleIconSlug": "apacheairflow",
+    "secrets": ["AIRFLOW_FERNET_KEY", "AIRFLOW_DATABASE_URL"],
+    "config": ["python_version", "airflow_home", "executor", "listen_address", "listen_port"],
+    "platforms": ["macOS", "Linux"],
+    "setup": {
+      "install": "Create a dedicated Python environment and install a pinned Airflow release with the matching official constraints file; select LocalExecutor or SequentialExecutor only after reviewing database requirements.",
+      "preserve": "DAGs, plug-ins, logs, `airflow.cfg`, metadata databases, connections, variables, and encryption keys",
+      "safety": "Do not initialize or migrate an existing metadata database, create admin users, run DAGs, start persistent services, or expose the webserver without approval.",
+      "verify": "Run `airflow version` and `airflow config list` with secrets redacted; use `airflow db check` only against an explicitly approved test database."
+    }
+  },
+  {
+    "index": 131,
+    "name": "dbt Core",
+    "slug": "dbt-core",
+    "repo": "https://github.com/dbt-labs/dbt-core",
+    "website": "https://docs.getdbt.com/docs/core/installation-overview",
+    "category": "Data & Databases",
+    "description": "Command-line analytics engineering framework for transforming warehouse data with SQL.",
+    "accent": "#FF694B",
+    "simpleIconSlug": null,
+    "secrets": ["DBT_DATABASE_PASSWORD"],
+    "config": ["python_version", "virtual_environment", "dbt_profiles_directory", "warehouse_adapter", "target_name"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install dbt Core and exactly one approved warehouse adapter in an isolated environment, pinning compatible versions and honoring any existing project lock or package file.",
+      "preserve": "`profiles.yml`, dbt projects, packages, manifests, target artifacts, logs, macros, and warehouse credentials",
+      "safety": "Do not connect to a warehouse, run models, modify profiles, fetch packages, or print compiled SQL containing sensitive values without approval.",
+      "verify": "Run `dbt --version` and parse the selected project offline where possible; use `dbt debug` only after the target and network connection are explicitly approved."
+    }
+  },
+  {
+    "index": 132,
+    "name": "Metabase",
+    "slug": "metabase",
+    "repo": "https://github.com/metabase/metabase",
+    "website": "https://www.metabase.com",
+    "category": "Data & Databases",
+    "description": "Business intelligence platform for querying, visualizing, and sharing data without heavy tooling.",
+    "accent": "#509EE3",
+    "simpleIconSlug": "metabase",
+    "secrets": ["METABASE_DATABASE_URL", "METABASE_ENCRYPTION_SECRET_KEY"],
+    "config": ["deployment_mode", "application_database", "storage_directory", "listen_address", "listen_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Choose the official JAR or container deployment, confirm a supported Java runtime or container engine, and use an explicit application database and persistent storage for anything beyond a disposable trial.",
+      "preserve": "the Metabase application database, uploaded assets, plug-ins, encryption key, container volumes, logs, and existing data-source definitions",
+      "safety": "Do not connect databases, create an admin account, migrate an existing application database, expose the port, or enable email without approval.",
+      "verify": "Start a fresh loopback-only instance with temporary storage only when approved, confirm the health endpoint and version, then stop it without completing onboarding."
+    }
+  },
+  {
+    "index": 133,
+    "name": "Apache Superset",
+    "slug": "apache-superset",
+    "repo": "https://github.com/apache/superset",
+    "website": "https://superset.apache.org",
+    "category": "Data & Databases",
+    "description": "Modern data exploration and visualization platform for dashboards and SQL analytics.",
+    "accent": "#20A7C9",
+    "simpleIconSlug": "apachesuperset",
+    "secrets": ["SUPERSET_SECRET_KEY", "SUPERSET_DATABASE_URL"],
+    "config": ["deployment_mode", "metadata_database", "config_path", "listen_address", "listen_port"],
+    "platforms": ["macOS", "Linux"],
+    "setup": {
+      "install": "Use the official container-compose development path or an isolated Python environment with a supported release, clearly separating a local evaluation from production deployment.",
+      "preserve": "Superset metadata databases, `superset_config.py`, dashboards, uploaded assets, database connections, encryption keys, and container volumes",
+      "safety": "Do not initialize or upgrade an existing database, create users, load examples, connect data sources, or expose the webserver without approval.",
+      "verify": "Run the version command and configuration checks; start only a fresh loopback instance if approved, confirm its health page, and stop all test services."
+    }
+  },
+  {
+    "index": 134,
+    "name": "pgAdmin 4",
+    "slug": "pgadmin-4",
+    "repo": "https://github.com/pgadmin-org/pgadmin4",
+    "website": "https://www.pgadmin.org",
+    "category": "Data & Databases",
+    "description": "Graphical administration and development platform for PostgreSQL databases.",
+    "accent": "#336791",
+    "simpleIconSlug": null,
+    "secrets": ["PGADMIN_MASTER_PASSWORD"],
+    "config": ["deployment_mode", "storage_directory", "listen_address", "listen_port", "default_server_group"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official desktop package, trusted package repository, or documented container image according to the intended single-user or server mode.",
+      "preserve": "pgAdmin configuration databases, registered servers, master-password state, query history, storage directories, certificates, and container volumes",
+      "safety": "Do not register or connect to databases, save passwords, reset the master password, run queries, or expose server mode without approval.",
+      "verify": "Launch the desktop application or a loopback-only fresh container, confirm the version and login surface, and stop before registering any PostgreSQL server."
+    }
+  },
+  {
+    "index": 135,
+    "name": "MongoDB Compass",
+    "slug": "mongodb-compass",
+    "repo": "https://github.com/mongodb-js/compass",
+    "website": "https://www.mongodb.com/products/tools/compass",
+    "category": "Data & Databases",
+    "description": "Official graphical interface for exploring, querying, and analyzing MongoDB deployments.",
+    "accent": "#47A248",
+    "simpleIconSlug": "mongodb",
+    "secrets": ["MONGODB_URI"],
+    "config": ["connection_favorites", "read_only_mode", "telemetry_preference", "proxy_settings"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the signed stable Compass package for the detected platform and architecture, keeping preview channels and command-line database tools separate.",
+      "preserve": "saved connections, favorites, query history, application preferences, certificates, SSH settings, and existing MongoDB credentials",
+      "safety": "Do not connect to a deployment, import connection strings, save credentials, enable telemetry, or execute queries without approval.",
+      "verify": "Launch Compass to its connection screen, report the application version and data directory, and make no network connection or automatic connection attempt."
+    }
+  },
+  {
+    "index": 136,
+    "name": "Beekeeper Studio",
+    "slug": "beekeeper-studio",
+    "repo": "https://github.com/beekeeper-studio/beekeeper-studio",
+    "website": "https://www.beekeeperstudio.io",
+    "category": "Data & Databases",
+    "description": "Cross-platform SQL client for browsing, querying, and managing relational databases.",
+    "accent": "#FAD83B",
+    "simpleIconSlug": "beekeeperstudio",
+    "secrets": ["DATABASE_URL"],
+    "config": ["connection_favorites", "read_only_mode", "query_directory", "ssl_mode"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official stable Community Edition package for the platform and avoid replacing another edition or enabling automatic migration without review.",
+      "preserve": "saved connections, encrypted credentials, query tabs, workspace files, application settings, SSH tunnels, and certificates",
+      "safety": "Do not connect to a database, import URLs, save credentials, open SSH tunnels, or execute SQL without approval.",
+      "verify": "Launch Beekeeper Studio to an empty connection screen, confirm the version and settings location, and make no outbound database or update connection."
+    }
+  },
+  {
+    "index": 137,
+    "name": "InfluxDB",
+    "slug": "influxdb",
+    "repo": "https://github.com/influxdata/influxdb",
+    "website": "https://www.influxdata.com/products/influxdb-overview/",
+    "category": "Data & Databases",
+    "description": "Time-series database optimized for metrics, events, observability, and real-time analytics.",
+    "accent": "#22ADF6",
+    "simpleIconSlug": "influxdb",
+    "secrets": ["INFLUXDB_TOKEN"],
+    "config": ["data_directory", "retention_policy", "listen_address", "listen_port", "deployment_mode"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Choose the intended InfluxDB major release first, then use its official package, binary, or container with explicit data and configuration paths; never perform an implicit major-version migration.",
+      "preserve": "engine data, write-ahead logs, metadata, configuration, tokens, organizations, buckets, backups, and container volumes",
+      "safety": "Do not initialize, upgrade, delete, compact, expose a port, create tokens, or start a persistent service without approval.",
+      "verify": "Check the binary version and configuration, then use only a fresh temporary data directory for an approved loopback health check before stopping the process."
+    }
+  },
+  {
+    "index": 138,
+    "name": "TimescaleDB",
+    "slug": "timescaledb",
+    "repo": "https://github.com/timescale/timescaledb",
+    "website": "https://www.timescale.com",
+    "category": "Data & Databases",
+    "description": "PostgreSQL extension for scalable time-series data, analytics, and compression.",
+    "accent": "#FDB515",
+    "simpleIconSlug": "timescale",
+    "secrets": ["POSTGRES_PASSWORD"],
+    "config": ["postgres_version", "data_directory", "listen_address", "listen_port", "telemetry_preference"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Match the TimescaleDB package exactly to an approved PostgreSQL major version and distribution, using the official repository or container image and a fresh test cluster by default.",
+      "preserve": "PostgreSQL clusters, extension versions, `postgresql.conf`, preload libraries, tablespaces, backups, credentials, and container volumes",
+      "safety": "Do not modify an existing cluster, preload the extension, run `CREATE EXTENSION`, migrate data, or expose PostgreSQL without approval and a verified backup.",
+      "verify": "Confirm package and PostgreSQL compatibility; only in a disposable cluster run `CREATE EXTENSION timescaledb` and query its version, then stop and remove the test cluster."
+    }
+  },
+  {
+    "index": 139,
+    "name": "Neo4j",
+    "slug": "neo4j",
+    "repo": "https://github.com/neo4j/neo4j",
+    "website": "https://neo4j.com",
+    "category": "Data & Databases",
+    "description": "Native graph database for connected data, Cypher queries, and graph applications.",
+    "accent": "#4581C3",
+    "simpleIconSlug": "neo4j",
+    "secrets": ["NEO4J_PASSWORD"],
+    "config": ["java_home", "data_directory", "listen_address", "bolt_port", "http_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use Neo4j Desktop for an approved local graphical workflow or the official Community Server package or container, checking Java and major-version compatibility first.",
+      "preserve": "graph databases, transaction logs, configuration, plug-ins, import files, certificates, authentication data, and backups",
+      "safety": "Do not upgrade a store, reset credentials, install plug-ins, import graphs, expose Bolt or HTTP ports, or start a persistent service without approval.",
+      "verify": "Run the version command; only with a fresh temporary database start loopback listeners, query `RETURN 1`, and stop cleanly without touching existing stores."
+    }
+  },
+  {
+    "index": 140,
+    "name": "RabbitMQ",
+    "slug": "rabbitmq",
+    "repo": "https://github.com/rabbitmq/rabbitmq-server",
+    "website": "https://www.rabbitmq.com",
+    "category": "Data & Databases",
+    "description": "Reliable message broker implementing AMQP and supporting queues, streams, and routing.",
+    "accent": "#FF6600",
+    "simpleIconSlug": "rabbitmq",
+    "secrets": ["RABBITMQ_DEFAULT_PASS", "RABBITMQ_ERLANG_COOKIE"],
+    "config": ["data_directory", "node_name", "listen_address", "amqp_port", "management_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install a RabbitMQ release with a supported Erlang version from official packages or use the official container with named storage and explicit loopback port mappings.",
+      "preserve": "Mnesia data, definitions, queues, users, virtual hosts, Erlang cookies, configuration, certificates, and container volumes",
+      "safety": "Do not reset a node, join a cluster, delete queues, enable plug-ins, create users, expose ports, or start a persistent service without approval.",
+      "verify": "Run diagnostics against only the intended fresh node; confirm status and listeners, publish no messages to existing virtual hosts, and stop any test node cleanly."
+    }
+  },
+  {
+    "index": 141,
+    "name": "Docker Compose",
+    "slug": "docker-compose",
+    "repo": "https://github.com/docker/compose",
+    "website": "https://docs.docker.com/compose/",
+    "category": "DevOps & Cloud",
+    "description": "Declarative tool for defining and running multi-container applications with Docker.",
+    "accent": "#2496ED",
+    "simpleIconSlug": "docker",
+    "secrets": ["CONTAINER_REGISTRY_TOKEN"],
+    "config": ["docker_context", "compose_project_directory", "compose_profiles", "resource_limits"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Prefer the current Docker CLI Compose plug-in from Docker's official channel, detect and report any legacy `docker-compose` v1 binary, and avoid keeping conflicting executable paths.",
+      "preserve": "Compose files, override files, `.env` files, project names, running containers, networks, volumes, contexts, and registry authentication",
+      "safety": "Do not pull images, interpolate or reveal secrets, run `up` or `down`, delete volumes, or change Docker contexts without approval.",
+      "verify": "Run `docker compose version` and validate only an explicitly selected Compose file with `docker compose config --quiet`, redacting all environment-derived values."
+    }
+  },
+  {
+    "index": 142,
+    "name": "Vagrant",
+    "slug": "vagrant",
+    "repo": "https://github.com/hashicorp/vagrant",
+    "website": "https://developer.hashicorp.com/vagrant",
+    "category": "DevOps & Cloud",
+    "description": "Reproducible development-environment manager for virtual machines and supported providers.",
+    "accent": "#1868F2",
+    "simpleIconSlug": "vagrant",
+    "secrets": [],
+    "config": ["virtualization_provider", "machine_directory", "box_cache_directory", "resource_limits"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install Vagrant from HashiCorp's official package and confirm a supported provider such as VirtualBox, VMware, Hyper-V, or libvirt is already available or separately approved.",
+      "preserve": "Vagrantfiles, boxes, plug-ins, machine state, provider settings, synced-folder data, and virtualization networks",
+      "safety": "Do not install providers or plug-ins, download boxes, run `vagrant up`, destroy machines, or alter virtualization and network settings without approval.",
+      "verify": "Run `vagrant --version`, list existing boxes and plug-ins without changing them, and use no Vagrantfile or provider process unless a disposable test is approved."
+    }
+  },
+  {
+    "index": 143,
+    "name": "Packer",
+    "slug": "packer",
+    "repo": "https://github.com/hashicorp/packer",
+    "website": "https://developer.hashicorp.com/packer",
+    "category": "DevOps & Cloud",
+    "description": "Machine-image automation tool for producing consistent artifacts across infrastructure providers.",
+    "accent": "#02A8EF",
+    "simpleIconSlug": "packer",
+    "secrets": ["CLOUD_PROVIDER_CREDENTIALS"],
+    "config": ["plugin_directory", "cache_directory", "build_directory", "cloud_provider"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use HashiCorp's signed official package or release, confirm architecture and checksum, and keep Packer plug-ins and cache in explicit user-owned directories.",
+      "preserve": "Packer templates, variable files, plug-in locks, caches, manifests, build artifacts, and cloud credentials",
+      "safety": "Do not initialize plug-ins, contact cloud APIs, build images, start virtual machines, upload artifacts, or read secret variable files without approval.",
+      "verify": "Run `packer version`; validate only an approved template after initialization requirements are explained, and never execute `packer build` as part of setup verification."
+    }
+  },
+  {
+    "index": 144,
+    "name": "Nomad",
+    "slug": "nomad",
+    "repo": "https://github.com/hashicorp/nomad",
+    "website": "https://developer.hashicorp.com/nomad",
+    "category": "DevOps & Cloud",
+    "description": "Workload orchestrator for deploying containers, binaries, and batch jobs across clusters.",
+    "accent": "#00CA8E",
+    "simpleIconSlug": "nomad",
+    "secrets": ["NOMAD_TOKEN"],
+    "config": ["data_directory", "datacenter", "bind_address", "http_port", "deployment_mode"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install HashiCorp's signed Nomad binary or package, determine whether this is CLI-only or an approved disposable dev agent, and keep server and client roles explicit.",
+      "preserve": "Nomad data, agent configuration, job specifications, ACL bootstrap state, TLS material, namespaces, and service definitions",
+      "safety": "Do not join a cluster, bootstrap ACLs, submit jobs, drain clients, start persistent agents, or expose RPC and HTTP ports without approval.",
+      "verify": "Run `nomad version`; use no remote address, and only with approval start a short-lived loopback dev agent, inspect its status, then stop and remove its temporary data."
+    }
+  },
+  {
+    "index": 145,
+    "name": "Consul",
+    "slug": "consul",
+    "repo": "https://github.com/hashicorp/consul",
+    "website": "https://developer.hashicorp.com/consul",
+    "category": "DevOps & Cloud",
+    "description": "Service discovery, health checking, configuration, and service-mesh control plane.",
+    "accent": "#E03875",
+    "simpleIconSlug": "consul",
+    "secrets": ["CONSUL_HTTP_TOKEN"],
+    "config": ["data_directory", "datacenter", "bind_address", "http_port", "deployment_mode"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install HashiCorp's signed Consul package or binary and distinguish a CLI-only setup from an approved disposable development agent before writing configuration.",
+      "preserve": "Consul data, agent configuration, ACL state, gossip encryption keys, TLS certificates, service definitions, and cluster membership",
+      "safety": "Do not join a datacenter, bootstrap ACLs, register services, modify KV data, start persistent agents, or expose ports without approval.",
+      "verify": "Run `consul version` and configuration validation; only when approved start a loopback dev agent with temporary data, query its local leader state, and stop it."
+    }
+  },
+  {
+    "index": 146,
+    "name": "HashiCorp Vault",
+    "slug": "hashicorp-vault",
+    "repo": "https://github.com/hashicorp/vault",
+    "website": "https://developer.hashicorp.com/vault",
+    "category": "Security & Privacy",
+    "description": "Secrets-management service for encrypted storage, dynamic credentials, and identity-based access.",
+    "accent": "#FFEC6E",
+    "simpleIconSlug": "vault",
+    "secrets": ["VAULT_TOKEN"],
+    "config": ["vault_address", "storage_backend", "listen_address", "api_port", "deployment_mode"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install HashiCorp's signed Vault package or binary, treating CLI-only use, a disposable development server, and a production server as separate security scopes.",
+      "preserve": "Vault storage, seal configuration, recovery and unseal material, policies, audit devices, TLS certificates, tokens, and service configuration",
+      "safety": "Do not initialize, unseal, join, authenticate, enable secret engines, write secrets, start persistent servers, or expose the API without approval.",
+      "verify": "Run `vault version`; do not contact an existing `VAULT_ADDR`, and only with approval start a disposable loopback dev server whose printed root token is not logged or persisted."
+    }
+  },
+  {
+    "index": 147,
+    "name": "Flux CD",
+    "slug": "flux-cd",
+    "repo": "https://github.com/fluxcd/flux2",
+    "website": "https://fluxcd.io",
+    "category": "DevOps & Cloud",
+    "description": "GitOps toolkit for continuously reconciling Kubernetes clusters from version-controlled state.",
+    "accent": "#5468FF",
+    "simpleIconSlug": "flux",
+    "secrets": ["GITHUB_TOKEN", "KUBECONFIG"],
+    "config": ["kube_context", "git_repository", "git_branch", "cluster_namespace"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the signed Flux CLI from the official release channel and keep CLI installation separate from bootstrapping controllers into any Kubernetes cluster.",
+      "preserve": "kubeconfig files, current contexts, cluster resources, Git repositories and deploy keys, Flux sources, and reconciliation state",
+      "safety": "Do not switch contexts, run preflight checks against a cluster, bootstrap Flux, create deploy keys, reconcile resources, or commit changes without approval.",
+      "verify": "Run `flux --version`; perform no cluster call by default, and show the selected kube context only after confirming it is safe to inspect."
+    }
+  },
+  {
+    "index": 148,
+    "name": "Jenkins",
+    "slug": "jenkins",
+    "repo": "https://github.com/jenkinsci/jenkins",
+    "website": "https://www.jenkins.io",
+    "category": "DevOps & Cloud",
+    "description": "Extensible automation server for continuous integration, delivery, and operational jobs.",
+    "accent": "#D24939",
+    "simpleIconSlug": "jenkins",
+    "secrets": ["JENKINS_ADMIN_PASSWORD"],
+    "config": ["java_home", "jenkins_home", "listen_address", "http_port", "deployment_mode"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the current Jenkins LTS package, WAR, or official container with a supported Java runtime and explicit persistent home; distinguish evaluation from a durable service.",
+      "preserve": "`JENKINS_HOME`, jobs, build records, plug-ins, credentials, secrets, nodes, configuration-as-code, and container volumes",
+      "safety": "Do not unlock Jenkins, install plug-ins, create users, run jobs, attach agents, migrate home data, or expose the HTTP port without approval.",
+      "verify": "Confirm Java and Jenkins versions; only with a fresh temporary home start loopback Jenkins, reach the locked setup screen, then stop it without recording the initial password."
+    }
+  },
+  {
+    "index": 149,
+    "name": "GitLab Runner",
+    "slug": "gitlab-runner",
+    "repo": "https://github.com/gitlabhq/gitlab-runner",
+    "website": "https://docs.gitlab.com/runner/",
+    "category": "DevOps & Cloud",
+    "description": "Agent that executes GitLab CI/CD jobs through shell, Docker, Kubernetes, and other executors.",
+    "accent": "#FC6D26",
+    "simpleIconSlug": "gitlab",
+    "secrets": ["GITLAB_RUNNER_TOKEN"],
+    "config": ["executor", "build_directory", "cache_directory", "service_user", "concurrency"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install GitLab Runner from GitLab's official package repository or signed binary and separate CLI installation from registration and service activation.",
+      "preserve": "`config.toml`, runner authentication tokens, build and cache directories, service accounts, executor volumes, and existing registrations",
+      "safety": "Do not register or unregister a runner, start jobs, install a service, grant Docker access, change executors, or reveal authentication tokens without approval.",
+      "verify": "Run `gitlab-runner --version`; use `verify` only for an explicitly approved registration and do not contact GitLab or start the runner service by default."
+    }
+  },
+  {
+    "index": 150,
+    "name": "OpenTelemetry Collector",
+    "slug": "opentelemetry-collector",
+    "repo": "https://github.com/open-telemetry/opentelemetry-collector",
+    "website": "https://opentelemetry.io/docs/collector/",
+    "category": "DevOps & Cloud",
+    "description": "Vendor-neutral service for receiving, processing, and exporting telemetry signals.",
+    "accent": "#F5A800",
+    "simpleIconSlug": "opentelemetry",
+    "secrets": ["OTEL_EXPORTER_AUTH_TOKEN"],
+    "config": ["distribution", "config_path", "listen_address", "receiver_ports", "exporter_endpoint"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Choose the core or contributed Collector distribution deliberately, install an official stable binary, package, or container, and pin configuration syntax to that release.",
+      "preserve": "Collector configuration, service definitions, queues, file-storage extensions, certificates, authentication headers, and existing telemetry pipelines",
+      "safety": "Do not bind receivers, send telemetry, read host logs, install a service, expose diagnostics, or connect exporters without approval.",
+      "verify": "Run the binary version and validate an approved configuration; otherwise use a minimal no-network configuration that starts briefly and exits cleanly without collecting host data."
+    }
+  },
+  {
+    "index": 151,
+    "name": "Grafana Loki",
+    "slug": "grafana-loki",
+    "repo": "https://github.com/grafana/loki",
+    "website": "https://grafana.com/oss/loki/",
+    "category": "DevOps & Cloud",
+    "description": "Horizontally scalable log aggregation system designed to pair with Grafana and Prometheus labels.",
+    "accent": "#F2CC0C",
+    "simpleIconSlug": "grafana",
+    "secrets": ["LOKI_AUTH_TOKEN"],
+    "config": ["deployment_mode", "data_directory", "config_path", "listen_address", "http_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use an official Loki binary or container matching the architecture and select single-binary local mode only for an approved evaluation; production topologies require a separate plan.",
+      "preserve": "Loki configuration, indexes, chunks, write-ahead logs, rules, object-store data, credentials, and container volumes",
+      "safety": "Do not ingest host logs, connect object storage, compact or delete data, start services, or expose ingestion and query ports without approval.",
+      "verify": "Run the version and configuration verification commands; only with temporary storage start a loopback instance, check `/ready`, and stop it without sending user logs."
+    }
+  },
+  {
+    "index": 152,
+    "name": "Cilium",
+    "slug": "cilium",
+    "repo": "https://github.com/cilium/cilium",
+    "website": "https://cilium.io",
+    "category": "DevOps & Cloud",
+    "description": "eBPF-powered Kubernetes networking, observability, and security platform.",
+    "accent": "#F8C517",
+    "simpleIconSlug": "cilium",
+    "secrets": ["KUBECONFIG"],
+    "config": ["kube_context", "cluster_name", "cni_mode", "hubble_enabled"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Install the official Cilium CLI separately from deploying Cilium agents, and first confirm Linux kernel, eBPF, container runtime, Kubernetes, and existing CNI compatibility.",
+      "preserve": "kubeconfig files, current contexts, cluster networking, CNI configuration, NetworkPolicies, Cilium values, certificates, and observability state",
+      "safety": "Do not switch contexts, install or upgrade the CNI, restart nodes, modify routes or firewall state, enable Hubble, or contact a cluster without approval.",
+      "verify": "Run `cilium version --client`; perform no cluster status check by default, and explain the selected kube context before any read-only API request."
+    }
+  },
+  {
+    "index": 153,
+    "name": "Istio",
+    "slug": "istio",
+    "repo": "https://github.com/istio/istio",
+    "website": "https://istio.io",
+    "category": "DevOps & Cloud",
+    "description": "Service mesh for securing, connecting, and observing traffic across distributed applications.",
+    "accent": "#466BB0",
+    "simpleIconSlug": "istio",
+    "secrets": ["KUBECONFIG"],
+    "config": ["kube_context", "cluster_name", "istio_profile", "mesh_namespace"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official `istioctl` release matching the intended control-plane version, keeping the client binary separate from any service-mesh installation or upgrade.",
+      "preserve": "kubeconfig files, current contexts, IstioOperator resources, Helm values, namespaces, gateways, policies, certificates, and workload labels",
+      "safety": "Do not connect to a cluster, install or upgrade Istio, inject sidecars, label namespaces, restart workloads, or expose gateways without approval.",
+      "verify": "Run `istioctl version --remote=false`; only after context approval perform read-only precheck or analyze commands and report every namespace they inspect."
+    }
+  },
+  {
+    "index": 154,
+    "name": "Traefik Proxy",
+    "slug": "traefik-proxy",
+    "repo": "https://github.com/traefik/traefik",
+    "website": "https://traefik.io/traefik/",
+    "category": "DevOps & Cloud",
+    "description": "Cloud-native reverse proxy and ingress controller with automatic service discovery.",
+    "accent": "#24A1C1",
+    "simpleIconSlug": "traefikproxy",
+    "secrets": ["DNS_PROVIDER_API_TOKEN"],
+    "config": ["deployment_mode", "config_path", "listen_address", "http_port", "https_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official Traefik binary, container, or Helm chart for the intended environment, pinning a stable major version and separating static from dynamic configuration.",
+      "preserve": "Traefik configuration, certificates and ACME storage, middleware, provider credentials, ingress resources, logs, and container volumes",
+      "safety": "Do not bind privileged ports, expose the dashboard, request certificates, connect providers, change ingress, or start a persistent proxy without approval.",
+      "verify": "Run the version and configuration validation; only with a minimal loopback configuration start Traefik, query its local ping endpoint, and stop it without contacting providers."
+    }
+  },
+  {
+    "index": 155,
+    "name": "LibreOffice",
+    "slug": "libreoffice",
+    "repo": "https://github.com/LibreOffice/core",
+    "website": "https://www.libreoffice.org",
+    "category": "Productivity",
+    "description": "Open-source office suite for documents, spreadsheets, presentations, drawings, and databases.",
+    "accent": "#18A303",
+    "simpleIconSlug": "libreoffice",
+    "secrets": [],
+    "config": ["ui_language", "default_document_format", "template_directory", "autosave_interval"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the stable LibreOffice build from the Document Foundation or a trusted distribution channel, matching architecture and language packs while avoiding development builds.",
+      "preserve": "the LibreOffice user profile, templates, dictionaries, extensions, macros, recovery files, recent documents, and file associations",
+      "safety": "Do not import profiles, enable macros, install extensions, change default formats or file associations, or open personal documents without approval.",
+      "verify": "Run the version command and launch Start Center with no document; create and close a disposable blank file only if a write-path check is approved."
+    }
+  },
+  {
+    "index": 156,
+    "name": "ONLYOFFICE Desktop Editors",
+    "slug": "onlyoffice-desktop-editors",
+    "repo": "https://github.com/ONLYOFFICE/DesktopEditors",
+    "website": "https://www.onlyoffice.com/desktop.aspx",
+    "category": "Productivity",
+    "description": "Desktop suite for editing documents, spreadsheets, presentations, forms, and PDFs.",
+    "accent": "#FF6F3D",
+    "simpleIconSlug": "onlyoffice",
+    "secrets": [],
+    "config": ["ui_language", "default_document_format", "template_directory", "autosave_interval"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official signed Desktop Editors package for the detected platform and stable channel, and review whether another office suite already owns document associations.",
+      "preserve": "application settings, templates, plug-ins, recovery data, recent documents, local fonts, and existing file associations",
+      "safety": "Do not connect cloud services, enable plug-ins or macros, change file associations, or open and convert user documents without approval.",
+      "verify": "Launch the application to its empty start screen, report the version and update channel, and make no cloud connection or change to document defaults."
+    }
+  },
+  {
+    "index": 157,
+    "name": "Zotero",
+    "slug": "zotero",
+    "repo": "https://github.com/zotero/zotero",
+    "website": "https://www.zotero.org",
+    "category": "Productivity",
+    "description": "Research assistant for collecting, organizing, citing, and syncing bibliographic sources.",
+    "accent": "#CC2936",
+    "simpleIconSlug": "zotero",
+    "secrets": ["ZOTERO_API_KEY"],
+    "config": ["library_directory", "citation_style", "attachment_directory", "sync_preference"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install Zotero from the official signed package or documented Linux archive, ensuring the stable desktop application and browser connector are treated as separate approvals.",
+      "preserve": "the Zotero data directory, database, attachment storage, translators, citation styles, plug-ins, sync state, and linked-file paths",
+      "safety": "Do not sign in, sync, migrate the library, install the browser connector or plug-ins, reindex attachments, or open research files without approval.",
+      "verify": "Launch Zotero offline to an empty or existing library view without making changes, confirm its version and data directory, then close it cleanly."
+    }
+  },
+  {
+    "index": 158,
+    "name": "Anki",
+    "slug": "anki",
+    "repo": "https://github.com/ankitects/anki",
+    "website": "https://apps.ankiweb.net",
+    "category": "Productivity",
+    "description": "Spaced-repetition flashcard application for durable learning and memorization.",
+    "accent": "#80C2EE",
+    "simpleIconSlug": "anki",
+    "secrets": [],
+    "config": ["profile_name", "media_directory", "backup_retention", "sync_preference"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official desktop package or launcher for a stable Anki release, matching supported operating system and architecture requirements and avoiding unofficial app stores.",
+      "preserve": "Anki profiles, collection databases, media, add-ons, review history, backups, scheduling settings, and AnkiWeb sync state",
+      "safety": "Do not upgrade a collection, install add-ons, sign in, sync, import decks, or run database repair without approval and a current backup.",
+      "verify": "Launch Anki without syncing, report the application and scheduler versions and profile path, and do not open or modify a deck during the smoke test."
+    }
+  },
+  {
+    "index": 159,
+    "name": "Standard Notes",
+    "slug": "standard-notes",
+    "repo": "https://github.com/standardnotes/app",
+    "website": "https://standardnotes.com",
+    "category": "Productivity",
+    "description": "End-to-end encrypted notes application with cross-platform clients and self-hosting support.",
+    "accent": "#0F65FE",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["data_directory", "sync_server", "editor_preference", "backup_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official signed desktop release for the current platform, distinguishing the client from any self-hosted synchronization server and keeping stable and pre-release channels separate.",
+      "preserve": "local encrypted storage, account and server settings, offline notes, extensions, backups, passcode state, and recovery information",
+      "safety": "Do not sign in, change servers, import or export notes, reset passcodes, install editors, or modify encryption settings without approval.",
+      "verify": "Launch to the welcome or locked screen, confirm the application version and local storage location, and make no network connection or account change."
+    }
+  },
+  {
+    "index": 160,
+    "name": "SiYuan",
+    "slug": "siyuan",
+    "repo": "https://github.com/siyuan-note/siyuan",
+    "website": "https://b3log.org/siyuan/en/",
+    "category": "Productivity",
+    "description": "Privacy-first personal knowledge system with block references, Markdown, and local workspaces.",
+    "accent": "#D23F31",
+    "simpleIconSlug": "siyuan",
+    "secrets": ["SIYUAN_ACCESS_AUTH_CODE"],
+    "config": ["workspace_directory", "data_directory", "appearance", "listen_address", "listen_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable desktop package for the detected platform, or use the documented container only when a browser-based deployment and persistent workspace are requested.",
+      "preserve": "SiYuan workspaces, notebooks, assets, indexes, history, plug-ins, themes, access codes, and synchronization configuration",
+      "safety": "Do not open or migrate an existing workspace, install marketplace packages, enable synchronization, expose a server port, or import content without approval.",
+      "verify": "Launch SiYuan with a new disposable workspace or to its workspace chooser, confirm version and paths, and avoid indexing personal knowledge bases."
+    }
+  },
+  {
+    "index": 161,
+    "name": "Notesnook",
+    "slug": "notesnook",
+    "repo": "https://github.com/streetwriters/notesnook",
+    "website": "https://notesnook.com",
+    "category": "Productivity",
+    "description": "Private open-source notes application with end-to-end encryption and cross-platform sync.",
+    "accent": "#2F6FED",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["data_directory", "editor_preference", "backup_directory", "sync_preference"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official signed Notesnook desktop package for the stable channel and detected architecture, keeping portable and installed distributions distinct.",
+      "preserve": "local encrypted databases, account state, notes, attachments, vault settings, backups, application preferences, and sync metadata",
+      "safety": "Do not sign in, sync, import backups, unlock vaults, export notes, or reset local data without approval.",
+      "verify": "Launch to the onboarding or locked screen, report the application version and storage directory, and make no account, network, or content change."
+    }
+  },
+  {
+    "index": 162,
+    "name": "Super Productivity",
+    "slug": "super-productivity",
+    "repo": "https://github.com/johannesjo/super-productivity",
+    "website": "https://super-productivity.com",
+    "category": "Productivity",
+    "description": "Task, time, and focus manager with offline-first storage and issue-tracker integrations.",
+    "accent": "#C2185B",
+    "simpleIconSlug": null,
+    "secrets": ["ISSUE_TRACKER_TOKEN"],
+    "config": ["data_directory", "workday_start", "pomodoro_duration", "sync_preference"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable desktop release or trusted package for the current platform and keep browser, portable, and installed data locations distinct.",
+      "preserve": "tasks, time records, projects, tags, settings, local backups, synchronization state, and issue-tracker credentials",
+      "safety": "Do not connect integrations, import or replace backups, enable synchronization, start tracking, or clear application data without approval.",
+      "verify": "Launch to the existing or empty workspace, report version and storage location, and avoid creating tasks, starting timers, or making network requests."
+    }
+  },
+  {
+    "index": 163,
+    "name": "TriliumNext Notes",
+    "slug": "triliumnext-notes",
+    "repo": "https://github.com/TriliumNext/Trilium",
+    "website": "https://triliumnext.github.io/Docs/",
+    "category": "Productivity",
+    "description": "Hierarchical personal knowledge base for rich notes, relations, scripting, and self-hosting.",
+    "accent": "#3F51B5",
+    "simpleIconSlug": null,
+    "secrets": ["TRILIUM_PASSWORD"],
+    "config": ["deployment_mode", "data_directory", "listen_address", "listen_port", "sync_preference"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Choose the official desktop application or documented server container after confirming the intended single-user scope and a persistent data location.",
+      "preserve": "Trilium databases, notes, revisions, attachments, scripts, themes, synchronization state, authentication settings, and backups",
+      "safety": "Do not migrate or optimize an existing database, execute note scripts, import data, enable synchronization, or expose server mode without approval.",
+      "verify": "Launch with a new disposable data directory or to the protected existing screen, report the version and storage path, then stop without editing notes."
+    }
+  },
+  {
+    "index": 164,
+    "name": "BookStack",
+    "slug": "bookstack",
+    "repo": "https://github.com/BookStackApp/BookStack",
+    "website": "https://www.bookstackapp.com",
+    "category": "Productivity",
+    "description": "Self-hosted documentation platform organized into shelves, books, chapters, and pages.",
+    "accent": "#0288D1",
+    "simpleIconSlug": "bookstack",
+    "secrets": ["BOOKSTACK_APP_KEY", "BOOKSTACK_DATABASE_PASSWORD"],
+    "config": ["deployment_mode", "data_directory", "database_name", "listen_address", "listen_port"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Prefer the official container-compose pattern for a local deployment or follow BookStack's documented Linux web-stack requirements, pinning versions and persistent directories explicitly.",
+      "preserve": "the database, uploaded files, `.env`, application key, themes, authentication settings, backups, and container volumes",
+      "safety": "Do not generate or replace an application key, migrate a database, create users, configure mail or SSO, expose ports, or start persistent services without approval.",
+      "verify": "For a fresh approved deployment, confirm the loopback login page and container health, inspect logs for errors, and stop without completing setup or changing credentials."
+    }
+  },
+  {
+    "index": 165,
+    "name": "Godot Engine",
+    "slug": "godot-engine",
+    "repo": "https://github.com/godotengine/godot",
+    "website": "https://godotengine.org",
+    "category": "Design & Media",
+    "description": "Open-source 2D and 3D game engine with an integrated editor and flexible scripting.",
+    "accent": "#478CBF",
+    "simpleIconSlug": "godotengine",
+    "secrets": [],
+    "config": ["project_directory", "rendering_backend", "editor_scale", "asset_cache_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Download the official stable Godot editor matching the architecture and desired standard or .NET edition; keep major versions and project compatibility explicit.",
+      "preserve": "Godot editor settings, templates, asset-library cache, export presets, keystores, project files, imported assets, and previous editor versions",
+      "safety": "Do not import or upgrade projects, install assets, download export templates, execute editor scripts, or change file associations without approval.",
+      "verify": "Run the editor version command and launch the project manager with no project opened; use a disposable empty project only if renderer verification is approved."
+    }
+  },
+  {
+    "index": 166,
+    "name": "FreeCAD",
+    "slug": "freecad",
+    "repo": "https://github.com/FreeCAD/FreeCAD",
+    "website": "https://www.freecad.org",
+    "category": "Design & Media",
+    "description": "Parametric 3D CAD modeler for product design, mechanical engineering, and architecture.",
+    "accent": "#CB333B",
+    "simpleIconSlug": "freecad",
+    "secrets": [],
+    "config": ["workbench", "unit_system", "document_directory", "addon_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official stable FreeCAD package or trusted distribution build, checking architecture, graphics requirements, and Python compatibility before selecting AppImage, installer, or bundle.",
+      "preserve": "FreeCAD preferences, macros, workbenches, add-ons, templates, recent files, autosaves, and existing CAD documents",
+      "safety": "Do not install add-ons, execute macros, migrate preferences, change file associations, or open and recompute user models without approval.",
+      "verify": "Launch FreeCAD to an empty document, report its version and Python and Qt details, then close without loading workbenches from third parties."
+    }
+  },
+  {
+    "index": 167,
+    "name": "OpenSCAD",
+    "slug": "openscad",
+    "repo": "https://github.com/openscad/openscad",
+    "website": "https://openscad.org",
+    "category": "Design & Media",
+    "description": "Programmer-oriented solid 3D CAD modeler driven by a declarative scripting language.",
+    "accent": "#F9D72C",
+    "simpleIconSlug": "openscad",
+    "secrets": [],
+    "config": ["document_directory", "library_directory", "render_backend", "editor_font_size"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable OpenSCAD build for the detected platform, verifying architecture and graphics support and keeping snapshot builds opt-in.",
+      "preserve": "OpenSCAD preferences, libraries, color schemes, backups, cache directories, and existing SCAD and exported model files",
+      "safety": "Do not add libraries, evaluate untrusted SCAD files, overwrite exported meshes, change file associations, or enable experimental features without approval.",
+      "verify": "Run `openscad --version`, then render a tiny generated cube from a disposable source to a temporary output and remove only that test artifact."
+    }
+  },
+  {
+    "index": 168,
+    "name": "Shotcut",
+    "slug": "shotcut",
+    "repo": "https://github.com/mltframework/shotcut",
+    "website": "https://shotcut.org",
+    "category": "Design & Media",
+    "description": "Cross-platform non-linear video editor built on FFmpeg and the MLT multimedia framework.",
+    "accent": "#00B4D8",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["project_directory", "video_mode", "proxy_directory", "hardware_encoder"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official stable Shotcut installer, bundle, or portable archive for the current platform and confirm hardware and graphics requirements before enabling acceleration.",
+      "preserve": "Shotcut settings, layouts, presets, autosaves, project files, proxy media, recent files, and export queues",
+      "safety": "Do not open projects, scan media, enable hardware encoders, change file associations, render exports, or remove proxy files without approval.",
+      "verify": "Launch Shotcut with no project, report application and MLT versions, and use only a generated color clip for an optional preview test with no export."
+    }
+  },
+  {
+    "index": 169,
+    "name": "HandBrake",
+    "slug": "handbrake",
+    "repo": "https://github.com/HandBrake/HandBrake",
+    "website": "https://handbrake.fr",
+    "category": "Design & Media",
+    "description": "Video transcoder for converting media into modern codecs and container formats.",
+    "accent": "#5DADE2",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["output_directory", "default_preset", "hardware_encoder", "subtitle_preference"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable HandBrake GUI and matching CLI where requested, verifying package signatures and avoiding third-party download sites.",
+      "preserve": "custom presets, queue state, logs, preferences, destination defaults, source media, and any existing HandBrake installation",
+      "safety": "Do not scan protected media, overwrite files, start encodes, enable hardware encoders, or change destination defaults without approval.",
+      "verify": "Run `HandBrakeCLI --version` when installed and launch the GUI with no source; perform no media scan or transcode during setup verification."
+    }
+  },
+  {
+    "index": 170,
+    "name": "darktable",
+    "slug": "darktable",
+    "repo": "https://github.com/darktable-org/darktable",
+    "website": "https://www.darktable.org",
+    "category": "Design & Media",
+    "description": "Photography workflow application and RAW developer with non-destructive editing.",
+    "accent": "#F6B436",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["photo_library_directory", "cache_directory", "color_profile", "export_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official stable darktable package or a trusted distribution build, checking GPU and OpenCL support without enabling acceleration automatically.",
+      "preserve": "the darktable library database, sidecar files, presets, styles, color profiles, cache, configuration, and source photographs",
+      "safety": "Do not upgrade a library database, import photographs, rewrite XMP sidecars, enable OpenCL, or modify source media without approval and a backup.",
+      "verify": "Run `darktable --version` and launch with a new temporary config directory, confirming the UI opens without scanning or importing any photo library."
+    }
+  },
+  {
+    "index": 171,
+    "name": "RawTherapee",
+    "slug": "rawtherapee",
+    "repo": "https://github.com/Beep6581/RawTherapee",
+    "website": "https://rawtherapee.com",
+    "category": "Design & Media",
+    "description": "Powerful RAW photo processor with advanced color, detail, and batch controls.",
+    "accent": "#7CB342",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["photo_library_directory", "cache_directory", "color_profile", "export_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install an official stable RawTherapee package or trusted distribution build for the detected platform and architecture, avoiding development snapshots unless requested.",
+      "preserve": "preferences, processing profiles, sidecar files, cache, color profiles, queue settings, output defaults, and original photographs",
+      "safety": "Do not scan photo directories, overwrite sidecars, start batch processing, change color management, or modify originals without approval.",
+      "verify": "Run the version command where available and launch with an empty temporary configuration, confirming the editor opens without loading or indexing user photos."
+    }
+  },
+  {
+    "index": 172,
+    "name": "MuseScore Studio",
+    "slug": "musescore-studio",
+    "repo": "https://github.com/musescore/MuseScore",
+    "website": "https://musescore.org",
+    "category": "Design & Media",
+    "description": "Music notation application for composing, arranging, engraving, and playing scores.",
+    "accent": "#1A70B8",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["score_directory", "audio_device", "soundfont_directory", "autosave_interval"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable MuseScore Studio package for the platform and architecture, keeping Muse Hub and optional sound libraries as separate choices.",
+      "preserve": "scores, autosaves, templates, plug-ins, palettes, shortcuts, soundfonts, audio settings, and previous MuseScore versions",
+      "safety": "Do not install Muse Hub or sound libraries, sign in, migrate scores, execute plug-ins, or change audio devices without approval.",
+      "verify": "Launch MuseScore to its start screen, report the application version and audio backend, and create no score or download any content."
+    }
+  },
+  {
+    "index": 173,
+    "name": "LMMS",
+    "slug": "lmms",
+    "repo": "https://github.com/LMMS/lmms",
+    "website": "https://lmms.io",
+    "category": "Design & Media",
+    "description": "Digital audio workstation for composing, sequencing, synthesizing, and mixing music.",
+    "accent": "#10B146",
+    "simpleIconSlug": "lmms",
+    "secrets": [],
+    "config": ["project_directory", "audio_backend", "sample_directory", "plugin_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official stable LMMS package for the current platform and architecture, checking audio backend support and keeping third-party instruments out of the initial setup.",
+      "preserve": "LMMS projects, presets, samples, plug-ins, recovery files, paths, MIDI mappings, and audio settings",
+      "safety": "Do not scan plug-ins, load projects, change audio or MIDI devices, download samples, or overwrite project files without approval.",
+      "verify": "Launch LMMS with an empty project and conservative audio settings, report the application and audio backend versions, then close without saving or playing loud output."
+    }
+  },
+  {
+    "index": 174,
+    "name": "Mixxx",
+    "slug": "mixxx",
+    "repo": "https://github.com/mixxxdj/mixxx",
+    "website": "https://mixxx.org",
+    "category": "Design & Media",
+    "description": "DJ software for mixing music with controllers, effects, beat detection, and broadcasting.",
+    "accent": "#F28C28",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["music_library_directory", "audio_device", "controller_mapping", "recording_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable Mixxx package for the platform, confirming audio-system and controller compatibility while leaving optional codecs and drivers separate.",
+      "preserve": "the Mixxx library database, playlists, crates, cue points, controller mappings, recordings, settings, and music files",
+      "safety": "Do not scan the music library, alter metadata, connect controllers, start broadcasting or recording, or change audio devices without approval.",
+      "verify": "Launch Mixxx with no library scan and outputs muted, confirm version and audio backend detection, then close without loading or analyzing tracks."
+    }
+  },
+  {
+    "index": 175,
+    "name": "VeraCrypt",
+    "slug": "veracrypt",
+    "repo": "https://github.com/veracrypt/VeraCrypt",
+    "website": "https://www.veracrypt.fr",
+    "category": "Security & Privacy",
+    "description": "Disk-encryption utility for creating and mounting encrypted volumes and system partitions.",
+    "accent": "#1C4E80",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["volume_directory", "encryption_algorithm", "filesystem", "mount_preference"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Download the signed official VeraCrypt release for the detected platform and verify its signature or checksum before requesting any privileged driver or kernel integration.",
+      "preserve": "encrypted containers, headers and header backups, keyfiles, mount favorites, preferences, rescue media, and any existing VeraCrypt drivers",
+      "safety": "Do not create, mount, decrypt, format, resize, repair, or benchmark volumes and never request passwords or keyfile contents during installation.",
+      "verify": "Confirm the installed application and CLI versions and signature status; launch the UI without mounting devices or enumerating private volume locations."
+    }
+  },
+  {
+    "index": 176,
+    "name": "OpenVPN Community",
+    "slug": "openvpn-community",
+    "repo": "https://github.com/OpenVPN/openvpn",
+    "website": "https://openvpn.net/community/",
+    "category": "Security & Privacy",
+    "description": "Open-source VPN protocol and client for secure routed or bridged network connections.",
+    "accent": "#EA7E20",
+    "simpleIconSlug": "openvpn",
+    "secrets": ["OPENVPN_AUTH_PASSWORD"],
+    "config": ["config_directory", "dns_preference", "route_policy", "autostart"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use an official OpenVPN Connect client where appropriate or the trusted Community package for command-line use, and review required network drivers and service integration before elevation.",
+      "preserve": "VPN profiles, certificates, private keys, authentication files, route and DNS settings, logs, and existing network adapters",
+      "safety": "Do not import profiles, read private keys, connect to a VPN, install drivers, change routes or DNS, enable autostart, or log credential values without approval.",
+      "verify": "Run the client version and configuration parser against only an approved redacted profile; do not initiate a tunnel or contact its remote endpoint."
+    }
+  },
+  {
+    "index": 177,
+    "name": "Pi-hole",
+    "slug": "pi-hole",
+    "repo": "https://github.com/pi-hole/pi-hole",
+    "website": "https://pi-hole.net",
+    "category": "Security & Privacy",
+    "description": "Network-wide DNS sinkhole that blocks advertising and tracking domains for local devices.",
+    "accent": "#96060C",
+    "simpleIconSlug": "pihole",
+    "secrets": ["PIHOLE_WEBPASSWORD"],
+    "config": ["deployment_mode", "dns_upstream", "listen_address", "web_port", "data_directory"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Choose a supported Linux host or an official container deployment, inspect Pi-hole's installer before execution, and map persistent DNS and configuration data explicitly.",
+      "preserve": "Pi-hole configuration, gravity database, custom DNS records, allow and block lists, DHCP leases, web credentials, backups, and container volumes",
+      "safety": "Do not replace system or router DNS, enable DHCP, bind ports 53 or 80, modify firewall rules, update gravity, or expose the dashboard without approval.",
+      "verify": "Use configuration and version checks first; only after port approval start loopback-safe services, query a known harmless domain through the local resolver, and stop test containers."
+    }
+  },
+  {
+    "index": 178,
+    "name": "AdGuard Home",
+    "slug": "adguard-home",
+    "repo": "https://github.com/AdguardTeam/AdGuardHome",
+    "website": "https://adguard.com/adguard-home/overview.html",
+    "category": "Security & Privacy",
+    "description": "Self-hosted DNS filtering service for blocking ads, trackers, and malicious domains.",
+    "accent": "#68BC71",
+    "simpleIconSlug": "adguard",
+    "secrets": ["ADGUARD_ADMIN_PASSWORD"],
+    "config": ["data_directory", "dns_upstream", "listen_address", "dns_port", "web_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the signed official release or container for the detected platform, selecting explicit working and configuration directories and checking DNS and web-port conflicts before startup.",
+      "preserve": "`AdGuardHome.yaml`, filters, rewrites, query logs, users, certificates, DHCP settings, backups, and container volumes",
+      "safety": "Do not replace host or router DNS, enable DHCP, bind privileged ports, create an admin user, change firewall rules, or expose the UI without approval.",
+      "verify": "Run `AdGuardHome --version` and configuration checks; only with temporary ports start a loopback instance, reach onboarding, and stop without completing it."
+    }
+  },
+  {
+    "index": 179,
+    "name": "CrowdSec",
+    "slug": "crowdsec",
+    "repo": "https://github.com/crowdsecurity/crowdsec",
+    "website": "https://www.crowdsec.net",
+    "category": "Security & Privacy",
+    "description": "Collaborative intrusion-detection engine that analyzes behavior and shares threat intelligence.",
+    "accent": "#6A45FF",
+    "simpleIconSlug": null,
+    "secrets": ["CROWDSEC_BOUNCER_API_KEY"],
+    "config": ["config_directory", "data_directory", "log_sources", "listen_address", "api_port"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Use CrowdSec's official Linux package or container after identifying supported log sources, and keep the detection engine, Local API, console enrollment, and remediation bouncers as separate approvals.",
+      "preserve": "CrowdSec configuration, decisions, hub collections, parser state, Local API credentials, machine identities, log acquisition rules, and databases",
+      "safety": "Do not read sensitive logs, enroll the console, install bouncers, block traffic, expose the API, or enable services without approval.",
+      "verify": "Run version and configuration checks, inspect no user logs by default, and use a bundled harmless test scenario only if its temporary inputs and effects are approved."
+    }
+  },
+  {
+    "index": 180,
+    "name": "ClamAV",
+    "slug": "clamav",
+    "repo": "https://github.com/Cisco-Talos/clamav",
+    "website": "https://www.clamav.net",
+    "category": "Security & Privacy",
+    "description": "Open-source antivirus engine and toolkit for malware scanning and signature updates.",
+    "accent": "#009639",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["database_directory", "quarantine_directory", "scan_scope", "update_schedule"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable ClamAV package or trusted distribution build, keeping the on-demand scanner, signature updater, and scanning daemon as separate components.",
+      "preserve": "signature databases, `clamd.conf`, `freshclam.conf`, scan logs, quarantine locations, service definitions, and any existing update schedule",
+      "safety": "Do not scan personal or system files, delete or quarantine results, download signatures, enable daemons, or send metadata to update services without approval.",
+      "verify": "Run `clamscan --version` and configuration checks; scan only the official harmless EICAR test file when explicitly approved, then remove that generated test file."
+    }
+  },
+  {
+    "index": 181,
+    "name": "OWASP ZAP",
+    "slug": "owasp-zap",
+    "repo": "https://github.com/zaproxy/zaproxy",
+    "website": "https://www.zaproxy.org",
+    "category": "Security & Privacy",
+    "description": "Web application security testing proxy and scanner maintained by the OWASP community.",
+    "accent": "#00549E",
+    "simpleIconSlug": "zap",
+    "secrets": ["ZAP_API_KEY"],
+    "config": ["java_home", "workspace_directory", "proxy_address", "proxy_port", "browser_profile"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable ZAP package, cross-platform archive, or container with a supported Java runtime and a dedicated user-owned workspace.",
+      "preserve": "ZAP sessions, contexts, scripts, add-ons, certificates, browser profiles, API settings, scan policies, and reports",
+      "safety": "Do not proxy browser traffic, generate or trust a root certificate, install add-ons, spider or scan any target, expose the API, or alter proxy settings without approval.",
+      "verify": "Run the version command and launch in safe mode with no session or target; confirm the UI opens, then close without sending network requests."
+    }
+  },
+  {
+    "index": 182,
+    "name": "Keycloak",
+    "slug": "keycloak",
+    "repo": "https://github.com/keycloak/keycloak",
+    "website": "https://www.keycloak.org",
+    "category": "Security & Privacy",
+    "description": "Identity and access management server with SSO, federation, and standards-based protocols.",
+    "accent": "#4D4D4D",
+    "simpleIconSlug": "keycloak",
+    "secrets": ["KEYCLOAK_ADMIN_PASSWORD", "KEYCLOAK_DATABASE_PASSWORD"],
+    "config": ["deployment_mode", "data_directory", "database_name", "listen_address", "http_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official Keycloak distribution or container with a supported Java runtime and explicit persistent data, distinguishing disposable development mode from a production deployment.",
+      "preserve": "realms, users, clients, keys, database data, provider extensions, themes, certificates, configuration, and backups",
+      "safety": "Do not migrate a database, create admin credentials, import realms, change keys, install providers, expose ports, or start production mode without approval.",
+      "verify": "Run the version command; only with temporary storage start loopback development mode, reach the welcome page, and stop without creating an administrator."
+    }
+  },
+  {
+    "index": 183,
+    "name": "Signal Desktop",
+    "slug": "signal-desktop",
+    "repo": "https://github.com/signalapp/Signal-Desktop",
+    "website": "https://signal.org/download/",
+    "category": "Communication",
+    "description": "Private desktop messenger with end-to-end encrypted chats, calls, and linked-device support.",
+    "accent": "#3A76F0",
+    "simpleIconSlug": "signal",
+    "secrets": [],
+    "config": ["data_directory", "notification_preference", "autostart", "proxy_settings"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the signed official Signal Desktop package or Linux repository release for the stable channel, avoiding third-party packages and unofficial clients.",
+      "preserve": "Signal's encrypted local database, linked-device state, attachments, preferences, proxy settings, notifications, and existing application installation",
+      "safety": "Do not link a device, scan a QR code, read messages, reset local data, enable autostart, or change notification and proxy settings without approval.",
+      "verify": "Launch to the link-device or locked existing screen, confirm the application version and package signature, and make no account or network-state change."
+    }
+  },
+  {
+    "index": 184,
+    "name": "Telegram Desktop",
+    "slug": "telegram-desktop",
+    "repo": "https://github.com/telegramdesktop/tdesktop",
+    "website": "https://desktop.telegram.org",
+    "category": "Communication",
+    "description": "Cross-platform desktop client for Telegram messaging, groups, channels, and calls.",
+    "accent": "#26A5E4",
+    "simpleIconSlug": "telegram",
+    "secrets": [],
+    "config": ["download_directory", "notification_preference", "autostart", "proxy_settings"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official Telegram Desktop package, signed application, or documented Linux archive for the stable channel and detected architecture.",
+      "preserve": "Telegram Desktop local data, sessions, downloaded media, cache, preferences, proxy settings, notifications, and existing portable installations",
+      "safety": "Do not sign in, scan QR codes, read chats, clear cache, enable autostart, or change download, proxy, and notification settings without approval.",
+      "verify": "Launch to the sign-in or current locked screen, report the application version and data location, and perform no authentication or chat access."
+    }
+  },
+  {
+    "index": 185,
+    "name": "Jitsi Meet",
+    "slug": "jitsi-meet",
+    "repo": "https://github.com/jitsi/jitsi-meet",
+    "website": "https://jitsi.org/jitsi-meet/",
+    "category": "Communication",
+    "description": "Open-source video-conferencing platform for browser, mobile, and self-hosted meetings.",
+    "accent": "#979797",
+    "simpleIconSlug": "jitsi",
+    "secrets": ["JITSI_JWT_SECRET"],
+    "config": ["deployment_mode", "domain_name", "data_directory", "http_port", "https_port"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Use Jitsi's documented Debian or Docker self-hosting path on an approved Linux host, with a real domain and TLS plan required before any non-local deployment.",
+      "preserve": "Jitsi Meet configuration, Prosody data, authentication secrets, recordings, certificates, web customizations, and container volumes",
+      "safety": "Do not configure DNS, request certificates, expose ports, create authentication secrets, join or create meetings, or enable recording without approval.",
+      "verify": "Validate configuration and container definitions; for an approved local test, confirm services become healthy on loopback and stop them without opening a meeting room."
+    }
+  },
+  {
+    "index": 186,
+    "name": "Mumble",
+    "slug": "mumble",
+    "repo": "https://github.com/mumble-voip/mumble",
+    "website": "https://www.mumble.info",
+    "category": "Communication",
+    "description": "Low-latency encrypted voice-chat client and server with positional audio support.",
+    "accent": "#5B5BE5",
+    "simpleIconSlug": "mumble",
+    "secrets": ["MUMBLE_SERVER_PASSWORD"],
+    "config": ["deployment_mode", "audio_device", "push_to_talk", "listen_address", "server_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable Mumble client or Murmur server package for the intended role, keeping client audio setup and server deployment as separate scopes.",
+      "preserve": "certificates and identity, saved servers, audio settings, shortcuts, server database, configuration, access-control lists, and recordings",
+      "safety": "Do not generate or replace identity certificates, connect to servers, test microphones aloud, start Murmur, expose ports, or reset passwords without approval.",
+      "verify": "Run the version command and launch the client disconnected with audio muted; for server scope, validate configuration only unless a loopback test is approved."
+    }
+  },
+  {
+    "index": 187,
+    "name": "SimpleX Chat",
+    "slug": "simplex-chat",
+    "repo": "https://github.com/simplex-chat/simplex-chat",
+    "website": "https://simplex.chat",
+    "category": "Communication",
+    "description": "Private messenger designed without user identifiers, using decentralized message relays.",
+    "accent": "#111827",
+    "simpleIconSlug": "simplex",
+    "secrets": [],
+    "config": ["data_directory", "notification_preference", "network_proxy", "database_backup_directory"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official stable desktop release or trusted package matching the platform and architecture, and verify signatures where the project publishes them.",
+      "preserve": "encrypted chat databases, profiles, connection links, media, notification settings, network proxy configuration, and backups",
+      "safety": "Do not create or open a chat profile, connect to relays, import backups, reveal invitation links, change proxies, or access messages without approval.",
+      "verify": "Launch to the profile chooser or locked existing state, report the application version and data location, and make no relay connection or identity change."
+    }
+  },
+  {
+    "index": 188,
+    "name": "Matrix Synapse",
+    "slug": "matrix-synapse",
+    "repo": "https://github.com/element-hq/synapse",
+    "website": "https://element-hq.github.io/synapse/latest/",
+    "category": "Communication",
+    "description": "Mature Matrix homeserver implementation for federated real-time communication.",
+    "accent": "#0DBD8B",
+    "simpleIconSlug": "matrix",
+    "secrets": ["SYNAPSE_REGISTRATION_SHARED_SECRET", "SYNAPSE_DATABASE_PASSWORD"],
+    "config": ["server_name", "data_directory", "database_name", "listen_address", "listen_port"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Use the official Debian package or container guidance, choose PostgreSQL for an approved durable deployment, and establish server name, reverse proxy, and federation scope before initialization.",
+      "preserve": "homeserver configuration, signing keys, media store, database, registration secrets, certificates, user data, and backups",
+      "safety": "Do not generate a production signing key, migrate a database, register users, enable federation, expose listeners, or contact other homeservers without approval.",
+      "verify": "Validate configuration; only with temporary isolated data start a loopback non-federating server, check its versions endpoint, and stop without creating users."
+    }
+  },
+  {
+    "index": 189,
+    "name": "Thunderbird",
+    "slug": "thunderbird",
+    "repo": "https://github.com/thunderbird/thunderbird-desktop",
+    "website": "https://www.thunderbird.net",
+    "category": "Communication",
+    "description": "Open-source email, calendar, contacts, and feed client from the Thunderbird project.",
+    "accent": "#0A84FF",
+    "simpleIconSlug": "thunderbird",
+    "secrets": ["EMAIL_APP_PASSWORD"],
+    "config": ["profile_directory", "download_preference", "notification_preference", "default_mail_client"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable Thunderbird package or trusted distribution build, matching architecture and keeping ESR or beta channels and existing profiles explicit.",
+      "preserve": "Thunderbird profiles, mail stores, calendars, address books, account settings, certificates, passwords, extensions, filters, and local folders",
+      "safety": "Do not create accounts, connect to mail servers, import profiles, install extensions, change defaults, compact folders, or download messages without approval.",
+      "verify": "Launch with Profile Manager or to the existing locked profile choice, report version and profile paths, and make no account or network connection."
+    }
+  },
+  {
+    "index": 190,
+    "name": "WordPress",
+    "slug": "wordpress",
+    "repo": "https://github.com/WordPress/WordPress",
+    "website": "https://wordpress.org",
+    "category": "Web & Self-hosted",
+    "description": "Widely used content-management system for websites, publishing, and extensible web applications.",
+    "accent": "#21759B",
+    "simpleIconSlug": "wordpress",
+    "secrets": ["WORDPRESS_DATABASE_PASSWORD", "WORDPRESS_ADMIN_PASSWORD"],
+    "config": ["deployment_mode", "data_directory", "database_name", "listen_address", "http_port"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Use WordPress's official package or container image with a supported PHP and database stack, pinning versions and separating a disposable local site from production hosting.",
+      "preserve": "`wp-config.php`, the database, uploads, themes, plug-ins, salts, rewrite rules, backups, and container volumes",
+      "safety": "Do not overwrite an existing site, run database upgrades, create admin users, install plug-ins, change DNS, expose ports, or enable mail without approval.",
+      "verify": "For a fresh approved local deployment, reach the loopback installation page and check service health, then stop before entering database or administrator credentials."
+    }
+  },
+  {
+    "index": 191,
+    "name": "Ghost",
+    "slug": "ghost",
+    "repo": "https://github.com/TryGhost/Ghost",
+    "website": "https://ghost.org",
+    "category": "Web & Self-hosted",
+    "description": "Publishing platform for professional blogs, newsletters, memberships, and subscriptions.",
+    "accent": "#15171A",
+    "simpleIconSlug": "ghost",
+    "secrets": ["GHOST_DATABASE_PASSWORD", "GHOST_MAIL_PASSWORD"],
+    "config": ["deployment_mode", "content_directory", "database_name", "listen_address", "http_port"],
+    "platforms": ["Linux"],
+    "setup": {
+      "install": "Use Ghost CLI on a supported Ubuntu host for production or the official container or local-development path for evaluation, keeping content storage and database versions explicit.",
+      "preserve": "Ghost content, themes, images, database, members, mail settings, configuration, certificates, backups, and container volumes",
+      "safety": "Do not migrate a database, create an owner account, install themes, configure mail, change DNS, request TLS, expose ports, or start production services without approval.",
+      "verify": "For a fresh local scope, confirm the loopback setup page and service logs, then stop without onboarding an owner or sending email."
+    }
+  },
+  {
+    "index": 192,
+    "name": "Strapi",
+    "slug": "strapi",
+    "repo": "https://github.com/strapi/strapi",
+    "website": "https://strapi.io",
+    "category": "Web & Self-hosted",
+    "description": "Headless content-management system for building customizable APIs and editorial workflows.",
+    "accent": "#4945FF",
+    "simpleIconSlug": "strapi",
+    "secrets": ["STRAPI_APP_KEYS", "STRAPI_DATABASE_PASSWORD"],
+    "config": ["node_version", "package_manager", "project_directory", "database_name", "listen_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use Strapi's official project creator with a supported Node.js version and approved package manager, choosing a fresh directory and database strategy before installing dependencies.",
+      "preserve": "existing projects, source code, schemas, uploaded media, environment files, application keys, databases, lockfiles, and generated builds",
+      "safety": "Do not scaffold into a nonempty directory, initialize or migrate a database, generate production secrets, create an admin, expose ports, or install marketplace plug-ins without approval.",
+      "verify": "Run project and dependency checks; start only a fresh project on loopback, confirm the admin welcome route, and stop before account creation or content changes."
+    }
+  },
+  {
+    "index": 193,
+    "name": "Directus",
+    "slug": "directus",
+    "repo": "https://github.com/directus/directus",
+    "website": "https://directus.io",
+    "category": "Web & Self-hosted",
+    "description": "Data platform that adds APIs, authentication, automation, and an admin app to SQL databases.",
+    "accent": "#6644FF",
+    "simpleIconSlug": "directus",
+    "secrets": ["DIRECTUS_KEY", "DIRECTUS_SECRET", "DIRECTUS_DATABASE_PASSWORD"],
+    "config": ["deployment_mode", "data_directory", "database_name", "listen_address", "listen_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Prefer the official container image or documented Node.js package in a fresh environment, with explicit database, upload, extension, and snapshot storage.",
+      "preserve": "database schemas and data, uploads, extensions, snapshots, flows, users, cryptographic keys, environment files, and container volumes",
+      "safety": "Do not connect or migrate an existing database, generate or replace production keys, create an administrator, expose ports, or install extensions without approval.",
+      "verify": "For a fresh temporary database, start Directus on loopback, confirm the server health endpoint and setup page, then stop before creating an administrator."
+    }
+  },
+  {
+    "index": 194,
+    "name": "Jellyfin",
+    "slug": "jellyfin",
+    "repo": "https://github.com/jellyfin/jellyfin",
+    "website": "https://jellyfin.org",
+    "category": "Web & Self-hosted",
+    "description": "Free media system for organizing and streaming movies, television, music, and photos.",
+    "accent": "#AA5CC3",
+    "simpleIconSlug": "jellyfin",
+    "secrets": ["JELLYFIN_ADMIN_PASSWORD"],
+    "config": ["deployment_mode", "media_directories", "data_directory", "listen_address", "http_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use Jellyfin's official package repository, installer, or container for the host, with persistent configuration and cache directories and read-only media mounts by default.",
+      "preserve": "Jellyfin databases, metadata, artwork, plug-ins, transcode cache, users, watch history, certificates, configuration, and media files",
+      "safety": "Do not scan media, create users, install plug-ins, enable remote access, expose ports, alter media files, or enable hardware transcoding without approval.",
+      "verify": "Start a fresh loopback instance with no media mounts, confirm the web setup page and server version, then stop without creating an administrator."
+    }
+  },
+  {
+    "index": 195,
+    "name": "Gitea",
+    "slug": "gitea",
+    "repo": "https://github.com/go-gitea/gitea",
+    "website": "https://about.gitea.com",
+    "category": "Web & Self-hosted",
+    "description": "Lightweight self-hosted Git service with repositories, issues, pull requests, and actions.",
+    "accent": "#609926",
+    "simpleIconSlug": "gitea",
+    "secrets": ["GITEA_DATABASE_PASSWORD", "GITEA_SECRET_KEY"],
+    "config": ["deployment_mode", "data_directory", "database_name", "listen_address", "http_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use Gitea's official binary, package, or container with explicit repositories, configuration, and database paths; keep a local evaluation separate from a public service.",
+      "preserve": "Git repositories, LFS objects, attachments, database, `app.ini`, keys, users, actions data, backups, and container volumes",
+      "safety": "Do not migrate data, create an admin, import repositories, enable actions, expose SSH or HTTP ports, generate production secrets, or start a persistent service without approval.",
+      "verify": "Start only a fresh loopback instance with temporary storage, confirm the installation page and version, then stop without creating users or repositories."
+    }
+  },
+  {
+    "index": 196,
+    "name": "Ventoy",
+    "slug": "ventoy",
+    "repo": "https://github.com/ventoy/Ventoy",
+    "website": "https://www.ventoy.net",
+    "category": "System Utilities",
+    "description": "Bootable USB utility that stores multiple ISO, WIM, IMG, VHD, and EFI images on one drive.",
+    "accent": "#1F5AA6",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["target_device", "partition_style", "secure_boot_support", "image_directory"],
+    "platforms": ["Linux", "Windows"],
+    "setup": {
+      "install": "Download the official Ventoy release, verify its checksum where published, and unpack it to a user-owned directory; installing the utility is separate from writing Ventoy to a device.",
+      "preserve": "all removable-drive contents, partition tables, boot records, Ventoy configuration, ISO images, and any previous Ventoy installation",
+      "safety": "Do not select, unmount, repartition, format, update, or write any disk and do not enable Secure Boot options without explicit device-by-device approval and a backup.",
+      "verify": "Confirm the Ventoy tool version and list no raw device details beyond what the user approves; stop before any install or update action."
+    }
+  },
+  {
+    "index": 197,
+    "name": "balenaEtcher",
+    "slug": "balena-etcher",
+    "repo": "https://github.com/balena-io/etcher",
+    "website": "https://etcher.balena.io",
+    "category": "System Utilities",
+    "description": "Cross-platform application for safely flashing operating-system images to removable drives.",
+    "accent": "#FF3C58",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["image_directory", "target_device", "validation_enabled", "auto_unmount"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official signed balenaEtcher package or portable artifact for the current platform and verify the release source before requesting any driver or privileged helper.",
+      "preserve": "all removable-drive contents, partition tables, downloaded images, application settings, previous installations, and mounted filesystems",
+      "safety": "Do not select, unmount, erase, flash, validate, or repartition any device and do not download an image without explicit approval naming the exact source and target.",
+      "verify": "Launch Etcher to its empty selection screen, confirm the application version and signature, and stop without selecting an image or enumerating unnecessary device details."
+    }
+  },
+  {
+    "index": 198,
+    "name": "7-Zip",
+    "slug": "7-zip",
+    "repo": "https://github.com/ip7z/7zip",
+    "website": "https://www.7-zip.org",
+    "category": "System Utilities",
+    "description": "High-compression archive utility supporting 7z, ZIP, TAR, and many extraction formats.",
+    "accent": "#000000",
+    "simpleIconSlug": "7zip",
+    "secrets": [],
+    "config": ["archive_directory", "compression_level", "default_format", "file_associations"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the official stable 7-Zip package or trusted distribution build for the platform and architecture, keeping GUI shell integration and command-line binaries as explicit choices.",
+      "preserve": "archives, extraction directories, context-menu settings, file associations, saved paths, and any previous 7-Zip installation",
+      "safety": "Do not extract untrusted archives, overwrite files, change associations, add shell integration, or test password-protected user archives without approval.",
+      "verify": "Run the 7-Zip version command and create, list, test, and extract a tiny temporary archive containing generated text; remove only those test artifacts."
+    }
+  },
+  {
+    "index": 199,
+    "name": "Flameshot",
+    "slug": "flameshot",
+    "repo": "https://github.com/flameshot-org/flameshot",
+    "website": "https://flameshot.org",
+    "category": "System Utilities",
+    "description": "Customizable cross-platform screenshot tool with annotation and command-line support.",
+    "accent": "#E6528B",
+    "simpleIconSlug": null,
+    "secrets": [],
+    "config": ["screenshot_directory", "keyboard_shortcut", "clipboard_behavior", "autostart"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Use the official stable Flameshot package or trusted distribution build and identify platform-specific screen-recording or accessibility permissions before requesting them.",
+      "preserve": "Flameshot configuration, saved screenshots, upload history, keyboard shortcuts, autostart entries, and existing screenshot-tool bindings",
+      "safety": "Do not grant screen-capture permission, capture the screen, upload images, change global shortcuts, enable autostart, or overwrite screenshots without approval.",
+      "verify": "Run `flameshot --version` and launch its configuration window only; confirm the application starts without taking or uploading a screenshot."
+    }
+  },
+  {
+    "index": 200,
+    "name": "LocalSend",
+    "slug": "localsend",
+    "repo": "https://github.com/localsend/localsend",
+    "website": "https://localsend.org",
+    "category": "System Utilities",
+    "description": "Private local-network file and text sharing app with no account or external server.",
+    "accent": "#28A745",
+    "simpleIconSlug": "localsend",
+    "secrets": [],
+    "config": ["download_directory", "device_name", "discovery_enabled", "listen_port"],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "setup": {
+      "install": "Install the signed official LocalSend desktop package or trusted distribution build for the current platform and architecture.",
+      "preserve": "LocalSend settings, device identity, transfer history, saved files, download destination, firewall rules, and autostart preferences",
+      "safety": "Do not grant network or notification permissions, open firewall ports, discover devices, send or receive files, change the device name, or enable autostart without approval.",
+      "verify": "Launch LocalSend with discovery disabled when possible, confirm the version and download path, and stop before advertising the device or transferring data."
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "index": 123,
+  "name": "scikit-learn",
+  "slug": "scikit-learn",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/scikit-learn/scikit-learn"
+  },
+  "website": "https://scikit-learn.org",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "Python machine-learning toolkit for preprocessing, classical models, pipelines, and evaluation.",
+  "accent": "#F7931E",
+  "simpleIconSlug": "scikitlearn"
+}

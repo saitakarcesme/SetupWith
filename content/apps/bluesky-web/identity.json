@@ -1,0 +1,16 @@
+{
+  "index": 291,
+  "name": "Bluesky",
+  "slug": "bluesky-web",
+  "source": {
+    "type": "website",
+    "url": "https://bsky.app/",
+    "installUrl": "https://bsky.app/"
+  },
+  "website": "https://bsky.social/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "Decentralized social network built on the AT Protocol.",
+  "accent": "#0285FF",
+  "simpleIconSlug": "bluesky"
+}

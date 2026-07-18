@@ -2,9 +2,13 @@
   "index": 40,
   "name": "Redis",
   "slug": "redis",
-  "repo": "https://github.com/redis/redis",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/redis/redis"
+  },
   "website": "https://redis.io",
   "category": "Data & Databases",
+  "vertical": "software",
   "description": "In-memory data store supporting caching, streaming, messaging, and persistent structures.",
   "accent": "#FF4438",
   "simpleIconSlug": "redis"

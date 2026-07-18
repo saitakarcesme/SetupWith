@@ -1,0 +1,15 @@
+{
+  "index": 157,
+  "name": "Zotero",
+  "slug": "zotero",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/zotero/zotero"
+  },
+  "website": "https://www.zotero.org",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Research assistant for collecting, organizing, citing, and syncing bibliographic sources.",
+  "accent": "#CC2936",
+  "simpleIconSlug": "zotero"
+}

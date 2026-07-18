@@ -1,0 +1,15 @@
+{
+  "index": 118,
+  "name": "asdf",
+  "slug": "asdf-version-manager",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/asdf-vm/asdf"
+  },
+  "website": "https://asdf-vm.com",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Single version manager for language runtimes and developer tools through a plug-in ecosystem.",
+  "accent": "#589DF6",
+  "simpleIconSlug": null
+}

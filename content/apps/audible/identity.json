@@ -1,0 +1,16 @@
+{
+  "index": 273,
+  "name": "Audible",
+  "slug": "audible",
+  "source": {
+    "type": "website",
+    "url": "https://www.audible.com/",
+    "installUrl": "https://www.audible.com/"
+  },
+  "website": "https://www.audible.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Amazon's audiobook and spoken-word listening service.",
+  "accent": "#F8991D",
+  "simpleIconSlug": "audible"
+}

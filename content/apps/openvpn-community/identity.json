@@ -1,0 +1,15 @@
+{
+  "index": 176,
+  "name": "OpenVPN Community",
+  "slug": "openvpn-community",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/OpenVPN/openvpn"
+  },
+  "website": "https://openvpn.net/community/",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Open-source VPN protocol and client for secure routed or bridged network connections.",
+  "accent": "#EA7E20",
+  "simpleIconSlug": "openvpn"
+}

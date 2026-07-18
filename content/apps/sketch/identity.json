@@ -1,0 +1,16 @@
+{
+  "index": 239,
+  "name": "Sketch",
+  "slug": "sketch",
+  "source": {
+    "type": "website",
+    "url": "https://www.sketch.com/",
+    "installUrl": "https://www.sketch.com/get/"
+  },
+  "website": "https://www.sketch.com/",
+  "category": "Creative Studio",
+  "vertical": "creative",
+  "description": "Native macOS interface design, prototyping, collaboration, and developer handoff app.",
+  "accent": "#F7B500",
+  "simpleIconSlug": "sketch"
+}

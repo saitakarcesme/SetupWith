@@ -1,0 +1,16 @@
+{
+  "index": 292,
+  "name": "Mastodon",
+  "slug": "mastodon-web",
+  "source": {
+    "type": "website",
+    "url": "https://joinmastodon.org/",
+    "installUrl": "https://joinmastodon.org/"
+  },
+  "website": "https://joinmastodon.org/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "Federated social network using community servers.",
+  "accent": "#6364FF",
+  "simpleIconSlug": "mastodon"
+}

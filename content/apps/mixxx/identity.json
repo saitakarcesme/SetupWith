@@ -1,0 +1,15 @@
+{
+  "index": 174,
+  "name": "Mixxx",
+  "slug": "mixxx",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mixxxdj/mixxx"
+  },
+  "website": "https://mixxx.org",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "DJ software for mixing music with controllers, effects, beat detection, and broadcasting.",
+  "accent": "#F28C28",
+  "simpleIconSlug": null
+}

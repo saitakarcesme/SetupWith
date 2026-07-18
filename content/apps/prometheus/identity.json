@@ -2,9 +2,13 @@
   "index": 63,
   "name": "Prometheus",
   "slug": "prometheus",
-  "repo": "https://github.com/prometheus/prometheus",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/prometheus/prometheus"
+  },
   "website": "https://prometheus.io",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Monitoring system and time-series database featuring multidimensional metrics and flexible queries.",
   "accent": "#E6522C",
   "simpleIconSlug": "prometheus"

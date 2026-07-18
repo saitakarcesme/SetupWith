@@ -64,16 +64,21 @@ export function CopyPrompt({ app }: CopyPromptProps) {
       <div className={`prompt-preview ${expanded ? "expanded" : ""}`}>
         <div className="prompt-preview-bar">
           <span>SETUP PROMPT / {app.slug}</span>
-          <button type="button" onClick={() => setExpanded((value) => !value)}>
+          <button
+            aria-controls={`setup-prompt-${app.slug}`}
+            aria-expanded={expanded}
+            type="button"
+            onClick={() => setExpanded((value) => !value)}
+          >
             {expanded ? "Collapse" : "Review full prompt"}
           </button>
         </div>
-        <pre>{app.prompt}</pre>
+        <pre id={`setup-prompt-${app.slug}`}>{app.prompt}</pre>
       </div>
 
       <button className="copy-prompt-button" type="button" onClick={copyPrompt}>
         {copyState === "copied" ? <Check size={18} aria-hidden="true" /> : <Clipboard size={18} aria-hidden="true" />}
-        <span>
+        <span aria-live="polite">
           {copyState === "copied"
             ? "Copied — ready for Codex"
             : copyState === "error"

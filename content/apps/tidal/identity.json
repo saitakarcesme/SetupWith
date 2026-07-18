@@ -1,0 +1,16 @@
+{
+  "index": 221,
+  "name": "TIDAL",
+  "slug": "tidal",
+  "source": {
+    "type": "website",
+    "url": "https://tidal.com/",
+    "installUrl": "https://tidal.com/download"
+  },
+  "website": "https://tidal.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "High-fidelity music and video streaming with native desktop clients.",
+  "accent": "#000000",
+  "simpleIconSlug": "tidal"
+}

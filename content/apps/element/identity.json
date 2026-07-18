@@ -2,9 +2,13 @@
   "index": 93,
   "name": "Element",
   "slug": "element",
-  "repo": "https://github.com/element-hq/element-web",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/element-hq/element-web"
+  },
   "website": "https://element.io",
   "category": "Communication",
+  "vertical": "social",
   "description": "Matrix-based secure messaging client supporting rooms, encryption, calls, and decentralized communication.",
   "accent": "#0DBD8B",
   "simpleIconSlug": "element"

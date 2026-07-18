@@ -1,0 +1,15 @@
+{
+  "index": 199,
+  "name": "Flameshot",
+  "slug": "flameshot",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/flameshot-org/flameshot"
+  },
+  "website": "https://flameshot.org",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Customizable cross-platform screenshot tool with annotation and command-line support.",
+  "accent": "#E6528B",
+  "simpleIconSlug": null
+}

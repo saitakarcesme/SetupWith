@@ -2,9 +2,13 @@
   "index": 85,
   "name": "Trivy",
   "slug": "trivy",
-  "repo": "https://github.com/aquasecurity/trivy",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/aquasecurity/trivy"
+  },
   "website": "https://trivy.dev",
   "category": "Security & Privacy",
+  "vertical": "software",
   "description": "Security scanner detecting vulnerabilities, misconfigurations, secrets, and licenses across artifacts.",
   "accent": "#1904DA",
   "simpleIconSlug": "trivy"

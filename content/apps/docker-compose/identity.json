@@ -1,0 +1,15 @@
+{
+  "index": 141,
+  "name": "Docker Compose",
+  "slug": "docker-compose",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/docker/compose"
+  },
+  "website": "https://docs.docker.com/compose/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Declarative tool for defining and running multi-container applications with Docker.",
+  "accent": "#2496ED",
+  "simpleIconSlug": "docker"
+}

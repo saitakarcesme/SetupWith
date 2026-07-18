@@ -1,0 +1,15 @@
+{
+  "index": 148,
+  "name": "Jenkins",
+  "slug": "jenkins",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/jenkinsci/jenkins"
+  },
+  "website": "https://www.jenkins.io",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Extensible automation server for continuous integration, delivery, and operational jobs.",
+  "accent": "#D24939",
+  "simpleIconSlug": "jenkins"
+}

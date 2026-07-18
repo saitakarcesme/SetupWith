@@ -1,0 +1,15 @@
+{
+  "index": 150,
+  "name": "OpenTelemetry Collector",
+  "slug": "opentelemetry-collector",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector"
+  },
+  "website": "https://opentelemetry.io/docs/collector/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Vendor-neutral service for receiving, processing, and exporting telemetry signals.",
+  "accent": "#F5A800",
+  "simpleIconSlug": "opentelemetry"
+}

@@ -1,0 +1,15 @@
+{
+  "index": 113,
+  "name": "PowerShell",
+  "slug": "powershell",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/PowerShell/PowerShell"
+  },
+  "website": "https://learn.microsoft.com/powershell/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Cross-platform automation shell and scripting language built around structured objects.",
+  "accent": "#5391FE",
+  "simpleIconSlug": null
+}

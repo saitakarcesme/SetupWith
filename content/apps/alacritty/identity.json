@@ -1,0 +1,15 @@
+{
+  "index": 109,
+  "name": "Alacritty",
+  "slug": "alacritty",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/alacritty/alacritty"
+  },
+  "website": "https://alacritty.org",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Cross-platform OpenGL terminal emulator designed for simplicity and performance.",
+  "accent": "#F46D01",
+  "simpleIconSlug": "alacritty"
+}

@@ -2,9 +2,13 @@
   "index": 31,
   "name": "MLflow",
   "slug": "mlflow",
-  "repo": "https://github.com/mlflow/mlflow",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mlflow/mlflow"
+  },
   "website": "https://mlflow.org",
   "category": "AI & ML",
+  "vertical": "ai",
   "description": "Platform for tracking experiments, packaging models, managing registries, and deploying inference.",
   "accent": "#0194E2",
   "simpleIconSlug": "mlflow"

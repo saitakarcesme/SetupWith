@@ -2,9 +2,13 @@
   "index": 61,
   "name": "Pulumi",
   "slug": "pulumi",
-  "repo": "https://github.com/pulumi/pulumi",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/pulumi/pulumi"
+  },
   "website": "https://www.pulumi.com",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Infrastructure-as-code platform using general-purpose programming languages and declarative resource providers.",
   "accent": "#8A3391",
   "simpleIconSlug": "pulumi"

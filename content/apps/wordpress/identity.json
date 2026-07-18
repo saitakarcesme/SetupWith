@@ -1,0 +1,15 @@
+{
+  "index": 190,
+  "name": "WordPress",
+  "slug": "wordpress",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/WordPress/WordPress"
+  },
+  "website": "https://wordpress.org",
+  "category": "Web & Self-hosted",
+  "vertical": "software",
+  "description": "Widely used content-management system for websites, publishing, and extensible web applications.",
+  "accent": "#21759B",
+  "simpleIconSlug": "wordpress"
+}

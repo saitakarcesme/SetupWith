@@ -2,9 +2,13 @@
   "index": 67,
   "name": "AppFlowy",
   "slug": "appflowy",
-  "repo": "https://github.com/AppFlowy-IO/AppFlowy",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/AppFlowy-IO/AppFlowy"
+  },
   "website": "https://appflowy.com",
   "category": "Productivity",
+  "vertical": "work",
   "description": "Open-source workspace for documents, databases, tasks, and privately managed collaborative knowledge.",
   "accent": "#00BCF0",
   "simpleIconSlug": "appflowy"

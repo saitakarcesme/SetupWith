@@ -1,0 +1,16 @@
+{
+  "index": 267,
+  "name": "PUBG: BATTLEGROUNDS",
+  "slug": "pubg-battlegrounds",
+  "source": {
+    "type": "website",
+    "url": "https://pubg.com/en/main",
+    "installUrl": "https://pubg.com/en/main"
+  },
+  "website": "https://pubg.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "KRAFTON's large-scale competitive battle royale game.",
+  "accent": "#F2A900",
+  "simpleIconSlug": "pubg"
+}

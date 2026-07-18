@@ -2,9 +2,13 @@
   "index": 62,
   "name": "Argo CD",
   "slug": "argo-cd",
-  "repo": "https://github.com/argoproj/argo-cd",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/argoproj/argo-cd"
+  },
   "website": "https://argo-cd.readthedocs.io",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Declarative GitOps continuous delivery controller designed specifically for Kubernetes applications.",
   "accent": "#EF7B4D",
   "simpleIconSlug": "argo"

@@ -2,9 +2,13 @@
   "index": 54,
   "name": "k3s",
   "slug": "k3s",
-  "repo": "https://github.com/k3s-io/k3s",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/k3s-io/k3s"
+  },
   "website": "https://k3s.io",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Lightweight certified Kubernetes distribution optimized for edge, development, and small clusters.",
   "accent": "#FFC61C",
   "simpleIconSlug": "k3s"

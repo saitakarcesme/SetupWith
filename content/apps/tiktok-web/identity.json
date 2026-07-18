@@ -1,0 +1,16 @@
+{
+  "index": 249,
+  "name": "TikTok",
+  "slug": "tiktok-web",
+  "source": {
+    "type": "website",
+    "url": "https://www.tiktok.com/",
+    "installUrl": "https://www.tiktok.com/"
+  },
+  "website": "https://www.tiktok.com/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "TikTok's official web experience for video discovery, messaging, and creator uploads.",
+  "accent": "#FF0050",
+  "simpleIconSlug": "tiktok"
+}

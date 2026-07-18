@@ -1,0 +1,15 @@
+{
+  "index": 169,
+  "name": "HandBrake",
+  "slug": "handbrake",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/HandBrake/HandBrake"
+  },
+  "website": "https://handbrake.fr",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Video transcoder for converting media into modern codecs and container formats.",
+  "accent": "#5DADE2",
+  "simpleIconSlug": null
+}

@@ -2,9 +2,13 @@
   "index": 71,
   "name": "Vikunja",
   "slug": "vikunja",
-  "repo": "https://github.com/go-vikunja/vikunja",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/go-vikunja/vikunja"
+  },
   "website": "https://vikunja.io",
   "category": "Productivity",
+  "vertical": "work",
   "description": "Self-hosted task management application with projects, views, sharing, and integrations.",
   "accent": "#196AFF",
   "simpleIconSlug": "vikunja"

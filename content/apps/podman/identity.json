@@ -2,9 +2,13 @@
   "index": 52,
   "name": "Podman",
   "slug": "podman",
-  "repo": "https://github.com/containers/podman",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/containers/podman"
+  },
   "website": "https://podman.io",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Daemonless container engine supporting rootless containers, pods, images, and Docker compatibility.",
   "accent": "#892CA0",
   "simpleIconSlug": "podman"

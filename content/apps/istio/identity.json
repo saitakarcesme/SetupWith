@@ -1,0 +1,15 @@
+{
+  "index": 153,
+  "name": "Istio",
+  "slug": "istio",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/istio/istio"
+  },
+  "website": "https://istio.io",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Service mesh for securing, connecting, and observing traffic across distributed applications.",
+  "accent": "#466BB0",
+  "simpleIconSlug": "istio"
+}

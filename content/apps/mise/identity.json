@@ -2,9 +2,13 @@
   "index": 13,
   "name": "mise",
   "slug": "mise",
-  "repo": "https://github.com/jdx/mise",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/jdx/mise"
+  },
   "website": "https://mise.jdx.dev",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "Polyglot runtime manager and task runner compatible with common version files.",
   "accent": "#70A5FD",
   "simpleIconSlug": null

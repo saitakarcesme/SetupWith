@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, ArrowUpRight, Check, GitBranch, KeyRound, RotateCcw, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, Check, ExternalLink, KeyRound, RotateCcw, ShieldCheck } from "lucide-react";
 import { AppCard } from "@/components/app-card";
 import { AppLogo } from "@/components/app-logo";
 import { CopyPrompt } from "@/components/copy-prompt";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { apps, getApp, getRelatedApps, humanizeKey, secretAlias } from "@/data/apps";
+import { apps, getApp, getRelatedApps, getSourceLabel, humanizeKey, secretAlias } from "@/data/apps";
 
 export const dynamicParams = false;
 
@@ -36,9 +36,11 @@ export default async function AppDetailPage({ params }: AppPageProps) {
   const app = getApp(slug);
   if (!app) notFound();
   const related = getRelatedApps(app);
+  const interactiveHandoff = ["gaming", "entertainment", "work", "creative", "social", "browsers", "hardware"].includes(app.vertical);
+  const systemApproval = app.mayInstallDrivers || app.mayInstallKernelComponents || app.mayRequireRestart;
 
   return (
-    <>
+    <div className="catalog-experience-shell" data-experience={app.vertical}>
       <SiteHeader />
       <main className="app-detail-page" style={{ "--app-accent": app.accent } as React.CSSProperties}>
         <section className={`app-hero pattern-${app.pattern}`}>
@@ -57,7 +59,7 @@ export default async function AppDetailPage({ params }: AppPageProps) {
                 <p>{app.description}</p>
               </div>
             </div>
-            <div className="app-hero-index">{String(app.index).padStart(3, "0")}<span>/100</span></div>
+            <div className="app-hero-index">{String(app.index).padStart(3, "0")}<span>/{apps.length}</span></div>
           </div>
         </section>
 
@@ -67,7 +69,7 @@ export default async function AppDetailPage({ params }: AppPageProps) {
             <div><span>Complexity</span><strong>{app.complexity}</strong></div>
             <div><span>Platforms</span><strong>{app.platforms.join(" / ")}</strong></div>
             <div><span>Secrets</span><strong>{app.secrets.length || "None"}</strong></div>
-            <a href={app.repo} target="_blank" rel="noreferrer"><GitBranch size={15} aria-hidden="true" /> Official repository <ArrowUpRight size={13} aria-hidden="true" /></a>
+            <a href={app.source.installUrl ?? app.source.url} target="_blank" rel="noreferrer"><ExternalLink size={15} aria-hidden="true" /> {getSourceLabel(app)} <ArrowUpRight size={13} aria-hidden="true" /></a>
           </div>
         </section>
 
@@ -113,6 +115,9 @@ export default async function AppDetailPage({ params }: AppPageProps) {
                   <li><span>Existing files</span><strong>Back up before overwrite</strong></li>
                   <li><span>Services & ports</span><strong>Explain and request approval</strong></li>
                   <li><span>Credentials</span><strong>Never print, echo, or log</strong></li>
+                  {interactiveHandoff ? <li><span>Account & payment</span><strong>Stop before sign-in, MFA, CAPTCHA, purchases, or subscriptions</strong></li> : null}
+                  {app.vertical === "gaming" ? <li><span>Game downloads</span><strong>Report size, destination, free space, and bandwidth first</strong></li> : null}
+                  {systemApproval ? <li><span>System components</span><strong>Separate approval for drivers, anti-cheat, services, firewall, and restart</strong></li> : null}
                 </ul>
               </div>
             </section>
@@ -141,6 +146,6 @@ export default async function AppDetailPage({ params }: AppPageProps) {
         </section>
       </main>
       <SiteFooter />
-    </>
+    </div>
   );
 }

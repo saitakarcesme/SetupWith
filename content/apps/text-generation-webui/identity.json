@@ -1,0 +1,15 @@
+{
+  "index": 126,
+  "name": "Text generation web UI",
+  "slug": "text-generation-webui",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/oobabooga/text-generation-webui"
+  },
+  "website": "https://github.com/oobabooga/text-generation-webui",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "Local web interface for running and experimenting with a broad range of language models.",
+  "accent": "#7C3AED",
+  "simpleIconSlug": null
+}

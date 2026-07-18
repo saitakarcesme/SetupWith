@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const principles = [
   { icon: EyeOff, title: "No secret values in prompts", body: "Generated prompts carry opaque references such as secret://github/token, never the underlying credential." },
   { icon: LockKeyhole, title: "Encrypted at rest", body: "The local vault uses PBKDF2 and AES-256-GCM. Your passphrase is not stored and cannot be recovered by SetupWith." },
-  { icon: KeyRound, title: "Consent at the moment of use", body: "Codex is instructed to ask before credentials, elevated access, browser sign-in, services, ports, or destructive changes." },
+  { icon: KeyRound, title: "Consent at the moment of use", body: "Codex stops before credentials, sign-in, MFA, CAPTCHA, purchases, subscriptions, elevated access, services, drivers, anti-cheat, firewall changes, or restarts." },
   { icon: ShieldCheck, title: "Verification and rollback", body: "Every setup path ends with product-specific checks, a changed-file report, and explicit rollback guidance." },
 ];
 

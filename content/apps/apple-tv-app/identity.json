@@ -1,0 +1,16 @@
+{
+  "index": 220,
+  "name": "Apple TV",
+  "slug": "apple-tv-app",
+  "source": {
+    "type": "website",
+    "url": "https://tv.apple.com/",
+    "installUrl": "https://support.apple.com/guide/tvapp-windows/welcome/windows"
+  },
+  "website": "https://tv.apple.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Apple's movie, TV, MLS, and Apple TV+ playback client for desktop and web.",
+  "accent": "#000000",
+  "simpleIconSlug": "appletv"
+}

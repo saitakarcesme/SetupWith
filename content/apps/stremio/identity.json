@@ -1,0 +1,16 @@
+{
+  "index": 272,
+  "name": "Stremio",
+  "slug": "stremio",
+  "source": {
+    "type": "website",
+    "url": "https://www.stremio.com/",
+    "installUrl": "https://www.stremio.com/"
+  },
+  "website": "https://www.stremio.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Cross-platform media center for legal content sources.",
+  "accent": "#7B5BF2",
+  "simpleIconSlug": "stremio"
+}

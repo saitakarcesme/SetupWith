@@ -1,0 +1,15 @@
+{
+  "index": 124,
+  "name": "Keras",
+  "slug": "keras",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/keras-team/keras"
+  },
+  "website": "https://keras.io",
+  "category": "AI & ML",
+  "vertical": "ai",
+  "description": "High-level deep-learning API supporting TensorFlow, JAX, and PyTorch backends.",
+  "accent": "#D00000",
+  "simpleIconSlug": "keras"
+}

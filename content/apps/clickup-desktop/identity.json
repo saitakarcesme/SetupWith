@@ -1,0 +1,16 @@
+{
+  "index": 280,
+  "name": "ClickUp",
+  "slug": "clickup-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://clickup.com/download",
+    "installUrl": "https://clickup.com/download"
+  },
+  "website": "https://clickup.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Tasks, documents, whiteboards, and team collaboration.",
+  "accent": "#7B68EE",
+  "simpleIconSlug": "clickup"
+}

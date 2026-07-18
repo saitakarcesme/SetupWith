@@ -2,9 +2,13 @@
   "index": 32,
   "name": "DVC",
   "slug": "dvc",
-  "repo": "https://github.com/iterative/dvc",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/iterative/dvc"
+  },
   "website": "https://dvc.org",
   "category": "AI & ML",
+  "vertical": "ai",
   "description": "Version control and pipeline management for datasets, models, and machine-learning experiments.",
   "accent": "#13ADC7",
   "simpleIconSlug": "dvc"

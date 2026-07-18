@@ -1,0 +1,15 @@
+{
+  "index": 164,
+  "name": "BookStack",
+  "slug": "bookstack",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/BookStackApp/BookStack"
+  },
+  "website": "https://www.bookstackapp.com",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Self-hosted documentation platform organized into shelves, books, chapters, and pages.",
+  "accent": "#0288D1",
+  "simpleIconSlug": "bookstack"
+}

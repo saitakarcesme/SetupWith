@@ -1,0 +1,16 @@
+{
+  "index": 274,
+  "name": "Pocket Casts",
+  "slug": "pocket-casts",
+  "source": {
+    "type": "website",
+    "url": "https://pocketcasts.com/",
+    "installUrl": "https://pocketcasts.com/"
+  },
+  "website": "https://pocketcasts.com/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "Podcast player with cross-device sync and a full web app.",
+  "accent": "#F43E37",
+  "simpleIconSlug": "pocketcasts"
+}

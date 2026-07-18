@@ -1,0 +1,16 @@
+{
+  "index": 247,
+  "name": "Messenger",
+  "slug": "messenger-web",
+  "source": {
+    "type": "website",
+    "url": "https://www.messenger.com/",
+    "installUrl": "https://www.messenger.com/"
+  },
+  "website": "https://www.messenger.com/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "Meta Messenger's official web client for messages, voice calls, and video calls.",
+  "accent": "#00B2FF",
+  "simpleIconSlug": "messenger"
+}

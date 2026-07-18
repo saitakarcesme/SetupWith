@@ -1,0 +1,15 @@
+{
+  "index": 168,
+  "name": "Shotcut",
+  "slug": "shotcut",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mltframework/shotcut"
+  },
+  "website": "https://shotcut.org",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Cross-platform non-linear video editor built on FFmpeg and the MLT multimedia framework.",
+  "accent": "#00B4D8",
+  "simpleIconSlug": null
+}

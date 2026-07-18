@@ -1,0 +1,16 @@
+{
+  "index": 208,
+  "name": "Xbox app",
+  "slug": "xbox-app",
+  "source": {
+    "type": "microsoft-store",
+    "url": "https://apps.microsoft.com/detail/9MV0B5HZVK9Z",
+    "installUrl": "https://apps.microsoft.com/detail/9MV0B5HZVK9Z"
+  },
+  "website": "https://www.xbox.com/apps/xbox-app-on-pc",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Microsoft's Windows client for PC Game Pass, Xbox social features, and game libraries.",
+  "accent": "#107C10",
+  "simpleIconSlug": null
+}

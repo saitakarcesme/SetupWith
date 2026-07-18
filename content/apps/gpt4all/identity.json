@@ -2,9 +2,13 @@
   "index": 28,
   "name": "GPT4All",
   "slug": "gpt4all",
-  "repo": "https://github.com/nomic-ai/gpt4all",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/nomic-ai/gpt4all"
+  },
   "website": "https://www.nomic.ai/gpt4all",
   "category": "AI & ML",
+  "vertical": "ai",
   "description": "Desktop and developer tooling for privately running language models on consumer hardware.",
   "accent": "#F15A24",
   "simpleIconSlug": null

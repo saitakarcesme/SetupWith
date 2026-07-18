@@ -2,9 +2,13 @@
   "index": 10,
   "name": "Starship",
   "slug": "starship",
-  "repo": "https://github.com/starship/starship",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/starship/starship"
+  },
   "website": "https://starship.rs",
   "category": "Developer Tools",
+  "vertical": "software",
   "description": "Fast customizable cross-shell prompt displaying contextual development and system information.",
   "accent": "#DD0B78",
   "simpleIconSlug": "starship"

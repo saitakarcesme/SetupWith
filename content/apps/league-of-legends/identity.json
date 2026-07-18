@@ -1,0 +1,16 @@
+{
+  "index": 262,
+  "name": "League of Legends",
+  "slug": "league-of-legends",
+  "source": {
+    "type": "website",
+    "url": "https://www.leagueoflegends.com/en-us/download/",
+    "installUrl": "https://www.leagueoflegends.com/en-us/download/"
+  },
+  "website": "https://www.leagueoflegends.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Riot's competitive multiplayer online battle arena game.",
+  "accent": "#C89B3C",
+  "simpleIconSlug": "leagueoflegends"
+}

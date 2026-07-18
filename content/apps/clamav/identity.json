@@ -1,0 +1,15 @@
+{
+  "index": 180,
+  "name": "ClamAV",
+  "slug": "clamav",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/Cisco-Talos/clamav"
+  },
+  "website": "https://www.clamav.net",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Open-source antivirus engine and toolkit for malware scanning and signature updates.",
+  "accent": "#009639",
+  "simpleIconSlug": null
+}

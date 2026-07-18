@@ -1,0 +1,16 @@
+{
+  "index": 257,
+  "name": "Razer Synapse",
+  "slug": "razer-synapse",
+  "source": {
+    "type": "website",
+    "url": "https://www.razer.com/synapse-4",
+    "installUrl": "https://www.razer.com/synapse-4"
+  },
+  "website": "https://www.razer.com/synapse-4",
+  "category": "Devices & Hardware",
+  "vertical": "hardware",
+  "description": "Razer's Windows configuration suite for supported gaming devices, profiles, macros, and lighting.",
+  "accent": "#00FF00",
+  "simpleIconSlug": "razer"
+}

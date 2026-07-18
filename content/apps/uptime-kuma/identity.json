@@ -2,9 +2,13 @@
   "index": 98,
   "name": "Uptime Kuma",
   "slug": "uptime-kuma",
-  "repo": "https://github.com/louislam/uptime-kuma",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/louislam/uptime-kuma"
+  },
   "website": "https://uptime.kuma.pet",
   "category": "Web & Self-hosted",
+  "vertical": "software",
   "description": "Self-hosted monitoring dashboard supporting HTTP, TCP, DNS, containers, and notifications.",
   "accent": "#5CDD8B",
   "simpleIconSlug": "uptimekuma"

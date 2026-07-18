@@ -1,0 +1,15 @@
+{
+  "index": 103,
+  "name": "Eclipse IDE",
+  "slug": "eclipse-ide",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/eclipse-platform/eclipse.platform"
+  },
+  "website": "https://www.eclipse.org/ide/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Extensible IDE platform used for Java, C/C++, web, and enterprise development workflows.",
+  "accent": "#2C2255",
+  "simpleIconSlug": "eclipseide"
+}

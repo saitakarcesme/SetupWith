@@ -1,0 +1,16 @@
+{
+  "index": 253,
+  "name": "Brave Browser",
+  "slug": "brave-browser",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/brave/brave-browser",
+    "installUrl": "https://brave.com/download/"
+  },
+  "website": "https://brave.com/",
+  "category": "Browsers & Internet",
+  "vertical": "browsers",
+  "description": "Privacy-focused Chromium browser with built-in tracker blocking and optional rewards.",
+  "accent": "#FB542B",
+  "simpleIconSlug": "brave"
+}

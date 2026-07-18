@@ -1,0 +1,15 @@
+{
+  "index": 189,
+  "name": "Thunderbird",
+  "slug": "thunderbird",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/thunderbird/thunderbird-desktop"
+  },
+  "website": "https://www.thunderbird.net",
+  "category": "Communication",
+  "vertical": "social",
+  "description": "Open-source email, calendar, contacts, and feed client from the Thunderbird project.",
+  "accent": "#0A84FF",
+  "simpleIconSlug": "thunderbird"
+}

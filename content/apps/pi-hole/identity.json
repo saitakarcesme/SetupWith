@@ -1,0 +1,15 @@
+{
+  "index": 177,
+  "name": "Pi-hole",
+  "slug": "pi-hole",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/pi-hole/pi-hole"
+  },
+  "website": "https://pi-hole.net",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Network-wide DNS sinkhole that blocks advertising and tracking domains for local devices.",
+  "accent": "#96060C",
+  "simpleIconSlug": "pihole"
+}

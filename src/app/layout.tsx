@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     template: "%s — SetupWith",
   },
   description:
-    "Purpose-built Codex setup prompts for 100 popular apps, repositories, and developer tools.",
+    "Purpose-built Codex setup prompts for hundreds of popular apps, AI tools, games, entertainment services, workspaces, browsers, and devices.",
   applicationName: "SetupWith",
-  keywords: ["Codex", "software setup", "open source", "developer tools", "automation"],
+  keywords: ["Codex", "app setup", "game launcher", "entertainment apps", "AI tools", "developer tools", "automation"],
   openGraph: {
     type: "website",
     siteName: "SetupWith",
     title: "SetupWith — Set up anything with Codex",
-    description: "100 tools. 100 tailored setup paths. One reusable context profile.",
+    description: "Hundreds of official app sources. Guided bundles. One reusable context profile.",
   },
   twitter: { card: "summary_large_image" },
 };

@@ -1,0 +1,15 @@
+{
+  "index": 170,
+  "name": "darktable",
+  "slug": "darktable",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/darktable-org/darktable"
+  },
+  "website": "https://www.darktable.org",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Photography workflow application and RAW developer with non-destructive editing.",
+  "accent": "#F6B436",
+  "simpleIconSlug": null
+}

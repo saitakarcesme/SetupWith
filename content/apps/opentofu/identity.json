@@ -2,9 +2,13 @@
   "index": 59,
   "name": "OpenTofu",
   "slug": "opentofu",
-  "repo": "https://github.com/opentofu/opentofu",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/opentofu/opentofu"
+  },
   "website": "https://opentofu.org",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Community-driven infrastructure-as-code tool compatible with established Terraform configurations and providers.",
   "accent": "#FFDA18",
   "simpleIconSlug": "opentofu"

@@ -1,0 +1,36 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows",
+    "Web"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "microphone",
+    "speaker",
+    "camera",
+    "overlay",
+    "launch_on_startup"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

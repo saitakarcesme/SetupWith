@@ -1,0 +1,16 @@
+{
+  "index": 250,
+  "name": "Reddit",
+  "slug": "reddit-web",
+  "source": {
+    "type": "website",
+    "url": "https://www.reddit.com/",
+    "installUrl": "https://www.reddit.com/"
+  },
+  "website": "https://www.reddit.com/",
+  "category": "Social & Communication",
+  "vertical": "social",
+  "description": "Reddit's official web platform for communities, discussions, chat, and media.",
+  "accent": "#FF4500",
+  "simpleIconSlug": "reddit"
+}

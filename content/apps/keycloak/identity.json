@@ -1,0 +1,15 @@
+{
+  "index": 182,
+  "name": "Keycloak",
+  "slug": "keycloak",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/keycloak/keycloak"
+  },
+  "website": "https://www.keycloak.org",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Identity and access management server with SSO, federation, and standards-based protocols.",
+  "accent": "#4D4D4D",
+  "simpleIconSlug": "keycloak"
+}

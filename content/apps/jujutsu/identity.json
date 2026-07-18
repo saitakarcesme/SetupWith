@@ -1,0 +1,15 @@
+{
+  "index": 116,
+  "name": "Jujutsu",
+  "slug": "jujutsu",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/jj-vcs/jj"
+  },
+  "website": "https://jj-vcs.github.io/jj/latest/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Git-compatible version control system with first-class conflicts, operation logs, and automatic rebasing.",
+  "accent": "#5A45FF",
+  "simpleIconSlug": null
+}

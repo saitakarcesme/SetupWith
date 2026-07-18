@@ -2,9 +2,13 @@
   "index": 57,
   "name": "Helm",
   "slug": "helm",
-  "repo": "https://github.com/helm/helm",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/helm/helm"
+  },
   "website": "https://helm.sh",
   "category": "DevOps & Cloud",
+  "vertical": "software",
   "description": "Kubernetes package manager for installing, upgrading, templating, and sharing application charts.",
   "accent": "#0F1689",
   "simpleIconSlug": "helm"

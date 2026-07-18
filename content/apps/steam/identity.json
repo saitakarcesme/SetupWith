@@ -1,0 +1,16 @@
+{
+  "index": 201,
+  "name": "Steam",
+  "slug": "steam",
+  "source": {
+    "type": "website",
+    "url": "https://store.steampowered.com/about/",
+    "installUrl": "https://store.steampowered.com/about/"
+  },
+  "website": "https://store.steampowered.com/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Valve's cross-platform game store, library, community, and update client.",
+  "accent": "#1B2838",
+  "simpleIconSlug": "steam"
+}

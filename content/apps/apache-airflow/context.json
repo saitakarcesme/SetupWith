@@ -1,0 +1,43 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "python_version",
+    "airflow_home",
+    "executor",
+    "listen_address",
+    "listen_port"
+  ],
+  "secrets": [
+    {
+      "key": "AIRFLOW_FERNET_KEY",
+      "reference": "secret://airflow/fernet-key"
+    },
+    {
+      "key": "AIRFLOW_DATABASE_URL",
+      "reference": "secret://airflow/database-url"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "index": 233,
+  "name": "Asana",
+  "slug": "asana-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://asana.com/",
+    "installUrl": "https://asana.com/download"
+  },
+  "website": "https://asana.com/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Desktop and web workspace for tasks, projects, goals, and team coordination.",
+  "accent": "#F06A6A",
+  "simpleIconSlug": "asana"
+}

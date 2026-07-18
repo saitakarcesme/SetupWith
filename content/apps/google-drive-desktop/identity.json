@@ -1,0 +1,16 @@
+{
+  "index": 229,
+  "name": "Google Drive for desktop",
+  "slug": "google-drive-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://workspace.google.com/products/drive/",
+    "installUrl": "https://www.google.com/drive/download/"
+  },
+  "website": "https://workspace.google.com/products/drive/",
+  "category": "Work & Cloud",
+  "vertical": "work",
+  "description": "Google's desktop sync and streaming client for Drive files and shared drives.",
+  "accent": "#4285F4",
+  "simpleIconSlug": "googledrive"
+}

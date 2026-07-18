@@ -1,0 +1,16 @@
+{
+  "index": 300,
+  "name": "NZXT CAM",
+  "slug": "nzxt-cam",
+  "source": {
+    "type": "website",
+    "url": "https://nzxt.com/software/cam",
+    "installUrl": "https://nzxt.com/software/cam"
+  },
+  "website": "https://nzxt.com/software/cam",
+  "category": "Devices & Hardware",
+  "vertical": "hardware",
+  "description": "Monitoring and control for supported NZXT hardware.",
+  "accent": "#5100FA",
+  "simpleIconSlug": "nzxt"
+}
