@@ -9,6 +9,7 @@ import { HeaderAccountActions } from "@/components/header-account-actions";
 const primaryLinks = [
   { href: "/apps", label: "Apps" },
   { href: "/packages/new", label: "Packages" },
+  { href: "/open-source", label: "Open source" },
   { href: "/how-it-works", label: "How it works" },
   { href: "/security", label: "Security" },
 ] as const;

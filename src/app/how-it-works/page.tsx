@@ -27,7 +27,8 @@ export default function HowItWorksPage() {
           <TypingHeadline>From intent to installed.</TypingHeadline>
           <p>
             SetupWith does not execute a mystery script. It gives Codex a product-specific brief, clear safety
-            boundaries, and an outcome to verify.
+            boundaries, and an outcome to verify. You can use the hosted catalog or install SetupWith locally
+            when you want the profile and prompt-building workflow on your own machine.
           </p>
         </section>
         <section className="shell workflow-list">

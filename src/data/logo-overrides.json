@@ -48,5 +48,6 @@
   "balena-etcher": "https://raw.githubusercontent.com/balena-io/etcher/HEAD/assets/iconset/512x512.png",
   "flameshot": "https://raw.githubusercontent.com/flameshot-org/flameshot/HEAD/data/img/app/flameshot.svg",
   "stable-diffusion-webui": "https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/HEAD/screenshot.png",
-  "lazygit": "https://user-images.githubusercontent.com/8456633/174470852-339b5011-5800-4bb9-a628-ff230aa8cd4e.png"
+  "lazygit": "https://user-images.githubusercontent.com/8456633/174470852-339b5011-5800-4bb9-a628-ff230aa8cd4e.png",
+  "setupwith": "https://raw.githubusercontent.com/saitakarcesme/SetupWith/main/src/app/icon.svg"
 }

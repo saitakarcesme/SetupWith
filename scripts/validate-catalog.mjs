@@ -15,7 +15,9 @@ const projectRoot = resolve(import.meta.dirname, "..");
 const baseCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/chatgpt-catalog.json"), "utf8"));
 const additions = JSON.parse(await readFile(resolve(projectRoot, "src/data/catalog-additions.json"), "utf8"));
 const consumerCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/consumer-catalog.json"), "utf8"));
-const catalog = [...baseCatalog, ...additions, ...consumerCatalog];
+const firstPartyCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/first-party-catalog.json"), "utf8"));
+const openSourceCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/open-source-catalog.json"), "utf8"));
+const catalog = [...baseCatalog, ...additions, ...consumerCatalog, ...firstPartyCatalog];
 const prompts = JSON.parse(await readFile(resolve(projectRoot, "src/data/app-prompts.json"), "utf8"));
 const bundles = JSON.parse(await readFile(resolve(projectRoot, "src/data/setup-bundles.json"), "utf8"));
 const logoManifest = JSON.parse(await readFile(resolve(projectRoot, "public/app-logos/manifest.json"), "utf8"));
@@ -41,7 +43,7 @@ const categories = new Set([
 ]);
 const experiences = new Set(["software", "ai", "gaming", "entertainment", "work", "creative", "social", "browsers", "hardware"]);
 const sourceTypes = new Set(["github", "website", "app-store", "microsoft-store"]);
-const deliveryMethods = new Set(["native", "store", "package-manager", "pwa"]);
+const deliveryMethods = new Set(["native", "store", "package-manager", "pwa", "source"]);
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
@@ -70,7 +72,8 @@ assert(Array.isArray(catalog), "Catalog must be an array");
 assert(baseCatalog.length === 100, `Base catalog must contain 100 entries; received ${baseCatalog.length}`);
 assert(additions.length === 100, `Expansion must contain 100 entries; received ${additions.length}`);
 assert(consumerCatalog.length === 100, `Consumer expansion must contain 100 entries; received ${consumerCatalog.length}`);
-assert(catalog.length === baseCatalog.length + additions.length + consumerCatalog.length, `Catalog length mismatch: ${catalog.length}`);
+assert(firstPartyCatalog.length === 1, `First-party catalog must contain SetupWith; received ${firstPartyCatalog.length}`);
+assert(catalog.length === baseCatalog.length + additions.length + consumerCatalog.length + firstPartyCatalog.length, `Catalog length mismatch: ${catalog.length}`);
 
 const slugs = new Set();
 const names = new Set();
@@ -145,7 +148,10 @@ for (const [position, app] of catalog.entries()) {
     JSON.stringify(context.secrets) === JSON.stringify(app.secrets.map((key) => ({ key, reference: secretAlias(key) }))),
     `Stale secret-reference artifact for ${app.slug}`,
   );
-  assert(promptArtifact === `# ${app.name} setup prompt\n\n${prompt}\n`, `Stale prompt artifact for ${app.slug}`);
+  assert(
+    promptArtifact.replace(/\r\n?/g, "\n") === `# ${app.name} setup prompt\n\n${prompt}\n`,
+    `Stale prompt artifact for ${app.slug}`,
+  );
 
   slugs.add(app.slug);
   names.add(app.name.toLowerCase());
@@ -153,6 +159,35 @@ for (const [position, app] of catalog.entries()) {
 
 assert(Object.keys(prompts).length === 100, `Tailored prompt map must contain 100 prompts; received ${Object.keys(prompts).length}`);
 assert(Object.keys(logoManifest).length === catalog.length, `Logo manifest must contain ${catalog.length} entries; received ${Object.keys(logoManifest).length}`);
+
+assert(openSourceCatalog.length === 50, `Open-source catalog must contain 50 entries; received ${openSourceCatalog.length}`);
+const openSourceSlugs = new Set();
+const openSourceRepos = new Set();
+const appRepos = new Set(
+  catalog
+    .map((app) => getOfficialSource(app))
+    .filter((source) => source.type === "github")
+    .map((source) => source.url.replace(/\/$/, "").toLowerCase()),
+);
+
+for (const [position, project] of openSourceCatalog.entries()) {
+  assert(project.index === position + 1, `Invalid open-source index for ${project.slug ?? position}`);
+  assert(typeof project.name === "string" && project.name.length > 1, `Missing open-source name at index ${project.index}`);
+  assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.slug), `Invalid open-source slug: ${project.slug}`);
+  assert(!openSourceSlugs.has(project.slug), `Duplicate open-source slug: ${project.slug}`);
+  const normalizedRepo = project.repo?.replace(/\/$/, "").toLowerCase();
+  assert(/^https:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+\/?$/.test(project.repo), `Invalid open-source repository: ${project.repo}`);
+  assert(!openSourceRepos.has(normalizedRepo), `Duplicate open-source repository: ${project.repo}`);
+  assert(!appRepos.has(normalizedRepo), `Open-source repository already exists in the app catalog: ${project.repo}`);
+  assert(/^https:\/\//.test(project.website), `Invalid open-source website: ${project.website}`);
+  assert(typeof project.category === "string" && project.category.length > 2, `Missing open-source category for ${project.slug}`);
+  assert(typeof project.description === "string" && project.description.length >= 40, `Incomplete open-source description for ${project.slug}`);
+  assert(typeof project.reason === "string" && project.reason.length >= 20, `Incomplete curation reason for ${project.slug}`);
+  assert(typeof project.popularitySignal === "string" && project.popularitySignal.length > 5, `Missing popularity signal for ${project.slug}`);
+  assert(project.starsAsOf === "2026-07-18", `Stale popularity snapshot date for ${project.slug}`);
+  openSourceSlugs.add(project.slug);
+  openSourceRepos.add(normalizedRepo);
+}
 
 const bundleSlugs = new Set();
 for (const [position, bundle] of bundles.entries()) {
@@ -171,6 +206,6 @@ for (const [position, bundle] of bundles.entries()) {
 assert(bundles.length >= 6, `Expected at least 6 setup bundles; received ${bundles.length}`);
 
 console.log(
-  `Validated ${catalog.length} apps, ${bundles.length} bundles, ${slugs.size} unique slugs, ` +
-    `${Object.keys(prompts).length} tailored prompts, and ${Object.keys(logoManifest).length} local logos.`,
+  `Validated ${catalog.length} apps, ${openSourceCatalog.length} extra open-source projects, ${bundles.length} bundles, ` +
+    `${slugs.size} unique app slugs, ${Object.keys(prompts).length} tailored prompts, and ${Object.keys(logoManifest).length} local logos.`,
 );

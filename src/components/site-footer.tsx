@@ -14,6 +14,8 @@ export function SiteFooter() {
           <div>
             <span>Product</span>
             <Link href="/apps">All apps</Link>
+            <Link href="/open-source">Open source</Link>
+            <Link href="/setupwith">Install SetupWith locally</Link>
             <Link href="/how-it-works">How it works</Link>
             <Link href="/profile">Context profile</Link>
           </div>

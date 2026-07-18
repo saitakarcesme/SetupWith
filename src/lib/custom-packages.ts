@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { SetupApp } from "@/data/apps";
+import { secretAlias, type SetupApp } from "@/data/apps";
 
 export const MAX_SAVED_PACKAGES = 6;
 export const MAX_PACKAGE_APPS = 8;
@@ -9,6 +9,7 @@ export interface PackageAppSummary {
   slug: string;
   name: string;
   category: string;
+  vertical: SetupApp["vertical"];
   description: string;
   accent: string;
   simpleIconSlug: string | null;
@@ -85,6 +86,7 @@ export function toPackageAppSummary(app: SetupApp): PackageAppSummary {
     slug: app.slug,
     name: app.name,
     category: app.category,
+    vertical: app.vertical,
     description: app.description,
     accent: app.accent,
     simpleIconSlug: app.simpleIconSlug,
@@ -97,7 +99,7 @@ export function toPackageAppSummary(app: SetupApp): PackageAppSummary {
     mayInstallDrivers: Boolean(app.mayInstallDrivers),
     mayInstallKernelComponents: Boolean(app.mayInstallKernelComponents),
     mayRequireRestart: Boolean(app.mayRequireRestart),
-    secretAliases: app.secrets.map((secret) => `secret://${app.slug}/${secret.toLowerCase()}`),
+    secretAliases: app.secrets.map(secretAlias),
     setup: app.setup,
   };
 }

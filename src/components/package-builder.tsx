@@ -23,8 +23,42 @@ interface PackageBuilderProps {
 
 const DRAFT_KEY = "setupwith.package-draft.v1";
 
+const packageExperiences = [
+  { id: "all", label: "All" },
+  { id: "software", label: "Software" },
+  { id: "ai", label: "AI Lab" },
+  { id: "gaming", label: "Gaming" },
+  { id: "entertainment", label: "Entertainment" },
+  { id: "work", label: "Work" },
+  { id: "creative", label: "Creative" },
+  { id: "social", label: "Social" },
+  { id: "browsers", label: "Browsers" },
+  { id: "hardware", label: "Hardware" },
+] as const;
+
+type PackageExperience = (typeof packageExperiences)[number]["id"];
+
+function takeBalancedApps(apps: readonly PackageAppSummary[], limit: number): PackageAppSummary[] {
+  const groups = packageExperiences
+    .filter((experience) => experience.id !== "all")
+    .map((experience) => apps.filter((app) => app.vertical === experience.id));
+  const balanced: PackageAppSummary[] = [];
+  let row = 0;
+
+  while (balanced.length < limit && groups.some((group) => row < group.length)) {
+    for (const group of groups) {
+      if (group[row]) balanced.push(group[row]);
+      if (balanced.length === limit) break;
+    }
+    row += 1;
+  }
+
+  return balanced;
+}
+
 export function PackageBuilder({ apps, authConfigured, signedIn }: PackageBuilderProps) {
   const [query, setQuery] = useState("");
+  const [experience, setExperience] = useState<PackageExperience>("all");
   const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
@@ -77,14 +111,18 @@ export function PackageBuilder({ apps, authConfigured, signedIn }: PackageBuilde
   }, [apps, selectedSlugs]);
 
   const normalizedQuery = query.trim().toLowerCase();
-  const visibleApps = apps
-    .filter((app) => (
+  const matchingApps = apps.filter((app) => (
+      (experience === "all" || app.vertical === experience)
+      && (
       !normalizedQuery
       || app.name.toLowerCase().includes(normalizedQuery)
       || app.category.toLowerCase().includes(normalizedQuery)
       || app.description.toLowerCase().includes(normalizedQuery)
-    ))
-    .slice(0, 80);
+      )
+    ));
+  const visibleApps = normalizedQuery || experience !== "all"
+    ? matchingApps.slice(0, 120)
+    : takeBalancedApps(matchingApps, 120);
   const prompt = composePackagePrompt(
     { name: name || "My setup", description, instruction },
     selectedApps,
@@ -170,6 +208,21 @@ export function PackageBuilder({ apps, authConfigured, signedIn }: PackageBuilde
           />
         </label>
 
+        <div className="package-experience-switcher" aria-label="Filter package apps by experience" role="group">
+          {packageExperiences.map((item) => (
+            <button
+              aria-pressed={experience === item.id}
+              className={experience === item.id ? "active" : ""}
+              key={item.id}
+              onClick={() => setExperience(item.id)}
+              type="button"
+            >
+              {item.label}
+              <span>{item.id === "all" ? apps.length : apps.filter((app) => app.vertical === item.id).length}</span>
+            </button>
+          ))}
+        </div>
+
         {selectedApps.length > 0 ? (
           <div className="package-selection-strip" aria-label="Selected applications">
             {selectedApps.map((app) => (
@@ -208,7 +261,10 @@ export function PackageBuilder({ apps, authConfigured, signedIn }: PackageBuilde
             );
           })}
         </div>
-        {visibleApps.length === 80 ? <p className="package-result-note">Showing the first 80 matches. Search to narrow the catalog.</p> : null}
+        <p className="package-result-note" aria-live="polite">
+          Showing {visibleApps.length} of {matchingApps.length} matching apps.
+          {matchingApps.length > visibleApps.length ? " Search by name or choose an experience to narrow the catalog." : ""}
+        </p>
       </section>
 
       <section className="package-output" aria-labelledby="package-output-title">

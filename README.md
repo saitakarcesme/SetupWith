@@ -1,12 +1,12 @@
 # SetupWith
 
-SetupWith is an open catalog of product-specific Codex setup prompts. It covers hundreds of popular developer tools, AI runtimes, games and launchers, entertainment services, workspaces, creative suites, browsers, device utilities, and self-hosted software.
+SetupWith is an open catalog of product-specific Codex setup prompts. It currently covers 301 apps plus 50 additional popular and useful open-source repositories across developer tools, AI, games, entertainment, work, creative software, browsers, hardware, security, and self-hosting.
 
 Each app has its own `/{slug}` route with:
 
 - the project’s official repository, website, logo, and recognizable brand color;
 - platform-aware preflight and installation guidance;
-- only the environment preferences that product actually needs;
+- an optional, fully previewed non-secret environment profile appended locally before copy;
 - opaque `secret://provider/key` references instead of credential values;
 - explicit permission checkpoints, verification, and rollback instructions.
 
@@ -18,6 +18,8 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+SetupWith itself is also available at `/setupwith` as a first-party Codex setup recipe. Its prompt clones the official repository, verifies the lockfile and checks, binds the development server to `127.0.0.1`, and preserves existing repository and browser data.
 
 ## Accounts and saved packages
 
@@ -39,7 +41,9 @@ This runs ESLint, strict TypeScript, catalog/prompt validation, and a production
 
 ## Security model
 
-The context profile is local-first. Non-secret preferences stay in browser storage. Credentials are protected by a browser-only vault using PBKDF2-HMAC-SHA256 and AES-256-GCM. The passphrase is not stored. Generated prompts only receive aliases such as `secret://github/token`; secret values are never written into prompt text.
+The context profile is local-first. Non-secret preferences stay in browser storage until the user chooses to include the visible profile in a copied prompt. Credentials are protected by a browser-only vault using PBKDF2-HMAC-SHA256 and AES-256-GCM. The passphrase is not stored. Generated prompts only receive aliases such as `secret://github/token`; secret values are never written into prompt text.
+
+SetupWith does not transmit the prompt preview. Once a user pastes copied text into Codex, that text is governed by the destination Codex service's data controls.
 
 SetupWith does not silently install software or content. Its prompts require Codex to inspect the machine first and stop before account creation, sign-in, MFA, CAPTCHA, purchases, subscriptions, large downloads, elevated access, overwriting files, anti-cheat or driver installation, services, firewall changes, and restarts.
 
@@ -48,6 +52,9 @@ SetupWith does not silently install software or content. Its prompts require Cod
 - `/` — product landing page
 - `/apps` — searchable catalog with Software, AI Lab, Gaming, Entertainment, Work, Creative, Social, Browsers, and Hardware experiences
 - `/{slug}` — app-specific setup page
+- `/setupwith` — install SetupWith locally from its official source
+- `/open-source` — 50 additional researched GitHub repositories with search and category filters
+- `/open-source/{slug}` — review, clone, setup, test, and rollback prompt for one repository
 - `/profile` — local environment profile and encrypted vault
 - `/packages/new` — multi-app package builder and one coordinated prompt
 - `/account` — signed-in user's private saved package library

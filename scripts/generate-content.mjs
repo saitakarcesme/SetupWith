@@ -14,14 +14,16 @@ const projectRoot = resolve(import.meta.dirname, "..");
 const baseCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/chatgpt-catalog.json"), "utf8"));
 const additions = JSON.parse(await readFile(resolve(projectRoot, "src/data/catalog-additions.json"), "utf8"));
 const consumerCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/consumer-catalog.json"), "utf8"));
-const catalog = [...baseCatalog, ...additions, ...consumerCatalog];
+const firstPartyCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/first-party-catalog.json"), "utf8"));
+const catalog = [...baseCatalog, ...additions, ...consumerCatalog, ...firstPartyCatalog];
 const prompts = JSON.parse(await readFile(resolve(projectRoot, "src/data/app-prompts.json"), "utf8"));
 const startIndex = Number.parseInt(process.env.CATALOG_START_INDEX ?? "1", 10);
 const selectedCatalog = catalog.filter((app) => app.index >= startIndex);
 
 async function writeIfChanged(path, content) {
   try {
-    if (await readFile(path, "utf8") === content) return false;
+    const existing = await readFile(path, "utf8");
+    if (existing.replace(/\r\n?/g, "\n") === content.replace(/\r\n?/g, "\n")) return false;
   } catch (error) {
     // Desktop repositories can be offloaded by iCloud. Treat a transient read
     // failure like a missing generated artifact and recreate it from source.

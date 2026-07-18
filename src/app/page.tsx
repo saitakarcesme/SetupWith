@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Check, KeyRound, ShieldCheck, Terminal, WandSparkles } from "lucide-react";
+import { ArrowRight, Check, GitBranch, HardDrive, KeyRound, ShieldCheck, Terminal, WandSparkles } from "lucide-react";
 import { AppCard } from "@/components/app-card";
 import { AppLogo } from "@/components/app-logo";
 import { HeroSearch } from "@/components/hero-search";
@@ -138,6 +138,31 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="local-install-section">
+          <div className="shell local-install-grid">
+            <div className="local-install-copy">
+              <span className="eyebrow inverse">LOCAL MODE / YOUR MACHINE</span>
+              <h2>Own the whole prompt-building loop.</h2>
+              <p>
+                Install SetupWith from its open-source repository when an automation needs personal machine
+                context. Build and review the prompt on localhost, keep secret values out of it, then copy only
+                the exact instructions you approve into Codex.
+              </p>
+              <div className="local-install-actions">
+                <Link href="/setupwith">Install SetupWith with Codex <ArrowRight size={16} aria-hidden="true" /></Link>
+                <a href="https://github.com/saitakarcesme/SetupWith" target="_blank" rel="noreferrer">
+                  <GitBranch size={15} aria-hidden="true" /> View source
+                </a>
+              </div>
+            </div>
+            <div className="local-install-steps" aria-label="Local SetupWith workflow">
+              <article><span>01</span><HardDrive size={20} aria-hidden="true" /><strong>Run on localhost</strong><p>Clone the official repository and bind it to 127.0.0.1.</p></article>
+              <article><span>02</span><KeyRound size={20} aria-hidden="true" /><strong>Review local context</strong><p>Non-secret fields are visible; credential values remain outside prompts.</p></article>
+              <article><span>03</span><Terminal size={20} aria-hidden="true" /><strong>Hand off deliberately</strong><p>Paste the approved prompt into Codex and keep every privileged step gated.</p></article>
+            </div>
+          </div>
+        </section>
+
         <section className="section shell process-section">
           <div className="section-heading">
             <span className="eyebrow">HOW IT WORKS</span>
@@ -204,7 +229,7 @@ export default function Home() {
 
         <section className="final-cta">
           <div className="shell final-cta-inner">
-            <p>{apps.length} official app sources. {bundles.length} coordinated bundles.</p>
+            <p>{apps.length} official app sources. 50 extra open-source projects. {bundles.length} coordinated bundles.</p>
             <h2>What should Codex set up next?</h2>
             <Link href="/apps">Browse the catalog <ArrowRight size={18} aria-hidden="true" /></Link>
           </div>

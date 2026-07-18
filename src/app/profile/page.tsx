@@ -22,7 +22,7 @@ export default function ProfilePage() {
           <TypingHeadline>Brief Codex once.<br /><span>Reuse it everywhere.</span></TypingHeadline>
           <p>
             Store ordinary preferences as local context and protect credentials in an encrypted browser vault.
-            App pages only request the fields they genuinely need.
+            You decide whether the exact non-secret profile shown in each preview is added before copying.
           </p>
           <div className="profile-trust-row">
             <span><HardDrive size={15} aria-hidden="true" /> Stored on this device</span>

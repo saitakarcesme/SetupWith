@@ -502,20 +502,56 @@ textarea:focus-visible {
   background: var(--line);
 }
 
-@keyframes typing-headline-reveal {
-  from {
-    clip-path: inset(0 100% 0 0);
+@keyframes typing-cursor-blink {
+  0%,
+  46% {
+    opacity: 1;
   }
 
-  to {
-    clip-path: inset(0 0 0 0);
+  47%,
+  100% {
+    opacity: 0;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .typing-headline {
-    animation: typing-headline-reveal 1.2s steps(30, end) 120ms both;
-  }
+.typing-headline {
+  overflow: visible;
+}
+
+.typing-headline-stage {
+  display: grid;
+  width: 100%;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+  overflow: visible;
+}
+
+.typing-headline-reserve,
+.typing-headline-live {
+  grid-area: 1 / 1;
+  overflow: visible;
+}
+
+.typing-headline-reserve {
+  visibility: hidden;
+}
+
+.typing-headline-cursor,
+.typing-headline-cursor-placeholder {
+  display: inline-block;
+  width: 0.045em;
+  height: 0.78em;
+  margin-left: 0.055em;
+  background: currentColor;
+  vertical-align: -0.035em;
+}
+
+.typing-headline-cursor {
+  animation: typing-cursor-blink 860ms steps(1, end) infinite;
+}
+
+.typing-headline-cursor-placeholder {
+  opacity: 0;
 }
 
 .home-hero h1 {
@@ -524,10 +560,10 @@ textarea:focus-visible {
   font-size: clamp(64px, 8.35vw, 126px);
   font-weight: 300;
   letter-spacing: -0.078em;
-  line-height: 0.82;
+  line-height: 0.94;
 }
 
-.home-hero h1 span {
+.home-hero h1 .typing-headline-muted {
   color: #8b8b85;
 }
 
@@ -710,7 +746,7 @@ textarea:focus-visible {
   font-size: clamp(40px, 5vw, 72px);
   font-weight: 300;
   letter-spacing: -0.06em;
-  line-height: 0.98;
+  line-height: 1.04;
 }
 
 .split-heading {
@@ -932,7 +968,7 @@ textarea:focus-visible {
   font-size: clamp(54px, 6vw, 88px);
   font-weight: 300;
   letter-spacing: -0.07em;
-  line-height: 0.86;
+  line-height: 0.96;
 }
 
 .context-demo-copy p {
@@ -1039,6 +1075,116 @@ textarea:focus-visible {
   border-bottom: 0;
   color: #adada7;
   font-size: 10px;
+}
+
+.local-install-section {
+  border-bottom: 1px solid var(--ink);
+  background: #191b18;
+  color: var(--white);
+}
+
+.local-install-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  min-height: 560px;
+}
+
+.local-install-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px 10% 72px 0;
+  border-right: 1px solid #3b3d39;
+}
+
+.local-install-copy h2 {
+  max-width: 660px;
+  margin: 24px 0;
+  font-size: clamp(48px, 5.4vw, 78px);
+  font-weight: 300;
+  letter-spacing: -0.068em;
+  line-height: 0.98;
+}
+
+.local-install-copy p {
+  max-width: 590px;
+  margin: 0;
+  color: #b1b3ad;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.local-install-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 34px;
+}
+
+.local-install-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  padding: 0 16px;
+  border: 1px solid #5a5d56;
+  color: var(--white);
+  font-size: 11px;
+}
+
+.local-install-actions a:first-child {
+  border-color: var(--white);
+  background: var(--white);
+  color: var(--ink);
+}
+
+.local-install-steps {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-self: stretch;
+  margin-left: 9%;
+  border-left: 1px solid #3b3d39;
+}
+
+.local-install-steps article {
+  display: grid;
+  grid-template-columns: 42px 30px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 28px;
+  border-right: 1px solid #3b3d39;
+  border-bottom: 1px solid #3b3d39;
+}
+
+.local-install-steps article:first-child {
+  border-top: 1px solid #3b3d39;
+}
+
+.local-install-steps article > span {
+  color: #777a73;
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 9px;
+}
+
+.local-install-steps article > svg {
+  color: #d9ff73;
+  stroke-width: 1.3;
+}
+
+.local-install-steps strong {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.local-install-steps p {
+  grid-column: 3;
+  max-width: 420px;
+  margin: -6px 0 0;
+  color: #92958e;
+  font-size: 11px;
+  line-height: 1.55;
 }
 
 .process-grid {
@@ -1156,7 +1302,7 @@ textarea:focus-visible {
   font-size: clamp(42px, 5vw, 70px);
   font-weight: 300;
   letter-spacing: -0.06em;
-  line-height: 0.95;
+  line-height: 1.02;
 }
 
 .trust-copy p {
@@ -1192,7 +1338,7 @@ textarea:focus-visible {
   font-size: clamp(52px, 7vw, 106px);
   font-weight: 300;
   letter-spacing: -0.074em;
-  line-height: 0.9;
+  line-height: 0.97;
 }
 
 .final-cta a {
@@ -1224,7 +1370,7 @@ textarea:focus-visible {
   font-size: clamp(40px, 4.2vw, 64px);
   font-weight: 300;
   letter-spacing: -0.06em;
-  line-height: 0.96;
+  line-height: 1.02;
 }
 
 .footer-statement p:last-child {
@@ -1300,7 +1446,7 @@ textarea:focus-visible {
   font-size: clamp(60px, 7vw, 104px);
   font-weight: 300;
   letter-spacing: -0.075em;
-  line-height: 0.88;
+  line-height: 0.96;
 }
 
 .catalog-hero p {
@@ -1501,7 +1647,7 @@ textarea:focus-visible {
   font-size: clamp(38px, 4.5vw, 64px);
   font-weight: 300;
   letter-spacing: -0.06em;
-  line-height: 0.96;
+  line-height: 1.02;
 }
 
 .bundle-section-heading > p {
@@ -1864,7 +2010,7 @@ textarea:focus-visible {
   font-size: clamp(64px, 8vw, 120px);
   font-weight: 300;
   letter-spacing: -0.08em;
-  line-height: 0.82;
+  line-height: 0.94;
 }
 
 .app-hero-main p {
@@ -1969,7 +2115,7 @@ textarea:focus-visible {
   font-size: clamp(38px, 4.4vw, 64px);
   font-weight: 300;
   letter-spacing: -0.06em;
-  line-height: 0.98;
+  line-height: 1.04;
 }
 
 .detail-section > div > p {
@@ -2163,6 +2309,47 @@ textarea:focus-visible {
   grid-column: 2;
 }
 
+.prompt-context-option {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  background: #f6f6f1;
+}
+
+.prompt-context-option label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.prompt-context-option label:has(input:disabled) {
+  color: var(--muted);
+  cursor: default;
+}
+
+.prompt-context-option input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: var(--ink);
+}
+
+.prompt-context-option p {
+  margin: 7px 0 0 23px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.prompt-context-option a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .prompt-preview {
   position: relative;
   max-height: 276px;
@@ -2279,10 +2466,10 @@ textarea:focus-visible {
   font-size: clamp(64px, 8vw, 118px);
   font-weight: 300;
   letter-spacing: -0.08em;
-  line-height: 0.84;
+  line-height: 0.96;
 }
 
-.profile-hero h1 span {
+.profile-hero h1 .typing-headline-muted {
   color: #85857f;
 }
 
@@ -2535,7 +2722,7 @@ textarea:focus-visible {
   font-size: clamp(42px, 5vw, 72px);
   font-weight: 300;
   letter-spacing: -0.065em;
-  line-height: 0.95;
+  line-height: 1.02;
 }
 
 .security-table {
@@ -2583,7 +2770,7 @@ textarea:focus-visible {
   font-size: clamp(42px, 5vw, 76px);
   font-weight: 300;
   letter-spacing: -0.06em;
-  line-height: 0.95;
+  line-height: 1.02;
 }
 
 .info-cta a {
@@ -2687,7 +2874,7 @@ textarea:focus-visible {
   font-size: clamp(48px, 6vw, 90px);
   font-weight: 300;
   letter-spacing: -0.07em;
-  line-height: 0.9;
+  line-height: 0.98;
 }
 
 .not-found-page a {
@@ -2743,6 +2930,19 @@ textarea:focus-visible {
 
   .context-terminal {
     margin: 60px 0;
+  }
+
+  .local-install-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .local-install-copy {
+    border-right: 0;
+    border-bottom: 1px solid #3b3d39;
+  }
+
+  .local-install-steps {
+    margin: 56px 0;
   }
 
   .catalog-hero {
@@ -2833,11 +3033,44 @@ textarea:focus-visible {
     margin-top: 76px;
     overflow-wrap: anywhere;
     font-size: clamp(48px, 16.5vw, 76px);
-    line-height: 0.88;
+    line-height: 0.96;
   }
 
   .hero-lede {
     font-size: 15px;
+  }
+
+  .local-install-copy {
+    padding: 58px 0;
+  }
+
+  .local-install-copy h2 {
+    font-size: clamp(43px, 13vw, 64px);
+    line-height: 1;
+  }
+
+  .local-install-actions {
+    flex-direction: column;
+  }
+
+  .local-install-actions a {
+    width: 100%;
+  }
+
+  .local-install-steps {
+    margin: 28px 0;
+    border-left: 0;
+  }
+
+  .local-install-steps article {
+    grid-template-columns: 32px 24px minmax(0, 1fr);
+    gap: 12px;
+    padding: 22px 16px;
+    border-left: 1px solid #3b3d39;
+  }
+
+  .local-install-steps p {
+    grid-column: 3;
   }
 
   .hero-search {
@@ -3361,6 +3594,11 @@ textarea:focus-visible {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+
+  .typing-headline-cursor {
+    animation: none !important;
+    opacity: 1;
+  }
 }
 
 /* Account and custom package builder */
@@ -3439,10 +3677,10 @@ textarea:focus-visible {
   font-size: clamp(64px, 9vw, 132px);
   font-weight: 300;
   letter-spacing: -0.08em;
-  line-height: 0.84;
+  line-height: 0.96;
 }
 
-.package-hero h1 span {
+.package-hero h1 .typing-headline-muted {
   color: #969690;
 }
 
@@ -3577,6 +3815,50 @@ textarea:focus-visible {
   min-height: 50px;
   padding: 0;
   border: 0;
+}
+
+.package-experience-switcher {
+  display: flex;
+  gap: 0;
+  margin: 14px 0 0 76px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--line);
+  scrollbar-width: thin;
+}
+
+.package-experience-switcher button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 9px;
+  min-height: 39px;
+  padding: 0 12px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  background: var(--paper);
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.package-experience-switcher button:last-child {
+  border-right: 1px solid var(--line);
+}
+
+.package-experience-switcher button:hover,
+.package-experience-switcher button.active {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.package-experience-switcher button span {
+  color: var(--muted);
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 8px;
+}
+
+.package-experience-switcher button.active span {
+  color: #bcbcb6;
 }
 
 .package-selection-strip {
@@ -3783,7 +4065,7 @@ textarea:focus-visible {
   font-size: clamp(58px, 7vw, 108px);
   font-weight: 300;
   letter-spacing: -0.075em;
-  line-height: 0.9;
+  line-height: 0.98;
 }
 
 .account-hero p {
@@ -4008,6 +4290,7 @@ textarea:focus-visible {
 
   .package-fields,
   .package-search,
+  .package-experience-switcher,
   .package-selection-strip,
   .package-app-grid,
   .package-result-note,
@@ -4062,6 +4345,7 @@ textarea:focus-visible {
 @media (max-width: 480px) {
   .package-fields,
   .package-search,
+  .package-experience-switcher,
   .package-selection-strip,
   .package-app-grid,
   .package-result-note,

@@ -55,6 +55,7 @@ export function getComplexity(app) {
 }
 
 export function getInstallTime(app) {
+  if (app.delivery === "source") return "5–10 min";
   if (app.delivery === "pwa") return "2–5 min";
   if (app.category === "Games & Launchers" || app.category === "Devices & Hardware") {
     return "5–15 min";

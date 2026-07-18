@@ -6,6 +6,7 @@ const root = resolve(import.meta.dirname, "..");
 const catalogPath = resolve(root, "src/data/chatgpt-catalog.json");
 const additionsPath = resolve(root, "src/data/catalog-additions.json");
 const consumerCatalogPath = resolve(root, "src/data/consumer-catalog.json");
+const firstPartyCatalogPath = resolve(root, "src/data/first-party-catalog.json");
 const overridesPath = resolve(root, "src/data/logo-overrides.json");
 const consumerOverridesPath = resolve(root, "src/data/consumer-logo-overrides.json");
 const outputDir = resolve(root, "public/app-logos");
@@ -14,6 +15,7 @@ const catalog = [
   ...JSON.parse(await readFile(catalogPath, "utf8")),
   ...JSON.parse(await readFile(additionsPath, "utf8")),
   ...JSON.parse(await readFile(consumerCatalogPath, "utf8")),
+  ...JSON.parse(await readFile(firstPartyCatalogPath, "utf8")),
 ];
 const overrides = {
   ...JSON.parse(await readFile(overridesPath, "utf8")),

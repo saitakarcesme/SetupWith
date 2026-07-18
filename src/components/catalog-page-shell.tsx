@@ -118,7 +118,7 @@ export function CatalogPageShell({
           <div className="catalog-hero-index">001—{apps.length}</div>
           <div>
             <span className="eyebrow">{copy.eyebrow} / V3.0</span>
-            <TypingHeadline>{copy.title}</TypingHeadline>
+            <TypingHeadline key={copy.title}>{copy.title}</TypingHeadline>
             <p>{copy.description}</p>
           </div>
           <dl>

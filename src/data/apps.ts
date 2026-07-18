@@ -1,6 +1,7 @@
 import additions from "./catalog-additions.json";
 import baseCatalog from "./chatgpt-catalog.json";
 import consumerCatalog from "./consumer-catalog.json";
+import firstPartyCatalog from "./first-party-catalog.json";
 import {
   buildGeneratedPrompt,
   getComplexity,
@@ -50,7 +51,7 @@ export const experiences = [
 
 export type CatalogExperience = Exclude<(typeof experiences)[number]["id"], "all">;
 export type CatalogExperienceFilter = (typeof experiences)[number]["id"];
-export type DeliveryMethod = "native" | "store" | "package-manager" | "pwa";
+export type DeliveryMethod = "native" | "store" | "package-manager" | "pwa" | "source";
 export type OfficialSourceType = "github" | "website" | "app-store" | "microsoft-store";
 
 export interface OfficialSource {
@@ -119,7 +120,7 @@ export interface SetupBundle {
 }
 
 const prompts = promptMap as Record<string, string>;
-const catalog = [...baseCatalog, ...additions, ...consumerCatalog] as CatalogEntry[];
+const catalog = [...baseCatalog, ...additions, ...consumerCatalog, ...firstPartyCatalog] as CatalogEntry[];
 
 export function getExperience(entry: CatalogEntry): CatalogExperience {
   if (entry.vertical) return entry.vertical;

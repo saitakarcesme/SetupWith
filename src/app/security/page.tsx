@@ -27,7 +27,8 @@ export default function SecurityPage() {
           <TypingHeadline>Trust begins before install.</TypingHeadline>
           <p>
             SetupWith is designed around a simple boundary: the catalog can know what a tool needs without putting
-            your credential values into a generated prompt.
+            your credential values into a generated prompt. Your local preview is not transmitted by SetupWith;
+            after you paste it into Codex, the destination service&apos;s data controls apply.
           </p>
         </section>
         <section className="shell principle-grid">
@@ -50,11 +51,12 @@ export default function SecurityPage() {
             <div><strong>Secret aliases</strong><span>Provider, key name, optional label</span><em>Inside encrypted vault</em></div>
             <div><strong>Secret values</strong><span>Tokens, passwords, private coordinates</span><em>AES-256-GCM ciphertext</em></div>
             <div><strong>Generated prompts</strong><span>Setup instructions and secret:// references</span><em>Clipboard only when requested</em></div>
+            <div><strong>Copied context</strong><span>The non-secret fields visible in your preview</span><em>Leaves the local boundary only when you paste it</em></div>
           </div>
         </section>
         <section className="info-cta shell">
-          <div><span className="eyebrow">YOU CONTROL THE BOUNDARY</span><h2>Build a local context profile.</h2></div>
-          <Link href="/profile">Open profile <ArrowRight size={17} aria-hidden="true" /></Link>
+          <div><span className="eyebrow">YOU CONTROL THE BOUNDARY</span><h2>Keep the full workflow on your machine.</h2></div>
+          <Link href="/setupwith">Install SetupWith locally <ArrowRight size={17} aria-hidden="true" /></Link>
         </section>
       </main>
       <SiteFooter />

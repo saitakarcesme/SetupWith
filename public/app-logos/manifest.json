@@ -1498,5 +1498,10 @@
     "file": "nzxt-cam.svg",
     "source": "https://nzxt.com",
     "sourceType": "simple-icons-official-glyph"
+  },
+  "setupwith": {
+    "file": "setupwith.svg",
+    "source": "https://raw.githubusercontent.com/saitakarcesme/SetupWith/main/src/app/icon.svg",
+    "sourceType": "official-project-asset"
   }
 }

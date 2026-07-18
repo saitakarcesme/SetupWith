@@ -1,0 +1,15 @@
+{
+  "index": 301,
+  "name": "SetupWith",
+  "slug": "setupwith",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/saitakarcesme/SetupWith"
+  },
+  "website": "https://setupwith.vercel.app",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Local-first catalog that turns app-specific guidance and approved machine context into reviewable Codex setup prompts.",
+  "accent": "#0A0A0A",
+  "simpleIconSlug": null
+}
