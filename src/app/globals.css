@@ -4426,3 +4426,526 @@ textarea:focus-visible {
     grid-column: 1;
   }
 }
+
+/* README-grounded GitHub prompt generator */
+.github-generator-section {
+  padding: 0 0 96px;
+}
+
+.github-prompt-lab {
+  --github-lab-accent: #76e6a5;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(480px, 1.1fr);
+  overflow: hidden;
+  border: 1px solid var(--ink);
+  background: #0d0e0d;
+  color: #f7f8f3;
+  box-shadow: 0 24px 70px rgb(10 10 10 / 9%);
+}
+
+.github-prompt-intro {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  grid-template-rows: auto auto 1fr;
+  align-content: center;
+  column-gap: 24px;
+  padding: 52px;
+}
+
+.github-prompt-intro > .eyebrow {
+  grid-column: 2;
+  color: #8b918b;
+}
+
+.github-prompt-intro-icon {
+  display: grid;
+  grid-row: 1 / 4;
+  grid-column: 1;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border: 1px solid #383b38;
+  border-radius: 50%;
+  color: var(--github-lab-accent);
+}
+
+.github-prompt-intro h2 {
+  grid-column: 2;
+  max-width: 620px;
+  margin: 22px 0 18px;
+  font-size: clamp(34px, 3.4vw, 54px);
+  font-weight: 350;
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+}
+
+.github-prompt-intro p {
+  grid-column: 2;
+  max-width: 570px;
+  margin: 0;
+  color: #a7aba5;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.github-prompt-form {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 52px;
+  border-left: 1px solid #30322f;
+  background:
+    radial-gradient(circle at 100% 0%, rgb(118 230 165 / 9%), transparent 38%),
+    #141514;
+}
+
+.github-prompt-form > label {
+  margin-bottom: 12px;
+  color: #c8cbc5;
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.github-prompt-form-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  min-width: 0;
+}
+
+.github-prompt-input-wrap {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 11px;
+  height: 58px;
+  padding: 0 16px;
+  border: 1px solid #464a45;
+  background: #0d0e0d;
+  color: #777c76;
+}
+
+.github-prompt-input-wrap:focus-within {
+  z-index: 1;
+  border-color: var(--github-lab-accent);
+  box-shadow: 0 0 0 3px rgb(118 230 165 / 12%);
+}
+
+.github-prompt-input-wrap input {
+  min-width: 0;
+  flex: 1;
+  height: 56px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #f7f8f3;
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.github-prompt-input-wrap input::placeholder {
+  color: #656a64;
+  opacity: 1;
+}
+
+.github-prompt-form-row > button {
+  display: inline-flex;
+  min-height: 58px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 19px;
+  border: 1px solid var(--github-lab-accent);
+  background: var(--github-lab-accent);
+  color: #08100b;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+.github-prompt-form-row > button:hover:not(:disabled) {
+  background: #9af0bd;
+}
+
+.github-prompt-form-row > button:disabled {
+  border-color: #30332f;
+  background: #242724;
+  color: #777b76;
+  cursor: not-allowed;
+}
+
+.github-generator-note {
+  margin: 12px 0 0;
+  color: #838782;
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+.github-prompt-error {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 11px;
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid #6d3d39;
+  background: #241615;
+  color: #ffc7c0;
+}
+
+.github-prompt-error strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 550;
+}
+
+.github-prompt-error p {
+  margin: 4px 0 0;
+  color: #d99f98;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.github-generator-spinner {
+  animation: github-generator-spin 800ms linear infinite;
+}
+
+@keyframes github-generator-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.github-prompt-result {
+  grid-column: 1 / -1;
+  min-width: 0;
+  border-top: 1px solid #30322f;
+  background: var(--white);
+  color: var(--ink);
+}
+
+.github-result-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 38px 42px;
+  border-bottom: 1px solid var(--line);
+}
+
+.github-result-header > div {
+  min-width: 0;
+}
+
+.github-result-header .eyebrow {
+  color: #287747;
+}
+
+.github-result-header h3 {
+  margin: 16px 0 8px;
+  overflow-wrap: anywhere;
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 370;
+  letter-spacing: -0.055em;
+  line-height: 1;
+  outline: none;
+}
+
+.github-result-header p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.github-result-header > a {
+  display: inline-flex;
+  min-height: 38px;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 7px;
+  padding: 0 12px;
+  border: 1px solid var(--ink);
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.github-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-bottom: 1px solid var(--line);
+}
+
+.github-evidence-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 13px;
+  min-width: 0;
+  padding: 25px;
+  border-right: 1px solid var(--line);
+}
+
+.github-evidence-card:last-child {
+  border-right: 0;
+}
+
+.github-evidence-card > svg {
+  margin-top: 2px;
+  color: #287747;
+}
+
+.github-evidence-card > div,
+.github-evidence-card strong,
+.github-evidence-card a,
+.github-evidence-card small {
+  min-width: 0;
+}
+
+.github-evidence-card span,
+.github-evidence-card strong,
+.github-evidence-card small {
+  display: block;
+}
+
+.github-evidence-card span {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.github-evidence-card strong,
+.github-evidence-card a {
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  font-weight: 550;
+}
+
+.github-evidence-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.github-evidence-card small {
+  margin-top: 7px;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 8px;
+  line-height: 1.45;
+}
+
+.github-evidence-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-bottom: 1px solid var(--line);
+}
+
+.github-evidence-details > div {
+  min-width: 0;
+  padding: 27px 30px;
+  border-right: 1px solid var(--line);
+}
+
+.github-evidence-details > div:last-child {
+  border-right: 0;
+}
+
+.github-evidence-details h4,
+.github-warning-list h4 {
+  margin: 0 0 12px;
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 9px;
+  font-weight: 550;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.github-evidence-details p,
+.github-warning-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.github-evidence-list,
+.github-warning-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.github-evidence-list li,
+.github-warning-list li {
+  max-width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  overflow-wrap: anywhere;
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 8px;
+  line-height: 1.35;
+}
+
+.github-warning-list {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 13px;
+  padding: 22px 30px;
+  border-bottom: 1px solid var(--line);
+  background: #f2f8f3;
+  color: #1f5d37;
+}
+
+.github-warning-list.has-warnings {
+  border-color: #e8d3a1;
+  background: #fff9e9;
+  color: #76561e;
+}
+
+.github-warning-list h4 {
+  margin-bottom: 6px;
+}
+
+.github-warning-list li {
+  border-color: #e8d3a1;
+  background: #fffdf5;
+}
+
+.github-prompt-output {
+  max-width: 100%;
+  padding: 30px;
+}
+
+.github-prompt-output .prompt-preview {
+  border: 1px solid #30302d;
+}
+
+.github-prompt-output .prompt-preview.expanded {
+  max-height: 640px;
+}
+
+.github-prompt-output .copy-prompt-button {
+  width: 100%;
+  margin: 14px 0 0;
+}
+
+@media (max-width: 1000px) {
+  .github-prompt-lab {
+    grid-template-columns: 1fr;
+  }
+
+  .github-prompt-form {
+    border-top: 1px solid #30322f;
+    border-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .github-generator-section {
+    padding-bottom: 72px;
+  }
+
+  .github-prompt-intro,
+  .github-prompt-form {
+    padding: 30px;
+  }
+
+  .github-prompt-form-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .github-prompt-form-row > button {
+    width: 100%;
+  }
+
+  .github-result-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .github-evidence-grid,
+  .github-evidence-details {
+    grid-template-columns: 1fr;
+  }
+
+  .github-evidence-card,
+  .github-evidence-details > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .github-evidence-card:last-child,
+  .github-evidence-details > div:last-child {
+    border-bottom: 0;
+  }
+
+  .github-prompt-output {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .github-prompt-intro {
+    grid-template-columns: 1fr;
+    padding: 24px 20px 28px;
+  }
+
+  .github-prompt-intro-icon {
+    display: none;
+  }
+
+  .github-prompt-intro > .eyebrow,
+  .github-prompt-intro h2,
+  .github-prompt-intro p {
+    grid-column: 1;
+  }
+
+  .github-prompt-intro h2 {
+    font-size: 34px;
+  }
+
+  .github-prompt-form {
+    padding: 24px 20px;
+  }
+
+  .github-prompt-input-wrap {
+    padding-inline: 12px;
+  }
+
+  .github-result-header,
+  .github-evidence-card,
+  .github-evidence-details > div,
+  .github-warning-list {
+    padding-inline: 20px;
+  }
+
+  .github-prompt-output {
+    padding: 14px;
+  }
+
+  .github-prompt-output .prompt-preview-bar {
+    gap: 10px;
+  }
+
+  .github-prompt-output .prompt-preview-bar span {
+    max-width: 62%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

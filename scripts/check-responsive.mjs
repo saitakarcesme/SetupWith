@@ -21,6 +21,7 @@ const routes = process.env.RESPONSIVE_ROUTES?.split(",") ?? [
   "/apps?experience=entertainment",
   "/how-it-works",
   "/security",
+  "/open-source",
   "/profile",
   "/visual-studio-code",
   "/steam",
