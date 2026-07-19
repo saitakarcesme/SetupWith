@@ -1,0 +1,35 @@
+{
+  "platforms": [
+    "macOS",
+    "Windows",
+    "Web"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Simple",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": true
+  },
+  "preferences": [
+    "edition",
+    "language",
+    "architecture",
+    "update_channel",
+    "selected_apps"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

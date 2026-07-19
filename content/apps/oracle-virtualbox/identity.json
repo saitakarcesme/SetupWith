@@ -1,0 +1,16 @@
+{
+  "index": 354,
+  "name": "Oracle VirtualBox",
+  "slug": "oracle-virtualbox",
+  "source": {
+    "type": "website",
+    "url": "https://www.virtualbox.org/",
+    "installUrl": "https://www.virtualbox.org/wiki/Downloads"
+  },
+  "website": "https://www.virtualbox.org/",
+  "category": "Remote Access, Virtualization & Containers",
+  "vertical": "software",
+  "description": "Oracle's cross-platform desktop hypervisor for local virtual machines, snapshots, virtual networking, and guest integration.",
+  "accent": "#2F61B4",
+  "simpleIconSlug": "virtualbox"
+}

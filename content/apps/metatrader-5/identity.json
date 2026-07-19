@@ -1,0 +1,18 @@
+{
+  "index": 421,
+  "name": "MetaTrader 5",
+  "slug": "metatrader-5",
+  "source": {
+    "type": "website",
+    "url": "https://www.metatrader5.com/",
+    "installUrl": "https://www.metatrader5.com/en/download"
+  },
+  "website": "https://www.metatrader5.com/",
+  "category": "Business Intelligence & Enterprise Apps",
+  "vertical": "work",
+  "description": "Multi-asset trading terminal with charts, broker accounts, algorithmic strategies, market data, and order execution.",
+  "accent": "#00AEEF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.metatrader5.com/i/download/metatrader-5-desktop-logo.png",
+  "logoSourceType": "official-project-asset"
+}

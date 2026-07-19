@@ -1,0 +1,18 @@
+{
+  "index": 312,
+  "name": "CLion",
+  "slug": "clion",
+  "source": {
+    "type": "website",
+    "url": "https://www.jetbrains.com/clion/",
+    "installUrl": "https://www.jetbrains.com/clion/download/"
+  },
+  "website": "https://www.jetbrains.com/clion/",
+  "category": "Professional IDEs & Mobile SDKs",
+  "vertical": "software",
+  "description": "JetBrains' cross-platform C and C++ IDE with CMake support, toolchain integration, debugging, testing, and embedded workflows.",
+  "accent": "#21D789",
+  "simpleIconSlug": "clion",
+  "logoUrl": "https://cdn.simpleicons.org/clion",
+  "logoSourceType": "curated-brand-asset"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 325,
+  "name": "SQL Server Management Studio",
+  "slug": "sql-server-management-studio",
+  "source": {
+    "type": "website",
+    "url": "https://learn.microsoft.com/en-us/ssms/sql-server-management-studio-ssms",
+    "installUrl": "https://learn.microsoft.com/en-us/ssms/install/install"
+  },
+  "website": "https://learn.microsoft.com/en-us/ssms/sql-server-management-studio-ssms",
+  "category": "API, Networking & Database Clients",
+  "vertical": "software",
+  "description": "Microsoft's Windows management environment for SQL Server, Azure SQL, Fabric databases, querying, tuning, and administration.",
+  "accent": "#CC2927",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/devicon:microsoftsqlserver.svg",
+  "logoSourceType": "curated-brand-asset"
+}

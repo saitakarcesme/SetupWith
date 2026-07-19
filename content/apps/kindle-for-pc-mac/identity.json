@@ -1,0 +1,18 @@
+{
+  "index": 416,
+  "name": "Kindle for PC/Mac",
+  "slug": "kindle-for-pc-mac",
+  "source": {
+    "type": "website",
+    "url": "https://read.amazon.com/landing",
+    "installUrl": "https://www.amazon.com/kindle-dbs/fd/kcp"
+  },
+  "website": "https://read.amazon.com/landing",
+  "category": "Streaming, Reading & Consumer Media",
+  "vertical": "entertainment",
+  "description": "Amazon desktop reader for Kindle books with library synchronization, annotations, reading preferences, and offline copies.",
+  "accent": "#00A8E1",
+  "simpleIconSlug": null,
+  "logoUrl": "https://m.media-amazon.com/images/G/01/kfw/mobile/kindle_favicon._CB624847354_.png",
+  "logoSourceType": "official-project-asset"
+}

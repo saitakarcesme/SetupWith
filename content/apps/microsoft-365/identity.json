@@ -1,0 +1,18 @@
+{
+  "index": 334,
+  "name": "Microsoft 365",
+  "slug": "microsoft-365",
+  "source": {
+    "type": "website",
+    "url": "https://www.microsoft.com/microsoft-365",
+    "installUrl": "https://m365.cloud.microsoft/apps"
+  },
+  "website": "https://www.microsoft.com/microsoft-365",
+  "category": "Office, Notes & Team Collaboration",
+  "vertical": "work",
+  "description": "Microsoft's subscription productivity suite with desktop and web editions of Word, Excel, PowerPoint, Outlook, OneNote, and connected cloud services.",
+  "accent": "#D83B01",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/selfhst:microsoft-365.svg",
+  "logoSourceType": "curated-brand-asset"
+}

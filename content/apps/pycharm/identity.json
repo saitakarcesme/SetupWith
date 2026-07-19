@@ -1,0 +1,18 @@
+{
+  "index": 311,
+  "name": "PyCharm",
+  "slug": "pycharm",
+  "source": {
+    "type": "website",
+    "url": "https://www.jetbrains.com/pycharm/",
+    "installUrl": "https://www.jetbrains.com/pycharm/download/"
+  },
+  "website": "https://www.jetbrains.com/pycharm/",
+  "category": "Professional IDEs & Mobile SDKs",
+  "vertical": "software",
+  "description": "JetBrains' Python IDE for code intelligence, debugging, testing, environments, notebooks, web frameworks, and data workflows.",
+  "accent": "#21D789",
+  "simpleIconSlug": "pycharm",
+  "logoUrl": "https://cdn.simpleicons.org/pycharm",
+  "logoSourceType": "curated-brand-asset"
+}

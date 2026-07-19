@@ -1,0 +1,16 @@
+{
+  "index": 350,
+  "name": "TeamViewer",
+  "slug": "teamviewer",
+  "source": {
+    "type": "website",
+    "url": "https://www.teamviewer.com/en/products/remote/",
+    "installUrl": "https://www.teamviewer.com/en/download.html"
+  },
+  "website": "https://www.teamviewer.com/en/products/remote/",
+  "category": "Remote Access, Virtualization & Containers",
+  "vertical": "software",
+  "description": "Cross-platform remote support and access client for attended sessions, device management, and optional unattended control.",
+  "accent": "#050A52",
+  "simpleIconSlug": "teamviewer"
+}

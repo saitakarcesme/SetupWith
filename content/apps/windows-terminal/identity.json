@@ -1,0 +1,18 @@
+{
+  "index": 392,
+  "name": "Windows Terminal",
+  "slug": "windows-terminal",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/microsoft/terminal",
+    "installUrl": "https://apps.microsoft.com/detail/9n0dx20hk701"
+  },
+  "website": "https://aka.ms/terminal",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "software",
+  "description": "Modern Windows terminal host with tabs, panes, GPU rendering, profiles, themes, and command-line integration.",
+  "accent": "#4D4D4D",
+  "simpleIconSlug": null,
+  "logoUrl": "https://raw.githubusercontent.com/microsoft/terminal/main/res/terminal/images/Square44x44Logo.targetsize-256_altform-unplated.png",
+  "logoSourceType": "official-project-asset"
+}

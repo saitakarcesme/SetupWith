@@ -1,0 +1,16 @@
+{
+  "index": 345,
+  "name": "MEGA Desktop",
+  "slug": "mega-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://mega.io/desktop",
+    "installUrl": "https://mega.io/desktop"
+  },
+  "website": "https://mega.io/desktop",
+  "category": "Cloud Storage, Backup & File Transfer",
+  "vertical": "work",
+  "description": "MEGA's encrypted desktop client for selective folder sync, computer backup, transfers, and streamed cloud files.",
+  "accent": "#D9272E",
+  "simpleIconSlug": "mega"
+}

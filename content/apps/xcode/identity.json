@@ -1,0 +1,18 @@
+{
+  "index": 317,
+  "name": "Xcode",
+  "slug": "xcode",
+  "source": {
+    "type": "app-store",
+    "url": "https://apps.apple.com/us/app/xcode/id497799835",
+    "installUrl": "https://apps.apple.com/us/app/xcode/id497799835"
+  },
+  "website": "https://developer.apple.com/xcode/",
+  "category": "Professional IDEs & Mobile SDKs",
+  "vertical": "software",
+  "description": "Apple's integrated development environment for building, testing, profiling, signing, and distributing software across Apple platforms.",
+  "accent": "#147EFB",
+  "simpleIconSlug": "xcode",
+  "logoUrl": "https://cdn.simpleicons.org/xcode",
+  "logoSourceType": "curated-brand-asset"
+}

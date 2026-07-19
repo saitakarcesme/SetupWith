@@ -1,0 +1,18 @@
+{
+  "index": 368,
+  "name": "FL Studio",
+  "slug": "fl-studio",
+  "source": {
+    "type": "website",
+    "url": "https://www.image-line.com/fl-studio/",
+    "installUrl": "https://www.image-line.com/fl-studio/download"
+  },
+  "website": "https://www.image-line.com/fl-studio/",
+  "category": "Audio, Podcast & Streaming Production",
+  "vertical": "creative",
+  "description": "Pattern- and piano-roll-focused digital audio workstation with sequencing, recording, mixing, instruments, and lifetime updates.",
+  "accent": "#F58220",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.image-line.com/static/assets/fl-studio-app-icon-512.c24a664.png",
+  "logoSourceType": "official-project-asset"
+}

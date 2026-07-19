@@ -1,0 +1,18 @@
+{
+  "index": 313,
+  "name": "WebStorm",
+  "slug": "webstorm",
+  "source": {
+    "type": "website",
+    "url": "https://www.jetbrains.com/webstorm/",
+    "installUrl": "https://www.jetbrains.com/webstorm/download/"
+  },
+  "website": "https://www.jetbrains.com/webstorm/",
+  "category": "Professional IDEs & Mobile SDKs",
+  "vertical": "software",
+  "description": "JetBrains' JavaScript and TypeScript IDE with framework intelligence, debugging, testing, version control, and integrated developer tools.",
+  "accent": "#07C3F2",
+  "simpleIconSlug": "webstorm",
+  "logoUrl": "https://cdn.simpleicons.org/webstorm",
+  "logoSourceType": "curated-brand-asset"
+}

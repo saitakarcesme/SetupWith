@@ -1,0 +1,39 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "permission_mode",
+    "preferred_model",
+    "auto_updates",
+    "allowed_tools"
+  ],
+  "secrets": [
+    {
+      "key": "ANTHROPIC_API_KEY",
+      "reference": "secret://anthropic/api-key"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

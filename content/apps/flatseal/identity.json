@@ -1,0 +1,18 @@
+{
+  "index": 400,
+  "name": "Flatseal",
+  "slug": "flatseal",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/tchx84/Flatseal",
+    "installUrl": "https://flathub.org/apps/com.github.tchx84.Flatseal"
+  },
+  "website": "https://flathub.org/apps/com.github.tchx84.Flatseal",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "software",
+  "description": "Graphical Linux utility for reviewing and changing per-application Flatpak sandbox permissions and overrides.",
+  "accent": "#4A90D9",
+  "simpleIconSlug": null,
+  "logoUrl": "https://raw.githubusercontent.com/tchx84/Flatseal/master/data/icons/com.github.tchx84.Flatseal.svg",
+  "logoSourceType": "official-project-asset"
+}

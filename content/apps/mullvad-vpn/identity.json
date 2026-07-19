@@ -1,0 +1,16 @@
+{
+  "index": 386,
+  "name": "Mullvad VPN",
+  "slug": "mullvad-vpn",
+  "source": {
+    "type": "website",
+    "url": "https://mullvad.net/en/download/vpn",
+    "installUrl": "https://mullvad.net/en/download/vpn"
+  },
+  "website": "https://mullvad.net/",
+  "category": "Consumer Security, VPN & Identity",
+  "vertical": "software",
+  "description": "Account-number-based VPN client offering WireGuard, OpenVPN, lockdown mode, multihop, and DNS filtering.",
+  "accent": "#294D73",
+  "simpleIconSlug": "mullvad"
+}

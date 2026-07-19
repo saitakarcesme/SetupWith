@@ -1,0 +1,16 @@
+{
+  "index": 424,
+  "name": "HubSpot",
+  "slug": "hubspot",
+  "source": {
+    "type": "website",
+    "url": "https://www.hubspot.com/products/crm",
+    "installUrl": "https://app.hubspot.com/"
+  },
+  "website": "https://www.hubspot.com/products/crm",
+  "category": "Business Intelligence & Enterprise Apps",
+  "vertical": "work",
+  "description": "Web CRM and customer platform for contacts, deals, service, marketing, content, reporting, and automation.",
+  "accent": "#FF7A59",
+  "simpleIconSlug": "hubspot"
+}

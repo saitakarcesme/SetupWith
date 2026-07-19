@@ -1,0 +1,16 @@
+{
+  "index": 412,
+  "name": "Paramount+",
+  "slug": "paramount-plus",
+  "source": {
+    "type": "website",
+    "url": "https://www.paramountplus.com/",
+    "installUrl": "https://www.paramountplus.com/"
+  },
+  "website": "https://www.paramountplus.com/",
+  "category": "Streaming, Reading & Consumer Media",
+  "vertical": "entertainment",
+  "description": "Paramount streaming service for films, series, live sports, news, profiles, and subscription plans.",
+  "accent": "#0064FF",
+  "simpleIconSlug": "paramountplus"
+}

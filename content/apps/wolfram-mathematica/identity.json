@@ -1,0 +1,16 @@
+{
+  "index": 377,
+  "name": "Wolfram Mathematica",
+  "slug": "wolfram-mathematica",
+  "source": {
+    "type": "website",
+    "url": "https://www.wolfram.com/mathematica/",
+    "installUrl": "https://account.wolfram.com/products"
+  },
+  "website": "https://www.wolfram.com/mathematica/",
+  "category": "Science, Engineering & Research",
+  "vertical": "software",
+  "description": "Symbolic and numerical computation system with notebooks, visualization, knowledge integration, and Wolfram Language tooling.",
+  "accent": "#DD1100",
+  "simpleIconSlug": "wolframmathematica"
+}

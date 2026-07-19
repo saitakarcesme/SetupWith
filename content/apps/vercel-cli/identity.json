@@ -1,0 +1,18 @@
+{
+  "index": 329,
+  "name": "Vercel CLI",
+  "slug": "vercel-cli",
+  "source": {
+    "type": "website",
+    "url": "https://vercel.com/docs/cli",
+    "installUrl": "https://vercel.com/docs/cli"
+  },
+  "website": "https://vercel.com/docs/cli",
+  "category": "Cloud Provider & Deployment CLIs",
+  "vertical": "software",
+  "description": "Vercel's command-line tool for linking projects, managing deployments and environments, running local development, and inspecting platform resources.",
+  "accent": "#000000",
+  "simpleIconSlug": "vercel",
+  "logoUrl": "https://cdn.simpleicons.org/vercel",
+  "logoSourceType": "curated-brand-asset"
+}

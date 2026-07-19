@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Simple",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "font_scaling",
+    "window_focus_mode",
+    "startup_applications",
+    "theme_selection"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

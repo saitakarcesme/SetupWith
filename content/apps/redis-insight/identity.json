@@ -1,0 +1,18 @@
+{
+  "index": 323,
+  "name": "Redis Insight",
+  "slug": "redis-insight",
+  "source": {
+    "type": "website",
+    "url": "https://redis.io/insight/",
+    "installUrl": "https://redis.io/docs/latest/operate/redisinsight/install/"
+  },
+  "website": "https://redis.io/insight/",
+  "category": "API, Networking & Database Clients",
+  "vertical": "software",
+  "description": "Redis's graphical client for browsing keys, running commands, profiling workloads, visualizing data structures, and debugging databases.",
+  "accent": "#FF4438",
+  "simpleIconSlug": "redis",
+  "logoUrl": "https://cdn.simpleicons.org/redis",
+  "logoSourceType": "curated-brand-asset"
+}

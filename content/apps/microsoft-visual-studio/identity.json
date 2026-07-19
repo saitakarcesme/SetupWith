@@ -1,0 +1,18 @@
+{
+  "index": 316,
+  "name": "Microsoft Visual Studio",
+  "slug": "microsoft-visual-studio",
+  "source": {
+    "type": "website",
+    "url": "https://visualstudio.microsoft.com/vs/",
+    "installUrl": "https://visualstudio.microsoft.com/downloads/"
+  },
+  "website": "https://visualstudio.microsoft.com/vs/",
+  "category": "Professional IDEs & Mobile SDKs",
+  "vertical": "software",
+  "description": "Microsoft's full Windows IDE for .NET and C++ development with workload-based SDKs, compilers, debugging, testing, and profiling.",
+  "accent": "#5C2D91",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:visual-studio.svg",
+  "logoSourceType": "curated-brand-asset"
+}

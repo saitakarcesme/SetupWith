@@ -1,0 +1,18 @@
+{
+  "index": 340,
+  "name": "Adobe Acrobat Reader",
+  "slug": "adobe-acrobat-reader",
+  "source": {
+    "type": "website",
+    "url": "https://www.adobe.com/acrobat/pdf-reader.html",
+    "installUrl": "https://get.adobe.com/reader/otherversions/"
+  },
+  "website": "https://www.adobe.com/acrobat/pdf-reader.html",
+  "category": "Office, Notes & Team Collaboration",
+  "vertical": "work",
+  "description": "Adobe's PDF viewing application for reading, printing, commenting, form filling, signing, document accessibility, and protected handling of portable documents.",
+  "accent": "#EC1C24",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/selfhst:adobe-acrobat.svg",
+  "logoSourceType": "curated-brand-asset"
+}

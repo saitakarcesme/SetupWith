@@ -1,0 +1,18 @@
+{
+  "index": 324,
+  "name": "MySQL Workbench",
+  "slug": "mysql-workbench",
+  "source": {
+    "type": "website",
+    "url": "https://www.mysql.com/products/workbench/",
+    "installUrl": "https://dev.mysql.com/downloads/workbench/"
+  },
+  "website": "https://www.mysql.com/products/workbench/",
+  "category": "API, Networking & Database Clients",
+  "vertical": "software",
+  "description": "Oracle's visual MySQL tool for SQL development, administration, data modeling, server configuration, and database migration.",
+  "accent": "#4479A1",
+  "simpleIconSlug": "mysql",
+  "logoUrl": "https://cdn.simpleicons.org/mysql",
+  "logoSourceType": "curated-brand-asset"
+}

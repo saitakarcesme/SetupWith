@@ -1,0 +1,18 @@
+{
+  "index": 413,
+  "name": "Peacock",
+  "slug": "peacock",
+  "source": {
+    "type": "website",
+    "url": "https://www.peacocktv.com/",
+    "installUrl": "https://www.peacocktv.com/"
+  },
+  "website": "https://www.peacocktv.com/",
+  "category": "Streaming, Reading & Consumer Media",
+  "vertical": "entertainment",
+  "description": "NBCUniversal streaming service for on-demand shows, films, sports, news, channels, and profiles.",
+  "accent": "#000000",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.peacocktv.com/static/peacock-toolkit/53.0.1/peacock/favicons/apple-touch-icon_152x152.png",
+  "logoSourceType": "official-project-asset"
+}

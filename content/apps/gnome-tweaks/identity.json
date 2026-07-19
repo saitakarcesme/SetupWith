@@ -1,0 +1,18 @@
+{
+  "index": 399,
+  "name": "GNOME Tweaks",
+  "slug": "gnome-tweaks",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/GNOME/gnome-tweaks",
+    "installUrl": "https://gitlab.gnome.org/GNOME/gnome-tweaks"
+  },
+  "website": "https://gitlab.gnome.org/GNOME/gnome-tweaks",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "software",
+  "description": "GNOME configuration utility for fonts, themes, startup applications, input behavior, and desktop preferences.",
+  "accent": "#4A86CF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://gitlab.gnome.org/GNOME/gnome-tweaks/-/raw/master/data/org.gnome.tweaks.svg",
+  "logoSourceType": "official-project-asset"
+}

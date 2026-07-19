@@ -1,0 +1,18 @@
+{
+  "index": 362,
+  "name": "Adobe After Effects",
+  "slug": "adobe-after-effects",
+  "source": {
+    "type": "website",
+    "url": "https://www.adobe.com/products/aftereffects.html",
+    "installUrl": "https://www.adobe.com/creativecloud/desktop-app.html"
+  },
+  "website": "https://www.adobe.com/products/aftereffects.html",
+  "category": "Professional Creative Suites",
+  "vertical": "creative",
+  "description": "Motion graphics, compositing, visual-effects, animation, tracking, and rendering application in the Adobe video toolchain.",
+  "accent": "#9999FF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:adobe-after-effects.svg",
+  "logoSourceType": "curated-brand-asset"
+}

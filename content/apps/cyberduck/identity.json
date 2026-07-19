@@ -1,0 +1,18 @@
+{
+  "index": 348,
+  "name": "Cyberduck",
+  "slug": "cyberduck",
+  "source": {
+    "type": "website",
+    "url": "https://cyberduck.io/",
+    "installUrl": "https://cyberduck.io/download/"
+  },
+  "website": "https://cyberduck.io/",
+  "category": "Cloud Storage, Backup & File Transfer",
+  "vertical": "work",
+  "description": "Libre macOS and Windows browser for SFTP, WebDAV, object storage, and major cloud-drive providers.",
+  "accent": "#F5A623",
+  "simpleIconSlug": null,
+  "logoUrl": "https://cdn.cyberduck.io/img/cyberduck-icon-384.png",
+  "logoSourceType": "official-project-asset"
+}

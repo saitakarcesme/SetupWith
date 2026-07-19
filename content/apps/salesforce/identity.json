@@ -1,0 +1,18 @@
+{
+  "index": 423,
+  "name": "Salesforce",
+  "slug": "salesforce",
+  "source": {
+    "type": "website",
+    "url": "https://www.salesforce.com/",
+    "installUrl": "https://login.salesforce.com/"
+  },
+  "website": "https://www.salesforce.com/",
+  "category": "Business Intelligence & Enterprise Apps",
+  "vertical": "work",
+  "description": "Cloud CRM platform for accounts, opportunities, service, analytics, automation, and configurable enterprise applications.",
+  "accent": "#00A1E0",
+  "simpleIconSlug": null,
+  "logoUrl": "https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-no-type-logo.svg",
+  "logoSourceType": "official-project-asset"
+}

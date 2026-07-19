@@ -1,0 +1,18 @@
+{
+  "index": 318,
+  "name": "Postman",
+  "slug": "postman",
+  "source": {
+    "type": "website",
+    "url": "https://www.postman.com/",
+    "installUrl": "https://www.postman.com/downloads/"
+  },
+  "website": "https://www.postman.com/",
+  "category": "API, Networking & Database Clients",
+  "vertical": "software",
+  "description": "Desktop API platform for composing requests, organizing collections, testing services, documenting APIs, and collaborating on workspaces.",
+  "accent": "#FF6C37",
+  "simpleIconSlug": "postman",
+  "logoUrl": "https://cdn.simpleicons.org/postman",
+  "logoSourceType": "curated-brand-asset"
+}

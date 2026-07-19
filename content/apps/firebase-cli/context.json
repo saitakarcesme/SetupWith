@@ -1,0 +1,43 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "active_project",
+    "project_aliases",
+    "emulator_ports",
+    "telemetry"
+  ],
+  "secrets": [
+    {
+      "key": "GOOGLE_APPLICATION_CREDENTIALS",
+      "reference": "secret://google/application-credentials"
+    },
+    {
+      "key": "FIREBASE_TOKEN",
+      "reference": "secret://firebase/token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

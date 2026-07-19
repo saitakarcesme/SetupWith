@@ -1,0 +1,16 @@
+{
+  "index": 407,
+  "name": "HP Support Assistant",
+  "slug": "hp-support-assistant",
+  "source": {
+    "type": "website",
+    "url": "https://support.hp.com/us-en/help/hp-support-assistant",
+    "installUrl": "https://support.hp.com/us-en/help/hp-support-assistant"
+  },
+  "website": "https://support.hp.com/us-en/help/hp-support-assistant",
+  "category": "Device Management & OEM Utilities",
+  "vertical": "hardware",
+  "description": "HP support utility for device diagnostics, warranty details, troubleshooting, and software, driver, or BIOS updates.",
+  "accent": "#0096D6",
+  "simpleIconSlug": "hp"
+}

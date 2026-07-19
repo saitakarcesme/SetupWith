@@ -1,0 +1,18 @@
+{
+  "index": 314,
+  "name": "JetBrains Rider",
+  "slug": "jetbrains-rider",
+  "source": {
+    "type": "website",
+    "url": "https://www.jetbrains.com/rider/",
+    "installUrl": "https://www.jetbrains.com/rider/download/"
+  },
+  "website": "https://www.jetbrains.com/rider/",
+  "category": "Professional IDEs & Mobile SDKs",
+  "vertical": "software",
+  "description": "JetBrains' cross-platform .NET IDE for C#, ASP.NET, Unity, Unreal, debugging, profiling, testing, and database development.",
+  "accent": "#FF2D90",
+  "simpleIconSlug": "rider",
+  "logoUrl": "https://cdn.simpleicons.org/rider",
+  "logoSourceType": "curated-brand-asset"
+}

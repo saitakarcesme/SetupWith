@@ -1,0 +1,18 @@
+{
+  "index": 394,
+  "name": "Everything",
+  "slug": "everything-search",
+  "source": {
+    "type": "website",
+    "url": "https://www.voidtools.com/",
+    "installUrl": "https://www.voidtools.com/downloads/"
+  },
+  "website": "https://www.voidtools.com/",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "software",
+  "description": "Fast Windows filename search utility using NTFS indexes, filters, bookmarks, and optional background service.",
+  "accent": "#F5B700",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.voidtools.com/favicon.ico",
+  "logoSourceType": "official-project-asset"
+}

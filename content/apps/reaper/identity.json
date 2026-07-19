@@ -1,0 +1,18 @@
+{
+  "index": 369,
+  "name": "REAPER",
+  "slug": "reaper",
+  "source": {
+    "type": "website",
+    "url": "https://www.reaper.fm/",
+    "installUrl": "https://www.reaper.fm/download.php"
+  },
+  "website": "https://www.reaper.fm/",
+  "category": "Audio, Podcast & Streaming Production",
+  "vertical": "creative",
+  "description": "Lightweight, extensible digital audio workstation for multitrack recording, editing, mixing, mastering, and scripting.",
+  "accent": "#5B7185",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.reaper.fm/v5img/logo.jpg",
+  "logoSourceType": "official-project-asset"
+}

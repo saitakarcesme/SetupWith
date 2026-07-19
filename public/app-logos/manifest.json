@@ -1503,5 +1503,620 @@
     "file": "setupwith.svg",
     "source": "https://raw.githubusercontent.com/saitakarcesme/SetupWith/main/src/app/icon.svg",
     "sourceType": "official-project-asset"
+  },
+  "chatgpt-desktop": {
+    "file": "chatgpt-desktop.svg",
+    "source": "https://api.iconify.design/logos:openai-icon.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "claude-desktop": {
+    "file": "claude-desktop.svg",
+    "source": "https://cdn.simpleicons.org/claude",
+    "sourceType": "curated-brand-asset"
+  },
+  "lm-studio": {
+    "file": "lm-studio.svg",
+    "source": "https://files.lmstudio.ai/lmstudio_icon.svg",
+    "sourceType": "official-project-asset"
+  },
+  "cursor": {
+    "file": "cursor.svg",
+    "source": "https://cdn.simpleicons.org/cursor",
+    "sourceType": "curated-brand-asset"
+  },
+  "windsurf-editor": {
+    "file": "windsurf-editor.svg",
+    "source": "https://cdn.simpleicons.org/windsurf",
+    "sourceType": "curated-brand-asset"
+  },
+  "codex-cli": {
+    "file": "codex-cli.svg",
+    "source": "https://api.iconify.design/logos:openai-icon.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "claude-code": {
+    "file": "claude-code.svg",
+    "source": "https://cdn.simpleicons.org/claude",
+    "sourceType": "curated-brand-asset"
+  },
+  "gemini-cli": {
+    "file": "gemini-cli.svg",
+    "source": "https://cdn.simpleicons.org/googlegemini",
+    "sourceType": "curated-brand-asset"
+  },
+  "jetbrains-toolbox": {
+    "file": "jetbrains-toolbox.svg",
+    "source": "https://cdn.simpleicons.org/jetbrains",
+    "sourceType": "curated-brand-asset"
+  },
+  "pycharm": {
+    "file": "pycharm.svg",
+    "source": "https://cdn.simpleicons.org/pycharm",
+    "sourceType": "curated-brand-asset"
+  },
+  "clion": {
+    "file": "clion.svg",
+    "source": "https://cdn.simpleicons.org/clion",
+    "sourceType": "curated-brand-asset"
+  },
+  "webstorm": {
+    "file": "webstorm.svg",
+    "source": "https://cdn.simpleicons.org/webstorm",
+    "sourceType": "curated-brand-asset"
+  },
+  "jetbrains-rider": {
+    "file": "jetbrains-rider.svg",
+    "source": "https://cdn.simpleicons.org/rider",
+    "sourceType": "curated-brand-asset"
+  },
+  "android-studio": {
+    "file": "android-studio.svg",
+    "source": "https://cdn.simpleicons.org/androidstudio",
+    "sourceType": "curated-brand-asset"
+  },
+  "microsoft-visual-studio": {
+    "file": "microsoft-visual-studio.svg",
+    "source": "https://api.iconify.design/logos:visual-studio.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "xcode": {
+    "file": "xcode.svg",
+    "source": "https://cdn.simpleicons.org/xcode",
+    "sourceType": "curated-brand-asset"
+  },
+  "postman": {
+    "file": "postman.svg",
+    "source": "https://cdn.simpleicons.org/postman",
+    "sourceType": "curated-brand-asset"
+  },
+  "insomnia": {
+    "file": "insomnia.svg",
+    "source": "https://cdn.simpleicons.org/insomnia",
+    "sourceType": "curated-brand-asset"
+  },
+  "bruno": {
+    "file": "bruno.svg",
+    "source": "https://cdn.simpleicons.org/bruno",
+    "sourceType": "curated-brand-asset"
+  },
+  "wireshark": {
+    "file": "wireshark.svg",
+    "source": "https://cdn.simpleicons.org/wireshark",
+    "sourceType": "curated-brand-asset"
+  },
+  "tableplus": {
+    "file": "tableplus.svg",
+    "source": "https://tableplus.com/resources/favicons/apple-icon-180x180.png",
+    "sourceType": "official-project-asset"
+  },
+  "redis-insight": {
+    "file": "redis-insight.svg",
+    "source": "https://cdn.simpleicons.org/redis",
+    "sourceType": "curated-brand-asset"
+  },
+  "mysql-workbench": {
+    "file": "mysql-workbench.svg",
+    "source": "https://cdn.simpleicons.org/mysql",
+    "sourceType": "curated-brand-asset"
+  },
+  "sql-server-management-studio": {
+    "file": "sql-server-management-studio.svg",
+    "source": "https://api.iconify.design/devicon:microsoftsqlserver.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "aws-cli": {
+    "file": "aws-cli.svg",
+    "source": "https://api.iconify.design/logos:aws.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "azure-cli": {
+    "file": "azure-cli.svg",
+    "source": "https://api.iconify.design/logos:microsoft-azure.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "google-cloud-cli": {
+    "file": "google-cloud-cli.svg",
+    "source": "https://api.iconify.design/logos:google-cloud.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "vercel-cli": {
+    "file": "vercel-cli.svg",
+    "source": "https://cdn.simpleicons.org/vercel",
+    "sourceType": "curated-brand-asset"
+  },
+  "cloudflare-wrangler": {
+    "file": "cloudflare-wrangler.svg",
+    "source": "https://cdn.simpleicons.org/cloudflareworkers",
+    "sourceType": "curated-brand-asset"
+  },
+  "firebase-cli": {
+    "file": "firebase-cli.svg",
+    "source": "https://api.iconify.design/logos:firebase.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "gitlab-cli": {
+    "file": "gitlab-cli.svg",
+    "source": "https://api.iconify.design/logos:gitlab.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "netlify-cli": {
+    "file": "netlify-cli.svg",
+    "source": "https://cdn.simpleicons.org/netlify",
+    "sourceType": "curated-brand-asset"
+  },
+  "microsoft-365": {
+    "file": "microsoft-365.svg",
+    "source": "https://api.iconify.design/selfhst:microsoft-365.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "microsoft-teams": {
+    "file": "microsoft-teams.svg",
+    "source": "https://api.iconify.design/logos:microsoft-teams.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "slack": {
+    "file": "slack.svg",
+    "source": "https://api.iconify.design/logos:slack-icon.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "microsoft-outlook": {
+    "file": "microsoft-outlook.svg",
+    "source": "https://api.iconify.design/selfhst:microsoft-outlook.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "microsoft-onenote": {
+    "file": "microsoft-onenote.svg",
+    "source": "https://api.iconify.design/selfhst:microsoft-onenote.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "obsidian": {
+    "file": "obsidian.svg",
+    "source": "https://cdn.simpleicons.org/obsidian",
+    "sourceType": "curated-brand-asset"
+  },
+  "adobe-acrobat-reader": {
+    "file": "adobe-acrobat-reader.svg",
+    "source": "https://api.iconify.design/selfhst:adobe-acrobat.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "google-meet": {
+    "file": "google-meet.svg",
+    "source": "https://api.iconify.design/logos:google-meet.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "microsoft-onedrive": {
+    "file": "microsoft-onedrive.svg",
+    "source": "https://api.iconify.design/logos:microsoft-onedrive.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "icloud-for-windows": {
+    "file": "icloud-for-windows.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:ICloud_logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "box-drive": {
+    "file": "box-drive.svg",
+    "source": "https://www.box.com/en-gb/about-us/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mega-desktop": {
+    "file": "mega-desktop.svg",
+    "source": "https://mega.io/media",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "filezilla-client": {
+    "file": "filezilla-client.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:FileZilla_logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "winscp": {
+    "file": "winscp.svg",
+    "source": "https://winscp.net/assets/images/logos/logo@240.jpg",
+    "sourceType": "official-project-asset"
+  },
+  "cyberduck": {
+    "file": "cyberduck.svg",
+    "source": "https://cdn.cyberduck.io/img/cyberduck-icon-384.png",
+    "sourceType": "official-project-asset"
+  },
+  "rclone": {
+    "file": "rclone.svg",
+    "source": "https://github.com/rclone/rclone/blob/8f1c309c8149a734ccc3a0d2ce185b936dbe783a/graphics/logo/svg/logo_symbol_color.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "teamviewer": {
+    "file": "teamviewer.svg",
+    "source": "https://www.teamviewer.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "anydesk": {
+    "file": "anydesk.svg",
+    "source": "https://anydesk.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "rustdesk": {
+    "file": "rustdesk.svg",
+    "source": "https://github.com/rustdesk/rustdesk/blob/80857c22c9ee1578b4329aec3250c3e6f285a7d2/res/logo.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "parsec": {
+    "file": "parsec.svg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/1/17/Parsec_%28software%29_logo.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "oracle-virtualbox": {
+    "file": "oracle-virtualbox.svg",
+    "source": "https://www.virtualbox.org/svn/vbox/trunk/src/VBox/Artwork/OSE",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "vmware-workstation-fusion-pro": {
+    "file": "vmware-workstation-fusion-pro.svg",
+    "source": "https://myvmware.workspaceair.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "parallels-desktop": {
+    "file": "parallels-desktop.svg",
+    "source": "https://www.parallels.com/static/pl/typo3conf/ext/prls_theme/Resources/Public/theme/res/img/favicon/apple-touch-icon.png",
+    "sourceType": "official-project-asset"
+  },
+  "docker-desktop": {
+    "file": "docker-desktop.svg",
+    "source": "https://www.docker.com/company/newsroom/media-resources",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "adobe-creative-cloud": {
+    "file": "adobe-creative-cloud.svg",
+    "source": "https://api.iconify.design/arcticons:adobe-creative-cloud.svg?color=%23DA1F26",
+    "sourceType": "curated-brand-asset"
+  },
+  "adobe-photoshop": {
+    "file": "adobe-photoshop.svg",
+    "source": "https://api.iconify.design/logos:adobe-photoshop.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "adobe-illustrator": {
+    "file": "adobe-illustrator.svg",
+    "source": "https://api.iconify.design/logos:adobe-illustrator.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "adobe-premiere": {
+    "file": "adobe-premiere.svg",
+    "source": "https://api.iconify.design/devicon:premierepro.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "adobe-after-effects": {
+    "file": "adobe-after-effects.svg",
+    "source": "https://api.iconify.design/logos:adobe-after-effects.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "adobe-lightroom": {
+    "file": "adobe-lightroom.svg",
+    "source": "https://api.iconify.design/logos:adobe-lightroom.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "affinity-photo": {
+    "file": "affinity-photo.svg",
+    "source": "https://api.iconify.design/vscode-icons:file-type-affinityphoto.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "capcut": {
+    "file": "capcut.svg",
+    "source": "https://api.iconify.design/selfhst:capcut.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "canva-desktop": {
+    "file": "canva-desktop.svg",
+    "source": "https://api.iconify.design/devicon:canva.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "ableton-live": {
+    "file": "ableton-live.svg",
+    "source": "https://api.iconify.design/cbi:abletonlive.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "fl-studio": {
+    "file": "fl-studio.svg",
+    "source": "https://www.image-line.com/static/assets/fl-studio-app-icon-512.c24a664.png",
+    "sourceType": "official-project-asset"
+  },
+  "reaper": {
+    "file": "reaper.svg",
+    "source": "https://www.reaper.fm/v5img/logo.jpg",
+    "sourceType": "official-project-asset"
+  },
+  "logic-pro": {
+    "file": "logic-pro.svg",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/ca/f0/facaf02c-9ba7-41fe-0f80-178513d4d3a5/AppIcon-0-85-220-0-6-0-0-2x-0-0-0-0-0.png/512x512bb.png",
+    "sourceType": "official-project-asset"
+  },
+  "cubase": {
+    "file": "cubase.svg",
+    "source": "https://api.iconify.design/fad:logo-cubase.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "adobe-audition": {
+    "file": "adobe-audition.svg",
+    "source": "https://api.iconify.design/cib:adobe-audition.svg?color=%239999FF",
+    "sourceType": "curated-brand-asset"
+  },
+  "streamlabs-desktop": {
+    "file": "streamlabs-desktop.svg",
+    "source": "https://streamlabs.com/about",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "nvidia-broadcast": {
+    "file": "nvidia-broadcast.svg",
+    "source": "https://www.nvidia.com/en-us",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "matlab": {
+    "file": "matlab.svg",
+    "source": "https://api.iconify.design/vscode-icons:file-type-matlab.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "rstudio": {
+    "file": "rstudio.svg",
+    "source": "https://www.rstudio.com/about/logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "wolfram-mathematica": {
+    "file": "wolfram-mathematica.svg",
+    "source": "https://company.wolfram.com/press-center/mathematica",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "qgis": {
+    "file": "qgis.svg",
+    "source": "https://www.qgis.org/en/site/getinvolved/styleguide.html",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "autocad": {
+    "file": "autocad.svg",
+    "source": "https://api.iconify.design/skill-icons:autocad-light.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "solidworks": {
+    "file": "solidworks.svg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/b/bf/SOLIDWORKS_Logo.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "kicad": {
+    "file": "kicad.svg",
+    "source": "https://www.kicad.org/about/kicad/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "arduino-ide": {
+    "file": "arduino-ide.svg",
+    "source": "https://www.arduino.cc",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "1password": {
+    "file": "1password.svg",
+    "source": "https://1password.com/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "bitwarden-desktop": {
+    "file": "bitwarden-desktop.svg",
+    "source": "https://bitwarden.com/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "proton-vpn": {
+    "file": "proton-vpn.svg",
+    "source": "https://proton.me/media/kit",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "mullvad-vpn": {
+    "file": "mullvad-vpn.svg",
+    "source": "https://mullvad.net/press#logos",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "malwarebytes": {
+    "file": "malwarebytes.svg",
+    "source": "https://www.malwarebytes.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "yubikey-manager": {
+    "file": "yubikey-manager.svg",
+    "source": "https://www.yubico.com/wp-content/themes/coronado/img/icon.svg",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "cloudflare-warp": {
+    "file": "cloudflare-warp.svg",
+    "source": "https://www.cloudflare.com/logo/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "little-snitch": {
+    "file": "little-snitch.svg",
+    "source": "https://www.obdev.at/Images/product-icons/littlesnitch_256.png",
+    "sourceType": "official-project-asset"
+  },
+  "microsoft-edge": {
+    "file": "microsoft-edge.svg",
+    "source": "https://edgecdn-embza6g8cacagcbn.z01.azurefd.net/welcome/static/favicon.png",
+    "sourceType": "official-project-asset"
+  },
+  "windows-terminal": {
+    "file": "windows-terminal.svg",
+    "source": "https://raw.githubusercontent.com/microsoft/terminal/main/res/terminal/images/Square44x44Logo.targetsize-256_altform-unplated.png",
+    "sourceType": "official-project-asset"
+  },
+  "winrar": {
+    "file": "winrar.svg",
+    "source": "https://www.win-rar.com/fileadmin/images/apple-touch-icon.png",
+    "sourceType": "official-project-asset"
+  },
+  "everything-search": {
+    "file": "everything-search.svg",
+    "source": "https://www.voidtools.com/favicon.ico",
+    "sourceType": "official-project-asset"
+  },
+  "sharex": {
+    "file": "sharex.svg",
+    "source": "https://getsharex.com/brand-assets",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "autohotkey": {
+    "file": "autohotkey.svg",
+    "source": "https://www.autohotkey.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "raycast": {
+    "file": "raycast.svg",
+    "source": "https://www.raycast.com/press",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "rectangle": {
+    "file": "rectangle.svg",
+    "source": "https://rectangleapp.com/assets/images/mac512pts1x.png",
+    "sourceType": "official-project-asset"
+  },
+  "gnome-tweaks": {
+    "file": "gnome-tweaks.svg",
+    "source": "https://gitlab.gnome.org/GNOME/gnome-tweaks/-/raw/master/data/org.gnome.tweaks.svg",
+    "sourceType": "official-project-asset"
+  },
+  "flatseal": {
+    "file": "flatseal.svg",
+    "source": "https://raw.githubusercontent.com/tchx84/Flatseal/master/data/icons/com.github.tchx84.Flatseal.svg",
+    "sourceType": "official-project-asset"
+  },
+  "logitech-options-plus": {
+    "file": "logitech-options-plus.svg",
+    "source": "https://www.logitech.com/favicon.ico",
+    "sourceType": "official-project-asset"
+  },
+  "logitech-g-hub": {
+    "file": "logitech-g-hub.svg",
+    "source": "https://www.logitechg.com/favicon-gaming.ico",
+    "sourceType": "official-project-asset"
+  },
+  "asus-armoury-crate": {
+    "file": "asus-armoury-crate.svg",
+    "source": "https://www.asus.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "msi-center": {
+    "file": "msi-center.svg",
+    "source": "https://www.msi.com/page/brochure",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "lenovo-vantage": {
+    "file": "lenovo-vantage.svg",
+    "source": "https://news.lenovo.com/press-kits/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "dell-command-update": {
+    "file": "dell-command-update.svg",
+    "source": "https://www.dell.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "hp-support-assistant": {
+    "file": "hp-support-assistant.svg",
+    "source": "https://brandcentral.hp.com/us/en/elements/hp-logo.html",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "samsung-magician": {
+    "file": "samsung-magician.svg",
+    "source": "https://www.samsung.com/us/about-us/brand-identity/logo/",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "disney-plus": {
+    "file": "disney-plus.svg",
+    "source": "https://static-assets.bamgrid.com/product/disneyplus/favicons/disPlus-favicon-180x180.7d56f648dc95f591721935193bc827cb.png",
+    "sourceType": "official-project-asset"
+  },
+  "prime-video": {
+    "file": "prime-video.svg",
+    "source": "https://m.media-amazon.com/images/G/01/digital/video/DVUI/favicons/favicon-196x196.png",
+    "sourceType": "official-project-asset"
+  },
+  "hulu": {
+    "file": "hulu.svg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Hulu_logo_%282018%29.svg",
+    "sourceType": "curated-brand-asset"
+  },
+  "paramount-plus": {
+    "file": "paramount-plus.svg",
+    "source": "https://www.paramount.com/brand/paramount-plus",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "peacock": {
+    "file": "peacock.svg",
+    "source": "https://www.peacocktv.com/static/peacock-toolkit/53.0.1/peacock/favicons/apple-touch-icon_152x152.png",
+    "sourceType": "official-project-asset"
+  },
+  "youtube": {
+    "file": "youtube.svg",
+    "source": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "amazon-music": {
+    "file": "amazon-music.svg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/0/07/Amazon_Music_2024.png",
+    "sourceType": "curated-brand-asset"
+  },
+  "kindle-for-pc-mac": {
+    "file": "kindle-for-pc-mac.svg",
+    "source": "https://m.media-amazon.com/images/G/01/kfw/mobile/kindle_favicon._CB624847354_.png",
+    "sourceType": "official-project-asset"
+  },
+  "power-bi-desktop": {
+    "file": "power-bi-desktop.svg",
+    "source": "https://res.cdn.office.net/files/fabric-cdn-prod_20251117.001/assets/brand-icons/product/png/powerbi_48x1.png",
+    "sourceType": "official-project-asset"
+  },
+  "tableau-desktop": {
+    "file": "tableau-desktop.svg",
+    "source": "https://www.tableau.com/themes/custom/tableau_www/logo.v2.svg",
+    "sourceType": "official-project-asset"
+  },
+  "sap-gui": {
+    "file": "sap-gui.svg",
+    "source": "https://www.sap.com",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "tradingview-desktop": {
+    "file": "tradingview-desktop.svg",
+    "source": "https://www.tradingview.com/media-kit",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "metatrader-5": {
+    "file": "metatrader-5.svg",
+    "source": "https://www.metatrader5.com/i/download/metatrader-5-desktop-logo.png",
+    "sourceType": "official-project-asset"
+  },
+  "quickbooks": {
+    "file": "quickbooks.svg",
+    "source": "https://design.intuit.com/quickbooks/brand",
+    "sourceType": "simple-icons-official-glyph"
+  },
+  "salesforce": {
+    "file": "salesforce.svg",
+    "source": "https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-no-type-logo.svg",
+    "sourceType": "official-project-asset"
+  },
+  "hubspot": {
+    "file": "hubspot.svg",
+    "source": "https://www.hubspot.com/style-guide",
+    "sourceType": "simple-icons-official-glyph"
   }
 }

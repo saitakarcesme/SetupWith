@@ -1,0 +1,39 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true
+  },
+  "preferences": [
+    "backend",
+    "resources_cpu",
+    "resources_memory",
+    "disk_image_location"
+  ],
+  "secrets": [
+    {
+      "key": "DOCKER_AUTH_CONFIG",
+      "reference": "secret://docker/auth-config"
+    }
+  ],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

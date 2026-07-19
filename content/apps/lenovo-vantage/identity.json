@@ -1,0 +1,16 @@
+{
+  "index": 405,
+  "name": "Lenovo Vantage",
+  "slug": "lenovo-vantage",
+  "source": {
+    "type": "microsoft-store",
+    "url": "https://apps.microsoft.com/detail/9wzdncrfj4mv",
+    "installUrl": "https://apps.microsoft.com/detail/9wzdncrfj4mv"
+  },
+  "website": "https://www.lenovo.com/us/en/software/vantage/",
+  "category": "Device Management & OEM Utilities",
+  "vertical": "hardware",
+  "description": "Lenovo PC companion for device settings, diagnostics, warranty information, driver updates, and battery controls.",
+  "accent": "#E2231A",
+  "simpleIconSlug": "lenovo"
+}

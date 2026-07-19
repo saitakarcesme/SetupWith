@@ -1,0 +1,16 @@
+{
+  "index": 406,
+  "name": "Dell Command Update",
+  "slug": "dell-command-update",
+  "source": {
+    "type": "website",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000177325/dell-command-update",
+    "installUrl": "https://www.dell.com/support/kbdoc/en-us/000177325/dell-command-update"
+  },
+  "website": "https://www.dell.com/support/kbdoc/en-us/000177325/dell-command-update",
+  "category": "Device Management & OEM Utilities",
+  "vertical": "hardware",
+  "description": "Dell business-client updater for model-specific BIOS, firmware, driver, and Dell application packages.",
+  "accent": "#007DB8",
+  "simpleIconSlug": "dell"
+}

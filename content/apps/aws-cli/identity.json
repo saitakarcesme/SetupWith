@@ -1,0 +1,18 @@
+{
+  "index": 326,
+  "name": "AWS CLI",
+  "slug": "aws-cli",
+  "source": {
+    "type": "website",
+    "url": "https://docs.aws.amazon.com/cli/",
+    "installUrl": "https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"
+  },
+  "website": "https://aws.amazon.com/cli/",
+  "category": "Cloud Provider & Deployment CLIs",
+  "vertical": "software",
+  "description": "Amazon Web Services' unified command-line interface for configuring, querying, automating, and administering AWS services and resources.",
+  "accent": "#232F3E",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:aws.svg",
+  "logoSourceType": "curated-brand-asset"
+}

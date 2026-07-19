@@ -1,0 +1,16 @@
+{
+  "index": 355,
+  "name": "VMware Workstation Pro / Fusion Pro",
+  "slug": "vmware-workstation-fusion-pro",
+  "source": {
+    "type": "website",
+    "url": "https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion",
+    "installUrl": "https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"
+  },
+  "website": "https://www.vmware.com/products/desktop-hypervisor",
+  "category": "Remote Access, Virtualization & Containers",
+  "vertical": "software",
+  "description": "VMware's free desktop hypervisors: Workstation Pro for Windows or Linux and Fusion Pro for Intel or Apple silicon Macs.",
+  "accent": "#607078",
+  "simpleIconSlug": "vmware"
+}

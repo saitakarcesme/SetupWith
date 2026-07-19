@@ -1,0 +1,18 @@
+{
+  "index": 398,
+  "name": "Rectangle",
+  "slug": "rectangle",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/rxhanson/Rectangle",
+    "installUrl": "https://rectangleapp.com/"
+  },
+  "website": "https://rectangleapp.com/",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "software",
+  "description": "Open-source macOS window manager for keyboard-driven resizing, screen-edge snapping, and custom layouts.",
+  "accent": "#6E56CF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://rectangleapp.com/assets/images/mac512pts1x.png",
+  "logoSourceType": "official-project-asset"
+}

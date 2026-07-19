@@ -1,0 +1,18 @@
+{
+  "index": 417,
+  "name": "Power BI Desktop",
+  "slug": "power-bi-desktop",
+  "source": {
+    "type": "microsoft-store",
+    "url": "https://apps.microsoft.com/detail/9ntxr16hnw1t",
+    "installUrl": "https://apps.microsoft.com/detail/9ntxr16hnw1t"
+  },
+  "website": "https://www.microsoft.com/en-us/power-platform/products/power-bi/desktop",
+  "category": "Business Intelligence & Enterprise Apps",
+  "vertical": "work",
+  "description": "Windows business-intelligence authoring tool for data modeling, Power Query, DAX, reports, and Power BI publishing.",
+  "accent": "#F2C811",
+  "simpleIconSlug": null,
+  "logoUrl": "https://res.cdn.office.net/files/fabric-cdn-prod_20251117.001/assets/brand-icons/product/png/powerbi_48x1.png",
+  "logoSourceType": "official-project-asset"
+}

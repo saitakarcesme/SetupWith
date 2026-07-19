@@ -1,0 +1,18 @@
+{
+  "index": 391,
+  "name": "Microsoft Edge",
+  "slug": "microsoft-edge",
+  "source": {
+    "type": "website",
+    "url": "https://www.microsoft.com/edge/",
+    "installUrl": "https://www.microsoft.com/edge/download"
+  },
+  "website": "https://www.microsoft.com/edge/",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "browsers",
+  "description": "Chromium-based browser with profiles, tracking prevention, enterprise policy support, and cross-device synchronization.",
+  "accent": "#0C7BDC",
+  "simpleIconSlug": null,
+  "logoUrl": "https://edgecdn-embza6g8cacagcbn.z01.azurefd.net/welcome/static/favicon.png",
+  "logoSourceType": "official-project-asset"
+}

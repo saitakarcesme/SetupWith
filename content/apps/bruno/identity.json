@@ -1,0 +1,18 @@
+{
+  "index": 320,
+  "name": "Bruno",
+  "slug": "bruno",
+  "source": {
+    "type": "website",
+    "url": "https://www.usebruno.com/",
+    "installUrl": "https://www.usebruno.com/downloads"
+  },
+  "website": "https://www.usebruno.com/",
+  "category": "API, Networking & Database Clients",
+  "vertical": "software",
+  "description": "Git-friendly desktop API client that stores collections as plain-text files for offline REST and GraphQL development workflows.",
+  "accent": "#F4AA41",
+  "simpleIconSlug": "bruno",
+  "logoUrl": "https://cdn.simpleicons.org/bruno",
+  "logoSourceType": "curated-brand-asset"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 330,
+  "name": "Cloudflare Wrangler",
+  "slug": "cloudflare-wrangler",
+  "source": {
+    "type": "website",
+    "url": "https://developers.cloudflare.com/workers/wrangler/",
+    "installUrl": "https://developers.cloudflare.com/workers/wrangler/install-and-update/"
+  },
+  "website": "https://developers.cloudflare.com/workers/wrangler/",
+  "category": "Cloud Provider & Deployment CLIs",
+  "vertical": "software",
+  "description": "Cloudflare's command-line tool for developing, testing, configuring, and deploying Workers and related developer platform resources.",
+  "accent": "#F38020",
+  "simpleIconSlug": "cloudflareworkers",
+  "logoUrl": "https://cdn.simpleicons.org/cloudflareworkers",
+  "logoSourceType": "curated-brand-asset"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 389,
+  "name": "Cloudflare WARP",
+  "slug": "cloudflare-warp",
+  "source": {
+    "type": "website",
+    "url": "https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/download-warp/",
+    "installUrl": "https://one.one.one.one/"
+  },
+  "website": "https://one.one.one.one/",
+  "category": "Consumer Security, VPN & Identity",
+  "vertical": "software",
+  "description": "Cloudflare client for encrypted DNS, consumer WARP tunneling, and optional Zero Trust organization enrollment.",
+  "accent": "#F38020",
+  "simpleIconSlug": "cloudflare"
+}

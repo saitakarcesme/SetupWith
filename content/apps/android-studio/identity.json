@@ -1,0 +1,18 @@
+{
+  "index": 315,
+  "name": "Android Studio",
+  "slug": "android-studio",
+  "source": {
+    "type": "website",
+    "url": "https://developer.android.com/studio",
+    "installUrl": "https://developer.android.com/studio"
+  },
+  "website": "https://developer.android.com/studio",
+  "category": "Professional IDEs & Mobile SDKs",
+  "vertical": "software",
+  "description": "Google's official Android IDE with Gradle tooling, SDK management, device emulation, profilers, testing, and app inspection.",
+  "accent": "#3DDC84",
+  "simpleIconSlug": "androidstudio",
+  "logoUrl": "https://cdn.simpleicons.org/androidstudio",
+  "logoSourceType": "curated-brand-asset"
+}

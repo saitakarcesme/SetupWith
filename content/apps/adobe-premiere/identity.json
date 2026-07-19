@@ -1,0 +1,18 @@
+{
+  "index": 361,
+  "name": "Adobe Premiere",
+  "slug": "adobe-premiere",
+  "source": {
+    "type": "website",
+    "url": "https://www.adobe.com/products/premiere.html",
+    "installUrl": "https://www.adobe.com/creativecloud/desktop-app.html"
+  },
+  "website": "https://www.adobe.com/products/premiere.html",
+  "category": "Professional Creative Suites",
+  "vertical": "creative",
+  "description": "Professional nonlinear video editor for timeline assembly, multicamera work, color, audio, captions, proxies, and delivery.",
+  "accent": "#9999FF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/devicon:premierepro.svg",
+  "logoSourceType": "curated-brand-asset"
+}

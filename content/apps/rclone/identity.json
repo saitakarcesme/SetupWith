@@ -1,0 +1,16 @@
+{
+  "index": 349,
+  "name": "rclone",
+  "slug": "rclone",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/rclone/rclone",
+    "installUrl": "https://rclone.org/downloads/"
+  },
+  "website": "https://rclone.org/",
+  "category": "Cloud Storage, Backup & File Transfer",
+  "vertical": "work",
+  "description": "Command-line data mover and mount tool supporting checksummed copy, sync, encryption, and dozens of cloud backends.",
+  "accent": "#3F79AD",
+  "simpleIconSlug": "rclone"
+}

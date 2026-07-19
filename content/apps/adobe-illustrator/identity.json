@@ -1,0 +1,18 @@
+{
+  "index": 360,
+  "name": "Adobe Illustrator",
+  "slug": "adobe-illustrator",
+  "source": {
+    "type": "website",
+    "url": "https://www.adobe.com/products/illustrator.html",
+    "installUrl": "https://www.adobe.com/creativecloud/desktop-app.html"
+  },
+  "website": "https://www.adobe.com/products/illustrator.html",
+  "category": "Professional Creative Suites",
+  "vertical": "creative",
+  "description": "Professional vector design application for illustration, typography, packaging, iconography, and scalable print or digital artwork.",
+  "accent": "#FF9A00",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:adobe-illustrator.svg",
+  "logoSourceType": "curated-brand-asset"
+}

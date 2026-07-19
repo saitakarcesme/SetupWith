@@ -1,0 +1,16 @@
+{
+  "index": 374,
+  "name": "NVIDIA Broadcast",
+  "slug": "nvidia-broadcast",
+  "source": {
+    "type": "website",
+    "url": "https://www.nvidia.com/en-us/geforce/broadcasting/broadcast-app/",
+    "installUrl": "https://www.nvidia.com/en-us/geforce/broadcasting/broadcast-app/"
+  },
+  "website": "https://www.nvidia.com/en-us/geforce/broadcasting/broadcast-app/",
+  "category": "Audio, Podcast & Streaming Production",
+  "vertical": "creative",
+  "description": "Windows RTX utility that exposes AI-filtered virtual microphone, speaker, and camera devices for calls and broadcasts.",
+  "accent": "#76B900",
+  "simpleIconSlug": "nvidia"
+}

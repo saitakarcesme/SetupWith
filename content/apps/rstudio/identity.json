@@ -1,0 +1,16 @@
+{
+  "index": 376,
+  "name": "RStudio",
+  "slug": "rstudio",
+  "source": {
+    "type": "website",
+    "url": "https://posit.co/products/open-source/rstudio/",
+    "installUrl": "https://posit.co/download/rstudio-desktop/"
+  },
+  "website": "https://posit.co/products/open-source/rstudio/",
+  "category": "Science, Engineering & Research",
+  "vertical": "software",
+  "description": "Posit's integrated development environment for R, with source editing, notebooks, package tools, plots, debugging, and project support.",
+  "accent": "#75AADB",
+  "simpleIconSlug": "rstudioide"
+}

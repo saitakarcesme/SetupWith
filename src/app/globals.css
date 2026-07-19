@@ -846,6 +846,7 @@ textarea:focus-visible {
 
 .app-card-topline {
   display: flex;
+  gap: 12px;
   justify-content: space-between;
   color: var(--muted);
   font-family: "Geist Mono", ui-monospace, monospace;
@@ -854,15 +855,26 @@ textarea:focus-visible {
   text-transform: uppercase;
 }
 
+.app-card-topline > span:first-child {
+  flex: 0 0 auto;
+}
+
+.app-card-topline > span:last-child {
+  max-width: min(75%, 210px);
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+  text-align: right;
+}
+
 .app-card-logo-wrap {
   display: grid;
   width: 76px;
   height: 76px;
   margin-top: 35px;
   place-items: center;
-  border: 1px solid var(--line);
-  /* Keep official dark brand marks legible across the themed catalog. */
-  background: #f7f7f5;
+  border: 1px solid color-mix(in srgb, var(--app-accent) 22%, var(--line));
+  /* Keep dark and multicolor brand artwork legible without flattening its original palette. */
+  background: color-mix(in srgb, var(--app-accent) 6%, #f9f9f7);
 }
 
 .app-logo {
@@ -870,12 +882,8 @@ textarea:focus-visible {
 }
 
 .app-card .app-logo {
-  filter: grayscale(1);
-  transition: filter 170ms ease, transform 170ms ease;
-}
-
-.catalog-experience-shell:not([data-experience="all"]):not([data-experience="software"]) .app-card .app-logo {
   filter: none;
+  transition: transform 170ms ease;
 }
 
 .app-card:hover .app-logo {
@@ -1601,14 +1609,21 @@ textarea:focus-visible {
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   border-left: 1px solid var(--line);
-  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+  scrollbar-color: color-mix(in srgb, var(--experience-accent) 45%, var(--line)) transparent;
+  scrollbar-width: thin;
 }
 
 .category-tabs::-webkit-scrollbar {
-  display: none;
+  height: 4px;
+}
+
+.category-tabs::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--experience-accent) 45%, var(--line));
 }
 
 .category-tabs button {
+  scroll-snap-align: start;
   min-height: 44px;
   padding: 0 16px;
   border: 0;
@@ -2011,6 +2026,17 @@ textarea:focus-visible {
   font-weight: 300;
   letter-spacing: -0.08em;
   line-height: 0.94;
+}
+
+.app-hero-long-name,
+.app-hero-long-name .app-hero-inner {
+  min-height: 560px;
+}
+
+.app-hero-long-name h1 {
+  overflow-wrap: anywhere;
+  font-size: clamp(52px, 6vw, 88px);
+  text-wrap: balance;
 }
 
 .app-hero-main p {
@@ -3316,6 +3342,15 @@ textarea:focus-visible {
   .app-hero h1 {
     overflow-wrap: anywhere;
     font-size: clamp(46px, 16vw, 60px);
+  }
+
+  .app-hero-long-name,
+  .app-hero-long-name .app-hero-inner {
+    min-height: 680px;
+  }
+
+  .app-hero-long-name h1 {
+    font-size: clamp(42px, 13.5vw, 54px);
   }
 
   .app-hero-main p {

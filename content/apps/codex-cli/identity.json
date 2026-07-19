@@ -1,0 +1,18 @@
+{
+  "index": 307,
+  "name": "Codex CLI",
+  "slug": "codex-cli",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/openai/codex",
+    "installUrl": "https://developers.openai.com/codex/cli/"
+  },
+  "website": "https://developers.openai.com/codex/cli/",
+  "category": "AI Assistants & Coding Agents",
+  "vertical": "ai",
+  "description": "OpenAI's terminal coding agent for inspecting repositories, editing files, running commands, reviews, and repeatable automation.",
+  "accent": "#10A37F",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:openai-icon.svg",
+  "logoSourceType": "curated-brand-asset"
+}

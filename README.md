@@ -1,6 +1,6 @@
 # SetupWith
 
-SetupWith is an open catalog of product-specific Codex setup prompts. It currently covers 301 apps plus 50 additional popular and useful open-source repositories across developer tools, AI, games, entertainment, work, creative software, browsers, hardware, security, and self-hosting.
+SetupWith is an open catalog of product-specific Codex setup prompts. It currently covers 424 apps plus 50 additional popular and useful open-source repositories across developer tools, AI, professional IDEs, cloud platforms, office suites, creative production, science, security, enterprise software, entertainment, hardware, and self-hosting.
 
 Each app has its own `/{slug}` route with:
 

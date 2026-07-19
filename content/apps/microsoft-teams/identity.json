@@ -1,0 +1,18 @@
+{
+  "index": 335,
+  "name": "Microsoft Teams",
+  "slug": "microsoft-teams",
+  "source": {
+    "type": "website",
+    "url": "https://www.microsoft.com/microsoft-teams/",
+    "installUrl": "https://www.microsoft.com/en-us/microsoft-teams/download-app"
+  },
+  "website": "https://www.microsoft.com/microsoft-teams/",
+  "category": "Office, Notes & Team Collaboration",
+  "vertical": "work",
+  "description": "Microsoft's workplace communication client for team chat, channels, meetings, calling, file collaboration, and organization-managed applications.",
+  "accent": "#6264A7",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:microsoft-teams.svg",
+  "logoSourceType": "curated-brand-asset"
+}

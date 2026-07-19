@@ -1,0 +1,18 @@
+{
+  "index": 310,
+  "name": "JetBrains Toolbox",
+  "slug": "jetbrains-toolbox",
+  "source": {
+    "type": "website",
+    "url": "https://www.jetbrains.com/toolbox-app/",
+    "installUrl": "https://www.jetbrains.com/toolbox-app/"
+  },
+  "website": "https://www.jetbrains.com/toolbox-app/",
+  "category": "Professional IDEs & Mobile SDKs",
+  "vertical": "software",
+  "description": "JetBrains' desktop manager for installing, updating, rolling back, and launching IDE versions and remote development tools.",
+  "accent": "#000000",
+  "simpleIconSlug": "jetbrains",
+  "logoUrl": "https://cdn.simpleicons.org/jetbrains",
+  "logoSourceType": "curated-brand-asset"
+}

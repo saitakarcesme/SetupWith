@@ -1,0 +1,18 @@
+{
+  "index": 379,
+  "name": "AutoCAD",
+  "slug": "autocad",
+  "source": {
+    "type": "website",
+    "url": "https://www.autodesk.com/products/autocad/overview",
+    "installUrl": "https://www.autodesk.com/support/download-install.html"
+  },
+  "website": "https://www.autodesk.com/products/autocad/overview",
+  "category": "Science, Engineering & Research",
+  "vertical": "software",
+  "description": "Autodesk computer-aided design application for precise 2D drafting, 3D modeling, documentation, automation, and industry toolsets.",
+  "accent": "#E51050",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/skill-icons:autocad-light.svg",
+  "logoSourceType": "curated-brand-asset"
+}

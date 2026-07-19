@@ -1,0 +1,18 @@
+{
+  "index": 415,
+  "name": "Amazon Music",
+  "slug": "amazon-music",
+  "source": {
+    "type": "website",
+    "url": "https://music.amazon.com/",
+    "installUrl": "https://music.amazon.com/"
+  },
+  "website": "https://music.amazon.com/",
+  "category": "Streaming, Reading & Consumer Media",
+  "vertical": "entertainment",
+  "description": "Amazon music service for streaming songs, albums, podcasts, playlists, stations, and supported offline listening.",
+  "accent": "#25D1DA",
+  "simpleIconSlug": null,
+  "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Amazon_Music_2024.png",
+  "logoSourceType": "curated-brand-asset"
+}

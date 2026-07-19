@@ -1,0 +1,18 @@
+{
+  "index": 371,
+  "name": "Cubase",
+  "slug": "cubase",
+  "source": {
+    "type": "website",
+    "url": "https://www.steinberg.net/cubase/",
+    "installUrl": "https://o.steinberg.net/en/support/downloads/steinberg_download_assistant.html"
+  },
+  "website": "https://www.steinberg.net/cubase/",
+  "category": "Audio, Podcast & Streaming Production",
+  "vertical": "creative",
+  "description": "Steinberg digital audio workstation for composition, MIDI, recording, editing, mixing, scoring, and post-production.",
+  "accent": "#C90827",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/fad:logo-cubase.svg",
+  "logoSourceType": "curated-brand-asset"
+}

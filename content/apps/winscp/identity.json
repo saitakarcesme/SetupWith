@@ -1,0 +1,18 @@
+{
+  "index": 347,
+  "name": "WinSCP",
+  "slug": "winscp",
+  "source": {
+    "type": "website",
+    "url": "https://winscp.net/eng/index.php",
+    "installUrl": "https://winscp.net/downloads.php"
+  },
+  "website": "https://winscp.net/eng/index.php",
+  "category": "Cloud Storage, Backup & File Transfer",
+  "vertical": "work",
+  "description": "Windows SFTP, SCP, FTP, WebDAV, and S3 client with a graphical file manager, scripting, and directory synchronization.",
+  "accent": "#009846",
+  "simpleIconSlug": null,
+  "logoUrl": "https://winscp.net/assets/images/logos/logo@240.jpg",
+  "logoSourceType": "official-project-asset"
+}

@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Simple",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": true
+  },
+  "preferences": [
+    "default_pdf_handler",
+    "automatic_updates",
+    "browser_extension",
+    "protected_mode",
+    "diagnostics"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

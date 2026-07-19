@@ -1,0 +1,18 @@
+{
+  "index": 364,
+  "name": "Affinity Photo",
+  "slug": "affinity-photo",
+  "source": {
+    "type": "website",
+    "url": "https://affinity.serif.com/en-us/photo/",
+    "installUrl": "https://affinity.serif.com/en-us/photo/"
+  },
+  "website": "https://affinity.serif.com/en-us/photo/",
+  "category": "Professional Creative Suites",
+  "vertical": "creative",
+  "description": "Professional photo editor with layered raster workflows, RAW development, live filters, HDR, panoramas, and PSD interoperability.",
+  "accent": "#7E4DD2",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/vscode-icons:file-type-affinityphoto.svg",
+  "logoSourceType": "curated-brand-asset"
+}

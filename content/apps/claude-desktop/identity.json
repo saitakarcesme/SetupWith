@@ -1,0 +1,18 @@
+{
+  "index": 303,
+  "name": "Claude Desktop",
+  "slug": "claude-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://claude.com/download",
+    "installUrl": "https://claude.com/download"
+  },
+  "website": "https://claude.com/",
+  "category": "AI Assistants & Coding Agents",
+  "vertical": "ai",
+  "description": "Anthropic's desktop client for Claude chats, local file context, artifacts, and approved desktop integrations.",
+  "accent": "#D97757",
+  "simpleIconSlug": "claude",
+  "logoUrl": "https://cdn.simpleicons.org/claude",
+  "logoSourceType": "curated-brand-asset"
+}

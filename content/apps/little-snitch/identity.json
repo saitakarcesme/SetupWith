@@ -1,0 +1,18 @@
+{
+  "index": 390,
+  "name": "Little Snitch",
+  "slug": "little-snitch",
+  "source": {
+    "type": "website",
+    "url": "https://www.obdev.at/products/littlesnitch/",
+    "installUrl": "https://www.obdev.at/products/littlesnitch/download.html"
+  },
+  "website": "https://www.obdev.at/products/littlesnitch/",
+  "category": "Consumer Security, VPN & Identity",
+  "vertical": "software",
+  "description": "macOS outbound firewall and network monitor with per-process rules, DNS encryption, and traffic inspection.",
+  "accent": "#F2B705",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.obdev.at/Images/product-icons/littlesnitch_256.png",
+  "logoSourceType": "official-project-asset"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 339,
+  "name": "Obsidian",
+  "slug": "obsidian",
+  "source": {
+    "type": "website",
+    "url": "https://obsidian.md/",
+    "installUrl": "https://obsidian.md/download"
+  },
+  "website": "https://obsidian.md/",
+  "category": "Office, Notes & Team Collaboration",
+  "vertical": "work",
+  "description": "A local-first Markdown knowledge-base application with linked notes, graph exploration, canvases, themes, plugins, and optional encrypted synchronization.",
+  "accent": "#7C3AED",
+  "simpleIconSlug": "obsidian",
+  "logoUrl": "https://cdn.simpleicons.org/obsidian",
+  "logoSourceType": "curated-brand-asset"
+}

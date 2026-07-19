@@ -1,0 +1,16 @@
+{
+  "index": 351,
+  "name": "AnyDesk",
+  "slug": "anydesk",
+  "source": {
+    "type": "website",
+    "url": "https://anydesk.com/",
+    "installUrl": "https://anydesk.com/en/downloads"
+  },
+  "website": "https://anydesk.com/",
+  "category": "Remote Access, Virtualization & Containers",
+  "vertical": "software",
+  "description": "Low-latency remote desktop client that can run portably or as an installed service across major desktop platforms.",
+  "accent": "#EF443B",
+  "simpleIconSlug": "anydesk"
+}

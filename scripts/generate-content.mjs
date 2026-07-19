@@ -15,7 +15,18 @@ const baseCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/cha
 const additions = JSON.parse(await readFile(resolve(projectRoot, "src/data/catalog-additions.json"), "utf8"));
 const consumerCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/consumer-catalog.json"), "utf8"));
 const firstPartyCatalog = JSON.parse(await readFile(resolve(projectRoot, "src/data/first-party-catalog.json"), "utf8"));
-const catalog = [...baseCatalog, ...additions, ...consumerCatalog, ...firstPartyCatalog];
+const professionalCatalogOne = JSON.parse(await readFile(resolve(projectRoot, "src/data/professional-catalog-1.json"), "utf8"));
+const professionalCatalogTwo = JSON.parse(await readFile(resolve(projectRoot, "src/data/professional-catalog-2.json"), "utf8"));
+const professionalCatalogThree = JSON.parse(await readFile(resolve(projectRoot, "src/data/professional-catalog-3.json"), "utf8"));
+const catalog = [
+  ...baseCatalog,
+  ...additions,
+  ...consumerCatalog,
+  ...firstPartyCatalog,
+  ...professionalCatalogOne,
+  ...professionalCatalogTwo,
+  ...professionalCatalogThree,
+];
 const prompts = JSON.parse(await readFile(resolve(projectRoot, "src/data/app-prompts.json"), "utf8"));
 const startIndex = Number.parseInt(process.env.CATALOG_START_INDEX ?? "1", 10);
 const selectedCatalog = catalog.filter((app) => app.index >= startIndex);
@@ -50,6 +61,7 @@ for (const app of selectedCatalog) {
     description: app.description,
     accent: app.accent,
     simpleIconSlug: app.simpleIconSlug,
+    ...(app.logoUrl ? { logoUrl: app.logoUrl, logoSourceType: app.logoSourceType ?? "official-project-asset" } : {}),
   };
   const context = {
     platforms: getPlatforms(app),

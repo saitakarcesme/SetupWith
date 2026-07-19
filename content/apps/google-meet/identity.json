@@ -1,0 +1,18 @@
+{
+  "index": 341,
+  "name": "Google Meet",
+  "slug": "google-meet",
+  "source": {
+    "type": "website",
+    "url": "https://workspace.google.com/products/meet/",
+    "installUrl": "https://meet.google.com/"
+  },
+  "website": "https://workspace.google.com/products/meet/",
+  "category": "Office, Notes & Team Collaboration",
+  "vertical": "work",
+  "description": "Google's browser-based video meeting service for scheduled and ad-hoc calls, screen sharing, captions, chat, presentations, and Workspace collaboration.",
+  "accent": "#00897B",
+  "simpleIconSlug": "googlemeet",
+  "logoUrl": "https://api.iconify.design/logos:google-meet.svg",
+  "logoSourceType": "curated-brand-asset"
+}

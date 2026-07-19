@@ -1,0 +1,16 @@
+{
+  "index": 397,
+  "name": "Raycast",
+  "slug": "raycast",
+  "source": {
+    "type": "website",
+    "url": "https://www.raycast.com/",
+    "installUrl": "https://www.raycast.com/download"
+  },
+  "website": "https://www.raycast.com/",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "software",
+  "description": "Extensible launcher for macOS and Windows with search, snippets, clipboard history, commands, and optional AI.",
+  "accent": "#FF6363",
+  "simpleIconSlug": "raycast"
+}

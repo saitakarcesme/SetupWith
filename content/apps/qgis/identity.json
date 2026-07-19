@@ -1,0 +1,16 @@
+{
+  "index": 378,
+  "name": "QGIS",
+  "slug": "qgis",
+  "source": {
+    "type": "website",
+    "url": "https://qgis.org/",
+    "installUrl": "https://qgis.org/download/"
+  },
+  "website": "https://qgis.org/",
+  "category": "Science, Engineering & Research",
+  "vertical": "software",
+  "description": "Open-source geographic information system for cartography, spatial analysis, geodata editing, processing, and database services.",
+  "accent": "#589632",
+  "simpleIconSlug": "qgis"
+}

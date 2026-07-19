@@ -1,0 +1,18 @@
+{
+  "index": 380,
+  "name": "SOLIDWORKS",
+  "slug": "solidworks",
+  "source": {
+    "type": "website",
+    "url": "https://www.solidworks.com/product/solidworks-3d-cad",
+    "installUrl": "https://www.solidworks.com/support/downloads"
+  },
+  "website": "https://www.solidworks.com/product/solidworks-3d-cad",
+  "category": "Science, Engineering & Research",
+  "vertical": "software",
+  "description": "Windows mechanical CAD platform for parametric parts, assemblies, drawings, simulation, manufacturing, and product data workflows.",
+  "accent": "#D2232A",
+  "simpleIconSlug": null,
+  "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/SOLIDWORKS_Logo.svg",
+  "logoSourceType": "curated-brand-asset"
+}

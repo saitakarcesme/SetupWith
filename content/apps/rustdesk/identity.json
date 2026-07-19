@@ -1,0 +1,16 @@
+{
+  "index": 352,
+  "name": "RustDesk",
+  "slug": "rustdesk",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/rustdesk/rustdesk",
+    "installUrl": "https://github.com/rustdesk/rustdesk/releases/latest"
+  },
+  "website": "https://rustdesk.com/",
+  "category": "Remote Access, Virtualization & Containers",
+  "vertical": "software",
+  "description": "Open-source remote desktop client supporting public relays or a separately operated self-hosted RustDesk server.",
+  "accent": "#024EFF",
+  "simpleIconSlug": "rustdesk"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 328,
+  "name": "Google Cloud CLI",
+  "slug": "google-cloud-cli",
+  "source": {
+    "type": "website",
+    "url": "https://cloud.google.com/sdk",
+    "installUrl": "https://cloud.google.com/sdk/docs/install"
+  },
+  "website": "https://cloud.google.com/sdk",
+  "category": "Cloud Provider & Deployment CLIs",
+  "vertical": "software",
+  "description": "Google Cloud's command-line SDK for authentication, project configuration, infrastructure management, deployments, storage, and data services.",
+  "accent": "#4285F4",
+  "simpleIconSlug": "googlecloud",
+  "logoUrl": "https://api.iconify.design/logos:google-cloud.svg",
+  "logoSourceType": "curated-brand-asset"
+}

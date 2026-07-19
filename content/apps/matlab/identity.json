@@ -1,0 +1,18 @@
+{
+  "index": 375,
+  "name": "MATLAB",
+  "slug": "matlab",
+  "source": {
+    "type": "website",
+    "url": "https://www.mathworks.com/products/matlab.html",
+    "installUrl": "https://www.mathworks.com/downloads/"
+  },
+  "website": "https://www.mathworks.com/products/matlab.html",
+  "category": "Science, Engineering & Research",
+  "vertical": "software",
+  "description": "Numerical computing environment and programming language for engineering analysis, visualization, algorithms, and simulation workflows.",
+  "accent": "#0076A8",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/vscode-icons:file-type-matlab.svg",
+  "logoSourceType": "curated-brand-asset"
+}

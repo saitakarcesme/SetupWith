@@ -1,0 +1,18 @@
+{
+  "index": 342,
+  "name": "Microsoft OneDrive",
+  "slug": "microsoft-onedrive",
+  "source": {
+    "type": "website",
+    "url": "https://support.microsoft.com/en-us/onedrive/download-onedrive",
+    "installUrl": "https://www.microsoft.com/en-us/microsoft-365/onedrive/download"
+  },
+  "website": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+  "category": "Cloud Storage, Backup & File Transfer",
+  "vertical": "work",
+  "description": "Microsoft's desktop synchronization client for Files On-Demand, shared libraries, and protected Windows or macOS folders.",
+  "accent": "#0078D4",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:microsoft-onedrive.svg",
+  "logoSourceType": "curated-brand-asset"
+}

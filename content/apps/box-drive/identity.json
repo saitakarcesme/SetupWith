@@ -1,0 +1,16 @@
+{
+  "index": 344,
+  "name": "Box Drive",
+  "slug": "box-drive",
+  "source": {
+    "type": "website",
+    "url": "https://www.box.com/drive",
+    "installUrl": "https://www.box.com/resources/downloads"
+  },
+  "website": "https://www.box.com/drive",
+  "category": "Cloud Storage, Backup & File Transfer",
+  "vertical": "work",
+  "description": "Box's streamed desktop filesystem client for opening cloud content in Finder or File Explorer without a full local mirror.",
+  "accent": "#0061D5",
+  "simpleIconSlug": "box"
+}

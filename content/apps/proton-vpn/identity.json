@@ -1,0 +1,16 @@
+{
+  "index": 385,
+  "name": "Proton VPN",
+  "slug": "proton-vpn",
+  "source": {
+    "type": "website",
+    "url": "https://protonvpn.com/download",
+    "installUrl": "https://protonvpn.com/download"
+  },
+  "website": "https://protonvpn.com/",
+  "category": "Consumer Security, VPN & Identity",
+  "vertical": "software",
+  "description": "Privacy-focused VPN client with WireGuard, OpenVPN, kill switch, split tunneling, and secure DNS features.",
+  "accent": "#66DEB1",
+  "simpleIconSlug": "protonvpn"
+}

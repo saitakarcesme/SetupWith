@@ -1,0 +1,18 @@
+{
+  "index": 411,
+  "name": "Hulu",
+  "slug": "hulu",
+  "source": {
+    "type": "website",
+    "url": "https://www.hulu.com/",
+    "installUrl": "https://www.hulu.com/"
+  },
+  "website": "https://www.hulu.com/",
+  "category": "Streaming, Reading & Consumer Media",
+  "vertical": "entertainment",
+  "description": "US streaming service for on-demand television, films, live channels, profiles, and subscription add-ons.",
+  "accent": "#1CE783",
+  "simpleIconSlug": null,
+  "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Hulu_logo_%282018%29.svg",
+  "logoSourceType": "curated-brand-asset"
+}

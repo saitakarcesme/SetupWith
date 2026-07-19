@@ -1,0 +1,18 @@
+{
+  "index": 356,
+  "name": "Parallels Desktop",
+  "slug": "parallels-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.parallels.com/products/desktop/",
+    "installUrl": "https://www.parallels.com/products/desktop/download/"
+  },
+  "website": "https://www.parallels.com/products/desktop/",
+  "category": "Remote Access, Virtualization & Containers",
+  "vertical": "software",
+  "description": "Commercial macOS virtualization suite for running Windows and Linux guests with Coherence and host integration.",
+  "accent": "#E31B23",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.parallels.com/static/pl/typo3conf/ext/prls_theme/Resources/Public/theme/res/img/favicon/apple-touch-icon.png",
+  "logoSourceType": "official-project-asset"
+}

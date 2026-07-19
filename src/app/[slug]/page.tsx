@@ -39,12 +39,13 @@ export default async function AppDetailPage({ params }: AppPageProps) {
   const related = getRelatedApps(app);
   const interactiveHandoff = ["gaming", "entertainment", "work", "creative", "social", "browsers", "hardware"].includes(app.vertical);
   const systemApproval = app.mayInstallDrivers || app.mayInstallKernelComponents || app.mayRequireRestart;
+  const hasLongName = app.name.length > 24;
 
   return (
     <div className="catalog-experience-shell" data-experience={app.vertical}>
       <SiteHeader />
       <main className="app-detail-page" style={{ "--app-accent": app.accent } as React.CSSProperties}>
-        <section className={`app-hero pattern-${app.pattern}`}>
+        <section className={`app-hero pattern-${app.pattern} ${hasLongName ? "app-hero-long-name" : ""}`}>
           <div className="app-hero-pattern" aria-hidden="true" />
           <div className="shell app-hero-inner">
             <Link className="back-link" href="/apps"><ArrowLeft size={14} aria-hidden="true" /> All apps</Link>

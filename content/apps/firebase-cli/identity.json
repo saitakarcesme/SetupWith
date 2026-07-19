@@ -1,0 +1,18 @@
+{
+  "index": 331,
+  "name": "Firebase CLI",
+  "slug": "firebase-cli",
+  "source": {
+    "type": "website",
+    "url": "https://firebase.google.com/docs/cli",
+    "installUrl": "https://firebase.google.com/docs/cli#install_the_firebase_cli"
+  },
+  "website": "https://firebase.google.com/docs/cli",
+  "category": "Cloud Provider & Deployment CLIs",
+  "vertical": "software",
+  "description": "Google's Firebase command-line tool for project initialization, local emulation, configuration, service management, and application deployment.",
+  "accent": "#FFCA28",
+  "simpleIconSlug": "firebase",
+  "logoUrl": "https://api.iconify.design/logos:firebase.svg",
+  "logoSourceType": "curated-brand-asset"
+}

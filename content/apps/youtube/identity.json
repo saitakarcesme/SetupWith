@@ -1,0 +1,16 @@
+{
+  "index": 414,
+  "name": "YouTube",
+  "slug": "youtube",
+  "source": {
+    "type": "website",
+    "url": "https://www.youtube.com/",
+    "installUrl": "https://www.youtube.com/"
+  },
+  "website": "https://www.youtube.com/",
+  "category": "Streaming, Reading & Consumer Media",
+  "vertical": "entertainment",
+  "description": "Google video platform for watching, uploading, live streaming, subscriptions, playlists, and creator channels.",
+  "accent": "#FF0000",
+  "simpleIconSlug": "youtube"
+}

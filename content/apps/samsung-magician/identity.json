@@ -1,0 +1,16 @@
+{
+  "index": 408,
+  "name": "Samsung Magician",
+  "slug": "samsung-magician",
+  "source": {
+    "type": "website",
+    "url": "https://semiconductor.samsung.com/consumer-storage/magician/",
+    "installUrl": "https://semiconductor.samsung.com/consumer-storage/support/tools/"
+  },
+  "website": "https://semiconductor.samsung.com/consumer-storage/magician/",
+  "category": "Device Management & OEM Utilities",
+  "vertical": "hardware",
+  "description": "Samsung storage utility for SSD health, diagnostics, firmware, benchmarking, optimization, and secure erase workflows.",
+  "accent": "#1428A0",
+  "simpleIconSlug": "samsung"
+}

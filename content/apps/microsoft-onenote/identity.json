@@ -1,0 +1,18 @@
+{
+  "index": 338,
+  "name": "Microsoft OneNote",
+  "slug": "microsoft-onenote",
+  "source": {
+    "type": "website",
+    "url": "https://www.microsoft.com/microsoft-365/onenote/digital-note-taking-app",
+    "installUrl": "https://support.microsoft.com/en-us/onenote/how-to-download-onenote"
+  },
+  "website": "https://www.microsoft.com/microsoft-365/onenote/digital-note-taking-app",
+  "category": "Office, Notes & Team Collaboration",
+  "vertical": "work",
+  "description": "Microsoft's free-form digital notebook application for typed and inked notes, clipped content, searchable sections, shared notebooks, and cross-device synchronization.",
+  "accent": "#7719AA",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/selfhst:microsoft-onenote.svg",
+  "logoSourceType": "curated-brand-asset"
+}

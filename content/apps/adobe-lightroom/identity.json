@@ -1,0 +1,18 @@
+{
+  "index": 363,
+  "name": "Adobe Lightroom",
+  "slug": "adobe-lightroom",
+  "source": {
+    "type": "website",
+    "url": "https://www.adobe.com/products/photoshop-lightroom.html",
+    "installUrl": "https://www.adobe.com/creativecloud/desktop-app.html"
+  },
+  "website": "https://www.adobe.com/products/photoshop-lightroom.html",
+  "category": "Professional Creative Suites",
+  "vertical": "creative",
+  "description": "Adobe's cloud-oriented photo editor and organizer for nondestructive adjustments, albums, presets, and cross-device libraries.",
+  "accent": "#31A8FF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:adobe-lightroom.svg",
+  "logoSourceType": "curated-brand-asset"
+}

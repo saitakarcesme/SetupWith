@@ -1,0 +1,18 @@
+{
+  "index": 319,
+  "name": "Insomnia",
+  "slug": "insomnia",
+  "source": {
+    "type": "website",
+    "url": "https://insomnia.rest/",
+    "installUrl": "https://insomnia.rest/download"
+  },
+  "website": "https://insomnia.rest/",
+  "category": "API, Networking & Database Clients",
+  "vertical": "software",
+  "description": "Kong's API client for REST, GraphQL, gRPC, WebSockets, specifications, tests, local projects, Git sync, and collaboration.",
+  "accent": "#4000BF",
+  "simpleIconSlug": "insomnia",
+  "logoUrl": "https://cdn.simpleicons.org/insomnia",
+  "logoSourceType": "curated-brand-asset"
+}

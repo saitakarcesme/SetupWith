@@ -1,0 +1,18 @@
+{
+  "index": 321,
+  "name": "Wireshark",
+  "slug": "wireshark",
+  "source": {
+    "type": "website",
+    "url": "https://www.wireshark.org/",
+    "installUrl": "https://www.wireshark.org/download.html"
+  },
+  "website": "https://www.wireshark.org/",
+  "category": "API, Networking & Database Clients",
+  "vertical": "software",
+  "description": "Protocol analyzer for capturing, inspecting, filtering, and troubleshooting network traffic across hundreds of supported protocols.",
+  "accent": "#1679A7",
+  "simpleIconSlug": "wireshark",
+  "logoUrl": "https://cdn.simpleicons.org/wireshark",
+  "logoSourceType": "curated-brand-asset"
+}

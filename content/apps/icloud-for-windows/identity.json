@@ -1,0 +1,16 @@
+{
+  "index": 343,
+  "name": "iCloud for Windows",
+  "slug": "icloud-for-windows",
+  "source": {
+    "type": "microsoft-store",
+    "url": "https://apps.microsoft.com/detail/9PKTQ5699M62",
+    "installUrl": "https://apps.microsoft.com/detail/9PKTQ5699M62"
+  },
+  "website": "https://support.apple.com/en-us/103232",
+  "category": "Cloud Storage, Backup & File Transfer",
+  "vertical": "work",
+  "description": "Apple's Windows client for iCloud Drive, Photos, Passwords, bookmarks, calendars, and shared account data.",
+  "accent": "#3693F3",
+  "simpleIconSlug": "icloud"
+}

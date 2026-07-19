@@ -1,0 +1,18 @@
+{
+  "index": 372,
+  "name": "Adobe Audition",
+  "slug": "adobe-audition",
+  "source": {
+    "type": "website",
+    "url": "https://www.adobe.com/products/audition.html",
+    "installUrl": "https://www.adobe.com/creativecloud/desktop-app.html"
+  },
+  "website": "https://www.adobe.com/products/audition.html",
+  "category": "Audio, Podcast & Streaming Production",
+  "vertical": "creative",
+  "description": "Professional waveform and multitrack audio editor for restoration, podcast production, mixing, loudness, and broadcast delivery.",
+  "accent": "#9999FF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/cib:adobe-audition.svg?color=%239999FF",
+  "logoSourceType": "curated-brand-asset"
+}

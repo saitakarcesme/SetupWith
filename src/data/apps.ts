@@ -2,6 +2,7 @@ import additions from "./catalog-additions.json";
 import baseCatalog from "./chatgpt-catalog.json";
 import consumerCatalog from "./consumer-catalog.json";
 import firstPartyCatalog from "./first-party-catalog.json";
+import professionalCatalog from "./professional-catalog.mjs";
 import {
   buildGeneratedPrompt,
   getComplexity,
@@ -31,6 +32,21 @@ export const categories = [
   "Social & Communication",
   "Browsers & Internet",
   "Devices & Hardware",
+  "AI Assistants & Coding Agents",
+  "Professional IDEs & Mobile SDKs",
+  "API, Networking & Database Clients",
+  "Cloud Provider & Deployment CLIs",
+  "Office, Notes & Team Collaboration",
+  "Cloud Storage, Backup & File Transfer",
+  "Remote Access, Virtualization & Containers",
+  "Professional Creative Suites",
+  "Audio, Podcast & Streaming Production",
+  "Science, Engineering & Research",
+  "Consumer Security, VPN & Identity",
+  "OS Utilities & Desktop Enhancement",
+  "Device Management & OEM Utilities",
+  "Streaming, Reading & Consumer Media",
+  "Business Intelligence & Enterprise Apps",
 ] as const;
 
 export type AppCategory = Exclude<(typeof categories)[number], "All">;
@@ -82,6 +98,8 @@ export interface CatalogEntry {
   description: string;
   accent: string;
   simpleIconSlug: string | null;
+  logoUrl?: string;
+  logoSourceType?: "official-project-asset" | "curated-brand-asset";
   secrets: string[];
   config: string[];
   platforms?: readonly SupportedPlatform[];
@@ -120,7 +138,13 @@ export interface SetupBundle {
 }
 
 const prompts = promptMap as Record<string, string>;
-const catalog = [...baseCatalog, ...additions, ...consumerCatalog, ...firstPartyCatalog] as CatalogEntry[];
+const catalog = [
+  ...baseCatalog,
+  ...additions,
+  ...consumerCatalog,
+  ...firstPartyCatalog,
+  ...professionalCatalog,
+] as CatalogEntry[];
 
 export function getExperience(entry: CatalogEntry): CatalogExperience {
   if (entry.vertical) return entry.vertical;

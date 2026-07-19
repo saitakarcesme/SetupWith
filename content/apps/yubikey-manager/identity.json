@@ -1,0 +1,16 @@
+{
+  "index": 388,
+  "name": "YubiKey Manager",
+  "slug": "yubikey-manager",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/Yubico/yubikey-manager-qt",
+    "installUrl": "https://www.yubico.com/support/download/yubikey-manager/"
+  },
+  "website": "https://www.yubico.com/support/download/yubikey-manager/",
+  "category": "Consumer Security, VPN & Identity",
+  "vertical": "software",
+  "description": "Desktop utility for inspecting and configuring YubiKey FIDO, OTP, PIV, OATH, and interface capabilities.",
+  "accent": "#84BD00",
+  "simpleIconSlug": "yubico"
+}

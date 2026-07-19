@@ -1,0 +1,16 @@
+{
+  "index": 419,
+  "name": "SAP GUI",
+  "slug": "sap-gui",
+  "source": {
+    "type": "website",
+    "url": "https://help.sap.com/docs/r/product/sap_gui_for_windows",
+    "installUrl": "https://support.sap.com/en/my-support/software-downloads.html"
+  },
+  "website": "https://help.sap.com/docs/r/product/sap_gui_for_windows",
+  "category": "Business Intelligence & Enterprise Apps",
+  "vertical": "work",
+  "description": "SAP desktop presentation client for connecting to ABAP systems through managed landscapes, SAProuter, and SSO.",
+  "accent": "#0FAAFF",
+  "simpleIconSlug": "sap"
+}

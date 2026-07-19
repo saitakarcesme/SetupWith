@@ -1,0 +1,18 @@
+{
+  "index": 402,
+  "name": "Logitech G HUB",
+  "slug": "logitech-g-hub",
+  "source": {
+    "type": "website",
+    "url": "https://www.logitechg.com/innovation/g-hub.html",
+    "installUrl": "https://www.logitechg.com/innovation/g-hub.html"
+  },
+  "website": "https://www.logitechg.com/innovation/g-hub.html",
+  "category": "Device Management & OEM Utilities",
+  "vertical": "hardware",
+  "description": "Gaming-device manager for Logitech G profiles, LIGHTSYNC, macros, audio processing, and onboard memory.",
+  "accent": "#00E5FF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.logitechg.com/favicon-gaming.ico",
+  "logoSourceType": "official-project-asset"
+}

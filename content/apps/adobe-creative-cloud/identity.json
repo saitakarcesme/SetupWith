@@ -1,0 +1,18 @@
+{
+  "index": 358,
+  "name": "Adobe Creative Cloud",
+  "slug": "adobe-creative-cloud",
+  "source": {
+    "type": "website",
+    "url": "https://www.adobe.com/creativecloud/desktop-app.html",
+    "installUrl": "https://www.adobe.com/creativecloud/desktop-app.html"
+  },
+  "website": "https://www.adobe.com/creativecloud.html",
+  "category": "Professional Creative Suites",
+  "vertical": "creative",
+  "description": "Adobe's desktop manager for installing licensed creative applications, updates, fonts, libraries, plug-ins, and cloud services.",
+  "accent": "#DA1F26",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/arcticons:adobe-creative-cloud.svg?color=%23DA1F26",
+  "logoSourceType": "curated-brand-asset"
+}

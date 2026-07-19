@@ -1,0 +1,18 @@
+{
+  "index": 305,
+  "name": "Cursor",
+  "slug": "cursor",
+  "source": {
+    "type": "website",
+    "url": "https://www.cursor.com/",
+    "installUrl": "https://www.cursor.com/downloads"
+  },
+  "website": "https://www.cursor.com/",
+  "category": "AI Assistants & Coding Agents",
+  "vertical": "ai",
+  "description": "AI-focused code editor with VS Code compatibility, repository indexing, agent workflows, and integrated terminal tools.",
+  "accent": "#000000",
+  "simpleIconSlug": "cursor",
+  "logoUrl": "https://cdn.simpleicons.org/cursor",
+  "logoSourceType": "curated-brand-asset"
+}

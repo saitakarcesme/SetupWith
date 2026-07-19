@@ -1,0 +1,16 @@
+{
+  "index": 373,
+  "name": "Streamlabs Desktop",
+  "slug": "streamlabs-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://streamlabs.com/desktop-app",
+    "installUrl": "https://streamlabs.com/desktop-app"
+  },
+  "website": "https://streamlabs.com/desktop-app",
+  "category": "Audio, Podcast & Streaming Production",
+  "vertical": "creative",
+  "description": "OBS-based live production client for scenes, sources, alerts, chat, recording, and streaming to major platforms.",
+  "accent": "#80F5D2",
+  "simpleIconSlug": "streamlabs"
+}

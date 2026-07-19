@@ -1,0 +1,18 @@
+{
+  "index": 370,
+  "name": "Logic Pro",
+  "slug": "logic-pro",
+  "source": {
+    "type": "app-store",
+    "url": "https://apps.apple.com/us/app/logic-pro/id634148309",
+    "installUrl": "https://apps.apple.com/us/app/logic-pro/id634148309"
+  },
+  "website": "https://www.apple.com/logic-pro/",
+  "category": "Audio, Podcast & Streaming Production",
+  "vertical": "creative",
+  "description": "Apple's macOS production studio for recording, MIDI sequencing, software instruments, mixing, mastering, and spatial audio.",
+  "accent": "#A34DE2",
+  "simpleIconSlug": null,
+  "logoUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/ca/f0/facaf02c-9ba7-41fe-0f80-178513d4d3a5/AppIcon-0-85-220-0-6-0-0-2x-0-0-0-0-0.png/512x512bb.png",
+  "logoSourceType": "official-project-asset"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 332,
+  "name": "GitLab CLI",
+  "slug": "gitlab-cli",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.com/gitlab-org/cli",
+    "installUrl": "https://gitlab.com/gitlab-org/cli#installation"
+  },
+  "website": "https://docs.gitlab.com/cli/",
+  "category": "Cloud Provider & Deployment CLIs",
+  "vertical": "software",
+  "description": "GitLab's official `glab` command-line client for repositories, issues, merge requests, pipelines, releases, and authenticated GitLab workflows.",
+  "accent": "#FC6D26",
+  "simpleIconSlug": "gitlab",
+  "logoUrl": "https://api.iconify.design/logos:gitlab.svg",
+  "logoSourceType": "curated-brand-asset"
+}

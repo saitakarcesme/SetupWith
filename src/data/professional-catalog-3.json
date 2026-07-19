@@ -1,0 +1,1667 @@
+[
+  {
+    "index": 383,
+    "name": "1Password",
+    "slug": "1password",
+    "source": {
+      "type": "website",
+      "url": "https://1password.com/downloads/",
+      "installUrl": "https://1password.com/downloads/"
+    },
+    "website": "https://1password.com/",
+    "category": "Consumer Security, VPN & Identity",
+    "vertical": "software",
+    "description": "Cross-platform password manager for encrypted vaults, passkeys, secure notes, autofill, and SSH credentials.",
+    "accent": "#145FE4",
+    "simpleIconSlug": "1password",
+    "secrets": [],
+    "config": [
+      "autolock_timeout",
+      "browser_integration",
+      "ssh_agent",
+      "biometric_unlock"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Select the signed 1Password desktop package for the detected operating system, using its supported Linux repository only when that platform is selected, and install the application without adding browser extensions or enabling the SSH agent automatically.",
+      "preserve": "existing local vault cache, account metadata, application preferences, browser integration state, SSH agent configuration, recovery documents, and any independently installed 1Password command-line tools",
+      "safety": "Stop before entering an account password, Secret Key, recovery code, passkey, biometric approval, or vault item; browser integration, biometric unlock, Watchtower, and SSH-agent access each require the user's explicit consent.",
+      "verify": "Confirm the signed application version and publisher, open only the locked welcome screen, verify the configured auto-lock policy, and ensure no vault, browser extension, credential, or SSH socket was changed during setup."
+    }
+  },
+  {
+    "index": 384,
+    "name": "Bitwarden Desktop",
+    "slug": "bitwarden-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://bitwarden.com/download/",
+      "installUrl": "https://bitwarden.com/download/"
+    },
+    "website": "https://bitwarden.com/",
+    "category": "Consumer Security, VPN & Identity",
+    "vertical": "software",
+    "description": "Open-source desktop vault for passwords, passkeys, TOTP records, secure notes, and encrypted synchronization.",
+    "accent": "#175DDC",
+    "simpleIconSlug": "bitwarden",
+    "secrets": [],
+    "config": [
+      "server_url",
+      "vault_timeout",
+      "browser_integration",
+      "biometric_unlock"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Choose Bitwarden's standard signed desktop build for the detected platform, prefer the vendor package or official store listing over third-party repackaging, and record whether cloud-hosted or self-hosted service discovery is requested before launch.",
+      "preserve": "the existing encrypted vault cache, configured self-hosted server URL, device approvals, biometric integration, vault timeout policy, application preferences, and separately installed browser extensions",
+      "safety": "Never enter, reveal, export, or migrate a master password, recovery code, organization key, or vault contents; changing the server URL, enabling biometrics, or linking browser extensions must remain a visible user-controlled action.",
+      "verify": "Verify the package signature and desktop version, confirm the expected server URL on the signed-out screen, test that the app locks normally, and ensure no vault export, account creation, browser integration, or credential prompt was completed."
+    }
+  },
+  {
+    "index": 385,
+    "name": "Proton VPN",
+    "slug": "proton-vpn",
+    "source": {
+      "type": "website",
+      "url": "https://protonvpn.com/download",
+      "installUrl": "https://protonvpn.com/download"
+    },
+    "website": "https://protonvpn.com/",
+    "category": "Consumer Security, VPN & Identity",
+    "vertical": "software",
+    "description": "Privacy-focused VPN client with WireGuard, OpenVPN, kill switch, split tunneling, and secure DNS features.",
+    "accent": "#66DEB1",
+    "simpleIconSlug": "protonvpn",
+    "secrets": [],
+    "config": [
+      "vpn_protocol",
+      "kill_switch",
+      "auto_connect",
+      "dns_leak_protection"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download Proton VPN's signed platform client or configure its documented Linux repository, then present the exact WireGuard, OpenVPN, TUN, Network Extension, or Windows network-driver component before requesting administrator approval to install it.",
+      "preserve": "existing VPN profiles, manually configured DNS resolvers, routes, proxy settings, split-tunnel rules, firewall policy, Network Extensions, and connections managed by another VPN product",
+      "safety": "Do not connect, sign in, replace DNS, enable permanent kill switch, alter routes, remove another VPN, or activate always-on behavior without approval; explain how loss of connectivity will be recovered before changing the network stack.",
+      "verify": "Confirm the signed client and network component versions, inspect DNS and default routes before and after a user-approved test connection, check for IPv4 and IPv6 leaks, then disconnect and prove the original network state is restored."
+    }
+  },
+  {
+    "index": 386,
+    "name": "Mullvad VPN",
+    "slug": "mullvad-vpn",
+    "source": {
+      "type": "website",
+      "url": "https://mullvad.net/en/download/vpn",
+      "installUrl": "https://mullvad.net/en/download/vpn"
+    },
+    "website": "https://mullvad.net/",
+    "category": "Consumer Security, VPN & Identity",
+    "vertical": "software",
+    "description": "Account-number-based VPN client offering WireGuard, OpenVPN, lockdown mode, multihop, and DNS filtering.",
+    "accent": "#294D73",
+    "simpleIconSlug": "mullvad",
+    "secrets": [],
+    "config": [
+      "tunnel_protocol",
+      "lockdown_mode",
+      "split_tunneling",
+      "dns_content_blockers"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use Mullvad's signed installer or documented operating-system repository, verify its signing identity, and describe every WireGuard, Wintun, TUN, system service, firewall, and DNS component before the privileged installation begins.",
+      "preserve": "current Mullvad account state, tunnel settings, custom DNS, split-tunnel exclusions, lockdown policy, local network sharing preference, firewall rules, and all profiles belonging to other VPN clients",
+      "safety": "Treat the Mullvad account number as a credential and leave its entry to the user; do not enable lockdown mode, DAITA, multihop, custom DNS, LAN blocking, startup connection, or tunnel activation without explicit approval.",
+      "verify": "After an approved temporary connection, verify the tunnel protocol, Mullvad connection check, DNS resolver, IPv6 behavior, route table, and kill-switch response, then disconnect and confirm the pre-install routes and DNS settings return."
+    }
+  },
+  {
+    "index": 387,
+    "name": "Malwarebytes",
+    "slug": "malwarebytes",
+    "source": {
+      "type": "website",
+      "url": "https://www.malwarebytes.com/mwb-download",
+      "installUrl": "https://www.malwarebytes.com/mwb-download"
+    },
+    "website": "https://www.malwarebytes.com/",
+    "category": "Consumer Security, VPN & Identity",
+    "vertical": "software",
+    "description": "Endpoint security application for malware scanning, quarantine, exploit protection, and optional real-time defense.",
+    "accent": "#0D3ECC",
+    "simpleIconSlug": "malwarebytes",
+    "secrets": [],
+    "config": [
+      "real_time_protection",
+      "scan_schedule",
+      "quarantine_policy",
+      "usage_telemetry"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Fetch Malwarebytes only from its official download endpoint, verify the signed publisher, and enumerate the real-time protection service, system or network extension, scheduled task, browser protection offer, and restart requirement before installation.",
+      "preserve": "existing antivirus exclusions, quarantine history, scan schedules, security-center registration, licensed activation state, endpoint-management policy, and any other security product's services and configuration",
+      "safety": "Do not activate a trial, replace the primary antivirus, enable web filtering, upload samples, quarantine or delete files, add exclusions, weaken tamper protection, or reboot without separate approval and a stated recovery path.",
+      "verify": "Confirm the application, engine, and signature database versions; run only a non-destructive update and safe health check, verify Security Center registration and service state, and report detections without quarantining, remediating, or exposing file contents."
+    }
+  },
+  {
+    "index": 388,
+    "name": "YubiKey Manager",
+    "slug": "yubikey-manager",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/Yubico/yubikey-manager-qt",
+      "installUrl": "https://www.yubico.com/support/download/yubikey-manager/"
+    },
+    "website": "https://www.yubico.com/support/download/yubikey-manager/",
+    "category": "Consumer Security, VPN & Identity",
+    "vertical": "software",
+    "description": "Desktop utility for inspecting and configuring YubiKey FIDO, OTP, PIV, OATH, and interface capabilities.",
+    "accent": "#84BD00",
+    "simpleIconSlug": "yubico",
+    "secrets": [],
+    "config": [
+      "enabled_interfaces",
+      "fido2_pin_management",
+      "piv_touch_policy",
+      "oath_access"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Yubico's signed YubiKey Manager package for the detected platform, add Linux USB permissions only when required and approved, and launch initially without a hardware key connected so no configuration action can occur accidentally.",
+      "preserve": "every YubiKey slot, FIDO credential, PIV certificate and key, OATH account, OTP secret, PIN, management key, interface setting, touch policy, and existing USB access rule",
+      "safety": "Never reset an application, change a PIN or management key, disable USB or NFC interfaces, overwrite OTP slots, import private keys, generate resident credentials, or attempt unsupported firmware modification without precise user confirmation.",
+      "verify": "Confirm the signed application version, then with permission read only the connected key's model, serial, firmware, and enabled interfaces; perform no write operation and report that every credential and policy remains unchanged."
+    }
+  },
+  {
+    "index": 389,
+    "name": "Cloudflare WARP",
+    "slug": "cloudflare-warp",
+    "source": {
+      "type": "website",
+      "url": "https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/download-warp/",
+      "installUrl": "https://one.one.one.one/"
+    },
+    "website": "https://one.one.one.one/",
+    "category": "Consumer Security, VPN & Identity",
+    "vertical": "software",
+    "description": "Cloudflare client for encrypted DNS, consumer WARP tunneling, and optional Zero Trust organization enrollment.",
+    "accent": "#F38020",
+    "simpleIconSlug": "cloudflare",
+    "secrets": [],
+    "config": [
+      "warp_mode",
+      "tunnel_protocol",
+      "split_tunnels",
+      "dns_families"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use Cloudflare's documented signed client or repository, identify whether the requested mode is DNS-only, consumer WARP, or Zero Trust enrollment, and explain the tunnel service, network extension, routes, and DNS changes before elevation.",
+      "preserve": "current DNS servers, search domains, proxy configuration, VPN profiles, routing table, split-tunnel rules, Zero Trust registration, device certificate, firewall policy, and the state of competing network clients",
+      "safety": "Do not accept an organization enrollment, install a device certificate, switch DNS, connect WARP, enable always-on mode, replace routes, or remove another VPN without approval; retain an offline command that restores original networking.",
+      "verify": "For an approved test, record baseline DNS and routes, verify the WARP client and daemon versions, connection mode, resolver, IPv4 and IPv6 behavior, then disconnect and confirm every baseline DNS, route, and proxy value is restored."
+    }
+  },
+  {
+    "index": 390,
+    "name": "Little Snitch",
+    "slug": "little-snitch",
+    "source": {
+      "type": "website",
+      "url": "https://www.obdev.at/products/littlesnitch/",
+      "installUrl": "https://www.obdev.at/products/littlesnitch/download.html"
+    },
+    "website": "https://www.obdev.at/products/littlesnitch/",
+    "category": "Consumer Security, VPN & Identity",
+    "vertical": "software",
+    "description": "macOS outbound firewall and network monitor with per-process rules, DNS encryption, and traffic inspection.",
+    "accent": "#F2B705",
+    "simpleIconSlug": null,
+    "logoUrl": "https://www.obdev.at/Images/product-icons/littlesnitch_256.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "initial_rule_mode",
+      "dns_encryption",
+      "rule_group_location",
+      "network_monitor_history"
+    ],
+    "platforms": [
+      "macOS"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download the signed Little Snitch disk image from Objective Development, verify its notarization, and explain the Network Extension, privileged helper, content filter, system approval, login item, and possible restart before running its installer.",
+      "preserve": "all existing Little Snitch rules, rule groups, profiles, DNS-encryption settings, Network Monitor history, license state, backups, macOS network filters, and rules managed by an administrator",
+      "safety": "Do not approve the Network Extension, import rules, switch to alert or silent mode, block traffic, enable DNS encryption, subscribe to blocklists, or alter managed policies until the user reviews the connectivity impact.",
+      "verify": "Confirm the notarized application and extension versions, check extension approval and daemon health without creating rules, open Network Monitor with no forced traffic, and prove uninstall guidance preserves exported rules while restoring normal filtering."
+    }
+  },
+  {
+    "index": 391,
+    "name": "Microsoft Edge",
+    "slug": "microsoft-edge",
+    "source": {
+      "type": "website",
+      "url": "https://www.microsoft.com/edge/",
+      "installUrl": "https://www.microsoft.com/edge/download"
+    },
+    "website": "https://www.microsoft.com/edge/",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "browsers",
+    "description": "Chromium-based browser with profiles, tracking prevention, enterprise policy support, and cross-device synchronization.",
+    "accent": "#0C7BDC",
+    "simpleIconSlug": null,
+    "logoUrl": "https://edgecdn-embza6g8cacagcbn.z01.azurefd.net/welcome/static/favicon.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "default_browser",
+      "tracking_prevention",
+      "profile_directory",
+      "sync_enabled"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use Microsoft's signed Edge package for the detected operating system, detect whether Edge is already system-managed or built into Windows, and avoid replacing or repairing the existing browser unless the user explicitly requests that path.",
+      "preserve": "all Edge profiles, bookmarks, history, cookies, passkeys, extensions, enterprise policies, installed web apps, default-browser choice, search settings, certificates, and any system-managed update channel",
+      "safety": "Do not make Edge the default browser, import another browser's data, sign in, enable sync, install extensions, change search providers, modify enterprise policy, or enable background startup without separate user approval.",
+      "verify": "Confirm the Microsoft signature, installed channel, version, executable, and profile path; launch a temporary signed-out window to the internal version page, then close it without importing data, changing defaults, or leaving background processes enabled."
+    }
+  },
+  {
+    "index": 392,
+    "name": "Windows Terminal",
+    "slug": "windows-terminal",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/microsoft/terminal",
+      "installUrl": "https://apps.microsoft.com/detail/9n0dx20hk701"
+    },
+    "website": "https://aka.ms/terminal",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "software",
+    "description": "Modern Windows terminal host with tabs, panes, GPU rendering, profiles, themes, and command-line integration.",
+    "accent": "#4D4D4D",
+    "simpleIconSlug": null,
+    "logoUrl": "https://raw.githubusercontent.com/microsoft/terminal/main/res/terminal/images/Square44x44Logo.targetsize-256_altform-unplated.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "default_profile",
+      "startup_directory",
+      "color_scheme",
+      "default_terminal_application"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Microsoft's published Windows Terminal package from the Microsoft Store or its official release channel, preserving inbox Terminal behavior and selecting Preview only if the user specifically asks for the less stable channel.",
+      "preserve": "the existing settings JSON, fragments, color schemes, profile GUIDs, command histories owned by shells, startup directory, default-terminal registration, pinned shortcuts, and Store or Preview channel selection",
+      "safety": "Do not overwrite settings JSON, change the system default terminal, install shells, enable acrylic effects, alter execution policy, add elevated profiles, or run profile commands before showing the exact configuration diff.",
+      "verify": "Confirm the signed package identity and version, validate the settings file as JSON, open one ordinary non-elevated tab for the selected existing shell, and verify no profile, default-terminal registration, or shell history was modified."
+    }
+  },
+  {
+    "index": 393,
+    "name": "WinRAR",
+    "slug": "winrar",
+    "source": {
+      "type": "website",
+      "url": "https://www.win-rar.com/",
+      "installUrl": "https://www.win-rar.com/download.html"
+    },
+    "website": "https://www.win-rar.com/",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "software",
+    "description": "Windows archive manager for RAR, ZIP, recovery records, encrypted archives, and Explorer shell integration.",
+    "accent": "#7B4AB8",
+    "simpleIconSlug": null,
+    "logoUrl": "https://www.win-rar.com/fileadmin/images/apple-touch-icon.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "archive_associations",
+      "context_menu_entries",
+      "default_compression",
+      "temp_directory"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download the current signed WinRAR installer matching Windows architecture directly from win-rar.com, report its version and trial licensing model, and leave archive associations and Explorer integration unselected until preferences are approved.",
+      "preserve": "existing WinRAR profiles, compression presets, file associations, shell-menu choices, registration data, password-organizer state, temporary directory, archive comments, and settings belonging to other compression utilities",
+      "safety": "Do not open unknown archives, execute archived programs, save archive passwords, replace broad file associations, enable legacy context menus, or overwrite extracted files; encrypted archive passwords must be entered manually by the user.",
+      "verify": "Verify the RARLAB signature and application version, create and extract only a disposable password-free text archive in a temporary folder, compare its checksum, and confirm that approved associations and context-menu entries match the requested scope."
+    }
+  },
+  {
+    "index": 394,
+    "name": "Everything",
+    "slug": "everything-search",
+    "source": {
+      "type": "website",
+      "url": "https://www.voidtools.com/",
+      "installUrl": "https://www.voidtools.com/downloads/"
+    },
+    "website": "https://www.voidtools.com/",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "software",
+    "description": "Fast Windows filename search utility using NTFS indexes, filters, bookmarks, and optional background service.",
+    "accent": "#F5B700",
+    "simpleIconSlug": null,
+    "logoUrl": "https://www.voidtools.com/favicon.ico",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "indexed_volumes",
+      "exclude_patterns",
+      "everything_service",
+      "search_history"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Choose voidtools' signed installer or portable package for the detected Windows architecture, explain that NTFS filename indexing reads the USN journal, and request approval separately before installing the Everything background service.",
+      "preserve": "existing Everything database files, indexed-volume selection, excluded paths, filters, bookmarks, search history, HTTP or ETP settings, hotkeys, portable configuration, and the current service registration state",
+      "safety": "Do not index newly attached or sensitive volumes, enable the HTTP or ETP server, expose search results remotely, install a service, persist search history, or change filesystem permissions without explicit approval.",
+      "verify": "Confirm the voidtools signature and executable version, verify only approved volumes appear in the index, run a filename-only query for a disposable file, and check that no network listener or unapproved service was created."
+    }
+  },
+  {
+    "index": 395,
+    "name": "ShareX",
+    "slug": "sharex",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/ShareX/ShareX",
+      "installUrl": "https://getsharex.com/downloads"
+    },
+    "website": "https://getsharex.com/",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "creative",
+    "description": "Windows capture and automation tool for screenshots, screen recording, annotation, workflows, and file sharing.",
+    "accent": "#2885F1",
+    "simpleIconSlug": "sharex",
+    "secrets": [],
+    "config": [
+      "capture_hotkeys",
+      "screenshot_folder",
+      "default_destination",
+      "upload_after_capture"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the signed ShareX release from its official site or repository, inspect current hotkey conflicts and capture folders first, and configure local screenshot capture with every upload destination disabled by default.",
+      "preserve": "existing ShareX application and task settings, custom workflows, hotkeys, history, destinations, OAuth grants, uploader credentials, screenshot directory, image effects, naming templates, and portable-data folders",
+      "safety": "Never upload a capture automatically, authorize a hosting account, reveal destination tokens, capture password or payment screens, record microphones, shorten links, run custom actions, or erase history without explicit user direction.",
+      "verify": "Confirm the signed version and configuration path, take one local screenshot of a harmless temporary window, verify it remains only in the approved folder, and ensure upload-after-capture, microphone capture, and external destinations are disabled."
+    }
+  },
+  {
+    "index": 396,
+    "name": "AutoHotkey",
+    "slug": "autohotkey",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/AutoHotkey/AutoHotkey",
+      "installUrl": "https://www.autohotkey.com/download/"
+    },
+    "website": "https://www.autohotkey.com/",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "software",
+    "description": "Windows scripting runtime for keyboard remapping, hotkeys, text expansion, window control, and desktop automation.",
+    "accent": "#334455",
+    "simpleIconSlug": "autohotkey",
+    "secrets": [],
+    "config": [
+      "major_version",
+      "script_directory",
+      "file_association",
+      "startup_scripts"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the official AutoHotkey v2 runtime unless an existing script explicitly requires v1, preserve side-by-side versions when needed, and register script associations only after showing which interpreter each extension will invoke.",
+      "preserve": "all existing scripts, compiled executables, libraries, startup shortcuts, scheduled tasks, file associations, editor integration, version-specific interpreters, hotkey assignments, and per-script working directories",
+      "safety": "Do not download or execute unreviewed scripts, automate credential entry, bypass security prompts, create persistence, intercept broad keyboard input, compile scripts, or run anything elevated; present every proposed script for line-by-line review.",
+      "verify": "Confirm the interpreter version and executable path, syntax-check a harmless disposable script that displays its version without registering hotkeys, then remove it and verify no startup item, scheduled task, or file association changed unexpectedly."
+    }
+  },
+  {
+    "index": 397,
+    "name": "Raycast",
+    "slug": "raycast",
+    "source": {
+      "type": "website",
+      "url": "https://www.raycast.com/",
+      "installUrl": "https://www.raycast.com/download"
+    },
+    "website": "https://www.raycast.com/",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "software",
+    "description": "Extensible launcher for macOS and Windows with search, snippets, clipboard history, commands, and optional AI.",
+    "accent": "#FF6363",
+    "simpleIconSlug": "raycast",
+    "secrets": [],
+    "config": [
+      "global_hotkey",
+      "clipboard_history",
+      "extension_allowlist",
+      "launch_at_login"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download Raycast's signed macOS release or official Windows beta for the detected platform, disclose the Windows beta status, and install the core launcher without enabling cloud sync, AI, community extensions, or login startup.",
+      "preserve": "existing Raycast preferences, commands, snippets, quicklinks, clipboard history, extension data, custom scripts, themes, account state, AI settings, global hotkeys, and macOS or Windows accessibility permissions",
+      "safety": "Do not grant Accessibility, Input Monitoring, microphone, contacts, calendar, file indexing, or clipboard permissions; install extensions, send clipboard data to AI, enable cloud sync, or create login persistence without separate consent.",
+      "verify": "Confirm the signed application and platform-specific version, open the launcher with an approved non-conflicting hotkey, run only its local calculator, and verify sync, AI, third-party extensions, clipboard history, permissions, and startup remain disabled."
+    }
+  },
+  {
+    "index": 398,
+    "name": "Rectangle",
+    "slug": "rectangle",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/rxhanson/Rectangle",
+      "installUrl": "https://rectangleapp.com/"
+    },
+    "website": "https://rectangleapp.com/",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "software",
+    "description": "Open-source macOS window manager for keyboard-driven resizing, screen-edge snapping, and custom layouts.",
+    "accent": "#6E56CF",
+    "simpleIconSlug": null,
+    "logoUrl": "https://rectangleapp.com/assets/images/mac512pts1x.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "window_shortcuts",
+      "snap_areas",
+      "launch_on_login",
+      "restore_window_size"
+    ],
+    "platforms": [
+      "macOS"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download the notarized Rectangle release from its official site or GitHub project, compare existing window-manager applications and shortcut conflicts, and copy the app without granting Accessibility or login-item permission automatically.",
+      "preserve": "current Rectangle preferences, custom shortcuts, snap areas, ignored applications, launch-at-login state, macOS Accessibility grants, window sizes, and settings from other window-management utilities",
+      "safety": "Accessibility permission allows control of other application windows and must be granted manually; do not disable competing tools, overwrite shortcuts, enable login startup, import configurations, or purchase Rectangle Pro without direct approval.",
+      "verify": "Confirm the app's notarization and version, test one approved resize shortcut on a disposable Finder window after permission is granted, restore that window, and verify no unrequested shortcut, login item, or competing utility changed."
+    }
+  },
+  {
+    "index": 399,
+    "name": "GNOME Tweaks",
+    "slug": "gnome-tweaks",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/GNOME/gnome-tweaks",
+      "installUrl": "https://gitlab.gnome.org/GNOME/gnome-tweaks"
+    },
+    "website": "https://gitlab.gnome.org/GNOME/gnome-tweaks",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "software",
+    "description": "GNOME configuration utility for fonts, themes, startup applications, input behavior, and desktop preferences.",
+    "accent": "#4A86CF",
+    "simpleIconSlug": null,
+    "logoUrl": "https://gitlab.gnome.org/GNOME/gnome-tweaks/-/raw/master/data/org.gnome.tweaks.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "font_scaling",
+      "window_focus_mode",
+      "startup_applications",
+      "theme_selection"
+    ],
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install GNOME Tweaks from the active Linux distribution's signed repository, first confirming that the current desktop session is GNOME and recording its version, extensions, themes, and package-manager transaction plan.",
+      "preserve": "all dconf values, GNOME Shell extensions, user and system themes, fonts, startup applications, input preferences, window focus behavior, scaling values, and desktop settings managed by organizational policy",
+      "safety": "Do not add third-party themes or extensions, edit system theme directories, reset dconf, change startup applications, alter font scaling, or modify accessibility and input behavior without showing the exact affected keys first.",
+      "verify": "Confirm the repository package and version, launch Tweaks in the existing GNOME session, inspect requested panels without saving changes, and compare relevant dconf keys against the baseline to prove unapproved desktop settings remain intact."
+    }
+  },
+  {
+    "index": 400,
+    "name": "Flatseal",
+    "slug": "flatseal",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/tchx84/Flatseal",
+      "installUrl": "https://flathub.org/apps/com.github.tchx84.Flatseal"
+    },
+    "website": "https://flathub.org/apps/com.github.tchx84.Flatseal",
+    "category": "OS Utilities & Desktop Enhancement",
+    "vertical": "software",
+    "description": "Graphical Linux utility for reviewing and changing per-application Flatpak sandbox permissions and overrides.",
+    "accent": "#4A90D9",
+    "simpleIconSlug": null,
+    "logoUrl": "https://raw.githubusercontent.com/tchx84/Flatseal/master/data/icons/com.github.tchx84.Flatseal.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "flatpak_scope",
+      "override_backup",
+      "permission_review",
+      "reset_strategy"
+    ],
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Flatseal from its verified Flathub application ID, determine whether the existing Flatpak installation uses user or system scope, and export current overrides before opening any application's permission controls.",
+      "preserve": "all user-level and system-level Flatpak overrides, filesystem grants, device and socket permissions, environment variables, persistent directories, portal choices, application data, and the current Flathub remote configuration",
+      "safety": "Do not broaden filesystem, session bus, system bus, device, network, Wayland, X11, or PulseAudio access; reset overrides or expose home directories without reviewing each permission's sandbox consequence with the user.",
+      "verify": "Confirm the Flatpak application ID, origin, commit, and sandbox permissions, open Flatseal without changing a toggle, export and compare overrides, and verify every installed Flatpak retains its exact pre-install permission set."
+    }
+  },
+  {
+    "index": 401,
+    "name": "Logitech Options+",
+    "slug": "logitech-options-plus",
+    "source": {
+      "type": "website",
+      "url": "https://www.logitech.com/software/logi-options-plus.html",
+      "installUrl": "https://www.logitech.com/software/logi-options-plus.html"
+    },
+    "website": "https://www.logitech.com/software/logi-options-plus.html",
+    "category": "Device Management & OEM Utilities",
+    "vertical": "hardware",
+    "description": "Logitech configuration suite for supported mice and keyboards, button actions, gestures, Flow, and firmware updates.",
+    "accent": "#00B8FC",
+    "simpleIconSlug": null,
+    "logoUrl": "https://www.logitech.com/favicon.ico",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "device_profiles",
+      "button_assignments",
+      "logitech_flow",
+      "analytics_opt_in"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download the signed Logi Options+ installer from Logitech, inventory connected supported devices and legacy Options software, then describe its background agent, device service, accessibility permissions, input monitoring, and network discovery before elevation.",
+      "preserve": "existing device pairings, button and gesture assignments, application profiles, Easy-Switch state, Flow configuration, firmware versions, accessibility grants, login items, cloud backup, and legacy Logitech Options settings",
+      "safety": "Do not update device firmware, replace button mappings, enable Flow across computers, sign in, restore cloud profiles, grant Accessibility or Input Monitoring, enable analytics, or remove legacy software without separate approval.",
+      "verify": "Confirm Logitech's signature, application and agent versions, enumerate each device read-only, compare button assignments with the baseline, and verify no firmware job, Flow pairing, cloud sync, login item, or permission was enabled unexpectedly."
+    }
+  },
+  {
+    "index": 402,
+    "name": "Logitech G HUB",
+    "slug": "logitech-g-hub",
+    "source": {
+      "type": "website",
+      "url": "https://www.logitechg.com/innovation/g-hub.html",
+      "installUrl": "https://www.logitechg.com/innovation/g-hub.html"
+    },
+    "website": "https://www.logitechg.com/innovation/g-hub.html",
+    "category": "Device Management & OEM Utilities",
+    "vertical": "hardware",
+    "description": "Gaming-device manager for Logitech G profiles, LIGHTSYNC, macros, audio processing, and onboard memory.",
+    "accent": "#00E5FF",
+    "simpleIconSlug": null,
+    "logoUrl": "https://www.logitechg.com/favicon-gaming.ico",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "game_profiles",
+      "onboard_memory",
+      "lightsync_profile",
+      "macro_assignments"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Use Logitech G's signed G HUB installer, inventory connected gaming devices and existing LGS or G HUB data, and list every HID, virtual audio, background service, login item, and game-integration component before installation.",
+      "preserve": "all game profiles, DPI stages, key assignments, macros, onboard-memory slots, LIGHTSYNC scenes, microphone processing presets, device pairings, firmware revisions, integrations, and legacy Logitech Gaming Software data",
+      "safety": "Firmware flashing, macro changes, onboard-memory writes, virtual audio drivers, game scanning, Discord or OBS integrations, login startup, account sign-in, and removal of legacy software each require explicit approval and a rollback plan.",
+      "verify": "Confirm signed service and application versions, enumerate device and firmware state without updating it, compare active DPI, macro, lighting, and audio profiles, and ensure no game integration, startup service change, or firmware queue was added silently."
+    }
+  },
+  {
+    "index": 403,
+    "name": "ASUS Armoury Crate",
+    "slug": "asus-armoury-crate",
+    "source": {
+      "type": "website",
+      "url": "https://rog.asus.com/armoury-crate/",
+      "installUrl": "https://www.asus.com/supportonly/armoury%20crate/helpdesk_download/"
+    },
+    "website": "https://rog.asus.com/armoury-crate/",
+    "category": "Device Management & OEM Utilities",
+    "vertical": "hardware",
+    "description": "ASUS and ROG control center for device drivers, performance modes, Aura lighting, updates, and peripherals.",
+    "accent": "#D71920",
+    "simpleIconSlug": "asus",
+    "secrets": [],
+    "config": [
+      "performance_profile",
+      "aura_sync",
+      "update_categories",
+      "telemetry_opt_in"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Match the exact ASUS or ROG model against Armoury Crate's support matrix, use ASUS's official installer, and enumerate proposed framework services, HAL modules, device drivers, Aura components, and restart requirements before elevation.",
+      "preserve": "current BIOS and firmware versions, fan curves, power and performance modes, GPU settings, Aura scenes, device drivers, update history, game profiles, service state, and any MyASUS or legacy Aura configuration",
+      "safety": "Never flash BIOS or firmware, install optional drivers, change fan or voltage controls, enable overclocking, replace RGB profiles, enroll an ASUS account, collect telemetry, or reboot without model-specific approval and power safeguards.",
+      "verify": "Confirm ASUS signatures and installed module versions, inventory supported hardware without applying updates, compare thermals, fan, power, lighting, and driver state with baseline, and prove no BIOS, firmware, driver, or restart job is queued."
+    }
+  },
+  {
+    "index": 404,
+    "name": "MSI Center",
+    "slug": "msi-center",
+    "source": {
+      "type": "website",
+      "url": "https://www.msi.com/Landing/MSI-Center",
+      "installUrl": "https://www.msi.com/Landing/MSI-Center"
+    },
+    "website": "https://www.msi.com/Landing/MSI-Center",
+    "category": "Device Management & OEM Utilities",
+    "vertical": "hardware",
+    "description": "Modular MSI utility for hardware monitoring, driver updates, performance modes, cooling, and Mystic Light.",
+    "accent": "#FF0000",
+    "simpleIconSlug": "msi",
+    "secrets": [],
+    "config": [
+      "feature_modules",
+      "user_scenario",
+      "mystic_light",
+      "update_policy"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Verify the MSI system or motherboard model and supported MSI Center generation, install only the signed base application, and present each optional feature module, hardware service, driver, SDK, and restart separately before selection.",
+      "preserve": "existing BIOS and firmware, fan curves, User Scenario settings, Mystic Light profiles, monitoring history, installed feature modules, driver versions, MSI SDK services, overclock settings, and legacy Dragon Center data",
+      "safety": "Do not flash BIOS or firmware, add drivers or modules, alter clocks, voltage, fan curves, battery modes, lighting, telemetry, startup services, or account state without explicit hardware-specific approval and recovery instructions.",
+      "verify": "Confirm MSI signatures and base-app version, perform a read-only hardware inventory, compare temperature, clock, cooling, lighting, module, and driver state to baseline, and ensure no firmware, Live Update, or restart action is pending."
+    }
+  },
+  {
+    "index": 405,
+    "name": "Lenovo Vantage",
+    "slug": "lenovo-vantage",
+    "source": {
+      "type": "microsoft-store",
+      "url": "https://apps.microsoft.com/detail/9wzdncrfj4mv",
+      "installUrl": "https://apps.microsoft.com/detail/9wzdncrfj4mv"
+    },
+    "website": "https://www.lenovo.com/us/en/software/vantage/",
+    "category": "Device Management & OEM Utilities",
+    "vertical": "hardware",
+    "description": "Lenovo PC companion for device settings, diagnostics, warranty information, driver updates, and battery controls.",
+    "accent": "#E2231A",
+    "simpleIconSlug": "lenovo",
+    "secrets": [],
+    "config": [
+      "battery_conservation",
+      "thermal_mode",
+      "update_categories",
+      "privacy_preferences"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Install Lenovo Vantage from Lenovo's verified Microsoft Store listing, detect any Commercial Vantage deployment and Lenovo System Interface Foundation first, and explain supporting services, drivers, permissions, and restart needs before changes.",
+      "preserve": "battery thresholds, conservation and rapid-charge settings, thermal mode, privacy choices, device registration, warranty data, installed Lenovo drivers, update exclusions, BIOS configuration, service state, and enterprise Vantage policies",
+      "safety": "Do not flash BIOS or firmware, install drivers, alter charging thresholds or thermals, enable Wi-Fi security, share diagnostics, sign in, change managed policy, or reboot without explicit approval and BitLocker recovery preparation.",
+      "verify": "Confirm the Store package identity and supporting-service versions, read device and warranty status without registration, compare battery, thermal, privacy, update, and driver state with baseline, and verify no firmware or restart is queued."
+    }
+  },
+  {
+    "index": 406,
+    "name": "Dell Command Update",
+    "slug": "dell-command-update",
+    "source": {
+      "type": "website",
+      "url": "https://www.dell.com/support/kbdoc/en-us/000177325/dell-command-update",
+      "installUrl": "https://www.dell.com/support/kbdoc/en-us/000177325/dell-command-update"
+    },
+    "website": "https://www.dell.com/support/kbdoc/en-us/000177325/dell-command-update",
+    "category": "Device Management & OEM Utilities",
+    "vertical": "hardware",
+    "description": "Dell business-client updater for model-specific BIOS, firmware, driver, and Dell application packages.",
+    "accent": "#007DB8",
+    "simpleIconSlug": "dell",
+    "secrets": [],
+    "config": [
+      "update_categories",
+      "schedule_policy",
+      "reboot_policy",
+      "driver_restore"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Identify the Dell service tag locally without transmitting it, select the current Dell Command Update build compatible with the exact model and architecture, verify Dell's signature and checksum, and install only the updater itself.",
+      "preserve": "current BIOS and firmware, BitLocker state, Dell driver versions, update catalog and filters, scheduling and reboot policy, Advanced Driver Restore settings, logs, enterprise configuration, and pending Windows Update work",
+      "safety": "Never submit a service tag, scan through SupportAssist, flash BIOS or firmware, install a driver, suspend BitLocker, change update schedules, enable automatic restart, or apply recommendations without itemized approval and AC power.",
+      "verify": "Confirm the Dell package and application versions, run a scan-only inventory, report each proposed update with severity and restart impact, and verify no download, installation, BitLocker change, firmware task, or reboot was scheduled."
+    }
+  },
+  {
+    "index": 407,
+    "name": "HP Support Assistant",
+    "slug": "hp-support-assistant",
+    "source": {
+      "type": "website",
+      "url": "https://support.hp.com/us-en/help/hp-support-assistant",
+      "installUrl": "https://support.hp.com/us-en/help/hp-support-assistant"
+    },
+    "website": "https://support.hp.com/us-en/help/hp-support-assistant",
+    "category": "Device Management & OEM Utilities",
+    "vertical": "hardware",
+    "description": "HP support utility for device diagnostics, warranty details, troubleshooting, and software, driver, or BIOS updates.",
+    "accent": "#0096D6",
+    "simpleIconSlug": "hp",
+    "secrets": [],
+    "config": [
+      "update_schedule",
+      "notification_policy",
+      "diagnostics_consent",
+      "device_discovery"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Confirm the Windows PC meets HP Support Assistant requirements, obtain the signed installer from HP Support, and explain HP services, device discovery, analytics, scheduled checks, diagnostics, driver access, and restart behavior before installation.",
+      "preserve": "existing HP driver and BIOS versions, diagnostic history, warranty information, device nicknames, update schedule, notification choices, telemetry preferences, support logs, Windows Update state, and enterprise management policy",
+      "safety": "Do not transmit serial numbers, register devices, run invasive diagnostics, install drivers, flash BIOS or firmware, change schedules, enable analytics, contact a virtual agent, or reboot without approval and BitLocker recovery readiness.",
+      "verify": "Confirm HP's signature and application version, perform only a local read-only device inventory, compare update, service, notification, and driver state against baseline, and ensure no diagnostic upload, firmware task, download, or restart is pending."
+    }
+  },
+  {
+    "index": 408,
+    "name": "Samsung Magician",
+    "slug": "samsung-magician",
+    "source": {
+      "type": "website",
+      "url": "https://semiconductor.samsung.com/consumer-storage/magician/",
+      "installUrl": "https://semiconductor.samsung.com/consumer-storage/support/tools/"
+    },
+    "website": "https://semiconductor.samsung.com/consumer-storage/magician/",
+    "category": "Device Management & OEM Utilities",
+    "vertical": "hardware",
+    "description": "Samsung storage utility for SSD health, diagnostics, firmware, benchmarking, optimization, and secure erase workflows.",
+    "accent": "#1428A0",
+    "simpleIconSlug": "samsung",
+    "secrets": [],
+    "config": [
+      "firmware_check",
+      "diagnostic_scan",
+      "over_provisioning",
+      "benchmark_location"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": true,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Download Samsung Magician from Samsung Semiconductor's tools page, verify platform and storage-device support, record every detected drive and SMART baseline, and explain low-level storage access and restart requirements before elevation.",
+      "preserve": "all partitions, filesystems, encryption and BitLocker state, SMART history, firmware revisions, over-provisioning layout, performance settings, benchmark files, drive passwords, secure-erase media, and current storage drivers",
+      "safety": "Never run Secure Erase, PSID Revert, firmware update, over-provisioning resize, performance optimization, benchmark, diagnostic write test, encryption change, or driver replacement without backups, exact-drive confirmation, stable power, and explicit approval.",
+      "verify": "Confirm Samsung's signature and Magician version, perform read-only model, serial-redacted, firmware, temperature, health, and SMART checks, compare every drive with baseline, and verify no firmware, erase, optimization, partition, or restart task is queued."
+    }
+  },
+  {
+    "index": 409,
+    "name": "Disney+",
+    "slug": "disney-plus",
+    "source": {
+      "type": "website",
+      "url": "https://www.disneyplus.com/",
+      "installUrl": "https://www.disneyplus.com/"
+    },
+    "website": "https://www.disneyplus.com/",
+    "category": "Streaming, Reading & Consumer Media",
+    "vertical": "entertainment",
+    "description": "Disney streaming service for films and series with profiles, parental controls, subtitles, and supported downloads.",
+    "accent": "#113CCF",
+    "simpleIconSlug": null,
+    "logoUrl": "https://static-assets.bamgrid.com/product/disneyplus/favicons/disPlus-favicon-180x180.7d56f648dc95f591721935193bc827cb.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "playback_quality",
+      "subtitle_preferences",
+      "parental_controls",
+      "notification_policy"
+    ],
+    "platforms": [
+      "Windows",
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open only the official disneyplus.com origin in a supported browser and offer its browser-managed app installation when available, without installing third-party wrappers, bypass tools, codecs, downloaders, or region-changing extensions.",
+      "preserve": "existing Disney+ browser storage, profiles, parental controls, watch history, subtitle and playback preferences, downloaded licensed media, notification choices, DRM components, and the browser's installed-app state",
+      "safety": "Stop before sign-in, profile selection, PIN entry, subscription, purchase, account linking, location change, media playback, or downloads; never bypass DRM, household rules, age controls, geographic availability, or simultaneous-stream limits.",
+      "verify": "Confirm the installed web app resolves exclusively to Disney's official origin, opens at the signed-out landing screen, has only approved browser permissions, and created no download, playback, notification, account, or payment activity."
+    }
+  },
+  {
+    "index": 410,
+    "name": "Prime Video",
+    "slug": "prime-video",
+    "source": {
+      "type": "website",
+      "url": "https://www.primevideo.com/",
+      "installUrl": "https://www.primevideo.com/"
+    },
+    "website": "https://www.primevideo.com/",
+    "category": "Streaming, Reading & Consumer Media",
+    "vertical": "entertainment",
+    "description": "Amazon video service for subscription streaming, rentals, purchases, channels, profiles, and supported offline viewing.",
+    "accent": "#00A8E1",
+    "simpleIconSlug": null,
+    "logoUrl": "https://m.media-amazon.com/images/G/01/digital/video/DVUI/favicons/favicon-196x196.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "streaming_quality",
+      "subtitle_preferences",
+      "download_location",
+      "parental_pin_policy"
+    ],
+    "platforms": [
+      "Windows",
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use only primevideo.com or Amazon's verified Windows listing, prefer a browser-installed app for web delivery, and do not install unofficial download utilities, playback extensions, codecs, VPN tools, or third-party Amazon wrappers.",
+      "preserve": "existing Amazon and Prime Video cookies, profiles, watchlist, watch history, parental PIN, subtitle and quality settings, channel subscriptions, purchased or rented licenses, downloads, and browser DRM state",
+      "safety": "Stop before Amazon sign-in, MFA, profile or PIN entry, trial enrollment, channel subscription, rental, purchase, playback, or download; never bypass DRM, region controls, advertisements, account limits, or license expiration.",
+      "verify": "Confirm the app's final origin and Amazon certificate, open only the signed-out Prime Video landing page, review approved storage and notification permissions, and ensure no sign-in, playback, channel, purchase, rental, or download occurred."
+    }
+  },
+  {
+    "index": 411,
+    "name": "Hulu",
+    "slug": "hulu",
+    "source": {
+      "type": "website",
+      "url": "https://www.hulu.com/",
+      "installUrl": "https://www.hulu.com/"
+    },
+    "website": "https://www.hulu.com/",
+    "category": "Streaming, Reading & Consumer Media",
+    "vertical": "entertainment",
+    "description": "US streaming service for on-demand television, films, live channels, profiles, and subscription add-ons.",
+    "accent": "#1CE783",
+    "simpleIconSlug": null,
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Hulu_logo_%282018%29.svg",
+    "logoSourceType": "curated-brand-asset",
+    "secrets": [],
+    "config": [
+      "playback_quality",
+      "subtitle_preferences",
+      "profile_controls",
+      "location_services"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open the official hulu.com service and accept any current Disney-managed redirect only when its destination remains an official Hulu or Disney property, then offer browser app installation without unofficial wrappers or media downloaders.",
+      "preserve": "existing Hulu and Disney account cookies, profiles, My Stuff, watch history, home-location registration, Live TV settings, parental controls, subtitles, playback preferences, subscription add-ons, and browser DRM storage",
+      "safety": "Stop before sign-in, MFA, profile PIN, home-location update, free trial, subscription change, add-on, Live TV activation, playback, or download; never evade advertisements, DRM, household, geographic, or stream-count restrictions.",
+      "verify": "Confirm every redirect and installed scope belongs to Hulu or Disney, stop at a signed-out landing page, inspect browser permissions, and verify no account, home-location, subscription, playback, Live TV, or download state changed."
+    }
+  },
+  {
+    "index": 412,
+    "name": "Paramount+",
+    "slug": "paramount-plus",
+    "source": {
+      "type": "website",
+      "url": "https://www.paramountplus.com/",
+      "installUrl": "https://www.paramountplus.com/"
+    },
+    "website": "https://www.paramountplus.com/",
+    "category": "Streaming, Reading & Consumer Media",
+    "vertical": "entertainment",
+    "description": "Paramount streaming service for films, series, live sports, news, profiles, and subscription plans.",
+    "accent": "#0064FF",
+    "simpleIconSlug": "paramountplus",
+    "secrets": [],
+    "config": [
+      "video_quality",
+      "caption_preferences",
+      "parental_controls",
+      "notification_policy"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open paramountplus.com in a supported browser and offer only the browser's native installed-app flow, avoiding unofficial desktop clients, video downloaders, codec bundles, ad blockers configured to circumvent service delivery, and region tools.",
+      "preserve": "existing Paramount+ cookies, profiles, watchlist, watch history, parental controls, caption and video preferences, subscription state, live-event entitlements, browser notifications, and DRM component storage",
+      "safety": "Stop before sign-in, verification codes, profile PIN, trial or plan enrollment, subscription changes, purchases, live event access, playback, or downloads; do not bypass DRM, advertisements, age, region, or stream limits.",
+      "verify": "Confirm the installed app is scoped only to paramountplus.com, opens at a signed-out page, and has no unapproved notifications or persistent permissions; ensure no trial, subscription, account, playback, or download action occurred."
+    }
+  },
+  {
+    "index": 413,
+    "name": "Peacock",
+    "slug": "peacock",
+    "source": {
+      "type": "website",
+      "url": "https://www.peacocktv.com/",
+      "installUrl": "https://www.peacocktv.com/"
+    },
+    "website": "https://www.peacocktv.com/",
+    "category": "Streaming, Reading & Consumer Media",
+    "vertical": "entertainment",
+    "description": "NBCUniversal streaming service for on-demand shows, films, sports, news, channels, and profiles.",
+    "accent": "#000000",
+    "simpleIconSlug": null,
+    "logoUrl": "https://www.peacocktv.com/static/peacock-toolkit/53.0.1/peacock/favicons/apple-touch-icon_152x152.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "streaming_quality",
+      "caption_preferences",
+      "profile_controls",
+      "notification_policy"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use peacocktv.com in a supported browser and install only its browser-managed app when the service is officially available in the user's region, without adding unofficial clients, downloaders, codecs, VPN extensions, or DRM workarounds.",
+      "preserve": "existing Peacock cookies, profiles, watchlist, watch history, parental controls, subtitles, playback settings, subscription and billing state, browser notifications, live-event entitlements, and DRM data",
+      "safety": "Stop before sign-in, verification, profile PIN, plan or trial selection, payment, subscription changes, live event access, playback, or downloads; never circumvent DRM, advertising, geographic availability, age controls, or stream limits.",
+      "verify": "Confirm the final origin and installed-app scope belong only to Peacock, open the signed-out service page, inspect permissions, and ensure no account, subscription, profile, playback, live-event, notification, or download state changed."
+    }
+  },
+  {
+    "index": 414,
+    "name": "YouTube",
+    "slug": "youtube",
+    "source": {
+      "type": "website",
+      "url": "https://www.youtube.com/",
+      "installUrl": "https://www.youtube.com/"
+    },
+    "website": "https://www.youtube.com/",
+    "category": "Streaming, Reading & Consumer Media",
+    "vertical": "entertainment",
+    "description": "Google video platform for watching, uploading, live streaming, subscriptions, playlists, and creator channels.",
+    "accent": "#FF0000",
+    "simpleIconSlug": "youtube",
+    "secrets": [],
+    "config": [
+      "playback_quality",
+      "caption_preferences",
+      "notification_policy",
+      "restricted_mode"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open youtube.com over its valid Google certificate and offer the browser's own installed-app capability, without unofficial desktop wrappers, media download tools, codec packs, ad-circumvention extensions, channel automation, or uploader utilities.",
+      "preserve": "existing Google and YouTube cookies, channel sessions, subscriptions, playlists, watch and search history, caption settings, playback preferences, Premium downloads, creator drafts, upload defaults, and browser notifications",
+      "safety": "Stop before Google sign-in, MFA, account or channel selection, playback, upload, comment, subscription, notification permission, purchase, Premium enrollment, or download; do not bypass advertisements, DRM, age, region, or creator restrictions.",
+      "verify": "Confirm the installed scope is exactly youtube.com, open only a signed-out landing page without autoplay, inspect browser storage and permissions, and verify no viewing history, upload, comment, subscription, notification, purchase, or download occurred."
+    }
+  },
+  {
+    "index": 415,
+    "name": "Amazon Music",
+    "slug": "amazon-music",
+    "source": {
+      "type": "website",
+      "url": "https://music.amazon.com/",
+      "installUrl": "https://music.amazon.com/"
+    },
+    "website": "https://music.amazon.com/",
+    "category": "Streaming, Reading & Consumer Media",
+    "vertical": "entertainment",
+    "description": "Amazon music service for streaming songs, albums, podcasts, playlists, stations, and supported offline listening.",
+    "accent": "#25D1DA",
+    "simpleIconSlug": null,
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Amazon_Music_2024.png",
+    "logoSourceType": "curated-brand-asset",
+    "secrets": [],
+    "config": [
+      "audio_quality",
+      "download_location",
+      "autoplay_enabled",
+      "notification_policy"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open music.amazon.com at Amazon's official origin and offer a browser-installed app for web use, avoiding unofficial clients, audio capture tools, downloaders, codec bundles, Alexa integration, or changes to system audio devices.",
+      "preserve": "existing Amazon Music cookies, library, playlists, follows, playback history, audio quality, explicit-content preference, subscription state, purchased music, podcast progress, downloads, and browser notification choices",
+      "safety": "Stop before Amazon sign-in, MFA, household selection, Unlimited trial, subscription change, purchase, playback, playlist mutation, Alexa linking, notification permission, or download; never defeat DRM, region, device, or offline-license controls.",
+      "verify": "Confirm the app is scoped only to music.amazon.com, opens signed out without autoplay, and has only approved permissions; ensure no account, subscription, playback, library, playlist, notification, purchase, or download activity occurred."
+    }
+  },
+  {
+    "index": 416,
+    "name": "Kindle for PC/Mac",
+    "slug": "kindle-for-pc-mac",
+    "source": {
+      "type": "website",
+      "url": "https://read.amazon.com/landing",
+      "installUrl": "https://www.amazon.com/kindle-dbs/fd/kcp"
+    },
+    "website": "https://read.amazon.com/landing",
+    "category": "Streaming, Reading & Consumer Media",
+    "vertical": "entertainment",
+    "description": "Amazon desktop reader for Kindle books with library synchronization, annotations, reading preferences, and offline copies.",
+    "accent": "#00A8E1",
+    "simpleIconSlug": null,
+    "logoUrl": "https://m.media-amazon.com/images/G/01/kfw/mobile/kindle_favicon._CB624847354_.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "library_location",
+      "download_behavior",
+      "reading_preferences",
+      "annotation_sync"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Follow Amazon's official Kindle reading-app landing page to the signed Windows or macOS installer, verify the publisher, and install the reader without signing in, registering the device, or downloading any book.",
+      "preserve": "existing Kindle library files, device registration, collections, reading position, notes and highlights, dictionaries, fonts, accessibility preferences, downloaded licensed books, local personal documents, and annotation synchronization state",
+      "safety": "Stop before Amazon sign-in, MFA, device registration, book purchase, Kindle Unlimited trial, content download, annotation sync, deregistration, library removal, or DRM-related action; never copy or convert protected book files.",
+      "verify": "Confirm the signed Kindle application and version, open only the unregistered welcome screen, report its library and data paths, and verify no account, device registration, book license, download, annotation, or existing library file changed."
+    }
+  },
+  {
+    "index": 417,
+    "name": "Power BI Desktop",
+    "slug": "power-bi-desktop",
+    "source": {
+      "type": "microsoft-store",
+      "url": "https://apps.microsoft.com/detail/9ntxr16hnw1t",
+      "installUrl": "https://apps.microsoft.com/detail/9ntxr16hnw1t"
+    },
+    "website": "https://www.microsoft.com/en-us/power-platform/products/power-bi/desktop",
+    "category": "Business Intelligence & Enterprise Apps",
+    "vertical": "work",
+    "description": "Windows business-intelligence authoring tool for data modeling, Power Query, DAX, reports, and Power BI publishing.",
+    "accent": "#F2C811",
+    "simpleIconSlug": null,
+    "logoUrl": "https://res.cdn.office.net/files/fabric-cdn-prod_20251117.001/assets/brand-icons/product/png/powerbi_48x1.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "locale",
+      "data_load_privacy",
+      "auto_recovery",
+      "update_channel"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Microsoft's verified Power BI Desktop Store package, confirm architecture and monthly release channel, and do not add database connectors, on-premises gateway, preview features, custom visuals, Python, or R runtimes during base setup.",
+      "preserve": "existing PBIX and PBIT files, AutoRecovery data, Power Query cache, custom visuals, data-source settings, privacy levels, connector drivers, tenant policy, gateway configuration, credentials, and current Microsoft Store update state",
+      "safety": "Do not connect to production data, enter credentials, lower privacy levels, enable native queries, run scripts, install gateways or connectors, publish reports, replace datasets, activate preview features, or upload telemetry without approval.",
+      "verify": "Confirm the Microsoft Store identity and Desktop version, launch to a blank signed-out report, inspect locale and privacy settings, and verify no production connection, gateway, custom visual, workspace publish, or existing report was opened."
+    }
+  },
+  {
+    "index": 418,
+    "name": "Tableau Desktop",
+    "slug": "tableau-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://www.tableau.com/products/desktop",
+      "installUrl": "https://www.tableau.com/support/releases/desktop"
+    },
+    "website": "https://www.tableau.com/products/desktop",
+    "category": "Business Intelligence & Enterprise Apps",
+    "vertical": "work",
+    "description": "Visual analytics authoring application for connecting data, building workbooks, dashboards, extracts, and stories.",
+    "accent": "#4E79A7",
+    "simpleIconSlug": null,
+    "logoUrl": "https://www.tableau.com/themes/custom/tableau_www/logo.v2.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "product_release",
+      "repository_location",
+      "extract_storage",
+      "usage_reporting"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Select the exact supported Tableau Desktop release from Tableau's official releases page, verify its signature, and install the authoring application without activating a license, adding database drivers, migrating repositories, or enabling usage reporting.",
+      "preserve": "existing workbooks, packaged workbooks, extracts, data sources, Tableau Repository, preferences, custom geocoding, connector drivers, licenses, saved server sessions, credentials, extensions, and AutoSave or recovery content",
+      "safety": "Stop before license activation, Tableau Cloud or Server sign-in, production data connection, saved credential access, extract refresh, workbook migration, extension installation, telemetry, publish, overwrite, or repository upgrade without backups and approval.",
+      "verify": "Confirm Tableau's signature, product version, repository and log paths, launch to the activation or start screen without connecting data, and ensure no workbook, extract, server session, license, repository, or production source changed."
+    }
+  },
+  {
+    "index": 419,
+    "name": "SAP GUI",
+    "slug": "sap-gui",
+    "source": {
+      "type": "website",
+      "url": "https://help.sap.com/docs/r/product/sap_gui_for_windows",
+      "installUrl": "https://support.sap.com/en/my-support/software-downloads.html"
+    },
+    "website": "https://help.sap.com/docs/r/product/sap_gui_for_windows",
+    "category": "Business Intelligence & Enterprise Apps",
+    "vertical": "work",
+    "description": "SAP desktop presentation client for connecting to ABAP systems through managed landscapes, SAProuter, and SSO.",
+    "accent": "#0FAAFF",
+    "simpleIconSlug": "sap",
+    "secrets": [],
+    "config": [
+      "sap_gui_variant",
+      "system_landscape",
+      "saprouter",
+      "gui_theme"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Obtain the licensed SAP GUI for Windows or SAP GUI for Java package through the organization's authorized SAP download channel, verify SAP's signature, and match client version and patches to the approved landscape standard.",
+      "preserve": "existing SAP Logon landscape files, SAPUILandscape XML, saplogon INI data, SAProuter strings, SNC and SSO configuration, certificates, themes, accessibility settings, local history, traces, patches, and enterprise deployment policy",
+      "safety": "Do not use another person's S-user, import an unreviewed landscape, access production systems, enter SAP credentials, install SNC libraries, import certificates, change SAProuter, save passwords, run transactions, or migrate settings without administrator approval.",
+      "verify": "Confirm SAP package and patch versions, open SAP Logon with networking disabled or no system selected, validate only approved landscape entries and theme settings, and verify no authentication, production session, transaction, certificate, or landscape mutation occurred."
+    }
+  },
+  {
+    "index": 420,
+    "name": "TradingView Desktop",
+    "slug": "tradingview-desktop",
+    "source": {
+      "type": "website",
+      "url": "https://www.tradingview.com/desktop/",
+      "installUrl": "https://www.tradingview.com/desktop/"
+    },
+    "website": "https://www.tradingview.com/desktop/",
+    "category": "Business Intelligence & Enterprise Apps",
+    "vertical": "work",
+    "description": "Cross-platform charting client for market analysis, watchlists, alerts, layouts, and optional broker connections.",
+    "accent": "#131722",
+    "simpleIconSlug": "tradingview",
+    "secrets": [],
+    "config": [
+      "hardware_acceleration",
+      "layout_storage",
+      "notification_policy",
+      "update_channel"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Download TradingView Desktop from the official desktop page for the detected platform, verify the signed publisher and architecture, and install without importing browser sessions, restoring cloud layouts, or enabling startup and notifications.",
+      "preserve": "existing chart layouts, watchlists, alerts, drawings, Pine scripts, local application data, cached sessions, broker connections, exchange entitlements, hardware acceleration, notification settings, and update channel",
+      "safety": "Stop before TradingView or broker sign-in, MFA, exchange agreement, paid plan, market-data purchase, alert creation, broker linking, order placement, strategy execution, webhook configuration, or financial recommendation; never handle trading credentials.",
+      "verify": "Confirm the signed desktop version and data paths, launch to the signed-out chart interface using delayed public data only, and ensure no broker connection, account session, order, alert, webhook, purchase, or cloud-layout change occurred."
+    }
+  },
+  {
+    "index": 421,
+    "name": "MetaTrader 5",
+    "slug": "metatrader-5",
+    "source": {
+      "type": "website",
+      "url": "https://www.metatrader5.com/",
+      "installUrl": "https://www.metatrader5.com/en/download"
+    },
+    "website": "https://www.metatrader5.com/",
+    "category": "Business Intelligence & Enterprise Apps",
+    "vertical": "work",
+    "description": "Multi-asset trading terminal with charts, broker accounts, algorithmic strategies, market data, and order execution.",
+    "accent": "#00AEEF",
+    "simpleIconSlug": null,
+    "logoUrl": "https://www.metatrader5.com/i/download/metatrader-5-desktop-logo.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "broker_server",
+      "data_directory",
+      "algo_trading",
+      "update_policy"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use MetaQuotes' official MetaTrader 5 desktop download for the selected platform, disclose any Wine-based Linux packaging, verify the publisher, and install the terminal without creating a demo account or selecting a broker.",
+      "preserve": "existing broker accounts, server list, profiles, chart templates, indicators, Expert Advisors, scripts, MQL5 data, logs, history, virtual hosting, signals, certificates, passwords, and terminal data directories",
+      "safety": "Stop before broker search, account creation, login, certificate import, market subscription, signal copying, VPS rental, Expert Advisor execution, Algo Trading activation, deposit, withdrawal, order placement, or access to any live account.",
+      "verify": "Confirm MetaQuotes' signature, terminal build, executable and data directory, launch offline or signed out with Algo Trading disabled, and verify no account, broker connection, market order, EA, signal, VPS, or financial transaction occurred."
+    }
+  },
+  {
+    "index": 422,
+    "name": "QuickBooks",
+    "slug": "quickbooks",
+    "source": {
+      "type": "website",
+      "url": "https://quickbooks.intuit.com/desktop/",
+      "installUrl": "https://downloads.quickbooks.com/app/qbdt/products"
+    },
+    "website": "https://quickbooks.intuit.com/desktop/",
+    "category": "Business Intelligence & Enterprise Apps",
+    "vertical": "work",
+    "description": "Intuit desktop accounting application for company books, invoicing, payroll integration, reports, and multi-user files.",
+    "accent": "#2CA01C",
+    "simpleIconSlug": "quickbooks",
+    "secrets": [],
+    "config": [
+      "product_year",
+      "company_file_location",
+      "multi_user_mode",
+      "backup_schedule"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": true,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Select the licensed QuickBooks Desktop product year and edition from Intuit's official download service, verify its signature, and install program components without opening, upgrading, restoring, or creating a company file.",
+      "preserve": "all QBW, QBB, QBM, TLG, ND, and DSN files, Auto Data Recovery content, payroll data, attachments, templates, licenses, user permissions, multi-user hosting, Database Server Manager, backups, and update settings",
+      "safety": "Stop before Intuit sign-in, license activation, company-file open or conversion, payroll setup, bank feed, payment service, tax submission, multi-user hosting, database repair, backup restore, data import, or production accounting mutation.",
+      "verify": "Confirm Intuit's signature, installed edition and product year, executable and service state, launch only to the no-company-open screen, and verify no company file, database service, payroll, license, bank connection, or backup changed."
+    }
+  },
+  {
+    "index": 423,
+    "name": "Salesforce",
+    "slug": "salesforce",
+    "source": {
+      "type": "website",
+      "url": "https://www.salesforce.com/",
+      "installUrl": "https://login.salesforce.com/"
+    },
+    "website": "https://www.salesforce.com/",
+    "category": "Business Intelligence & Enterprise Apps",
+    "vertical": "work",
+    "description": "Cloud CRM platform for accounts, opportunities, service, analytics, automation, and configurable enterprise applications.",
+    "accent": "#00A1E0",
+    "simpleIconSlug": null,
+    "logoUrl": "https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-no-type-logo.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "org_url",
+      "sandbox_mode",
+      "browser_profile",
+      "notification_policy"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open only the organization's confirmed Salesforce login or sandbox domain in an isolated browser profile, validate the Salesforce certificate and My Domain destination, and offer browser app installation without extensions or data connectors.",
+      "preserve": "existing Salesforce browser sessions, trusted devices, org and sandbox URLs, local storage, downloaded reports, cached records, notification settings, SSO state, certificates, connected apps, and production data access controls",
+      "safety": "Stop before SSO, username, password, MFA, device trust, OAuth consent, production-org access, record creation or mutation, report export, file upload, package installation, Flow execution, email, or administrative Setup changes.",
+      "verify": "Confirm the exact My Domain and sandbox or production classification before login, stop at the authentication page, inspect app scope and permissions, and verify no session, connected app, record, report, file, automation, or production data changed."
+    }
+  },
+  {
+    "index": 424,
+    "name": "HubSpot",
+    "slug": "hubspot",
+    "source": {
+      "type": "website",
+      "url": "https://www.hubspot.com/products/crm",
+      "installUrl": "https://app.hubspot.com/"
+    },
+    "website": "https://www.hubspot.com/products/crm",
+    "category": "Business Intelligence & Enterprise Apps",
+    "vertical": "work",
+    "description": "Web CRM and customer platform for contacts, deals, service, marketing, content, reporting, and automation.",
+    "accent": "#FF7A59",
+    "simpleIconSlug": "hubspot",
+    "secrets": [],
+    "config": [
+      "portal_id",
+      "sandbox_account",
+      "browser_profile",
+      "notification_policy"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "delivery": "pwa",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Open app.hubspot.com in a dedicated browser profile after confirming the intended portal or sandbox account, verify HubSpot's certificate, and offer only the browser-managed app flow without marketplace integrations or extensions.",
+      "preserve": "existing HubSpot sessions, portal selection, sandbox data, contacts, companies, deals, tickets, lists, workflows, marketing assets, reports, connected inboxes, OAuth grants, browser storage, and notification preferences",
+      "safety": "Stop before sign-in, MFA, portal entry, OAuth consent, production record access, import, export, email connection or send, workflow enrollment, campaign publication, billing, marketplace installation, property change, deletion, or merge.",
+      "verify": "Confirm the official HubSpot origin and intended sandbox or production classification, stop at authentication, inspect installed-app permissions, and verify no portal session, CRM record, email, workflow, import, export, integration, or production data changed."
+    }
+  }
+]

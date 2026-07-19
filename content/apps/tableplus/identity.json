@@ -1,0 +1,18 @@
+{
+  "index": 322,
+  "name": "TablePlus",
+  "slug": "tableplus",
+  "source": {
+    "type": "website",
+    "url": "https://tableplus.com/",
+    "installUrl": "https://api.tableplus.com/download/"
+  },
+  "website": "https://tableplus.com/",
+  "category": "API, Networking & Database Clients",
+  "vertical": "software",
+  "description": "Native database client for querying and managing PostgreSQL, MySQL, SQLite, SQL Server, Redis, and other data services.",
+  "accent": "#FFCC00",
+  "simpleIconSlug": null,
+  "logoUrl": "https://tableplus.com/resources/favicons/apple-icon-180x180.png",
+  "logoSourceType": "official-project-asset"
+}

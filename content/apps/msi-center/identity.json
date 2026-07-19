@@ -1,0 +1,16 @@
+{
+  "index": 404,
+  "name": "MSI Center",
+  "slug": "msi-center",
+  "source": {
+    "type": "website",
+    "url": "https://www.msi.com/Landing/MSI-Center",
+    "installUrl": "https://www.msi.com/Landing/MSI-Center"
+  },
+  "website": "https://www.msi.com/Landing/MSI-Center",
+  "category": "Device Management & OEM Utilities",
+  "vertical": "hardware",
+  "description": "Modular MSI utility for hardware monitoring, driver updates, performance modes, cooling, and Mystic Light.",
+  "accent": "#FF0000",
+  "simpleIconSlug": "msi"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 327,
+  "name": "Azure CLI",
+  "slug": "azure-cli",
+  "source": {
+    "type": "website",
+    "url": "https://learn.microsoft.com/en-us/cli/azure/",
+    "installUrl": "https://learn.microsoft.com/en-us/cli/azure/install-azure-cli"
+  },
+  "website": "https://learn.microsoft.com/en-us/cli/azure/",
+  "category": "Cloud Provider & Deployment CLIs",
+  "vertical": "software",
+  "description": "Microsoft's cross-platform command-line interface for signing in to Azure and managing cloud subscriptions, resources, deployments, and services.",
+  "accent": "#0078D4",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:microsoft-azure.svg",
+  "logoSourceType": "curated-brand-asset"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 308,
+  "name": "Claude Code",
+  "slug": "claude-code",
+  "source": {
+    "type": "website",
+    "url": "https://www.anthropic.com/claude-code",
+    "installUrl": "https://docs.anthropic.com/en/docs/claude-code/getting-started"
+  },
+  "website": "https://www.anthropic.com/claude-code",
+  "category": "AI Assistants & Coding Agents",
+  "vertical": "ai",
+  "description": "Anthropic's terminal coding agent for repository analysis, implementation, command execution, and tool-assisted development workflows.",
+  "accent": "#D97757",
+  "simpleIconSlug": "claude",
+  "logoUrl": "https://cdn.simpleicons.org/claude",
+  "logoSourceType": "curated-brand-asset"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 422,
+  "name": "QuickBooks",
+  "slug": "quickbooks",
+  "source": {
+    "type": "website",
+    "url": "https://quickbooks.intuit.com/desktop/",
+    "installUrl": "https://downloads.quickbooks.com/app/qbdt/products"
+  },
+  "website": "https://quickbooks.intuit.com/desktop/",
+  "category": "Business Intelligence & Enterprise Apps",
+  "vertical": "work",
+  "description": "Intuit desktop accounting application for company books, invoicing, payroll integration, reports, and multi-user files.",
+  "accent": "#2CA01C",
+  "simpleIconSlug": "quickbooks"
+}

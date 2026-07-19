@@ -1,0 +1,18 @@
+{
+  "index": 304,
+  "name": "LM Studio",
+  "slug": "lm-studio",
+  "source": {
+    "type": "website",
+    "url": "https://lmstudio.ai/",
+    "installUrl": "https://lmstudio.ai/download"
+  },
+  "website": "https://lmstudio.ai/",
+  "category": "AI Assistants & Coding Agents",
+  "vertical": "ai",
+  "description": "Local desktop environment for discovering, downloading, running, and serving compatible language models on personal hardware.",
+  "accent": "#111111",
+  "simpleIconSlug": "lmstudio",
+  "logoUrl": "https://files.lmstudio.ai/lmstudio_icon.svg",
+  "logoSourceType": "official-project-asset"
+}

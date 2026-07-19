@@ -1,0 +1,18 @@
+{
+  "index": 418,
+  "name": "Tableau Desktop",
+  "slug": "tableau-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.tableau.com/products/desktop",
+    "installUrl": "https://www.tableau.com/support/releases/desktop"
+  },
+  "website": "https://www.tableau.com/products/desktop",
+  "category": "Business Intelligence & Enterprise Apps",
+  "vertical": "work",
+  "description": "Visual analytics authoring application for connecting data, building workbooks, dashboards, extracts, and stories.",
+  "accent": "#4E79A7",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.tableau.com/themes/custom/tableau_www/logo.v2.svg",
+  "logoSourceType": "official-project-asset"
+}

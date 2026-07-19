@@ -1,0 +1,18 @@
+{
+  "index": 302,
+  "name": "ChatGPT Desktop",
+  "slug": "chatgpt-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://chatgpt.com/download/",
+    "installUrl": "https://chatgpt.com/download/"
+  },
+  "website": "https://chatgpt.com/",
+  "category": "AI Assistants & Coding Agents",
+  "vertical": "ai",
+  "description": "OpenAI's native ChatGPT client for desktop conversations, files, voice, screenshots, Work, and Codex workflows.",
+  "accent": "#10A37F",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:openai-icon.svg",
+  "logoSourceType": "curated-brand-asset"
+}

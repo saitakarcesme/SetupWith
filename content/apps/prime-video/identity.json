@@ -1,0 +1,18 @@
+{
+  "index": 410,
+  "name": "Prime Video",
+  "slug": "prime-video",
+  "source": {
+    "type": "website",
+    "url": "https://www.primevideo.com/",
+    "installUrl": "https://www.primevideo.com/"
+  },
+  "website": "https://www.primevideo.com/",
+  "category": "Streaming, Reading & Consumer Media",
+  "vertical": "entertainment",
+  "description": "Amazon video service for subscription streaming, rentals, purchases, channels, profiles, and supported offline viewing.",
+  "accent": "#00A8E1",
+  "simpleIconSlug": null,
+  "logoUrl": "https://m.media-amazon.com/images/G/01/digital/video/DVUI/favicons/favicon-196x196.png",
+  "logoSourceType": "official-project-asset"
+}

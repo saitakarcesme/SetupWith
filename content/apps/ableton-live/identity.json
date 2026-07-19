@@ -1,0 +1,18 @@
+{
+  "index": 367,
+  "name": "Ableton Live",
+  "slug": "ableton-live",
+  "source": {
+    "type": "website",
+    "url": "https://www.ableton.com/en/live/",
+    "installUrl": "https://www.ableton.com/en/download/"
+  },
+  "website": "https://www.ableton.com/en/live/",
+  "category": "Audio, Podcast & Streaming Production",
+  "vertical": "creative",
+  "description": "Professional digital audio workstation for Session and Arrangement workflows, recording, performance, instruments, and effects.",
+  "accent": "#000000",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/cbi:abletonlive.svg",
+  "logoSourceType": "curated-brand-asset"
+}

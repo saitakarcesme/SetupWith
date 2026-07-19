@@ -7,6 +7,9 @@ const catalogPath = resolve(root, "src/data/chatgpt-catalog.json");
 const additionsPath = resolve(root, "src/data/catalog-additions.json");
 const consumerCatalogPath = resolve(root, "src/data/consumer-catalog.json");
 const firstPartyCatalogPath = resolve(root, "src/data/first-party-catalog.json");
+const professionalCatalogOnePath = resolve(root, "src/data/professional-catalog-1.json");
+const professionalCatalogTwoPath = resolve(root, "src/data/professional-catalog-2.json");
+const professionalCatalogThreePath = resolve(root, "src/data/professional-catalog-3.json");
 const overridesPath = resolve(root, "src/data/logo-overrides.json");
 const consumerOverridesPath = resolve(root, "src/data/consumer-logo-overrides.json");
 const outputDir = resolve(root, "public/app-logos");
@@ -16,6 +19,9 @@ const catalog = [
   ...JSON.parse(await readFile(additionsPath, "utf8")),
   ...JSON.parse(await readFile(consumerCatalogPath, "utf8")),
   ...JSON.parse(await readFile(firstPartyCatalogPath, "utf8")),
+  ...JSON.parse(await readFile(professionalCatalogOnePath, "utf8")),
+  ...JSON.parse(await readFile(professionalCatalogTwoPath, "utf8")),
+  ...JSON.parse(await readFile(professionalCatalogThreePath, "utf8")),
 ];
 const overrides = {
   ...JSON.parse(await readFile(overridesPath, "utf8")),
@@ -118,7 +124,11 @@ for (const app of catalog) {
   let source;
   let sourceType;
 
-  if (overrides[app.slug]) {
+  if (app.logoUrl) {
+    source = app.logoUrl;
+    sourceType = app.logoSourceType ?? "official-project-asset";
+    svg = await fetchAsset(source, app.name);
+  } else if (overrides[app.slug]) {
     source = overrides[app.slug];
     sourceType = "official-project-asset";
     svg = await fetchAsset(source, app.name);

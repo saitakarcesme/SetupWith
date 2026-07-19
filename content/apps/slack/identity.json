@@ -1,0 +1,18 @@
+{
+  "index": 336,
+  "name": "Slack",
+  "slug": "slack",
+  "source": {
+    "type": "website",
+    "url": "https://slack.com/",
+    "installUrl": "https://slack.com/downloads"
+  },
+  "website": "https://slack.com/",
+  "category": "Office, Notes & Team Collaboration",
+  "vertical": "work",
+  "description": "Slack's desktop collaboration client for workspace messaging, channels, huddles, canvases, file sharing, notifications, and application integrations.",
+  "accent": "#4A154B",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:slack-icon.svg",
+  "logoSourceType": "curated-brand-asset"
+}

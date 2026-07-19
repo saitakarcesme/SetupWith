@@ -1,0 +1,18 @@
+{
+  "index": 306,
+  "name": "Windsurf Editor",
+  "slug": "windsurf-editor",
+  "source": {
+    "type": "website",
+    "url": "https://windsurf.com/editor",
+    "installUrl": "https://windsurf.com/download"
+  },
+  "website": "https://windsurf.com/editor",
+  "category": "AI Assistants & Coding Agents",
+  "vertical": "ai",
+  "description": "Agentic desktop code editor from Windsurf with project context, Cascade workflows, extensions, and terminal integration.",
+  "accent": "#0B100F",
+  "simpleIconSlug": "windsurf",
+  "logoUrl": "https://cdn.simpleicons.org/windsurf",
+  "logoSourceType": "curated-brand-asset"
+}

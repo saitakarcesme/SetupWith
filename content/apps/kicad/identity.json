@@ -1,0 +1,16 @@
+{
+  "index": 381,
+  "name": "KiCad",
+  "slug": "kicad",
+  "source": {
+    "type": "website",
+    "url": "https://www.kicad.org/",
+    "installUrl": "https://www.kicad.org/download/"
+  },
+  "website": "https://www.kicad.org/",
+  "category": "Science, Engineering & Research",
+  "vertical": "software",
+  "description": "Open-source electronic design automation suite for schematics, PCB layout, 3D inspection, libraries, and manufacturing outputs.",
+  "accent": "#314CB0",
+  "simpleIconSlug": "kicad"
+}

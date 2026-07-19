@@ -1,0 +1,18 @@
+{
+  "index": 309,
+  "name": "Gemini CLI",
+  "slug": "gemini-cli",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "installUrl": "https://github.com/google-gemini/gemini-cli#installation"
+  },
+  "website": "https://geminicli.com/",
+  "category": "AI Assistants & Coding Agents",
+  "vertical": "ai",
+  "description": "Google's open-source terminal agent for Gemini-powered coding, research, tool use, and repository-oriented workflows.",
+  "accent": "#8E75B2",
+  "simpleIconSlug": "googlegemini",
+  "logoUrl": "https://cdn.simpleicons.org/googlegemini",
+  "logoSourceType": "curated-brand-asset"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 409,
+  "name": "Disney+",
+  "slug": "disney-plus",
+  "source": {
+    "type": "website",
+    "url": "https://www.disneyplus.com/",
+    "installUrl": "https://www.disneyplus.com/"
+  },
+  "website": "https://www.disneyplus.com/",
+  "category": "Streaming, Reading & Consumer Media",
+  "vertical": "entertainment",
+  "description": "Disney streaming service for films and series with profiles, parental controls, subtitles, and supported downloads.",
+  "accent": "#113CCF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://static-assets.bamgrid.com/product/disneyplus/favicons/disPlus-favicon-180x180.7d56f648dc95f591721935193bc827cb.png",
+  "logoSourceType": "official-project-asset"
+}

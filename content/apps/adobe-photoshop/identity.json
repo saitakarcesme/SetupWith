@@ -1,0 +1,18 @@
+{
+  "index": 359,
+  "name": "Adobe Photoshop",
+  "slug": "adobe-photoshop",
+  "source": {
+    "type": "website",
+    "url": "https://www.adobe.com/products/photoshop.html",
+    "installUrl": "https://www.adobe.com/creativecloud/desktop-app.html"
+  },
+  "website": "https://www.adobe.com/products/photoshop.html",
+  "category": "Professional Creative Suites",
+  "vertical": "creative",
+  "description": "Professional raster image editor for layered documents, compositing, retouching, painting, Camera Raw, and color-managed output.",
+  "accent": "#31A8FF",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/logos:adobe-photoshop.svg",
+  "logoSourceType": "curated-brand-asset"
+}

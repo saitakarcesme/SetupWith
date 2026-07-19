@@ -1,0 +1,18 @@
+{
+  "index": 365,
+  "name": "CapCut",
+  "slug": "capcut",
+  "source": {
+    "type": "website",
+    "url": "https://www.capcut.com/tools/desktop-video-editor",
+    "installUrl": "https://www.capcut.com/tools/desktop-video-editor"
+  },
+  "website": "https://www.capcut.com/",
+  "category": "Professional Creative Suites",
+  "vertical": "creative",
+  "description": "Desktop video editor for timeline cutting, captions, effects, templates, social exports, and cloud-assisted creative tools.",
+  "accent": "#000000",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/selfhst:capcut.svg",
+  "logoSourceType": "curated-brand-asset"
+}

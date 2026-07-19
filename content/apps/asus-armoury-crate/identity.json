@@ -1,0 +1,16 @@
+{
+  "index": 403,
+  "name": "ASUS Armoury Crate",
+  "slug": "asus-armoury-crate",
+  "source": {
+    "type": "website",
+    "url": "https://rog.asus.com/armoury-crate/",
+    "installUrl": "https://www.asus.com/supportonly/armoury%20crate/helpdesk_download/"
+  },
+  "website": "https://rog.asus.com/armoury-crate/",
+  "category": "Device Management & OEM Utilities",
+  "vertical": "hardware",
+  "description": "ASUS and ROG control center for device drivers, performance modes, Aura lighting, updates, and peripherals.",
+  "accent": "#D71920",
+  "simpleIconSlug": "asus"
+}

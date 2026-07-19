@@ -1,0 +1,18 @@
+{
+  "index": 366,
+  "name": "Canva",
+  "slug": "canva-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.canva.com/download/",
+    "installUrl": "https://www.canva.com/download/"
+  },
+  "website": "https://www.canva.com/",
+  "category": "Professional Creative Suites",
+  "vertical": "creative",
+  "description": "Canva's desktop client for collaborative visual design, presentations, brand assets, templates, and cloud-hosted projects.",
+  "accent": "#00C4CC",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/devicon:canva.svg",
+  "logoSourceType": "curated-brand-asset"
+}

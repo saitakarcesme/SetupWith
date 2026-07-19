@@ -1,0 +1,16 @@
+{
+  "index": 420,
+  "name": "TradingView Desktop",
+  "slug": "tradingview-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.tradingview.com/desktop/",
+    "installUrl": "https://www.tradingview.com/desktop/"
+  },
+  "website": "https://www.tradingview.com/desktop/",
+  "category": "Business Intelligence & Enterprise Apps",
+  "vertical": "work",
+  "description": "Cross-platform charting client for market analysis, watchlists, alerts, layouts, and optional broker connections.",
+  "accent": "#131722",
+  "simpleIconSlug": "tradingview"
+}

@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Windows"
+  ],
+  "installTime": "2–5 min",
+  "complexity": "Simple",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": true
+  },
+  "preferences": [
+    "interface_style",
+    "configuration_storage",
+    "default_local_directory",
+    "keepalive_interval"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "configuration overwrite",
+    "service or daemon changes",
+    "ports and firewall rules",
+    "browser sign-in",
+    "account creation, MFA, CAPTCHA, age verification, or paid subscription",
+    "large downloads and destination storage",
+    "drivers, anti-cheat, kernel components, or restart"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "index": 357,
+  "name": "Docker Desktop",
+  "slug": "docker-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://www.docker.com/products/docker-desktop/",
+    "installUrl": "https://docs.docker.com/desktop/"
+  },
+  "website": "https://www.docker.com/products/docker-desktop/",
+  "category": "Remote Access, Virtualization & Containers",
+  "vertical": "software",
+  "description": "Desktop container environment bundling Docker Engine, Compose, a managed Linux VM, networking, and developer tooling.",
+  "accent": "#2496ED",
+  "simpleIconSlug": "docker"
+}

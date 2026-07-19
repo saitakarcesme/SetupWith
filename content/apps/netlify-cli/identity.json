@@ -1,0 +1,18 @@
+{
+  "index": 333,
+  "name": "Netlify CLI",
+  "slug": "netlify-cli",
+  "source": {
+    "type": "website",
+    "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli/",
+    "installUrl": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli/#installation"
+  },
+  "website": "https://www.netlify.com/platform/core/cli/",
+  "category": "Cloud Provider & Deployment CLIs",
+  "vertical": "software",
+  "description": "Netlify's command-line interface for local development, project linking, builds, environment management, functions, and site deployments.",
+  "accent": "#00C7B7",
+  "simpleIconSlug": "netlify",
+  "logoUrl": "https://cdn.simpleicons.org/netlify",
+  "logoSourceType": "curated-brand-asset"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 346,
+  "name": "FileZilla",
+  "slug": "filezilla-client",
+  "source": {
+    "type": "website",
+    "url": "https://filezilla-project.org/",
+    "installUrl": "https://filezilla-project.org/download.php?show_all=1"
+  },
+  "website": "https://filezilla-project.org/",
+  "category": "Cloud Storage, Backup & File Transfer",
+  "vertical": "work",
+  "description": "Cross-platform FTP, FTPS, and SFTP client with queued transfers, remote browsing, filters, and site profiles.",
+  "accent": "#BF0000",
+  "simpleIconSlug": "filezilla"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 393,
+  "name": "WinRAR",
+  "slug": "winrar",
+  "source": {
+    "type": "website",
+    "url": "https://www.win-rar.com/",
+    "installUrl": "https://www.win-rar.com/download.html"
+  },
+  "website": "https://www.win-rar.com/",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "software",
+  "description": "Windows archive manager for RAR, ZIP, recovery records, encrypted archives, and Explorer shell integration.",
+  "accent": "#7B4AB8",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.win-rar.com/fileadmin/images/apple-touch-icon.png",
+  "logoSourceType": "official-project-asset"
+}

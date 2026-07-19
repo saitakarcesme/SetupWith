@@ -1,0 +1,16 @@
+{
+  "index": 384,
+  "name": "Bitwarden Desktop",
+  "slug": "bitwarden-desktop",
+  "source": {
+    "type": "website",
+    "url": "https://bitwarden.com/download/",
+    "installUrl": "https://bitwarden.com/download/"
+  },
+  "website": "https://bitwarden.com/",
+  "category": "Consumer Security, VPN & Identity",
+  "vertical": "software",
+  "description": "Open-source desktop vault for passwords, passkeys, TOTP records, secure notes, and encrypted synchronization.",
+  "accent": "#175DDC",
+  "simpleIconSlug": "bitwarden"
+}

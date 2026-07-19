@@ -1,0 +1,16 @@
+{
+  "index": 395,
+  "name": "ShareX",
+  "slug": "sharex",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/ShareX/ShareX",
+    "installUrl": "https://getsharex.com/downloads"
+  },
+  "website": "https://getsharex.com/",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "creative",
+  "description": "Windows capture and automation tool for screenshots, screen recording, annotation, workflows, and file sharing.",
+  "accent": "#2885F1",
+  "simpleIconSlug": "sharex"
+}

@@ -1,0 +1,16 @@
+{
+  "index": 396,
+  "name": "AutoHotkey",
+  "slug": "autohotkey",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/AutoHotkey/AutoHotkey",
+    "installUrl": "https://www.autohotkey.com/download/"
+  },
+  "website": "https://www.autohotkey.com/",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "software",
+  "description": "Windows scripting runtime for keyboard remapping, hotkeys, text expansion, window control, and desktop automation.",
+  "accent": "#334455",
+  "simpleIconSlug": "autohotkey"
+}

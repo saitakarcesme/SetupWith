@@ -1,0 +1,18 @@
+{
+  "index": 337,
+  "name": "Microsoft Outlook",
+  "slug": "microsoft-outlook",
+  "source": {
+    "type": "website",
+    "url": "https://www.microsoft.com/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
+    "installUrl": "https://support.microsoft.com/en-US/Outlook/getstarted/start-using-new-outlook-for-windows"
+  },
+  "website": "https://www.microsoft.com/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
+  "category": "Office, Notes & Team Collaboration",
+  "vertical": "work",
+  "description": "Microsoft's desktop email and calendar application for multiple accounts, contacts, tasks, scheduling, search, and Microsoft 365 collaboration workflows.",
+  "accent": "#0078D4",
+  "simpleIconSlug": null,
+  "logoUrl": "https://api.iconify.design/selfhst:microsoft-outlook.svg",
+  "logoSourceType": "curated-brand-asset"
+}

@@ -1,0 +1,18 @@
+{
+  "index": 401,
+  "name": "Logitech Options+",
+  "slug": "logitech-options-plus",
+  "source": {
+    "type": "website",
+    "url": "https://www.logitech.com/software/logi-options-plus.html",
+    "installUrl": "https://www.logitech.com/software/logi-options-plus.html"
+  },
+  "website": "https://www.logitech.com/software/logi-options-plus.html",
+  "category": "Device Management & OEM Utilities",
+  "vertical": "hardware",
+  "description": "Logitech configuration suite for supported mice and keyboards, button actions, gestures, Flow, and firmware updates.",
+  "accent": "#00B8FC",
+  "simpleIconSlug": null,
+  "logoUrl": "https://www.logitech.com/favicon.ico",
+  "logoSourceType": "official-project-asset"
+}

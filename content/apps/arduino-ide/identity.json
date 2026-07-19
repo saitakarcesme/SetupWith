@@ -1,0 +1,16 @@
+{
+  "index": 382,
+  "name": "Arduino IDE",
+  "slug": "arduino-ide",
+  "source": {
+    "type": "website",
+    "url": "https://www.arduino.cc/en/software",
+    "installUrl": "https://www.arduino.cc/en/software"
+  },
+  "website": "https://www.arduino.cc/en/software",
+  "category": "Science, Engineering & Research",
+  "vertical": "software",
+  "description": "Arduino's desktop editor and toolchain manager for sketches, board cores, libraries, compilation, serial monitoring, and uploads.",
+  "accent": "#00878F",
+  "simpleIconSlug": "arduino"
+}
