@@ -5992,5 +5992,57 @@
       "safety": "Never expose listening interests, trust remote metadata or redirects, permit silent cleartext streams, install codecs automatically, create retry storms, contact recognition services unexpectedly, record without legal and storage review, cast to an ambiguous device, or play sudden audio without endpoint, decoder, recording, network-target and output approval.",
       "verify": "Verify Shortwave source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove directories, streams, decoders, metadata, artwork, discovery, receivers, recordings, libraries, MPRIS, notifications and audio are unchanged."
     }
+  },
+  {
+    "index": 507,
+    "name": "Switcheroo",
+    "slug": "switcheroo-image-converter",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.com/adhami3310/Switcheroo",
+      "installUrl": "https://flathub.org/apps/io.gitlab.adhami3310.Converter"
+    },
+    "website": "https://apps.gnome.org/Converter/",
+    "category": "Design & Media",
+    "vertical": "software",
+    "description": "GNOME image conversion and resizing utility for single or batch workflows across image formats, with output controls and an option to remove EXIF metadata.",
+    "accent": "#C061CB",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.gitlab.adhami3310.Converter.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "conversion_plan",
+      "metadata_policy",
+      "output_collision_policy",
+      "decoder_resource_limits"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "input file provenance, count, aggregate and per-file bytes, claimed and detected type, malformed content, and decoder trust",
+      "output format, encoder availability, quality or lossless mode, chroma and bit depth, compatibility target, and expected size",
+      "resize dimensions, pixel limits, aspect-ratio policy, enlargement, resampling, orientation handling, and preview dimensions",
+      "EXIF removal or retention, GPS and device identifiers, orientation tags, XMP, IPTC, comments, timestamps, and metadata audit",
+      "ICC color profile, color space conversion, alpha transparency, background fill, HDR, animation, multi-frame or multi-page preservation",
+      "SVG scripts and external references, embedded fonts and images, rasterization boundary, network denial, and deterministic dimensions",
+      "batch output directory, filename template, extension changes, collisions, existing-file overwrite, atomic writes, partial cleanup, and free space",
+      "parallel conversion count, CPU and memory budget, decompression bombs, timeout, cancellation, source preservation, backups, and rollback"
+    ],
+    "prompt": "Set up Switcheroo from its official project and verified Flathub listing (https://apps.gnome.org/Converter/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, saved conversion preferences, recent input and output counts, aggregate cache and partial-file bytes, accessible portal grants and backup coverage without opening images or revealing filenames, directories, thumbnails, EXIF, GPS, camera identifiers, dimensions, hashes or creative content. Install stable `io.gitlab.adhami3310.Converter` from verified Flathub in the existing ownership scope. Do not compile from source, launch Switcheroo, select files, decode or render an image, follow an SVG reference, inspect metadata, resize, convert, remove EXIF, create output, or overwrite anything during setup.\n\nPreserve every source byte, owner, permission and timestamp where practical, plus existing outputs, metadata choices, naming rules, recent state, portal grants, remotes, overrides and scope ownership. Image metadata can contain precise location, device identity, author and capture time; redact it from diagnostics. Removing all EXIF may also remove orientation needed for correct display, while format conversion can lose ICC profiles, transparency, HDR, animation, frames, comments or bit depth. Never describe a successful decode as proof of visual equivalence.\n\nBefore a later conversion, require a manifest with input checksum, detected type, byte and pixel limits, output format, quality or lossless settings, target dimensions, aspect-ratio and enlargement policy, orientation normalization, metadata allowlist or removal rule, color-profile handling, alpha background and animation or multi-frame behavior. Treat raster and vector inputs as hostile decoder content. Deny SVG network access, scripts and external resources; cap decompressed pixels, memory, CPU, concurrency and time. Preview output names and collision decisions, reserve free space, use atomic writes, and never overwrite sources or existing outputs without per-file approval.\n\nVerify provenance, app ID, origin, commit, runtime, executable, files and sandbox permissions offline. Confirm file-portal reach without selecting a document. Prove no file open, decoder, renderer, metadata read, SVG request, encoder, resize, EXIF mutation, temporary file, output collision, source change or notification occurred. On failure, rollback only the new Switcheroo ref in its original scope; preserve shared runtimes, remotes, overrides, sources, outputs, metadata, color profiles, portal grants, preferences and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.gitlab.adhami3310.Converter from verified Flathub in the existing scope without source builds, launch, file selection, decoding, rendering, SVG access, metadata reads, conversion, resizing, EXIF changes, outputs, or overwrites.",
+      "preserve": "all source and output bytes, ownership and permissions, useful timestamps, EXIF and orientation, XMP and IPTC, ICC profiles, transparency, HDR, animation and frames, naming rules, portal grants, preferences, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose image metadata, trust claimed formats, follow SVG resources, permit decompression bombs, lose orientation or color silently, flatten transparency unexpectedly, discard frames without warning, exhaust resources with batch concurrency, collide names, overwrite sources, or remove metadata without a manifest and visual review.",
+      "verify": "Verify Switcheroo source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove files, decoders, renderers, metadata, SVG resources, encoders, resizing, EXIF, temporary files, outputs and notifications are unchanged."
+    }
   }
 ]

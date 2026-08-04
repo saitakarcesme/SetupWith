@@ -1,0 +1,17 @@
+{
+  "index": 507,
+  "name": "Switcheroo",
+  "slug": "switcheroo-image-converter",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.com/adhami3310/Switcheroo",
+    "installUrl": "https://flathub.org/apps/io.gitlab.adhami3310.Converter"
+  },
+  "website": "https://apps.gnome.org/Converter/",
+  "category": "Design & Media",
+  "vertical": "software",
+  "description": "GNOME image conversion and resizing utility for single or batch workflows across image formats, with output controls and an option to remove EXIF metadata.",
+  "accent": "#C061CB",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.gitlab.adhami3310.Converter.svg",
+  "logoSourceType": "official-project-asset"
+}

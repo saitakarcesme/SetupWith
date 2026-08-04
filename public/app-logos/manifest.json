@@ -2528,5 +2528,10 @@
     "file": "shortwave-internet-radio.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/de.haeckerfelix.Shortwave.svg",
     "sourceType": "official-project-asset"
+  },
+  "switcheroo-image-converter": {
+    "file": "switcheroo-image-converter.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.gitlab.adhami3310.Converter.svg",
+    "sourceType": "official-project-asset"
   }
 }

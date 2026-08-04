@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "conversion_plan",
+    "metadata_policy",
+    "output_collision_policy",
+    "decoder_resource_limits"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "input file provenance, count, aggregate and per-file bytes, claimed and detected type, malformed content, and decoder trust",
+    "output format, encoder availability, quality or lossless mode, chroma and bit depth, compatibility target, and expected size",
+    "resize dimensions, pixel limits, aspect-ratio policy, enlargement, resampling, orientation handling, and preview dimensions",
+    "EXIF removal or retention, GPS and device identifiers, orientation tags, XMP, IPTC, comments, timestamps, and metadata audit",
+    "ICC color profile, color space conversion, alpha transparency, background fill, HDR, animation, multi-frame or multi-page preservation",
+    "SVG scripts and external references, embedded fonts and images, rasterization boundary, network denial, and deterministic dimensions",
+    "batch output directory, filename template, extension changes, collisions, existing-file overwrite, atomic writes, partial cleanup, and free space",
+    "parallel conversion count, CPU and memory budget, decompression bombs, timeout, cancellation, source preservation, backups, and rollback"
+  ]
+}
