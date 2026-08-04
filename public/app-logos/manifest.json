@@ -2373,5 +2373,10 @@
     "file": "identity-media-compare.svg",
     "source": "https://gitlab.gnome.org/YaLTeR/identity/-/raw/main/data/icons/org.gnome.gitlab.YaLTeR.Identity.svg",
     "sourceType": "official-project-asset"
+  },
+  "curtail-image-compressor": {
+    "file": "curtail-image-compressor.svg",
+    "source": "https://raw.githubusercontent.com/Huluti/Curtail/main/data/icons/hicolor/scalable/apps/com.github.huluti.Curtail.svg",
+    "sourceType": "official-project-asset"
   }
 }

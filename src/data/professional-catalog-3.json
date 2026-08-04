@@ -4342,5 +4342,57 @@
       "safety": "Never decode untrusted media as a test, hydrate cloud files, expose names or paths, install codecs, enable GPU or audio, infer byte equality from appearance, copy files, drag data out, or claim associations without input, decoder, sandbox, privacy, color, resource, and destination review.",
       "verify": "Verify Identity source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove media reads, hydration, decoders, GPU, audio, portals, recent entries, clipboard, associations and network state are unchanged."
     }
+  },
+  {
+    "index": 476,
+    "name": "Curtail",
+    "slug": "curtail-image-compressor",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/Huluti/Curtail",
+      "installUrl": "https://flathub.org/apps/com.github.huluti.Curtail"
+    },
+    "website": "https://apps.gnome.org/Curtail/",
+    "category": "Design & Media",
+    "vertical": "software",
+    "description": "GNOME image compressor for PNG, JPEG, WebP, and SVG with lossless or lossy modes, metadata policy, recursive batches, safe outputs, and overwrite workflows.",
+    "accent": "#E66100",
+    "logoUrl": "https://raw.githubusercontent.com/Huluti/Curtail/main/data/icons/hicolor/scalable/apps/com.github.huluti.Curtail.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "compression_profile",
+      "metadata_policy",
+      "output_naming",
+      "source_protection"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "PNG, JPEG, WebP, SVG source paths, content detection, symlinks, folders, and portal grants",
+      "lossless or lossy mode, quality values, encoder versions, color subsampling, alpha, and visual tolerance",
+      "safe mode, overwrite mode, source backup, atomic replacement, permissions, timestamps, and recovery",
+      "recursive compression, hidden files, nested folders, mount boundaries, file count, and cancellation",
+      "EXIF, GPS, XMP, ICC profile, orientation, copyright, thumbnail, and keep-or-strip metadata policy",
+      "prefix or suffix output naming, extension, destination, collision, existing file, and larger-output skip",
+      "oxipng, jpegoptim, pngquant, WebP or SVG processing, filenames, shell metacharacters, and parser trust",
+      "open-with handler, drag-and-drop, D-Bus activation, show-in-folder, preview, and rollback"
+    ],
+    "prompt": "Set up Curtail from its official repository and verified Flathub listing (https://github.com/Huluti/Curtail). Inventory Linux architecture, Flatpak scopes, existing Curtail package, compressor preferences, lossless/lossy quality, safe or overwrite mode, recursive setting, metadata policy, output prefix/suffix, open-with integration and portal grants without selecting or reading images. Install stable `com.github.huluti.Curtail` from verified Flathub in the existing ownership scope. Do not compile from source, launch Curtail, activate its D-Bus service, claim handlers or compress a sample file during setup.\n\nPreserve every image and SVG byte-for-byte with filename, permissions, ownership, timestamps, hard links, symlinks, sidecars and directory structure. Do not enumerate a photo library, recurse into folders, cross mount boundaries, hydrate cloud placeholders, render previews or open the output folder. Filenames are data, not shell commands; never interpolate paths containing metacharacters into a shell. Treat malformed PNG/JPEG/WebP/SVG input and external SVG references as untrusted parser content.\n\nLossless means preserving decoded image content, not necessarily identical bytes or metadata. Lossy output deliberately changes pixels. EXIF, GPS, XMP, ICC profiles, orientation, copyright and embedded thumbnails each have privacy and fidelity consequences whether kept or stripped. Before future compression show exact source/destination, encoder and version, mode, quality, expected metadata fields, color-profile handling, size estimate and visual acceptance method. Never remove an ICC profile or orientation silently, and never claim privacy merely because common EXIF tags were removed.\n\nKeep safe mode and non-recursive operation unless explicitly approved. Overwrite requires a verified independent backup, atomic replacement plan and restoration test; a generated output file is not a backup. Resolve prefix/suffix collisions and reject existing destinations before processing. If output is larger, preserve the original and do not replace it. Verify Curtail source, app ID, origin, commit, runtime, executable, bundled encoders, files and permissions offline. Prove no source read, output, metadata change, recursive scan, portal, handler, preview, D-Bus activation or process occurred. On failure, rollback only the new Curtail ref in its original scope; preserve shared runtimes, remotes, overrides, images and compression preferences.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.github.huluti.Curtail from verified Flathub in the existing scope without source builds, launch, D-Bus activation, handlers, image reads, sample compression, recursive scans, previews, metadata changes, or outputs.",
+      "preserve": "all source images and SVGs, bytes, names, permissions, ownership, timestamps, links, sidecars, folders, metadata, color profiles, preferences, safe mode, naming rules, handlers, portals, remotes, overrides, and scope ownership",
+      "safety": "Never recurse through libraries, trust filenames as commands, parse untrusted media as a test, conflate lossless with metadata preservation, strip profiles silently, overwrite without verified backup, collide outputs, or replace sources with larger results without file, encoder, pixel, metadata, destination, and recovery review.",
+      "verify": "Verify Curtail source, app ID, origin, commit, runtime, executable, encoders, files and permissions offline, then prove no source reads, outputs, metadata, recursion, portals, handlers, previews, D-Bus activation or compressor processes changed."
+    }
   }
 ]

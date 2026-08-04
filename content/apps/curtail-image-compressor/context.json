@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "compression_profile",
+    "metadata_policy",
+    "output_naming",
+    "source_protection"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "PNG, JPEG, WebP, SVG source paths, content detection, symlinks, folders, and portal grants",
+    "lossless or lossy mode, quality values, encoder versions, color subsampling, alpha, and visual tolerance",
+    "safe mode, overwrite mode, source backup, atomic replacement, permissions, timestamps, and recovery",
+    "recursive compression, hidden files, nested folders, mount boundaries, file count, and cancellation",
+    "EXIF, GPS, XMP, ICC profile, orientation, copyright, thumbnail, and keep-or-strip metadata policy",
+    "prefix or suffix output naming, extension, destination, collision, existing file, and larger-output skip",
+    "oxipng, jpegoptim, pngquant, WebP or SVG processing, filenames, shell metacharacters, and parser trust",
+    "open-with handler, drag-and-drop, D-Bus activation, show-in-folder, preview, and rollback"
+  ]
+}

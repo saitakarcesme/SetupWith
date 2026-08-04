@@ -1,0 +1,17 @@
+{
+  "index": 476,
+  "name": "Curtail",
+  "slug": "curtail-image-compressor",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/Huluti/Curtail",
+    "installUrl": "https://flathub.org/apps/com.github.huluti.Curtail"
+  },
+  "website": "https://apps.gnome.org/Curtail/",
+  "category": "Design & Media",
+  "vertical": "software",
+  "description": "GNOME image compressor for PNG, JPEG, WebP, and SVG with lossless or lossy modes, metadata policy, recursive batches, safe outputs, and overwrite workflows.",
+  "accent": "#E66100",
+  "logoUrl": "https://raw.githubusercontent.com/Huluti/Curtail/main/data/icons/hicolor/scalable/apps/com.github.huluti.Curtail.svg",
+  "logoSourceType": "official-project-asset"
+}
