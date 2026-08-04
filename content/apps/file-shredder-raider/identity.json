@@ -1,0 +1,17 @@
+{
+  "index": 486,
+  "name": "File Shredder",
+  "slug": "file-shredder-raider",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/ADBeveridge/raider",
+    "installUrl": "https://flathub.org/apps/com.github.ADBeveridge.Raider"
+  },
+  "website": "https://apps.gnome.org/Raider/",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "GNOME utility for overwriting and deleting selected files while explicitly acknowledging recovery limits on SSDs and other modern storage technologies.",
+  "accent": "#C01C28",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.github.ADBeveridge.Raider.svg",
+  "logoSourceType": "official-project-asset"
+}

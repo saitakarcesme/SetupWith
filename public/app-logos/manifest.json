@@ -2423,5 +2423,10 @@
     "file": "eyedropper-color-picker.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.github.finefindus.eyedropper.svg",
     "sourceType": "official-project-asset"
+  },
+  "file-shredder-raider": {
+    "file": "file-shredder-raider.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/com.github.ADBeveridge.Raider.svg",
+    "sourceType": "official-project-asset"
   }
 }
