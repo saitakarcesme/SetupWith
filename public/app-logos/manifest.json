@@ -2508,5 +2508,10 @@
     "file": "gnome-secrets-keepass.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Secrets.svg",
     "sourceType": "official-project-asset"
+  },
+  "text-pieces-transformations": {
+    "file": "text-pieces-transformations.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.gitlab.liferooter.TextPieces.svg",
+    "sourceType": "official-project-asset"
   }
 }

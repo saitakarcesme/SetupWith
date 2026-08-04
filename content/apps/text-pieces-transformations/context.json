@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "input_privacy",
+    "custom_action_trust",
+    "parser_limits",
+    "clipboard_policy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "scratchpad content classification, credentials and personal data, redaction boundary, retention, crash reports, and support logs",
+    "hash algorithm purpose, checksum versus password hashing, collision limitations, encoding choice, and verification target",
+    "Base64, URL, HTML and string escaping direction, character set, normalization, line endings, invalid-byte policy, and reversibility",
+    "JSON, XML and YAML input origin, size, nesting, entities, aliases, tags, duplicate keys, schema, and parser resource limits",
+    "JSON-to-YAML and YAML-to-JSON type preservation, numeric precision, timestamps, anchors, comments, key ordering, and lossy conversion",
+    "line filters and regular expressions, pattern provenance, catastrophic backtracking, match preview, deletion count, and undo path",
+    "custom script source, checksum, interpreter, filesystem and network reach, environment inheritance, arguments, output cap, and timeout",
+    "clipboard reads and writes, clipboard history, temporary files, saved actions, backups, reset, uninstall, and rollback"
+  ]
+}

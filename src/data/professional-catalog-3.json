@@ -5784,5 +5784,57 @@
       "safety": "Never expose or test vault contents, lose an unlock factor, weaken derivation, overwrite a database, create a sync conflict, leak through clipboard or screen capture, import without redacted preview, or claim recoverability without a verified backup and restore plan.",
       "verify": "Verify Secrets source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove vaults, credentials, clipboard, authentication, databases, backups, sync and notifications are unchanged."
     }
+  },
+  {
+    "index": 503,
+    "name": "Text Pieces",
+    "slug": "text-pieces-transformations",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.com/liferooter/textpieces",
+      "installUrl": "https://flathub.org/apps/io.gitlab.liferooter.TextPieces"
+    },
+    "website": "https://apps.gnome.org/TextPieces/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Developer scratchpad for hashing, encoding, decoding, counting, filtering, escaping, formatting JSON and XML, converting JSON and YAML, and defining script-based text actions.",
+    "accent": "#9141AC",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.gitlab.liferooter.TextPieces.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "input_privacy",
+      "custom_action_trust",
+      "parser_limits",
+      "clipboard_policy"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "scratchpad content classification, credentials and personal data, redaction boundary, retention, crash reports, and support logs",
+      "hash algorithm purpose, checksum versus password hashing, collision limitations, encoding choice, and verification target",
+      "Base64, URL, HTML and string escaping direction, character set, normalization, line endings, invalid-byte policy, and reversibility",
+      "JSON, XML and YAML input origin, size, nesting, entities, aliases, tags, duplicate keys, schema, and parser resource limits",
+      "JSON-to-YAML and YAML-to-JSON type preservation, numeric precision, timestamps, anchors, comments, key ordering, and lossy conversion",
+      "line filters and regular expressions, pattern provenance, catastrophic backtracking, match preview, deletion count, and undo path",
+      "custom script source, checksum, interpreter, filesystem and network reach, environment inheritance, arguments, output cap, and timeout",
+      "clipboard reads and writes, clipboard history, temporary files, saved actions, backups, reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Text Pieces from its official project and verified Flathub listing (https://apps.gnome.org/TextPieces/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, saved custom-action count, scratchpad byte count, parser preferences, clipboard-history exposure and backup coverage without reading or printing scratchpad text, action bodies, filenames, clipboard contents, environment values, hashes, transformed output or personal data. Install stable `io.gitlab.liferooter.TextPieces` from verified Flathub in the existing ownership scope. Do not compile from source, launch the app, read the clipboard, load text, run a transformation, parse structured data, calculate a hash, execute a custom action, or overwrite saved state during setup.\n\nPreserve scratchpad content, saved actions, action parameters, encoding and line-ending choices, recent state, clipboard policy, permissions, remotes, overrides and scope ownership. Text placed in a developer scratchpad may contain credentials, tokens, customer records or unpublished source code; redact it from diagnostics and never use real sensitive text to test installation. Base64 and escaping do not provide encryption, while ordinary checksums are not a substitute for password hashing. Label every later result with the exact operation and algorithm so transformed output is not mistaken for protected data.\n\nTreat JSON, XML, YAML, regular expressions and custom scripts as untrusted executable or parser-adjacent input. Before a transformation, require source classification, byte and nesting limits, encoding, normalization, invalid-input behavior and a preview against synthetic fixtures. Disable external entities and unsafe YAML tags; define duplicate-key, alias and numeric-precision handling. For JSON/YAML conversion, disclose losses involving comments, anchors, timestamps, ordering and scalar types. For filters, cap regex time and preview affected lines. Custom actions require separately reviewed source, checksum, interpreter, arguments, environment allowlist, filesystem and network denial, timeout and output limit.\n\nVerify provenance, app ID, origin, commit, runtime, executable, files and sandbox permissions offline. Confirm which portals and directories are reachable without exercising them. Prove no clipboard access, text read, parser invocation, hash computation, conversion, filter, script process, network request, temporary file, saved-action mutation or notification occurred. On failure, rollback only the new Text Pieces ref in its original scope; preserve shared runtimes, remotes, overrides, scratchpads, custom actions, clipboard state and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.gitlab.liferooter.TextPieces from verified Flathub in the existing scope without source builds, launch, clipboard access, text loads, parsing, hashing, transformations, custom scripts, temporary files, or state writes.",
+      "preserve": "all scratchpad content, saved custom actions, parameters, encoding and line-ending choices, recent state, clipboard policy, backups, remotes, overrides, permissions, and scope ownership",
+      "safety": "Never expose sensitive text, describe encoding as encryption, misuse checksums, parse hostile structured data without limits, lose types silently, run catastrophic regexes, execute unreviewed scripts, inherit secrets, permit unexpected network or filesystem access, or overwrite text without a synthetic preview and undo path.",
+      "verify": "Verify Text Pieces source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove clipboard, text, parsers, hashes, transformations, scripts, networks, temporary files and saved state are unchanged."
+    }
   }
 ]
