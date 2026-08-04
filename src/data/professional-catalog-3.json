@@ -6781,5 +6781,59 @@
       "safety": "Never trust extensions, expose location metadata, traverse siblings unexpectedly, decode without resource limits, confuse orientation with pixels, mishandle color profiles, strip metadata silently, overwrite originals, follow symlinks, save non-atomically, or change the default handler without review.",
       "verify": "Verify Loupe source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove directories, images, metadata, decoders, thumbnails, renders, edits, writes, recents, caches and portals are unchanged."
     }
+  },
+  {
+    "index": 522,
+    "name": "Papers",
+    "slug": "papers-document-viewer",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/GNOME/papers",
+      "installUrl": "https://flathub.org/apps/org.gnome.Papers"
+    },
+    "website": "https://apps.gnome.org/Papers/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Modern GNOME viewer for PDF, DjVu, TIFF and comic-book archives with document search, navigation, forms, annotations, presentation, and printing.",
+    "accent": "#C01C28",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Papers.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "papers_encrypted_document_password_reference"
+    ],
+    "config": [
+      "document_parser_isolation",
+      "annotation_and_form_integrity",
+      "external_link_policy",
+      "print_privacy"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "document source, owner, signature, MIME, checksum, PDF, DjVu, TIFF or comic archive type, encryption, trust, and intended access",
+      "parser isolation, page and object counts, archive nesting, decompression, embedded fonts and images, JavaScript, attachments, memory, and time limits",
+      "encrypted-document password reference, entry scope, memory lifetime, clipboard exclusion, failed-attempt handling, keyring policy, and redaction",
+      "annotations, ink, free text, highlights, notes, forms, signatures, layers, attachments, incremental updates, authorship, timestamps, and save compatibility",
+      "search queries and results, selected text, copy, document outline, recent files, bookmarks, reading position, thumbnail caches, and privacy",
+      "internal destinations, external links, email addresses, URI handlers, final host, phishing, confirmation, network boundary, and browser handoff",
+      "printer identity and location, page range, copies, duplex, color, scale, sensitive document title, spool retention, remote queue, and physical output",
+      "original preservation, autosave, export, filename collision, partial writes, corrupted-state recovery, backups, reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Papers from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Papers/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, recent-document and reading-position counts, aggregate thumbnail-cache bytes, annotation and form-state presence, encrypted-document reference count, portal and printer-access presence, sandbox overrides and backup coverage without opening documents or revealing filenames, titles, authors, text, searches, annotations, form values, signatures, passwords, links, printer names or reading interests. Install stable `org.gnome.Papers` from verified Flathub in the existing ownership scope. Do not compile from source, launch Papers, enumerate directories, open or parse a PDF, DjVu, TIFF or comic archive, prompt for a password, render a page, search, read annotations, activate a link, access a printer, update recents or write a document during setup.\n\nPreserve every document byte, owner, permission and timestamp, plus annotations, forms, signatures, attachments, layers, bookmarks, reading positions, recents, thumbnails, print preferences, remotes, overrides and scope ownership. Documents and comic archives are untrusted parser containers, not inert pages. Redact content and reading history. Never store an encryption password in catalog data, logs or command history, flatten a signature, discard an incremental update, rewrite an original, submit a form, launch embedded content or make Papers the default handler without explicit review.\n\nBefore later opening, validate signature and type independently of extension; enforce file, page, object, archive-depth, decompression, image-pixel, font, memory and time limits in parser isolation. Disable document JavaScript and automatic attachment launch. Obtain encrypted-document passwords through a non-echoing prompt with defined memory lifetime and no clipboard use. Show whether a signature is cryptographically valid, trusted and current as separate facts. Test supported formats only with disposable synthetic fixtures, including malformed archives, not user documents.\n\nAnnotation or form changes require an exact diff, authorship and destination preview, original preservation and atomic compatible save. External links and email addresses require final-target confirmation after redirects; never infer safety from visible link text. Printing requires printer identity, physical location, page range, copies, duplex, color, scaling, document-title exposure and spool-retention review. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no document, password, parser, render, search, annotation, form, link, printer, recent item, cache or write was touched. On failure, rollback only the new Papers ref in its original scope; preserve shared runtimes, remotes, overrides, documents, annotations, forms, signatures, reading state, print settings and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.Papers from verified Flathub in the existing scope without source builds, launch, directory enumeration, document parsing, password prompts, rendering, searches, annotations, links, printers, recents, caches, or writes.",
+      "preserve": "every document byte, owner, permission and timestamp, annotations, forms, signatures, attachments, layers, bookmarks, reading state, recents, thumbnails, print settings, backups, remotes, overrides, and scope ownership",
+      "safety": "Never treat documents as inert, expose content or passwords, trust extensions, run embedded JavaScript, launch attachments, flatten signatures, discard incremental updates, submit forms, follow visible link text blindly, print to the wrong physical queue, rewrite originals, or change defaults silently.",
+      "verify": "Verify Papers source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove documents, passwords, parsers, renders, searches, annotations, forms, links, printers, recents, caches and writes are unchanged."
+    }
   }
 ]

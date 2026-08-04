@@ -1,0 +1,17 @@
+{
+  "index": 522,
+  "name": "Papers",
+  "slug": "papers-document-viewer",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/papers",
+    "installUrl": "https://flathub.org/apps/org.gnome.Papers"
+  },
+  "website": "https://apps.gnome.org/Papers/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Modern GNOME viewer for PDF, DjVu, TIFF and comic-book archives with document search, navigation, forms, annotations, presentation, and printing.",
+  "accent": "#C01C28",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Papers.svg",
+  "logoSourceType": "official-project-asset"
+}

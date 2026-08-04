@@ -2603,5 +2603,10 @@
     "file": "loupe-image-viewer.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Loupe.svg",
     "sourceType": "official-project-asset"
+  },
+  "papers-document-viewer": {
+    "file": "papers-document-viewer.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Papers.svg",
+    "sourceType": "official-project-asset"
   }
 }

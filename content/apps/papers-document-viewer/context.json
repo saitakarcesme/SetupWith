@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "document_parser_isolation",
+    "annotation_and_form_integrity",
+    "external_link_policy",
+    "print_privacy"
+  ],
+  "secrets": [
+    {
+      "key": "papers_encrypted_document_password_reference",
+      "reference": "secret://papers/encrypted-document-password-reference"
+    }
+  ],
+  "permissionCheckpoints": [
+    "document source, owner, signature, MIME, checksum, PDF, DjVu, TIFF or comic archive type, encryption, trust, and intended access",
+    "parser isolation, page and object counts, archive nesting, decompression, embedded fonts and images, JavaScript, attachments, memory, and time limits",
+    "encrypted-document password reference, entry scope, memory lifetime, clipboard exclusion, failed-attempt handling, keyring policy, and redaction",
+    "annotations, ink, free text, highlights, notes, forms, signatures, layers, attachments, incremental updates, authorship, timestamps, and save compatibility",
+    "search queries and results, selected text, copy, document outline, recent files, bookmarks, reading position, thumbnail caches, and privacy",
+    "internal destinations, external links, email addresses, URI handlers, final host, phishing, confirmation, network boundary, and browser handoff",
+    "printer identity and location, page range, copies, duplex, color, scale, sensitive document title, spool retention, remote queue, and physical output",
+    "original preservation, autosave, export, filename collision, partial writes, corrupted-state recovery, backups, reset, uninstall, and rollback"
+  ]
+}
