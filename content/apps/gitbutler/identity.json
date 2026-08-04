@@ -1,0 +1,18 @@
+{
+  "index": 439,
+  "name": "GitButler",
+  "slug": "gitbutler",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/gitbutlerapp/gitbutler",
+    "installUrl": "https://gitbutler.com/downloads"
+  },
+  "website": "https://gitbutler.com/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Git desktop client and CLI for parallel virtual branches, commit editing, stacked changes, upstream integration, and optional forge and AI workflows.",
+  "accent": "#FF7A00",
+  "simpleIconSlug": "git",
+  "logoUrl": "https://raw.githubusercontent.com/gitbutlerapp/gitbutler/master/packages/ui/static/favicon.png",
+  "logoSourceType": "official-project-asset"
+}

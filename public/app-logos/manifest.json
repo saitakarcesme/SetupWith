@@ -2188,5 +2188,10 @@
     "file": "yaak.svg",
     "source": "https://raw.githubusercontent.com/mountain-loop/yaak/main/crates-tauri/yaak-app-client/icons/release/128x128.png",
     "sourceType": "official-project-asset"
+  },
+  "gitbutler": {
+    "file": "gitbutler.svg",
+    "source": "https://raw.githubusercontent.com/gitbutlerapp/gitbutler/master/packages/ui/static/favicon.png",
+    "sourceType": "official-project-asset"
   }
 }

@@ -2367,5 +2367,60 @@
       "safety": "Never send an unreviewed request, select production implicitly, inspect clipboard data, import workspaces, run OAuth, expose secrets, follow cross-host redirects, execute plugins, enable sharable sync, initialize Git, commit, push, or export without approval.",
       "verify": "Verify signature, version, paths, listeners and offline state, optionally create only an empty disposable workspace, and prove no request, import, plugin, sync, Git action, export, key, cookie, history, or existing data changed."
     }
+  },
+  {
+    "index": 439,
+    "name": "GitButler",
+    "slug": "gitbutler",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/gitbutlerapp/gitbutler",
+      "installUrl": "https://gitbutler.com/downloads"
+    },
+    "website": "https://gitbutler.com/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Git desktop client and CLI for parallel virtual branches, commit editing, stacked changes, upstream integration, and optional forge and AI workflows.",
+    "accent": "#FF7A00",
+    "simpleIconSlug": "git",
+    "logoUrl": "https://raw.githubusercontent.com/gitbutlerapp/gitbutler/master/packages/ui/static/favicon.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "target_branch",
+      "fetch_behavior",
+      "commit_signing",
+      "forge_integration"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "repository onboarding and workspace branch setup",
+      "working-tree and index transformation",
+      "background fetch",
+      "commit rewrite, split, squash, or rebase",
+      "remote push or force push",
+      "direct landing to the target branch",
+      "GitHub or forge authorization",
+      "diff data sent to AI features"
+    ],
+    "prompt": "Set up GitButler from its official download source and repository (https://gitbutler.com/downloads). Detect Windows, macOS, or Linux, architecture, existing desktop and `but` CLI installations, system Git version, global and repository Git configuration, credential helpers, SSH agents, signing setup, repositories previously registered with GitButler, and application data without reading private keys or tokens. Install only the signed stable desktop package; treat CLI installation as a separate choice and download its installer for inspection instead of piping it directly into a shell.\n\nLaunch GitButler without adding or cloning a repository. Preserve every working tree, index, HEAD, branch, ref, reflog, stash, worktree, submodule, untracked and ignored file, hook, remote, upstream, credential helper, signing key configuration, GitButler project registry, virtual branch, target branch, and application database. Repository onboarding and `but setup` are mutations: they can register the project, select a production target, and switch to GitButler's workspace branch. Show exact refs, configuration and file effects before requesting separate approval.\n\nNever test credentials during setup because the documented check pushes and deletes a temporary remote branch. Stop before fetching, applying or unapplying a branch, assigning hunks, committing, editing history, rebasing, squashing, splitting, updating from upstream, pushing, force-pushing, opening a pull request, or landing directly to the target branch. Direct landing may bypass review and CI, while CLI push can force by default, so always preview explicit source and destination commit IDs. Do not authorize GitHub, add a PAT, upload a signing key, alter signing fallback settings, or send diffs to AI message generation.\n\nVerify publisher, version, executable and data paths, then inspect settings offline. Use a setup-created disposable Git repository with no remote and no user files only if UI verification is necessary; record its refs and hashes before and after, and remove only that disposable project registration. Confirm no production repository was scanned, no background fetch or network connection occurred, and no Git configuration, credential, ref, index, worktree, hook, or application database entry outside the test changed. Roll back binaries and setup-owned settings only; preserve GitButler metadata and repositories unless teardown effects are explicitly reviewed.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the signed stable GitButler desktop package, keep CLI installation separate, and launch without adding, cloning, registering, fetching, or transforming any repository.",
+      "preserve": "all working trees, indexes, refs, reflogs, stashes, worktrees, submodules, files, hooks, remotes, upstreams, credentials, signing configuration, project registrations, virtual branches, targets, and application data",
+      "safety": "Never run credential tests, fetch, apply changes, rewrite commits, rebase, push or force-push, land to a target, open a PR, authorize a forge, alter signing, or send diffs to AI without separate review and approval.",
+      "verify": "Verify publisher, version and paths offline; if needed use only a disposable remote-free repository and prove no real repository, network, Git configuration, credential, ref, index, file, hook, or unrelated application data changed."
+    }
   }
 ]
