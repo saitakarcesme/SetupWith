@@ -3235,5 +3235,59 @@
       "safety": "Never import, convert, export, move or delete teaching material; run web widgets; persist cookies; capture screens; record audio or video; expose student data; install drivers; or recalibrate devices without an exact scope preview and approval.",
       "verify": "Verify provenance, checksum, package version, executable, bundle, platform and data locations without the normal GUI, then prove no library, cache, handler, cookie, capture, grant, calibration, media, process or network state changed."
     }
+  },
+  {
+    "index": 455,
+    "name": "Drawpile",
+    "slug": "drawpile",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/drawpile/Drawpile",
+      "installUrl": "https://drawpile.net/download/"
+    },
+    "website": "https://drawpile.net/",
+    "category": "Design & Media",
+    "vertical": "creative",
+    "description": "Collaborative raster drawing application with shared canvases, layers and animation, chat, session permissions and moderation, recordings, public or private servers, and offline editing.",
+    "accent": "#6F4AA8",
+    "logoUrl": "https://raw.githubusercontent.com/drawpile/Drawpile/main/metadata/en-US/images/icon.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "sessions",
+      "permissions",
+      "recordings",
+      "tablet"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "server connection, account login, and external authentication",
+      "session hosting, listing, invite, password, and content-rating changes",
+      "canvas, layer, animation, chat, and participant data transmission",
+      "operator, trusted, guest, moderator, ACL, kick, and ban changes",
+      "canvas lock, reset, force undo, redo, and snapshot changes",
+      "session recording, archive, autorecovery, and timelapse export",
+      "built-in or dedicated server, listener, firewall, and TCP 27750 forwarding",
+      "tablet mapping, brush import, protocol handler, and cache cleanup"
+    ],
+    "prompt": "Set up Drawpile from its official downloads page (https://drawpile.net/download/). Detect Windows, macOS, or Linux, architecture, package managers, existing installed or portable client, browser version, protocol handler, configuration, canvases, projects, autorecovery, recordings, brushes, tablet settings, accounts, server list, session presets and dedicated-server binaries. Install only the current stable official desktop client or verified distribution package. Do not select alpha, beta, portable side-by-side or browser builds, install a server, or register invite-link handlers without approval.\n\nInstall without opening a canvas, joining or hosting a session, logging in, accepting community-server rules, or contacting session listings. Preserve every local drawing, layer, animation, project, brush, palette, recording, timelapse, chat log, autorecovery command stream, snapshot, role preset, ban export, account token, server bookmark, content filter, tablet map and preference. Never upload an existing canvas to demonstrate collaboration and never treat an autorecovery or recording as expendable cache.\n\nA session transmits drawing actions, canvas contents, participant identities and chat to a server and peers. Before any later connection, show the exact TLS URL, operator, server ownership, authentication method, retention and content rules. Keep sessions password-protected by default and never publish them, share invite or operator passwords, weaken layer ACLs, grant Trusted or Operator roles, reveal censored layers, kick or ban users, import role or ban files, force undo another artist, lock or reset a canvas without explicit approval. Ban exports may contain IP addresses and use a server-specific encryption key.\n\nDo not start the built-in or dedicated server, listen on TCP 27750, edit a firewall, configure UPnP or router port forwarding, announce a session, expose a residential IP, create external-auth keys, or enable server-wide recordings. Session recordings and timelapses can retain the complete creative process and participant activity; require a retention path and consent before capture. Verify publisher or package provenance, checksum where available, client version, executable, method, protocol-handler baseline and data paths with offline CLI or package metadata. Confirm no network request, listener, session, account, drawing, recovery, recording, role, ban, handler, tablet or firewall state changed. Roll back only the installed client and setup-owned shortcuts.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install only the current stable official Drawpile desktop client or verified package, without alternate channels, server components, protocol handlers, launch, network contact, login, canvas loading, or session hosting.",
+      "preserve": "all drawings, layers, animations, projects, brushes, palettes, recordings, timelapses, chats, autorecovery, snapshots, roles, bans, account tokens, server bookmarks, filters, tablet settings, handlers, preferences, and existing installation ownership",
+      "safety": "Never transmit a canvas, connect or host, expose ports, weaken permissions, share passwords, alter roles, moderate users, reset work, record participants, reveal censored content, change networking, or discard recovery data without a fully reviewed scope and approval.",
+      "verify": "Verify provenance or checksum, client version, executable, method, handler baseline and data paths offline, then prove no network, listener, session, account, artwork, recovery, recording, role, ban, tablet, handler or firewall state changed."
+    }
   }
 ]

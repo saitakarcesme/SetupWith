@@ -2268,5 +2268,10 @@
     "file": "openboard.svg",
     "source": "https://raw.githubusercontent.com/OpenBoard-org/OpenBoard/master/resources/images/OpenBoard.png",
     "sourceType": "official-project-asset"
+  },
+  "drawpile": {
+    "file": "drawpile.svg",
+    "source": "https://raw.githubusercontent.com/drawpile/Drawpile/main/metadata/en-US/images/icon.png",
+    "sourceType": "official-project-asset"
   }
 }

@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "sessions",
+    "permissions",
+    "recordings",
+    "tablet"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "server connection, account login, and external authentication",
+    "session hosting, listing, invite, password, and content-rating changes",
+    "canvas, layer, animation, chat, and participant data transmission",
+    "operator, trusted, guest, moderator, ACL, kick, and ban changes",
+    "canvas lock, reset, force undo, redo, and snapshot changes",
+    "session recording, archive, autorecovery, and timelapse export",
+    "built-in or dedicated server, listener, firewall, and TCP 27750 forwarding",
+    "tablet mapping, brush import, protocol handler, and cache cleanup"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "index": 455,
+  "name": "Drawpile",
+  "slug": "drawpile",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/drawpile/Drawpile",
+    "installUrl": "https://drawpile.net/download/"
+  },
+  "website": "https://drawpile.net/",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Collaborative raster drawing application with shared canvases, layers and animation, chat, session permissions and moderation, recordings, public or private servers, and offline editing.",
+  "accent": "#6F4AA8",
+  "logoUrl": "https://raw.githubusercontent.com/drawpile/Drawpile/main/metadata/en-US/images/icon.png",
+  "logoSourceType": "official-project-asset"
+}
