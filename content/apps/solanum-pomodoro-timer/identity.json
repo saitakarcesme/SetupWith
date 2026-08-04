@@ -1,0 +1,17 @@
+{
+  "index": 543,
+  "name": "Solanum",
+  "slug": "solanum-pomodoro-timer",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/Solanum",
+    "installUrl": "https://flathub.org/apps/org.gnome.Solanum"
+  },
+  "website": "https://apps.gnome.org/Solanum/",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "GNOME Pomodoro timer that alternates four focused work sessions with short breaks and a longer break, with notifications and optional break fullscreen behavior.",
+  "accent": "#2EC27E",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Solanum.svg",
+  "logoSourceType": "official-project-asset"
+}

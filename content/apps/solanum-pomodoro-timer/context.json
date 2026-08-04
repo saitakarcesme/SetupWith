@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Beginner",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "work_duration",
+    "break_schedule",
+    "notification_policy",
+    "fullscreen_breaks"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "official GNOME source, unverified community Flathub status, app ID, manifest source, package maintainer, commit, runtime, and checksum",
+    "existing package scope, timer state, completed-session count, preferences, data ownership, sandbox overrides, and backup coverage",
+    "work duration, short-break duration, long-break duration, four-session cycle, remaining time, pause state, and reset boundary",
+    "notification permission, lock-screen visibility, preview content, sound, do-not-disturb interaction, dismissal behavior, and shared-screen exposure",
+    "fullscreen-on-break option, current presentation or game, multi-monitor selection, focus stealing, accessibility, and emergency dismissal",
+    "autostart absence, background execution, suspend and resume behavior, clock changes, missed transitions, and stale timers",
+    "productivity records, personal routines, health or disability implications, employer monitoring absence, local-only expectations, and diagnostic redaction",
+    "settings change approval, synthetic timer test, app reset, uninstall, package ownership, shared runtimes, backups, and rollback"
+  ]
+}

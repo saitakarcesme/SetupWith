@@ -2708,5 +2708,10 @@
     "file": "metronome-tempo-trainer.svg",
     "source": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.adrienplazas.Metronome.png",
     "sourceType": "official-project-asset"
+  },
+  "solanum-pomodoro-timer": {
+    "file": "solanum-pomodoro-timer.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Solanum.svg",
+    "sourceType": "official-project-asset"
   }
 }
