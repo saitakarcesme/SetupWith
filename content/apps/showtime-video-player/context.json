@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Intermediate",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "video_playback",
+    "audio_and_subtitle_tracks",
+    "fullscreen_behavior",
+    "screenshot_destination"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "official GNOME source, org.gnome.Showtime app ID, Flathub manifest, stable release, commit, runtime, plugins, and checksum",
+    "existing package scope, recent files and positions, settings ownership, portals, sandbox overrides, and backup coverage",
+    "selected video path, filename privacy, symbolic links, container, size, duration, checksum, read-only intent, and provenance",
+    "codec and plugin availability, malformed streams, embedded attachments, chapters, metadata, hardware decoding, and resource limits",
+    "audio track language and commentary status, output sink, volume, mute, downmixing, synchronization, and hearing safety",
+    "subtitle source, language, character encoding, timing, styling, external-file path, embedded markup, disclosure risk, and trust boundary",
+    "fullscreen monitor, presentation interruption, screen sharing, playback speed, controls, accessibility, suspend, and stop boundary",
+    "screenshot frame, private imagery, output format, destination, filename collision, metadata, atomic write, deletion, and rollback"
+  ]
+}

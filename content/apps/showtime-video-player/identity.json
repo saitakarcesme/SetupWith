@@ -1,0 +1,17 @@
+{
+  "index": 545,
+  "name": "Video Player",
+  "slug": "showtime-video-player",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/showtime",
+    "installUrl": "https://flathub.org/apps/org.gnome.Showtime"
+  },
+  "website": "https://apps.gnome.org/Showtime/",
+  "category": "Design & Media",
+  "vertical": "entertainment",
+  "description": "GNOME Video Player, developed as Showtime, with distraction-free controls, fullscreen viewing, adjustable speed, multiple audio and subtitle tracks, and screenshot capture.",
+  "accent": "#A51D2D",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Showtime.svg",
+  "logoSourceType": "official-project-asset"
+}

@@ -2718,5 +2718,10 @@
     "file": "decibels-audio-player.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Decibels.svg",
     "sourceType": "official-project-asset"
+  },
+  "showtime-video-player": {
+    "file": "showtime-video-player.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Showtime.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -7996,5 +7996,57 @@
       "safety": "Never expose listening history, enumerate media libraries, trust containers or metadata, generate unbounded waveforms, overlap streams unexpectedly, route sound to shared outputs, raise volume silently, or grant microphone, account, or network capabilities unnecessary for local playback.",
       "verify": "Verify GNOME provenance, app ID, manifest, commit, runtime, executable, codecs, files, checksum and permissions offline, then prove files, decoders, waveforms, streams, seeks, speeds, volumes, routes, networks and settings are unchanged."
     }
+  },
+  {
+    "index": 545,
+    "name": "Video Player",
+    "slug": "showtime-video-player",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/GNOME/showtime",
+      "installUrl": "https://flathub.org/apps/org.gnome.Showtime"
+    },
+    "website": "https://apps.gnome.org/Showtime/",
+    "category": "Design & Media",
+    "vertical": "entertainment",
+    "description": "GNOME Video Player, developed as Showtime, with distraction-free controls, fullscreen viewing, adjustable speed, multiple audio and subtitle tracks, and screenshot capture.",
+    "accent": "#A51D2D",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Showtime.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "video_playback",
+      "audio_and_subtitle_tracks",
+      "fullscreen_behavior",
+      "screenshot_destination"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Intermediate",
+    "permissionCheckpoints": [
+      "official GNOME source, org.gnome.Showtime app ID, Flathub manifest, stable release, commit, runtime, plugins, and checksum",
+      "existing package scope, recent files and positions, settings ownership, portals, sandbox overrides, and backup coverage",
+      "selected video path, filename privacy, symbolic links, container, size, duration, checksum, read-only intent, and provenance",
+      "codec and plugin availability, malformed streams, embedded attachments, chapters, metadata, hardware decoding, and resource limits",
+      "audio track language and commentary status, output sink, volume, mute, downmixing, synchronization, and hearing safety",
+      "subtitle source, language, character encoding, timing, styling, external-file path, embedded markup, disclosure risk, and trust boundary",
+      "fullscreen monitor, presentation interruption, screen sharing, playback speed, controls, accessibility, suspend, and stop boundary",
+      "screenshot frame, private imagery, output format, destination, filename collision, metadata, atomic write, deletion, and rollback"
+    ],
+    "prompt": "Set up GNOME Video Player (app ID `org.gnome.Showtime`) from its official GNOME source and Flathub listing (https://apps.gnome.org/Showtime/). Inventory Linux architecture, Flatpak scopes, any existing ref, application-data ownership, recent-item and resume-position counts, file-portal grants, media plugin classes, hardware-decoder availability, subtitle settings, screenshot destination grant, audio mute and route, sandbox overrides and backup coverage without exposing filenames, paths, titles, frames, subtitles or viewing history. Install the stable Flathub ref in the existing scope. Do not compile, launch the player, open or probe a video, load subtitles, play audio, enter fullscreen, change speed or tracks, capture a frame, open a portal or create a file during setup.\n\nPreserve recents, resume positions, playback speed, preferred audio and subtitle choices, window/fullscreen state, screenshot preferences, portal grants, volume, mute, routing, permissions, remotes, overrides and scope ownership. Private films, screen recordings and subtitle text must not appear in logs, thumbnails or diagnostics. Do not crawl media folders or contact online subtitle and metadata services.\n\nTreat containers, codecs, attachments and subtitle files as untrusted structured input. Before later playback, confirm the exact selected file, size, checksum, symlink resolution, read-only intent, codec/plugin plan and resource limits. Review every audio track and subtitle source by language, commentary status, encoding and timing; external subtitles must not escape their approved path or execute markup. Confirm the fullscreen monitor and screen-sharing state before hiding controls. Start audio on an approved sink at low volume.\n\nA screenshot is a separate write action: preview the exact frame, confirm rights and privacy, output format, destination, canonical filename, collision policy and metadata before an atomic write. Verify GNOME provenance, app ID, manifest, commit, runtime, executable, plugins, files, checksum and permissions offline. Prove no media probe, playback, subtitle load, audio route, fullscreen transition, screenshot, file write, network or preference change occurred. On failure, rollback only the new Video Player ref; preserve shared runtimes, plugins, recents, positions, tracks, subtitles, audio state, portals and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.Showtime from official GNOME/Flathub sources in the existing scope without source builds, launch, media probing, subtitle loading, playback, fullscreen, track or speed changes, screenshots, portals, files, folder crawls, or online metadata services.",
+      "preserve": "recents, resume positions, playback speed, track and subtitle choices, window/fullscreen state, screenshot preferences, portals, volume, mute, routing, plugins, permissions, backups, remotes, overrides, shared runtimes, and scope ownership",
+      "safety": "Never expose viewing history or frames, trust containers or subtitle markup, crawl media, fetch online metadata, select tracks silently, interrupt a presentation with fullscreen, route audio unexpectedly, or capture and write a screenshot without frame, rights, privacy, destination, collision, and metadata review.",
+      "verify": "Verify GNOME provenance, app ID, manifest, commit, runtime, executable, plugins, files, checksum and permissions offline, then prove probes, streams, subtitles, audio, fullscreen, screenshots, files, networks and preferences are unchanged."
+    }
   }
 ]
