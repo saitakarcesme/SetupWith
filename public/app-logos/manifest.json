@@ -2498,5 +2498,10 @@
     "file": "gnome-podcasts.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Podcasts.svg",
     "sourceType": "official-project-asset"
+  },
+  "polari-irc": {
+    "file": "polari-irc.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Polari.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "index": 501,
+  "name": "Polari",
+  "slug": "polari-irc",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/polari",
+    "installUrl": "https://flathub.org/apps/org.gnome.Polari"
+  },
+  "website": "https://apps.gnome.org/Polari/",
+  "category": "Communication",
+  "vertical": "software",
+  "description": "GNOME IRC client for joining public channels and holding private one-to-one conversations, with saved networks, channel lists, notifications, and desktop integration.",
+  "accent": "#3584E4",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Polari.svg",
+  "logoSourceType": "official-project-asset"
+}
