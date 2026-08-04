@@ -1,0 +1,17 @@
+{
+  "index": 483,
+  "name": "Errands",
+  "slug": "errands-tasks",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mrvladus/Errands",
+    "installUrl": "https://flathub.org/apps/io.github.mrvladus.List"
+  },
+  "website": "https://apps.gnome.org/List/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Simple GNOME task manager with multiple lists, subtasks, completion state, accent colors, drag-and-drop, ICS import, and CalDAV or Nextcloud synchronization.",
+  "accent": "#A51D2D",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.mrvladus.List.svg",
+  "logoSourceType": "official-project-asset"
+}

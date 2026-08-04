@@ -2408,5 +2408,10 @@
     "file": "junction-app-chooser.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Junction.svg",
     "sourceType": "official-project-asset"
+  },
+  "errands-tasks": {
+    "file": "errands-tasks.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.mrvladus.List.svg",
+    "sourceType": "official-project-asset"
   }
 }

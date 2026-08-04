@@ -1,0 +1,41 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "task_hierarchy",
+    "sync_authority",
+    "ics_import_policy",
+    "conflict_resolution"
+  ],
+  "secrets": [
+    {
+      "key": "caldav_username",
+      "reference": "secret://caldav/username"
+    },
+    {
+      "key": "caldav_app_password",
+      "reference": "secret://caldav/app-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "local task lists, tasks, subtasks, completion state, ordering, accent colors, and application database ownership",
+    "Nextcloud or CalDAV server URL, well-known discovery, redirects, TLS certificate, account identity, and collection scope",
+    "username, app password, token, secret storage, password-manager boundary, revocation, and least privilege",
+    "remote calendars or task collections, read/write capability, unrelated events, shared lists, participants, and server ownership",
+    "first-sync direction, local-only and remote-only items, UID mapping, deletions, tombstones, conflicts, and clock skew",
+    "ICS source, MIME type, size, encoding, recurrence, alarms, attachments, organizer fields, UIDs, and duplicate handling",
+    "task titles, notes, due dates, completion history, health or work sensitivity, notifications, logs, and locked-screen exposure",
+    "drag-and-drop reordering, parent-child moves, bulk completion, export or backup, offline edits, uninstall, and rollback"
+  ]
+}

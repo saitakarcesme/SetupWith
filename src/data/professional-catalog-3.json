@@ -4717,5 +4717,60 @@
       "safety": "Never expose URLs or paths, trust previews, overlook deceptive domains, register wildcard handlers, route private targets to unsuitable apps, edit destinations, remember choices, or multi-open without scheme, scope, identity, argument, privacy, redirect, side-effect, and rollback review.",
       "verify": "Verify Junction source, app ID, origin, commit, runtime, executable, desktop file, MIME and scheme claims, files and permissions offline, then prove handlers, portals, browsers, networks, opened files, clipboard, history and preferences are unchanged."
     }
+  },
+  {
+    "index": 483,
+    "name": "Errands",
+    "slug": "errands-tasks",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/mrvladus/Errands",
+      "installUrl": "https://flathub.org/apps/io.github.mrvladus.List"
+    },
+    "website": "https://apps.gnome.org/List/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Simple GNOME task manager with multiple lists, subtasks, completion state, accent colors, drag-and-drop, ICS import, and CalDAV or Nextcloud synchronization.",
+    "accent": "#A51D2D",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.mrvladus.List.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "caldav_username",
+      "caldav_app_password"
+    ],
+    "config": [
+      "task_hierarchy",
+      "sync_authority",
+      "ics_import_policy",
+      "conflict_resolution"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "local task lists, tasks, subtasks, completion state, ordering, accent colors, and application database ownership",
+      "Nextcloud or CalDAV server URL, well-known discovery, redirects, TLS certificate, account identity, and collection scope",
+      "username, app password, token, secret storage, password-manager boundary, revocation, and least privilege",
+      "remote calendars or task collections, read/write capability, unrelated events, shared lists, participants, and server ownership",
+      "first-sync direction, local-only and remote-only items, UID mapping, deletions, tombstones, conflicts, and clock skew",
+      "ICS source, MIME type, size, encoding, recurrence, alarms, attachments, organizer fields, UIDs, and duplicate handling",
+      "task titles, notes, due dates, completion history, health or work sensitivity, notifications, logs, and locked-screen exposure",
+      "drag-and-drop reordering, parent-child moves, bulk completion, export or backup, offline edits, uninstall, and rollback"
+    ],
+    "prompt": "Set up Errands from its official repository and verified Flathub listing (https://apps.gnome.org/List/). Inventory Linux architecture, Flatpak scopes, existing Errands package and data paths, local list and task counts, configured CalDAV account count, secret-store boundary, offline-edit state, notification policy and backup availability without reading titles, notes, due dates, server paths or credentials. Install stable `io.github.mrvladus.List` from verified Flathub in the existing ownership scope. Do not compile from source, launch Errands, authenticate, discover a CalDAV endpoint, import ICS, create a list or begin synchronization during setup.\n\nPreserve every list, task, subtask, UID, parent relationship, ordering, accent color, completion flag, due date, note, tombstone, sync token, account reference and preference. Task data can expose medical care, employment, family and location information; redact content and collection names from diagnostics and notifications. Do not mark items complete, normalize colors, reorder via drag-and-drop, merge duplicates or reinterpret a task as a calendar event. Back up the local database before any future schema migration or first bidirectional sync.\n\nBefore connecting Nextcloud or another CalDAV provider show the exact HTTPS origin, redirects, certificate verification, authenticated account, app-password storage, discovered collection IDs, read/write scope and whether collections are shared. Preview counts of local-only, remote-only, changed, conflicted and deleted records without showing content. Establish one first-sync authority and explicit rules for duplicate UIDs, tombstones, parent-child conflicts, clock skew and partial failure; never assume newest timestamp or server deletion wins. Revoke only credentials created specifically for Errands.\n\nTreat imported ICS as untrusted structured data. Validate MIME type, byte size, encoding, line folding, recurrence expansion limits, alarms, attachments, organizer/attendee fields, URLs, UIDs and duplicate impact before parsing. Import into a new reviewed list first, never overwrite silently, fetch remote attachments or send invitations. Verify Errands provenance, app ID, origin, commit, runtime, executable, database schema, files and permissions offline. Prove no secret access, endpoint discovery, network request, task mutation, sync token, ICS parse, alarm, notification or filesystem state changed. On failure, rollback only the new Errands ref in its original scope; preserve shared runtimes, remotes, overrides, databases, credentials and all task records.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.github.mrvladus.List from verified Flathub in the existing scope without source builds, launch, authentication, CalDAV discovery, ICS parsing, list creation, database migration, synchronization, notifications, or task mutation.",
+      "preserve": "all lists, tasks, subtasks, UIDs, hierarchy, ordering, colors, completion state, due dates, notes, tombstones, sync tokens, accounts, credentials, notifications, remotes, overrides, and scope ownership",
+      "safety": "Never expose task content, mutate hierarchy, trust newest timestamps, let deletions win implicitly, over-scope CalDAV access, parse hostile ICS, expand recurrences without limits, fetch attachments, send invitations, or merge without backup, authority, conflict, credential, collection, parser, and privacy review.",
+      "verify": "Verify Errands source, app ID, origin, commit, runtime, executable, database schema, files and permissions offline, then prove secrets, endpoints, networks, tasks, sync tokens, ICS data, alarms, notifications and filesystem state are unchanged."
+    }
   }
 ]
