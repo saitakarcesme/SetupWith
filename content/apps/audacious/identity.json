@@ -1,0 +1,17 @@
+{
+  "index": 458,
+  "name": "Audacious",
+  "slug": "audacious",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/audacious-media-player/audacious",
+    "installUrl": "https://audacious-media-player.org/download"
+  },
+  "website": "https://audacious-media-player.org/",
+  "category": "Music & Streaming",
+  "vertical": "software",
+  "description": "Lightweight playlist-based audio player with Qt and Winamp-style interfaces, local and network playback, broad codec support, multiple audio outputs, effects, visualizations, and extensible plugins.",
+  "accent": "#4D76B8",
+  "logoUrl": "https://raw.githubusercontent.com/audacious-media-player/audacious/master/images/audacious.svg",
+  "logoSourceType": "official-project-asset"
+}

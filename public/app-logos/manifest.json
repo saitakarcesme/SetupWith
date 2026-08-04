@@ -2283,5 +2283,10 @@
     "file": "scribus.svg",
     "source": "https://raw.githubusercontent.com/scribusproject/scribus/master/OSX-package/inputs/scribus-icon2.svg",
     "sourceType": "official-project-asset"
+  },
+  "audacious": {
+    "file": "audacious.svg",
+    "source": "https://raw.githubusercontent.com/audacious-media-player/audacious/master/images/audacious.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -3397,5 +3397,58 @@
       "safety": "Never relink or collect assets, substitute or redistribute fonts, execute scripts or render commands, alter color management, follow form actions, convert documents, export, print, overwrite files, or expose metadata without a license, command, preflight, and destination review plus approval.",
       "verify": "Verify provenance or checksum, version, executable, method, Ghostscript detection and data paths without documents, then prove no asset, font, profile, script, recovery, export, print job, process or configuration state changed."
     }
+  },
+  {
+    "index": 458,
+    "name": "Audacious",
+    "slug": "audacious",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/audacious-media-player/audacious",
+      "installUrl": "https://audacious-media-player.org/download"
+    },
+    "website": "https://audacious-media-player.org/",
+    "category": "Music & Streaming",
+    "vertical": "software",
+    "description": "Lightweight playlist-based audio player with Qt and Winamp-style interfaces, local and network playback, broad codec support, multiple audio outputs, effects, visualizations, and extensible plugins.",
+    "accent": "#4D76B8",
+    "logoUrl": "https://raw.githubusercontent.com/audacious-media-player/audacious/master/images/audacious.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "playlists",
+      "audio_output",
+      "plugins",
+      "network_services"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "music folder, playlist, cue sheet, and metadata access",
+      "audio output device, server, mixer, and JACK connection changes",
+      "codec, input, output, effect, visualization, and LADSPA plugin changes",
+      "network stream, proxy, certificate, lyrics, and radio-directory access",
+      "stream recording, FileWriter output, and destination overwrite",
+      "tag editing, playlist export, and library or history mutation",
+      "scrobbling account, credential, and listening-history submission",
+      "global media key, MPRIS, file association, tray, and desktop integration"
+    ],
+    "prompt": "Set up Audacious from its official stable download page (https://audacious-media-player.org/download). Detect Linux or Windows, architecture, package managers, existing Qt, GTK, Winamp-style, portable or source installation, core and `audacious-plugins` versions, configuration, playlists, skins, presets, audio servers and output devices, codecs, LADSPA paths, network settings, scrobbling accounts and desktop integration. Install the current stable official binary or distribution package. Keep the core and plugin bundle at exactly the same release; do not select a testing release, compile alternate frontends, enable restricted codec repositories, or replace an installation owned by another package manager.\n\nInstall without starting playback, scanning a music folder, importing a playlist, opening a URL, taking file associations or changing the default player. Preserve every playlist, queue, playback position, history, equalizer preset, skin, hotkey, plugin setting, proxy, stream favorite, tag, cover image, lyrics cache, scrobbling token, output selection, volume and balance value. Do not probe private media files or submit filenames and tags to a remote service merely to validate codec support.\n\nOutput plugins can open PipeWire, PulseAudio, ALSA, JACK, OSS or Windows audio devices and may change mixer or connection state. FileWriter and stream-recording features write decoded media to disk and can overwrite outputs. Do not play even a sample, seize a device, connect JACK ports, alter server volume, enable recording, select FileWriter, transcode, or export playlists during setup. Treat third-party native and LADSPA plugins as executable code; install no extra input, output, effect, visualization, transport or general plugin. Keep network streams, lyric lookup, radio directories and automatic cover retrieval offline.\n\nNever authenticate a scrobbler, submit listening history, embed credentials in proxy URLs, ignore TLS errors, edit file tags, or enable global hotkeys, MPRIS, tray startup and song-change commands without approval. Verify publisher or package provenance, checksum when available, `audacious --version`, resolved executable, method, matching plugin package, plugin search paths and file-association baseline without launching a persistent player. Confirm no process, audio connection, media access, tag, playlist, output, cache, account, network request, hotkey or association changed. Roll back only the installed core, matching setup-owned plugins and shortcuts.",
+    "platforms": [
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install matching current stable Audacious core and official plugin packages without testing builds, alternate frontends, restricted repositories, normal launch, playback, media scanning, URL access, or default-player changes.",
+      "preserve": "all playlists, queues, positions, history, presets, skins, hotkeys, plugins, proxies, streams, tags, artwork, lyric caches, scrobbling tokens, audio output, volume, balance, associations, desktop integration, and existing installation ownership",
+      "safety": "Never access private media, open audio devices, connect JACK, record or write streams, transcode, edit tags, export playlists, run native plugins, contact metadata services, scrobble, weaken TLS, or change hotkeys and associations without a precise review and approval.",
+      "verify": "Verify provenance or checksum, version, executable, method, matching plugin package, search paths and associations without a persistent player, then prove no process, audio, media, tag, playlist, file, cache, account, network, hotkey or handler state changed."
+    }
   }
 ]

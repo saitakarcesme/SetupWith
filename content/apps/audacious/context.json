@@ -1,0 +1,33 @@
+{
+  "platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "playlists",
+    "audio_output",
+    "plugins",
+    "network_services"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "music folder, playlist, cue sheet, and metadata access",
+    "audio output device, server, mixer, and JACK connection changes",
+    "codec, input, output, effect, visualization, and LADSPA plugin changes",
+    "network stream, proxy, certificate, lyrics, and radio-directory access",
+    "stream recording, FileWriter output, and destination overwrite",
+    "tag editing, playlist export, and library or history mutation",
+    "scrobbling account, credential, and listening-history submission",
+    "global media key, MPRIS, file association, tray, and desktop integration"
+  ]
+}
