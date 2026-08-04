@@ -5836,5 +5836,57 @@
       "safety": "Never expose sensitive text, describe encoding as encryption, misuse checksums, parse hostile structured data without limits, lose types silently, run catastrophic regexes, execute unreviewed scripts, inherit secrets, permit unexpected network or filesystem access, or overwrite text without a synthetic preview and undo path.",
       "verify": "Verify Text Pieces source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove clipboard, text, parsers, hashes, transformations, scripts, networks, temporary files and saved state are unchanged."
     }
+  },
+  {
+    "index": 504,
+    "name": "Resources",
+    "slug": "resources-system-monitor",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/nokyan/resources",
+      "installUrl": "https://flathub.org/apps/net.nokyan.Resources"
+    },
+    "website": "https://apps.gnome.org/Resources/",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "Modern GNOME system monitor for CPU, memory, GPU, network interfaces, storage devices, batteries, applications, and processes, including controls for running workloads.",
+    "accent": "#33D17A",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/net.nokyan.Resources.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "monitoring_visibility",
+      "process_control",
+      "hardware_telemetry",
+      "refresh_overhead"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "Flatpak filesystem, procfs, sysfs, device, session and system bus permissions, host visibility, portals, and least privilege",
+      "process names, command lines, environment fragments, user IDs, containers, sandboxes, app grouping, redaction, and observation scope",
+      "process stop, terminate and kill controls, exact PID and start time, child processes, unsaved work, service supervision, and confirmation",
+      "CPU topology, frequency, temperature and utilization sources, sampling accuracy, virtualization, permissions, and measurement overhead",
+      "memory totals, cache and swap interpretation, per-process attribution, shared memory, units, refresh rate, and privacy",
+      "GPU and accelerator discovery, vendor interfaces, utilization and power telemetry, device nodes, drivers, unsupported values, and no driver changes",
+      "network interface names, addresses, traffic counters, VPN and virtual links, storage models and mount names, battery health, and identifier redaction",
+      "polling interval, background behavior, retained graphs, exported diagnostics, notifications, reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Resources from its official source and verified Flathub listing (https://apps.gnome.org/Resources/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, sandbox overrides, available CPU/GPU/storage/battery telemetry classes, process-control permission presence, refresh policy and saved-state size without launching a monitor or listing process names, command lines, users, PIDs, network addresses, interface names, device serials, mount paths, container names, application activity or usage samples. Install stable `net.nokyan.Resources` from verified Flathub in the existing ownership scope. Do not compile from source, launch Resources, enumerate host processes, poll hardware counters, open device nodes, contact services, stop a process, alter priority, export diagnostics, or change monitoring preferences during setup.\n\nPreserve existing Resources state, view and refresh preferences, sandbox overrides, host permissions, process state, workloads, services, device configuration, drivers, power policy, remotes and scope ownership. System-monitor data can expose document names in command lines, usernames, infrastructure topology, VPNs, mounts and workload timing; redact those identifiers from setup evidence. Treat process control as destructive: a reused PID or stale view can target the wrong workload, and terminating a supervised service may cause an automatic restart or wider outage. Installation never authorizes a stop, terminate, kill or priority change.\n\nBefore later monitoring, review each declared filesystem, procfs, sysfs, device, session-bus and system-bus capability against the required CPU, memory, GPU, network, storage and battery views. Document unavailable metrics instead of widening permissions or installing drivers. Set a bounded refresh interval and measure observer overhead on synthetic workload labels. Distinguish memory cache from application use, shared memory from private attribution, link counters from internet traffic, and unsupported sensor values from zero. Before process control require exact PID plus start time, owner, full redacted identity, children, service/container supervision, unsaved-work impact and an explicit per-action confirmation.\n\nVerify provenance, app ID, origin, commit, runtime, executable, files and static sandbox permissions offline. Compare process counts and host state only through preapproved aggregate evidence; do not use Resources itself for installation verification. Prove no process enumeration, telemetry polling, device access, bus call, signal, priority change, network activity, diagnostic export, preference write or notification occurred. On failure, rollback only the new Resources ref in its original scope; preserve shared runtimes, remotes, overrides, running processes, services, devices, drivers, monitoring state and system policy.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable net.nokyan.Resources from verified Flathub in the existing scope without source builds, launch, host enumeration, telemetry polling, device or bus access, process signals, priority changes, diagnostics, notifications, or preference writes.",
+      "preserve": "all saved views, refresh preferences, sandbox overrides, host permissions, process and service state, workloads, device and driver configuration, power policy, remotes, monitoring state, and scope ownership",
+      "safety": "Never expose process or device identifiers, widen host permissions casually, install drivers for metrics, confuse missing telemetry with zero, create excessive observer load, signal a stale PID, interrupt unsaved work, fight a supervisor, or change priority without exact target identity and per-action approval.",
+      "verify": "Verify Resources source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove host enumeration, telemetry, devices, buses, processes, priorities, networks, diagnostics, notifications and preferences are unchanged."
+    }
   }
 ]

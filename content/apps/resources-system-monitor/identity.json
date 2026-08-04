@@ -1,0 +1,17 @@
+{
+  "index": 504,
+  "name": "Resources",
+  "slug": "resources-system-monitor",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/nokyan/resources",
+    "installUrl": "https://flathub.org/apps/net.nokyan.Resources"
+  },
+  "website": "https://apps.gnome.org/Resources/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Modern GNOME system monitor for CPU, memory, GPU, network interfaces, storage devices, batteries, applications, and processes, including controls for running workloads.",
+  "accent": "#33D17A",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/net.nokyan.Resources.svg",
+  "logoSourceType": "official-project-asset"
+}

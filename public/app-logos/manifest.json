@@ -2513,5 +2513,10 @@
     "file": "text-pieces-transformations.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.gitlab.liferooter.TextPieces.svg",
     "sourceType": "official-project-asset"
+  },
+  "resources-system-monitor": {
+    "file": "resources-system-monitor.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/net.nokyan.Resources.svg",
+    "sourceType": "official-project-asset"
   }
 }

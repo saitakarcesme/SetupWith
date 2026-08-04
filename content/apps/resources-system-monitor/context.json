@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "monitoring_visibility",
+    "process_control",
+    "hardware_telemetry",
+    "refresh_overhead"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "Flatpak filesystem, procfs, sysfs, device, session and system bus permissions, host visibility, portals, and least privilege",
+    "process names, command lines, environment fragments, user IDs, containers, sandboxes, app grouping, redaction, and observation scope",
+    "process stop, terminate and kill controls, exact PID and start time, child processes, unsaved work, service supervision, and confirmation",
+    "CPU topology, frequency, temperature and utilization sources, sampling accuracy, virtualization, permissions, and measurement overhead",
+    "memory totals, cache and swap interpretation, per-process attribution, shared memory, units, refresh rate, and privacy",
+    "GPU and accelerator discovery, vendor interfaces, utilization and power telemetry, device nodes, drivers, unsupported values, and no driver changes",
+    "network interface names, addresses, traffic counters, VPN and virtual links, storage models and mount names, battery health, and identifier redaction",
+    "polling interval, background behavior, retained graphs, exported diagnostics, notifications, reset, uninstall, and rollback"
+  ]
+}
