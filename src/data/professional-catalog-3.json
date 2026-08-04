@@ -3450,5 +3450,57 @@
       "safety": "Never access private media, open audio devices, connect JACK, record or write streams, transcode, edit tags, export playlists, run native plugins, contact metadata services, scrobble, weaken TLS, or change hotkeys and associations without a precise review and approval.",
       "verify": "Verify provenance or checksum, version, executable, method, matching plugin package, search paths and associations without a persistent player, then prove no process, audio, media, tag, playlist, file, cache, account, network, hotkey or handler state changed."
     }
+  },
+  {
+    "index": 459,
+    "name": "Kooha",
+    "slug": "kooha",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/SeaDve/Kooha",
+      "installUrl": "https://flathub.org/apps/io.github.seadve.Kooha"
+    },
+    "website": "https://github.com/SeaDve/Kooha",
+    "category": "Design & Media",
+    "vertical": "creative",
+    "description": "Minimal GNOME screen recorder using PipeWire and desktop portals to capture monitors, regions, windows, microphone or desktop audio into WebM, MP4, GIF, or Matroska files.",
+    "accent": "#7C6FDC",
+    "logoUrl": "https://raw.githubusercontent.com/SeaDve/Kooha/main/data/icons/io.github.seadve.Kooha.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "video_source",
+      "audio_source",
+      "encoding",
+      "saving"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "monitor, window, region, and multi-source screen capture",
+      "microphone, desktop audio, PipeWire node, and mixer access",
+      "xdg-desktop-portal screen-cast permission and persistent grants",
+      "recording directory, filename, overwrite, and partial-file handling",
+      "format, codec, frame rate, delay, cursor, and quality changes",
+      "experimental format, window capture, multiple-source, and hardware encoding",
+      "Flatpak permission, filesystem, device, and runtime overrides",
+      "recording playback, sharing, metadata, and cleanup"
+    ],
+    "prompt": "Set up Kooha from its verified Flathub listing (https://flathub.org/apps/io.github.seadve.Kooha). Detect Linux architecture, desktop environment, Wayland or X11 session, Flatpak installation, existing Kooha app and data, PipeWire, GStreamer PipeWire plugin, xdg-desktop-portal implementation, screen-cast portal state, microphones, audio outputs, recording folders, codecs and hardware encoders. Install only the stable verified Flatpak application `io.github.seadve.Kooha` and its declared runtime. Do not build from source, use a third-party distribution package, add beta remotes, or install host codecs and portal implementations automatically.\n\nInstall without launching Kooha or opening a portal chooser. Preserve every existing recording, partial capture, filename, timestamp, metadata, save location, preference, Flatpak override, portal permission, PipeWire configuration, audio route and recent source. Never choose a monitor, window, region, microphone or desktop-audio node merely to verify setup. Screen recordings can expose passwords, notifications, private messages, customer data, browser tabs and other applications; audio can capture conversations and system media.\n\nDo not request or retain screen-cast, microphone or filesystem permission, change a mixer, unmute an input, reroute PipeWire nodes, hide or show the pointer, or start a countdown. Before any later recording, show the exact visual sources, crop, audio nodes, consent, frame rate, cursor state, delay, format, codec, output path, free space, collision behavior and retention plan. Require an isolated desktop with notifications disabled and a disposable destination. Never overwrite a recording or delete an incomplete file automatically.\n\nKeep `KOOHA_EXPERIMENTAL` unset. Experimental formats, hardware encoders, window capture and multiple video sources are disabled for stability and performance reasons and need separate testing plus approval. Do not add broad `--filesystem`, device, socket or D-Bus Flatpak overrides to bypass a broken portal. Verify Flathub verification, application ID, installed commit, signature, runtime, declared permissions and data paths using Flatpak metadata without running the app. Confirm no portal prompt, grant, PipeWire node, audio state, process, recording, partial file, preference, override or experimental flag changed. Roll back only the installed Flatpak ref and setup-owned launcher while retaining all data and permissions.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install only the stable verified Kooha Flatpak and declared runtime, without alternate packages, beta remotes, source builds, host dependencies, launch, portal prompts, capture sources, audio changes, or experimental flags.",
+      "preserve": "all recordings, partial files, names, timestamps, metadata, save paths, preferences, Flatpak overrides, portal grants, PipeWire configuration, audio routes, recent sources, runtimes, and existing application data",
+      "safety": "Never request capture or microphone access, record private content, reroute audio, retain grants, broaden sandbox permissions, enable experimental encoders or sources, overwrite recordings, or delete partial files without an exact source, consent, output, resource, and retention review plus approval.",
+      "verify": "Verify Flathub status, app ID, commit, signature, runtime, permissions and data paths without launching, then prove no portal, grant, PipeWire, audio, process, recording, partial file, preference, override or environment state changed."
+    }
   }
 ]

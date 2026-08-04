@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "video_source",
+    "audio_source",
+    "encoding",
+    "saving"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "monitor, window, region, and multi-source screen capture",
+    "microphone, desktop audio, PipeWire node, and mixer access",
+    "xdg-desktop-portal screen-cast permission and persistent grants",
+    "recording directory, filename, overwrite, and partial-file handling",
+    "format, codec, frame rate, delay, cursor, and quality changes",
+    "experimental format, window capture, multiple-source, and hardware encoding",
+    "Flatpak permission, filesystem, device, and runtime overrides",
+    "recording playback, sharing, metadata, and cleanup"
+  ]
+}
