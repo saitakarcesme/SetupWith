@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "projects",
+    "drawing",
+    "rendering",
+    "autosave"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "project root and default-folder creation or reassignment",
+    "scene, level, palette, audio, image, and camera-media access",
+    "autosave, backup, recovery, and temporary-scene changes",
+    "cleanup processing, overwrite, replacement, and level deletion",
+    "render output, codec, external tool, and batch-task execution",
+    "shared studio palette and version-control operations",
+    "scanner, camera, microphone, tablet, and color-profile access",
+    "render farm, network share, cache, and project cleanup"
+  ]
+}

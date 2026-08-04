@@ -1,0 +1,17 @@
+{
+  "index": 450,
+  "name": "OpenToonz",
+  "slug": "opentoonz",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/opentoonz/opentoonz",
+    "installUrl": "https://opentoonz.github.io/e/index.html"
+  },
+  "website": "https://opentoonz.github.io/e/",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Open-source 2D animation production suite for raster and vector drawing, Xsheet and timeline animation, scanned-line cleanup, compositing, palettes, effects, and rendering.",
+  "accent": "#00AEEF",
+  "logoUrl": "https://raw.githubusercontent.com/opentoonz/opentoonz/master/toonz/sources/toonz/icons/dark/misc/315x77/opentoonz_logo.svg",
+  "logoSourceType": "official-project-asset"
+}

@@ -2243,5 +2243,10 @@
     "file": "atuin.svg",
     "source": "https://raw.githubusercontent.com/atuinsh/atuin/main/docs/docs/assets/atuin-turtle.svg",
     "sourceType": "official-project-asset"
+  },
+  "opentoonz": {
+    "file": "opentoonz.svg",
+    "source": "https://raw.githubusercontent.com/opentoonz/opentoonz/master/toonz/sources/toonz/icons/dark/misc/315x77/opentoonz_logo.svg",
+    "sourceType": "official-project-asset"
   }
 }

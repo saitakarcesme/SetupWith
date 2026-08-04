@@ -2965,5 +2965,59 @@
       "safety": "Never expose history or keys, install hooks, import or sync commands, bind keys, start services, register or delete accounts, rekey or purge stores, force synchronization, enable AI, or distribute dotfiles without a private review and explicit approval.",
       "verify": "Verify provenance or checksum, version, binary, method and PATH without initializing Atuin, then compare protected metadata to prove no profile, history, database, record, key, token, daemon, network, account, AI or dotfile state changed."
     }
+  },
+  {
+    "index": 450,
+    "name": "OpenToonz",
+    "slug": "opentoonz",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/opentoonz/opentoonz",
+      "installUrl": "https://opentoonz.github.io/e/index.html"
+    },
+    "website": "https://opentoonz.github.io/e/",
+    "category": "Design & Media",
+    "vertical": "creative",
+    "description": "Open-source 2D animation production suite for raster and vector drawing, Xsheet and timeline animation, scanned-line cleanup, compositing, palettes, effects, and rendering.",
+    "accent": "#00AEEF",
+    "logoUrl": "https://raw.githubusercontent.com/opentoonz/opentoonz/master/toonz/sources/toonz/icons/dark/misc/315x77/opentoonz_logo.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "projects",
+      "drawing",
+      "rendering",
+      "autosave"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "project root and default-folder creation or reassignment",
+      "scene, level, palette, audio, image, and camera-media access",
+      "autosave, backup, recovery, and temporary-scene changes",
+      "cleanup processing, overwrite, replacement, and level deletion",
+      "render output, codec, external tool, and batch-task execution",
+      "shared studio palette and version-control operations",
+      "scanner, camera, microphone, tablet, and color-profile access",
+      "render farm, network share, cache, and project cleanup"
+    ],
+    "prompt": "Set up OpenToonz from its official project site (https://opentoonz.github.io/e/index.html). Detect Windows, macOS, or Linux, architecture, graphics capabilities, package managers, existing stable or portable installation, OpenToonz Stuff location, project roots, current project, custom rooms and shortcuts, palettes, brushes, plugins, color profiles, codecs, FFmpeg, scanner or camera integration, render farm and version-control settings. Install the latest stable signed package or documented distribution package. Do not select a nightly build, compile an unpinned branch, replace OpenToonz Stuff, or migrate another Toonz variant automatically.\n\nLaunch without opening, creating or selecting a production project. Preserve every TNZ scene, TLV/PLI level, raster image, palette, drawing, scan, audio file, xsheet, storyboard, effect graph, project alias, output, cache, backup, autosave, temporary scene, custom room, shortcut, brush, plugin, studio palette, version-control working copy and uncommitted change. Record project roots and the `+inputs`, `+drawings`, `+scenes`, `+extras`, `+outputs` and `+palettes` mappings read-only. Never change a default folder because existing scenes may then fail to retrieve assets, and never assume files under a temp project are disposable.\n\nCleanup can generate TLV/TPL files and, for a partially processed level, offer to overwrite cleaned frames or delete the existing level and rebuild it from a selection. Rendering and batch cleanup can write many files or submit remote tasks. Do not scan, clean up, paint, save, save all, import, collect assets, convert, render, export, overwrite, delete unused content, clear caches, recover, or submit farm jobs during setup. Before any later operation, show all selected frames and levels, source and destination paths, project aliases, overwrite policy, output range, resolution, codec, color settings, external processes and recovery copy. Keep “Keep Original Cleaned Up Drawings As Backup” enabled for approved cleanup and verify storage capacity first.\n\nDo not connect scanners, cameras, microphones, tablets, version-control servers, shared palettes, network project roots or render nodes without separate approval. Verify publisher or package provenance, checksum when available, version, executable, bundle paths, OpenToonz Stuff resolution, project-root baseline and optional external binaries using an empty offline launch. Close without saving and confirm no project became current, no temp scene was retained or removed, and no scene, level, palette, asset, preference, room, shortcut, cache, backup, device grant, repository, render task or network share changed. Roll back only the installed application and setup-owned shortcuts while preserving all production material and settings.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the latest stable signed or documented OpenToonz package and launch empty, without nightly code, Stuff replacement, migration, project selection, production assets, device access, rendering, or external integration.",
+      "preserve": "all scenes, levels, drawings, scans, palettes, media, xsheets, effects, project roots and aliases, outputs, caches, backups, autosaves, temp scenes, rooms, shortcuts, brushes, plugins, color settings, repositories, farm tasks, settings, and uncommitted work",
+      "safety": "Never reassign project folders, save or clean levels, overwrite or delete frames, render or export, clear recovery data, connect production devices, modify shared palettes, contact version control, or submit farm jobs without a complete path and operation preview plus approval.",
+      "verify": "Verify provenance, checksum, version, executable, bundle, Stuff, project roots and tools with an empty offline launch, then prove no project, asset, preference, backup, temp scene, cache, device, repository, render task or network state changed."
+    }
   }
 ]
