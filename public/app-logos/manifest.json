@@ -2593,5 +2593,10 @@
     "file": "sudoku-logic-puzzles.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.sepehr_rs.Sudoku.svg",
     "sourceType": "official-project-asset"
+  },
+  "gnome-console-terminal": {
+    "file": "gnome-console-terminal.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Console.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "index": 520,
+  "name": "Console",
+  "slug": "gnome-console-terminal",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/console",
+    "installUrl": "https://flathub.org/apps/org.gnome.Console"
+  },
+  "website": "https://apps.gnome.org/Console/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Simple GNOME terminal emulator for running command-line shells and programs in focused tabs with clear process-state indication.",
+  "accent": "#241F31",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Console.svg",
+  "logoSourceType": "official-project-asset"
+}
