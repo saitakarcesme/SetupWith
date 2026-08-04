@@ -7474,5 +7474,59 @@
       "safety": "Never capture private questions, present randomness as prophecy, guide high-stakes decisions, shame users, imply repeated answers are confidence, promise truth through rerolling, use private seeds, retain question-answer histories by default, trigger hazardous motion or sudden sound, or encourage compulsive confirmation loops.",
       "verify": "Verify Clairvoyant source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove inputs, questions, randomness, answers, rerolls, animations, audio, histories, notifications, portals and networks are unchanged."
     }
+  },
+  {
+    "index": 535,
+    "name": "Commit",
+    "slug": "commit-message-editor",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/sonnyp/Commit",
+      "installUrl": "https://flathub.org/apps/re.sonny.Commit"
+    },
+    "website": "https://commit.sonny.re",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Dedicated Git and Mercurial message editor with title overflow highlighting, body wrapping, spelling, read-only comments, project and branch context, undo, emoji, and operation-aware syntax.",
+    "accent": "#E66100",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Commit.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "commit_message_sensitive_context_reference"
+    ],
+    "config": [
+      "vcs_editor_integration",
+      "message_format_policy",
+      "operation_mode_detection",
+      "abort_and_save_semantics"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "Git core.editor, sequence.editor and Mercurial editor configuration, scope, existing value, shell quoting, executable path, arguments, and ownership",
+      "commit, merge, annotated tag, add-patch, interactive rebase or Mercurial operation mode, temporary file contract, comments, cleanup mode, and exit status",
+      "repository and worktree identity, branch or detached state, linked worktrees, submodules, bare repositories, project-header exposure, and redaction",
+      "title width guideline, blank title-body separator, wrapping column, trailers, sign-offs, issue references, capitalization, spellcheck language, and team policy",
+      "read-only comment recognition, comment character, scissors line, diff and status content, select-all exclusion, and accidental secret inclusion",
+      "undo and redo, emoji insertion, Unicode normalization, newline encoding, final newline, comment preservation, temporary-file permissions, and atomic save",
+      "Commit button versus abort, Ctrl+Return and Escape, process exit code, unchanged message, editor crash, parent VCS behavior, and no automatic commit claim",
+      "integration removal, exact config restoration, temporary files, session state, app reset, uninstall, backups, and rollback"
+    ],
+    "prompt": "Set up Commit from its official project and verified Flathub listing (https://flathub.org/apps/re.sonny.Commit). Inventory Linux architecture, Flatpak scopes, existing package and data paths, Git and Mercurial editor-setting presence by scope, saved formatting and spellcheck preferences, pending-editor process count, sandbox overrides and backup coverage without entering repositories or revealing paths, branches, commit text, diffs, comments, issue references, authors, trailers, environment values, tokens or project identities. Install stable `re.sonny.Commit` from verified Flathub in the existing ownership scope. Do not compile from source, launch Commit, change `core.editor`, `sequence.editor` or Mercurial configuration, open a repository, read a message or diff file, start or continue a commit, merge, tag, patch or rebase operation, save text, exit an editor process or invoke Git or Mercurial during setup.\n\nPreserve every existing editor command byte and scope, repository state, index, worktree, pending operation, temporary message file, comments, formatting preferences, remotes, overrides and scope ownership. Commit messages and diffs may expose unreleased work, incident details and credentials; redact them. Installation is separate from editor integration: never replace an existing editor, alter shell quoting, launch on repository events, stage files, write a message, continue an operation or imply a commit was created.\n\nBefore later integration, resolve the exact executable and arguments without shell interpolation and preview the precise Git or Mercurial config diff at the chosen local, global or system scope. Keep `core.editor` distinct from `sequence.editor`. Test only in a disposable synthetic repository with no remotes or hooks. Detect commit, merge, annotated-tag, add-patch, interactive-rebase and Mercurial file contracts independently; their comments, allowed edits and exit semantics differ. Respect the repository's comment character, cleanup mode, encoding and final-newline expectations. Read-only comments and status or diff material must never enter the saved message.\n\nFormatting aids are suggestions bounded by team policy: preview capitalization, blank-line insertion and body reflow before applying them, and preserve trailers and deliberately wrapped text. Save must atomically update only the provided temporary file and return the documented success status; Abort must leave it unchanged and return the cancellation status expected by the parent VCS. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no config, repository, worktree, index, message, diff, operation, temporary file, Git or Mercurial process changed. On failure, rollback only the new Commit ref in its original scope; preserve shared runtimes, remotes, overrides, VCS editor settings, repositories, pending operations, preferences and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable re.sonny.Commit from verified Flathub in the existing scope without source builds, launch, VCS configuration, repository access, message or diff reads, commit, merge, tag, patch or rebase operations, saves, editor exits, Git, or Mercurial.",
+      "preserve": "every existing Git and Mercurial editor command and scope, repository, index, worktree, pending operation, temporary message and comment, formatting preference, backup, remote, override, and scope ownership",
+      "safety": "Never expose repository context, replace editors silently, interpolate shell commands, confuse editor and sequence-editor roles, touch real repositories during tests, mix operation contracts, include comments or diffs, rewrite trailers unexpectedly, save on abort, continue VCS operations, or claim a commit was made.",
+      "verify": "Verify Commit source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove configs, repositories, indexes, worktrees, messages, diffs, pending operations, temporary files and VCS processes are unchanged."
+    }
   }
 ]

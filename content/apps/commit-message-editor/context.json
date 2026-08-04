@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "vcs_editor_integration",
+    "message_format_policy",
+    "operation_mode_detection",
+    "abort_and_save_semantics"
+  ],
+  "secrets": [
+    {
+      "key": "commit_message_sensitive_context_reference",
+      "reference": "secret://commit/message-sensitive-context-reference"
+    }
+  ],
+  "permissionCheckpoints": [
+    "Git core.editor, sequence.editor and Mercurial editor configuration, scope, existing value, shell quoting, executable path, arguments, and ownership",
+    "commit, merge, annotated tag, add-patch, interactive rebase or Mercurial operation mode, temporary file contract, comments, cleanup mode, and exit status",
+    "repository and worktree identity, branch or detached state, linked worktrees, submodules, bare repositories, project-header exposure, and redaction",
+    "title width guideline, blank title-body separator, wrapping column, trailers, sign-offs, issue references, capitalization, spellcheck language, and team policy",
+    "read-only comment recognition, comment character, scissors line, diff and status content, select-all exclusion, and accidental secret inclusion",
+    "undo and redo, emoji insertion, Unicode normalization, newline encoding, final newline, comment preservation, temporary-file permissions, and atomic save",
+    "Commit button versus abort, Ctrl+Return and Escape, process exit code, unchanged message, editor crash, parent VCS behavior, and no automatic commit claim",
+    "integration removal, exact config restoration, temporary files, session state, app reset, uninstall, backups, and rollback"
+  ]
+}

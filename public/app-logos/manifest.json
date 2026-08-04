@@ -2668,5 +2668,10 @@
     "file": "clairvoyant-magic-eight-ball.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.cassidyjames.clairvoyant.svg",
     "sourceType": "official-project-asset"
+  },
+  "commit-message-editor": {
+    "file": "commit-message-editor.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Commit.svg",
+    "sourceType": "official-project-asset"
   }
 }

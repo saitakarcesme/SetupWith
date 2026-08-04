@@ -1,0 +1,17 @@
+{
+  "index": 535,
+  "name": "Commit",
+  "slug": "commit-message-editor",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/sonnyp/Commit",
+    "installUrl": "https://flathub.org/apps/re.sonny.Commit"
+  },
+  "website": "https://commit.sonny.re",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Dedicated Git and Mercurial message editor with title overflow highlighting, body wrapping, spelling, read-only comments, project and branch context, undo, emoji, and operation-aware syntax.",
+  "accent": "#E66100",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Commit.svg",
+  "logoSourceType": "official-project-asset"
+}
