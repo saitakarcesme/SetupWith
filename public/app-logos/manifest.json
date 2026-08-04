@@ -2458,5 +2458,10 @@
     "file": "iotas-notes.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Iotas.svg",
     "sourceType": "official-project-asset"
+  },
+  "keypunch-typing-trainer": {
+    "file": "keypunch-typing-trainer.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/no.bragefuglseth.Keypunch.svg",
+    "sourceType": "official-project-asset"
   }
 }

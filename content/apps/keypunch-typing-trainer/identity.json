@@ -1,0 +1,17 @@
+{
+  "index": 493,
+  "name": "Keypunch",
+  "slug": "keypunch-typing-trainer",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/bragefuglseth/keypunch",
+    "installUrl": "https://flathub.org/apps/no.bragefuglseth.Keypunch"
+  },
+  "website": "https://apps.gnome.org/Keypunch/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Fast-paced touch-typing trainer with multilingual generated exercises, numbers and punctuation, C++, JavaScript, Python and Rust practice, custom text, instant accuracy feedback, and WPM results.",
+  "accent": "#E66100",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/no.bragefuglseth.Keypunch.svg",
+  "logoSourceType": "official-project-asset"
+}

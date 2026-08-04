@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "practice_language",
+    "custom_text_privacy",
+    "metric_interpretation",
+    "ergonomic_pacing"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "practice language, keyboard layout, input method, compose key, dead keys, punctuation, numbers, and programming-language mode",
+    "custom practice text source, owner, copyright, secrets, personal data, code identifiers, clipboard, and retention",
+    "per-keystroke input, errors, corrections, timing, WPM, accuracy, session results, local history, and diagnostic privacy",
+    "session duration, repetition, posture, wrist position, keyboard height, breaks, discomfort, fatigue, and accessibility",
+    "generated word or code corpus, spelling variant, syntax realism, offensive content review, and educational suitability",
+    "focus handling, global shortcuts, input capture boundary, password fields, window switching, and accidental secret entry",
+    "metric calculation, warm-up, language and punctuation comparability, outliers, personal goals, and non-ranking use",
+    "result reset, custom-text deletion, preferences, application data, network isolation, telemetry absence, and rollback"
+  ]
+}

@@ -5248,5 +5248,57 @@
       "safety": "Never expose note content, assume partial loading means absence, migrate without restore-tested backup, let timestamp or deletion win implicitly, leak titles through Shell search, trust rendered links, fetch remote content, or restore/export without database, authority, conflict, privacy, renderer, metadata, and destination review.",
       "verify": "Verify Iotas source, app ID, origin, commit, runtime, executable, database schema, files and permissions offline, then prove databases, indexes, secrets, APIs, sync, previews, tasks, backups, restores, exports, Shell results and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 493,
+    "name": "Keypunch",
+    "slug": "keypunch-typing-trainer",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/bragefuglseth/keypunch",
+      "installUrl": "https://flathub.org/apps/no.bragefuglseth.Keypunch"
+    },
+    "website": "https://apps.gnome.org/Keypunch/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Fast-paced touch-typing trainer with multilingual generated exercises, numbers and punctuation, C++, JavaScript, Python and Rust practice, custom text, instant accuracy feedback, and WPM results.",
+    "accent": "#E66100",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/no.bragefuglseth.Keypunch.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "practice_language",
+      "custom_text_privacy",
+      "metric_interpretation",
+      "ergonomic_pacing"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "practice language, keyboard layout, input method, compose key, dead keys, punctuation, numbers, and programming-language mode",
+      "custom practice text source, owner, copyright, secrets, personal data, code identifiers, clipboard, and retention",
+      "per-keystroke input, errors, corrections, timing, WPM, accuracy, session results, local history, and diagnostic privacy",
+      "session duration, repetition, posture, wrist position, keyboard height, breaks, discomfort, fatigue, and accessibility",
+      "generated word or code corpus, spelling variant, syntax realism, offensive content review, and educational suitability",
+      "focus handling, global shortcuts, input capture boundary, password fields, window switching, and accidental secret entry",
+      "metric calculation, warm-up, language and punctuation comparability, outliers, personal goals, and non-ranking use",
+      "result reset, custom-text deletion, preferences, application data, network isolation, telemetry absence, and rollback"
+    ],
+    "prompt": "Set up Keypunch from its official repository and verified Flathub listing (https://apps.gnome.org/Keypunch/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, keyboard layout and input-method names, available practice languages, accessibility needs, result-history presence and custom-text count without recording keystrokes, reading custom text, querying clipboard contents or exposing performance metrics. Install stable `no.bragefuglseth.Keypunch` from verified Flathub in the existing ownership scope. Do not compile from source, launch the app, start a session, capture input, import custom text, reset results or change keyboard settings during setup.\n\nPreserve session results, preferences, selected language/layout, custom exercises and application data. Custom text may contain private correspondence, copyrighted prose, source code, tokens or customer identifiers; require ownership and a content scan before import, use a protected local copy, and never source practice material from password managers, terminals, production logs or clipboard history. Do not print custom content or individual keystrokes in diagnostics. Keep network access and telemetry absent during typing sessions unless separately justified.\n\nMatch practice language to the physical layout, input method and intended skill. Generated C++, JavaScript, Python or Rust text exercises practice character sequences, not program correctness; do not execute or save them into a codebase. Review generated corpora for unsuitable or offensive terms before supervised educational use. Ensure focus remains inside the practice field and stop a session before switching to authentication or messaging windows so accidental secrets are not captured as errors.\n\nWPM and accuracy vary with language, punctuation, session length, warm-up and input method; never compare unlike sessions or use results for employment, grading or medical claims. Set conservative duration and breaks, preserve system accessibility, and stop for pain, numbness or fatigue. Verify Keypunch provenance, app ID, origin, commit, runtime, executable, corpus assets, files and permissions offline. Prove no keystroke hook, custom-text read, clipboard access, session, result, history, keyboard configuration, network request or filesystem state changed. On failure, rollback only the new Keypunch ref in its original scope; preserve runtimes, remotes, overrides, exercises and metrics.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable no.bragefuglseth.Keypunch from verified Flathub in the existing scope without source builds, launch, sessions, keystroke capture, custom-text access, clipboard reads, result resets, keyboard changes, network access, or telemetry.",
+      "preserve": "all session results, WPM and accuracy history, selected language and layout, custom exercises, preferences, accessibility, input-method configuration, remotes, overrides, and scope ownership",
+      "safety": "Never expose keystrokes or custom content, import secrets or unlicensed text, execute generated code, capture input across windows, compare incompatible metrics, use results for consequential ranking, or ignore discomfort without text, layout, focus, corpus, metric, privacy, accessibility, and ergonomic review.",
+      "verify": "Verify Keypunch source, app ID, origin, commit, runtime, executable, corpus assets, files and permissions offline, then prove keystrokes, custom text, clipboard, sessions, results, history, keyboard settings, networks and filesystem state are unchanged."
+    }
   }
 ]
