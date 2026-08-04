@@ -1,0 +1,18 @@
+{
+  "index": 440,
+  "name": "Distrobox",
+  "slug": "distrobox",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/89luca89/distrobox",
+    "installUrl": "https://distrobox.it/#installation"
+  },
+  "website": "https://distrobox.it/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Linux container environment manager that integrates Podman, Docker, or compatible containers with the host home, desktop, devices, audio, and applications.",
+  "accent": "#70594D",
+  "simpleIconSlug": "linuxcontainers",
+  "logoUrl": "https://raw.githubusercontent.com/89luca89/distrobox/main/docs/assets/brand/svg/distrobox-logomark-light.svg",
+  "logoSourceType": "official-project-asset"
+}

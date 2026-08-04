@@ -2422,5 +2422,58 @@
       "safety": "Never run credential tests, fetch, apply changes, rewrite commits, rebase, push or force-push, land to a target, open a PR, authorize a forge, alter signing, or send diffs to AI without separate review and approval.",
       "verify": "Verify publisher, version and paths offline; if needed use only a disposable remote-free repository and prove no real repository, network, Git configuration, credential, ref, index, file, hook, or unrelated application data changed."
     }
+  },
+  {
+    "index": 440,
+    "name": "Distrobox",
+    "slug": "distrobox",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/89luca89/distrobox",
+      "installUrl": "https://distrobox.it/#installation"
+    },
+    "website": "https://distrobox.it/",
+    "category": "DevOps & Cloud",
+    "vertical": "software",
+    "description": "Linux container environment manager that integrates Podman, Docker, or compatible containers with the host home, desktop, devices, audio, and applications.",
+    "accent": "#70594D",
+    "simpleIconSlug": "linuxcontainers",
+    "logoUrl": "https://raw.githubusercontent.com/89luca89/distrobox/main/docs/assets/brand/svg/distrobox-logomark-light.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "container_manager",
+      "container_image",
+      "custom_home",
+      "isolation"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "container manager selection",
+      "image pull and digest",
+      "host home, device, socket, and display sharing",
+      "rootful container creation",
+      "init and pre-init hook execution",
+      "host command execution",
+      "application or binary export",
+      "container upgrade, replace, stop, or removal"
+    ],
+    "prompt": "Set up Distrobox from its official project and installation guidance (https://distrobox.it/#installation). Confirm the host is Linux, then detect architecture, distribution, desktop and display protocol, package managers, rootless Podman or Docker availability, configured registries, existing distroboxes, images, containers, volumes, exported applications and binaries, desktop entries, custom homes, and `.distroboxrc`. Install only the packaged Distrobox scripts for the detected distribution; do not install or reconfigure a container engine, registry, subordinate UID/GID mapping, socket, or daemon as an implicit dependency.\n\nDo not create or enter a container during installation. Explain that Distrobox is intentionally tightly integrated: by default it shares the user's home, host filesystem under `/run/host`, display, audio, devices, sockets, groups, and environment. A custom container home prevents dotfile clutter but does not by itself stop the host home from being mounted. Preserve every container, image, volume, home, package, hook, exported wrapper, desktop entry, host configuration, registry credential, and active process. Apply only the approved manager, pinned image digest, custom home, and explicit isolation flags.\n\nUse `distrobox create --dry-run` to preview the exact underlying container command. Stop before pulling an image, creating or cloning a box, sharing additional volumes or devices, adding packages, running pre-init or init hooks, enabling an init system or NVIDIA integration, generating desktop entries, or starting the container. Prefer rootless mode; root inside a rootless box still has the host user's file privileges, while root in a rootful box can be real host root. Never disable the root password, use remote assemble files, enable `distrobox-host-exec`, export sudo wrappers, loosen X11 access persistently, or execute unreviewed container commands.\n\nVerify Distrobox version and package provenance, container-manager client and rootless status, configuration paths, and an unchanged inventory using list and dry-run only. Report proposed image registry, immutable digest, namespace sharing, mounts, environment, hooks, generated entries, and resource impact without pulling or starting anything. Confirm no image, container, volume, wrapper, desktop file, socket, service, firewall rule, group mapping, or host file changed. Roll back only the Distrobox package and setup-owned configuration; never run stop, rm, replace, upgrade, assemble, container prune, or image prune as part of automatic cleanup.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install only packaged Distrobox scripts on Linux after detecting a pre-existing rootless container manager, and never install or reconfigure the engine, socket, daemon, registries, or ID mappings implicitly.",
+      "preserve": "all containers, images, volumes, homes, packages, hooks, exported wrappers, desktop entries, host files, engine configuration, registry credentials, processes, sockets, and subordinate ID mappings",
+      "safety": "Never pull, create, enter, clone, replace, upgrade or remove boxes; share mounts or devices; run hooks; use rootful or host-exec modes; export host wrappers; weaken X11; or prune engine data without separate approval.",
+      "verify": "Verify package, version, rootless engine and inventory, then use dry-run only and prove no image, container, volume, export, desktop entry, socket, service, rule, mapping, process, or host file changed."
+    }
   }
 ]

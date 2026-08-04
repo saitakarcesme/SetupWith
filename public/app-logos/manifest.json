@@ -2193,5 +2193,10 @@
     "file": "gitbutler.svg",
     "source": "https://raw.githubusercontent.com/gitbutlerapp/gitbutler/master/packages/ui/static/favicon.png",
     "sourceType": "official-project-asset"
+  },
+  "distrobox": {
+    "file": "distrobox.svg",
+    "source": "https://raw.githubusercontent.com/89luca89/distrobox/main/docs/assets/brand/svg/distrobox-logomark-light.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "container_manager",
+    "container_image",
+    "custom_home",
+    "isolation"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "container manager selection",
+    "image pull and digest",
+    "host home, device, socket, and display sharing",
+    "rootful container creation",
+    "init and pre-init hook execution",
+    "host command execution",
+    "application or binary export",
+    "container upgrade, replace, stop, or removal"
+  ]
+}
