@@ -1,0 +1,17 @@
+{
+  "index": 532,
+  "name": "Chess Clock",
+  "slug": "chess-clock-over-the-board",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/chess-clock",
+    "installUrl": "https://flathub.org/apps/eu.fortysixandtwo.chessclock"
+  },
+  "website": "https://apps.gnome.org/Chessclock/",
+  "category": "Games & Launchers",
+  "vertical": "gaming",
+  "description": "Touch-friendly clock for timing over-the-board chess games, with selectable time controls and opposing player timers handed off after each move until the game ends or a clock reaches zero.",
+  "accent": "#613583",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/eu.fortysixandtwo.chessclock.svg",
+  "logoSourceType": "official-project-asset"
+}

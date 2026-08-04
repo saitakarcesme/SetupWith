@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Intermediate",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "time_control_rules",
+    "turn_handoff_integrity",
+    "clock_monotonicity",
+    "accessibility_and_fairness"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "white and black starting times, supported time-control preset, increment or delay semantics if available, move boundary, and tournament agreement",
+    "initial side, black-player tap that starts white, active player, handoff ordering, simultaneous or repeated taps, debounce, and touch ownership",
+    "monotonic clock, display precision, rounding, zero crossing, scheduling latency, suspend, screen lock, power saving, and wall-clock correction",
+    "running game state, both remaining times, paused or finished status, accidental app closure, crash recovery, reset confirmation, and match preservation",
+    "flag fall, audible or visual indication, vibration if available, draw or resignation handling, arbiter intervention, and no automatic game adjudication",
+    "portrait and landscape orientation, one rotated display, RTL layout, color independence, contrast, large touch targets, screen reader, and motor accessibility",
+    "screen wake, notification and sound permissions, background behavior, network absence, telemetry, filesystem access, and least privilege",
+    "new-game replacement, active-clock cancellation, result and history retention, preferences reset, uninstall, backups, and rollback"
+  ]
+}

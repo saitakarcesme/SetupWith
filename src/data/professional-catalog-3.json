@@ -7318,5 +7318,57 @@
       "safety": "Never capture unrelated applications, expose payloads or identities, broaden bus scope, activate services, collect without caps, rely on post-export redaction, leave monitor rules installed, trust imported traces, overstate sequence causality, report timing without sample limits, or retain unredacted logs.",
       "verify": "Verify Bustle source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove buses, monitors, messages, services, traces, parsers, diagrams, statistics, logs, exports and privilege state are untouched."
     }
+  },
+  {
+    "index": 532,
+    "name": "Chess Clock",
+    "slug": "chess-clock-over-the-board",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/chess-clock",
+      "installUrl": "https://flathub.org/apps/eu.fortysixandtwo.chessclock"
+    },
+    "website": "https://apps.gnome.org/Chessclock/",
+    "category": "Games & Launchers",
+    "vertical": "gaming",
+    "description": "Touch-friendly clock for timing over-the-board chess games, with selectable time controls and opposing player timers handed off after each move until the game ends or a clock reaches zero.",
+    "accent": "#613583",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/eu.fortysixandtwo.chessclock.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "time_control_rules",
+      "turn_handoff_integrity",
+      "clock_monotonicity",
+      "accessibility_and_fairness"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Intermediate",
+    "permissionCheckpoints": [
+      "white and black starting times, supported time-control preset, increment or delay semantics if available, move boundary, and tournament agreement",
+      "initial side, black-player tap that starts white, active player, handoff ordering, simultaneous or repeated taps, debounce, and touch ownership",
+      "monotonic clock, display precision, rounding, zero crossing, scheduling latency, suspend, screen lock, power saving, and wall-clock correction",
+      "running game state, both remaining times, paused or finished status, accidental app closure, crash recovery, reset confirmation, and match preservation",
+      "flag fall, audible or visual indication, vibration if available, draw or resignation handling, arbiter intervention, and no automatic game adjudication",
+      "portrait and landscape orientation, one rotated display, RTL layout, color independence, contrast, large touch targets, screen reader, and motor accessibility",
+      "screen wake, notification and sound permissions, background behavior, network absence, telemetry, filesystem access, and least privilege",
+      "new-game replacement, active-clock cancellation, result and history retention, preferences reset, uninstall, backups, and rollback"
+    ],
+    "prompt": "Set up Chess Clock from its official project and verified Flathub listing (https://apps.gnome.org/Chessclock/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, configured time-control preset class, active-game presence, paused or finished state, aggregate remaining-time values without side attribution, orientation, sound and screen-wake policy, sandbox overrides and backup coverage without revealing player names, colors tied to people, exact match times, move timing, results, tournament details or play history. Install stable `eu.fortysixandtwo.chessclock` from verified Flathub in the existing ownership scope. Do not compile from source, launch Chess Clock, restore a game, start, pause, resume, switch or reset a timer, register a tap, cross zero, signal flag fall, wake the screen, play sound, vibrate or write match state during setup.\n\nPreserve the exact remaining time for both sides, active-player identity, paused or finished state, selected time-control settings, orientation, accessibility choices, result state, remotes, overrides and scope ownership. Installation must not infer whose turn it is, round a clock value, compensate for elapsed wall time, replace an unfinished game or start white's timer because black's surface was previously touched. Redact competitive timing and result history. The app measures time; it does not adjudicate illegal moves, draws, resignations or tournament disputes.\n\nBefore a later game, both players must approve the displayed starting times and every supported increment or delay rule. Confirm which initial tap starts which side. Use monotonic elapsed time, define display rounding and exact zero-crossing behavior, and measure scheduling error against a reference timer. Suspend, screen lock and power-saving policies must be explicit and identical for both sides. Debounce accidental double taps while keeping handoff latency bounded and visible. Validate only with a disposable short synthetic match excluded from real results.\n\nUse large, separated targets with non-color active-state cues; verify portrait, landscape, rotated-player and RTL layouts. Provide a recoverable pause and confirmation before reset or new game. Flag-fall signals require reviewed volume, vibration and visual accessibility and must not decide the game automatically. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no game restore, clock transition, tap, elapsed-time write, flag signal, screen wake, audio, vibration, result or history mutation occurred. On failure, rollback only the new Chess Clock ref in its original scope; preserve shared runtimes, remotes, overrides, game state, controls, accessibility settings and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable eu.fortysixandtwo.chessclock from verified Flathub in the existing scope without source builds, launch, game restoration, clock transitions, taps, zero crossing, flag signals, screen wake, audio, vibration, results, or state writes.",
+      "preserve": "both exact remaining times, active-player identity, paused or finished state, time-control settings, orientation, accessibility and signal choices, results, backups, remotes, overrides, and scope ownership",
+      "safety": "Never infer a turn, round competitive time silently, confuse wall and monotonic clocks, treat a stale tap as game start, apply asymmetric suspend behavior, accept repeated taps, overwrite an active match, expose player history, use color alone, or let software adjudicate the game.",
+      "verify": "Verify Chess Clock source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove games, clocks, taps, timing state, flag signals, displays, audio, vibration, results and histories are unchanged."
+    }
   }
 ]

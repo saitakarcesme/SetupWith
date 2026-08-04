@@ -2653,5 +2653,10 @@
     "file": "bustle-dbus-sequence-traces.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.freedesktop.Bustle.svg",
     "sourceType": "official-project-asset"
+  },
+  "chess-clock-over-the-board": {
+    "file": "chess-clock-over-the-board.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/eu.fortysixandtwo.chessclock.svg",
+    "sourceType": "official-project-asset"
   }
 }
