@@ -2218,5 +2218,10 @@
     "file": "responsively-app.svg",
     "source": "https://raw.githubusercontent.com/responsively-org/responsively-app/main/desktop-app/assets/icon.svg",
     "sourceType": "official-project-asset"
+  },
+  "devpod": {
+    "file": "devpod.svg",
+    "source": "https://raw.githubusercontent.com/loft-sh/devpod/main/desktop/devpod.png",
+    "sourceType": "official-project-asset"
   }
 }

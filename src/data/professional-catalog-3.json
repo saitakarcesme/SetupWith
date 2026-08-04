@@ -2695,5 +2695,59 @@
       "safety": "Never mirror unreviewed interactions, access production, sign in, submit forms, trust certificates, expose files, grant device permissions, open protocols, download, paste secrets, inspect sensitive data, capture screenshots, or install extensions without approval.",
       "verify": "Verify publisher, version, paths, processes, listeners, proxy, certificates and extensions using only a public disposable loopback page, then prove no history, cookie, storage, login, screenshot, download, grant, profile, extension or trust state changed."
     }
+  },
+  {
+    "index": 445,
+    "name": "DevPod",
+    "slug": "devpod",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/loft-sh/devpod",
+      "installUrl": "https://devpod.sh/docs/getting-started/install"
+    },
+    "website": "https://devpod.sh/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Client-only development environment manager that runs Dev Container workspaces through local, SSH, Kubernetes, and cloud providers without a central server.",
+    "accent": "#5B5FEE",
+    "logoUrl": "https://raw.githubusercontent.com/loft-sh/devpod/main/desktop/devpod.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "providers",
+      "workspaces",
+      "ide",
+      "dotfiles"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "provider installation, selection, or option changes",
+      "cloud, Kubernetes, SSH, or container-runtime authentication",
+      "workspace creation, start, stop, rebuild, or deletion",
+      "virtual-machine creation, reuse, or deletion",
+      "Dev Container feature, lifecycle hook, and image execution",
+      "dotfiles clone, linking, and bootstrap script execution",
+      "IDE integration and extension installation",
+      "credential, context, volume, and cache cleanup"
+    ],
+    "prompt": "Set up DevPod from its official installation guide (https://devpod.sh/docs/getting-started/install). Detect Windows, macOS, or Linux, architecture, package managers, container runtimes, SSH and Kubernetes clients, cloud CLIs, existing DevPod desktop or CLI installation, contexts, providers, workspaces, machines, IDE preferences, configuration, caches, volumes, and credentials. Install only the signed stable desktop package or checksummed CLI using the documented method for the platform. Do not add or select a provider, authenticate, create a context, open a repository, or start a workspace during installation.\n\nPreserve every provider definition and option, workspace and machine record, Dev Container configuration, local clone, volume, cache, IDE association, SSH or Kubernetes context, cloud account, credential helper, dotfiles setting, and uncommitted file. Report existing resources read-only before proposing changes. A provider is an executable integration that can create, stop, and delete remote machines or containers; adding, updating, selecting, reusing, or removing one requires an exact command preview and separate approval. Never delete a provider while a workspace depends on it, and never infer that an apparently idle cloud machine is disposable.\n\nTreat `devcontainer.json`, Features, images, entrypoints, lifecycle hooks, IDE extensions, and dotfiles bootstrap files as arbitrary code. Do not run `devpod up`, build, rebuild, prebuild, start, stop, delete, purge, or provider commands merely to verify setup. Before any later workspace action, pin the repository revision and image digest where possible, inspect Features plus hooks, show the provider, destination, forwarded ports, mounts, secrets, privileges, estimated cloud resources, and deletion scope. Dotfiles mode may clone a repository and automatically run `install.sh`, `bootstrap.sh`, `setup.sh`, or a custom script; keep it disabled until the repository and exact script are reviewed. Never print tokens, copy host credentials into a workspace, weaken SSH host checking, change the active Kubernetes context, expose a Docker socket, or grant privileged containers silently.\n\nVerify the downloaded artifact, publisher or checksum, `devpod version`, resolved binary, desktop bundle, installation method, configuration path, and PATH precedence. Use only read-only listing commands that do not contact providers or start resources; if a listing might invoke a provider, stop and explain. Confirm no provider, context, workspace, machine, container, VM, volume, credential, dotfile, IDE, port, repository, or cloud resource changed. Roll back only the installed DevPod binary or application and setup-owned PATH entry, preserving all pre-existing DevPod state and remote resources.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install only the official signed DevPod desktop package or checksummed CLI, without adding providers, authenticating, creating contexts, opening repositories, or starting workspaces.",
+      "preserve": "all providers, contexts, workspaces, machines, Dev Container files, clones, volumes, caches, IDE settings, SSH and Kubernetes contexts, cloud accounts, credentials, dotfiles, remote resources, and uncommitted changes",
+      "safety": "Never execute workspace content or dotfiles, contact a provider, create or delete infrastructure, expose sockets or ports, weaken SSH, switch Kubernetes context, install IDE extensions, or copy credentials without an exact preview and separate approval.",
+      "verify": "Verify artifact, publisher or checksum, version, binary, bundle, method, config and PATH using offline or read-only inspection, then prove no local or remote DevPod resource or credential changed."
+    }
   }
 ]

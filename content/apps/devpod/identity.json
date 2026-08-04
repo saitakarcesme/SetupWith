@@ -1,0 +1,17 @@
+{
+  "index": 445,
+  "name": "DevPod",
+  "slug": "devpod",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/loft-sh/devpod",
+    "installUrl": "https://devpod.sh/docs/getting-started/install"
+  },
+  "website": "https://devpod.sh/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Client-only development environment manager that runs Dev Container workspaces through local, SSH, Kubernetes, and cloud providers without a central server.",
+  "accent": "#5B5FEE",
+  "logoUrl": "https://raw.githubusercontent.com/loft-sh/devpod/main/desktop/devpod.png",
+  "logoSourceType": "official-project-asset"
+}
