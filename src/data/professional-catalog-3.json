@@ -4449,5 +4449,59 @@
       "safety": "Never expose QR secrets, scan into automatic history, trust parsed payload types, invoke links or schemes, join Wi-Fi, copy credentials, generate visible secrets, save to synced locations, or install camera plugins without source, portal, payload, authenticity, history, visibility, destination, and retention review.",
       "verify": "Verify Decoder source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove databases, portals, camera, screenshots, payloads, images, clipboard, handlers, processes and network state are unchanged."
     }
+  },
+  {
+    "index": 478,
+    "name": "Fragments",
+    "slug": "fragments-bittorrent",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/Fragments",
+      "installUrl": "https://flathub.org/apps/de.haeckerfelix.Fragments"
+    },
+    "website": "https://apps.gnome.org/Fragments/",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "GNOME BitTorrent client powered by Transmission with torrent and magnet intake, file selection, queues, local sessions, and remote Fragments or Transmission control.",
+    "accent": "#D2B0FF",
+    "logoUrl": "https://gitlab.gnome.org/World/Fragments/-/raw/main/data/icons/hicolor/scalable/apps/de.haeckerfelix.Fragments.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "remote_transmission_password"
+    ],
+    "config": [
+      "session_inventory",
+      "peer_privacy",
+      "storage_policy",
+      "remote_control"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "local Transmission daemon, remote Fragments or Transmission endpoint, TLS, authentication, and ownership",
+      "active torrents, info hashes, magnet URIs, trackers, peers, ratios, queues, priorities, and legal authorization",
+      "clipboard monitoring, magnet or torrent-link detection, sensitive clipboard data, and notification exposure",
+      "torrent file intake, metadata parsing, selected files, path traversal, automatic trashing, and source retention",
+      "download and incomplete directories, free space, sparse files, permissions, symlinks, mounts, and existing data",
+      "listen port, peer limit, UPnP or NAT-PMP port forwarding, encryption mode, firewall, and public IP exposure",
+      "metered network policy, bandwidth limits, sleep inhibition, background daemon, notifications, and resource use",
+      "start, pause, remove, delete data, move location, open downloaded file, CLI addition, and rollback"
+    ],
+    "prompt": "Set up Fragments from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Fragments/). Inventory Linux architecture, Flatpak scopes, existing Fragments package and data paths, local Transmission daemon state, remote-session definitions, secret storage, active torrent count, download/incomplete roots, clipboard-monitoring preference, metered policy, ports and firewall state without reading torrent names, info hashes or credentials. Install stable `de.haeckerfelix.Fragments` from verified Flathub in the existing ownership scope. Do not install a nightly, compile from source, launch Fragments, start Transmission, connect remotely or add a test torrent.\n\nPreserve every torrent, magnet URI, info hash, tracker, peer policy, ratio, queue position, selected file, downloaded byte, incomplete file, destination, label, statistic, remote credential and preference. Torrent metadata may reveal copyrighted interests, research, peer IP addresses and local filenames. Never print names, trackers, hashes, peers or remote URLs in diagnostics. Do not inspect the clipboard: automatic magnet/torrent-link detection could read unrelated credentials, messages or private URLs.\n\nTreat `.torrent` files and magnet metadata as untrusted structured input. Before any future addition show publisher/source, expected content, info hash, tracker/DHT behavior, file tree, total size, selected files, destination, free space, symlink/path-traversal checks and legal authorization. Do not auto-start, trash the source `.torrent`, open a downloaded file or execute a CLI addition without separate approval. BitTorrent encryption does not provide anonymity or establish content authenticity.\n\nRemote Transmission control can mutate another system. Require exact HTTPS endpoint, certificate verification, authenticated identity, server owner, session inventory and deletion boundary. Do not test ports, enable UPnP/NAT-PMP, change firewall rules, expose a listener, bypass metered limits or inhibit sleep. Verify Fragments provenance, app ID, origin, commit, runtime, executable, bundled backend, files and declared permissions offline. Prove no daemon, connection, clipboard read, torrent parse, tracker/DHT/peer traffic, port, download, source trash, notification or filesystem state changed. On failure, rollback only the new Fragments ref in its original scope; preserve shared runtimes, remotes, overrides, daemon packages, torrent state, credentials and all payload data.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable de.haeckerfelix.Fragments from verified Flathub in the existing scope without nightly or source builds, launch, daemon start, remote connection, clipboard reads, torrent parsing, network tests, port changes, downloads, or source-file trashing.",
+      "preserve": "all torrents, magnets, hashes, trackers, peer and ratio state, queues, selected files, downloads, incomplete data, destinations, statistics, remote endpoints and credentials, ports, firewall, preferences, remotes, overrides, and scope ownership",
+      "safety": "Never expose torrent activity, read clipboard data, trust metadata, auto-start or trash sources, download unauthorized content, open payloads, connect to remote engines, enable port forwarding, or mutate firewalls without source, hash, file tree, legality, storage, endpoint, credential, network, and deletion review.",
+      "verify": "Verify Fragments source, app ID, origin, commit, runtime, executable, backend, files and permissions offline, then prove daemons, remotes, clipboard, torrents, trackers, peers, ports, downloads, trash, notifications and filesystem state are unchanged."
+    }
   }
 ]

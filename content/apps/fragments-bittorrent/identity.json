@@ -1,0 +1,17 @@
+{
+  "index": 478,
+  "name": "Fragments",
+  "slug": "fragments-bittorrent",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/Fragments",
+    "installUrl": "https://flathub.org/apps/de.haeckerfelix.Fragments"
+  },
+  "website": "https://apps.gnome.org/Fragments/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "GNOME BitTorrent client powered by Transmission with torrent and magnet intake, file selection, queues, local sessions, and remote Fragments or Transmission control.",
+  "accent": "#D2B0FF",
+  "logoUrl": "https://gitlab.gnome.org/World/Fragments/-/raw/main/data/icons/hicolor/scalable/apps/de.haeckerfelix.Fragments.svg",
+  "logoSourceType": "official-project-asset"
+}

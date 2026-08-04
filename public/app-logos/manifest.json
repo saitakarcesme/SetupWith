@@ -2383,5 +2383,10 @@
     "file": "decoder-qr.svg",
     "source": "https://gitlab.gnome.org/World/decoder/-/raw/master/data/icons/com.belmoussaoui.Decoder.svg",
     "sourceType": "official-project-asset"
+  },
+  "fragments-bittorrent": {
+    "file": "fragments-bittorrent.svg",
+    "source": "https://gitlab.gnome.org/World/Fragments/-/raw/main/data/icons/hicolor/scalable/apps/de.haeckerfelix.Fragments.svg",
+    "sourceType": "official-project-asset"
   }
 }

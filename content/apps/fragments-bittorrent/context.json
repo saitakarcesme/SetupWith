@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "session_inventory",
+    "peer_privacy",
+    "storage_policy",
+    "remote_control"
+  ],
+  "secrets": [
+    {
+      "key": "remote_transmission_password",
+      "reference": "secret://remote/transmission-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "local Transmission daemon, remote Fragments or Transmission endpoint, TLS, authentication, and ownership",
+    "active torrents, info hashes, magnet URIs, trackers, peers, ratios, queues, priorities, and legal authorization",
+    "clipboard monitoring, magnet or torrent-link detection, sensitive clipboard data, and notification exposure",
+    "torrent file intake, metadata parsing, selected files, path traversal, automatic trashing, and source retention",
+    "download and incomplete directories, free space, sparse files, permissions, symlinks, mounts, and existing data",
+    "listen port, peer limit, UPnP or NAT-PMP port forwarding, encryption mode, firewall, and public IP exposure",
+    "metered network policy, bandwidth limits, sleep inhibition, background daemon, notifications, and resource use",
+    "start, pause, remove, delete data, move location, open downloaded file, CLI addition, and rollback"
+  ]
+}
