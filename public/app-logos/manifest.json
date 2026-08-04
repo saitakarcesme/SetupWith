@@ -2723,5 +2723,10 @@
     "file": "showtime-video-player.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Showtime.svg",
     "sourceType": "official-project-asset"
+  },
+  "parabolic-web-media-downloader": {
+    "file": "parabolic-web-media-downloader.svg",
+    "source": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.nickvision.tubeconverter.png",
+    "sourceType": "official-project-asset"
   }
 }

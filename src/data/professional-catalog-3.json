@@ -8048,5 +8048,57 @@
       "safety": "Never expose viewing history or frames, trust containers or subtitle markup, crawl media, fetch online metadata, select tracks silently, interrupt a presentation with fullscreen, route audio unexpectedly, or capture and write a screenshot without frame, rights, privacy, destination, collision, and metadata review.",
       "verify": "Verify GNOME provenance, app ID, manifest, commit, runtime, executable, plugins, files, checksum and permissions offline, then prove probes, streams, subtitles, audio, fullscreen, screenshots, files, networks and preferences are unchanged."
     }
+  },
+  {
+    "index": 546,
+    "name": "Parabolic",
+    "slug": "parabolic-web-media-downloader",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/NickvisionApps/Parabolic",
+      "installUrl": "https://flathub.org/apps/org.nickvision.tubeconverter"
+    },
+    "website": "https://nickvision.org/parabolic.html",
+    "category": "Browsers & Internet",
+    "vertical": "entertainment",
+    "description": "Cross-platform yt-dlp frontend for downloading permitted web video, audio, subtitles, and metadata in multiple formats with concurrent-job support.",
+    "accent": "#E5A50A",
+    "logoUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.nickvision.tubeconverter.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "authorized_url_intake",
+      "format_and_quality",
+      "download_destination",
+      "metadata_and_subtitles"
+    ],
+    "installTime": "10–25 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "official Nickvision repository, current Parabolic name, legacy org.nickvision.tubeconverter app ID, Flathub manifest, release, commit, dependencies, and checksum",
+      "existing package scope, queue and history counts, preferences, browser integration, cookie settings, sandbox overrides, and backup coverage",
+      "exact URL origin, redirects, query and fragment secrets, supported site, publisher, ownership, license, terms, consent, age and regional restrictions",
+      "single item or playlist, item count, live-stream state, time range, title redaction, duplicate detection, archive state, and cancellation boundary",
+      "video and audio format, resolution, bitrate, codec, container, subtitle languages, metadata, thumbnail, chapters, and post-processing",
+      "browser cookies, authentication, account identity, private media, session expiry, least-privilege cookie source, redaction, and revocation",
+      "destination root, canonical filenames, Unicode normalization, path traversal, symbolic links, collisions, free space, quotas, permissions, and partial files",
+      "yt-dlp, ffmpeg and optional downloader execution, concurrent jobs, bandwidth, metered network, checksum, quarantine, provenance, deletion, and rollback"
+    ],
+    "prompt": "Set up Parabolic from the official Nickvision repository and current Flathub listing (https://flathub.org/apps/org.nickvision.tubeconverter). Note that the product is now named Parabolic while its stable app ID remains `org.nickvision.tubeconverter`. Inventory Linux architecture, Flatpak scopes, existing ref and data ownership, queue/history counts, destination grant, browser-integration and cookie-setting presence, bundled yt-dlp/ffmpeg classes, concurrent-job limit, sandbox overrides and backup coverage without reading clipboard contents, URLs, titles, account names, cookies, download history or filenames. Match the manifest to official upstream before installing the stable ref in the existing scope. Do not launch Parabolic, inspect the clipboard, import browser cookies, resolve a URL, contact a site, enumerate a playlist, create a destination, download or post-process anything during setup.\n\nPreserve queue, history, archive, preferences, partial files, destinations, cookies, browser profiles, permissions, remotes, overrides and ownership. URLs may contain tokens and reveal private interests; redact query strings, fragments, titles and paths. Never assume that technical accessibility grants permission. Require publisher, ownership or license, site terms, consent, age and regional review before every later download. Do not bypass DRM, authentication, paywalls, rate limits or access controls.\n\nBefore a job, show the canonical redacted URL, redirect boundary, single-item or playlist scope, item count, live status, time range, formats, resolution, codecs, subtitles, metadata, thumbnail, chapters, estimated bytes and post-processing. Browser cookies are optional secrets: identify the minimum profile and domain scope, never print or copy values, obtain separate approval, and provide revocation. Validate destination containment, Unicode-normalized filenames, symlinks, collisions, quotas and free space; keep partial files distinguishable and never overwrite silently. Bound concurrency and bandwidth on metered networks.\n\nVerify repository ownership, product/app-ID mapping, manifest, commit, runtime, executable, yt-dlp/ffmpeg versions, files, checksums and permissions offline. Prove no clipboard read, cookie import, URL resolution, network request, playlist expansion, file creation, download or post-processing occurred. On failure, rollback only the new Parabolic ref; preserve runtimes, queues, history, archives, cookies, browser data, partials, destinations, remotes, overrides and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.nickvision.tubeconverter only after matching the Parabolic Flathub manifest to official Nickvision upstream, without launch, clipboard reads, cookie imports, URL resolution, site contact, playlist expansion, destinations, downloads, post-processing, DRM bypass, or access-control changes.",
+      "preserve": "queues, history, archives, preferences, cookies, browser profiles, partial files, destinations, permissions, backups, remotes, overrides, bundled tool state, shared runtimes, and scope ownership",
+      "safety": "Never leak tokenized URLs or cookies, equate access with authorization, bypass DRM or controls, expand playlists silently, download live or private media without consent, trust filenames, escape destinations, overwrite files, exhaust storage, or run unbounded concurrent yt-dlp/ffmpeg jobs.",
+      "verify": "Verify repository ownership, Parabolic/app-ID mapping, manifest, commit, runtime, executable, yt-dlp/ffmpeg, files, checksums and permissions offline, then prove clipboard, cookies, URLs, networks, playlists, files, downloads and post-processing are unchanged."
+    }
   }
 ]

@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–25 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "authorized_url_intake",
+    "format_and_quality",
+    "download_destination",
+    "metadata_and_subtitles"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "official Nickvision repository, current Parabolic name, legacy org.nickvision.tubeconverter app ID, Flathub manifest, release, commit, dependencies, and checksum",
+    "existing package scope, queue and history counts, preferences, browser integration, cookie settings, sandbox overrides, and backup coverage",
+    "exact URL origin, redirects, query and fragment secrets, supported site, publisher, ownership, license, terms, consent, age and regional restrictions",
+    "single item or playlist, item count, live-stream state, time range, title redaction, duplicate detection, archive state, and cancellation boundary",
+    "video and audio format, resolution, bitrate, codec, container, subtitle languages, metadata, thumbnail, chapters, and post-processing",
+    "browser cookies, authentication, account identity, private media, session expiry, least-privilege cookie source, redaction, and revocation",
+    "destination root, canonical filenames, Unicode normalization, path traversal, symbolic links, collisions, free space, quotas, permissions, and partial files",
+    "yt-dlp, ffmpeg and optional downloader execution, concurrent jobs, bandwidth, metered network, checksum, quarantine, provenance, deletion, and rollback"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "index": 546,
+  "name": "Parabolic",
+  "slug": "parabolic-web-media-downloader",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/NickvisionApps/Parabolic",
+    "installUrl": "https://flathub.org/apps/org.nickvision.tubeconverter"
+  },
+  "website": "https://nickvision.org/parabolic.html",
+  "category": "Browsers & Internet",
+  "vertical": "entertainment",
+  "description": "Cross-platform yt-dlp frontend for downloading permitted web video, audio, subtitles, and metadata in multiple formats with concurrent-job support.",
+  "accent": "#E5A50A",
+  "logoUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.nickvision.tubeconverter.png",
+  "logoSourceType": "official-project-asset"
+}
