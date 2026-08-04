@@ -1,0 +1,17 @@
+{
+  "index": 544,
+  "name": "Audio Player",
+  "slug": "decibels-audio-player",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/decibels",
+    "installUrl": "https://flathub.org/apps/org.gnome.Decibels"
+  },
+  "website": "https://apps.gnome.org/Decibels/",
+  "category": "Music & Streaming",
+  "vertical": "entertainment",
+  "description": "GNOME Audio Player, formerly presented as Decibels, for opening local audio files with waveform navigation, playback-speed controls, seeking, and simultaneous-file playback.",
+  "accent": "#3584E4",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Decibels.svg",
+  "logoSourceType": "official-project-asset"
+}

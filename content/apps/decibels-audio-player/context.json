@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Beginner",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "local_audio_intake",
+    "playback_speed",
+    "waveform_and_seek",
+    "multi_stream_audio"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "official GNOME source, org.gnome.Decibels app ID, Flathub manifest, stable version, commit, runtime, codecs, and checksum",
+    "existing package scope, application data, remembered files and positions, settings ownership, sandbox overrides, and backup coverage",
+    "local file portal, selected audio path, filename privacy, symbolic links, file size, type detection, checksum, and read-only intent",
+    "container and codec parsing, malformed metadata, embedded artwork, duration claims, waveform generation, resource limits, and decoder isolation",
+    "playback speed, pitch behavior, seek target, duration boundary, waveform precision, chapter or cue semantics, and accidental jumps",
+    "multiple simultaneous files, stream identity, overlap, pause and stop behavior, queue absence, and aggregate output volume",
+    "audio sink, headphones or speakers, application and system volume, mute, routing, Bluetooth latency, shared spaces, and hearing safety",
+    "recent-file privacy, screen sharing, notifications, session cleanup, app reset, uninstall, shared runtimes, and rollback"
+  ]
+}
