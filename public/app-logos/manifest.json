@@ -2133,5 +2133,10 @@
     "file": "warp-terminal.svg",
     "source": "https://warp.dev",
     "sourceType": "simple-icons-official-glyph"
+  },
+  "rancher-desktop": {
+    "file": "rancher-desktop.svg",
+    "source": "https://rancher.com/brand-guidelines/",
+    "sourceType": "simple-icons-official-glyph"
   }
 }

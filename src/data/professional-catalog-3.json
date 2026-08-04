@@ -1782,5 +1782,45 @@
       "safety": "Keep first launch signed out and offline-capable; stop before browser authentication, SSO, importing another terminal's settings, enabling telemetry or crash reports, syncing settings, indexing repositories, running an agent, sharing sessions, installing the Oz CLI, or changing PATH and default-terminal integration.",
       "verify": "Confirm package signature, Warp version, architecture, graphics or ConPTY readiness, and selected startup shell; open a disposable local session, execute only a harmless printf command, inspect privacy toggles and network log, then verify no login, cloud sync, repository index, telemetry opt-in, or shell file change occurred."
     }
+  },
+  {
+    "index": 428,
+    "name": "Rancher Desktop",
+    "slug": "rancher-desktop",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/rancher-sandbox/rancher-desktop",
+      "installUrl": "https://github.com/rancher-sandbox/rancher-desktop/releases"
+    },
+    "website": "https://rancherdesktop.io/",
+    "category": "DevOps & Cloud",
+    "vertical": "software",
+    "description": "Desktop container and Kubernetes environment with selectable Moby or containerd engines, bundled CLIs, and cross-platform virtualization.",
+    "accent": "#0075A8",
+    "simpleIconSlug": "rancher",
+    "secrets": [],
+    "config": [
+      "container_engine",
+      "kubernetes_enabled",
+      "kubernetes_version",
+      "resource_limits"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": true,
+    "mayRequireRestart": true,
+    "setup": {
+      "install": "Select the signed Rancher Desktop release for the detected platform and architecture, verify macOS virtualization, Windows WSL, or Linux KVM prerequisites, and show the Kubernetes image download plus bundled kubectl, Helm, nerdctl, Docker, and Compose impact before first launch.",
+      "preserve": "existing Rancher Desktop virtual machines, snapshots, images, containers, volumes, Kubernetes workloads, kubeconfig contexts, deployment profiles, WSL distributions, KVM permissions, Docker contexts, registry credentials, caches, and resource settings",
+      "safety": "Do not install WSL, the privileged service, repository keys, KVM group changes, system profiles, or CLI links; switch container engines or Kubernetes versions; reset Kubernetes; factory-reset data; expose non-loopback ports; or replace the active Docker and kubeconfig contexts without separate approval.",
+      "verify": "Confirm signature, version, virtualization readiness, rdctl state, selected engine, Kubernetes enablement, CLI paths, Docker and kubeconfig contexts, and localhost-only networking; avoid pulling images or starting workloads, and prove all pre-existing runtimes, clusters, snapshots, volumes, profiles, and contexts remain unchanged."
+    }
   }
 ]

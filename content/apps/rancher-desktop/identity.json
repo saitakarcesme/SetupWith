@@ -1,0 +1,16 @@
+{
+  "index": 428,
+  "name": "Rancher Desktop",
+  "slug": "rancher-desktop",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/rancher-sandbox/rancher-desktop",
+    "installUrl": "https://github.com/rancher-sandbox/rancher-desktop/releases"
+  },
+  "website": "https://rancherdesktop.io/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Desktop container and Kubernetes environment with selectable Moby or containerd engines, bundled CLIs, and cross-platform virtualization.",
+  "accent": "#0075A8",
+  "simpleIconSlug": "rancher"
+}
