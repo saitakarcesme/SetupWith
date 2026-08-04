@@ -1,0 +1,18 @@
+{
+  "index": 425,
+  "name": "OrbStack",
+  "slug": "orbstack",
+  "source": {
+    "type": "website",
+    "url": "https://orbstack.dev/",
+    "installUrl": "https://orbstack.dev/download"
+  },
+  "website": "https://orbstack.dev/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Native macOS runtime for Docker containers, local Kubernetes clusters, and lightweight Linux virtual machines.",
+  "accent": "#1A1A1A",
+  "simpleIconSlug": null,
+  "logoUrl": "https://orbstack.dev/img/icon-square256.png",
+  "logoSourceType": "official-project-asset"
+}

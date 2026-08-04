@@ -1663,5 +1663,45 @@
       "safety": "Stop before sign-in, MFA, portal entry, OAuth consent, production record access, import, export, email connection or send, workflow enrollment, campaign publication, billing, marketplace installation, property change, deletion, or merge.",
       "verify": "Confirm the official HubSpot origin and intended sandbox or production classification, stop at authentication, inspect installed-app permissions, and verify no portal session, CRM record, email, workflow, import, export, integration, or production data changed."
     }
+  },
+  {
+    "index": 425,
+    "name": "OrbStack",
+    "slug": "orbstack",
+    "source": {
+      "type": "website",
+      "url": "https://orbstack.dev/",
+      "installUrl": "https://orbstack.dev/download"
+    },
+    "website": "https://orbstack.dev/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Native macOS runtime for Docker containers, local Kubernetes clusters, and lightweight Linux virtual machines.",
+    "accent": "#1A1A1A",
+    "simpleIconSlug": null,
+    "logoUrl": "https://orbstack.dev/img/icon-square256.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "memory_mib",
+      "cpu",
+      "rosetta",
+      "docker_context"
+    ],
+    "platforms": [
+      "macOS"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install OrbStack from its notarized macOS download or the official Homebrew cask, then launch it without migrating Docker Desktop data, replacing command-line tools, changing the active Docker context, or creating a Linux machine.",
+      "preserve": "existing Docker Desktop and Colima contexts, containers, images, volumes, BuildKit caches, Kubernetes clusters, Linux machines, registry credentials, Compose projects, socket links, PATH ordering, and resource limits",
+      "safety": "Ask separately before updating /var/run/docker.sock, linking tools into /usr/local/bin, switching Docker contexts, stopping another runtime, copying Docker data, enabling Kubernetes or Rosetta, exposing container networks, forwarding SSH agents, or attaching USB devices.",
+      "verify": "Confirm the OrbStack code signature and version, inspect orb status and the available Docker contexts, run an approved disposable hello-world container without publishing ports, remove it, and prove that pre-existing runtimes, contexts, volumes, machines, and socket ownership remain unchanged."
+    }
   }
 ]

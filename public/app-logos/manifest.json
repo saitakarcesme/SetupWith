@@ -2118,5 +2118,10 @@
     "file": "hubspot.svg",
     "source": "https://www.hubspot.com/style-guide",
     "sourceType": "simple-icons-official-glyph"
+  },
+  "orbstack": {
+    "file": "orbstack.svg",
+    "source": "https://orbstack.dev/img/icon-square256.png",
+    "sourceType": "official-project-asset"
   }
 }
