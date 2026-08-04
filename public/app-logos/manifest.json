@@ -2393,5 +2393,10 @@
     "file": "newsflash-rss.svg",
     "source": "https://gitlab.com/news-flash/news_flash_gtk/-/raw/main/data/icons/hicolor/io.gitlab.news_flash.NewsFlash.svg",
     "sourceType": "official-project-asset"
+  },
+  "blanket-ambient-sounds": {
+    "file": "blanket-ambient-sounds.svg",
+    "source": "https://raw.githubusercontent.com/rafaelmardojai/blanket/master/data/com.rafaelmardojai.Blanket.svg",
+    "sourceType": "official-project-asset"
   }
 }

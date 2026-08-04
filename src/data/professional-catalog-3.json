@@ -4558,5 +4558,57 @@
       "safety": "Never expose feed interests, trust one sync side for deletions, merge without backup, leak OPML credentials, render untrusted articles, load trackers, bypass paywalls, fetch full content, show locked-screen titles, share, or open browsers without server, scope, conflict, privacy, renderer, endpoint, and retention review.",
       "verify": "Verify NewsFlash source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove secrets, servers, feeds, sync, OPML, rendering, caches, notifications, sharing, clipboard and browser state are unchanged."
     }
+  },
+  {
+    "index": 480,
+    "name": "Blanket",
+    "slug": "blanket-ambient-sounds",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/rafaelmardojai/blanket",
+      "installUrl": "https://flathub.org/apps/com.rafaelmardojai.Blanket"
+    },
+    "website": "https://apps.gnome.org/Blanket/",
+    "category": "Music & Streaming",
+    "vertical": "software",
+    "description": "Offline ambient-sound mixer with bundled loops, custom audio, saved presets, background autostart, MPRIS controls, power-aware pause, and optional suspend inhibition.",
+    "accent": "#C0DCFF",
+    "logoUrl": "https://raw.githubusercontent.com/rafaelmardojai/blanket/master/data/com.rafaelmardojai.Blanket.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "sound_library",
+      "volume_safety",
+      "background_behavior",
+      "power_policy"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "bundled birds, boat, city, coffee shop, fireplace, noise, rain, storm, stream, train, waves, and wind loops",
+      "custom audio paths, filenames, symlinks, codecs, metadata, duration, loop points, and decoder trust",
+      "per-sound gain, master volume, simultaneous layers, clipping, output device, hearing comfort, and ramp-up",
+      "saved presets, custom names, sound membership, volumes, rename, deletion, import, and retention",
+      "background autostart, start-paused preference, session login, hidden playback, and process lifetime",
+      "MPRIS publication, desktop media controls, play/pause/stop, next/previous preset, and other-session access",
+      "suspend inhibition, playback-active condition, battery use, sleep expectations, and power-saver pause",
+      "audio device, PipeWire or PulseAudio routing, Bluetooth, notifications, medical claims, and rollback"
+    ],
+    "prompt": "Set up Blanket from its official repository and verified Flathub listing (https://apps.gnome.org/Blanket/). Inventory Linux architecture, Flatpak scopes, existing Blanket package and data paths, saved preset count, custom-sound locations, master/per-sound volume policy, audio server, selected output, background autostart, start-paused setting, MPRIS state, suspend inhibition and power-saver behavior without reading filenames or opening audio. Install stable `com.rafaelmardojai.Blanket` from verified Flathub in the existing ownership scope. Do not install an unofficial package, compile from source, launch Blanket, play a tone or request audio access during setup.\n\nPreserve every preset, custom sound, custom name, volume, loop choice, output preference, autostart setting and power policy byte-for-byte. Do not enumerate private audio libraries, follow symlinks, decode custom files, rename sounds, normalize gain or create a demonstration preset. Custom filenames and metadata may reveal locations, people or routines; keep them out of diagnostics. Treat malformed audio and codec metadata as untrusted parser input and do not install codecs merely to make a file playable.\n\nMultiple ambient layers can sum above a safe or unclipped level even when each individual slider seems moderate. Before future playback show selected layers, per-layer and master gain, output device, route, expected duration and a gradual volume plan. Never produce audio unexpectedly, switch to Bluetooth speakers, bypass an existing limiter or present Blanket as medical treatment for insomnia, tinnitus, anxiety or concentration disorders. Bundled white/pink noise is audio content, not a calibrated therapeutic signal.\n\nBackground autostart and MPRIS allow playback control outside the visible window. Keep autostart, start-paused and MPRIS exposure unchanged during setup. Suspend inhibition can prevent sleep and drain a battery; leave it disabled unless explicitly reviewed, and preserve power-saver pause behavior. Verify Blanket provenance, app ID, origin, commit, runtime, executable, bundled sounds, files and permissions offline. Prove no audio file read, decoder, stream, device route, preset, MPRIS name, login item, inhibitor, power policy, notification or network request changed. On failure, rollback only the new Blanket ref in its original scope; preserve shared runtimes, remotes, overrides, custom sounds, presets and desktop audio configuration.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.rafaelmardojai.Blanket from verified Flathub in the existing scope without unofficial packages, source builds, launch, audio file reads, codec installation, playback, device access, presets, MPRIS changes, autostart, or inhibitors.",
+      "preserve": "all presets, custom sounds and names, volume and loop settings, output routes, audio server state, autostart, start-paused, MPRIS, suspend inhibition, power-saver behavior, notifications, remotes, overrides, and scope ownership",
+      "safety": "Never decode untrusted custom sounds, expose filenames, combine gains without clipping review, play unexpected audio, switch outputs, make medical claims, enable hidden autostart, publish new MPRIS state, or inhibit sleep without file, codec, volume, route, visibility, power, and comfort review.",
+      "verify": "Verify Blanket source, app ID, origin, commit, runtime, executable, bundled sounds, files and permissions offline, then prove audio reads, decoders, streams, routes, presets, MPRIS, login items, inhibitors, power policy, notifications and network state are unchanged."
+    }
   }
 ]

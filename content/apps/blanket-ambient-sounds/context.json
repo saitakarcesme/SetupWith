@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "sound_library",
+    "volume_safety",
+    "background_behavior",
+    "power_policy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "bundled birds, boat, city, coffee shop, fireplace, noise, rain, storm, stream, train, waves, and wind loops",
+    "custom audio paths, filenames, symlinks, codecs, metadata, duration, loop points, and decoder trust",
+    "per-sound gain, master volume, simultaneous layers, clipping, output device, hearing comfort, and ramp-up",
+    "saved presets, custom names, sound membership, volumes, rename, deletion, import, and retention",
+    "background autostart, start-paused preference, session login, hidden playback, and process lifetime",
+    "MPRIS publication, desktop media controls, play/pause/stop, next/previous preset, and other-session access",
+    "suspend inhibition, playback-active condition, battery use, sleep expectations, and power-saver pause",
+    "audio device, PipeWire or PulseAudio routing, Bluetooth, notifications, medical claims, and rollback"
+  ]
+}

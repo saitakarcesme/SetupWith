@@ -1,0 +1,17 @@
+{
+  "index": 480,
+  "name": "Blanket",
+  "slug": "blanket-ambient-sounds",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/rafaelmardojai/blanket",
+    "installUrl": "https://flathub.org/apps/com.rafaelmardojai.Blanket"
+  },
+  "website": "https://apps.gnome.org/Blanket/",
+  "category": "Music & Streaming",
+  "vertical": "software",
+  "description": "Offline ambient-sound mixer with bundled loops, custom audio, saved presets, background autostart, MPRIS controls, power-aware pause, and optional suspend inhibition.",
+  "accent": "#C0DCFF",
+  "logoUrl": "https://raw.githubusercontent.com/rafaelmardojai/blanket/master/data/com.rafaelmardojai.Blanket.svg",
+  "logoSourceType": "official-project-asset"
+}
