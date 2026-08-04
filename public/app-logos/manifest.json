@@ -2438,5 +2438,10 @@
     "file": "gaphor-modeling.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gaphor.Gaphor.svg",
     "sourceType": "official-project-asset"
+  },
+  "gradia-screenshot-annotator": {
+    "file": "gradia-screenshot-annotator.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/be.alexandervanhee.gradia.svg",
+    "sourceType": "official-project-asset"
   }
 }

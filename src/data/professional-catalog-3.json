@@ -5037,5 +5037,57 @@
       "safety": "Never expose architecture, trust model input, migrate authoritative files in place, normalize IDs, auto-fix semantics, relayout diagrams, assume safe concurrent merging, retain unjustified home access, or export hidden details without source, schema, language, integrity, ownership, permission, metadata, and restore review.",
       "verify": "Verify Gaphor source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove models, schemas, recent files, recovery data, imports, layouts, clipboard, exports and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 489,
+    "name": "Gradia",
+    "slug": "gradia-screenshot-annotator",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/AlexanderVanhee/Gradia",
+      "installUrl": "https://flathub.org/apps/be.alexandervanhee.gradia"
+    },
+    "website": "https://apps.gnome.org/Gradia/",
+    "category": "Design & Media",
+    "vertical": "software",
+    "description": "Screenshot preparation tool with ten annotation modes, censoring, text and arrows, image or gradient backgrounds, shadows, padding, code-snippet rendering, and optional Imgur upload.",
+    "accent": "#26A269",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/be.alexandervanhee.gradia.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "capture_privacy",
+      "redaction_assurance",
+      "export_metadata",
+      "upload_lifecycle"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "screenshot or image source, owner, subject consent, classification, visible accounts, notifications, location, and sharing purpose",
+      "crop boundary, off-canvas pixels, layers, undo history, embedded thumbnails, EXIF or XMP metadata, filenames, and temporary files",
+      "text, arrows, shapes, highlights, numbering and other annotations, factual accuracy, attribution, accessibility, and approval",
+      "censor mode, opaque versus reversible treatment, edge coverage, zoom inspection, raster flattening, and original-file separation",
+      "background image or gradient, shadow, padding, auto-balance, dimensions, scaling, color profile, transparency, and export format",
+      "code-snippet language, syntax highlighting, secrets, tokens, internal hosts, comments, line numbers, license, and provenance",
+      "Imgur quick upload, network destination, public or unlisted visibility, retention, deletion link, terms, telemetry, and jurisdiction",
+      "clipboard, save path, overwrite, share target, cache, recent files, portal permission, failure cleanup, and rollback"
+    ],
+    "prompt": "Set up Gradia from its official repository and verified Flathub listing (https://apps.gnome.org/Gradia/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, screenshot-portal state, recent-file count, default export directory, clipboard policy, image-cache location and whether Imgur upload is allowed without opening images, reading filenames or contacting a service. Install stable `be.alexandervanhee.gradia` from verified Flathub in the existing ownership scope. Do not compile from source, launch Gradia, capture or import a screenshot, render a code snippet, grant portal access, copy an image, export or upload during setup.\n\nPreserve originals, edits, annotations, backgrounds, dimensions, color profiles, recent-file state and preferences. Screenshots can expose names, messages, credentials, customer data, device identifiers and location clues. Before future editing identify the image owner, intended audience, classification and minimum crop. Work on a protected duplicate. Inspect crop boundaries, off-canvas pixels, embedded thumbnails, EXIF/XMP metadata, filenames, temporary files and undo data; a visually cropped image may still retain sensitive material elsewhere.\n\nA blur, pixelation or annotation layer is not reliable redaction if underlying pixels remain recoverable. For censoring, cover the full sensitive region with an opaque treatment, flatten to a new raster output, strip metadata, close and reopen that output, inspect at high zoom and have a second reviewer confirm it without access to the original. Keep the original separate and access-controlled. Do not claim redaction success from appearance in the editor alone. Verify annotations and arrows for factual accuracy and accessibility before publication.\n\nTreat source snippets as sensitive code: scan for tokens, internal hosts, customer identifiers, comments and license restrictions before rendering. Imgur upload leaves the device and may create a public or hard-to-delete copy; show final pixels, destination, visibility, retention, terms, jurisdiction and deletion mechanism, then require explicit approval. Never upload as a verification step. Verify provenance, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no image read, portal grant, cache, clipboard, export, network request, upload or filesystem state changed. On failure, rollback only the new Gradia ref in its original scope; preserve runtimes, remotes, overrides, originals and edits.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable be.alexandervanhee.gradia from verified Flathub in the existing scope without source builds, launch, capture, image import, code rendering, portal grants, clipboard access, export, network requests, or uploads.",
+      "preserve": "all original images, edits, annotations, backgrounds, dimensions, profiles, metadata, recent-file state, caches, clipboard policy, upload policy, portal decisions, remotes, overrides, and scope ownership",
+      "safety": "Never expose screenshot content, trust visual crops, use reversible blur as redaction, retain hidden metadata, misstate annotations, render secret-bearing code, overwrite originals, or upload without ownership, audience, crop, flattening, metadata, second-review, destination, retention, and deletion review.",
+      "verify": "Verify Gradia source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove images, portals, caches, clipboard, exports, networks, uploads and filesystem state are unchanged."
+    }
   }
 ]

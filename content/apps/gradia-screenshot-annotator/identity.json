@@ -1,0 +1,17 @@
+{
+  "index": 489,
+  "name": "Gradia",
+  "slug": "gradia-screenshot-annotator",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/AlexanderVanhee/Gradia",
+    "installUrl": "https://flathub.org/apps/be.alexandervanhee.gradia"
+  },
+  "website": "https://apps.gnome.org/Gradia/",
+  "category": "Design & Media",
+  "vertical": "software",
+  "description": "Screenshot preparation tool with ten annotation modes, censoring, text and arrows, image or gradient backgrounds, shadows, padding, code-snippet rendering, and optional Imgur upload.",
+  "accent": "#26A269",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/be.alexandervanhee.gradia.svg",
+  "logoSourceType": "official-project-asset"
+}
