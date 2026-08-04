@@ -2643,5 +2643,10 @@
     "file": "boatswain-stream-deck-control.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.feaneron.Boatswain.svg",
     "sourceType": "official-project-asset"
+  },
+  "bobby-sqlite-browser": {
+    "file": "bobby-sqlite-browser.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/studio.planetpeanut.Bobby.svg",
+    "sourceType": "official-project-asset"
   }
 }

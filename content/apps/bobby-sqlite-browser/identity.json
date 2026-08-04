@@ -1,0 +1,17 @@
+{
+  "index": 530,
+  "name": "Bobby",
+  "slug": "bobby-sqlite-browser",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/hbons/Bobby",
+    "installUrl": "https://flathub.org/apps/studio.planetpeanut.Bobby"
+  },
+  "website": "https://apps.gnome.org/Bobby/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Focused GNOME viewer for opening SQLite database files, browsing tables and views of any size, and explicitly copying selected rows or cells.",
+  "accent": "#E5A50A",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/studio.planetpeanut.Bobby.svg",
+  "logoSourceType": "official-project-asset"
+}

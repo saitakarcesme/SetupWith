@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "file_open_integrity",
+    "schema_and_query_limits",
+    "sensitive_data_redaction",
+    "clipboard_controls"
+  ],
+  "secrets": [
+    {
+      "key": "bobby_sensitive_database_value_reference",
+      "reference": "secret://bobby/sensitive-database-value-reference"
+    }
+  ],
+  "permissionCheckpoints": [
+    "database path, owner, permissions, device and inode, checksum, SQLite header, page size, journal mode, WAL and SHM companions, and trust",
+    "immutable read-only open, lock behavior, live-writer concurrency, snapshot consistency, WAL visibility, busy timeout, symbolic links, and copy strategy",
+    "schema objects, tables, views, virtual tables, triggers, indexes, declared types, extensions, application-defined functions, and untrusted SQL text",
+    "row and column counts, pagination, sort and filter behavior, BLOB limits, malformed pages, recursion, memory, CPU, query and rendering timeouts",
+    "personal data, credentials, tokens, message content, telemetry, deleted remnants, diagnostic redaction, masking, screen sharing, and retention",
+    "cell and row copy scope, BLOB representation, NULL distinction, delimiters, quoting, line breaks, spreadsheet formula injection, and clipboard expiry",
+    "filesystem and portal grants, recent files, thumbnail or cache behavior, network absence, telemetry, and least privilege",
+    "database close, snapshot deletion, cache and recent clearing, clipboard cleanup, app reset, uninstall, backups, and rollback"
+  ]
+}

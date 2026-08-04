@@ -7210,5 +7210,59 @@
       "safety": "Never treat profiles as passive, expose device serials or credentials, attach the wrong deck, remap live controls, install broad USB rules, trust custom assets, play sudden audio, mutate OBS or media accidentally, permit SSRF, interpolate commands through a shell, or repeat stuck-key actions.",
       "verify": "Verify Boatswain source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove USB devices, displays, profiles, assets, audio, media, OBS, networks, files, processes and counters are untouched."
     }
+  },
+  {
+    "index": 530,
+    "name": "Bobby",
+    "slug": "bobby-sqlite-browser",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/hbons/Bobby",
+      "installUrl": "https://flathub.org/apps/studio.planetpeanut.Bobby"
+    },
+    "website": "https://apps.gnome.org/Bobby/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Focused GNOME viewer for opening SQLite database files, browsing tables and views of any size, and explicitly copying selected rows or cells.",
+    "accent": "#E5A50A",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/studio.planetpeanut.Bobby.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "bobby_sensitive_database_value_reference"
+    ],
+    "config": [
+      "file_open_integrity",
+      "schema_and_query_limits",
+      "sensitive_data_redaction",
+      "clipboard_controls"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "database path, owner, permissions, device and inode, checksum, SQLite header, page size, journal mode, WAL and SHM companions, and trust",
+      "immutable read-only open, lock behavior, live-writer concurrency, snapshot consistency, WAL visibility, busy timeout, symbolic links, and copy strategy",
+      "schema objects, tables, views, virtual tables, triggers, indexes, declared types, extensions, application-defined functions, and untrusted SQL text",
+      "row and column counts, pagination, sort and filter behavior, BLOB limits, malformed pages, recursion, memory, CPU, query and rendering timeouts",
+      "personal data, credentials, tokens, message content, telemetry, deleted remnants, diagnostic redaction, masking, screen sharing, and retention",
+      "cell and row copy scope, BLOB representation, NULL distinction, delimiters, quoting, line breaks, spreadsheet formula injection, and clipboard expiry",
+      "filesystem and portal grants, recent files, thumbnail or cache behavior, network absence, telemetry, and least privilege",
+      "database close, snapshot deletion, cache and recent clearing, clipboard cleanup, app reset, uninstall, backups, and rollback"
+    ],
+    "prompt": "Set up Bobby from its official project and verified Flathub listing (https://apps.gnome.org/Bobby/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, recent-database count, aggregate cache bytes, portal grants, declared read/write filesystem reach, clipboard access, sandbox overrides and backup coverage without opening any database or revealing paths, schemas, table or column names, row counts tied to identities, cell values, BLOBs, deleted remnants, tokens, credentials or application data. Install stable `studio.planetpeanut.Bobby` from verified Flathub in the existing ownership scope. Do not compile from source, launch Bobby, enumerate files, open a SQLite connection, read headers or schemas, attach WAL or SHM files, acquire a lock, execute a query, load an extension, render rows, copy a cell, update recents or mutate a database during setup.\n\nPreserve every database, journal, WAL and SHM byte, owner, permission, timestamp, lock and live-writer relationship, plus Bobby preferences, recents, caches, portal grants, remotes, overrides and scope ownership. Databases can contain complete private histories and credentials; redact both values and identifying schema names. Installation must not recover deleted records, checkpoint a WAL, alter journal mode, create side files, normalize a schema, follow an unexpected symlink or associate `.db` files globally without review.\n\nBefore later inspection, verify the SQLite header, device and inode, checksum and companion-file set. If a database is live, obtain an application-consistent snapshot through the owning application's approved mechanism; copying only the main file can omit committed WAL data. Open the approved copy immutable and read-only, with no extension loading, application-defined functions, writes, checkpoints or schema side effects. Treat schema SQL, virtual tables, malformed pages and BLOBs as untrusted input. Apply page, row, column, BLOB, recursion, memory, CPU, query and rendering limits. Validate with a synthetic database containing public boundary fixtures.\n\nPagination and sorting must state whether they operate on the full result or only a visible page. Display NULL, empty text, zero-length BLOB and numeric zero distinctly. Copy requires an explicit cell or row selection, a preview of quoting and delimiters, formula-injection neutralization for spreadsheet targets and a defined clipboard lifetime; tests must not overwrite user clipboard data. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no file enumeration, SQLite open, lock, header or schema read, query, row render, extension, clipboard operation, recent write or database mutation occurred. On failure, rollback only the new Bobby ref in its original scope; preserve shared runtimes, remotes, overrides, databases, companions, locks, preferences and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable studio.planetpeanut.Bobby from verified Flathub in the existing scope without source builds, launch, file enumeration, SQLite opens, schema reads, WAL attachment, locks, queries, extensions, row rendering, clipboard, recents, or mutations.",
+      "preserve": "every database, journal, WAL and SHM byte, owner, permission, timestamp, lock and live-writer relationship, preferences, recents, caches, portal grants, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose schemas or values, inspect a live database inconsistently, omit WAL data, checkpoint or create side files, load extensions, trust virtual tables, recover deleted data casually, follow symlinks, confuse NULL and empty values, copy without scope, inject spreadsheet formulas, or change file associations silently.",
+      "verify": "Verify Bobby source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove files, SQLite connections, companions, locks, schemas, queries, rows, extensions, clipboards, recents and databases are unchanged."
+    }
   }
 ]
