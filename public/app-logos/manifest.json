@@ -2338,5 +2338,10 @@
     "file": "cartridges-game-launcher.svg",
     "source": "https://raw.githubusercontent.com/kra-mo/cartridges/main/data/icons/hicolor/scalable/apps/page.kramo.Cartridges.svg",
     "sourceType": "official-project-asset"
+  },
+  "dialect-translation": {
+    "file": "dialect-translation.svg",
+    "source": "https://raw.githubusercontent.com/dialect-app/dialect/main/data/app.drey.Dialect.svg",
+    "sourceType": "official-project-asset"
   }
 }

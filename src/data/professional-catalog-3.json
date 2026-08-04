@@ -3972,5 +3972,59 @@
       "safety": "Never expose launcher databases or play history, execute imported commands, merge by title, alter source launchers, broaden filesystem access, scan ROMs, transmit title queries, download covers, enable shell search, or launch games without source, command, privacy, path, license, and rollback review.",
       "verify": "Verify Cartridges source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove imports, records, covers, commands, handlers, search settings, processes, network state and every source library remain unchanged."
     }
+  },
+  {
+    "index": 469,
+    "name": "Dialect",
+    "slug": "dialect-translation",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/dialect-app/dialect",
+      "installUrl": "https://flathub.org/apps/app.drey.Dialect"
+    },
+    "website": "https://dialectapp.org/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "GNOME translation client with multiple proprietary and open-source providers, automatic language detection, history, clipboard actions, and text-to-speech.",
+    "accent": "#3584E4",
+    "logoUrl": "https://raw.githubusercontent.com/dialect-app/dialect/main/data/app.drey.Dialect.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "translation_provider_api_key"
+    ],
+    "config": [
+      "provider_policy",
+      "endpoint_privacy",
+      "history_retention",
+      "speech_controls"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "Google, DeepL, Kagi, Microsoft, Yandex, LibreTranslate, Lingva, or other provider selection",
+      "source text, detected language, target language, metadata, IP address, and provider retention",
+      "custom instance URL, TLS verification, redirects, API compatibility, and operator trust",
+      "DeepL API key, Kagi session token, provider credential storage, libsecret, and diagnostic redaction",
+      "translation history, sensitive text retention, search, deletion, migration, and backups",
+      "clipboard read and write, selection ownership, background monitoring, and accidental disclosure",
+      "text-to-speech endpoint, transmitted translation, voice, GStreamer playback, and audio output",
+      "GNOME search provider, automatic detection, network tests, default provider changes, and rollback"
+    ],
+    "prompt": "Set up Dialect from its official project and verified Flathub listing (https://dialectapp.org/). Inventory Linux architecture, desktop, Flatpak scopes, existing Dialect package, provider choice, custom LibreTranslate or Lingva endpoint, stored provider credentials, translation history policy, clipboard integration, text-to-speech settings, audio output and GNOME search-provider state. Install stable `app.drey.Dialect` from the verified Flathub origin in the existing ownership scope. Do not replace a distro package, build from source, launch Dialect, choose a provider, store a key or send a test phrase during setup.\n\nPreserve provider settings, endpoint URLs, language pairs, history, favorites, credentials, clipboard preferences, speech configuration, window state and search integration. Translation content may contain contracts, source code, health information, credentials or private conversations. Never include existing history or clipboard contents in diagnostics. Keep DeepL keys and Kagi session tokens inside the existing secret-service boundary; do not print, migrate, validate or substitute them, and never treat a Kagi session token as a harmless URL.\n\nEvery online translation or automatic-language-detection request can disclose source text, language metadata and network identity to Google, DeepL, Kagi, Microsoft, Yandex or an operator of a LibreTranslate/Lingva instance. Before future use show the exact HTTPS endpoint, operator, provider terms, authentication method, text scope, retention expectation and redirects. Do not probe public instances, accept invalid TLS, silently fall back between providers or send sample text. A self-hosted endpoint is not trusted merely because it is open source.\n\nDo not read or overwrite the clipboard, enable background selection handling, retain a new history entry, activate the GNOME search provider, synthesize speech or open an audio device. Text-to-speech may send translated content to another service, so review its endpoint independently from translation. Verify Dialect provenance, app ID, origin, installed commit, runtime, executable, files and declared permissions through Flatpak metadata offline. Prove no provider, keyring item, endpoint, history record, clipboard, search setting, audio process or network request changed. On failure, rollback only the newly installed Dialect ref in its original scope; retain shared runtimes, remotes, overrides, history and secrets.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable app.drey.Dialect from verified Flathub in the existing scope without package migration, source builds, launch, provider selection, credentials, endpoint probes, sample translations, search activation, clipboard access, or speech.",
+      "preserve": "all provider choices, endpoints, language pairs, history, favorites, secret-service credentials, clipboard and speech preferences, audio settings, search integration, window state, remotes, overrides, and scope ownership",
+      "safety": "Never transmit text, probe endpoints, weaken TLS, fall back providers, reveal keys or history, access the clipboard, enable search, retain samples, or synthesize speech without provider, operator, content, retention, secret, endpoint, and audio review.",
+      "verify": "Verify Dialect source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove providers, secrets, endpoints, history, clipboard, search, audio processes and network state are unchanged."
+    }
   }
 ]

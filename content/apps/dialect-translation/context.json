@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "provider_policy",
+    "endpoint_privacy",
+    "history_retention",
+    "speech_controls"
+  ],
+  "secrets": [
+    {
+      "key": "translation_provider_api_key",
+      "reference": "secret://translation/provider-api-key"
+    }
+  ],
+  "permissionCheckpoints": [
+    "Google, DeepL, Kagi, Microsoft, Yandex, LibreTranslate, Lingva, or other provider selection",
+    "source text, detected language, target language, metadata, IP address, and provider retention",
+    "custom instance URL, TLS verification, redirects, API compatibility, and operator trust",
+    "DeepL API key, Kagi session token, provider credential storage, libsecret, and diagnostic redaction",
+    "translation history, sensitive text retention, search, deletion, migration, and backups",
+    "clipboard read and write, selection ownership, background monitoring, and accidental disclosure",
+    "text-to-speech endpoint, transmitted translation, voice, GStreamer playback, and audio output",
+    "GNOME search provider, automatic detection, network tests, default provider changes, and rollback"
+  ]
+}

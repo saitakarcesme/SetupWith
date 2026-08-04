@@ -1,0 +1,17 @@
+{
+  "index": 469,
+  "name": "Dialect",
+  "slug": "dialect-translation",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/dialect-app/dialect",
+    "installUrl": "https://flathub.org/apps/app.drey.Dialect"
+  },
+  "website": "https://dialectapp.org/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "GNOME translation client with multiple proprietary and open-source providers, automatic language detection, history, clipboard actions, and text-to-speech.",
+  "accent": "#3584E4",
+  "logoUrl": "https://raw.githubusercontent.com/dialect-app/dialect/main/data/app.drey.Dialect.svg",
+  "logoSourceType": "official-project-asset"
+}
