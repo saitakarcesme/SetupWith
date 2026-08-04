@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "schema_and_type_validation",
+    "key_scope_and_ownership",
+    "change_transaction",
+    "reset_and_rollback"
+  ],
+  "secrets": [
+    {
+      "key": "dconf_sensitive_value_reference",
+      "reference": "secret://dconf/sensitive-value-reference"
+    }
+  ],
+  "permissionCheckpoints": [
+    "dconf profile, user database, system database layers, path, key, owning application, schema ID, relocatable schema, and scope",
+    "GVariant type, range, enum, flags, tuple and array structure, schema default, current user value, effective value, and validation",
+    "sensitive configuration values, account identifiers, paths, recent items, history, network endpoints, tokens, diagnostic redaction, and export scope",
+    "application process state, live settings listeners, immediate side effects, concurrent writers, synchronization, restart requirements, and dependency impact",
+    "proposed old and new value, exact path, canonical serialization, diff, batch ordering, atomicity, confirmation, and change authorization",
+    "schema presence versus orphaned keys, locks, mandatory settings, system policy, permissions, administrator ownership, and managed-device boundary",
+    "reset key versus reset subtree, default inheritance, child keys, application migrations, data loss, session behavior, and blast radius",
+    "snapshot, restore test, audit record, rollback order, app reset, package uninstall, database backups, and recovery"
+  ]
+}

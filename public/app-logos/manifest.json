@@ -2608,5 +2608,10 @@
     "file": "papers-document-viewer.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Papers.svg",
     "sourceType": "official-project-asset"
+  },
+  "dconf-editor-settings-database": {
+    "file": "dconf-editor-settings-database.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/ca.desrt.dconf-editor.svg",
+    "sourceType": "official-project-asset"
   }
 }

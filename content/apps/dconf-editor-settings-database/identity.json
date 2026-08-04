@@ -1,0 +1,17 @@
+{
+  "index": 523,
+  "name": "Dconf Editor",
+  "slug": "dconf-editor-settings-database",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/dconf-editor",
+    "installUrl": "https://flathub.org/apps/ca.desrt.dconf-editor"
+  },
+  "website": "https://apps.gnome.org/DconfEditor/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "GNOME graphical browser and advanced editor for dconf configuration databases, including application schemas, keys, types, defaults, and direct value changes.",
+  "accent": "#E66100",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/ca.desrt.dconf-editor.svg",
+  "logoSourceType": "official-project-asset"
+}

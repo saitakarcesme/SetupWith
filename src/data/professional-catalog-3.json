@@ -6835,5 +6835,59 @@
       "safety": "Never treat documents as inert, expose content or passwords, trust extensions, run embedded JavaScript, launch attachments, flatten signatures, discard incremental updates, submit forms, follow visible link text blindly, print to the wrong physical queue, rewrite originals, or change defaults silently.",
       "verify": "Verify Papers source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove documents, passwords, parsers, renders, searches, annotations, forms, links, printers, recents, caches and writes are unchanged."
     }
+  },
+  {
+    "index": 523,
+    "name": "Dconf Editor",
+    "slug": "dconf-editor-settings-database",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/GNOME/dconf-editor",
+      "installUrl": "https://flathub.org/apps/ca.desrt.dconf-editor"
+    },
+    "website": "https://apps.gnome.org/DconfEditor/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "GNOME graphical browser and advanced editor for dconf configuration databases, including application schemas, keys, types, defaults, and direct value changes.",
+    "accent": "#E66100",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/ca.desrt.dconf-editor.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "dconf_sensitive_value_reference"
+    ],
+    "config": [
+      "schema_and_type_validation",
+      "key_scope_and_ownership",
+      "change_transaction",
+      "reset_and_rollback"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "dconf profile, user database, system database layers, path, key, owning application, schema ID, relocatable schema, and scope",
+      "GVariant type, range, enum, flags, tuple and array structure, schema default, current user value, effective value, and validation",
+      "sensitive configuration values, account identifiers, paths, recent items, history, network endpoints, tokens, diagnostic redaction, and export scope",
+      "application process state, live settings listeners, immediate side effects, concurrent writers, synchronization, restart requirements, and dependency impact",
+      "proposed old and new value, exact path, canonical serialization, diff, batch ordering, atomicity, confirmation, and change authorization",
+      "schema presence versus orphaned keys, locks, mandatory settings, system policy, permissions, administrator ownership, and managed-device boundary",
+      "reset key versus reset subtree, default inheritance, child keys, application migrations, data loss, session behavior, and blast radius",
+      "snapshot, restore test, audit record, rollback order, app reset, package uninstall, database backups, and recovery"
+    ],
+    "prompt": "Set up Dconf Editor from its official GNOME project and verified Flathub listing (https://apps.gnome.org/DconfEditor/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, dconf profile and database-layer names, schema and key counts, orphaned-key count, locked-path count, active-listener count, sandbox overrides and backup coverage without reading or revealing key names, paths, current values, defaults, account identifiers, histories, network endpoints, tokens or sensitive configuration. Install stable `ca.desrt.dconf-editor` from verified Flathub in the existing ownership scope. Do not compile from source, launch Dconf Editor, connect to a settings backend, enumerate keys, read a value, acquire a write lock, change or reset configuration, notify listeners, export a database, restart an application or alter system policy during setup.\n\nPreserve every user and system database byte, layer, profile, lock, schema, key, value, owner, permission and timestamp, plus remotes, overrides and scope ownership. Direct dconf editing can break applications immediately; it is not equivalent to using an application's validated preferences UI. Treat values as potentially secret and redact them. Installation must not create an absent schema, normalize a GVariant, migrate orphaned keys, remove a lock, reset a subtree or make Dconf Editor the default handler.\n\nBefore a later edit, require the exact profile, database layer, canonical path and key, owning application, schema ID, GVariant type, constraints, schema default, current user value and effective value. Confirm the target application version and whether it watches the key live. Preview an exact typed old-to-new diff using placeholders for secrets. Reject type, range, enum, tuple or array mismatches. Batch edits need explicit ordering, concurrency handling and a recoverable snapshot; never assume multiple key writes are atomic. Use a disposable test profile and synthetic schema for behavioral validation.\n\nResetting a key, resetting a subtree and deleting a user override have different inheritance effects; display the child-key blast radius and resulting effective defaults. Respect locked and mandatory system policy rather than bypassing it. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no backend connection, key enumeration, value read, write, reset, lock change, listener notification, export, restart or policy mutation occurred. On failure, rollback only the new Dconf Editor ref in its original scope; preserve shared runtimes, remotes, overrides, profiles, databases, schemas, locks, values, snapshots and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable ca.desrt.dconf-editor from verified Flathub in the existing scope without source builds, launch, backend connections, key enumeration, value reads, locks, writes, resets, notifications, exports, restarts, or policy changes.",
+      "preserve": "every dconf profile, database layer, lock, schema, key, value, owner, permission and timestamp, application state, snapshots, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose configuration values, bypass schemas or locks, confuse user and effective values, coerce GVariant types, ignore live listeners, assume batch atomicity, reset a subtree accidentally, migrate orphaned keys, alter managed policy, or substitute direct editing for an application's validated UI.",
+      "verify": "Verify Dconf Editor source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove backends, keys, values, writes, resets, locks, listeners, exports, restarts and policies are unchanged."
+    }
   }
 ]
