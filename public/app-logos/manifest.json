@@ -2168,5 +2168,10 @@
     "file": "http-toolkit.svg",
     "source": "https://raw.githubusercontent.com/httptoolkit/httptoolkit-desktop/main/src/icons/icon.svg",
     "sourceType": "official-project-asset"
+  },
+  "meld": {
+    "file": "meld.svg",
+    "source": "https://gitlab.gnome.org/GNOME/meld/-/raw/main/data/icons/hicolor/scalable/apps/org.gnome.Meld.svg",
+    "sourceType": "official-project-asset"
   }
 }

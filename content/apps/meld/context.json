@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "comparison_mode",
+    "text_filters",
+    "folder_filters",
+    "version_control_integration"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "files and directories selected for comparison",
+    "write access to compared paths",
+    "copy, replace, or delete actions",
+    "symlink and network-mount traversal",
+    "text and folder filter changes",
+    "merge-tool configuration",
+    "version-control commit or push actions"
+  ]
+}

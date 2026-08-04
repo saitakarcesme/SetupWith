@@ -2147,5 +2147,58 @@
       "safety": "Never intercept unauthorized traffic, expose a listener, trust a CA, alter system proxy or firewall state, redirect a device or container, use ADB or root, bypass pinning, rewrite requests, or export sensitive captures without separate approval.",
       "verify": "Verify signature, version, paths, sockets, firewall, proxy and trust baselines, then use only an approved disposable endpoint and prove no unrelated traffic, persistent certificate, VPN, ADB change, or exported capture remains."
     }
+  },
+  {
+    "index": 435,
+    "name": "Meld",
+    "slug": "meld",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/GNOME/meld",
+      "installUrl": "https://gnome.pages.gitlab.gnome.org/meld/"
+    },
+    "website": "https://gnome.pages.gitlab.gnome.org/meld/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "GNOME visual diff and merge application for two- or three-way file and directory comparisons plus version-control working tree review.",
+    "accent": "#1A5FB4",
+    "simpleIconSlug": "gnome",
+    "logoUrl": "https://gitlab.gnome.org/GNOME/meld/-/raw/main/data/icons/hicolor/scalable/apps/org.gnome.Meld.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "comparison_mode",
+      "text_filters",
+      "folder_filters",
+      "version_control_integration"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "files and directories selected for comparison",
+      "write access to compared paths",
+      "copy, replace, or delete actions",
+      "symlink and network-mount traversal",
+      "text and folder filter changes",
+      "merge-tool configuration",
+      "version-control commit or push actions"
+    ],
+    "prompt": "Set up Meld from the official GNOME project page (https://gnome.pages.gitlab.gnome.org/meld/). Detect Linux or Windows, architecture, desktop session, package managers, existing Meld version and preferences, supported version-control clients, and configured Git diff or merge tools. On Linux prefer the distribution package or verified Flathub release; on Windows use the official project installer. Explain that macOS is not officially supported and do not substitute semi-official or old third-party builds unless the user explicitly accepts that limitation.\n\nPreserve Meld preferences, recent comparisons, text and folder filters, keyboard shortcuts, window state, version-control integration, Git configuration, working trees, indexes, conflict stages, untracked files, file permissions, encodings, line endings, symbolic links, and compared directories. Apply only the requested comparison mode, reviewed filters, or version-control integration. Back up any configuration before editing it, and never register Meld globally as a Git difftool or mergetool without showing the exact configuration keys and commands.\n\nMeld can edit files and its comparison controls can replace, insert, copy, or delete content and directory entries. Open user data read-only for initial verification and use disposable copies for interaction tests. Before any merge action, identify source and destination panes, focused file, base version, unsaved state, encoding, line ending, permissions, and version-control status. Do not follow symlinks into unrelated paths, recurse through unapproved network mounts, overwrite binary files, save generated output, stage changes, resolve conflicts, commit, or push. Warn that text and folder filters can hide meaningful differences; test filter expressions against copies before enabling them.\n\nVerify package provenance, Meld version, executable and preference paths, and integration commands. Compare two disposable text files containing public sample data, navigate differences without applying them, close without saving, and confirm hashes and metadata remain unchanged. For directory mode, scan only a setup-created directory and perform no copy or delete. Confirm Git configuration and repository status match their baseline and no recent item exposes a sensitive path. Roll back the installed package and setup-owned preferences only, restore prior Git configuration, and preserve every compared file, repository, filter, and user setting.",
+    "platforms": [
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Meld through an official Linux distribution, Flathub, or Windows project package, while rejecting unsupported macOS and unreviewed third-party builds unless their limitations are accepted.",
+      "preserve": "all preferences, recents, filters, shortcuts, version-control integration, Git configuration, working trees, indexes, conflict stages, untracked files, metadata, encodings, line endings, symlinks, and compared directories",
+      "safety": "Never replace, insert, copy, delete, save, stage, resolve, commit, push, traverse unrelated symlinks or mounts, or enable filters that hide differences without a preview and explicit approval.",
+      "verify": "Verify provenance, version, paths, and integrations, then compare disposable files without applying or saving changes and prove their hashes, Git status, configuration, filters, and user data remain unchanged."
+    }
   }
 ]

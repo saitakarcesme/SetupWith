@@ -1,0 +1,18 @@
+{
+  "index": 435,
+  "name": "Meld",
+  "slug": "meld",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/meld",
+    "installUrl": "https://gnome.pages.gitlab.gnome.org/meld/"
+  },
+  "website": "https://gnome.pages.gitlab.gnome.org/meld/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "GNOME visual diff and merge application for two- or three-way file and directory comparisons plus version-control working tree review.",
+  "accent": "#1A5FB4",
+  "simpleIconSlug": "gnome",
+  "logoUrl": "https://gitlab.gnome.org/GNOME/meld/-/raw/main/data/icons/hicolor/scalable/apps/org.gnome.Meld.svg",
+  "logoSourceType": "official-project-asset"
+}
