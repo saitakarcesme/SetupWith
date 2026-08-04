@@ -1,0 +1,17 @@
+{
+  "index": 505,
+  "name": "Railway",
+  "slug": "railway-travel-planner",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.com/schmiddi-on-mobile/railway",
+    "installUrl": "https://flathub.org/apps/de.schmidhuberj.DieBahn"
+  },
+  "website": "https://apps.gnome.org/DieBahn/",
+  "category": "Browsers & Internet",
+  "vertical": "software",
+  "description": "Adaptive public-transport journey planner for routes across networks and borders, with platform and delay details, bookmarked trips, frequent searches, and transport-mode filters.",
+  "accent": "#E01B24",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/de.schmidhuberj.DieBahn.svg",
+  "logoSourceType": "official-project-asset"
+}

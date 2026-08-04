@@ -2518,5 +2518,10 @@
     "file": "resources-system-monitor.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/net.nokyan.Resources.svg",
     "sourceType": "official-project-asset"
+  },
+  "railway-travel-planner": {
+    "file": "railway-travel-planner.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/de.schmidhuberj.DieBahn.svg",
+    "sourceType": "official-project-asset"
   }
 }
