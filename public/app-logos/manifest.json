@@ -2163,5 +2163,10 @@
     "file": "devtoys.svg",
     "source": "https://raw.githubusercontent.com/DevToys-app/DevToys/main/assets/logo/MacOS/Stable/Icon-MacOS.svg",
     "sourceType": "official-project-asset"
+  },
+  "http-toolkit": {
+    "file": "http-toolkit.svg",
+    "source": "https://raw.githubusercontent.com/httptoolkit/httptoolkit-desktop/main/src/icons/icon.svg",
+    "sourceType": "official-project-asset"
   }
 }

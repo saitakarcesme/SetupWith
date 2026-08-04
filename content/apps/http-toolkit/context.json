@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "interception_target",
+    "listen_interface",
+    "upstream_proxy",
+    "host_certificate_whitelist"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "traffic interception scope",
+    "firewall and listen interface changes",
+    "system proxy configuration",
+    "certificate authority trust",
+    "browser profile launch",
+    "container or device redirection",
+    "ADB, VPN, or root access",
+    "captured data storage and export"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "index": 434,
+  "name": "HTTP Toolkit",
+  "slug": "http-toolkit",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/httptoolkit/httptoolkit-desktop",
+    "installUrl": "https://httptoolkit.com/docs/getting-started/installing/"
+  },
+  "website": "https://httptoolkit.com/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Cross-platform HTTP and HTTPS interception, inspection, mocking, and rewriting environment for browsers, applications, containers, and mobile devices.",
+  "accent": "#E24120",
+  "simpleIconSlug": "httpie",
+  "logoUrl": "https://raw.githubusercontent.com/httptoolkit/httptoolkit-desktop/main/src/icons/icon.svg",
+  "logoSourceType": "official-project-asset"
+}

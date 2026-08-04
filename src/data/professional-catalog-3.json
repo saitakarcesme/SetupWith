@@ -2092,5 +2092,60 @@
       "safety": "Never process real secrets during verification, read clipboard data automatically, retain sensitive samples, install both variants unintentionally, switch release channels, or download and execute unreviewed third-party extensions.",
       "verify": "Verify publisher or checksum, version, architecture, runtime, executable and data paths, then test with disposable public text and prove no plugin, sensitive recent value, or unrelated configuration was added."
     }
+  },
+  {
+    "index": 434,
+    "name": "HTTP Toolkit",
+    "slug": "http-toolkit",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/httptoolkit/httptoolkit-desktop",
+      "installUrl": "https://httptoolkit.com/docs/getting-started/installing/"
+    },
+    "website": "https://httptoolkit.com/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Cross-platform HTTP and HTTPS interception, inspection, mocking, and rewriting environment for browsers, applications, containers, and mobile devices.",
+    "accent": "#E24120",
+    "simpleIconSlug": "httpie",
+    "logoUrl": "https://raw.githubusercontent.com/httptoolkit/httptoolkit-desktop/main/src/icons/icon.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "interception_target",
+      "listen_interface",
+      "upstream_proxy",
+      "host_certificate_whitelist"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "traffic interception scope",
+      "firewall and listen interface changes",
+      "system proxy configuration",
+      "certificate authority trust",
+      "browser profile launch",
+      "container or device redirection",
+      "ADB, VPN, or root access",
+      "captured data storage and export"
+    ],
+    "prompt": "Set up HTTP Toolkit from its official installation guide and desktop repository (https://httptoolkit.com/docs/getting-started/installing/). Detect Windows, macOS, or Linux, architecture, package managers, existing installations, firewall state, proxy settings, browser profiles, container engines, Android tooling, and prior HTTP Toolkit data. Select the signed Windows installer or portable archive, macOS DMG or official Homebrew cask, Debian package, or documented Linux archive. Verify publisher or checksum and do not disable antivirus, firewall, or platform security to make installation succeed.\n\nInstall and launch HTTP Toolkit without starting interception. Preserve all proxy settings, trusted certificate stores, generated CA material, rules, breakpoints, captured exchanges, exports, browser profiles, device VPNs, ADB state, container configuration, firewall rules, and upstream proxy credentials. Apply only the requested target, listen interface, upstream proxy, or certificate-validation whitelist. Keep listeners bound to loopback unless a specific device connection is approved, and never store proxy passwords directly in configuration or logs.\n\nTraffic capture can expose cookies, authorization headers, tokens, personal data, request bodies, and private endpoints. Require explicit authorization for the exact application, account, hostnames, device, network, and time window before interception. Stop separately before changing a system proxy, trusting HTTP Toolkit's CA, opening firewall access, launching an instrumented browser, redirecting Docker traffic, installing an Android VPN or user CA, using ADB, injecting a system certificate, requesting root, rewriting traffic, exporting sessions, or disabling TLS validation. Never bypass certificate pinning, modify a third-party application, or capture traffic belonging to other users.\n\nVerify application version, signature, executable and data paths, listening sockets, firewall state, proxy state, certificate stores, and generated CA fingerprint without exposing its private key. For a safe smoke test, use only HTTP Toolkit's documented test endpoint or a disposable local server after approval; confirm no unrelated traffic appears and stop interception immediately. Prove system proxy and trust settings match their baseline, no device VPN or ADB modification remains, and no capture was exported. Roll back by stopping listeners, restoring proxy and firewall settings, removing only setup-installed certificates from each approved target, and preserving pre-existing rules and captures.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the signed HTTP Toolkit package for the detected platform, verify publisher and firewall impact, and launch without enabling a proxy, listener, certificate trust, device redirection, or interception target.",
+      "preserve": "all host and device proxy settings, certificate stores and CA material, rules, breakpoints, captures, exports, browser profiles, VPNs, ADB state, containers, firewall rules, and upstream proxy credentials",
+      "safety": "Never intercept unauthorized traffic, expose a listener, trust a CA, alter system proxy or firewall state, redirect a device or container, use ADB or root, bypass pinning, rewrite requests, or export sensitive captures without separate approval.",
+      "verify": "Verify signature, version, paths, sockets, firewall, proxy and trust baselines, then use only an approved disposable endpoint and prove no unrelated traffic, persistent certificate, VPN, ADB change, or exported capture remains."
+    }
   }
 ]
