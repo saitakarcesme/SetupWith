@@ -2688,5 +2688,10 @@
     "file": "ear-tag-audio-metadata.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.EarTag.svg",
     "sourceType": "official-project-asset"
+  },
+  "elastic-spring-animation-designer": {
+    "file": "elastic-spring-animation-designer.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.Elastic.svg",
+    "sourceType": "official-project-asset"
   }
 }

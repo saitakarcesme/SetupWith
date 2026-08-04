@@ -7684,5 +7684,57 @@
       "safety": "Never expose collections, infer albums by folder, propagate mixed tags, strip unknown fields, rewrite audio unexpectedly, trust artwork, mishandle multi-disc numbering, collide normalized filenames, perform irreversible renames, fingerprint without consent, accept AcoustID candidates as fact, or overwrite from network metadata.",
       "verify": "Verify Ear Tag source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove files, parsers, artwork, fingerprints, networks, metadata, tags, filenames, backups and recents are unchanged."
     }
+  },
+  {
+    "index": 539,
+    "name": "Elastic",
+    "slug": "elastic-spring-animation-designer",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/elastic",
+      "installUrl": "https://flathub.org/apps/app.drey.Elastic"
+    },
+    "website": "https://apps.gnome.org/Elastic/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Interactive libadwaita spring-animation designer with translation, rotation and scale previews, curve and duration graphs, draggable physics exploration, and C, JavaScript, Python, Vala, or Rust code export.",
+    "accent": "#C061CB",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.Elastic.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "spring_parameter_model",
+      "transform_preview",
+      "accessibility_motion",
+      "code_export"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "libadwaita target version, spring parameter definitions, units, defaults, valid ranges, equilibrium tolerance, and API compatibility",
+      "translation distance and direction, rotation angle and pivot, scale origin and range, coordinate system, composition order, and end state",
+      "mass, damping and stiffness relationship, overshoot, oscillation, settling duration, numerical stability, precision, and reproducibility",
+      "curve graph axes, duration calculation, sampling interval, draggable-handle initial state, viewport scaling, and interpretation limits",
+      "reduced-motion behavior, vestibular risk, large translation, rotation, flashing through scale, duration caps, pause, and accessible alternative",
+      "C, JavaScript, Python, Vala or Rust target, binding version, imports, numeric literal precision, ownership, formatting, and compile context",
+      "clipboard or file export, destination, existing code collision, line endings, generated-code attribution, diff preview, and no automatic execution",
+      "preset replacement, reset, session state, exported snippet deletion, app reset, uninstall, backups, and rollback"
+    ],
+    "prompt": "Set up Elastic from its official project and verified Flathub listing (https://apps.gnome.org/Elastic/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, saved-preset count, target libadwaita and language-binding choices, parameter-range and reduced-motion policy presence, export-state count, clipboard and portal grants, sandbox overrides and backup coverage without revealing project names, animation values, generated code, destinations, copied snippets or private interface designs. Install stable `app.drey.Elastic` from verified Flathub in the existing ownership scope. Do not compile from source, launch Elastic, restore a preset, start a preview, move the interactive handle, sample a curve, calculate duration, change spring or transform values, generate code, read or write the clipboard, create a file or execute a snippet during setup.\n\nPreserve every saved spring and transform parameter, target language and binding version, graph preference, reduced-motion setting, generated snippet, window state, permission, remote, override and scope ownership. Installation must not reinterpret units, clamp parameters, resample curves, replace a preset, start motion or insert generated code into a project. Generated output is version-bound source text, not a universally correct animation. Redact project context.\n\nBefore later design, pin the libadwaita API and binding version and document each spring parameter's unit, valid range and default. Define translation coordinates, rotation pivot, scale origin, composition order and exact equilibrium. Report overshoot, oscillation and settling duration with the numerical tolerance and sampling resolution used; a plotted approximation must not be confused with runtime timing. Validate representative parameter boundaries against the target library and keep a deterministic reference set.\n\nEvery preview needs a reduced-motion alternative, bounded translation and rotation, immediate stop, and no hazardous flashing caused by scale or repeated oscillation. Export requires an explicit C, JavaScript, Python, Vala or Rust target, imports, numeric precision and ownership rules. Preview the complete snippet and destination diff; never auto-paste, overwrite project code, invoke a compiler or run the animation. Verify provenance, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no preset read, preview, handle movement, graph sampling, duration calculation, parameter change, code generation, clipboard access, file write, compiler or execution occurred. On failure, rollback only the new Elastic ref; preserve shared runtimes, presets, target versions, accessibility choices, snippets and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable app.drey.Elastic from verified Flathub in the existing scope without source builds, launch, preset restoration, previews, handle motion, graph sampling, duration calculations, parameter changes, code generation, clipboard, files, compilation, or execution.",
+      "preserve": "every spring and transform parameter, target language and binding version, graph and reduced-motion preference, generated snippet, window state, permission, backup, remote, override, and scope ownership",
+      "safety": "Never expose private UI designs, reinterpret units, clamp parameters silently, confuse sampled curves with runtime truth, replace presets, start motion unexpectedly, omit reduced-motion alternatives, export for the wrong binding, lose numeric precision, auto-paste, overwrite code, compile, or execute snippets.",
+      "verify": "Verify Elastic source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove presets, previews, handles, graphs, durations, parameters, generators, clipboards, files, compilers and execution are unchanged."
+    }
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "index": 539,
+  "name": "Elastic",
+  "slug": "elastic-spring-animation-designer",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/elastic",
+    "installUrl": "https://flathub.org/apps/app.drey.Elastic"
+  },
+  "website": "https://apps.gnome.org/Elastic/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Interactive libadwaita spring-animation designer with translation, rotation and scale previews, curve and duration graphs, draggable physics exploration, and C, JavaScript, Python, Vala, or Rust code export.",
+  "accent": "#C061CB",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.Elastic.svg",
+  "logoSourceType": "official-project-asset"
+}

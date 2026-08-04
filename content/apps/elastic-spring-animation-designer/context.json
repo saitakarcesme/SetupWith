@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "spring_parameter_model",
+    "transform_preview",
+    "accessibility_motion",
+    "code_export"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "libadwaita target version, spring parameter definitions, units, defaults, valid ranges, equilibrium tolerance, and API compatibility",
+    "translation distance and direction, rotation angle and pivot, scale origin and range, coordinate system, composition order, and end state",
+    "mass, damping and stiffness relationship, overshoot, oscillation, settling duration, numerical stability, precision, and reproducibility",
+    "curve graph axes, duration calculation, sampling interval, draggable-handle initial state, viewport scaling, and interpretation limits",
+    "reduced-motion behavior, vestibular risk, large translation, rotation, flashing through scale, duration caps, pause, and accessible alternative",
+    "C, JavaScript, Python, Vala or Rust target, binding version, imports, numeric literal precision, ownership, formatting, and compile context",
+    "clipboard or file export, destination, existing code collision, line endings, generated-code attribution, diff preview, and no automatic execution",
+    "preset replacement, reset, session state, exported snippet deletion, app reset, uninstall, backups, and rollback"
+  ]
+}
