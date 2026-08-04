@@ -1,0 +1,17 @@
+{
+  "index": 460,
+  "name": "OpenShot Video Editor",
+  "slug": "openshot",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/OpenShot/openshot-qt",
+    "installUrl": "https://www.openshot.org/download/"
+  },
+  "website": "https://www.openshot.org/",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Non-linear video editor with multitrack timelines, keyframe animation, titles, effects, optimized previews, project recovery, Blender integration, and broad codec and export profiles.",
+  "accent": "#4A9FCA",
+  "logoUrl": "https://raw.githubusercontent.com/OpenShot/openshot-qt/develop/xdg/openshot-qt.svg",
+  "logoSourceType": "official-project-asset"
+}

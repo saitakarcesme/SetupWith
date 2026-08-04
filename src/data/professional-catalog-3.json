@@ -3502,5 +3502,59 @@
       "safety": "Never request capture or microphone access, record private content, reroute audio, retain grants, broaden sandbox permissions, enable experimental encoders or sources, overwrite recordings, or delete partial files without an exact source, consent, output, resource, and retention review plus approval.",
       "verify": "Verify Flathub status, app ID, commit, signature, runtime, permissions and data paths without launching, then prove no portal, grant, PipeWire, audio, process, recording, partial file, preference, override or environment state changed."
     }
+  },
+  {
+    "index": 460,
+    "name": "OpenShot Video Editor",
+    "slug": "openshot",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/OpenShot/openshot-qt",
+      "installUrl": "https://www.openshot.org/download/"
+    },
+    "website": "https://www.openshot.org/",
+    "category": "Design & Media",
+    "vertical": "creative",
+    "description": "Non-linear video editor with multitrack timelines, keyframe animation, titles, effects, optimized previews, project recovery, Blender integration, and broad codec and export profiles.",
+    "accent": "#4A9FCA",
+    "logoUrl": "https://raw.githubusercontent.com/OpenShot/openshot-qt/develop/xdg/openshot-qt.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "projects",
+      "profiles",
+      "autosave",
+      "export"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "OSP project, source media, clipboard media, and linked-path access",
+      "autosave, recovery archive, project replacement, and backup rename",
+      "project profile and frame-rate conversion",
+      "optimized preview, thumbnail, tracking, title, and cache generation",
+      "Blender, Inkscape, FFmpeg, and external command execution",
+      "AI or ComfyUI media generation and remote or local model access",
+      "video, image, sequence, EDL, XML, and project export",
+      "codec, hardware encoder, resource limit, destination, and overwrite changes"
+    ],
+    "prompt": "Set up OpenShot Video Editor from its official stable download page (https://www.openshot.org/download/). Detect Windows, macOS, or Linux, architecture, package managers, existing installer, portable, AppImage or PPA installation, OpenShot settings, OSP projects, autosaves, recovery archives, caches, profiles, FFmpeg codecs, hardware encoders, Blender, Inkscape and optional AI or ComfyUI configuration. Install one current stable signed package or checksummed official AppImage matching the existing ownership model. Do not choose a daily build, add a PPA, install AppImageLauncher or libfuse2, reset settings, or perform a clean-install purge without approval.\n\nInstall without opening or creating a project and without importing media. Preserve every `.osp` project, source clip, proxy or optimized preview, clipboard asset, title, thumbnail, tracker result, cache, keyframe, transition, profile, autosave, recovery ZIP, export preset, recent path and preference. OSP files reference source paths. Save As can copy generated folders into `PROJECTNAME_Assets` and rewrite paths as relative; never invoke it, consolidate assets, relink missing files, move sources, or delete generated data during setup.\n\nRecovery can rename the current project to a timestamped backup and replace it with an archived version. Do not recover, prune or unzip recovery files automatically. Changing project profile or FPS can modify positions, trims and keyframes and resolve rounding gaps, so never convert a project just to match export settings. Treat configured Blender, Inkscape, FFmpeg and ComfyUI paths as executable integrations. Do not render animated titles, edit SVG externally, enable AI, download models, optimize clips, generate tracking data, or preview private media.\n\nBefore any later export, show timeline range, profile, resolution, FPS, pixel aspect, video and audio codecs, sample rate, channels, bitrate or quality, hardware encoder, resource limits, output path, estimated size and collision policy. Never overwrite media or expose private footage through online targets. Verify publisher or package provenance, checksum, package version, executable, method, FFmpeg library versions, integration paths and data locations from package metadata without a normal launch. Confirm no project, recovery, cache, media, profile, command, process, audio device, export or network state changed. Roll back only the installed application and setup-owned shortcuts.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install one current stable signed or checksummed OpenShot package matching existing ownership, without daily builds, repositories, launch helpers, dependency changes, settings reset, normal launch, project loading, or media import.",
+      "preserve": "all OSP projects, source media and paths, previews, clipboard assets, titles, thumbnails, tracking, caches, keyframes, transitions, profiles, autosaves, recovery archives, presets, integrations, recents, preferences, and installation ownership",
+      "safety": "Never relink or consolidate media, rewrite paths, recover or prune projects, convert FPS, execute Blender/Inkscape/FFmpeg/AI workflows, preview private clips, generate caches, export, or overwrite outputs without a source, project, command, resource, and destination review plus approval.",
+      "verify": "Verify provenance or checksum, package version, executable, method, FFmpeg libraries, integrations and data paths without a normal launch, then prove no project, recovery, cache, media, profile, command, process, audio, export or network state changed."
+    }
   }
 ]

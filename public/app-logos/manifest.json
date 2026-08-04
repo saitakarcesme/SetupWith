@@ -2293,5 +2293,10 @@
     "file": "kooha.svg",
     "source": "https://raw.githubusercontent.com/SeaDve/Kooha/main/data/icons/io.github.seadve.Kooha.svg",
     "sourceType": "official-project-asset"
+  },
+  "openshot": {
+    "file": "openshot.svg",
+    "source": "https://raw.githubusercontent.com/OpenShot/openshot-qt/develop/xdg/openshot-qt.svg",
+    "sourceType": "official-project-asset"
   }
 }

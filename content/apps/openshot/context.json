@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "projects",
+    "profiles",
+    "autosave",
+    "export"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "OSP project, source media, clipboard media, and linked-path access",
+    "autosave, recovery archive, project replacement, and backup rename",
+    "project profile and frame-rate conversion",
+    "optimized preview, thumbnail, tracking, title, and cache generation",
+    "Blender, Inkscape, FFmpeg, and external command execution",
+    "AI or ComfyUI media generation and remote or local model access",
+    "video, image, sequence, EDL, XML, and project export",
+    "codec, hardware encoder, resource limit, destination, and overwrite changes"
+  ]
+}
