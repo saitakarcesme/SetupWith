@@ -1,0 +1,17 @@
+{
+  "index": 477,
+  "name": "Decoder",
+  "slug": "decoder-qr",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/decoder",
+    "installUrl": "https://flathub.org/apps/com.belmoussaoui.Decoder"
+  },
+  "website": "https://apps.gnome.org/Decoder/",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "GNOME QR utility for generating codes, scanning through the camera portal or screenshots, parsing payload types, and retaining generated or scanned history.",
+  "accent": "#F66151",
+  "logoUrl": "https://gitlab.gnome.org/World/decoder/-/raw/master/data/icons/com.belmoussaoui.Decoder.svg",
+  "logoSourceType": "official-project-asset"
+}

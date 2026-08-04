@@ -4394,5 +4394,60 @@
       "safety": "Never recurse through libraries, trust filenames as commands, parse untrusted media as a test, conflate lossless with metadata preservation, strip profiles silently, overwrite without verified backup, collide outputs, or replace sources with larger results without file, encoder, pixel, metadata, destination, and recovery review.",
       "verify": "Verify Curtail source, app ID, origin, commit, runtime, executable, encoders, files and permissions offline, then prove no source reads, outputs, metadata, recursion, portals, handlers, previews, D-Bus activation or compressor processes changed."
     }
+  },
+  {
+    "index": 477,
+    "name": "Decoder",
+    "slug": "decoder-qr",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/decoder",
+      "installUrl": "https://flathub.org/apps/com.belmoussaoui.Decoder"
+    },
+    "website": "https://apps.gnome.org/Decoder/",
+    "category": "Security & Privacy",
+    "vertical": "software",
+    "description": "GNOME QR utility for generating codes, scanning through the camera portal or screenshots, parsing payload types, and retaining generated or scanned history.",
+    "accent": "#F66151",
+    "logoUrl": "https://gitlab.gnome.org/World/decoder/-/raw/master/data/icons/com.belmoussaoui.Decoder.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "wifi_password",
+      "qr_payload_secret"
+    ],
+    "config": [
+      "capture_policy",
+      "payload_handling",
+      "history_retention",
+      "export_controls"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "camera portal, selected device, live stream, PipeWire session, indicator, and stream shutdown",
+      "screenshot or local image path, clipboard source, metadata, portal grant, and sensitive surrounding content",
+      "arbitrary text, URL, Wi-Fi SSID, password, authentication type, hidden flag, and generated QR visibility",
+      "decoded URI, custom scheme, contact, phone, email, payment, credential, Wi-Fi, and parser behavior",
+      "automatic scanned/generated history, database retention, timestamps, deletion, backup, and migration",
+      "QR image save path, timestamped filename, overwrite, permissions, synchronized folder, and sharing",
+      "copy payload, clipboard lifetime, screen sharing, shoulder surfing, notification, and accessibility exposure",
+      "external handler, browser, Wi-Fi configuration, network resolution, D-Bus activation, and rollback"
+    ],
+    "prompt": "Set up Decoder from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Decoder/). Inventory Linux architecture, Flatpak scopes, existing Decoder package and data paths, camera portal state, history policy, saved-image destination, clipboard behavior, D-Bus activation and QR-related handlers without opening the history database or any image. Install stable `com.belmoussaoui.Decoder` from verified Flathub in the existing ownership scope. Do not install a nightly or distro replacement, compile from source, launch Decoder, request camera access, scan a screenshot or generate a sample QR code during setup.\n\nPreserve every scanned/generated history entry, timestamp, preference, saved QR image, portal choice and handler state byte-for-byte. QR payloads may contain Wi-Fi passwords, enrollment secrets, payment requests, contact details, private URLs or session tokens. Never print history counts tied to labels, payload contents or decoded previews in diagnostics. Do not create, clear, migrate or deduplicate history; current versions automatically retain scanned codes, so even a harmless scan is a persistent data change.\n\nBefore any future scan show the exact camera device or approved image, PipeWire/portal boundary, whether surrounding pixels are visible, history retention and parser behavior. Treat every decoded value as untrusted data. Do not open URLs, resolve domains, invoke custom URI schemes, join Wi-Fi, dial numbers, compose messages, import contacts, execute payment actions or copy payloads automatically. Parsing a code into a recognized type does not establish authenticity or user intent. Stop camera streams when suspended and do not install host GStreamer plugins as part of setup.\n\nGenerating a QR turns plaintext into a visually shareable encoding, not encryption. For Wi-Fi codes, explicitly review SSID, authentication type, hidden flag and secret handling; never expose the generated code during screen sharing or save it into a synchronized/public folder by default. Require output path, permissions, timestamped name, overwrite and retention approval before saving. Verify Decoder provenance, app ID, origin, commit, runtime, executable, files and declared permissions offline. Prove no database read/write, portal session, camera stream, screenshot, QR payload, saved image, clipboard, handler, process or network request changed. On failure, rollback only the new Decoder ref in its original scope; preserve shared runtimes, remotes, overrides, histories, images and portal state.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.belmoussaoui.Decoder from verified Flathub in the existing scope without nightly or source builds, launch, database access, camera portals, screenshots, sample generation, QR parsing, history writes, saved images, clipboard, or handlers.",
+      "preserve": "all QR histories, timestamps, payloads, preferences, saved images, camera and portal choices, clipboard state, handlers, D-Bus state, GStreamer plugins, remotes, overrides, and scope ownership",
+      "safety": "Never expose QR secrets, scan into automatic history, trust parsed payload types, invoke links or schemes, join Wi-Fi, copy credentials, generate visible secrets, save to synced locations, or install camera plugins without source, portal, payload, authenticity, history, visibility, destination, and retention review.",
+      "verify": "Verify Decoder source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove databases, portals, camera, screenshots, payloads, images, clipboard, handlers, processes and network state are unchanged."
+    }
   }
 ]

@@ -2378,5 +2378,10 @@
     "file": "curtail-image-compressor.svg",
     "source": "https://raw.githubusercontent.com/Huluti/Curtail/main/data/icons/hicolor/scalable/apps/com.github.huluti.Curtail.svg",
     "sourceType": "official-project-asset"
+  },
+  "decoder-qr": {
+    "file": "decoder-qr.svg",
+    "source": "https://gitlab.gnome.org/World/decoder/-/raw/master/data/icons/com.belmoussaoui.Decoder.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -1,0 +1,41 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "capture_policy",
+    "payload_handling",
+    "history_retention",
+    "export_controls"
+  ],
+  "secrets": [
+    {
+      "key": "wifi_password",
+      "reference": "secret://wifi/password"
+    },
+    {
+      "key": "qr_payload_secret",
+      "reference": "secret://qr/payload-secret"
+    }
+  ],
+  "permissionCheckpoints": [
+    "camera portal, selected device, live stream, PipeWire session, indicator, and stream shutdown",
+    "screenshot or local image path, clipboard source, metadata, portal grant, and sensitive surrounding content",
+    "arbitrary text, URL, Wi-Fi SSID, password, authentication type, hidden flag, and generated QR visibility",
+    "decoded URI, custom scheme, contact, phone, email, payment, credential, Wi-Fi, and parser behavior",
+    "automatic scanned/generated history, database retention, timestamps, deletion, backup, and migration",
+    "QR image save path, timestamped filename, overwrite, permissions, synchronized folder, and sharing",
+    "copy payload, clipboard lifetime, screen sharing, shoulder surfing, notification, and accessibility exposure",
+    "external handler, browser, Wi-Fi configuration, network resolution, D-Bus activation, and rollback"
+  ]
+}
