@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "sensor_inventory",
+    "privacy_scope",
+    "sampling_preferences",
+    "privileged_actions"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "CPU, memory, disk, network, GPU, fan, battery, process, and service telemetry access",
+    "hardware model, MAC address, IP address, mount, process command, and username disclosure",
+    "Flatpak scope, runtime, system interfaces, device nodes, and declared sandbox permissions",
+    "per-process network monitoring helper, manual setup, capabilities, and persistent services",
+    "process signals, service actions, pkexec elevation, target identity, and unsaved work",
+    "sampling interval, graph history, hardware acceleration, and resource overhead",
+    "application and process grouping, remote monitoring, export, clipboard, and diagnostics",
+    "startup behavior, background operation, notifications, preferences, and rollback"
+  ]
+}

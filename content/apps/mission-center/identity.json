@@ -1,0 +1,17 @@
+{
+  "index": 464,
+  "name": "Mission Center",
+  "slug": "mission-center",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.com/mission-center-devs/mission-center",
+    "installUrl": "https://flathub.org/apps/io.missioncenter.MissionCenter"
+  },
+  "website": "https://missioncenter.io/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "GTK system monitor for CPU, memory, disks, networks, GPUs, fans, batteries, applications, processes, and services with detailed live graphs.",
+  "accent": "#91B3C3",
+  "logoUrl": "https://gitlab.com/mission-center-devs/mission-center/-/raw/main/data/icons/hicolor/scalable/apps/io.missioncenter.MissionCenter.svg",
+  "logoSourceType": "official-project-asset"
+}

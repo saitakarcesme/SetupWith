@@ -2313,5 +2313,10 @@
     "file": "bottles.svg",
     "source": "https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/icons/hicolor/scalable/apps/com.usebottles.bottles.svg",
     "sourceType": "official-project-asset"
+  },
+  "mission-center": {
+    "file": "mission-center.svg",
+    "source": "https://gitlab.com/mission-center-devs/mission-center/-/raw/main/data/icons/hicolor/scalable/apps/io.missioncenter.MissionCenter.svg",
+    "sourceType": "official-project-asset"
   }
 }

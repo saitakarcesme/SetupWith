@@ -3712,5 +3712,57 @@
       "safety": "Never execute Windows payloads, accept licenses, change prefixes or registries, download components, share archives, expose home, broaden devices, migrate storage, create handlers, or delete data without source, scope, permission, privacy, and rollback review.",
       "verify": "Verify Flathub provenance, app ID, commit, runtime, permissions and paths offline, then prove bottle hashes, registries, runners, downloads, processes, network, launchers, associations, overrides and storage roots are unchanged."
     }
+  },
+  {
+    "index": 464,
+    "name": "Mission Center",
+    "slug": "mission-center",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.com/mission-center-devs/mission-center",
+      "installUrl": "https://flathub.org/apps/io.missioncenter.MissionCenter"
+    },
+    "website": "https://missioncenter.io/",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "GTK system monitor for CPU, memory, disks, networks, GPUs, fans, batteries, applications, processes, and services with detailed live graphs.",
+    "accent": "#91B3C3",
+    "logoUrl": "https://gitlab.com/mission-center-devs/mission-center/-/raw/main/data/icons/hicolor/scalable/apps/io.missioncenter.MissionCenter.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "sensor_inventory",
+      "privacy_scope",
+      "sampling_preferences",
+      "privileged_actions"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "CPU, memory, disk, network, GPU, fan, battery, process, and service telemetry access",
+      "hardware model, MAC address, IP address, mount, process command, and username disclosure",
+      "Flatpak scope, runtime, system interfaces, device nodes, and declared sandbox permissions",
+      "per-process network monitoring helper, manual setup, capabilities, and persistent services",
+      "process signals, service actions, pkexec elevation, target identity, and unsaved work",
+      "sampling interval, graph history, hardware acceleration, and resource overhead",
+      "application and process grouping, remote monitoring, export, clipboard, and diagnostics",
+      "startup behavior, background operation, notifications, preferences, and rollback"
+    ],
+    "prompt": "Set up Mission Center from its official project and verified Flathub listing (https://missioncenter.io/). Detect Linux architecture, desktop, Flatpak user and system scopes, existing Mission Center packages, Flathub origin, GPU vendors, sensor interfaces, current monitoring tools, startup entries and any prior per-process network helper. Install one stable `io.missioncenter.MissionCenter` Flatpak in the scope matching current ownership. Do not select AppImage, Snap, a distro package or a source build when a managed installation already exists, and do not replace an existing package channel without approval.\n\nInstall without launching the monitor, sampling hardware, enumerating processes or opening its first-run advanced-feature dialog. Preserve preferences, disabled device categories, graph choices, refresh rate, window state, application grouping and any existing helper configuration. Live telemetry may expose usernames, process commands, application activity, storage labels, mount paths, network interfaces, MAC and IP addresses, wireless details, GPU workload, battery state and service names. Never print those values into setup logs, export them, copy them to a clipboard or send them to a remote endpoint.\n\nMission Center can monitor per-process networking only after manual setup, and current releases can request `pkexec` elevation to signal processes. Do not install a helper, grant Linux capabilities, add a service, change polkit rules, enable remote monitoring, terminate or suspend a process, or start, stop, enable or disable a service. Before any future privileged action, identify the exact PID or unit, owner, executable, signal/action, dependent workloads, unsaved-data risk, elevation boundary and recovery route. Treat a changing PID as invalid and re-resolve it immediately before approval.\n\nUse metadata-only verification: confirm project provenance, Flathub app ID, origin, installed commit, runtime, architecture, executable, files and declared permissions without running the application. Do not claim that a sensor or GPU feature works merely because the package installed; Intel GPU and desktop-specific limitations must remain visible. Compare process, service, helper, capability, polkit, startup, network and filesystem state to the preflight snapshot. If verification fails, rollback by removing only the newly installed package from its original scope; leave shared runtimes, remotes, monitoring helpers, preferences and system services untouched.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.missioncenter.MissionCenter from its verified Flathub origin in the existing scope without alternate packages, launch, telemetry sampling, advanced helpers, capabilities, services, startup entries, or channel changes.",
+      "preserve": "all preferences, device filters, graph and refresh choices, window state, grouping rules, helper state, polkit rules, capabilities, services, startup entries, remotes, runtimes, and installation ownership",
+      "safety": "Never expose hardware or activity telemetry, configure per-process networking, grant capabilities, alter polkit, control services, signal processes, enable remote monitoring, export diagnostics, or test sensors without target, privacy, privilege, workload, and recovery review.",
+      "verify": "Verify source, app ID, origin, commit, runtime, architecture, executable, files and permissions from metadata, then prove processes, services, helpers, capabilities, polkit, startup, network, preferences and filesystem state remain unchanged."
+    }
   }
 ]
