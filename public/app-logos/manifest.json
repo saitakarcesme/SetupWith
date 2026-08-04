@@ -2623,5 +2623,10 @@
     "file": "gnome-manuals-devhelp-docs.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Manuals.svg",
     "sourceType": "official-project-asset"
+  },
+  "audio-sharing-rtsp-stream": {
+    "file": "audio-sharing-rtsp-stream.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/de.haeckerfelix.AudioSharing.svg",
+    "sourceType": "official-project-asset"
   }
 }

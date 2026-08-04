@@ -6995,5 +6995,59 @@
       "safety": "Never expose development interests, merge incompatible SDK books, trust documentation markup, traverse unapproved roots, resolve duplicate symbols by filename alone, replace indexes non-atomically, present stale APIs without version labels, leak local queries to links, or change default handlers silently.",
       "verify": "Verify Manuals source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove roots, books, parsers, indexes, searches, histories, bookmarks, renders, links, portals and networks are unchanged."
     }
+  },
+  {
+    "index": 526,
+    "name": "Audio Sharing",
+    "slug": "audio-sharing-rtsp-stream",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/AudioSharing",
+      "installUrl": "https://flathub.org/apps/de.haeckerfelix.AudioSharing"
+    },
+    "website": "https://apps.gnome.org/AudioSharing/",
+    "category": "Music & Streaming",
+    "vertical": "software",
+    "description": "GNOME utility that captures current computer playback and exposes it as an RTSP stream for phones, VLC, and other network receivers.",
+    "accent": "#1C71D8",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/de.haeckerfelix.AudioSharing.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "audio_sharing_private_stream_reference"
+    ],
+    "config": [
+      "audio_capture_scope",
+      "bind_and_network_exposure",
+      "rtsp_access_policy",
+      "latency_and_cleanup"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "PipeWire or audio-server source, current playback versus microphone, monitor node, application scope, channels, sample rate, format, and consent",
+      "bind interface, IPv4 and IPv6 addresses, port, LAN, VPN, hotspot and container reachability, firewall zone, routing, and exposure boundary",
+      "RTSP URL, path entropy, authentication support, transport, encryption absence, QR code visibility, clipboard, logs, and secret handling",
+      "receiver identity, intended device, shared-network users, discovery, simultaneous clients, reconnection, idle timeout, and revocation",
+      "copyrighted, confidential, notification, call, accessibility and system audio capture, bystander consent, content policy, and redaction",
+      "codec, bitrate, resampling, latency, jitter, buffering, clock drift, packet loss, CPU, bandwidth, battery, and receiver compatibility",
+      "background operation, screen and lock-state indication, stream status, sleep inhibition, audio-session changes, and least privilege",
+      "stop semantics, socket closure, client eviction, PipeWire node release, temporary data, firewall cleanup, app reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Audio Sharing from its official GNOME project and verified Flathub listing (https://apps.gnome.org/AudioSharing/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, audio-server type, candidate playback-monitor count, microphone-node exclusion, configured bind-interface class, port-policy presence, firewall zone, RTSP-client count, background-state presence, sandbox overrides and backup coverage without sampling audio or revealing device names, LAN addresses, stream URLs, QR codes, listening activity, application titles, callers, notifications or captured content. Install stable `de.haeckerfelix.AudioSharing` from verified Flathub in the existing ownership scope. Do not compile from source, launch Audio Sharing, connect to PipeWire, select or monitor a node, capture a sample, bind a socket, open a firewall port, advertise a service, generate or display a QR code, accept a receiver, stream packets, play audio or inhibit sleep during setup.\n\nPreserve all existing audio routing, default devices, volumes, monitor-node state, stream preferences, firewall rules, network bindings, remotes, overrides and scope ownership. Current playback can contain private calls, notifications, assistive output or copyrighted material; capture requires explicit owner and bystander consent. Installation must not select a microphone accidentally, reroute an output, expose a listener on every interface, reuse a previously public stream address or start in the background.\n\nBefore later streaming, identify the exact playback-monitor node and prove microphone inputs are excluded. Define IPv4 and IPv6 bind addresses, port, firewall zone, LAN, VPN, hotspot and container reachability. RTSP without reviewed encryption or authentication must be treated as readable by anyone who can reach it; path obscurity and a QR code are not access control. Display the exact exposure boundary and require an intended receiver. Keep stream URLs, addresses and QR codes out of logs and screen sharing. Use a synthetic tone on an isolated test network for validation, never user playback.\n\nPin codec, sample rate, channel layout and bitrate, then bound latency, buffer, client count, CPU and bandwidth. Provide persistent visible streaming state and explicit stop. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no audio-server connection, node access, capture, socket bind, firewall change, advertisement, QR display, client session, packet transmission, playback or sleep inhibition occurred. On failure, rollback only the new Audio Sharing ref in its original scope; preserve shared runtimes, remotes, overrides, routing, devices, volumes, firewall state and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable de.haeckerfelix.AudioSharing from verified Flathub in the existing scope without source builds, launch, PipeWire access, node selection, capture, socket binds, firewall changes, advertisements, QR codes, receivers, packets, playback, or sleep inhibition.",
+      "preserve": "all audio routing, devices, volumes, monitor-node state, stream preferences, firewall rules, network bindings, backups, remotes, overrides, and scope ownership",
+      "safety": "Never capture microphones accidentally, stream calls or notifications without consent, bind every interface, treat a hidden RTSP path as authentication, expose QR codes, assume LAN users are trusted, reroute audio, retain clients after stop, run invisibly in background, or leave sockets and firewall rules behind.",
+      "verify": "Verify Audio Sharing source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove audio servers, nodes, captures, sockets, firewalls, advertisements, QR codes, clients, packets, playback and power state are untouched."
+    }
   }
 ]

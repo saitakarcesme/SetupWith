@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "audio_capture_scope",
+    "bind_and_network_exposure",
+    "rtsp_access_policy",
+    "latency_and_cleanup"
+  ],
+  "secrets": [
+    {
+      "key": "audio_sharing_private_stream_reference",
+      "reference": "secret://audio/sharing-private-stream-reference"
+    }
+  ],
+  "permissionCheckpoints": [
+    "PipeWire or audio-server source, current playback versus microphone, monitor node, application scope, channels, sample rate, format, and consent",
+    "bind interface, IPv4 and IPv6 addresses, port, LAN, VPN, hotspot and container reachability, firewall zone, routing, and exposure boundary",
+    "RTSP URL, path entropy, authentication support, transport, encryption absence, QR code visibility, clipboard, logs, and secret handling",
+    "receiver identity, intended device, shared-network users, discovery, simultaneous clients, reconnection, idle timeout, and revocation",
+    "copyrighted, confidential, notification, call, accessibility and system audio capture, bystander consent, content policy, and redaction",
+    "codec, bitrate, resampling, latency, jitter, buffering, clock drift, packet loss, CPU, bandwidth, battery, and receiver compatibility",
+    "background operation, screen and lock-state indication, stream status, sleep inhibition, audio-session changes, and least privilege",
+    "stop semantics, socket closure, client eviction, PipeWire node release, temporary data, firewall cleanup, app reset, uninstall, and rollback"
+  ]
+}
