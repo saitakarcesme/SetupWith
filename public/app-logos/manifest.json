@@ -2333,5 +2333,10 @@
     "file": "pods-container-manager.svg",
     "source": "https://raw.githubusercontent.com/marhkb/pods/main/data/icons/com.github.marhkb.Pods.svg",
     "sourceType": "official-project-asset"
+  },
+  "cartridges-game-launcher": {
+    "file": "cartridges-game-launcher.svg",
+    "source": "https://raw.githubusercontent.com/kra-mo/cartridges/main/data/icons/hicolor/scalable/apps/page.kramo.Cartridges.svg",
+    "sourceType": "official-project-asset"
   }
 }

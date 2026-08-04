@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "library_sources",
+    "launch_commands",
+    "cover_art_privacy",
+    "search_integration"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "Steam, Lutris, Heroic, Bottles, itch, Legendary, RetroArch, Flatpak, and desktop-entry imports",
+    "launcher databases, manifests, prefixes, ROM paths, install directories, and sandbox grants",
+    "game title, source, hidden state, date added, last played, favorites, and library privacy",
+    "manual executable, launch command, arguments, working directory, environment, and compatibility layer",
+    "SteamGridDB or other cover search, transmitted title, endpoint, image license, and cache destination",
+    "animated cover downloads, bandwidth, storage, remote redirects, and untrusted image parsing",
+    "GNOME search provider, shell visibility, result activation, session lock, and accidental launch",
+    "duplicate merging, game edits, hiding, removal, source re-import, launch, and rollback"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "index": 468,
+  "name": "Cartridges",
+  "slug": "cartridges-game-launcher",
+  "source": {
+    "type": "website",
+    "url": "https://codeberg.org/kramo/cartridges",
+    "installUrl": "https://flathub.org/apps/page.kramo.Cartridges"
+  },
+  "website": "https://apps.gnome.org/Cartridges/",
+  "category": "Games & Launchers",
+  "vertical": "software",
+  "description": "Unified game launcher that imports local libraries from Steam, Lutris, Heroic, Bottles, itch, Legendary, RetroArch, Flatpak, and desktop entries.",
+  "accent": "#9B6CC4",
+  "logoUrl": "https://raw.githubusercontent.com/kra-mo/cartridges/main/data/icons/hicolor/scalable/apps/page.kramo.Cartridges.svg",
+  "logoSourceType": "official-project-asset"
+}
