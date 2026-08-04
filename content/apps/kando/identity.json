@@ -1,0 +1,18 @@
+{
+  "index": 441,
+  "name": "Kando",
+  "slug": "kando",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/kando-menu/kando",
+    "installUrl": "https://kando.menu/installation-on-linux/"
+  },
+  "website": "https://kando.menu/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Cross-platform radial desktop menu controlled by mouse gestures, pen, touch, keyboard, or gamepad with commands, macros, hotkeys, files, and URIs.",
+  "accent": "#4C39BB",
+  "simpleIconSlug": "kde",
+  "logoUrl": "https://raw.githubusercontent.com/kando-menu/kando/main/assets/icon-themes/kando/logo-large.svg",
+  "logoSourceType": "official-project-asset"
+}
