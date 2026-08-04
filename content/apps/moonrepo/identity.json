@@ -1,0 +1,18 @@
+{
+  "index": 437,
+  "name": "moon",
+  "slug": "moonrepo",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/moonrepo/moon",
+    "installUrl": "https://moonrepo.dev/docs/install"
+  },
+  "website": "https://moonrepo.dev/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Cross-platform monorepo task runner and build system with project graphs, dependency-aware pipelines, language toolchains, local caching, and CI orchestration.",
+  "accent": "#5341D6",
+  "simpleIconSlug": "moonrepo",
+  "logoUrl": "https://raw.githubusercontent.com/moonrepo/moon/master/website/static/brand/moon/icon.svg",
+  "logoSourceType": "official-project-asset"
+}

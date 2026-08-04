@@ -2178,5 +2178,10 @@
     "file": "kopia.svg",
     "source": "https://raw.githubusercontent.com/kopia/kopia/master/icons/kopia-app-1024.svg",
     "sourceType": "official-project-asset"
+  },
+  "moonrepo": {
+    "file": "moonrepo.svg",
+    "source": "https://raw.githubusercontent.com/moonrepo/moon/master/website/static/brand/moon/icon.svg",
+    "sourceType": "official-project-asset"
   }
 }

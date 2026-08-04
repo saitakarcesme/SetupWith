@@ -2257,5 +2257,60 @@
       "safety": "Never expose or lose the unrecoverable repository password, change retention, run maintenance, delete content, start a server, weaken TLS or CSRF, mount snapshots, schedule backups, or overwrite restore targets without separate approval.",
       "verify": "Verify signature, version, paths, permissions, processes, listeners and disconnected state; any later restore test must use a new empty directory and prove repository, snapshot, source, policy, and original data remain unchanged."
     }
+  },
+  {
+    "index": 437,
+    "name": "moon",
+    "slug": "moonrepo",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/moonrepo/moon",
+      "installUrl": "https://moonrepo.dev/docs/install"
+    },
+    "website": "https://moonrepo.dev/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Cross-platform monorepo task runner and build system with project graphs, dependency-aware pipelines, language toolchains, local caching, and CI orchestration.",
+    "accent": "#5341D6",
+    "simpleIconSlug": "moonrepo",
+    "logoUrl": "https://raw.githubusercontent.com/moonrepo/moon/master/website/static/brand/moon/icon.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "project_sources",
+      "task_definitions",
+      "toolchains",
+      "cache_policy"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "global versus project-local installation",
+      "workspace configuration creation",
+      "task and dependency execution",
+      "toolchain and package downloads",
+      "cache read, write, and cleanup",
+      "generated file changes",
+      "CI configuration changes",
+      "remote cache or cloud connection"
+    ],
+    "prompt": "Set up moon from the official moonrepo installation guide (https://moonrepo.dev/docs/install). Detect the operating system, architecture, shell, package managers, existing `moon` and `proto` binaries, repository root, package manager, lockfiles, workspace boundaries, `.moon` configuration, `.prototools`, CI files, and current Git status. Prefer a project-pinned proto installation or the documented project-local npm development dependency; explain the version resolution and PATH impact before choosing a global single-version install or download script.\n\nInstall the binary without initializing or migrating the repository. Preserve project sources, task inheritance, toolchain definitions, dependency graphs, lockfiles, package-manager settings, environment files, cache directories, generated outputs, CI pipelines, remote-cache configuration, and every uncommitted change. Apply only explicitly requested project sources, task definitions, toolchains, or cache policy. Before writing `.moon/workspace.yml`, `.moon/tasks.*`, `.moon/toolchains.*`, or `.prototools`, show the full proposed diff and how project discovery, task inputs/outputs, and dependency edges will change.\n\nTreat every moon task as arbitrary repository code. Never run `moon run`, `moon check`, `moon ci`, lifecycle hooks, dependency installation, sync, code generation, formatting, or teardown during setup. A configured toolchain version may automatically download runtimes, change PATH resolution, and install dependencies on first task execution; require approval for each tool and version. Do not hydrate untrusted cache artifacts, upload outputs that may contain secrets, connect remote cache or moonbase, clean `.moon/cache`, modify lockfiles, or infer task outputs. Keep environment and credential files excluded from task inputs, outputs, logs, and cache keys.\n\nVerify package provenance, `moon --version`, resolved binary and version pin, then use read-only project and task listing or graph inspection without executing tasks or serving a browser graph. Report detected projects, task names, toolchain requirements, dependency edges, cache locations, and configuration diagnostics. Confirm no runtime, dependency, cache artifact, generated file, lockfile, CI file, or repository source changed and Git status matches its baseline. Roll back only the setup-installed binary, version pin, and approved configuration additions; preserve all workspace files and caches unless their setup-created paths are individually reviewed.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install a pinned moon binary through proto or as a project-local development dependency, report PATH and version resolution, and do not initialize, migrate, sync, or execute the repository.",
+      "preserve": "all project sources, task inheritance, toolchains, dependency graphs, lockfiles, package-manager settings, environment files, caches, outputs, CI pipelines, remote-cache configuration, version pins, and uncommitted changes",
+      "safety": "Never execute tasks or hooks, install dependencies or runtimes, hydrate or upload cache data, connect cloud services, clean caches, generate files, format code, modify locks, or run teardown without separate approval.",
+      "verify": "Verify provenance, version, binary and pin, then inspect project and task graphs read-only and prove no task, download, cache operation, generated output, lockfile, CI configuration, source file, or Git status changed."
+    }
   }
 ]
