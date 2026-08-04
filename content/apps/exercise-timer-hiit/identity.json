@@ -1,0 +1,17 @@
+{
+  "index": 484,
+  "name": "Exercise Timer",
+  "slug": "exercise-timer-hiit",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/exercise-timer",
+    "installUrl": "https://flathub.org/apps/xyz.safeworlds.hiit"
+  },
+  "website": "https://apps.gnome.org/Hiit/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "GNOME interval-training timer with preparation, exercise and rest phases, repeatable set counts, saved presets, transition beeps, and adjustable sound volume.",
+  "accent": "#E66100",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/xyz.safeworlds.hiit.svg",
+  "logoSourceType": "official-project-asset"
+}

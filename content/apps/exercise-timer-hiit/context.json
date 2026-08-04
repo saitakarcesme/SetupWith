@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "interval_structure",
+    "effort_safety",
+    "audio_cues",
+    "preset_ownership"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "saved training presets, names, set counts, preparation, exercise and rest durations, ordering, and ownership",
+    "planned activity, participant experience, health limitations, environment, equipment, supervision, and stop conditions",
+    "work-to-rest ratio, total session duration, transition cadence, warm-up, cool-down, and progressive intensity",
+    "beep timing, pre-transition cue, volume, output device, Bluetooth routing, hearing comfort, and silent mode",
+    "screen wake behavior, focus, notifications, session interruption, clock accuracy, suspend, and power saver",
+    "keyboard or touch controls, pause, resume, skip, cancel, accidental activation, accessibility, and GNOME mobile use",
+    "preset creation, rename, duplication, deletion, reset, export absence, application data backup, and rollback",
+    "fitness and medical claims, pain or dizziness response, emergency access, privacy of routine names, and verification"
+  ]
+}

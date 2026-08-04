@@ -2413,5 +2413,10 @@
     "file": "errands-tasks.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.mrvladus.List.svg",
     "sourceType": "official-project-asset"
+  },
+  "exercise-timer-hiit": {
+    "file": "exercise-timer-hiit.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/xyz.safeworlds.hiit.svg",
+    "sourceType": "official-project-asset"
   }
 }
