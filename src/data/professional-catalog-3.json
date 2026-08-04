@@ -3343,5 +3343,59 @@
       "safety": "Never expose a floor plan, load Java plugins, import or rescale unverified assets, violate model licenses, alter catalogs, contact online services, render, export, print, overwrite files, or copy designs without a provenance, privacy, resource, and destination review plus approval.",
       "verify": "Verify publisher or SourceForge provenance, checksum, package version, executable, runtime ownership, libraries and data paths without a normal launch, then prove no plan, recovery, library, plugin, association, render, export, clipboard, print, process or network state changed."
     }
+  },
+  {
+    "index": 457,
+    "name": "Scribus",
+    "slug": "scribus",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/scribusproject/scribus",
+      "installUrl": "https://www.scribus.net/downloads/"
+    },
+    "website": "https://www.scribus.net/",
+    "category": "Design & Media",
+    "vertical": "creative",
+    "description": "Desktop publishing suite for precise page layout, typography, linked artwork, ICC color management, prepress checks, PDF/X and PostScript output, forms, and print production.",
+    "accent": "#0099CC",
+    "logoUrl": "https://raw.githubusercontent.com/scribusproject/scribus/master/OSX-package/inputs/scribus-icon2.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "documents",
+      "color_management",
+      "fonts",
+      "prepress"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "SLA document, linked image, font, and asset access",
+      "autosave, recovery, template, and document migration",
+      "font activation, embedding, subsetting, and license handling",
+      "ICC profile, CMYK, spot color, separation, and proofing changes",
+      "Python Scripter and external render-frame command execution",
+      "Collect for Output asset and font copying",
+      "PDF, PDF/X, EPS, PostScript, image, and print output",
+      "interactive PDF form, JavaScript action, metadata, and encryption changes"
+    ],
+    "prompt": "Set up Scribus from its official download page and repository (https://www.scribus.net/downloads/). Detect Windows, macOS, or Linux, architecture, package managers, existing stable or development installation, configuration, templates, autosaves, recoveries, color profiles, fonts, dictionaries, scripts, plugins, Ghostscript and external render-frame tools. Install only the current stable signed or distribution package matching the existing ownership model. Do not choose a nightly or development build, replace a package-managed version, add third-party repositories, or install optional production tools automatically.\n\nInstall without opening or converting an SLA document. Preserve every publication, linked image and vector, font reference, master page, style, swatch, spot color, ICC profile, script, template, barcode, form action, autosave, recovery file, recent path, preflight preset, printer setting and export profile. Scribus layouts frequently link to external artwork rather than embedding it; never move, relink, collect, downsample or substitute missing assets and fonts during setup. Hash configuration and recovery locations before any functional launch.\n\nTreat Python Scripter files and render-frame configurations for LaTeX, LilyPond, Gnuplot, Graphviz or POV-Ray as arbitrary commands. Do not execute scripts, render frames, install plugins, invoke Ghostscript, follow document JavaScript actions or trust imported templates without source and command review. Font activation, embedding and subsetting require license verification. Never copy a restricted font into an output package, silently substitute typography, install system-wide fonts, or change ICC defaults, rendering intent, CMYK conversion, ink limits, spot colors or separations.\n\nCollect for Output can copy the document, graphics and fonts into a new directory. PDF/PDF-X, EPS, PostScript, image and print outputs can expose document metadata, form actions, hidden layers and linked content or overwrite production files. Before any later output, require preflight results and show exact pages, bleeds, marks, color space, profiles, font treatment, transparency, forms, encryption, metadata, destinations and collisions. Verify publisher or package provenance, checksum when available, version, executable, method, Ghostscript detection and data paths from CLI or package metadata without loading documents. Confirm no asset, font, profile, script, recovery, output, print job or process changed. Roll back only the installed application and setup-owned shortcuts.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the current stable signed or verified Scribus package matching existing ownership, without development builds, optional tools, normal launch, document conversion, repository changes, scripts, plugins, fonts, or profile changes.",
+      "preserve": "all publications, links, assets, fonts, masters, styles, swatches, profiles, scripts, templates, forms, autosaves, recoveries, recents, preflight presets, printers, outputs, package ownership, and external-tool configuration",
+      "safety": "Never relink or collect assets, substitute or redistribute fonts, execute scripts or render commands, alter color management, follow form actions, convert documents, export, print, overwrite files, or expose metadata without a license, command, preflight, and destination review plus approval.",
+      "verify": "Verify provenance or checksum, version, executable, method, Ghostscript detection and data paths without documents, then prove no asset, font, profile, script, recovery, export, print job, process or configuration state changed."
+    }
   }
 ]

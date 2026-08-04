@@ -1,0 +1,17 @@
+{
+  "index": 457,
+  "name": "Scribus",
+  "slug": "scribus",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/scribusproject/scribus",
+    "installUrl": "https://www.scribus.net/downloads/"
+  },
+  "website": "https://www.scribus.net/",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Desktop publishing suite for precise page layout, typography, linked artwork, ICC color management, prepress checks, PDF/X and PostScript output, forms, and print production.",
+  "accent": "#0099CC",
+  "logoUrl": "https://raw.githubusercontent.com/scribusproject/scribus/master/OSX-package/inputs/scribus-icon2.svg",
+  "logoSourceType": "official-project-asset"
+}

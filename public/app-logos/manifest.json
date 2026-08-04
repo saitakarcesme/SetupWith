@@ -2278,5 +2278,10 @@
     "file": "sweet-home-3d.svg",
     "source": "https://www.sweethome3d.com/images/SweetHome3DLogo.png",
     "sourceType": "official-project-asset"
+  },
+  "scribus": {
+    "file": "scribus.svg",
+    "source": "https://raw.githubusercontent.com/scribusproject/scribus/master/OSX-package/inputs/scribus-icon2.svg",
+    "sourceType": "official-project-asset"
   }
 }
