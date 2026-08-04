@@ -1,0 +1,17 @@
+{
+  "index": 449,
+  "name": "Atuin",
+  "slug": "atuin",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/atuinsh/atuin",
+    "installUrl": "https://docs.atuin.sh/18.17/guide/installation/"
+  },
+  "website": "https://atuin.sh/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Shell history search and synchronization tool with contextual SQLite storage, encrypted append-only records, optional end-to-end encrypted sync, and cross-shell hooks.",
+  "accent": "#19C37D",
+  "logoUrl": "https://raw.githubusercontent.com/atuinsh/atuin/main/docs/docs/assets/atuin-turtle.svg",
+  "logoSourceType": "official-project-asset"
+}

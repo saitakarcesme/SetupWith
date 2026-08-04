@@ -2238,5 +2238,10 @@
     "file": "yazi.svg",
     "source": "https://raw.githubusercontent.com/sxyazi/yazi/main/assets/logo.png",
     "sourceType": "official-project-asset"
+  },
+  "atuin": {
+    "file": "atuin.svg",
+    "source": "https://raw.githubusercontent.com/atuinsh/atuin/main/docs/docs/assets/atuin-turtle.svg",
+    "sourceType": "official-project-asset"
   }
 }
