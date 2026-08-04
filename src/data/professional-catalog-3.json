@@ -6569,5 +6569,59 @@
       "safety": "Never expose routine history, replace an active session, reinterpret overdue alarms, confuse monotonic and wall-clock time, auto-start phases unexpectedly, award false progress, bypass do-not-disturb, play sudden audio, make health claims, or impose inaccessible break guidance.",
       "verify": "Verify Sessions source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove timers, elapsed state, history, notifications, audio, power inhibition, backgrounds, portals and networks are unchanged."
     }
+  },
+  {
+    "index": 518,
+    "name": "Share Preview",
+    "slug": "share-preview-social-cards",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/rafaelmardojai/share-preview",
+      "installUrl": "https://flathub.org/apps/com.rafaelmardojai.SharePreview"
+    },
+    "website": "https://apps.gnome.org/SharePreview/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "GNOME developer utility for locally previewing and debugging Open Graph and other website metadata used in social-media share cards.",
+    "accent": "#1C71D8",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.rafaelmardojai.SharePreview.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "share_preview_private_url_credential"
+    ],
+    "config": [
+      "metadata_source",
+      "fetch_privacy",
+      "platform_rendering_profiles",
+      "asset_safety"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "input mode, local HTML or exact HTTP URL, normalized scheme, Unicode hostname, port, redirects, DNS resolution, TLS, and ownership",
+      "Open Graph and card title, description, canonical URL, image, image alt text, locale, type, site name, duplicate tags, and precedence",
+      "server-rendered HTML versus client JavaScript, crawler user agent, content negotiation, robots directives, authentication, and platform cache differences",
+      "private staging URL, embedded basic-auth or query credentials, cookie and header exclusion, diagnostic redaction, clipboard, history, and retention",
+      "SSRF defenses for loopback, private, link-local, cloud metadata, Unix sockets, redirects, DNS rebinding, alternate IP notation, and fetch limits",
+      "remote image final origin, MIME signature, dimensions, aspect ratio, byte and pixel caps, redirects, decompression, SVG activity, EXIF, and cache",
+      "platform-specific rendering approximations, truncation, unsupported tags, stale social caches, accessibility, and no-publish boundary",
+      "temporary fetch data, thumbnails, URL history, cache clearing, export, reset, uninstall, backups, and rollback"
+    ],
+    "prompt": "Set up Share Preview from its official project and verified Flathub listing (https://apps.gnome.org/SharePreview/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, saved-source mode, URL-history count, aggregate preview and image-cache bytes, crawler-profile choices, sandbox overrides, network permission presence and backup coverage without revealing URLs, hostnames, page titles, descriptions, canonical links, image paths, private staging names, credentials, tokens or fetched content. Install stable `com.rafaelmardojai.SharePreview` from verified Flathub in the existing ownership scope. Do not compile from source, launch the app, open local HTML, read the clipboard, resolve a hostname, fetch a URL, follow a redirect, download an image, parse metadata, render a card, update history, clear caches or publish anything during setup.\n\nPreserve all source choices, history, preview profiles, cached artifacts, window state, permissions, remotes, overrides and scope ownership. Treat URLs, HTML, metadata and images as untrusted input. Private staging addresses and query credentials are secrets: never persist or print them, and never forward ambient cookies, authorization headers or browser sessions. Installation must not revisit prior URLs or assume a friendly page title, canonical link or preview image proves origin ownership.\n\nBefore a later preview fetch, require an exact normalized HTTP or HTTPS URL, Unicode and punycode hostname, expected redirects, ownership and whether the result should be public. Deny loopback, private, link-local, cloud-metadata and local-socket destinations; revalidate every redirect and DNS result to prevent rebinding. Apply response byte, redirect, decompression, parse and time limits. Distinguish server-rendered metadata from JavaScript-generated DOM and document the selected crawler user agent, content negotiation and authentication-free behavior. Resolve Open Graph and card duplicates deterministically while showing the actual source tags.\n\nValidate remote images by final origin, signature, MIME, dimensions, pixel and byte caps; do not execute SVG activity, preserve hidden EXIF or open files automatically. Platform cards are approximations whose truncation, cache and supported tags change; label the profile and never imply that a local preview updated a social network. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no file or clipboard read, DNS, HTTP request, redirect, image download, metadata parse, preview render, history or cache mutation occurred. On failure, rollback only the new Share Preview ref in its original scope; preserve shared runtimes, remotes, overrides, source settings, histories, profiles, caches and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.rafaelmardojai.SharePreview from verified Flathub in the existing scope without source builds, launch, local-file or clipboard reads, DNS, HTTP, redirects, images, parsing, rendering, history, cache changes, or publishing.",
+      "preserve": "all source choices, URL history, crawler and platform profiles, preview and image caches, window state, permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose private URLs or credentials, inherit browser sessions, permit SSRF, trust redirects or MIME labels, execute active SVG, retain EXIF, confuse client DOM with crawler HTML, present approximations as exact, revisit history automatically, or imply publishing occurred.",
+      "verify": "Verify Share Preview source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove files, clipboards, networks, redirects, images, parsers, renders, histories and caches are unchanged."
+    }
   }
 ]

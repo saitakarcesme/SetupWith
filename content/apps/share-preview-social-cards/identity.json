@@ -1,0 +1,17 @@
+{
+  "index": 518,
+  "name": "Share Preview",
+  "slug": "share-preview-social-cards",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/rafaelmardojai/share-preview",
+    "installUrl": "https://flathub.org/apps/com.rafaelmardojai.SharePreview"
+  },
+  "website": "https://apps.gnome.org/SharePreview/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "GNOME developer utility for locally previewing and debugging Open Graph and other website metadata used in social-media share cards.",
+  "accent": "#1C71D8",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.rafaelmardojai.SharePreview.svg",
+  "logoSourceType": "official-project-asset"
+}

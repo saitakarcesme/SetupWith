@@ -2583,5 +2583,10 @@
     "file": "sessions-pomodoro-focus.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.pojtinger.felicitas.Sessions.svg",
     "sourceType": "official-project-asset"
+  },
+  "share-preview-social-cards": {
+    "file": "share-preview-social-cards.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/com.rafaelmardojai.SharePreview.svg",
+    "sourceType": "official-project-asset"
   }
 }

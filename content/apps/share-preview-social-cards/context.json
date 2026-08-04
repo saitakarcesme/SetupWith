@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "metadata_source",
+    "fetch_privacy",
+    "platform_rendering_profiles",
+    "asset_safety"
+  ],
+  "secrets": [
+    {
+      "key": "share_preview_private_url_credential",
+      "reference": "secret://share/preview-private-url-credential"
+    }
+  ],
+  "permissionCheckpoints": [
+    "input mode, local HTML or exact HTTP URL, normalized scheme, Unicode hostname, port, redirects, DNS resolution, TLS, and ownership",
+    "Open Graph and card title, description, canonical URL, image, image alt text, locale, type, site name, duplicate tags, and precedence",
+    "server-rendered HTML versus client JavaScript, crawler user agent, content negotiation, robots directives, authentication, and platform cache differences",
+    "private staging URL, embedded basic-auth or query credentials, cookie and header exclusion, diagnostic redaction, clipboard, history, and retention",
+    "SSRF defenses for loopback, private, link-local, cloud metadata, Unix sockets, redirects, DNS rebinding, alternate IP notation, and fetch limits",
+    "remote image final origin, MIME signature, dimensions, aspect ratio, byte and pixel caps, redirects, decompression, SVG activity, EXIF, and cache",
+    "platform-specific rendering approximations, truncation, unsupported tags, stale social caches, accessibility, and no-publish boundary",
+    "temporary fetch data, thumbnails, URL history, cache clearing, export, reset, uninstall, backups, and rollback"
+  ]
+}
