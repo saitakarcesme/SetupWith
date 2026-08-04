@@ -1,0 +1,16 @@
+{
+  "index": 430,
+  "name": "act",
+  "slug": "act",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/nektos/act",
+    "installUrl": "https://nektosact.com/installation/index.html"
+  },
+  "website": "https://nektosact.com/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Local GitHub Actions runner that discovers repository workflows and executes selected jobs inside containers for fast CI feedback.",
+  "accent": "#2088FF",
+  "simpleIconSlug": "githubactions"
+}

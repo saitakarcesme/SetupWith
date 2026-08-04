@@ -1,0 +1,38 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "runner_image",
+    "container_architecture",
+    "artifact_server_path",
+    "reuse_containers"
+  ],
+  "secrets": [
+    {
+      "key": "GITHUB_TOKEN",
+      "reference": "secret://github/token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "container engine access",
+    "workflow or action code execution",
+    "runner image downloads",
+    "repository file mounts",
+    "network access from jobs",
+    "secret injection",
+    "artifact directory writes"
+  ]
+}

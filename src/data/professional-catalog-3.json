@@ -1875,5 +1875,59 @@
       "safety": "Do not pipe the installer into a shell before downloading and reviewing it; install Nix, enable its daemon, create WSL2, edit shell startup files, add global packages, run project init hooks or scripts, garbage-collect the Nix store, update locks, or allow insecure packages without separate approval.",
       "verify": "Confirm the Devbox and Nix versions, executable source, platform mode, and unchanged profiles; validate an existing project with read-only configuration inspection, or initialize a disposable empty directory and enter a shell without adding packages, then prove no project lock, global profile, shell file, daemon setting, or Nix store path was removed."
     }
+  },
+  {
+    "index": 430,
+    "name": "act",
+    "slug": "act",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/nektos/act",
+      "installUrl": "https://nektosact.com/installation/index.html"
+    },
+    "website": "https://nektosact.com/",
+    "category": "DevOps & Cloud",
+    "vertical": "software",
+    "description": "Local GitHub Actions runner that discovers repository workflows and executes selected jobs inside containers for fast CI feedback.",
+    "accent": "#2088FF",
+    "simpleIconSlug": "githubactions",
+    "secrets": [
+      "GITHUB_TOKEN"
+    ],
+    "config": [
+      "runner_image",
+      "container_architecture",
+      "artifact_server_path",
+      "reuse_containers"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "container engine access",
+      "workflow or action code execution",
+      "runner image downloads",
+      "repository file mounts",
+      "network access from jobs",
+      "secret injection",
+      "artifact directory writes"
+    ],
+    "prompt": "Set up act from its official nektos/act release and installation guide (https://nektosact.com/installation/index.html). Detect the operating system, architecture, shell, package managers, existing `act` binary, Git repository root, active Docker context, and whether a compatible Docker API endpoint is reachable. Prefer a signed or checksummed release through the documented Homebrew, Winget, Scoop, Chocolatey, Arch, Nix, or GitHub CLI method. Do not build an unpinned development revision.\n\nBefore executing anything, enumerate workflow files and use `act --list` for the requested event or workflow. Explain that act mounts repository content, downloads runner images and actions, and runs workflow commands with access to a container engine; it is not a perfect replica of GitHub-hosted runners. Preserve `.github/workflows`, local actions, `.actrc` files at XDG, home, and repository scope, event payloads, variable files, secret files, Docker contexts, images, containers, volumes, caches, and artifact directories. Apply only the requested runner image, container architecture, artifact path, or container reuse behavior.\n\nTreat every workflow and referenced action as executable, potentially untrusted code. Stop before running jobs, pulling large runner images, mounting the Docker socket, using host networking, running privileged containers, writing artifacts, contacting external services, or reusing a container. Never put token values on the command line or in shell history. If a GitHub token is required, use only the opaque `secret://github/token` reference through act's secure prompt or a permission-restricted temporary secret file, and remove only that setup-created file afterward. Do not infer production secrets from GitHub CLI, environment variables, or repository files.\n\nVerify the installed version and executable provenance, parse help output, list workflows and jobs without execution, and show the exact event, workflow, job, runner image, mounts, network mode, and secret names that a later approved run would use. Confirm that no job ran, no image was pulled, no container or volume was created, and no workflow, `.actrc`, credential, Docker context, or artifact changed. End with a rollback that removes only the installed act binary or setup-owned configuration while preserving repositories and container data.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install a checksummed act release through a documented package-manager channel, then detect the active Docker-compatible API without starting or reconfiguring a container engine.",
+      "preserve": "all workflows, local actions, layered .actrc files, event and variable files, secret files, Docker contexts, images, containers, volumes, caches, and artifact directories",
+      "safety": "Never execute an unreviewed workflow, pull a large runner image, expose the Docker socket, use privileged or host networking, inject secrets, contact external services, or write artifacts without approval.",
+      "verify": "Verify binary provenance and version, then use list mode to enumerate workflows and jobs without running commands, downloading images, creating containers, mounting files, or changing repository state."
+    }
   }
 ]

@@ -2143,5 +2143,10 @@
     "file": "devbox.svg",
     "source": "https://github.com/jetify-com/devbox/blob/c3cab01d7375726f0121a25fc0f5c838484246f7/docs/app/static/img/devbox_logo_light.svg",
     "sourceType": "simple-icons-official-glyph"
+  },
+  "act": {
+    "file": "act.svg",
+    "source": "https://github.com/features/actions",
+    "sourceType": "simple-icons-official-glyph"
   }
 }
