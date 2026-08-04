@@ -2588,5 +2588,10 @@
     "file": "share-preview-social-cards.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.rafaelmardojai.SharePreview.svg",
     "sourceType": "official-project-asset"
+  },
+  "sudoku-logic-puzzles": {
+    "file": "sudoku-logic-puzzles.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.sepehr_rs.Sudoku.svg",
+    "sourceType": "official-project-asset"
   }
 }

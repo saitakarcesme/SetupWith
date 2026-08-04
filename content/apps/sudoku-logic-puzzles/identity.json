@@ -1,0 +1,17 @@
+{
+  "index": 519,
+  "name": "Sudoku",
+  "slug": "sudoku-logic-puzzles",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/sepehr-rs/Sudoku",
+    "installUrl": "https://flathub.org/apps/io.github.sepehr_rs.Sudoku"
+  },
+  "website": "https://apps.gnome.org/Sudoku/",
+  "category": "Games & Launchers",
+  "vertical": "software",
+  "description": "Modern GTK4 and libadwaita Sudoku game with multiple difficulty levels, keyboard shortcuts, saved progress, pencil notes, focus highlighting, and conflict assistance.",
+  "accent": "#613583",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.sepehr_rs.Sudoku.svg",
+  "logoSourceType": "official-project-asset"
+}

@@ -6623,5 +6623,57 @@
       "safety": "Never expose private URLs or credentials, inherit browser sessions, permit SSRF, trust redirects or MIME labels, execute active SVG, retain EXIF, confuse client DOM with crawler HTML, present approximations as exact, revisit history automatically, or imply publishing occurred.",
       "verify": "Verify Share Preview source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove files, clipboards, networks, redirects, images, parsers, renders, histories and caches are unchanged."
     }
+  },
+  {
+    "index": 519,
+    "name": "Sudoku",
+    "slug": "sudoku-logic-puzzles",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/sepehr-rs/Sudoku",
+      "installUrl": "https://flathub.org/apps/io.github.sepehr_rs.Sudoku"
+    },
+    "website": "https://apps.gnome.org/Sudoku/",
+    "category": "Games & Launchers",
+    "vertical": "software",
+    "description": "Modern GTK4 and libadwaita Sudoku game with multiple difficulty levels, keyboard shortcuts, saved progress, pencil notes, focus highlighting, and conflict assistance.",
+    "accent": "#613583",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.sepehr_rs.Sudoku.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "difficulty_and_generation",
+      "save_integrity",
+      "assist_policy",
+      "accessibility"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Intermediate",
+    "permissionCheckpoints": [
+      "difficulty label and measurable definition, puzzle source or generator version, uniqueness guarantee, seed handling, symmetry, and reproducibility",
+      "current grid givens, user entries, pencil notes, selected cell, elapsed time, pause state, difficulty, save slot, and crash recovery",
+      "row, column and box conflict highlighting, valid-input suggestions, automatic pencil-note removal, hints, solution exposure, and assist expectations",
+      "new-game confirmation, active-save overwrite, reset, undo and redo depth, completion detection, statistics, and accidental input recovery",
+      "keyboard shortcuts, digit and keypad mapping, input method, focus order, high contrast, color independence, scaling, touch, and screen reader labels",
+      "timer semantics across pause, suspend, clock correction and resume, history accuracy, competitive interpretation, and privacy on shared devices",
+      "offline behavior, network absence, telemetry, filesystem and portal access, notifications, sound, sandbox overrides, and least privilege",
+      "save migration, corrupted-state handling, data export or deletion, backups, app reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Sudoku from its official project and verified Flathub listing (https://apps.gnome.org/Sudoku/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, save-slot count, current-game presence, aggregate filled-cell and pencil-note counts, selected difficulty, elapsed-time presence, assist settings, statistics count, sandbox overrides and backup coverage without revealing the puzzle grid, solution, individual entries, notes, generator seeds, completion times or player history. Install stable `io.github.sepehr_rs.Sudoku` from verified Flathub in the existing ownership scope. Do not compile from source, launch Sudoku, load a save, generate or start a puzzle, reveal a solution, enter or erase a digit, change notes, request a hint, advance a timer, update statistics, play sound or show a notification during setup.\n\nPreserve every given, user entry, pencil note, selection, undo and redo state, difficulty, elapsed time, pause state, save identity, assist preference, statistics, remotes, overrides and scope ownership. Installation must not treat a conflict as corruption, remove notes because of a newly interpreted entry, complete an unfinished grid, regenerate a puzzle from an unstable seed or overwrite an active game with a fresh board. Redact boards, seeds and completion history from diagnostics.\n\nBefore later play, document the difficulty definition, generator and version, whether the puzzle has exactly one solution, seed reproducibility and symmetry policy. Conflict highlighting only identifies rule violations; it does not prove an unconflicted partial grid leads to a unique solution. Define whether valid-input displays, automatic pencil-note removal, hints and solution reveal are enabled, and keep assist changes explicit. Test generation and completion only with a disposable synthetic puzzle excluded from real saves and statistics. Require confirmation before new game, reset or save replacement, with a recoverable snapshot.\n\nReview keyboard and keypad mappings, input-method behavior, focus order, zoom, touch targets, screen-reader labels, high contrast and non-color conflict cues. Specify timer behavior across pause, suspend and resume so clock changes do not falsify elapsed time. Verify provenance, app ID, origin, commit, runtime, executable, files and static sandbox permissions offline; flag unexpected network, telemetry, broad filesystem or portal access without exercising it. Prove no save read, puzzle generation, grid or note mutation, hint, timer change, statistic, audio, notification, portal or network request occurred. On failure, rollback only the new Sudoku ref in its original scope; preserve shared runtimes, remotes, overrides, games, notes, timers, assists, statistics and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.github.sepehr_rs.Sudoku from verified Flathub in the existing scope without source builds, launch, save reads, puzzle generation, board or note edits, hints, timer changes, statistics, audio, notifications, portals, or networks.",
+      "preserve": "all givens, entries, pencil notes, selections, undo and redo state, difficulty, elapsed time, pause and save identity, assists, statistics, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose boards or seeds, mistake conflicts for corruption, imply valid partial grids are solvable, remove notes unexpectedly, change assists silently, regenerate unstable puzzles, overwrite active games, falsify timers, rely on color alone, or pollute real statistics with tests.",
+      "verify": "Verify Sudoku source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove saves, generation, grids, notes, hints, timers, statistics, audio, notifications, portals and networks are unchanged."
+    }
   }
 ]

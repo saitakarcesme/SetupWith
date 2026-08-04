@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Intermediate",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "difficulty_and_generation",
+    "save_integrity",
+    "assist_policy",
+    "accessibility"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "difficulty label and measurable definition, puzzle source or generator version, uniqueness guarantee, seed handling, symmetry, and reproducibility",
+    "current grid givens, user entries, pencil notes, selected cell, elapsed time, pause state, difficulty, save slot, and crash recovery",
+    "row, column and box conflict highlighting, valid-input suggestions, automatic pencil-note removal, hints, solution exposure, and assist expectations",
+    "new-game confirmation, active-save overwrite, reset, undo and redo depth, completion detection, statistics, and accidental input recovery",
+    "keyboard shortcuts, digit and keypad mapping, input method, focus order, high contrast, color independence, scaling, touch, and screen reader labels",
+    "timer semantics across pause, suspend, clock correction and resume, history accuracy, competitive interpretation, and privacy on shared devices",
+    "offline behavior, network absence, telemetry, filesystem and portal access, notifications, sound, sandbox overrides, and least privilege",
+    "save migration, corrupted-state handling, data export or deletion, backups, app reset, uninstall, and rollback"
+  ]
+}
