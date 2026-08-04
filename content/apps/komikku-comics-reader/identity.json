@@ -1,0 +1,17 @@
+{
+  "index": 494,
+  "name": "Komikku",
+  "slug": "komikku-comics-reader",
+  "source": {
+    "type": "website",
+    "url": "https://codeberg.org/valos/Komikku",
+    "installUrl": "https://flathub.org/apps/info.febvre.Komikku"
+  },
+  "website": "https://apps.gnome.org/Komikku/",
+  "category": "Browsers & Internet",
+  "vertical": "software",
+  "description": "Adaptive manga and comics reader for dozens of online servers and local CBZ, CBR, CBT, EPUB or PDF libraries, with offline chapters, categories, history, automatic updates, downloads, and tracking services.",
+  "accent": "#A51D2D",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/info.febvre.Komikku.svg",
+  "logoSourceType": "official-project-asset"
+}

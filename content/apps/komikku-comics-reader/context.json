@@ -1,0 +1,45 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "content_sources",
+    "download_policy",
+    "tracking_privacy",
+    "archive_parser_safety"
+  ],
+  "secrets": [
+    {
+      "key": "komikku_anilist_token",
+      "reference": "secret://komikku/anilist-token"
+    },
+    {
+      "key": "komikku_mangaupdates_credentials",
+      "reference": "secret://komikku/mangaupdates-credentials"
+    },
+    {
+      "key": "komikku_myanimelist_token",
+      "reference": "secret://komikku/myanimelist-token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "online server inventory, operator, jurisdiction, HTTPS, redirects, terms, authentication, rate limits, and content authorization",
+    "local CBZ, CBR, CBT, EPUB and PDF roots, ownership, archive structure, parser trust, symlinks, path traversal, and decompression limits",
+    "library series, categories, favorites, reading mode, progress, history, cached pages, downloaded chapters, and deletion semantics",
+    "automatic series updates and chapter downloads, interval, metered network, battery, storage quota, duplicates, and failure cleanup",
+    "AniList, MangaUpdates and MyAnimeList identity, OAuth or credential scope, progress writeback, visibility, activity feed, and revocation",
+    "RTL, LTR, vertical and Webtoon modes, navigation gestures, preloading, screen brightness, accessibility, and accidental chapter changes",
+    "remote images, malicious archives, oversized pages, animated content, metadata, external links, scripts, and decoder isolation",
+    "copyright and regional access, age-sensitive content, history privacy, backups, server removal, cache purge, uninstall, and rollback"
+  ]
+}

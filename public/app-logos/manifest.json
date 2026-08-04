@@ -2463,5 +2463,10 @@
     "file": "keypunch-typing-trainer.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/no.bragefuglseth.Keypunch.svg",
     "sourceType": "official-project-asset"
+  },
+  "komikku-comics-reader": {
+    "file": "komikku-comics-reader.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/info.febvre.Komikku.svg",
+    "sourceType": "official-project-asset"
   }
 }

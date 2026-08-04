@@ -5300,5 +5300,61 @@
       "safety": "Never expose keystrokes or custom content, import secrets or unlicensed text, execute generated code, capture input across windows, compare incompatible metrics, use results for consequential ranking, or ignore discomfort without text, layout, focus, corpus, metric, privacy, accessibility, and ergonomic review.",
       "verify": "Verify Keypunch source, app ID, origin, commit, runtime, executable, corpus assets, files and permissions offline, then prove keystrokes, custom text, clipboard, sessions, results, history, keyboard settings, networks and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 494,
+    "name": "Komikku",
+    "slug": "komikku-comics-reader",
+    "source": {
+      "type": "website",
+      "url": "https://codeberg.org/valos/Komikku",
+      "installUrl": "https://flathub.org/apps/info.febvre.Komikku"
+    },
+    "website": "https://apps.gnome.org/Komikku/",
+    "category": "Browsers & Internet",
+    "vertical": "software",
+    "description": "Adaptive manga and comics reader for dozens of online servers and local CBZ, CBR, CBT, EPUB or PDF libraries, with offline chapters, categories, history, automatic updates, downloads, and tracking services.",
+    "accent": "#A51D2D",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/info.febvre.Komikku.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "komikku_anilist_token",
+      "komikku_mangaupdates_credentials",
+      "komikku_myanimelist_token"
+    ],
+    "config": [
+      "content_sources",
+      "download_policy",
+      "tracking_privacy",
+      "archive_parser_safety"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "online server inventory, operator, jurisdiction, HTTPS, redirects, terms, authentication, rate limits, and content authorization",
+      "local CBZ, CBR, CBT, EPUB and PDF roots, ownership, archive structure, parser trust, symlinks, path traversal, and decompression limits",
+      "library series, categories, favorites, reading mode, progress, history, cached pages, downloaded chapters, and deletion semantics",
+      "automatic series updates and chapter downloads, interval, metered network, battery, storage quota, duplicates, and failure cleanup",
+      "AniList, MangaUpdates and MyAnimeList identity, OAuth or credential scope, progress writeback, visibility, activity feed, and revocation",
+      "RTL, LTR, vertical and Webtoon modes, navigation gestures, preloading, screen brightness, accessibility, and accidental chapter changes",
+      "remote images, malicious archives, oversized pages, animated content, metadata, external links, scripts, and decoder isolation",
+      "copyright and regional access, age-sensitive content, history privacy, backups, server removal, cache purge, uninstall, and rollback"
+    ],
+    "prompt": "Set up Komikku from its official project and verified Flathub listing (https://apps.gnome.org/Komikku/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, library/category counts, local content roots, enabled-server count, cached/downloaded byte totals, tracking-service count, auto-update policy and secret-store boundary without listing titles, reading history, server names, paths or credentials. Install stable `info.febvre.Komikku` from verified Flathub in the existing ownership scope. Do not compile from source, launch Komikku, scan a library, contact a server, authenticate, render a page, update series or download content during setup.\n\nPreserve every series, category, favorite, reading direction, chapter progress, history entry, cache, offline download, server configuration, tracker token and preference. Reading history can reveal identity, beliefs, sexuality or health interests; redact it from diagnostics and notifications. Never enable every server by default, bypass regional restrictions, assume hosted material is authorized or delete cached/offline chapters merely because a source disappears. Confirm the user's rights and each source's terms before access.\n\nTreat local CBZ/CBR/CBT, EPUB and PDF files plus remote images and metadata as untrusted input. Before parsing show provenance, checksum, format, size, file count, compressed and expanded limits, symlink/path-traversal checks, decoder boundary and isolated destination. Do not execute embedded scripts, follow external links or extract outside a temporary sandbox. Automatic updates and downloads can create sustained traffic and disk use; require approved servers, interval, metered/battery policy, quota, duplicate handling and partial-download cleanup.\n\nAniList, MangaUpdates and MyAnimeList tracking writes personal progress to third parties. Before connection show exact OAuth origin, requested scopes, account visibility, activity-feed effects, initial direction and conflict rules. Never overwrite local progress or publish activity silently; use a dedicated revocable token where supported. Verify provenance, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no library scan, archive parse, network request, tracker access, progress mutation, cache, download, notification or filesystem state changed. On failure, rollback only the new Komikku ref in its original scope; preserve runtimes, remotes, overrides, libraries, downloads, history and credentials.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable info.febvre.Komikku from verified Flathub in the existing scope without source builds, launch, library scans, server contact, authentication, page rendering, tracker writes, automatic updates, downloads, notifications, or cache changes.",
+      "preserve": "all series, categories, favorites, reading modes, progress, histories, caches, offline chapters, server settings, tracker credentials, auto-update and download policies, remotes, overrides, and scope ownership",
+      "safety": "Never expose reading history, enable unreviewed servers, bypass access restrictions, trust archives or remote pages, overrun storage or metered networks, execute embedded content, overwrite progress, or publish tracking activity without source, rights, parser, quota, identity, scope, direction, privacy, and revocation review.",
+      "verify": "Verify Komikku source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove libraries, parsers, networks, trackers, progress, caches, downloads, notifications and filesystem state are unchanged."
+    }
   }
 ]
