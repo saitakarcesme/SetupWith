@@ -2683,5 +2683,10 @@
     "file": "drum-machine-pattern-sequencer.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.revisto.drum-machine.svg",
     "sourceType": "official-project-asset"
+  },
+  "ear-tag-audio-metadata": {
+    "file": "ear-tag-audio-metadata.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.EarTag.svg",
+    "sourceType": "official-project-asset"
   }
 }

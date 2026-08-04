@@ -1,0 +1,17 @@
+{
+  "index": 538,
+  "name": "Ear Tag",
+  "slug": "ear-tag-audio-metadata",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/eartag",
+    "installUrl": "https://flathub.org/apps/app.drey.EarTag"
+  },
+  "website": "https://apps.gnome.org/EarTag/",
+  "category": "Music & Streaming",
+  "vertical": "creative",
+  "description": "Quick and bulk audio tag editor for MP3, WAV, M4A, FLAC, OGG, and WMA files, with tag-driven renaming and optional AcoustID identification without requiring a library folder.",
+  "accent": "#1C71D8",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.EarTag.svg",
+  "logoSourceType": "official-project-asset"
+}
