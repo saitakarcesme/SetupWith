@@ -5408,5 +5408,57 @@
       "safety": "Never use filler for semantic, accessible, legal, safety, transactional or localized copy, mistake clean rendering for production readiness, commit placeholders, pollute analytics or search, or overwrite clipboard data without destination, extent, marker, replacement owner, deadline, locale, accessibility, and build-gate review.",
       "verify": "Verify Lorem source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove generation, clipboard, documents, recent output, networks, telemetry and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 496,
+    "name": "Mahjongg",
+    "slug": "gnome-mahjongg",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/GNOME/gnome-mahjongg",
+      "installUrl": "https://flathub.org/apps/org.gnome.Mahjongg"
+    },
+    "website": "https://apps.gnome.org/Mahjongg/",
+    "category": "Games & Launchers",
+    "vertical": "software",
+    "description": "Single-player Mahjong solitaire puzzle with multiple starting layouts, timed tile matching, legal-move constraints, visually similar tile sets, and hints carrying a time penalty.",
+    "accent": "#2EC27E",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Mahjongg.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "layout_selection",
+      "game_state",
+      "timing_rules",
+      "visual_accessibility"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "current game, selected starting layout, tile arrangement, remaining pairs, elapsed time, pause state, and ownership",
+      "matching rule, free-tile left or right clearance, same-level constraint, shuffle or restart behavior, and completion condition",
+      "hint request, highlighted move, time penalty, timing fairness, accidental activation, and assistive-use accommodation",
+      "tile theme, visually similar glyphs, color and contrast, zoom or window size, screen reader labels, and color-vision needs",
+      "mouse, keyboard, touch and switch navigation, focus order, double activation, gesture conflicts, and GNOME mobile layout",
+      "statistics, best times, completion history, reset scope, profile data, local retention, and diagnostic privacy",
+      "randomness or deterministic deals, reproducibility, unsolvable state handling, difficulty claims, and restart consent",
+      "session duration, break reminders, sound, notifications, offline operation, uninstall, saved-state rollback, and no gambling semantics"
+    ],
+    "prompt": "Set up Mahjongg from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Mahjongg/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, presence of an unfinished game, selected layout, statistics count, input methods, tile-theme preference and accessibility needs without reading board positions, elapsed times or personal performance. Install stable `org.gnome.Mahjongg` from verified Flathub in the existing ownership scope. Do not compile from source, launch Mahjongg, start or resume a game, request a hint, move tiles, reset statistics or change theme during setup.\n\nPreserve the current board, tile arrangement, elapsed time, pause state, selected layout, statistics, best times, theme and preferences. Installation must not treat an unfinished game as disposable or migrate its state without a protected backup. Mahjongg here is single-player tile-matching solitaire, not the four-player game and not gambling; never introduce accounts, wagers, online services or competitive ranking. Explain that a tile is selectable only when free on its left or right at the same level and that visually similar tiles may differ.\n\nBefore any future game-state action show whether it will resume, restart, shuffle, request a hint or change layout, and identify the exact effect on time, statistics and undoability. A hint carries a substantial time penalty; do not use hints for verification or enable them without the player's intent. Never claim that a board is unsolvable solely because no obvious move was found, and do not reset progress to obtain an easier deal. Preserve randomness or deal identity when testing reproducibility.\n\nReview tile contrast, glyph distinguishability, window scale, keyboard focus, touch targets and screen-reader naming. Accessibility accommodations should not be treated as cheating or silently change recorded times. Encourage breaks for long sessions and avoid performance or cognitive-health claims. Verify Mahjongg provenance, app ID, origin, commit, runtime, executable, layouts, tile assets, files and permissions offline. Prove no game start, timer, board mutation, hint, statistic, sound, notification, network request or filesystem state changed. On failure, rollback only the new Mahjongg ref in its original scope; preserve runtimes, remotes, overrides, saved game and statistics.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.Mahjongg from verified Flathub in the existing scope without source builds, launch, game start or resume, timers, tile moves, hints, shuffles, layout changes, statistic resets, theme changes, sounds, or networks.",
+      "preserve": "all saved boards, tile arrangements, elapsed and pause state, selected layouts, statistics, best times, deal identity, themes, input and accessibility preferences, remotes, overrides, and scope ownership",
+      "safety": "Never discard a game, use hints or shuffles as tests, hide time penalties, reset performance, misclassify accessibility support, introduce gambling or online ranking, or claim unsolvability without game-state, rule, layout, timing, statistics, input, visual, and player-intent review.",
+      "verify": "Verify Mahjongg source, app ID, origin, commit, runtime, executable, layouts, tile assets, files and permissions offline, then prove games, timers, boards, hints, statistics, sounds, notifications, networks and filesystem state are unchanged."
+    }
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "index": 496,
+  "name": "Mahjongg",
+  "slug": "gnome-mahjongg",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/gnome-mahjongg",
+    "installUrl": "https://flathub.org/apps/org.gnome.Mahjongg"
+  },
+  "website": "https://apps.gnome.org/Mahjongg/",
+  "category": "Games & Launchers",
+  "vertical": "software",
+  "description": "Single-player Mahjong solitaire puzzle with multiple starting layouts, timed tile matching, legal-move constraints, visually similar tile sets, and hints carrying a time penalty.",
+  "accent": "#2EC27E",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Mahjongg.svg",
+  "logoSourceType": "official-project-asset"
+}

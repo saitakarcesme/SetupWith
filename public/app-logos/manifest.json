@@ -2473,5 +2473,10 @@
     "file": "lorem-placeholder-text.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.design.Lorem.svg",
     "sourceType": "official-project-asset"
+  },
+  "gnome-mahjongg": {
+    "file": "gnome-mahjongg.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Mahjongg.svg",
+    "sourceType": "official-project-asset"
   }
 }

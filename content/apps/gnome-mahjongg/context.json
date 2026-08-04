@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "layout_selection",
+    "game_state",
+    "timing_rules",
+    "visual_accessibility"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "current game, selected starting layout, tile arrangement, remaining pairs, elapsed time, pause state, and ownership",
+    "matching rule, free-tile left or right clearance, same-level constraint, shuffle or restart behavior, and completion condition",
+    "hint request, highlighted move, time penalty, timing fairness, accidental activation, and assistive-use accommodation",
+    "tile theme, visually similar glyphs, color and contrast, zoom or window size, screen reader labels, and color-vision needs",
+    "mouse, keyboard, touch and switch navigation, focus order, double activation, gesture conflicts, and GNOME mobile layout",
+    "statistics, best times, completion history, reset scope, profile data, local retention, and diagnostic privacy",
+    "randomness or deterministic deals, reproducibility, unsolvable state handling, difficulty claims, and restart consent",
+    "session duration, break reminders, sound, notifications, offline operation, uninstall, saved-state rollback, and no gambling semantics"
+  ]
+}
