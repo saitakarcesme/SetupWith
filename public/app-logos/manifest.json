@@ -2563,5 +2563,10 @@
     "file": "webfont-bundler-font-face.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.rafaelmardojai.WebfontKitGenerator.svg",
     "sourceType": "official-project-asset"
+  },
+  "wordbook-offline-dictionary": {
+    "file": "wordbook-offline-dictionary.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/dev.mufeed.Wordbook.svg",
+    "sourceType": "official-project-asset"
   }
 }

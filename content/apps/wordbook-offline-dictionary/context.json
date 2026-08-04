@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Intermediate",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "lexical_dataset_version",
+    "lookup_history_privacy",
+    "pronunciation_output",
+    "offline_integrity"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "bundled WordNet or OEWN dataset version, provenance, checksum, license, English variety, update cadence, and offline completeness",
+    "word form, lemma, part of speech, sense ordering, inflection, capitalization, punctuation, homograph and homophone disambiguation",
+    "definition, example and relation accuracy, dataset age, domain labels, offensive or dated senses, citation, and non-authoritative-use boundary",
+    "eSpeak pronunciation source, voice and dialect, phoneme versus spelling behavior, homophone grouping, audio output route, volume, and accessibility",
+    "search history, favorites, random-word activity, vocabulary or health interest sensitivity, local storage, retention, and diagnostic redaction",
+    "double-click lookup scope, selected text provenance, clipboard independence, accidental activation, surrounding context, and input normalization",
+    "fully offline promise, declared network and portal permissions, telemetry absence, dictionary updates through packages, and least privilege",
+    "history or favorite deletion, data reset, bundled dataset replacement, backups, uninstall, and rollback"
+  ]
+}

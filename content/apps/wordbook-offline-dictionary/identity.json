@@ -1,0 +1,17 @@
+{
+  "index": 514,
+  "name": "Wordbook",
+  "slug": "wordbook-offline-dictionary",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/mufeedali/Wordbook",
+    "installUrl": "https://flathub.org/apps/dev.mufeed.Wordbook"
+  },
+  "website": "https://apps.gnome.org/Wordbook/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Fully offline English-to-English dictionary powered by WordNet and eSpeak, with definitions, pronunciations, random words, favorites, history, and quick lookup.",
+  "accent": "#26A269",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/dev.mufeed.Wordbook.svg",
+  "logoSourceType": "official-project-asset"
+}

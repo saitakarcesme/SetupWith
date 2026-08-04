@@ -6359,5 +6359,57 @@
       "safety": "Never convert or redistribute without license rights, expose proprietary fonts, trust malformed tables, omit scripts or combining marks, break shaping, flatten variable axes accidentally, map CSS faces ambiguously, hide CORS or preload effects, produce irreproducible kits, omit license artifacts, collide outputs, or overwrite sources.",
       "verify": "Verify Webfont Bundler source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove fonts, parsers, networks, downloads, subsets, conversions, CSS, temporary files, outputs and state are unchanged."
     }
+  },
+  {
+    "index": 514,
+    "name": "Wordbook",
+    "slug": "wordbook-offline-dictionary",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/mufeedali/Wordbook",
+      "installUrl": "https://flathub.org/apps/dev.mufeed.Wordbook"
+    },
+    "website": "https://apps.gnome.org/Wordbook/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Fully offline English-to-English dictionary powered by WordNet and eSpeak, with definitions, pronunciations, random words, favorites, history, and quick lookup.",
+    "accent": "#26A269",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/dev.mufeed.Wordbook.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "lexical_dataset_version",
+      "lookup_history_privacy",
+      "pronunciation_output",
+      "offline_integrity"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Intermediate",
+    "permissionCheckpoints": [
+      "bundled WordNet or OEWN dataset version, provenance, checksum, license, English variety, update cadence, and offline completeness",
+      "word form, lemma, part of speech, sense ordering, inflection, capitalization, punctuation, homograph and homophone disambiguation",
+      "definition, example and relation accuracy, dataset age, domain labels, offensive or dated senses, citation, and non-authoritative-use boundary",
+      "eSpeak pronunciation source, voice and dialect, phoneme versus spelling behavior, homophone grouping, audio output route, volume, and accessibility",
+      "search history, favorites, random-word activity, vocabulary or health interest sensitivity, local storage, retention, and diagnostic redaction",
+      "double-click lookup scope, selected text provenance, clipboard independence, accidental activation, surrounding context, and input normalization",
+      "fully offline promise, declared network and portal permissions, telemetry absence, dictionary updates through packages, and least privilege",
+      "history or favorite deletion, data reset, bundled dataset replacement, backups, uninstall, and rollback"
+    ],
+    "prompt": "Set up Wordbook from its official project and verified Flathub listing (https://apps.gnome.org/Wordbook/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, bundled lexical-dataset version and byte size, favorite and history counts, pronunciation voice and output policy, sandbox overrides and backup coverage without revealing queried words, definitions, favorites, history, selected text, learning goals or inferred personal concerns. Install stable `dev.mufeed.Wordbook` from verified Flathub in the existing ownership scope. Do not compile from source, launch Wordbook, open its database, search a term, select a random word, read history, play pronunciation, inspect selected text, change favorites, access a portal, or make a network request during setup.\n\nPreserve history, favorites, display and pronunciation preferences, lexical data, local state, permissions, remotes, overrides and scope ownership. Dictionary searches may reveal health, legal, identity, relationship or language-learning concerns; redact them from diagnostics. WordNet senses and examples are lexical references, not authoritative medical, legal or technical advice. Installation must not merge inflections, reorder saved senses, replace the bundled dataset, normalize user history or infer that similarly spelled words share a meaning.\n\nBefore later lookup, record the exact bundled WordNet or OEWN version, checksum, license, English variety and release date. Show lemma, part of speech and sense separation; retain domain, usage and dated/offensive labels. Homographs require contextual sense selection, while eSpeak pronunciation and homophone grouping do not prove spelling or meaning equivalence. Review voice, dialect, physical output device and low initial volume before audio. Double-click lookup must disclose its selection boundary and never copy surrounding sensitive text or use the clipboard implicitly. Random-word results should be clearly labeled as nondeterministic browsing rather than a search response.\n\nVerify provenance, app ID, origin, commit, runtime, executable, bundled data files and static sandbox permissions offline. Confirm the fully offline posture and flag unexpected network, filesystem, clipboard or portal access without exercising it. Prove no lexical database read, lookup, random selection, history or favorite access, selected-text capture, speech synthesis, audio, network traffic, data update or notification occurred. On failure, rollback only the new Wordbook ref in its original scope; preserve shared runtimes, remotes, overrides, lexical data, history, favorites, preferences and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable dev.mufeed.Wordbook from verified Flathub in the existing scope without source builds, launch, database reads, lookups, random words, history, speech, selected text, favorites, portals, networks, or notifications.",
+      "preserve": "all lexical data, history, favorites, display and pronunciation preferences, voice and output choices, local-state ownership and permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose lookup interests, treat definitions as professional advice, collapse distinct senses, confuse homophones with synonyms, hide dataset age, replace lexical data unexpectedly, capture surrounding selected text, access the clipboard implicitly, play sudden audio, or violate the fully offline boundary.",
+      "verify": "Verify Wordbook source, app ID, origin, commit, runtime, executable, bundled data, files and permissions offline, then prove databases, lookups, random words, history, favorites, selected text, speech, audio, networks, updates and notifications are unchanged."
+    }
   }
 ]
