@@ -1,0 +1,17 @@
+{
+  "index": 456,
+  "name": "Sweet Home 3D",
+  "slug": "sweet-home-3d",
+  "source": {
+    "type": "website",
+    "url": "https://sourceforge.net/projects/sweethome3d/",
+    "installUrl": "https://www.sweethome3d.com/download/"
+  },
+  "website": "https://www.sweethome3d.com/",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Interior design application for drawing dimensioned floor plans, arranging furniture, previewing homes in 3D, creating photos and videos, and exporting plans, models, and reports.",
+  "accent": "#67A842",
+  "logoUrl": "https://www.sweethome3d.com/images/SweetHome3DLogo.png",
+  "logoSourceType": "official-project-asset"
+}

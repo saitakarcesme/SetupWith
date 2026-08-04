@@ -2273,5 +2273,10 @@
     "file": "drawpile.svg",
     "source": "https://raw.githubusercontent.com/drawpile/Drawpile/main/metadata/en-US/images/icon.png",
     "sourceType": "official-project-asset"
+  },
+  "sweet-home-3d": {
+    "file": "sweet-home-3d.svg",
+    "source": "https://www.sweethome3d.com/images/SweetHome3DLogo.png",
+    "sourceType": "official-project-asset"
   }
 }
