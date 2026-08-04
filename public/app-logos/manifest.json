@@ -2203,5 +2203,10 @@
     "file": "kando.svg",
     "source": "https://raw.githubusercontent.com/kando-menu/kando/main/assets/icon-themes/kando/logo-large.svg",
     "sourceType": "official-project-asset"
+  },
+  "deskflow": {
+    "file": "deskflow.svg",
+    "source": "https://raw.githubusercontent.com/deskflow/deskflow/master/src/apps/res/icons/deskflow-light/apps/64/org.deskflow.deskflow.svg",
+    "sourceType": "official-project-asset"
   }
 }

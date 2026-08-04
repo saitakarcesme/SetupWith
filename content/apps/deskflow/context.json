@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "server_or_client_role",
+    "screen_layout",
+    "clipboard_sharing",
+    "tls_and_peer_fingerprints"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "server or client role selection",
+    "macOS Accessibility, Input Monitoring, and Local Network access",
+    "Wayland remote-desktop portal access",
+    "Windows background service installation",
+    "firewall and TCP listener changes",
+    "TLS certificate and peer fingerprint trust",
+    "keyboard, mouse, and clipboard sharing",
+    "cross-computer control verification"
+  ]
+}

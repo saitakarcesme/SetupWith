@@ -2530,5 +2530,60 @@
       "safety": "Never execute commands or macros, simulate input, move the pointer, paste text, open targets, grant Accessibility or Screen Recording, install Wayland adapters, bind shortcuts, enable login startup, or expose WebSocket control without separate approval.",
       "verify": "Verify provenance, version, paths, compatibility, processes, listeners, permissions, startup and shortcuts; if launched, dismiss the menu without selecting anything and prove no action, grant, rule, extension, listener, login item, or configuration changed."
     }
+  },
+  {
+    "index": 442,
+    "name": "Deskflow",
+    "slug": "deskflow",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/deskflow/deskflow",
+      "installUrl": "https://github.com/deskflow/deskflow/releases"
+    },
+    "website": "https://deskflow.org/",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "Cross-platform software KVM that shares a keyboard, mouse, trackpad, and clipboard between computers over an encrypted local-network connection.",
+    "accent": "#33B2CC",
+    "simpleIconSlug": "linux",
+    "logoUrl": "https://raw.githubusercontent.com/deskflow/deskflow/master/src/apps/res/icons/deskflow-light/apps/64/org.deskflow.deskflow.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "server_or_client_role",
+      "screen_layout",
+      "clipboard_sharing",
+      "tls_and_peer_fingerprints"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "server or client role selection",
+      "macOS Accessibility, Input Monitoring, and Local Network access",
+      "Wayland remote-desktop portal access",
+      "Windows background service installation",
+      "firewall and TCP listener changes",
+      "TLS certificate and peer fingerprint trust",
+      "keyboard, mouse, and clipboard sharing",
+      "cross-computer control verification"
+    ],
+    "prompt": "Set up Deskflow from its official project releases (https://github.com/deskflow/deskflow/releases). Detect Windows, macOS, or Linux, architecture, desktop session, X11 or Wayland, package managers, Visual C++ runtime, existing Deskflow, Barrier, Input Leap or Synergy processes, services, listeners, firewall rules, certificates, peer fingerprints, portal grants, and accessibility permissions. Prefer a stable distribution package or official release. On macOS disclose that direct builds may be unnotarized; do not clear quarantine or bypass Gatekeeper without explicit approval of the exact artifact and checksum.\n\nInstall without selecting server/client role, starting a service, opening TCP port 24800, discovering peers, or requesting input permissions. Preserve screen layouts and names, hotkeys, switch rules, TLS keys and certificates, trusted fingerprints, clipboard limits, server addresses, logs, daemon mode, startup state, compatibility protocol, firewall rules, portal restore tokens, and all peer configurations. Apply only the approved role, layout, clipboard setting, and TLS/fingerprint policy. TLS and fingerprint checking must remain enabled; compatibility with older forks is never a reason to weaken them silently.\n\nDeskflow gives one computer the ability to inject keyboard and pointer input into another and can transfer clipboard contents whenever the cursor crosses screens. Treat both as sensitive remote control. Require approval for each named peer, IP, network, direction, role, screen edge, and session. Stop separately before macOS Accessibility, Input Monitoring, Screen Recording or Local Network access; Linux remote-desktop portals; a Windows daemon able to interact with UAC or login screens; firewall changes; background startup; certificate regeneration; fingerprint trust; or clipboard sharing. Never expose the listener beyond the approved trusted LAN, disable TLS, auto-accept a fingerprint, or copy passwords and secrets between peers.\n\nVerify publisher or package provenance, version, executable/configuration paths, permission state, services, startup items, processes, listeners, firewall baseline, certificate fingerprint and peer list without revealing private keys. Do not connect to another machine for a smoke test. If a controlled two-host test is later approved, disable clipboard sharing, confirm fingerprints out of band, use a disposable input target, and retain a local keyboard escape path to avoid lockout. Roll back services, grants, listeners and rules created here, restore configurations, and preserve existing certificates, peer trust and layouts.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install a stable official Deskflow package after checking platform prerequisites and artifact provenance, but do not choose a role, start services, open listeners, discover peers, clear quarantine, or request input permissions.",
+      "preserve": "all layouts, peer names, hotkeys, switch rules, TLS keys and certificates, fingerprints, clipboard limits, addresses, logs, daemon and startup state, protocol settings, firewall rules, portal grants, and accessibility permissions",
+      "safety": "Never enable remote input, clipboard sharing, background service, startup, firewall access, peer trust, certificate regeneration, portal or accessibility grants, compatibility downgrade, or TLS bypass without separate scope and approval.",
+      "verify": "Verify provenance, version, paths, grants, services, processes, listeners, firewall, certificate fingerprint and peers offline; any later two-host test must disable clipboard, verify fingerprints out of band and retain a local escape path."
+    }
   }
 ]

@@ -1,0 +1,18 @@
+{
+  "index": 442,
+  "name": "Deskflow",
+  "slug": "deskflow",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/deskflow/deskflow",
+    "installUrl": "https://github.com/deskflow/deskflow/releases"
+  },
+  "website": "https://deskflow.org/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Cross-platform software KVM that shares a keyboard, mouse, trackpad, and clipboard between computers over an encrypted local-network connection.",
+  "accent": "#33B2CC",
+  "simpleIconSlug": "linux",
+  "logoUrl": "https://raw.githubusercontent.com/deskflow/deskflow/master/src/apps/res/icons/deskflow-light/apps/64/org.deskflow.deskflow.svg",
+  "logoSourceType": "official-project-asset"
+}
