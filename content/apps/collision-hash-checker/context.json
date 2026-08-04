@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "algorithm_policy",
+    "reference_provenance",
+    "file_access_scope",
+    "result_disclosure"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "file path, real sandbox-resolved path, type, size, owner, mount, symlink, and read authorization",
+    "local, removable, encrypted, sparse, network-mounted, cloud-placeholder, or special-file behavior",
+    "SHA-256, SHA-512, BLAKE3, MD5, SHA-1, CRC32, and Adler32 purpose and collision resistance",
+    "expected checksum source, HTTPS origin, signature, release identity, channel, and independent trust",
+    "checksum manifest parsing, filename binding, whitespace, case, line endings, and multiple records",
+    "parallel hashing, disk and network I/O, power use, file mutation during read, and cancellation",
+    "Markdown result export, absolute paths, hashes, clipboard, destination permissions, and disclosure",
+    "GNOME Files/Nautilus extension, host installation, context menu, version, restart, and rollback"
+  ]
+}

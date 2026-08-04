@@ -1,0 +1,17 @@
+{
+  "index": 474,
+  "name": "Collision",
+  "slug": "collision-hash-checker",
+  "source": {
+    "type": "website",
+    "url": "https://codeberg.org/GeopJr/Collision",
+    "installUrl": "https://flathub.org/apps/dev.geopjr.Collision"
+  },
+  "website": "https://collision.geopjr.dev/",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "GNOME file-integrity utility for generating, comparing, and verifying MD5, SHA-1, SHA-256, SHA-512, BLAKE3, CRC32, and Adler32 checksums.",
+  "accent": "#26A269",
+  "logoUrl": "https://raw.githubusercontent.com/GeopJr/Collision/main/data/icons/dev.geopjr.Collision.svg",
+  "logoSourceType": "official-project-asset"
+}

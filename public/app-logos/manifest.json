@@ -2363,5 +2363,10 @@
     "file": "apostrophe-markdown.svg",
     "source": "https://gitlab.gnome.org/World/apostrophe/-/raw/main/data/icons/org.gnome.gitlab.somas.Apostrophe.svg",
     "sourceType": "official-project-asset"
+  },
+  "collision-hash-checker": {
+    "file": "collision-hash-checker.svg",
+    "source": "https://raw.githubusercontent.com/GeopJr/Collision/main/data/icons/dev.geopjr.Collision.svg",
+    "sourceType": "official-project-asset"
   }
 }

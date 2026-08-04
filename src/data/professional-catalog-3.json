@@ -4238,5 +4238,57 @@
       "safety": "Never read private drafts, normalize content, render untrusted HTML, fetch preview resources, expose local files, run Pandoc filters or LaTeX, install TeX Live, overwrite exports, or claim associations without document, renderer, resource, format, destination, toolchain, and recovery review.",
       "verify": "Verify Apostrophe source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove documents, recovery, recent entries, preview, network, exports, temporary files, extensions and associations are unchanged."
     }
+  },
+  {
+    "index": 474,
+    "name": "Collision",
+    "slug": "collision-hash-checker",
+    "source": {
+      "type": "website",
+      "url": "https://codeberg.org/GeopJr/Collision",
+      "installUrl": "https://flathub.org/apps/dev.geopjr.Collision"
+    },
+    "website": "https://collision.geopjr.dev/",
+    "category": "Security & Privacy",
+    "vertical": "software",
+    "description": "GNOME file-integrity utility for generating, comparing, and verifying MD5, SHA-1, SHA-256, SHA-512, BLAKE3, CRC32, and Adler32 checksums.",
+    "accent": "#26A269",
+    "logoUrl": "https://raw.githubusercontent.com/GeopJr/Collision/main/data/icons/dev.geopjr.Collision.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "algorithm_policy",
+      "reference_provenance",
+      "file_access_scope",
+      "result_disclosure"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "file path, real sandbox-resolved path, type, size, owner, mount, symlink, and read authorization",
+      "local, removable, encrypted, sparse, network-mounted, cloud-placeholder, or special-file behavior",
+      "SHA-256, SHA-512, BLAKE3, MD5, SHA-1, CRC32, and Adler32 purpose and collision resistance",
+      "expected checksum source, HTTPS origin, signature, release identity, channel, and independent trust",
+      "checksum manifest parsing, filename binding, whitespace, case, line endings, and multiple records",
+      "parallel hashing, disk and network I/O, power use, file mutation during read, and cancellation",
+      "Markdown result export, absolute paths, hashes, clipboard, destination permissions, and disclosure",
+      "GNOME Files/Nautilus extension, host installation, context menu, version, restart, and rollback"
+    ],
+    "prompt": "Set up Collision from its canonical Codeberg project and verified Flathub listing (https://codeberg.org/GeopJr/Collision). Inventory Linux architecture, Flatpak scopes, existing Collision package and preferences, enabled algorithms, portal grants, result-export location and any separately installed GNOME Files/Nautilus extension without selecting or reading user files. Install stable `dev.geopjr.Collision` from verified Flathub in the existing ownership scope. Do not use the GitHub mirror as the release authority, compile from source, launch Collision, hash a sample file or install the optional host Nautilus extension.\n\nPreserve every target file byte-for-byte and retain algorithm preferences, exports, portal choices and extension state. Hashing is read-only but not impact-free: reading large, sparse, removable, encrypted, network-mounted or cloud-placeholder files may consume bandwidth, hydrate data, wake devices or expose access patterns. Never traverse a directory, follow an unreviewed symlink, read a special file, resolve private real paths into logs or hash user data as installation verification. If a file changes while being read, reject the result rather than presenting it as stable evidence.\n\nA matching checksum proves equality only to the referenced digest; it does not prove the digest source or file publisher is trustworthy. Before future verification show the expected hash's independent HTTPS/signature source, release and channel, exact filename binding, algorithm and manifest parsing. Prefer SHA-256, SHA-512 or BLAKE3 for integrity. Treat MD5 and SHA-1 as collision-weakened compatibility checks, and CRC32/Adler32 as accidental-error detection, never as authenticity evidence. Do not silently trim ambiguous records, select the first hash from a multi-file manifest or compare across different algorithms.\n\nMarkdown exports and clipboard copies can disclose filenames, absolute paths and digests. Require explicit fields, destination permissions and redaction before export. The Nautilus extension runs outside the Flatpak and has its own security/update boundary; do not install, update, restart Files or claim its context menu during setup. Verify Collision source, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no file was opened, hydrated or hashed, no portal grant, export, clipboard, extension, process, network mount or network request changed. On failure, rollback only the new Collision ref in its original scope; preserve shared runtimes, remotes, overrides, files, reports and host extensions.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable dev.geopjr.Collision from verified Flathub in the existing scope without mirror authority, source builds, launch, file reads, hashing tests, portal grants, exports, clipboard access, or Nautilus extension installation.",
+      "preserve": "all user files, paths, bytes, metadata, algorithm preferences, checksum references, manifests, reports, portal choices, clipboard state, host extensions, remotes, overrides, and scope ownership",
+      "safety": "Never treat hash equality as publisher trust, use weak algorithms as authenticity proof, read special or unreviewed remote files, hydrate cloud data, follow unsafe links, export private paths, or install host extensions without file, algorithm, reference, I/O, disclosure, and extension review.",
+      "verify": "Verify Collision source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove no user file was opened, hydrated or hashed and no portals, reports, clipboard, extensions, mounts, processes or network state changed."
+    }
   }
 ]
