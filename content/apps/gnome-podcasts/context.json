@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "subscription_privacy",
+    "feed_fetch_policy",
+    "download_retention",
+    "playback_progress"
+  ],
+  "secrets": [
+    {
+      "key": "podcasts_private_feed_credential",
+      "reference": "secret://podcasts/private-feed-credential"
+    }
+  ],
+  "permissionCheckpoints": [
+    "RSS or Atom, iTunes or SoundCloud link source, publisher, HTTPS, redirects, private-feed credential, and authorization",
+    "OPML source, subscription URLs, titles, categories, credential-bearing links, duplicates, encoding, and import preview",
+    "feed XML, namespaces, enclosure URLs, chapters, artwork, redirects, tracking parameters, parser limits, and remote requests",
+    "episode audio formats, MIME claims, codecs, malformed media, decoder sandbox, duration, chapters, and embedded metadata",
+    "automatic update interval, background network, conditional requests, publisher load, metered network, battery, and retry backoff",
+    "episode downloads, destination, storage quota, partial files, duplicates, retention, listened cleanup, and deletion scope",
+    "playback position, speed, queue, played state, listening history, MPRIS, output route, lock-screen metadata, and privacy",
+    "subscription removal, OPML export, cache cleanup, notification titles, backups, migration, uninstall, and rollback"
+  ]
+}

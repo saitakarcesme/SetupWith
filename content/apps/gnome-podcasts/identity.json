@@ -1,0 +1,17 @@
+{
+  "index": 500,
+  "name": "Podcasts",
+  "slug": "gnome-podcasts",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/podcasts",
+    "installUrl": "https://flathub.org/apps/org.gnome.Podcasts"
+  },
+  "website": "https://apps.gnome.org/Podcasts/",
+  "category": "Music & Streaming",
+  "vertical": "software",
+  "description": "GNOME podcast manager with RSS and Atom, iTunes and SoundCloud subscription links, OPML import, multi-format episode playback, chapter support, downloads, updates, and remembered listening position.",
+  "accent": "#E66100",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Podcasts.svg",
+  "logoSourceType": "official-project-asset"
+}

@@ -5620,5 +5620,59 @@
       "safety": "Never trust PDF input, overwrite originals, expose passwords, sync conflicting schemas silently, invalidate signatures without consent, confuse metadata editing with sanitization, or save without ownership, checksum, backup, schema, encryption, signature, parser, atomic-write, and independent-reader review.",
       "verify": "Verify Paper Clip source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove PDFs, passwords, metadata, signatures, temporary data, saves and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 500,
+    "name": "Podcasts",
+    "slug": "gnome-podcasts",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/podcasts",
+      "installUrl": "https://flathub.org/apps/org.gnome.Podcasts"
+    },
+    "website": "https://apps.gnome.org/Podcasts/",
+    "category": "Music & Streaming",
+    "vertical": "software",
+    "description": "GNOME podcast manager with RSS and Atom, iTunes and SoundCloud subscription links, OPML import, multi-format episode playback, chapter support, downloads, updates, and remembered listening position.",
+    "accent": "#E66100",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Podcasts.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "podcasts_private_feed_credential"
+    ],
+    "config": [
+      "subscription_privacy",
+      "feed_fetch_policy",
+      "download_retention",
+      "playback_progress"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "RSS or Atom, iTunes or SoundCloud link source, publisher, HTTPS, redirects, private-feed credential, and authorization",
+      "OPML source, subscription URLs, titles, categories, credential-bearing links, duplicates, encoding, and import preview",
+      "feed XML, namespaces, enclosure URLs, chapters, artwork, redirects, tracking parameters, parser limits, and remote requests",
+      "episode audio formats, MIME claims, codecs, malformed media, decoder sandbox, duration, chapters, and embedded metadata",
+      "automatic update interval, background network, conditional requests, publisher load, metered network, battery, and retry backoff",
+      "episode downloads, destination, storage quota, partial files, duplicates, retention, listened cleanup, and deletion scope",
+      "playback position, speed, queue, played state, listening history, MPRIS, output route, lock-screen metadata, and privacy",
+      "subscription removal, OPML export, cache cleanup, notification titles, backups, migration, uninstall, and rollback"
+    ],
+    "prompt": "Set up Podcasts from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Podcasts/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, subscription and episode counts, downloaded/partial byte totals, update schedule, playback queue, output route, OPML policy and private-feed credential-reference presence without listing shows, URLs, episode titles, listening history or secrets. Install stable `org.gnome.Podcasts` from verified Flathub in the existing ownership scope. Do not compile from source, launch Podcasts, fetch a feed, import OPML, add a subscription, download or decode media, change progress or play audio during setup.\n\nPreserve subscriptions, feed URLs, categories, episodes, enclosure metadata, chapter marks, artwork, downloads, queue, playback position and speed, played state, history, credentials and preferences. Subscription and listening history can reveal political, religious, health and personal interests; redact them from diagnostics, MPRIS and locked-screen notifications. Private feed URLs may embed durable credentials, so never print them, place them in OPML without protection or send them through URL-preview services.\n\nTreat OPML and feed XML as untrusted structured input. Before import or fetch show provenance, checksum or exact HTTPS origin, redirects, encoding, entry counts, duplicate policy, credential handling, XML/entity and size limits. Preview subscription additions using redacted identifiers. Enclosure URLs, artwork and chapter metadata can redirect or track clients; validate schemes/final hosts and do not render, decode or follow links during verification. iTunes and SoundCloud links may resolve through third-party services and must be reviewed separately from direct RSS/Atom.\n\nAutomatic updates and downloads can create sustained traffic and fill storage. Require an interval, conditional-request/backoff behavior, metered/battery policy, download root, quota, partial-file cleanup and retention rules before enabling. Treat media as untrusted decoder input and never install codecs automatically. Confirm output device and gradual volume before playback. Verify provenance, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no network request, feed parse, OPML operation, download, decoder, progress change, MPRIS state, notification, audio or filesystem state changed. On failure, rollback only the new Podcasts ref in its original scope; preserve runtimes, remotes, overrides, subscriptions, media, progress and credentials.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.Podcasts from verified Flathub in the existing scope without source builds, launch, feed requests, OPML, subscription changes, downloads, decoders, progress writes, MPRIS changes, notifications, or audio playback.",
+      "preserve": "all subscriptions, feed URLs, categories, episodes, enclosures, chapters, artwork, downloads, queue, position, speed, played state, history, private credentials, update and retention policy, remotes, overrides, and scope ownership",
+      "safety": "Never expose listening interests or credential-bearing URLs, trust OPML or feed XML, follow redirects blindly, render trackers, overload publishers, fill storage, decode hostile media, install codecs, delete episodes, or play unexpected audio without source, parser, endpoint, network, quota, retention, decoder, output, and privacy review.",
+      "verify": "Verify Podcasts source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove networks, feeds, OPML, subscriptions, downloads, decoders, progress, MPRIS, notifications, audio and filesystem state are unchanged."
+    }
   }
 ]

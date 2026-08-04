@@ -2493,5 +2493,10 @@
     "file": "paper-clip-pdf-metadata.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.diegoivan.pdf_metadata_editor.svg",
     "sourceType": "official-project-asset"
+  },
+  "gnome-podcasts": {
+    "file": "gnome-podcasts.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Podcasts.svg",
+    "sourceType": "official-project-asset"
   }
 }
