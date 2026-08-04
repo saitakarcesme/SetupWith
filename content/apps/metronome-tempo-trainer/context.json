@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Beginner",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "tempo_bpm",
+    "time_signature",
+    "tap_tempo",
+    "audio_output_safety"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "official GNOME GitLab source, Flathub app ID, packaging status, manifest source, stable version, commit, runtime, and checksum",
+    "existing package scope, preferences, last tempo and meter, settings ownership, sandbox overrides, and backup coverage",
+    "requested beats per minute, supported range, increment, precision, tempo terminology, and accidental extreme values",
+    "time-signature numerator and denominator, accent pattern, bar boundary, subdivision expectations, and unsupported meters",
+    "tap-tempo sample count, pointer or keyboard events, outlier taps, reset behavior, estimation confidence, and absence of microphone capture",
+    "selected audio sink, device ownership, headphones or speakers, system and app volume, mute state, routing, latency, and hearing safety",
+    "play and pause boundary, background playback, screen lock, suspend, Bluetooth latency, exclusive access, and session cleanup",
+    "practice purpose, accessibility, visual pulse, timing limitations, settings reset, uninstall, shared runtimes, and rollback"
+  ]
+}

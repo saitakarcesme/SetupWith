@@ -1,0 +1,17 @@
+{
+  "index": 542,
+  "name": "Metronome",
+  "slug": "metronome-tempo-trainer",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/metronome",
+    "installUrl": "https://flathub.org/apps/com.adrienplazas.Metronome"
+  },
+  "website": "https://flathub.org/apps/com.adrienplazas.Metronome",
+  "category": "Music & Streaming",
+  "vertical": "creative",
+  "description": "GNOME metronome with adjustable beats per minute and time signatures plus tap-tempo estimation for instrumental practice.",
+  "accent": "#9141AC",
+  "logoUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.adrienplazas.Metronome.png",
+  "logoSourceType": "official-project-asset"
+}

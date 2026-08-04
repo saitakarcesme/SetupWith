@@ -7840,5 +7840,57 @@
       "safety": "Never expose practice material, assume alternate tuning or capo state, silently reinterpret enharmonic spelling, save accidental fret input, promise physical playability, or grant microphone, audio, MIDI, account, or network capabilities that Fretboard does not require.",
       "verify": "Verify repository ownership, app ID, Flathub verification, manifest source, commit, runtime, executable, files, checksum and permissions offline, then prove chord, fretboard, bookmark, microphone, audio, network and settings state are unchanged."
     }
+  },
+  {
+    "index": 542,
+    "name": "Metronome",
+    "slug": "metronome-tempo-trainer",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/metronome",
+      "installUrl": "https://flathub.org/apps/com.adrienplazas.Metronome"
+    },
+    "website": "https://flathub.org/apps/com.adrienplazas.Metronome",
+    "category": "Music & Streaming",
+    "vertical": "creative",
+    "description": "GNOME metronome with adjustable beats per minute and time signatures plus tap-tempo estimation for instrumental practice.",
+    "accent": "#9141AC",
+    "logoUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.adrienplazas.Metronome.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "tempo_bpm",
+      "time_signature",
+      "tap_tempo",
+      "audio_output_safety"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Beginner",
+    "permissionCheckpoints": [
+      "official GNOME GitLab source, Flathub app ID, packaging status, manifest source, stable version, commit, runtime, and checksum",
+      "existing package scope, preferences, last tempo and meter, settings ownership, sandbox overrides, and backup coverage",
+      "requested beats per minute, supported range, increment, precision, tempo terminology, and accidental extreme values",
+      "time-signature numerator and denominator, accent pattern, bar boundary, subdivision expectations, and unsupported meters",
+      "tap-tempo sample count, pointer or keyboard events, outlier taps, reset behavior, estimation confidence, and absence of microphone capture",
+      "selected audio sink, device ownership, headphones or speakers, system and app volume, mute state, routing, latency, and hearing safety",
+      "play and pause boundary, background playback, screen lock, suspend, Bluetooth latency, exclusive access, and session cleanup",
+      "practice purpose, accessibility, visual pulse, timing limitations, settings reset, uninstall, shared runtimes, and rollback"
+    ],
+    "prompt": "Set up Metronome from its official GNOME GitLab project and current Flathub listing (https://flathub.org/apps/com.adrienplazas.Metronome). Inventory Linux architecture, Flatpak scopes, any existing `com.adrienplazas.Metronome` ref, application-data ownership, saved-setting count, audio-server type, available-sink count, default-route class, mute state, sandbox overrides and backup coverage without printing device names, practice tempos, meters or session history. Match the Flathub manifest source and app ID to upstream before installing the stable ref in the existing scope. Do not compile from source, launch Metronome, play a click, change BPM or meter, generate tap events, unmute audio, select a sink or alter system routing during setup.\n\nPreserve the last tempo, time signature, window state, app volume, system volume, mute and routing state, Bluetooth profile, permissions, remotes, overrides and scope ownership. Tap tempo uses deliberate pointer or keyboard taps; it must not request microphone access or listen to the room. Never route a click to an unknown shared speaker, recording stream, broadcast mix or hearing device.\n\nBefore later playback, confirm BPM, supported range, time-signature numerator and denominator, accent expectations, output device, current volume, surroundings and an explicit play boundary. Start muted or at an agreed low level, then raise volume deliberately. Treat Bluetooth and software-buffer latency as display-to-sound delay, not a reason to rewrite global audio settings. Tap-tempo estimates need several intentional taps and outlier review. The app is a practice aid, not a certified timing, hearing, rehabilitation or live-synchronization instrument.\n\nVerify upstream provenance, app ID, manifest source, selected commit, runtime, executable, files, embedded logo, checksum and declared permissions offline. Confirm no sound played, tap event was synthesized, audio route or volume changed, device opened, background session started, network connection occurred or preference mutated. On failure, rollback only the new Metronome ref in its original scope; preserve shared runtimes, audio configuration, preferences, remotes, overrides and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.adrienplazas.Metronome only after matching its Flathub manifest to the official GNOME GitLab source, without source builds, launch, clicks, BPM or meter changes, tap events, unmute, sink selection, or route mutation.",
+      "preserve": "last tempo and meter, window and playback state, app and system volume, mute, routing, Bluetooth profile, preferences, permissions, backups, remotes, overrides, shared runtimes, and scope ownership",
+      "safety": "Never play an unexpected click, expose practice data, request microphone capture for tap tempo, route to shared or recording outputs, override hearing-safe volume, hide latency, or present the app as certified timing, medical, rehabilitation, or live-sync equipment.",
+      "verify": "Verify upstream, app ID, manifest source, commit, runtime, executable, files, logo, checksum and permissions offline, then prove audio, taps, routes, volumes, devices, background sessions, networks and preferences are unchanged."
+    }
   }
 ]
