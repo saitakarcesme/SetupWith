@@ -1,0 +1,17 @@
+{
+  "index": 473,
+  "name": "Apostrophe",
+  "slug": "apostrophe-markdown",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/apostrophe",
+    "installUrl": "https://flathub.org/apps/org.gnome.gitlab.somas.Apostrophe"
+  },
+  "website": "https://apps.gnome.org/Apostrophe/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Distraction-free GNOME Markdown editor with multiple Markdown flavors, spellchecking, statistics, live preview, and Pandoc-based document or slideshow export.",
+  "accent": "#90DED5",
+  "logoUrl": "https://gitlab.gnome.org/World/apostrophe/-/raw/main/data/icons/org.gnome.gitlab.somas.Apostrophe.svg",
+  "logoSourceType": "official-project-asset"
+}

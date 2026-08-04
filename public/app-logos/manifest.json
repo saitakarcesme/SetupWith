@@ -2358,5 +2358,10 @@
     "file": "gnome-authenticator.svg",
     "source": "https://gitlab.gnome.org/World/Authenticator/-/raw/master/data/icons/com.belmoussaoui.Authenticator.svg",
     "sourceType": "official-project-asset"
+  },
+  "apostrophe-markdown": {
+    "file": "apostrophe-markdown.svg",
+    "source": "https://gitlab.gnome.org/World/apostrophe/-/raw/main/data/icons/org.gnome.gitlab.somas.Apostrophe.svg",
+    "sourceType": "official-project-asset"
   }
 }

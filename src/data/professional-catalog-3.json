@@ -4186,5 +4186,57 @@
       "safety": "Never expose or test OTP seeds, increment counters, change time, scan QR enrollment, create plaintext exports, restore unreviewed backups, unlock keyrings, fetch provider icons, expose Shell results, or copy codes without credential, format, encryption, destination, recovery, and visibility review.",
       "verify": "Verify Authenticator source, app ID, origin, commit, runtime, executable, files and permissions offline without opening secret stores, then prove keyrings, seeds, counters, backups, portals, icons, search, notifications, clipboard, clock and network state are unchanged."
     }
+  },
+  {
+    "index": 473,
+    "name": "Apostrophe",
+    "slug": "apostrophe-markdown",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/apostrophe",
+      "installUrl": "https://flathub.org/apps/org.gnome.gitlab.somas.Apostrophe"
+    },
+    "website": "https://apps.gnome.org/Apostrophe/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Distraction-free GNOME Markdown editor with multiple Markdown flavors, spellchecking, statistics, live preview, and Pandoc-based document or slideshow export.",
+    "accent": "#90DED5",
+    "logoUrl": "https://gitlab.gnome.org/World/apostrophe/-/raw/main/data/icons/org.gnome.gitlab.somas.Apostrophe.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "document_preservation",
+      "preview_isolation",
+      "export_toolchain",
+      "format_policy"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "Markdown documents, unsaved recovery, recent files, autosave, encoding, line endings, and file ownership",
+      "CommonMark or other Markdown flavor, syntax interpretation, front matter, raw HTML, and extension behavior",
+      "WebKit live preview, embedded HTML, images, styles, links, local resources, and external network requests",
+      "spellchecking dictionary, document text exposure, language choice, statistics, and selected-text analysis",
+      "Pandoc input and output formats, filters, templates, metadata, resource paths, and overwrite destination",
+      "PDF, DOCX, ODT, LaTeX, HTML, reveal.js slideshow export, fonts, images, and fidelity changes",
+      "optional TeX Live Flatpak extension, package size, LaTeX compilation, shell escape, and generated files",
+      "Markdown file association, clipboard, drag-and-drop, external editor, temporary files, and rollback"
+    ],
+    "prompt": "Set up Apostrophe from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Apostrophe/). Inventory Linux architecture, Flatpak scopes, existing Apostrophe package, document locations, recovery state, recent-file entries, Markdown flavor, spellchecking languages, preview preferences, Pandoc availability, export templates, TeX Live extension and file associations without reading document contents. Install stable `org.gnome.gitlab.somas.Apostrophe` from verified Flathub in the existing ownership scope. Do not replace an unofficial distro build, compile from source, launch the editor, open a document or install the optional TeX Live extension.\n\nPreserve every Markdown file, unsaved recovery artifact, encoding, newline style, metadata block, relative link, image, template, export and preference byte-for-byte. Do not create a sample document, trigger autosave, normalize whitespace, change Markdown flavor, claim file associations or clear recent files. Documents may contain private drafts, credentials, legal text or unpublished research; verify paths and hashes only, and never include text, headings, statistics or spellcheck findings in diagnostics.\n\nLive preview renders Markdown through WebKit. Treat raw HTML, embedded images, styles, links, data URIs and local resource references as untrusted document content. Do not render a file, fetch remote assets, follow links, expose adjacent local files or allow a preview to establish network state. Before future preview use show the document trust boundary, Markdown flavor, raw-HTML policy, allowed resource roots and external endpoint behavior.\n\nPandoc export can transform content into PDF, Word/LibreOffice, LaTeX, HTML or reveal.js slides and may read templates, filters, fonts and linked resources. Require explicit input, output format, destination, overwrite behavior, resource paths and expected fidelity changes. Never install TeX Live, run LaTeX, enable shell escape, invoke filters or overwrite an export as a setup test. Verify Apostrophe source, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no document, recovery file, recent entry, preview process, network request, export, temporary file, extension or association changed. On failure, rollback only the new Apostrophe ref in its original scope; preserve shared runtimes, remotes, overrides, documents, recovery data and export toolchains.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.gitlab.somas.Apostrophe from verified Flathub in the existing scope without package migration, source builds, launch, document access, preview, sample files, associations, exports, or optional TeX Live installation.",
+      "preserve": "all Markdown documents, recovery artifacts, encodings, newlines, metadata, links, images, templates, exports, recent files, flavor and preview settings, dictionaries, Pandoc and TeX tools, associations, remotes, overrides, and scope ownership",
+      "safety": "Never read private drafts, normalize content, render untrusted HTML, fetch preview resources, expose local files, run Pandoc filters or LaTeX, install TeX Live, overwrite exports, or claim associations without document, renderer, resource, format, destination, toolchain, and recovery review.",
+      "verify": "Verify Apostrophe source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove documents, recovery, recent entries, preview, network, exports, temporary files, extensions and associations are unchanged."
+    }
   }
 ]

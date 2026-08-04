@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "document_preservation",
+    "preview_isolation",
+    "export_toolchain",
+    "format_policy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "Markdown documents, unsaved recovery, recent files, autosave, encoding, line endings, and file ownership",
+    "CommonMark or other Markdown flavor, syntax interpretation, front matter, raw HTML, and extension behavior",
+    "WebKit live preview, embedded HTML, images, styles, links, local resources, and external network requests",
+    "spellchecking dictionary, document text exposure, language choice, statistics, and selected-text analysis",
+    "Pandoc input and output formats, filters, templates, metadata, resource paths, and overwrite destination",
+    "PDF, DOCX, ODT, LaTeX, HTML, reveal.js slideshow export, fonts, images, and fidelity changes",
+    "optional TeX Live Flatpak extension, package size, LaTeX compilation, shell escape, and generated files",
+    "Markdown file association, clipboard, drag-and-drop, external editor, temporary files, and rollback"
+  ]
+}
