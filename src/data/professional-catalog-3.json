@@ -6203,5 +6203,57 @@
       "safety": "Never expose financial context, use ambiguous symbols, hide rate direction or age, silently switch providers, mix timestamps, fabricate unavailable currencies, round intermediate values prematurely, confuse reference rates with executable quotes, omit fees and spreads, or provide financial guarantees.",
       "verify": "Verify Valuta source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove networks, providers, caches, amounts, conversions, clipboard, preferences, history and notifications are unchanged."
     }
+  },
+  {
+    "index": 511,
+    "name": "Video Trimmer",
+    "slug": "video-trimmer-stream-copy",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/YaLTeR/video-trimmer",
+      "installUrl": "https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer"
+    },
+    "website": "https://apps.gnome.org/VideoTrimmer/",
+    "category": "Design & Media",
+    "vertical": "software",
+    "description": "Fast GNOME video trimming utility that extracts a segment between selected timestamps without re-encoding, preserving encoded quality while avoiding a full transcode.",
+    "accent": "#E66100",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.gitlab.YaLTeR.VideoTrimmer.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "trim_boundary_policy",
+      "stream_copy_integrity",
+      "output_collision_policy",
+      "media_privacy"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "input video provenance, path, owner, checksum, container, detected streams, duration, malformed media, and decoder trust",
+      "start and end timestamps, time base, inclusivity, zero point, variable frame rate, keyframe alignment, and exact versus playable boundary",
+      "video, audio, subtitle, chapter, attachment and metadata stream selection, language tags, defaults, synchronization, and preservation",
+      "stream copy without re-encoding, codec and container compatibility, timestamps, edit lists, earlier-frame leakage, player variance, and quality claim",
+      "preview decoding, thumbnails, audio output, volume, hardware acceleration, untrusted frames, temporary files, and no automatic codec installation",
+      "output directory, filename, extension, existing-file collision, atomic finalization, partial output, free space, ownership, and permissions",
+      "sensitive visual and audio content, embedded metadata, location or device identifiers, thumbnails, recent files, logs, and diagnostic redaction",
+      "source preservation, output verification across players, cancellation, partial cleanup, backups, uninstall, and rollback"
+    ],
+    "prompt": "Set up Video Trimmer from its official GNOME project and verified Flathub listing (https://apps.gnome.org/VideoTrimmer/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, recent-state and partial-output byte counts, portal grants, output policy, available media runtimes and backup coverage without opening videos or revealing filenames, paths, thumbnails, durations, timestamps, codecs, subtitles, audio, metadata or content. Install stable `org.gnome.gitlab.YaLTeR.VideoTrimmer` from verified Flathub in the existing ownership scope. Do not compile from source, launch the app, select a file, parse or decode media, generate a thumbnail, play audio, choose trim points, invoke a codec, create an output, or modify recent state during setup.\n\nPreserve every source byte, owner, permission and useful timestamp, plus existing outputs, partial files, recent state, portal grants, remotes, overrides and scope ownership. Video and audio may be confidential, and filenames or thumbnails can expose their subject; redact them from diagnostics. “No re-encoding” preserves encoded samples but does not guarantee frame-exact boundaries, universal playback or identical container metadata. Keyframe placement, timestamp edit lists and player behavior can expose earlier frames or shift the visible start.\n\nBefore a later trim, require an input checksum, detected container and stream manifest, duration and time base, requested start and end with inclusivity, variable-frame-rate handling and keyframe-boundary policy. Declare which video, audio, subtitle, chapter and attachment streams survive, along with language/default flags and metadata. Preview only with explicit approval, safe decoder limits, confirmed muted output and no automatic codec installation. Show output path, free-space estimate and collision decision; write atomically, never overwrite the source, retain partials only by policy, and verify the result in more than one relevant player when boundary accuracy matters.\n\nVerify provenance, app ID, origin, commit, runtime, executable, files and sandbox permissions offline. Confirm file-portal reach without selecting media. Prove no file open, media parse, decoder, thumbnail, audio, timestamp selection, stream copy, temporary output, collision, recent-file mutation or notification occurred. On failure, rollback only the new Video Trimmer ref in its original scope; preserve shared runtimes, remotes, overrides, source media, outputs, metadata, portal grants and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.gitlab.YaLTeR.VideoTrimmer from verified Flathub in the existing scope without source builds, launch, file selection, media parsing, decoding, thumbnails, audio, trim selection, codecs, outputs, or recent-state writes.",
+      "preserve": "all source bytes, ownership, permissions and useful timestamps, every existing output and partial, stream metadata, recent state, portal grants, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose media content, trust malformed inputs, promise frame-exact stream-copy cuts, leak earlier keyframe content, drop audio or subtitle streams silently, install codecs automatically, play unexpected sound, exhaust storage, collide outputs, overwrite sources, or discard partial evidence without an approved manifest and verification plan.",
+      "verify": "Verify Video Trimmer source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove media, decoders, thumbnails, audio, timestamps, stream copies, temporary outputs, collisions, recent state and notifications are unchanged."
+    }
   }
 ]

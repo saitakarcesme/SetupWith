@@ -1,0 +1,17 @@
+{
+  "index": 511,
+  "name": "Video Trimmer",
+  "slug": "video-trimmer-stream-copy",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/YaLTeR/video-trimmer",
+    "installUrl": "https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer"
+  },
+  "website": "https://apps.gnome.org/VideoTrimmer/",
+  "category": "Design & Media",
+  "vertical": "software",
+  "description": "Fast GNOME video trimming utility that extracts a segment between selected timestamps without re-encoding, preserving encoded quality while avoiding a full transcode.",
+  "accent": "#E66100",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.gitlab.YaLTeR.VideoTrimmer.svg",
+  "logoSourceType": "official-project-asset"
+}

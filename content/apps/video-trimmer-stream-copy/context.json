@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "trim_boundary_policy",
+    "stream_copy_integrity",
+    "output_collision_policy",
+    "media_privacy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "input video provenance, path, owner, checksum, container, detected streams, duration, malformed media, and decoder trust",
+    "start and end timestamps, time base, inclusivity, zero point, variable frame rate, keyframe alignment, and exact versus playable boundary",
+    "video, audio, subtitle, chapter, attachment and metadata stream selection, language tags, defaults, synchronization, and preservation",
+    "stream copy without re-encoding, codec and container compatibility, timestamps, edit lists, earlier-frame leakage, player variance, and quality claim",
+    "preview decoding, thumbnails, audio output, volume, hardware acceleration, untrusted frames, temporary files, and no automatic codec installation",
+    "output directory, filename, extension, existing-file collision, atomic finalization, partial output, free space, ownership, and permissions",
+    "sensitive visual and audio content, embedded metadata, location or device identifiers, thumbnails, recent files, logs, and diagnostic redaction",
+    "source preservation, output verification across players, cancellation, partial cleanup, backups, uninstall, and rollback"
+  ]
+}

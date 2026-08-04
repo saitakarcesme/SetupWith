@@ -2548,5 +2548,10 @@
     "file": "valuta-currency-converter.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.idevecore.Valuta.svg",
     "sourceType": "official-project-asset"
+  },
+  "video-trimmer-stream-copy": {
+    "file": "video-trimmer-stream-copy.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.gitlab.YaLTeR.VideoTrimmer.svg",
+    "sourceType": "official-project-asset"
   }
 }
