@@ -1,0 +1,33 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "keybindings",
+    "layouts",
+    "themes",
+    "plugins"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "shell profile, alias, or auto-start integration",
+    "existing session attachment, resurrection, or termination",
+    "layout loading and pane command execution",
+    "WebAssembly plugin download, load, and permission grants",
+    "configuration, keybinding, theme, and default-layout changes",
+    "terminal scrollback and serialized session data access",
+    "remote SSH or shared terminal use",
+    "cache, session, or configuration cleanup"
+  ]
+}

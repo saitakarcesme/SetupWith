@@ -2749,5 +2749,58 @@
       "safety": "Never execute workspace content or dotfiles, contact a provider, create or delete infrastructure, expose sockets or ports, weaken SSH, switch Kubernetes context, install IDE extensions, or copy credentials without an exact preview and separate approval.",
       "verify": "Verify artifact, publisher or checksum, version, binary, bundle, method, config and PATH using offline or read-only inspection, then prove no local or remote DevPod resource or credential changed."
     }
+  },
+  {
+    "index": 446,
+    "name": "Zellij",
+    "slug": "zellij",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/zellij-org/zellij",
+      "installUrl": "https://zellij.dev/documentation/installation.html"
+    },
+    "website": "https://zellij.dev/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Terminal workspace and multiplexer with persistent sessions, tiled panes, KDL layouts, keyboard and mouse modes, and WebAssembly plugins.",
+    "accent": "#F6B85A",
+    "logoUrl": "https://raw.githubusercontent.com/zellij-org/zellij/main/assets/logo.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "keybindings",
+      "layouts",
+      "themes",
+      "plugins"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "shell profile, alias, or auto-start integration",
+      "existing session attachment, resurrection, or termination",
+      "layout loading and pane command execution",
+      "WebAssembly plugin download, load, and permission grants",
+      "configuration, keybinding, theme, and default-layout changes",
+      "terminal scrollback and serialized session data access",
+      "remote SSH or shared terminal use",
+      "cache, session, or configuration cleanup"
+    ],
+    "prompt": "Set up Zellij from its official installation guide (https://zellij.dev/documentation/installation.html). Detect macOS or Linux, architecture, shell and terminal, package managers, existing Zellij binary, running sessions, configuration and layout directories, shell aliases, auto-start integration, plugins, themes, cache, and session metadata. Prefer the operating system package, Homebrew, Cargo Binstall, or an official checksummed release archive. Compile with Cargo only when explicitly requested; pin the released version and do not run an unreviewed install script.\n\nInstall the binary without launching Zellij, attaching to a session, creating a session, loading a layout, downloading a plugin, generating configuration, or editing a shell profile. Preserve all live and resurrectable sessions, panes, scrollback, commands, working directories, layouts, KDL configuration, keybindings, themes, plugin aliases and caches, permissions, shell integration, and remote-terminal state. Record the existing executable, version, package owner, config search path and session names through read-only inspection. Never replace a package-managed binary with Cargo or a manual archive, and never let two installation methods compete on PATH.\n\nTreat every layout pane command and WebAssembly plugin as executable code. Before later loading a layout, inspect its KDL, display each command, argument, working directory, environment value, floating pane and plugin URL, and obtain approval. Do not grant plugin permissions, load code from an unpinned URL, forward terminal content, or expose tokens from environment variables and scrollback. Existing session names can contain active work; do not attach, resurrect, rename, detach other clients, kill sessions, close panes, clear scrollback, or use cleanup commands. Do not enable shell auto-start because it changes every interactive terminal and can recurse over SSH, nested multiplexers, CI shells, or IDE terminals.\n\nVerify archive checksum or package provenance, `zellij --version`, resolved executable, installation method and PATH precedence without starting the server. If available, use commands that print help, dump a built-in layout to standard output, or check configuration without attaching; do not use a bare `zellij` command because it may create or attach to a session. Confirm the pre-install session list and configuration hashes remain unchanged and that no server process, socket, session, pane, plugin, cache, profile, alias, layout, terminal title, clipboard, or remote connection was created or modified. Roll back only the installed binary or package and setup-owned PATH entry, preserving all user configuration and session data.",
+    "platforms": [
+      "macOS",
+      "Linux"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install an official packaged or checksummed Zellij binary without launching it, attaching or creating sessions, loading layouts or plugins, generating config, or editing shell profiles.",
+      "preserve": "all live and resurrectable sessions, panes, scrollback, commands, directories, layouts, KDL config, keybindings, themes, plugins, permissions, caches, shell integration, PATH ownership, and remote terminal state",
+      "safety": "Never execute layout commands, load or authorize plugins, expose terminal data, attach to or terminate sessions, clear history, enable automatic shell startup, or mix installation methods without explicit review and approval.",
+      "verify": "Verify checksum or provenance, version, executable, method and PATH with non-launching commands, then prove sessions, processes, sockets, panes, plugins, config, profiles, layouts, clipboard and remote connections did not change."
+    }
   }
 ]

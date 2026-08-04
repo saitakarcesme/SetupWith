@@ -2223,5 +2223,10 @@
     "file": "devpod.svg",
     "source": "https://raw.githubusercontent.com/loft-sh/devpod/main/desktop/devpod.png",
     "sourceType": "official-project-asset"
+  },
+  "zellij": {
+    "file": "zellij.svg",
+    "source": "https://raw.githubusercontent.com/zellij-org/zellij/main/assets/logo.svg",
+    "sourceType": "official-project-asset"
   }
 }

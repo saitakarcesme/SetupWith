@@ -1,0 +1,17 @@
+{
+  "index": 446,
+  "name": "Zellij",
+  "slug": "zellij",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/zellij-org/zellij",
+    "installUrl": "https://zellij.dev/documentation/installation.html"
+  },
+  "website": "https://zellij.dev/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Terminal workspace and multiplexer with persistent sessions, tiled panes, KDL layouts, keyboard and mouse modes, and WebAssembly plugins.",
+  "accent": "#F6B85A",
+  "logoUrl": "https://raw.githubusercontent.com/zellij-org/zellij/main/assets/logo.svg",
+  "logoSourceType": "official-project-asset"
+}
