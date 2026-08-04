@@ -2148,5 +2148,10 @@
     "file": "act.svg",
     "source": "https://github.com/features/actions",
     "sourceType": "simple-icons-official-glyph"
+  },
+  "colima": {
+    "file": "colima.svg",
+    "source": "https://raw.githubusercontent.com/abiosoft/colima/main/colima.png",
+    "sourceType": "official-project-asset"
   }
 }

@@ -1,0 +1,33 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "runtime",
+    "vm_type",
+    "resource_limits",
+    "kubernetes_enabled"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "virtual machine creation",
+    "container runtime selection",
+    "CPU, memory, and disk allocation",
+    "host directory mounts",
+    "port forwarding",
+    "Kubernetes enablement",
+    "Docker or kubectl context changes",
+    "large image and model downloads"
+  ]
+}

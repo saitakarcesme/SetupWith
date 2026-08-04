@@ -1929,5 +1929,59 @@
       "safety": "Never execute an unreviewed workflow, pull a large runner image, expose the Docker socket, use privileged or host networking, inject secrets, contact external services, or write artifacts without approval.",
       "verify": "Verify binary provenance and version, then use list mode to enumerate workflows and jobs without running commands, downloading images, creating containers, mounting files, or changing repository state."
     }
+  },
+  {
+    "index": 431,
+    "name": "Colima",
+    "slug": "colima",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/abiosoft/colima",
+      "installUrl": "https://colima.run/docs/installation/"
+    },
+    "website": "https://colima.run/",
+    "category": "DevOps & Cloud",
+    "vertical": "software",
+    "description": "Command-line container runtime manager for macOS and Linux using Lima virtual machines with Docker, containerd, Incus, or optional Kubernetes.",
+    "accent": "#5A67D8",
+    "simpleIconSlug": "docker",
+    "logoUrl": "https://raw.githubusercontent.com/abiosoft/colima/main/colima.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "runtime",
+      "vm_type",
+      "resource_limits",
+      "kubernetes_enabled"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "virtual machine creation",
+      "container runtime selection",
+      "CPU, memory, and disk allocation",
+      "host directory mounts",
+      "port forwarding",
+      "Kubernetes enablement",
+      "Docker or kubectl context changes",
+      "large image and model downloads"
+    ],
+    "prompt": "Set up Colima from the official abiosoft/colima project and installation guide (https://colima.run/docs/installation/). Detect macOS or Linux, CPU architecture, virtualization support, package managers, free disk and memory, existing Colima profiles, Lima instances, container clients, and active Docker and Kubernetes contexts. Install a stable packaged release through Homebrew, MacPorts, Nix, Mise, or the documented binary route; do not select Homebrew HEAD unless the user explicitly requests an unreleased build.\n\nBefore starting a profile, list its status and inspect its configuration without editing it. Explain that Colima creates a Lima virtual machine and that the default profile allocates CPU, memory, expandable virtual disk, networking, mounts, and a chosen Docker, containerd, or Incus runtime. Preserve every profile, VM disk, snapshot, image, container, volume, Kubernetes workload, kubeconfig entry, Docker context, SSH key, mount, port-forward rule, model cache, and existing configuration. Apply only the requested runtime, VM type, resource limits, or Kubernetes setting. Never silently reuse or resize an existing profile.\n\nAsk before creating or starting a VM, reserving resources, increasing disk size, mounting host directories, forwarding ports, installing Docker, nerdctl, kubectl, Incus, krunkit, or Rosetta support, enabling Kubernetes, downloading images or AI models, or changing active client contexts. Do not switch an established profile's runtime, shrink a disk, expose a forwarded port beyond loopback, install a PATH alias, grant GPU access, or run `colima delete` without a separate impact preview and approval. Treat stop, reset, and delete as different operations; deletion must never be part of an automatic rollback.\n\nVerify the Colima version and package provenance, then use `colima list`, `colima status`, and configuration inspection to report profile name, architecture, VM type, runtime, CPUs, memory, disk, Kubernetes state, mounts, and addresses. If creation was approved, start only a new named disposable profile and confirm client context selection without pulling an image or creating a workload. Prove pre-existing profiles, contexts, containers, volumes, cluster data, and files are unchanged. Roll back by stopping and removing only the setup-created profile after explicit approval and restoring the prior Docker and kubeconfig contexts.",
+    "platforms": [
+      "macOS",
+      "Linux"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install a stable Colima package after verifying virtualization and available resources, but do not create or start a Lima VM until its runtime, profile, mounts, and resource allocation are approved.",
+      "preserve": "all Colima profiles, Lima instances, VM disks, snapshots, images, containers, volumes, Kubernetes workloads, client contexts, SSH keys, mounts, forwarded ports, model caches, and configuration files",
+      "safety": "Never resize or delete a profile, switch its runtime, mount host paths, expose ports, enable Kubernetes or GPU support, install companion CLIs, pull images, or change Docker and kubeconfig contexts without approval.",
+      "verify": "Verify package provenance and version, then inspect profile status and configuration without starting workloads; if approved, test only a new named profile and confirm all prior runtimes, data, and contexts remain unchanged."
+    }
   }
 ]

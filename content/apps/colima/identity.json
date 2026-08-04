@@ -1,0 +1,18 @@
+{
+  "index": 431,
+  "name": "Colima",
+  "slug": "colima",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/abiosoft/colima",
+    "installUrl": "https://colima.run/docs/installation/"
+  },
+  "website": "https://colima.run/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Command-line container runtime manager for macOS and Linux using Lima virtual machines with Docker, containerd, Incus, or optional Kubernetes.",
+  "accent": "#5A67D8",
+  "simpleIconSlug": "docker",
+  "logoUrl": "https://raw.githubusercontent.com/abiosoft/colima/main/colima.png",
+  "logoSourceType": "official-project-asset"
+}
