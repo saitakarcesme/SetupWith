@@ -1,0 +1,17 @@
+{
+  "index": 512,
+  "name": "Wike",
+  "slug": "wike-wikipedia-reader",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/hugolabe/Wike",
+    "installUrl": "https://flathub.org/apps/com.github.hugolabe.Wike"
+  },
+  "website": "https://apps.gnome.org/Wike/",
+  "category": "Browsers & Internet",
+  "vertical": "software",
+  "description": "Native GNOME Wikipedia reader with support for hundreds of language editions, desktop search suggestions, bookmarks in multiple lists, article history, tables of contents, and in-page search.",
+  "accent": "#5E5C64",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.github.hugolabe.Wike.svg",
+  "logoSourceType": "official-project-asset"
+}

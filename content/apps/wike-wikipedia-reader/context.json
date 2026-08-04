@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "language_edition_policy",
+    "reading_history_privacy",
+    "desktop_search_exposure",
+    "external_content_boundary"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "Wikipedia language edition, locale inference, cross-language links, regional differences, fallback behavior, and explicit selection",
+    "search terms, article titles, reading history, open tabs, restored sessions, bookmark lists, sensitive interests, and retention",
+    "desktop search-provider integration, query and suggestion visibility, shell history, lock-screen exposure, activation, and disablement",
+    "Wikipedia and Wikimedia endpoint ownership, API requests, HTTPS, redirects, user agent, request logging, rate limits, cache, and offline state",
+    "article revision ID and timestamp, citations, templates, warnings, protection status, language divergence, and non-authoritative-use boundary",
+    "remote images, media, math and map assets, tracking surface, bandwidth, malformed content, rendering limits, and accessibility text",
+    "external and interwiki links, final host, URI handlers, downloads, file access, home-directory permission, and no automatic opening",
+    "history and bookmark deletion, personal-data clearing on exit, cache cleanup, backups, reset, uninstall, and rollback"
+  ]
+}

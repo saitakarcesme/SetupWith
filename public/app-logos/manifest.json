@@ -2553,5 +2553,10 @@
     "file": "video-trimmer-stream-copy.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.gitlab.YaLTeR.VideoTrimmer.svg",
     "sourceType": "official-project-asset"
+  },
+  "wike-wikipedia-reader": {
+    "file": "wike-wikipedia-reader.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/com.github.hugolabe.Wike.svg",
+    "sourceType": "official-project-asset"
   }
 }

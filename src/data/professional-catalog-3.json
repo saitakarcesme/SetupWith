@@ -6255,5 +6255,57 @@
       "safety": "Never expose media content, trust malformed inputs, promise frame-exact stream-copy cuts, leak earlier keyframe content, drop audio or subtitle streams silently, install codecs automatically, play unexpected sound, exhaust storage, collide outputs, overwrite sources, or discard partial evidence without an approved manifest and verification plan.",
       "verify": "Verify Video Trimmer source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove media, decoders, thumbnails, audio, timestamps, stream copies, temporary outputs, collisions, recent state and notifications are unchanged."
     }
+  },
+  {
+    "index": 512,
+    "name": "Wike",
+    "slug": "wike-wikipedia-reader",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/hugolabe/Wike",
+      "installUrl": "https://flathub.org/apps/com.github.hugolabe.Wike"
+    },
+    "website": "https://apps.gnome.org/Wike/",
+    "category": "Browsers & Internet",
+    "vertical": "software",
+    "description": "Native GNOME Wikipedia reader with support for hundreds of language editions, desktop search suggestions, bookmarks in multiple lists, article history, tables of contents, and in-page search.",
+    "accent": "#5E5C64",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.github.hugolabe.Wike.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "language_edition_policy",
+      "reading_history_privacy",
+      "desktop_search_exposure",
+      "external_content_boundary"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "Wikipedia language edition, locale inference, cross-language links, regional differences, fallback behavior, and explicit selection",
+      "search terms, article titles, reading history, open tabs, restored sessions, bookmark lists, sensitive interests, and retention",
+      "desktop search-provider integration, query and suggestion visibility, shell history, lock-screen exposure, activation, and disablement",
+      "Wikipedia and Wikimedia endpoint ownership, API requests, HTTPS, redirects, user agent, request logging, rate limits, cache, and offline state",
+      "article revision ID and timestamp, citations, templates, warnings, protection status, language divergence, and non-authoritative-use boundary",
+      "remote images, media, math and map assets, tracking surface, bandwidth, malformed content, rendering limits, and accessibility text",
+      "external and interwiki links, final host, URI handlers, downloads, file access, home-directory permission, and no automatic opening",
+      "history and bookmark deletion, personal-data clearing on exit, cache cleanup, backups, reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Wike from its official project and verified Flathub listing (https://apps.gnome.org/Wike/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, configured language count, bookmark-list and history counts, open-tab restoration state, aggregate cache bytes, desktop search-provider state, personal-data-on-exit policy, sandbox overrides and backup coverage without revealing queries, article titles, bookmarks, tabs, languages, reading interests or cached content. Install stable `com.github.hugolabe.Wike` from verified Flathub in the existing ownership scope. Do not compile from source, launch Wike, contact Wikipedia, issue a search, fetch or render an article, load media, expose suggestions, restore tabs, read history, follow a link, or clear personal data during setup.\n\nPreserve language choices, bookmark lists, history, open tabs and restoration behavior, cached content, text and display preferences, desktop search settings, permissions, remotes, overrides and scope ownership. Search and reading history may reveal medical, political, religious, legal or personal concerns; redact it from diagnostics. Desktop search integration can surface sensitive titles outside Wike, including during screen sharing. Installation must not infer a preferred language from private history, merge bookmarks across language editions, restore an old sensitive session or clear data on exit.\n\nBefore later network use, require the exact Wikipedia language edition and Wikimedia API origin, redirect policy, user-agent and cache behavior. Different language editions are independently edited and may disagree; show edition, revision ID and retrieval timestamp. Wikipedia is a starting point, not an authoritative source for medical, legal, financial or safety-critical decisions; preserve citations and article warnings. Treat article HTML, templates, images, media, math, maps and external links as untrusted remote content. Restrict automatic loads to reviewed Wikimedia origins, preview external final hosts and never open downloads or URI handlers automatically.\n\nReview Wike's declared home-directory and portal access against actual needs and remove unexplained overrides rather than browsing files. Verify provenance, app ID, origin, commit, runtime, executable, files and static sandbox permissions offline. Prove no DNS request, API call, search, suggestion, article or media load, tab restoration, history or bookmark read, external link, file access, cache mutation or personal-data clearing occurred. On failure, rollback only the new Wike ref in its original scope; preserve shared runtimes, remotes, overrides, languages, bookmarks, history, tabs, caches, privacy settings and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.github.hugolabe.Wike from verified Flathub in the existing scope without source builds, launch, Wikipedia traffic, searches, articles, media, suggestions, tab restoration, history reads, links, file access, cache writes, or data clearing.",
+      "preserve": "all language choices, bookmark lists, history, tabs and restoration behavior, cached articles and media, search-provider and privacy settings, permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose reading interests, infer private language choices, surface sensitive desktop suggestions, treat language editions as equivalent, omit revision context, present Wikipedia as authoritative advice, trust remote media or links, open URI handlers automatically, retain unexplained home access, or clear personal data without explicit scope review.",
+      "verify": "Verify Wike source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove networks, searches, suggestions, articles, media, tabs, history, bookmarks, links, files, caches and personal-data state are unchanged."
+    }
   }
 ]
