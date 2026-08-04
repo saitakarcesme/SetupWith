@@ -1,0 +1,41 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–25 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "instance_and_account_identity",
+    "post_visibility_defaults",
+    "remote_media_privacy",
+    "notification_exposure"
+  ],
+  "secrets": [
+    {
+      "key": "fediverse_oauth_access_token",
+      "reference": "secret://fediverse/oauth-access-token"
+    },
+    {
+      "key": "fediverse_oauth_client_secret",
+      "reference": "secret://fediverse/oauth-client-secret"
+    }
+  ],
+  "permissionCheckpoints": [
+    "Fediverse instance hostname, software family, operator, registration and moderation policy, TLS, redirects, and data jurisdiction",
+    "OAuth client registration, browser authorization, redirect URI, requested scopes, access-token reference, revocation, and account recovery",
+    "multiple accounts, display name versus full handle, avatar, active composer identity, instance boundary, and cross-account posting risk",
+    "post visibility, followers and mentions, federation reach, boosts and quotes, replies, edits, deletion propagation, and archival copies",
+    "drafts and scheduled posts, server versus local storage, timezone, publication identity, attachment readiness, cancellation, and failure alerts",
+    "media uploads, alt text, content warnings, sensitive flags, EXIF, size limits, transcoding, remote-media loading, and tracking pixels",
+    "timelines, search, link previews, remote profiles, HTML and emoji, muted or blocked domains, filters, moderation gaps, and untrusted content",
+    "direct-message expectations, notification previews, lock screen, account removal, token revocation, cached data, backups, and rollback"
+  ]
+}

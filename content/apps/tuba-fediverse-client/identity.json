@@ -1,0 +1,17 @@
+{
+  "index": 509,
+  "name": "Tuba",
+  "slug": "tuba-fediverse-client",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/GeopJr/Tuba",
+    "installUrl": "https://flathub.org/apps/dev.geopjr.Tuba"
+  },
+  "website": "https://apps.gnome.org/Tuba/",
+  "category": "Social & Communication",
+  "vertical": "software",
+  "description": "GNOME client for federated social platforms including Mastodon, GoToSocial, Akkoma, and related servers, with timelines, profiles, search, composition, and scheduled posts.",
+  "accent": "#613583",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/dev.geopjr.Tuba.svg",
+  "logoSourceType": "official-project-asset"
+}

@@ -6096,5 +6096,60 @@
       "safety": "Never expose sensitive counter meaning, infer semantics from a label, normalize values, merge duplicates, test with real data, double-count rapid input, lose crash consistency, reset the wrong scope, delete without confirmation, or claim recovery without a verified local backup.",
       "verify": "Verify Tally source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove data stores, labels, values, counters, ordering, resets, deletion, backups, portals and notifications are unchanged."
     }
+  },
+  {
+    "index": 509,
+    "name": "Tuba",
+    "slug": "tuba-fediverse-client",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/GeopJr/Tuba",
+      "installUrl": "https://flathub.org/apps/dev.geopjr.Tuba"
+    },
+    "website": "https://apps.gnome.org/Tuba/",
+    "category": "Social & Communication",
+    "vertical": "software",
+    "description": "GNOME client for federated social platforms including Mastodon, GoToSocial, Akkoma, and related servers, with timelines, profiles, search, composition, and scheduled posts.",
+    "accent": "#613583",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/dev.geopjr.Tuba.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "fediverse_oauth_access_token",
+      "fediverse_oauth_client_secret"
+    ],
+    "config": [
+      "instance_and_account_identity",
+      "post_visibility_defaults",
+      "remote_media_privacy",
+      "notification_exposure"
+    ],
+    "installTime": "10–25 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "Fediverse instance hostname, software family, operator, registration and moderation policy, TLS, redirects, and data jurisdiction",
+      "OAuth client registration, browser authorization, redirect URI, requested scopes, access-token reference, revocation, and account recovery",
+      "multiple accounts, display name versus full handle, avatar, active composer identity, instance boundary, and cross-account posting risk",
+      "post visibility, followers and mentions, federation reach, boosts and quotes, replies, edits, deletion propagation, and archival copies",
+      "drafts and scheduled posts, server versus local storage, timezone, publication identity, attachment readiness, cancellation, and failure alerts",
+      "media uploads, alt text, content warnings, sensitive flags, EXIF, size limits, transcoding, remote-media loading, and tracking pixels",
+      "timelines, search, link previews, remote profiles, HTML and emoji, muted or blocked domains, filters, moderation gaps, and untrusted content",
+      "direct-message expectations, notification previews, lock screen, account removal, token revocation, cached data, backups, and rollback"
+    ],
+    "prompt": "Set up Tuba from its official project and verified Flathub listing (https://apps.gnome.org/Tuba/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, configured account count, instance-software families, draft and scheduled-post counts, aggregate media/cache bytes, notification policy and OAuth token-reference presence without revealing instance hosts, handles, display names, posts, drafts, schedules, timelines, relationships, moderation lists, media, direct-message content or secrets. Install stable `dev.geopjr.Tuba` from verified Flathub in the existing ownership scope. Do not compile from source, launch Tuba, resolve an instance, register an OAuth client, open a browser, authenticate, fetch a timeline, load remote media, compose, schedule, publish, boost, favorite, follow, search, or notify during setup.\n\nPreserve accounts, full handles, instance mappings, OAuth references, timelines and cache, drafts, scheduled posts, visibility defaults, filters, mutes and blocks, media preferences, notifications, remotes, overrides and scope ownership. A display name is not a unique identity; always pair the full handle with the instance. Multiple accounts create a wrong-composer risk. Fediverse visibility labels do not guarantee confidentiality: remote servers and recipients may retain, screenshot or re-share content, and delete or edit propagation can be incomplete. Never print access tokens or conversation data.\n\nBefore later authorization, require exact HTTPS instance origin, operator and jurisdiction, supported server software, redirect URI, OAuth scopes, browser boundary, token storage reference, expiry and revocation path. Use least privilege and confirm the returned account identity before any API write. Before composing, show active full handle, visibility, mentions, language, content warning, sensitive-media flag, alt text, attachment metadata and schedule timezone. Scheduling requires a server/local storage declaration and cancellation test. Treat profiles, posts, HTML, emoji, previews and media as untrusted; block automatic remote loads and strip EXIF before separately approved uploads.\n\nReview direct-message limitations, moderation differences across instances, blocked-domain behavior and locked-screen notification exposure. Verify provenance, app ID, origin, commit, runtime, executable, files and sandbox permissions offline. Prove no DNS request, instance discovery, OAuth registration, browser launch, authentication, API read or write, remote-media load, timeline fetch, relationship action, post scheduling or publication, cache mutation or notification occurred. On failure, rollback only the new Tuba ref in its original scope; preserve shared runtimes, remotes, overrides, accounts, tokens, drafts, schedules, filters, moderation state, media and cache.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable dev.geopjr.Tuba from verified Flathub in the existing scope without source builds, launch, instance discovery, OAuth, browser authorization, authentication, API traffic, media loads, composition, scheduling, publication, relationship actions, cache writes, or notifications.",
+      "preserve": "all account and instance mappings, OAuth references, timelines, cache, drafts, scheduled posts, visibility defaults, filters, mutes, blocks, media and notification choices, remotes, overrides, and scope ownership",
+      "safety": "Never expose tokens or social graphs, confuse display names with handles, authorize the wrong instance, request broad scopes, post from the wrong account, promise confidentiality or deletion propagation, schedule in the wrong timezone, upload metadata, trust remote content, bypass moderation, or leak messages on a lock screen.",
+      "verify": "Verify Tuba source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove networks, instances, OAuth, browsers, accounts, APIs, media, timelines, relationships, posts, schedules, caches and notifications are unchanged."
+    }
   }
 ]

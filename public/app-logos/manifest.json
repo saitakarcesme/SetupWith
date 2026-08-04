@@ -2538,5 +2538,10 @@
     "file": "tally-counter.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/ca.vlacroix.Tally.svg",
     "sourceType": "official-project-asset"
+  },
+  "tuba-fediverse-client": {
+    "file": "tuba-fediverse-client.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/dev.geopjr.Tuba.svg",
+    "sourceType": "official-project-asset"
   }
 }
