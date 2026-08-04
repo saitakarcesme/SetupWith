@@ -1,0 +1,17 @@
+{
+  "index": 463,
+  "name": "Bottles",
+  "slug": "bottles",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/bottlesdevs/Bottles",
+    "installUrl": "https://flathub.org/apps/com.usebottles.bottles"
+  },
+  "website": "https://usebottles.com/",
+  "category": "OS Utilities & Desktop Enhancement",
+  "vertical": "software",
+  "description": "Linux manager for isolated Wine and Proton prefixes, runners, Windows application dependencies, installers, programs, snapshots, and portable bottle backups.",
+  "accent": "#7D61A9",
+  "logoUrl": "https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/icons/hicolor/scalable/apps/com.usebottles.bottles.svg",
+  "logoSourceType": "official-project-asset"
+}

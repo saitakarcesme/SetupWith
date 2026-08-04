@@ -2308,5 +2308,10 @@
     "file": "foliate.svg",
     "source": "https://raw.githubusercontent.com/johnfactotum/foliate/gtk4/data/com.github.johnfactotum.Foliate.svg",
     "sourceType": "official-project-asset"
+  },
+  "bottles": {
+    "file": "bottles.svg",
+    "source": "https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/icons/hicolor/scalable/apps/com.usebottles.bottles.svg",
+    "sourceType": "official-project-asset"
   }
 }
