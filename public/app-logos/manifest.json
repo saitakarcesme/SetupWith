@@ -2403,5 +2403,10 @@
     "file": "pika-backup.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.PikaBackup.svg",
     "sourceType": "official-project-asset"
+  },
+  "junction-app-chooser": {
+    "file": "junction-app-chooser.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Junction.svg",
+    "sourceType": "official-project-asset"
   }
 }

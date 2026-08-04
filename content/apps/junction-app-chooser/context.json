@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "handler_scope",
+    "uri_privacy",
+    "default_recovery",
+    "multi_open_policy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "current HTTP, HTTPS, file, mailto, custom-scheme, and MIME default handlers at user and system scope",
+    "xdg-desktop-portal, browser sandboxes, Flatpak overrides, desktop files, and handler visibility",
+    "incoming URL, query strings, fragments, local paths, filenames, credentials, tokens, and diagnostic redaction",
+    "destination preview, URL editing, internationalized domains, lookalike hosts, redirects, and insecure HTTP warning",
+    "available applications, desktop actions, executable identity, provenance, arguments, and per-scheme suitability",
+    "middle-click or control-click multi-open, duplicate network requests, authentication sessions, and side effects",
+    "keyboard selection, focus order, remembered choice, accidental activation, accessibility, and Linux mobile behavior",
+    "default-handler registration, restoration snapshot, uninstall semantics, stale desktop entries, and rollback"
+  ]
+}

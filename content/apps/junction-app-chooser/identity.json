@@ -1,0 +1,17 @@
+{
+  "index": 482,
+  "name": "Junction",
+  "slug": "junction-app-chooser",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/sonnyp/Junction",
+    "installUrl": "https://flathub.org/apps/re.sonny.Junction"
+  },
+  "website": "https://apps.gnome.org/Junction/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "GNOME application chooser that intercepts files and links, displays or edits destinations, warns on insecure URLs, and can open multiple handlers.",
+  "accent": "#3584E4",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Junction.svg",
+  "logoSourceType": "official-project-asset"
+}
