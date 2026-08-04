@@ -1,0 +1,17 @@
+{
+  "index": 508,
+  "name": "Tally",
+  "slug": "tally-counter",
+  "source": {
+    "type": "website",
+    "url": "https://codeberg.org/vtrlx/tally",
+    "installUrl": "https://flathub.org/apps/ca.vlacroix.Tally"
+  },
+  "website": "https://apps.gnome.org/Tally/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Privacy-focused GNOME tally counter for keeping, naming, coloring, categorizing, reordering, and updating a personal collection of counts.",
+  "accent": "#F6D32D",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/ca.vlacroix.Tally.svg",
+  "logoSourceType": "official-project-asset"
+}

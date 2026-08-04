@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Intermediate",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "counter_semantics",
+    "label_privacy",
+    "reset_confirmation",
+    "local_backup_policy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "counter labels, colors and categories, health or habit sensitivity, display privacy, screenshots, notifications, and support logs",
+    "initial values, increment and decrement meaning, allowed range, zero and negative behavior, unit semantics, and correction workflow",
+    "rapid clicks and keyboard input, duplicate activation, atomic persistence, crash consistency, concurrency, and count reconciliation",
+    "ordering and categorization, drag-and-drop consequences, duplicate names, color accessibility, hidden context, and stable identity",
+    "single-counter reset versus all-data reset, confirmation wording, affected count preview, undo availability, and destructive boundary",
+    "local data path, owner, permissions, plaintext sensitivity, filesystem encryption, backup inclusion, retention, and restore authority",
+    "app sandbox with no requested permissions, unexpected network or portal access, telemetry absence, updates, and least privilege",
+    "counter deletion, retained application data, backup verification, reset, uninstall, and rollback"
+  ]
+}

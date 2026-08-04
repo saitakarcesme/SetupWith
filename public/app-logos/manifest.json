@@ -2533,5 +2533,10 @@
     "file": "switcheroo-image-converter.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.gitlab.adhami3310.Converter.svg",
     "sourceType": "official-project-asset"
+  },
+  "tally-counter": {
+    "file": "tally-counter.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/ca.vlacroix.Tally.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -6044,5 +6044,57 @@
       "safety": "Never expose image metadata, trust claimed formats, follow SVG resources, permit decompression bombs, lose orientation or color silently, flatten transparency unexpectedly, discard frames without warning, exhaust resources with batch concurrency, collide names, overwrite sources, or remove metadata without a manifest and visual review.",
       "verify": "Verify Switcheroo source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove files, decoders, renderers, metadata, SVG resources, encoders, resizing, EXIF, temporary files, outputs and notifications are unchanged."
     }
+  },
+  {
+    "index": 508,
+    "name": "Tally",
+    "slug": "tally-counter",
+    "source": {
+      "type": "website",
+      "url": "https://codeberg.org/vtrlx/tally",
+      "installUrl": "https://flathub.org/apps/ca.vlacroix.Tally"
+    },
+    "website": "https://apps.gnome.org/Tally/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Privacy-focused GNOME tally counter for keeping, naming, coloring, categorizing, reordering, and updating a personal collection of counts.",
+    "accent": "#F6D32D",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/ca.vlacroix.Tally.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "counter_semantics",
+      "label_privacy",
+      "reset_confirmation",
+      "local_backup_policy"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Intermediate",
+    "permissionCheckpoints": [
+      "counter labels, colors and categories, health or habit sensitivity, display privacy, screenshots, notifications, and support logs",
+      "initial values, increment and decrement meaning, allowed range, zero and negative behavior, unit semantics, and correction workflow",
+      "rapid clicks and keyboard input, duplicate activation, atomic persistence, crash consistency, concurrency, and count reconciliation",
+      "ordering and categorization, drag-and-drop consequences, duplicate names, color accessibility, hidden context, and stable identity",
+      "single-counter reset versus all-data reset, confirmation wording, affected count preview, undo availability, and destructive boundary",
+      "local data path, owner, permissions, plaintext sensitivity, filesystem encryption, backup inclusion, retention, and restore authority",
+      "app sandbox with no requested permissions, unexpected network or portal access, telemetry absence, updates, and least privilege",
+      "counter deletion, retained application data, backup verification, reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Tally from its official project and verified Flathub listing (https://apps.gnome.org/Tally/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, counter and category counts, aggregate local-state bytes, backup age and sandbox permissions without revealing counter names, values, colors, ordering, categories, health details, habit history or inferred routines. Install stable `ca.vlacroix.Tally` from verified Flathub in the existing ownership scope. Do not compile from source, launch Tally, open its data store, increment or decrement a counter, reorder items, create or rename a counter, reset values, delete data, access portals, or emit notifications during setup.\n\nPreserve every counter identity, label, value, color, category and order, plus local settings, permissions, backups, remotes, overrides and scope ownership. Counter labels and values may describe medication, symptoms, sobriety, prayer, spending, incidents or other sensitive behavior; redact them from diagnostics and screen captures. A count without its increment meaning, unit and correction rule can be misleading. Installation must not normalize negative values, merge duplicate labels, repair ordering, reset a counter or assume that zero means missing data.\n\nBefore later use, define for each counter the event being counted, increment size, whether decrement is allowed, range and overflow behavior, correction procedure and reset authority. Validate rapid repeated activation and crash persistence only with disposable synthetic counters, never the user's real collection. Preview reorder and category changes by stable identifier rather than label. Treat reset and deletion as destructive: distinguish one counter from the entire collection, show affected item counts, require explicit confirmation and establish a restorable local backup before proceeding.\n\nVerify provenance, app ID, origin, commit, runtime, executable, files and static sandbox permissions offline. Confirm the no-permission posture and flag any unexpected network, filesystem, clipboard or portal capability without exercising it. Prove no data store was opened, label or value read, count changed, item reordered, counter created, reset or deleted, backup rotated, portal contacted or notification shown. On failure, rollback only the new Tally ref in its original scope; preserve shared runtimes, remotes, overrides, counters, categories, ordering, settings and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable ca.vlacroix.Tally from verified Flathub in the existing scope without source builds, launch, data-store reads, count changes, reorder, creation, rename, reset, deletion, portals, or notifications.",
+      "preserve": "all counter identities, labels, values, colors, categories, ordering, settings, local-state ownership and permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose sensitive counter meaning, infer semantics from a label, normalize values, merge duplicates, test with real data, double-count rapid input, lose crash consistency, reset the wrong scope, delete without confirmation, or claim recovery without a verified local backup.",
+      "verify": "Verify Tally source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove data stores, labels, values, counters, ordering, resets, deletion, backups, portals and notifications are unchanged."
+    }
   }
 ]
