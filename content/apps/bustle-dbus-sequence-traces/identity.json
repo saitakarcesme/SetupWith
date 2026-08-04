@@ -1,0 +1,17 @@
+{
+  "index": 531,
+  "name": "Bustle",
+  "slug": "bustle-dbus-sequence-traces",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/bustle",
+    "installUrl": "https://flathub.org/apps/org.freedesktop.Bustle"
+  },
+  "website": "https://apps.gnome.org/Bustle/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "D-Bus profiling tool that captures or opens activity logs and renders timestamped sequence diagrams, method call durations, signal frequencies, and aggregate statistics.",
+  "accent": "#C061CB",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.freedesktop.Bustle.svg",
+  "logoSourceType": "official-project-asset"
+}

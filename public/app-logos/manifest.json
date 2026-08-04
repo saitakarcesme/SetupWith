@@ -2648,5 +2648,10 @@
     "file": "bobby-sqlite-browser.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/studio.planetpeanut.Bobby.svg",
     "sourceType": "official-project-asset"
+  },
+  "bustle-dbus-sequence-traces": {
+    "file": "bustle-dbus-sequence-traces.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.freedesktop.Bustle.svg",
+    "sourceType": "official-project-asset"
   }
 }

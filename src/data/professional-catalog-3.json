@@ -7264,5 +7264,59 @@
       "safety": "Never expose schemas or values, inspect a live database inconsistently, omit WAL data, checkpoint or create side files, load extensions, trust virtual tables, recover deleted data casually, follow symlinks, confuse NULL and empty values, copy without scope, inject spreadsheet formulas, or change file associations silently.",
       "verify": "Verify Bobby source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove files, SQLite connections, companions, locks, schemas, queries, rows, extensions, clipboards, recents and databases are unchanged."
     }
+  },
+  {
+    "index": 531,
+    "name": "Bustle",
+    "slug": "bustle-dbus-sequence-traces",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/bustle",
+      "installUrl": "https://flathub.org/apps/org.freedesktop.Bustle"
+    },
+    "website": "https://apps.gnome.org/Bustle/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "D-Bus profiling tool that captures or opens activity logs and renders timestamped sequence diagrams, method call durations, signal frequencies, and aggregate statistics.",
+    "accent": "#C061CB",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.freedesktop.Bustle.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "bustle_trace_payload_reference"
+    ],
+    "config": [
+      "capture_scope",
+      "message_redaction",
+      "trace_resource_limits",
+      "timing_analysis"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "session or system bus, capture mechanism, eavesdrop or monitor policy, user context, namespace, container, time window, and authorization",
+      "sender and destination names, object paths, interfaces, methods, signals, replies, errors, serials, timestamps, and capture filters",
+      "message bodies, variants, byte arrays, file-descriptor metadata, credentials, account identifiers, notification and clipboard content, and redaction",
+      "capture rate, event and byte caps, duration, backpressure, dropped-message accounting, clock source, timestamp precision, memory, and disk limits",
+      "imported trace origin, format, checksum, sanitization status, parser isolation, malformed records, decompression, trust, and retention",
+      "sequence-diagram participant grouping, unique-name ownership changes, activation, nested calls, missing replies, errors, and causal interpretation",
+      "method duration, signal frequency, averages, outliers, clock skew, incomplete sampling, observer overhead, statistics scope, and performance claims",
+      "capture stop, monitor-rule removal, log encryption and deletion, export redaction, cache clearing, app reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Bustle from its official project and verified Flathub listing (https://apps.gnome.org/Bustle/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, declared session and system bus monitoring access, saved-trace count, aggregate trace and cache bytes, redaction-policy presence, default event, byte and duration caps, sandbox overrides and backup coverage without connecting to a bus or revealing trace filenames, bus names, object paths, interfaces, members, process identities, timestamps, message bodies, errors, credentials or application behavior. Install stable `org.freedesktop.Bustle` from verified Flathub in the existing ownership scope. Do not compile from source, launch Bustle, connect to a bus, install a monitor or match rule, capture a message, activate a service, open or parse a trace, render a sequence diagram, compute statistics, write a log, export data or request elevated monitoring during setup.\n\nPreserve every saved trace byte, checksum, timestamp and redaction status, plus capture filters, diagram settings, caches, permissions, remotes, overrides and scope ownership. A D-Bus trace can reconstruct private application workflows and payloads; metadata alone may identify users and activities. Installation must not begin background capture, broaden from session to system bus, activate dormant services, retain an old unredacted trace or request policy changes. Bus monitoring permission is not consent to observe unrelated applications.\n\nBefore later capture, require the exact bus, user and namespace, approved destinations, purpose, time window and retention. Use narrow filters and enforce event, byte, duration, memory and disk caps with dropped-message accounting and deterministic stop. Redact bodies, byte arrays, credentials, account identifiers, notification and clipboard content during collection rather than relying only on later export. Validate the capture pipeline against a disposable synthetic bus and known messages, not a production desktop. Remove every monitor rule on stop and prove no service was activated.\n\nImported traces need provenance, checksum, format and sanitization status and must be parsed with record, nesting, decompression, memory and time limits. Sequence order does not always prove causality; unique bus ownership changes, missing replies and clock precision matter. Label method-duration and signal-frequency statistics with sample window, dropped events, outlier policy and observer overhead. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no bus connection, monitor, capture, activation, trace parse, diagram, statistic, log write, export or privilege request occurred. On failure, rollback only the new Bustle ref in its original scope; preserve shared runtimes, remotes, overrides, traces, filters, redaction state, caches and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.freedesktop.Bustle from verified Flathub in the existing scope without source builds, launch, bus connections, monitor rules, capture, activation, trace parsing, diagrams, statistics, logs, exports, or privileged monitoring.",
+      "preserve": "every saved trace byte, checksum, timestamp and redaction status, capture filters, diagram settings, caches, permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never capture unrelated applications, expose payloads or identities, broaden bus scope, activate services, collect without caps, rely on post-export redaction, leave monitor rules installed, trust imported traces, overstate sequence causality, report timing without sample limits, or retain unredacted logs.",
+      "verify": "Verify Bustle source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove buses, monitors, messages, services, traces, parsers, diagrams, statistics, logs, exports and privilege state are untouched."
+    }
   }
 ]
