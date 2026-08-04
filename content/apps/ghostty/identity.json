@@ -1,0 +1,16 @@
+{
+  "index": 426,
+  "name": "Ghostty",
+  "slug": "ghostty",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/ghostty-org/ghostty",
+    "installUrl": "https://ghostty.org/download"
+  },
+  "website": "https://ghostty.org/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "GPU-accelerated terminal emulator with native macOS and Linux interfaces, flexible configuration, themes, and shell integration.",
+  "accent": "#3551F3",
+  "simpleIconSlug": "ghostty"
+}

@@ -2123,5 +2123,10 @@
     "file": "orbstack.svg",
     "source": "https://orbstack.dev/img/icon-square256.png",
     "sourceType": "official-project-asset"
+  },
+  "ghostty": {
+    "file": "ghostty.svg",
+    "source": "https://github.com/ghostty-org/website/blob/7093f052a2f35e0247fcb828ede644ed74a749a0/public/ghostty-logo.svg",
+    "sourceType": "simple-icons-official-glyph"
   }
 }

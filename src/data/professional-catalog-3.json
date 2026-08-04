@@ -1703,5 +1703,44 @@
       "safety": "Ask separately before updating /var/run/docker.sock, linking tools into /usr/local/bin, switching Docker contexts, stopping another runtime, copying Docker data, enabling Kubernetes or Rosetta, exposing container networks, forwarding SSH agents, or attaching USB devices.",
       "verify": "Confirm the OrbStack code signature and version, inspect orb status and the available Docker contexts, run an approved disposable hello-world container without publishing ports, remove it, and prove that pre-existing runtimes, contexts, volumes, machines, and socket ownership remain unchanged."
     }
+  },
+  {
+    "index": 426,
+    "name": "Ghostty",
+    "slug": "ghostty",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/ghostty-org/ghostty",
+      "installUrl": "https://ghostty.org/download"
+    },
+    "website": "https://ghostty.org/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "GPU-accelerated terminal emulator with native macOS and Linux interfaces, flexible configuration, themes, and shell integration.",
+    "accent": "#3551F3",
+    "simpleIconSlug": "ghostty",
+    "secrets": [],
+    "config": [
+      "theme",
+      "font-family",
+      "shell-integration",
+      "config-file"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Use Ghostty's signed and notarized DMG or its official-binary Homebrew cask on macOS; on Linux choose a distribution-maintained package, and reject unreviewed community install scripts or binaries unless the user explicitly accepts their provenance risk.",
+      "preserve": "all XDG and macOS Ghostty configuration files, imported themes, keybindings, font choices, working-directory behavior, shell startup files, terminfo entries, desktop launchers, and the current default-terminal association",
+      "safety": "Do not change the default terminal, edit shell startup files, enable SSH wrappers, install remote terminfo, load untrusted themes, replace fonts, add third-party repositories, or build from an unpinned Zig toolchain without separate review and approval.",
+      "verify": "Confirm the package signature or distribution provenance and Ghostty version, validate the effective configuration with Ghostty's show-config action, launch one local shell, check TERM and resource discovery, reload the config, and prove no startup file, default-terminal setting, or remote host changed."
+    }
   }
 ]
