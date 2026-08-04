@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Beginner",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "answer_set",
+    "randomness_policy",
+    "question_privacy",
+    "decision_safety"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "localized answer set, positive, uncertain and negative balance, translation meaning, cultural tone, accessibility, and retained attribution",
+    "random selection source, seeding, repeat behavior, ask-again semantics, distribution, deterministic testing, and no prediction claim",
+    "question entry or non-entry behavior, screen visibility, keyboard, clipboard, history, logs, telemetry, crash reports, and privacy",
+    "medical, legal, financial, safety, relationship and spiritual decisions, vulnerable users, entertainment labeling, escalation, and human-support boundary",
+    "answer timing, animation, motion sensitivity, flashing, sound, focus, screen reader announcement, contrast, and reduced-motion behavior",
+    "repeated questioning, confirmation seeking, compulsive use, age appropriateness, session limits, dismissibility, and non-authoritative framing",
+    "offline behavior, network absence, permissions, filesystem and portal access, notifications, background execution, and least privilege",
+    "answer dismissal, state and history clearing, preference reset, app-data deletion, uninstall, and rollback"
+  ]
+}

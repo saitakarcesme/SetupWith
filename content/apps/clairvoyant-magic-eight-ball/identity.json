@@ -1,0 +1,17 @@
+{
+  "index": 534,
+  "name": "Clairvoyant",
+  "slug": "clairvoyant-magic-eight-ball",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/cassidyjames/clairvoyant",
+    "installUrl": "https://flathub.org/apps/com.cassidyjames.clairvoyant"
+  },
+  "website": "https://apps.gnome.org/Clairvoyant/",
+  "category": "Games & Launchers",
+  "vertical": "entertainment",
+  "description": "Playful magic-eight-ball-style fortune teller that presents a randomized answer after a user privately considers a question, with an option to ask again.",
+  "accent": "#9141AC",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.cassidyjames.clairvoyant.svg",
+  "logoSourceType": "official-project-asset"
+}

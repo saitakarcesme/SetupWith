@@ -7422,5 +7422,57 @@
       "safety": "Never expose research metadata, reserialize on install, corrupt Unicode or LaTeX, strip unknown fields, confuse organizations and people, invent keys, resolve identifiers without approval, merge by title alone, break crossrefs, overwrite concurrent edits, copy private fields unexpectedly, or alter the clipboard during tests.",
       "verify": "Verify Citations source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove directories, bibliographies, parsers, identifiers, normalizers, keys, merges, clipboards, recents and files are unchanged."
     }
+  },
+  {
+    "index": 534,
+    "name": "Clairvoyant",
+    "slug": "clairvoyant-magic-eight-ball",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/cassidyjames/clairvoyant",
+      "installUrl": "https://flathub.org/apps/com.cassidyjames.clairvoyant"
+    },
+    "website": "https://apps.gnome.org/Clairvoyant/",
+    "category": "Games & Launchers",
+    "vertical": "entertainment",
+    "description": "Playful magic-eight-ball-style fortune teller that presents a randomized answer after a user privately considers a question, with an option to ask again.",
+    "accent": "#9141AC",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.cassidyjames.clairvoyant.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "answer_set",
+      "randomness_policy",
+      "question_privacy",
+      "decision_safety"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Beginner",
+    "permissionCheckpoints": [
+      "localized answer set, positive, uncertain and negative balance, translation meaning, cultural tone, accessibility, and retained attribution",
+      "random selection source, seeding, repeat behavior, ask-again semantics, distribution, deterministic testing, and no prediction claim",
+      "question entry or non-entry behavior, screen visibility, keyboard, clipboard, history, logs, telemetry, crash reports, and privacy",
+      "medical, legal, financial, safety, relationship and spiritual decisions, vulnerable users, entertainment labeling, escalation, and human-support boundary",
+      "answer timing, animation, motion sensitivity, flashing, sound, focus, screen reader announcement, contrast, and reduced-motion behavior",
+      "repeated questioning, confirmation seeking, compulsive use, age appropriateness, session limits, dismissibility, and non-authoritative framing",
+      "offline behavior, network absence, permissions, filesystem and portal access, notifications, background execution, and least privilege",
+      "answer dismissal, state and history clearing, preference reset, app-data deletion, uninstall, and rollback"
+    ],
+    "prompt": "Set up Clairvoyant from its official project and verified Flathub listing (https://apps.gnome.org/Clairvoyant/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, localized answer-set version and category counts, recent-answer or question-history presence, animation, sound and reduced-motion preferences, sandbox overrides and backup coverage without generating an answer or revealing questions, answers tied to sessions, spiritual beliefs, relationship concerns, health, finances, legal issues or personal decision patterns. Install stable `com.cassidyjames.clairvoyant` from verified Flathub in the existing ownership scope. Do not compile from source, launch Clairvoyant, read keyboard or clipboard input, restore a question, select or display an answer, seed randomness from private state, trigger Ask Again, play animation or sound, write history, show a notification or contact a network during setup.\n\nPreserve all answer-set and locale choices, animation, sound and accessibility preferences, window state, permissions, remotes, overrides and scope ownership. Questions should remain in the user's mind unless the app explicitly requires input; installation must not capture, infer, log or restore them. Clairvoyant is entertainment, not prophecy, spiritual authority or a decision-support system. Never present an answer as evidence for medical, legal, financial, personal-safety or relationship actions, and never blame a user for ignoring or following it.\n\nBefore later use, show a clear entertainment label and a route to qualified human help for high-stakes concerns. Verify the localized answer set preserves positive, uncertain and negative intent without abusive or discriminatory wording. Define random selection and Ask Again semantics; repeated answers are possible and do not indicate confidence, while rerolling does not improve truth. Distribution tests must use a deterministic public seed in a test build and must never expose that seed as a prediction mechanism. Do not retain questions or session-linked answers by default.\n\nAnimations need reduced-motion support, no hazardous flashing and an immediate skip; sound requires reviewed output and low initial volume. Guard against compulsive confirmation loops with dismissible, non-judgmental reminders that answers are arbitrary. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no input read, question restore, random selection, answer display, Ask Again, animation, audio, history write, notification, portal or network request occurred. On failure, rollback only the new Clairvoyant ref in its original scope; preserve shared runtimes, remotes, overrides, answer resources, locale, accessibility settings and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.cassidyjames.clairvoyant from verified Flathub in the existing scope without source builds, launch, input reads, question restoration, random selection, answers, Ask Again, animation, audio, histories, notifications, portals, or networks.",
+      "preserve": "all answer-set and locale choices, animation, sound and reduced-motion preferences, window state, permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never capture private questions, present randomness as prophecy, guide high-stakes decisions, shame users, imply repeated answers are confidence, promise truth through rerolling, use private seeds, retain question-answer histories by default, trigger hazardous motion or sudden sound, or encourage compulsive confirmation loops.",
+      "verify": "Verify Clairvoyant source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove inputs, questions, randomness, answers, rerolls, animations, audio, histories, notifications, portals and networks are unchanged."
+    }
   }
 ]
