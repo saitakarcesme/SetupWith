@@ -6151,5 +6151,57 @@
       "safety": "Never expose tokens or social graphs, confuse display names with handles, authorize the wrong instance, request broad scopes, post from the wrong account, promise confidentiality or deletion propagation, schedule in the wrong timezone, upload metadata, trust remote content, bypass moderation, or leak messages on a lock screen.",
       "verify": "Verify Tuba source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove networks, instances, OAuth, browsers, accounts, APIs, media, timelines, relationships, posts, schedules, caches and notifications are unchanged."
     }
+  },
+  {
+    "index": 510,
+    "name": "Valuta",
+    "slug": "valuta-currency-converter",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/ideveCore/valuta",
+      "installUrl": "https://flathub.org/apps/io.github.idevecore.Valuta"
+    },
+    "website": "https://apps.gnome.org/Valuta/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Fast GNOME currency conversion utility for repeated two-currency calculations during travel, budgeting, and everyday reference, backed by online exchange-rate data.",
+    "accent": "#2EC27E",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.idevecore.Valuta.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "exchange_rate_provider",
+      "rate_freshness_policy",
+      "rounding_and_precision",
+      "financial_use_boundary"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "exchange-rate provider identity, endpoint ownership, methodology, source institutions, HTTPS, redirects, availability, and terms",
+      "base and quote currency direction, ISO code, symbol ambiguity, currency inversion, unsupported or obsolete units, and redenomination",
+      "rate observation timestamp, provider timezone, publication cadence, market closure, cache age, offline indicator, and stale-data threshold",
+      "input amount sensitivity, travel or budget context, local history, request parameters, telemetry, provider logs, and diagnostic redaction",
+      "decimal parsing, locale separator, significant digits, intermediate precision, rounding mode, minor units, overflow, and reproducibility",
+      "reference or mid-market rate versus executable quote, bank spread, card markup, commission, tax, transfer fee, cash rate, and settlement timing",
+      "provider failure, partial currency coverage, fallback source, cross-rate derivation, inconsistent timestamps, retry backoff, and no silent substitution",
+      "cached-rate cleanup, preferred currency pair, history retention, export or copying, backups, reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Valuta from its official project and verified Flathub listing (https://apps.gnome.org/Valuta/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, preferred-pair count, cache entry count and age range, provider configuration, locale and decimal conventions, history policy and backup coverage without revealing currencies, amounts, converted values, travel plans, budgets, provider queries or financial context. Install stable `io.github.idevecore.Valuta` from verified Flathub in the existing ownership scope. Do not compile from source, launch Valuta, contact a rate provider, read cached rates, submit an amount, perform or invert a conversion, copy a result, change preferred currencies, clear history, or refresh data during setup.\n\nPreserve preferred pairs, provider choice, cached observations and timestamps, input and display preferences, precision and locale behavior, history, remotes, overrides and scope ownership. Currency amounts and pair choices may reveal travel, salary, purchases or assets; redact them from diagnostics. A displayed conversion is reference information, not an executable foreign-exchange quote. It normally excludes bank spread, card markup, commission, taxes, transfer fees, cash premiums and settlement-time movement; never present it as guaranteed proceeds or financial advice.\n\nBefore a later refresh, require the provider's legal identity, HTTPS endpoint, data methodology, source institutions, supported currencies, publication schedule, retention terms and fallback policy. Every result must show base and quote ISO codes, direction, rate, observation timestamp, provider and freshness status. Reject symbol-only ambiguity and silently substituted providers. Define decimal separator, intermediate precision, rounding mode and minor-unit display; retain sufficient precision until the final presentation step. Flag obsolete, redenominated or unavailable currencies, market closures, cross-rate derivation and mixed-timestamp data rather than fabricating continuity.\n\nSet an explicit stale-rate threshold and offline indicator; cache use must retain the original observation time. Verify provenance, app ID, origin, commit, runtime, executable, files and sandbox permissions offline. Prove no DNS request, provider call, cache read or refresh, amount processing, conversion, inversion, clipboard write, preference change, history deletion or notification occurred. On failure, rollback only the new Valuta ref in its original scope; preserve shared runtimes, remotes, overrides, provider settings, preferred pairs, cached observations, timestamps, locale choices, history and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.github.idevecore.Valuta from verified Flathub in the existing scope without source builds, launch, provider traffic, cache reads, amounts, conversions, inversions, clipboard writes, preference changes, history deletion, or refreshes.",
+      "preserve": "all preferred pairs, provider choice, cached rates and observation timestamps, input and display preferences, precision, locale, history, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose financial context, use ambiguous symbols, hide rate direction or age, silently switch providers, mix timestamps, fabricate unavailable currencies, round intermediate values prematurely, confuse reference rates with executable quotes, omit fees and spreads, or provide financial guarantees.",
+      "verify": "Verify Valuta source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove networks, providers, caches, amounts, conversions, clipboard, preferences, history and notifications are unchanged."
+    }
   }
 ]

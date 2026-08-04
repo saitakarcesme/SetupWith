@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "exchange_rate_provider",
+    "rate_freshness_policy",
+    "rounding_and_precision",
+    "financial_use_boundary"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "exchange-rate provider identity, endpoint ownership, methodology, source institutions, HTTPS, redirects, availability, and terms",
+    "base and quote currency direction, ISO code, symbol ambiguity, currency inversion, unsupported or obsolete units, and redenomination",
+    "rate observation timestamp, provider timezone, publication cadence, market closure, cache age, offline indicator, and stale-data threshold",
+    "input amount sensitivity, travel or budget context, local history, request parameters, telemetry, provider logs, and diagnostic redaction",
+    "decimal parsing, locale separator, significant digits, intermediate precision, rounding mode, minor units, overflow, and reproducibility",
+    "reference or mid-market rate versus executable quote, bank spread, card markup, commission, tax, transfer fee, cash rate, and settlement timing",
+    "provider failure, partial currency coverage, fallback source, cross-rate derivation, inconsistent timestamps, retry backoff, and no silent substitution",
+    "cached-rate cleanup, preferred currency pair, history retention, export or copying, backups, reset, uninstall, and rollback"
+  ]
+}

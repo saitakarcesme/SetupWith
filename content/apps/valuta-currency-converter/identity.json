@@ -1,0 +1,17 @@
+{
+  "index": 510,
+  "name": "Valuta",
+  "slug": "valuta-currency-converter",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/ideveCore/valuta",
+    "installUrl": "https://flathub.org/apps/io.github.idevecore.Valuta"
+  },
+  "website": "https://apps.gnome.org/Valuta/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Fast GNOME currency conversion utility for repeated two-currency calculations during travel, budgeting, and everyday reference, backed by online exchange-rate data.",
+  "accent": "#2EC27E",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.idevecore.Valuta.svg",
+  "logoSourceType": "official-project-asset"
+}
