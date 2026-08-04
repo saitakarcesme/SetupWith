@@ -1,0 +1,18 @@
+{
+  "index": 433,
+  "name": "DevToys",
+  "slug": "devtoys",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/DevToys-app/DevToys",
+    "installUrl": "https://devtoys.app/download/"
+  },
+  "website": "https://devtoys.app/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Cross-platform graphical and command-line toolbox for developers with extensible encoders, formatters, converters, generators, inspectors, and text utilities.",
+  "accent": "#6750A4",
+  "simpleIconSlug": "devdotto",
+  "logoUrl": "https://raw.githubusercontent.com/DevToys-app/DevToys/main/assets/logo/MacOS/Stable/Icon-MacOS.svg",
+  "logoSourceType": "official-project-asset"
+}

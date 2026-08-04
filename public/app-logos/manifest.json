@@ -2158,5 +2158,10 @@
     "file": "k9s.svg",
     "source": "https://raw.githubusercontent.com/derailed/k9s/master/assets/logo.png",
     "sourceType": "official-project-asset"
+  },
+  "devtoys": {
+    "file": "devtoys.svg",
+    "source": "https://raw.githubusercontent.com/DevToys-app/DevToys/main/assets/logo/MacOS/Stable/Icon-MacOS.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -2038,5 +2038,59 @@
       "safety": "Never mutate or expose cluster resources, view secrets or sensitive logs, execute plugins, create pod or node shells, start port forwards, copy through OSC52, or broaden RBAC without separate approval.",
       "verify": "Verify binary provenance, version, configuration paths, and YAML offline; if access is approved, use an explicit context and namespace in read-only mode and prove no API mutation or local state change occurred."
     }
+  },
+  {
+    "index": 433,
+    "name": "DevToys",
+    "slug": "devtoys",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/DevToys-app/DevToys",
+      "installUrl": "https://devtoys.app/download/"
+    },
+    "website": "https://devtoys.app/",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "Cross-platform graphical and command-line toolbox for developers with extensible encoders, formatters, converters, generators, inspectors, and text utilities.",
+    "accent": "#6750A4",
+    "simpleIconSlug": "devdotto",
+    "logoUrl": "https://raw.githubusercontent.com/DevToys-app/DevToys/main/assets/logo/MacOS/Stable/Icon-MacOS.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "install_variant",
+      "portable_mode",
+      "recent_tools",
+      "extensions"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "GUI versus CLI installation",
+      "system installer versus portable package",
+      ".NET runtime installation",
+      "clipboard access",
+      "sensitive input processing",
+      "third-party extension download",
+      "extension directory changes"
+    ],
+    "prompt": "Set up DevToys from the official download page and DevToys-app repository (https://devtoys.app/download/). Detect Windows, macOS, or Linux, CPU architecture, package managers, .NET 8 availability, existing GUI and CLI installations, portable copies, and DevToys data and plugin directories. Distinguish the desktop app from DevToys CLI. Choose the official Microsoft Store, Winget, macOS app or Homebrew cask, Linux DEB, or matching portable archive; do not use download-page options marked coming soon or substitute an unofficial package.\n\nPreserve settings, favorites, recent-tool preferences, window state, portable data, CLI configuration, custom tools, and installed extensions. Report whether the selected artifact bundles .NET or depends on the host runtime, and verify its architecture and release provenance before installation. Apply only the requested GUI or CLI variant, portable mode, recent-tools preference, and explicitly named extensions. Do not silently install both variants or migrate data between stable and preview channels.\n\nTreat all text, JWTs, certificates, keys, hashes, URLs, files, images, and clipboard content supplied to DevToys as potentially sensitive even when processing is local. Never populate a tool with real credentials for testing, read the clipboard automatically, retain sample data in recents, or include user input in logs or screenshots. DevToys 2 supports third-party extensions, so show each extension's publisher, source, version, permissions, files, and checksum before approval. Do not enable unknown feeds, sideload a plugin, overwrite an extension directory, or load an unsigned preview extension.\n\nVerify the installed DevToys and CLI versions, publisher or checksum, executable paths, architecture, runtime dependency, settings path, and plugin path. Launch the GUI without opening sensitive files or using clipboard content, and test only with a disposable public string; for CLI, list help and available tools without transforming user data. Confirm no extension was downloaded, no recent sensitive value was stored, and no unrelated configuration changed. Roll back by removing only the installed variant and setup-added extensions, restoring backed-up settings, and preserving portable folders and all pre-existing plugins.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Select the official DevToys GUI or CLI artifact for the detected platform and architecture, distinguish bundled-runtime from .NET-dependent packages, and avoid unavailable or unofficial channels.",
+      "preserve": "all DevToys settings, favorites, recent-tool preferences, window state, portable data, CLI configuration, custom tools, plugin directories, and installed extensions",
+      "safety": "Never process real secrets during verification, read clipboard data automatically, retain sensitive samples, install both variants unintentionally, switch release channels, or download and execute unreviewed third-party extensions.",
+      "verify": "Verify publisher or checksum, version, architecture, runtime, executable and data paths, then test with disposable public text and prove no plugin, sensitive recent value, or unrelated configuration was added."
+    }
   }
 ]

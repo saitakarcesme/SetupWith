@@ -1,0 +1,33 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "install_variant",
+    "portable_mode",
+    "recent_tools",
+    "extensions"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "GUI versus CLI installation",
+    "system installer versus portable package",
+    ".NET runtime installation",
+    "clipboard access",
+    "sensitive input processing",
+    "third-party extension download",
+    "extension directory changes"
+  ]
+}
