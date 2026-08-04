@@ -7370,5 +7370,57 @@
       "safety": "Never infer a turn, round competitive time silently, confuse wall and monotonic clocks, treat a stale tap as game start, apply asymmetric suspend behavior, accept repeated taps, overwrite an active match, expose player history, use color alone, or let software adjudicate the game.",
       "verify": "Verify Chess Clock source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove games, clocks, taps, timing state, flag signals, displays, audio, vibration, results and histories are unchanged."
     }
+  },
+  {
+    "index": 533,
+    "name": "Citations",
+    "slug": "citations-bibtex-manager",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/citations",
+      "installUrl": "https://flathub.org/apps/org.gnome.World.Citations"
+    },
+    "website": "https://apps.gnome.org/Citations/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "GNOME bibliography manager for opening, editing, organizing, and copying entries in BibTeX files while preserving citation-oriented metadata.",
+    "accent": "#1C71D8",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Citations.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "bibtex_parser",
+      "citation_key_policy",
+      "field_normalization",
+      "clipboard_export"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "BibTeX file source, owner, permissions, checksum, encoding, newline style, dialect, entry count, comments, string macros, preambles, and trust",
+      "entry type, citation key, required and optional fields, unknown fields, field ordering, braces and quotes, concatenation, escaping, and round-trip fidelity",
+      "author and editor name particles, literal organizations, Unicode, LaTeX commands, capitalization protection, page ranges, dates, and locale",
+      "DOI, ISBN, ISSN, URL and eprint identifiers, normalization, validation versus resolution, redirects, network lookup absence, and provenance",
+      "duplicate citation keys, duplicate works with different keys, crossref and xdata relationships, macro dependencies, merge policy, and referential integrity",
+      "abstracts, notes, keywords, file paths, unpublished titles, reviewer identities, research interests, diagnostics, screen sharing, and redaction",
+      "copy BibTeX entry scope, selected fields, serialization, clipboard overwrite, formula and control characters, destination compatibility, and expiry",
+      "atomic save, original backup, concurrent editor changes, conflict detection, partial write, recovery, app reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Citations from its official project and verified Flathub listing (https://apps.gnome.org/Citations/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, recent-bibliography count, aggregate file and cache bytes, entry counts only in broad buckets, duplicate-key presence, encoding and dialect classes, portal grants, sandbox overrides and backup coverage without opening BibTeX content or revealing filenames, citation keys, authors, titles, abstracts, notes, keywords, identifiers, URLs, unpublished work, research topics or collaborators. Install stable `org.gnome.World.Citations` from verified Flathub in the existing ownership scope. Do not compile from source, launch Citations, enumerate directories, open or parse a bibliography, resolve an identifier, normalize a field, generate a key, merge an entry, read the clipboard, copy BibTeX, update recents or write a file during setup.\n\nPreserve every source byte, encoding, newline, comment, preamble, string macro, entry, field order, brace and quote choice, LaTeX command, owner, permission and timestamp, plus preferences, recents, remotes, overrides and scope ownership. Bibliographies can reveal confidential research, peer-review activity and unpublished work; redact them. Installation must not reserialize a file, change Unicode or LaTeX escaping, collapse literal organizations into personal names, strip unknown fields, resolve URLs or invent citation keys.\n\nBefore a later edit, identify the exact BibTeX dialect and encoding and require a lossless parse–serialize round trip on a copy. Distinguish syntax validity from bibliographic correctness. Preserve capitalization braces, name particles, page ranges, macros, concatenation and crossref or xdata links. DOI, ISBN and URL formatting checks do not prove that metadata belongs to the cited work; network resolution requires separate approval and provenance. Duplicate keys are hard conflicts, while similar titles are only merge candidates. Preview an entry-level and byte-level diff before atomic save and detect concurrent editor changes by checksum.\n\nCopying an entry requires an exact selection and serialization preview; keep abstracts, notes, local file fields and private keywords excluded unless explicitly requested. Do not overwrite the user's clipboard during tests, and define clipboard lifetime. Validate with a synthetic bibliography covering organizations, Unicode, LaTeX, macros, crossrefs, duplicate keys and malformed records. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no file enumeration, bibliography open, parse, identifier resolution, normalization, key generation, merge, clipboard access, recent write or file mutation occurred. On failure, rollback only the new Citations ref in its original scope; preserve shared runtimes, remotes, overrides, bibliographies, metadata, formatting, preferences and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.World.Citations from verified Flathub in the existing scope without source builds, launch, directory enumeration, bibliography opens, parsing, identifier resolution, normalization, key generation, merges, clipboard, recents, or file writes.",
+      "preserve": "every bibliography byte, encoding, newline, comment, preamble, macro, entry, field ordering, brace, quote and LaTeX choice, ownership, permissions, preferences, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose research metadata, reserialize on install, corrupt Unicode or LaTeX, strip unknown fields, confuse organizations and people, invent keys, resolve identifiers without approval, merge by title alone, break crossrefs, overwrite concurrent edits, copy private fields unexpectedly, or alter the clipboard during tests.",
+      "verify": "Verify Citations source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove directories, bibliographies, parsers, identifiers, normalizers, keys, merges, clipboards, recents and files are unchanged."
+    }
   }
 ]

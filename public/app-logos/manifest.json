@@ -2658,5 +2658,10 @@
     "file": "chess-clock-over-the-board.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/eu.fortysixandtwo.chessclock.svg",
     "sourceType": "official-project-asset"
+  },
+  "citations-bibtex-manager": {
+    "file": "citations-bibtex-manager.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Citations.svg",
+    "sourceType": "official-project-asset"
   }
 }

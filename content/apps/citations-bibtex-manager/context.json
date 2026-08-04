@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "bibtex_parser",
+    "citation_key_policy",
+    "field_normalization",
+    "clipboard_export"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "BibTeX file source, owner, permissions, checksum, encoding, newline style, dialect, entry count, comments, string macros, preambles, and trust",
+    "entry type, citation key, required and optional fields, unknown fields, field ordering, braces and quotes, concatenation, escaping, and round-trip fidelity",
+    "author and editor name particles, literal organizations, Unicode, LaTeX commands, capitalization protection, page ranges, dates, and locale",
+    "DOI, ISBN, ISSN, URL and eprint identifiers, normalization, validation versus resolution, redirects, network lookup absence, and provenance",
+    "duplicate citation keys, duplicate works with different keys, crossref and xdata relationships, macro dependencies, merge policy, and referential integrity",
+    "abstracts, notes, keywords, file paths, unpublished titles, reviewer identities, research interests, diagnostics, screen sharing, and redaction",
+    "copy BibTeX entry scope, selected fields, serialization, clipboard overwrite, formula and control characters, destination compatibility, and expiry",
+    "atomic save, original backup, concurrent editor changes, conflict detection, partial write, recovery, app reset, uninstall, and rollback"
+  ]
+}

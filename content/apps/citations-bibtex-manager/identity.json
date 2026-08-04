@@ -1,0 +1,17 @@
+{
+  "index": 533,
+  "name": "Citations",
+  "slug": "citations-bibtex-manager",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/citations",
+    "installUrl": "https://flathub.org/apps/org.gnome.World.Citations"
+  },
+  "website": "https://apps.gnome.org/Citations/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "GNOME bibliography manager for opening, editing, organizing, and copying entries in BibTeX files while preserving citation-oriented metadata.",
+  "accent": "#1C71D8",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Citations.svg",
+  "logoSourceType": "official-project-asset"
+}
