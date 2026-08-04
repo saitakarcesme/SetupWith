@@ -1,0 +1,17 @@
+{
+  "index": 487,
+  "name": "Forge Sparks",
+  "slug": "forge-sparks-notifications",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/rafaelmardojai/forge-sparks",
+    "installUrl": "https://flathub.org/apps/com.mardojai.ForgeSparks"
+  },
+  "website": "https://apps.gnome.org/ForgeSparks/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Desktop and mobile notifier for GitHub, GitLab, Gitea, and Forgejo accounts with authenticated polling and native notification delivery.",
+  "accent": "#FF7800",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.mardojai.ForgeSparks.svg",
+  "logoSourceType": "official-project-asset"
+}

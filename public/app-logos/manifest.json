@@ -2428,5 +2428,10 @@
     "file": "file-shredder-raider.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.github.ADBeveridge.Raider.svg",
     "sourceType": "official-project-asset"
+  },
+  "forge-sparks-notifications": {
+    "file": "forge-sparks-notifications.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/com.mardojai.ForgeSparks.svg",
+    "sourceType": "official-project-asset"
   }
 }

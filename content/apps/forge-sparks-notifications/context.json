@@ -1,0 +1,49 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "forge_inventory",
+    "token_scope",
+    "polling_budget",
+    "notification_privacy"
+  ],
+  "secrets": [
+    {
+      "key": "forge_github_token",
+      "reference": "secret://forge/github-token"
+    },
+    {
+      "key": "forge_gitlab_token",
+      "reference": "secret://forge/gitlab-token"
+    },
+    {
+      "key": "forge_gitea_token",
+      "reference": "secret://forge/gitea-token"
+    },
+    {
+      "key": "forge_forgejo_token",
+      "reference": "secret://forge/forgejo-token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "GitHub, GitLab, Gitea, or Forgejo account, server owner, exact HTTPS origin, redirects, TLS, and version compatibility",
+    "personal access token, OAuth or app credential type, read-only scopes, expiration, secret storage, and revocation owner",
+    "public, private, internal, archived, forked, group or organization repositories and least-visible notification scope",
+    "mentions, assignments, reviews, issues, merge or pull requests, CI events, releases, and unread-state semantics",
+    "poll interval, API pagination, ETag or conditional requests, rate limits, server load, retry backoff, and offline behavior",
+    "notification titles, repository names, actor identities, issue text, locked-screen visibility, history, and do-not-disturb",
+    "notification action links, browser profile, deep-link validation, untrusted issue content, redirects, and session leakage",
+    "multiple accounts, duplicate events, read or dismiss propagation, account removal, token revocation, logs, and rollback"
+  ]
+}

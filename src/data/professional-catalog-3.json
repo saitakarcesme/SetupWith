@@ -4928,5 +4928,62 @@
       "safety": "Never destroy directories, globs, unresolved links, hard-linked or active files, legally retained data, unapproved replicas, or any target without exact identity, ownership, authority, medium, filesystem, copy inventory, threat model, second confirmation, and explicit acknowledgement that recovery may remain possible.",
       "verify": "Verify File Shredder source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove paths, reads, grants, overwrites, unlinks, TRIM, trash, snapshots, sync, logs and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 487,
+    "name": "Forge Sparks",
+    "slug": "forge-sparks-notifications",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/rafaelmardojai/forge-sparks",
+      "installUrl": "https://flathub.org/apps/com.mardojai.ForgeSparks"
+    },
+    "website": "https://apps.gnome.org/ForgeSparks/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Desktop and mobile notifier for GitHub, GitLab, Gitea, and Forgejo accounts with authenticated polling and native notification delivery.",
+    "accent": "#FF7800",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.mardojai.ForgeSparks.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "forge_github_token",
+      "forge_gitlab_token",
+      "forge_gitea_token",
+      "forge_forgejo_token"
+    ],
+    "config": [
+      "forge_inventory",
+      "token_scope",
+      "polling_budget",
+      "notification_privacy"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "GitHub, GitLab, Gitea, or Forgejo account, server owner, exact HTTPS origin, redirects, TLS, and version compatibility",
+      "personal access token, OAuth or app credential type, read-only scopes, expiration, secret storage, and revocation owner",
+      "public, private, internal, archived, forked, group or organization repositories and least-visible notification scope",
+      "mentions, assignments, reviews, issues, merge or pull requests, CI events, releases, and unread-state semantics",
+      "poll interval, API pagination, ETag or conditional requests, rate limits, server load, retry backoff, and offline behavior",
+      "notification titles, repository names, actor identities, issue text, locked-screen visibility, history, and do-not-disturb",
+      "notification action links, browser profile, deep-link validation, untrusted issue content, redirects, and session leakage",
+      "multiple accounts, duplicate events, read or dismiss propagation, account removal, token revocation, logs, and rollback"
+    ],
+    "prompt": "Set up Forge Sparks from its official repository and verified Flathub listing (https://apps.gnome.org/ForgeSparks/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, forge types, account count, HTTPS origins, secret-store boundary, notification privacy, polling policy and API-rate-limit expectations without contacting servers, reading tokens or listing repositories. Install stable `com.mardojai.ForgeSparks` from verified Flathub in the existing ownership scope. Do not install nightly artifacts, compile from source, launch the app, authenticate, discover an API, fetch notifications or register notification actions during setup.\n\nPreserve every account origin, username reference, token reference, notification filter, unread state, polling interval and desktop policy. Repository names, review requests, issue titles and actor identities may reveal unreleased products or security incidents; redact them from diagnostics and locked-screen notifications. Never reuse a broad development token merely because it already exists in a shell, Git credential helper or forge CLI. Create a dedicated expiring credential only after review, with the minimum read-only notification scope supported by that server, and record its revocation owner.\n\nBefore any future connection show the exact HTTPS origin, certificate validation, redirects, forge implementation and version, authenticated identity, requested API endpoints/scopes, private-resource visibility, pagination, conditional-request behavior, poll interval, rate-limit budget and retry backoff. Self-hosted GitLab, Gitea and Forgejo instances can differ from public services; do not guess paths or disable TLS. Initial synchronization must be read-only and must not mark, dismiss, subscribe, comment, approve or mutate forge state.\n\nNotification actions can open attacker-controlled issue links in a logged-in browser. Validate scheme and final host, show the chosen browser profile and require a click; never auto-open, render untrusted markup or include access tokens in URLs. Keep notification previews hidden until content classification is approved. Verify provenance, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no secret access, API request, account creation, polling timer, unread mutation, notification, browser launch or filesystem state changed. On failure, rollback only the new Forge Sparks ref in its original scope; preserve runtimes, remotes, overrides, accounts, tokens and notification history.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": true,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.mardojai.ForgeSparks from verified Flathub in the existing scope without nightly artifacts, source builds, launch, authentication, API discovery, polling, notification delivery, state mutation, or browser actions.",
+      "preserve": "all forge origins, account and token references, repository visibility, filters, unread state, polling and retry policy, notification privacy, histories, remotes, overrides, and scope ownership",
+      "safety": "Never expose forge activity, reuse broad credentials, guess self-hosted APIs, disable TLS, exceed rate budgets, mutate unread state, show sensitive previews, trust notification links, or open authenticated browsers without origin, identity, scope, visibility, polling, content, destination, and revocation review.",
+      "verify": "Verify Forge Sparks source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove secrets, APIs, accounts, polling, unread state, notifications, browsers and filesystem state are unchanged."
+    }
   }
 ]
