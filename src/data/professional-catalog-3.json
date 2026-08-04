@@ -3608,5 +3608,57 @@
       "safety": "Never scan or upload private paper, submit public diagnostics, migrate libraries, OCR or re-index, alter pages, delete documents, retrain labels, broaden device access, or resolve sync conflicts without a device, privacy, resource, backup, and diff review plus approval.",
       "verify": "Verify provenance, version, executable, ownership, dependencies, data paths and permissions without the GUI, then prove no device, document, index, model, OCR, sync, diagnostic, permission or network state changed."
     }
+  },
+  {
+    "index": 462,
+    "name": "Foliate",
+    "slug": "foliate",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/johnfactotum/foliate",
+      "installUrl": "https://flathub.org/apps/com.github.johnfactotum.Foliate"
+    },
+    "website": "https://johnfactotum.github.io/foliate/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Linux e-book reader for EPUB, Mobipocket, Kindle, FB2, CBZ, and experimental PDF with local libraries, reading progress, annotations, OPDS catalogs, lookup tools, and narration.",
+    "accent": "#A56DE2",
+    "logoUrl": "https://raw.githubusercontent.com/johnfactotum/foliate/gtk4/data/com.github.johnfactotum.Foliate.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "library",
+      "annotations",
+      "lookup",
+      "narration"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "ebook folder, publication, cover, metadata, and recent-file access",
+      "reading progress, history, bookmark, and annotation writes",
+      "annotation JSON export, import, and synchronization",
+      "OPDS catalog, authentication, search, acquisition, and download",
+      "dictionary, Wikipedia, translation, and selected-text transmission",
+      "Speech Dispatcher, voice, audio output, and embedded media playback",
+      "external link, WebKit content, clipboard, and download handling",
+      "file association, DRM-related request, library cleanup, and data reset"
+    ],
+    "prompt": "Set up Foliate from its official project and verified Flathub listing (https://johnfactotum.github.io/foliate/). Detect Linux architecture, desktop environment, package managers, existing distro or Flatpak installation, book library, application data, reading-progress JSON, annotations, bookmarks, OPDS catalogs, offline dictionaries, Speech Dispatcher, voices, audio output and file associations. Install one current stable verified Flatpak or reviewed distribution package matching the existing ownership model. Do not build the GTK branch, install optional speech engines or dictionaries, add remotes, broaden sandbox access, or switch packaging methods without approval.\n\nInstall without launching Foliate, scanning a folder, opening a publication or claiming EPUB, MOBI, AZW3, FB2, CBZ or PDF associations. Preserve every ebook, cover, metadata item, library entry, reading position, navigation history, bookmark, annotation, tag, plain JSON sidecar, OPDS credential, catalog, downloaded title, dictionary and preference. Reading data can reveal interests, research, beliefs and highlighted passages; never display it in diagnostics, upload it, or place an annotation export into a synced folder without consent.\n\nTreat ebook HTML, CSS, fonts, images, links and media as untrusted publication content rendered through WebKit. Keep network access off, do not follow external links, execute downloads, expose local file paths, copy selections, or open an experimental PDF for verification. Never remove DRM, bypass access controls, modify a purchased book, or infer permission to redistribute it. Before any OPDS use, show the catalog URL, TLS status, authentication, requested feed, acquisition type, license, destination and expected network requests.\n\nOnline dictionary, Wikipedia and translation actions can transmit selected text and surrounding language context. Use offline dictionaries by default and require endpoint approval before lookup. Narration may spawn Speech Dispatcher, select a voice, open an audio device or play embedded media overlays; do not start services, install voices or produce audio during setup. Verify Flathub or package provenance, version, app ID, installed commit, runtime, declared permissions, executable and data paths from metadata without running the reader. Confirm no book, progress, annotation, JSON, catalog, credential, network, audio, clipboard, handler or sandbox state changed. Roll back only the installed package and setup-owned launcher.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install one current stable verified Foliate Flatpak or reviewed distribution package matching existing ownership, without source builds, optional engines, remotes, permission broadening, launch, library scanning, publication loading, or associations.",
+      "preserve": "all ebooks, covers, metadata, library entries, reading positions, history, bookmarks, annotations, tags, JSON, OPDS credentials and catalogs, downloads, dictionaries, voices, audio settings, associations, sandbox permissions, and installation ownership",
+      "safety": "Never expose reading data, sync annotations, render untrusted books online, follow links, transmit selections, access OPDS, download titles, remove DRM, start narration, alter audio, copy text, broaden permissions, or reset data without privacy, source, license, endpoint, and consent review.",
+      "verify": "Verify provenance, version, app ID, commit, runtime, permissions, executable and data paths without running Foliate, then prove no book, progress, annotation, JSON, catalog, credential, network, audio, clipboard, handler or sandbox state changed."
+    }
   }
 ]

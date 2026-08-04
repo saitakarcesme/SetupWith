@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "library",
+    "annotations",
+    "lookup",
+    "narration"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "ebook folder, publication, cover, metadata, and recent-file access",
+    "reading progress, history, bookmark, and annotation writes",
+    "annotation JSON export, import, and synchronization",
+    "OPDS catalog, authentication, search, acquisition, and download",
+    "dictionary, Wikipedia, translation, and selected-text transmission",
+    "Speech Dispatcher, voice, audio output, and embedded media playback",
+    "external link, WebKit content, clipboard, and download handling",
+    "file association, DRM-related request, library cleanup, and data reset"
+  ]
+}

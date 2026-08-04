@@ -1,0 +1,17 @@
+{
+  "index": 462,
+  "name": "Foliate",
+  "slug": "foliate",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/johnfactotum/foliate",
+    "installUrl": "https://flathub.org/apps/com.github.johnfactotum.Foliate"
+  },
+  "website": "https://johnfactotum.github.io/foliate/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Linux e-book reader for EPUB, Mobipocket, Kindle, FB2, CBZ, and experimental PDF with local libraries, reading progress, annotations, OPDS catalogs, lookup tools, and narration.",
+  "accent": "#A56DE2",
+  "logoUrl": "https://raw.githubusercontent.com/johnfactotum/foliate/gtk4/data/com.github.johnfactotum.Foliate.svg",
+  "logoSourceType": "official-project-asset"
+}
