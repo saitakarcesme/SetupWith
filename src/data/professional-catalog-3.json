@@ -2312,5 +2312,60 @@
       "safety": "Never execute tasks or hooks, install dependencies or runtimes, hydrate or upload cache data, connect cloud services, clean caches, generate files, format code, modify locks, or run teardown without separate approval.",
       "verify": "Verify provenance, version, binary and pin, then inspect project and task graphs read-only and prove no task, download, cache operation, generated output, lockfile, CI configuration, source file, or Git status changed."
     }
+  },
+  {
+    "index": 438,
+    "name": "Yaak",
+    "slug": "yaak",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/mountain-loop/yaak",
+      "installUrl": "https://yaak.app/docs/getting-started/installation"
+    },
+    "website": "https://yaak.app/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Local-first desktop API client for HTTP, GraphQL, gRPC, WebSocket, and server-sent event requests with environments, encryption, plugins, and Git sync.",
+    "accent": "#F59E0B",
+    "simpleIconSlug": "openapiinitiative",
+    "logoUrl": "https://raw.githubusercontent.com/mountain-loop/yaak/main/crates-tauri/yaak-app-client/icons/release/128x128.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "sync_mode",
+      "active_environment",
+      "secret_encryption",
+      "proxy"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "workspace import or migration",
+      "clipboard inspection",
+      "API request transmission",
+      "development, staging, or production environment selection",
+      "OAuth browser and credential access",
+      "secret encryption and recovery-key backup",
+      "directory or Git synchronization",
+      "plugin and Node.js code execution"
+    ],
+    "prompt": "Set up Yaak from its official installation guide and mountain-loop repository (https://yaak.app/docs/getting-started/installation). Detect Windows, macOS, or Linux, architecture, package managers, an existing Yaak installation, application database, OS keychain entries, workspace directories, sync folders, Git repositories, plugins, certificates, and proxy settings without reading sensitive values. Prefer the stable signed DMG, Homebrew cask, user-level Windows installer, Winget package, AppImage, DEB, or RPM for the detected platform. Do not install a beta or all-users machine build without explicit approval.\n\nLaunch in offline mode without importing or sending requests. Preserve every workspace, folder, request, environment, cookie jar, response history, OAuth session, client certificate, proxy credential, plugin, database, keychain master key, workspace encryption key, recovery backup, sync directory, Git branch and change, export, and UI preference. Apply only the requested sync mode, active environment, secret encryption, or proxy. Never migrate automatically from Postman, Insomnia, Bruno, OpenAPI, Swagger, cURL, or clipboard content.\n\nBefore transmitting anything, show protocol, method, fully resolved host, port, path, active environment color/name, headers with values redacted, body size, proxy route, client certificate, authentication type, redirects, and whether response chaining triggers additional requests. Require separate approval for development, staging, and especially production targets. Do not inspect the clipboard, follow redirects across hosts, run OAuth in a browser, send cookies, enable NTLM, load private files, or connect WebSocket/gRPC/SSE streams automatically. Plugins execute with full Node.js access, so never install or run unreviewed plugin code.\n\nWhen enabling encryption, explain the OS-keychain master key, encrypted workspace key, and the need to back up the workspace recovery key without printing it. Keep environments out of directory sync by default; never mark one sharable, export decrypted secrets, initialize Git, commit, push, or overwrite a sync directory without approval. Verify signature, version, executable, database and keychain locations, listeners and outbound connections. Create at most an empty disposable workspace offline, then remove only that workspace. Confirm no request, import, OAuth flow, plugin, sync, Git operation, export, key, cookie, history entry, or existing workspace changed. Roll back only setup-owned files while preserving the database and keychain.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the stable signed Yaak package for the detected platform and architecture, avoid beta or all-users deployment without approval, and launch offline without imports or requests.",
+      "preserve": "all workspaces, requests, environments, cookies, history, OAuth sessions, certificates, proxy credentials, plugins, databases, keychain and workspace encryption keys, recovery backups, sync directories, Git state, exports, and preferences",
+      "safety": "Never send an unreviewed request, select production implicitly, inspect clipboard data, import workspaces, run OAuth, expose secrets, follow cross-host redirects, execute plugins, enable sharable sync, initialize Git, commit, push, or export without approval.",
+      "verify": "Verify signature, version, paths, listeners and offline state, optionally create only an empty disposable workspace, and prove no request, import, plugin, sync, Git action, export, key, cookie, history, or existing data changed."
+    }
   }
 ]

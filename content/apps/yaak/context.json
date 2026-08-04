@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "sync_mode",
+    "active_environment",
+    "secret_encryption",
+    "proxy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "workspace import or migration",
+    "clipboard inspection",
+    "API request transmission",
+    "development, staging, or production environment selection",
+    "OAuth browser and credential access",
+    "secret encryption and recovery-key backup",
+    "directory or Git synchronization",
+    "plugin and Node.js code execution"
+  ]
+}

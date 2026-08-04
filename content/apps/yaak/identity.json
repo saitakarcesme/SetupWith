@@ -1,0 +1,18 @@
+{
+  "index": 438,
+  "name": "Yaak",
+  "slug": "yaak",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mountain-loop/yaak",
+    "installUrl": "https://yaak.app/docs/getting-started/installation"
+  },
+  "website": "https://yaak.app/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Local-first desktop API client for HTTP, GraphQL, gRPC, WebSocket, and server-sent event requests with environments, encryption, plugins, and Git sync.",
+  "accent": "#F59E0B",
+  "simpleIconSlug": "openapiinitiative",
+  "logoUrl": "https://raw.githubusercontent.com/mountain-loop/yaak/main/crates-tauri/yaak-app-client/icons/release/128x128.png",
+  "logoSourceType": "official-project-asset"
+}
