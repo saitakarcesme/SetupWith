@@ -2503,5 +2503,10 @@
     "file": "polari-irc.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Polari.svg",
     "sourceType": "official-project-asset"
+  },
+  "gnome-secrets-keepass": {
+    "file": "gnome-secrets-keepass.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Secrets.svg",
+    "sourceType": "official-project-asset"
   }
 }

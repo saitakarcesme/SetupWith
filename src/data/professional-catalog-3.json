@@ -5729,5 +5729,60 @@
       "safety": "Never expose IRC identities or conversations, assume private messages are end-to-end encrypted, weaken TLS, transmit NickServ secrets as ordinary output, autojoin unexpectedly, trust message content, create reconnect floods, leak presence, or show sensitive lock-screen previews without network, identity, authentication, channel, startup, retention, and notification review.",
       "verify": "Verify Polari source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove DNS, sockets, authentication, joins, messages, transcripts, presence, notifications, sounds and configuration are unchanged."
     }
+  },
+  {
+    "index": 502,
+    "name": "Secrets",
+    "slug": "gnome-secrets-keepass",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/secrets",
+      "installUrl": "https://flathub.org/apps/org.gnome.World.Secrets"
+    },
+    "website": "https://apps.gnome.org/Secrets/",
+    "category": "Security & Privacy",
+    "vertical": "software",
+    "description": "GNOME password manager for creating, opening, and maintaining encrypted KeePass 4 databases in a focused desktop and mobile-friendly interface.",
+    "accent": "#1C71D8",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Secrets.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "keepass_master_password",
+      "keepass_key_file_reference"
+    ],
+    "config": [
+      "database_storage",
+      "unlock_policy",
+      "clipboard_exposure",
+      "backup_recovery"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "KeePass database path, owner, filesystem encryption, backup coverage, sync provider, offline copies, and recovery authority",
+      "new versus existing database, KeePass 4 format, header provenance, file checksum, corruption check, and read-only inspection",
+      "master password creation or reference, key-file location, combined factors, recovery implications, and secret-manager boundary",
+      "key-derivation settings, unlock latency, memory cost, device capability, compatibility, downgrade risk, and benchmark approval",
+      "database writes, atomic replacement, temporary files, file locks, concurrent editors, cloud-sync conflicts, and version recovery",
+      "clipboard copy duration, clipboard history, screen capture, notifications, accessibility services, shoulder surfing, and session lock",
+      "auto-lock triggers, idle timeout, suspend and logout behavior, failed unlock handling, biometrics if available, and fallback path",
+      "import, export, attachments, deletion, recycle behavior, backups, restore test, database migration, uninstall, and rollback"
+    ],
+    "prompt": "Set up Secrets from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Secrets/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, KeePass database count, aggregate encrypted-file size, storage and sync locations, backup age, lock policy, clipboard-history exposure, and master-password or key-file reference presence without listing filenames, groups, entry titles, usernames, URLs, notes, attachments, passwords, key material, or database headers. Install stable `org.gnome.World.Secrets` from verified Flathub in the existing ownership scope. Do not compile from source, launch Secrets, open or unlock a database, create a vault, prompt for credentials, read clipboard history, import records, or change encrypted files during setup.\n\nPreserve every KeePass file byte-for-byte, including ownership, permissions, timestamps where practical, backups, sync versions, file locks, recycle state, attachments, custom fields and existing unlock factors. A master password cannot be recovered from the database; a lost key file can make the vault permanently inaccessible. Keep only secret references in setup records. Never print, test, migrate, copy, weaken, or replace a password or key file, and never infer that successful application installation proves a database can be recovered.\n\nBefore any later database creation or write, require the exact destination, owner, filesystem and backup protections, sync behavior, KeePass format, key-derivation parameters, compatibility target, atomic-write strategy, lock handling and conflict recovery. Benchmark derivation settings only against an empty disposable database with explicit approval; do not benchmark the user's vault. Review clipboard clearing, clipboard managers, screen capture, accessibility access, auto-lock on idle, suspend, logout and failed unlock behavior before exposing a real entry. Imports, exports and attachments require a separate field-level preview with redaction and a recoverable backup.\n\nVerify app provenance, app ID, origin, commit, runtime, executable, files and sandbox permissions offline. Record whether the sandbox can reach user files, portals, clipboard, secrets services and biometric interfaces without exercising those capabilities. Prove no vault was opened, header parsed, credential requested, clipboard touched, authentication attempted, database created or modified, backup rotated, sync conflict triggered, or notification shown. On failure, rollback only the new Secrets ref in its original scope; preserve shared runtimes, remotes, overrides, databases, backups, key files, sync state and secret references.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.World.Secrets from verified Flathub in the existing scope without source builds, launch, vault access, credential prompts, clipboard reads, database creation, import, migration, sync, or encrypted-file changes.",
+      "preserve": "all KeePass database bytes, owners, permissions, backups, sync versions, locks, entries, custom fields, attachments, recycle state, derivation settings, unlock factors, key files, secret references, remotes, overrides, and scope ownership",
+      "safety": "Never expose or test vault contents, lose an unlock factor, weaken derivation, overwrite a database, create a sync conflict, leak through clipboard or screen capture, import without redacted preview, or claim recoverability without a verified backup and restore plan.",
+      "verify": "Verify Secrets source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove vaults, credentials, clipboard, authentication, databases, backups, sync and notifications are unchanged."
+    }
   }
 ]

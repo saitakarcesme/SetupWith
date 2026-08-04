@@ -1,0 +1,41 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "database_storage",
+    "unlock_policy",
+    "clipboard_exposure",
+    "backup_recovery"
+  ],
+  "secrets": [
+    {
+      "key": "keepass_master_password",
+      "reference": "secret://keepass/master-password"
+    },
+    {
+      "key": "keepass_key_file_reference",
+      "reference": "secret://keepass/key-file-reference"
+    }
+  ],
+  "permissionCheckpoints": [
+    "KeePass database path, owner, filesystem encryption, backup coverage, sync provider, offline copies, and recovery authority",
+    "new versus existing database, KeePass 4 format, header provenance, file checksum, corruption check, and read-only inspection",
+    "master password creation or reference, key-file location, combined factors, recovery implications, and secret-manager boundary",
+    "key-derivation settings, unlock latency, memory cost, device capability, compatibility, downgrade risk, and benchmark approval",
+    "database writes, atomic replacement, temporary files, file locks, concurrent editors, cloud-sync conflicts, and version recovery",
+    "clipboard copy duration, clipboard history, screen capture, notifications, accessibility services, shoulder surfing, and session lock",
+    "auto-lock triggers, idle timeout, suspend and logout behavior, failed unlock handling, biometrics if available, and fallback path",
+    "import, export, attachments, deletion, recycle behavior, backups, restore test, database migration, uninstall, and rollback"
+  ]
+}
