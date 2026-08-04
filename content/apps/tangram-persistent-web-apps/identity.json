@@ -1,0 +1,17 @@
+{
+  "index": 516,
+  "name": "Tangram",
+  "slug": "tangram-persistent-web-apps",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/sonnyp/Tangram",
+    "installUrl": "https://flathub.org/apps/re.sonny.Tangram"
+  },
+  "website": "https://apps.gnome.org/Tangram/",
+  "category": "Browsers & Internet",
+  "vertical": "software",
+  "description": "GNOME browser for organizing web applications as persistent, independent tabs, including multiple isolated account tabs for the same service, navigation, notifications, and downloads.",
+  "accent": "#9141AC",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Tangram.svg",
+  "logoSourceType": "official-project-asset"
+}

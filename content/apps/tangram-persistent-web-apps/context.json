@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–25 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "tab_origin_inventory",
+    "account_container_isolation",
+    "web_permission_policy",
+    "download_and_notification_controls"
+  ],
+  "secrets": [
+    {
+      "key": "tangram_web_session_reference",
+      "reference": "secret://tangram/web-session-reference"
+    }
+  ],
+  "permissionCheckpoints": [
+    "web-app URL, exact origin, Unicode hostname, TLS, redirects, ownership, login domain, third-party identity provider, and phishing review",
+    "persistent tab identity, title versus origin, ordering, account purpose, profile boundary, cookies, local storage, IndexedDB, cache, and service workers",
+    "multiple accounts for one service, container separation, single-sign-on leakage, shared identity-provider cookies, logout scope, and wrong-account action risk",
+    "camera, microphone, location, clipboard, notifications, media autoplay, screen capture, file chooser and download permissions per origin",
+    "remote HTML, scripts, frames, popups, navigation, custom URI handlers, external browser handoff, certificates, mixed content, and untrusted content",
+    "downloads, filename and MIME, destination, collision, malware scan boundary, partial files, automatic opening, retention, and deletion",
+    "smart notifications, message and sender previews, lock screen, sounds, badges, per-tab muting, background execution, network and battery use",
+    "tab removal, site-data clearing, session logout and revocation, exports, backups, app reset, uninstall, and rollback"
+  ]
+}

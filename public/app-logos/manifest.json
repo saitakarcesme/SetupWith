@@ -2573,5 +2573,10 @@
     "file": "gnome-workbench-prototyping.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Workbench.svg",
     "sourceType": "official-project-asset"
+  },
+  "tangram-persistent-web-apps": {
+    "file": "tangram-persistent-web-apps.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Tangram.svg",
+    "sourceType": "official-project-asset"
   }
 }

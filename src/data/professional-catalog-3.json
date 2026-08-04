@@ -6463,5 +6463,59 @@
       "safety": "Never treat prototype code as passive, trust external examples, inherit secrets, fetch dependencies unexpectedly, expose source or terminal output, grant broad filesystems or buses, run without resource caps, allow preview side effects, mutate source without a diff, retain hostile ANSI output, or leave child processes running.",
       "verify": "Verify Workbench source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove projects, sessions, runtimes, compilers, formatters, previews, terminals, environments, filesystems, buses, portals, networks and autosaves are unchanged."
     }
+  },
+  {
+    "index": 516,
+    "name": "Tangram",
+    "slug": "tangram-persistent-web-apps",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/sonnyp/Tangram",
+      "installUrl": "https://flathub.org/apps/re.sonny.Tangram"
+    },
+    "website": "https://apps.gnome.org/Tangram/",
+    "category": "Browsers & Internet",
+    "vertical": "software",
+    "description": "GNOME browser for organizing web applications as persistent, independent tabs, including multiple isolated account tabs for the same service, navigation, notifications, and downloads.",
+    "accent": "#9141AC",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Tangram.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "tangram_web_session_reference"
+    ],
+    "config": [
+      "tab_origin_inventory",
+      "account_container_isolation",
+      "web_permission_policy",
+      "download_and_notification_controls"
+    ],
+    "installTime": "10–25 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "web-app URL, exact origin, Unicode hostname, TLS, redirects, ownership, login domain, third-party identity provider, and phishing review",
+      "persistent tab identity, title versus origin, ordering, account purpose, profile boundary, cookies, local storage, IndexedDB, cache, and service workers",
+      "multiple accounts for one service, container separation, single-sign-on leakage, shared identity-provider cookies, logout scope, and wrong-account action risk",
+      "camera, microphone, location, clipboard, notifications, media autoplay, screen capture, file chooser and download permissions per origin",
+      "remote HTML, scripts, frames, popups, navigation, custom URI handlers, external browser handoff, certificates, mixed content, and untrusted content",
+      "downloads, filename and MIME, destination, collision, malware scan boundary, partial files, automatic opening, retention, and deletion",
+      "smart notifications, message and sender previews, lock screen, sounds, badges, per-tab muting, background execution, network and battery use",
+      "tab removal, site-data clearing, session logout and revocation, exports, backups, app reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Tangram from its official project and verified Flathub listing (https://apps.gnome.org/Tangram/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, persistent-tab and distinct-origin counts, aggregate cookie/storage/cache/service-worker bytes, download and partial-file counts, per-origin permission classes, notification policy, background behavior and session-reference presence without revealing URLs, hostnames, tab titles, account identities, cookies, tokens, messages, downloads, browsing content or secrets. Install stable `re.sonny.Tangram` from verified Flathub in the existing ownership scope. Do not compile from source, launch Tangram, restore tabs, navigate, resolve a hostname, load remote content, authenticate, read site data, register a service worker, request a web permission, download a file, open a URI handler, or emit notifications during setup.\n\nPreserve every tab's stable identity, exact origin, title, order, account purpose, cookies, local storage, IndexedDB, caches, service workers, navigation state, permissions, downloads, notifications, remotes, overrides and scope ownership. Multiple tabs for the same service are safe only if their storage containers are actually independent; friendly titles and favicons do not establish identity. Redact origins and session data. Never merge profiles, share cookies, silently restore a sensitive tab, clear site data, log out all accounts or infer that application sandboxing prevents every cross-site or identity-provider interaction.\n\nBefore adding or restoring a web app, require the exact HTTPS origin, Unicode and punycode hostname, redirect and login origins, service owner, certificate policy, third-party identity-provider boundary and intended account. Test container isolation only with disposable synthetic accounts. Review per-origin camera, microphone, location, clipboard, notification, autoplay, screen-capture, file chooser, download and popup policy. Treat pages, frames, scripts, previews and URI handlers as untrusted. Block mixed content and unexpected navigation; preview the final external host before browser handoff. Downloads require MIME and filename validation, a destination and collision policy, byte cap and no automatic opening.\n\nSet explicit notification previews, lock-screen visibility, sounds, per-tab muting, background execution and resource limits. Verify provenance, app ID, origin, commit, WebKit runtime, executable, files and static sandbox permissions offline. Prove no DNS request, navigation, tab restore, cookie or storage read, service-worker activity, authentication, permission prompt, download, URI activation, background request, notification or state mutation occurred. On failure, rollback only the new Tangram ref in its original scope; preserve shared runtimes, remotes, overrides, tabs, containers, sessions, site data, permissions, downloads and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable re.sonny.Tangram from verified Flathub in the existing scope without source builds, launch, tab restore, navigation, DNS, remote content, authentication, site-data reads, service workers, permissions, downloads, URI handlers, backgrounds, or notifications.",
+      "preserve": "all tab identities, exact origins, titles, order, account purposes, isolated cookies and storage, IndexedDB, caches, service workers, navigation, permissions, downloads, notifications, backups, remotes, overrides, and scope ownership",
+      "safety": "Never trust titles or favicons as identity, confuse Unicode hosts, merge account containers, leak SSO cookies, act as the wrong account, grant broad web permissions, restore sensitive tabs unexpectedly, trust remote content, follow hidden redirects, open downloads automatically, expose lock-screen messages, or run unbounded background apps.",
+      "verify": "Verify Tangram source, app ID, origin, commit, WebKit runtime, executable, files and permissions offline, then prove networks, tabs, sessions, cookies, storage, service workers, authentication, web permissions, downloads, URI handlers, backgrounds, notifications and state are unchanged."
+    }
   }
 ]
