@@ -3764,5 +3764,57 @@
       "safety": "Never expose hardware or activity telemetry, configure per-process networking, grant capabilities, alter polkit, control services, signal processes, enable remote monitoring, export diagnostics, or test sensors without target, privacy, privilege, workload, and recovery review.",
       "verify": "Verify source, app ID, origin, commit, runtime, architecture, executable, files and permissions from metadata, then prove processes, services, helpers, capabilities, polkit, startup, network, preferences and filesystem state remain unchanged."
     }
+  },
+  {
+    "index": 465,
+    "name": "Warehouse",
+    "slug": "warehouse-flatpak",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/flattool/warehouse",
+      "installUrl": "https://flathub.org/apps/io.github.flattool.Warehouse"
+    },
+    "website": "https://github.com/flattool/warehouse",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "Graphical Flatpak toolbox for package inspection, version changes, masks, pins, remotes, batch operations, user-data cleanup, and data snapshots.",
+    "accent": "#AECEF4",
+    "logoUrl": "https://raw.githubusercontent.com/flattool/warehouse/main/data/icons/hicolor/scalable/apps/io.github.flattool.Warehouse.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "installation_scopes",
+      "remote_inventory",
+      "data_snapshots",
+      "change_controls"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "Flatpak user and system installations, remotes, refs, origins, branches, masks, and pins",
+      "installed applications, runtimes, dependencies, EOL state, and shared runtime consumers",
+      "application user-data directories, leftover classification, custom installation locations, and deletion",
+      "snapshot contents, destination, free space, retention, restore target, and sensitive application data",
+      "package install, reinstall, uninstall, downgrade, update disablement, and version availability",
+      "remote addition, removal, enablement, trust material, collection ID, priority, and dependent refs",
+      "batch selection expansion, mixed scopes, destructive action preview, elevation, and cancellation",
+      "flatpakref, flatpakrepo, bundle handlers, launch commands, clipboard, and rollback"
+    ],
+    "prompt": "Set up Warehouse from its official repository and verified Flathub listing (https://github.com/flattool/warehouse). Inventory Flatpak user and system installations, remotes, installed refs, runtimes, branches, origins, masks, pins, EOL markers, `~/.var/app` user-data directories, custom installation locations, Warehouse snapshots, file handlers and any existing Warehouse package. Install stable `io.github.flattool.Warehouse` from its verified Flathub origin in the scope matching current ownership. Do not install a release bundle, source build or alternate branch, and do not add a remote merely to satisfy setup without approval.\n\nInstall without launching Warehouse or letting it scan, classify or modify Flatpak state. Preserve every installed ref, commit, origin, branch, runtime, mask, pin, update policy, remote definition, trust setting, application data directory, leftover directory, snapshot, custom location and handler. Warehouse assumes the default user-data root is `~/.var/app`; never label data elsewhere as absent or leftover from that assumption. Application data can contain accounts, tokens, documents, browser state and encryption material, so do not list its contents in logs or include it in a new snapshot without consent.\n\nTreat install, reinstall, uninstall, version change, mask, pin, data deletion, remote mutation and snapshot restore as separate state-changing operations. Never batch them under one approval. Before any future action show exact app ID or runtime ref, user/system scope, current and requested commit, origin, dependent runtimes or applications, data path, byte estimate, elevation need and reversal method. A snapshot is not proven until its scope and restore test are reviewed; never delete source data because a snapshot file merely exists. Removing a remote can strand installed refs, and downgrading can introduce incompatible data formats, so both require dependency and application-data review.\n\nDo not claim `.flatpakref`, `.flatpakrepo` or bundle handlers, launch an installed app, copy identifiers to the clipboard, fetch remote metadata or change system policy during setup. Verify Warehouse provenance, app ID, origin, installed commit, runtime, executable, files and declared permissions using Flatpak metadata only. Compare full preflight inventories and prove no ref, runtime, remote, mask, pin, update policy, user data, snapshot, handler, process or network state changed. On failure, rollback only the newly installed Warehouse ref from its original scope; retain shared runtimes, remotes, snapshots and all application data.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.github.flattool.Warehouse from its verified Flathub origin in the existing scope without alternate bundles, source builds, remote additions, launch, scans, classification, handlers, or Flatpak state changes.",
+      "preserve": "all Flatpak refs, commits, origins, branches, runtimes, dependencies, masks, pins, update policies, remotes, trust settings, app data, leftovers, snapshots, custom locations, handlers, scopes, and installation ownership",
+      "safety": "Never batch destructive operations, delete data, restore snapshots, downgrade or remove packages, alter masks or pins, mutate remotes, classify leftovers, launch apps, or claim handlers without exact target, scope, dependency, privacy, elevation, and reversal review.",
+      "verify": "Verify Warehouse source, app ID, origin, commit, runtime, executable, files and permissions through metadata, then prove refs, runtimes, remotes, masks, pins, policies, data, snapshots, handlers, processes and network state are unchanged."
+    }
   }
 ]

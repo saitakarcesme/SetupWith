@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "installation_scopes",
+    "remote_inventory",
+    "data_snapshots",
+    "change_controls"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "Flatpak user and system installations, remotes, refs, origins, branches, masks, and pins",
+    "installed applications, runtimes, dependencies, EOL state, and shared runtime consumers",
+    "application user-data directories, leftover classification, custom installation locations, and deletion",
+    "snapshot contents, destination, free space, retention, restore target, and sensitive application data",
+    "package install, reinstall, uninstall, downgrade, update disablement, and version availability",
+    "remote addition, removal, enablement, trust material, collection ID, priority, and dependent refs",
+    "batch selection expansion, mixed scopes, destructive action preview, elevation, and cancellation",
+    "flatpakref, flatpakrepo, bundle handlers, launch commands, clipboard, and rollback"
+  ]
+}

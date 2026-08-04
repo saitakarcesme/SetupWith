@@ -2318,5 +2318,10 @@
     "file": "mission-center.svg",
     "source": "https://gitlab.com/mission-center-devs/mission-center/-/raw/main/data/icons/hicolor/scalable/apps/io.missioncenter.MissionCenter.svg",
     "sourceType": "official-project-asset"
+  },
+  "warehouse-flatpak": {
+    "file": "warehouse-flatpak.svg",
+    "source": "https://raw.githubusercontent.com/flattool/warehouse/main/data/icons/hicolor/scalable/apps/io.github.flattool.Warehouse.svg",
+    "sourceType": "official-project-asset"
   }
 }

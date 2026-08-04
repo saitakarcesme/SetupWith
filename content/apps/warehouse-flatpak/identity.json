@@ -1,0 +1,17 @@
+{
+  "index": 465,
+  "name": "Warehouse",
+  "slug": "warehouse-flatpak",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/flattool/warehouse",
+    "installUrl": "https://flathub.org/apps/io.github.flattool.Warehouse"
+  },
+  "website": "https://github.com/flattool/warehouse",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Graphical Flatpak toolbox for package inspection, version changes, masks, pins, remotes, batch operations, user-data cleanup, and data snapshots.",
+  "accent": "#AECEF4",
+  "logoUrl": "https://raw.githubusercontent.com/flattool/warehouse/main/data/icons/hicolor/scalable/apps/io.github.flattool.Warehouse.svg",
+  "logoSourceType": "official-project-asset"
+}
