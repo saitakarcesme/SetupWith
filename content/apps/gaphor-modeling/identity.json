@@ -1,0 +1,17 @@
+{
+  "index": 488,
+  "name": "Gaphor",
+  "slug": "gaphor-modeling",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/gaphor/gaphor",
+    "installUrl": "https://flathub.org/apps/org.gaphor.Gaphor"
+  },
+  "website": "https://apps.gnome.org/Gaphor/",
+  "category": "Design & Media",
+  "vertical": "software",
+  "description": "Standards-aware UML 2, SysML, RAAML, and C4 modeling application for semantic system models, multiple diagrams, relationships, styling, and image or document export.",
+  "accent": "#1C71D8",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gaphor.Gaphor.svg",
+  "logoSourceType": "official-project-asset"
+}

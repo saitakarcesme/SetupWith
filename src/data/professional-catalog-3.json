@@ -4985,5 +4985,57 @@
       "safety": "Never expose forge activity, reuse broad credentials, guess self-hosted APIs, disable TLS, exceed rate budgets, mutate unread state, show sensitive previews, trust notification links, or open authenticated browsers without origin, identity, scope, visibility, polling, content, destination, and revocation review.",
       "verify": "Verify Forge Sparks source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove secrets, APIs, accounts, polling, unread state, notifications, browsers and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 488,
+    "name": "Gaphor",
+    "slug": "gaphor-modeling",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/gaphor/gaphor",
+      "installUrl": "https://flathub.org/apps/org.gaphor.Gaphor"
+    },
+    "website": "https://apps.gnome.org/Gaphor/",
+    "category": "Design & Media",
+    "vertical": "software",
+    "description": "Standards-aware UML 2, SysML, RAAML, and C4 modeling application for semantic system models, multiple diagrams, relationships, styling, and image or document export.",
+    "accent": "#1C71D8",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gaphor.Gaphor.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "model_language",
+      "schema_compatibility",
+      "semantic_integrity",
+      "export_boundary"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "UML, SysML, RAAML or C4 language, project owner, model purpose, classification, reviewers, and authoritative copy",
+      "existing Gaphor files, application version, storage schema, legacy pre-3.0 models, migrations, backups, and round-trip limits",
+      "packages, elements, diagrams, presentations, identifiers, relationships, constraints, stereotypes, profiles, and traceability",
+      "shared model workflow, simultaneous editors, version control, merge semantics, conflict resolution, and lock ownership",
+      "home-folder read/write access, project root, file chooser, recent files, autosave or recovery data, and least-access boundary",
+      "imports, external profiles, untrusted model documents, parser limits, references, generated code expectations, and provenance",
+      "PNG, SVG, PDF or clipboard export, hidden model metadata, fonts, links, labels, confidential architecture, and redaction",
+      "diagram styling, automatic layout, bulk edits, element deletion, undo scope, validation, restore rehearsal, and rollback"
+    ],
+    "prompt": "Set up Gaphor from its official repository and verified Flathub listing (https://apps.gnome.org/Gaphor/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, project-file count, broad model-language mix, application-version provenance, backup availability, home-folder permission breadth and collaboration method without opening models, reading element names or exposing architecture. Install stable `org.gaphor.Gaphor` from verified Flathub in the existing ownership scope. Do not compile from source, launch Gaphor, open or migrate a model, import a profile, change filesystem permissions, generate a diagram or export content during setup.\n\nPreserve model files byte-for-byte, including identifiers, packages, elements, relationships, constraints, stereotypes, profiles, diagrams, presentations, styles, metadata, recovery data and version-control state. A Gaphor project is a semantic UML 2, SysML, RAAML or C4 model, not merely a set of pictures; a visually plausible result can still corrupt relationships or traceability. Never auto-fix references, normalize IDs, relayout diagrams, remove orphan-looking elements or convert a legacy model in place. Copy an approved model and verify backup restoration before any version migration.\n\nTreat model and profile files as untrusted structured input. Before future opening show source, checksum, file size, expected Gaphor/schema version, selected modeling language, external-profile inventory, parser resource limits and whether a conversion will be written. Work on a protected duplicate first and compare element, relationship, diagram and identifier counts plus validation findings without exposing names. Gaphor files do not provide safe multi-writer merging by default; establish one owner or an explicitly tested version-control workflow before concurrent edits.\n\nThe Flatpak may have broad home-folder access. Retain existing permissions during installation and later narrow them only against an approved project root after confirming file chooser, autosave and export needs. Exports can disclose hidden architecture through labels, links or metadata; review PNG, SVG, PDF and clipboard destinations separately. Verify provenance, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no model read, schema migration, recent-file entry, recovery file, import, layout, clipboard, export or filesystem state changed. On failure, rollback only the new Gaphor ref in its original scope; preserve runtimes, remotes, overrides, projects and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gaphor.Gaphor from verified Flathub in the existing scope without source builds, launch, model reads, schema migrations, profile imports, permission changes, recent-file writes, layout, clipboard use, or exports.",
+      "preserve": "all model files, IDs, packages, elements, relationships, constraints, stereotypes, profiles, diagrams, presentations, styles, metadata, recovery data, backups, version-control state, remotes, overrides, and scope ownership",
+      "safety": "Never expose architecture, trust model input, migrate authoritative files in place, normalize IDs, auto-fix semantics, relayout diagrams, assume safe concurrent merging, retain unjustified home access, or export hidden details without source, schema, language, integrity, ownership, permission, metadata, and restore review.",
+      "verify": "Verify Gaphor source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove models, schemas, recent files, recovery data, imports, layouts, clipboard, exports and filesystem state are unchanged."
+    }
   }
 ]

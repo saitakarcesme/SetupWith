@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "model_language",
+    "schema_compatibility",
+    "semantic_integrity",
+    "export_boundary"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "UML, SysML, RAAML or C4 language, project owner, model purpose, classification, reviewers, and authoritative copy",
+    "existing Gaphor files, application version, storage schema, legacy pre-3.0 models, migrations, backups, and round-trip limits",
+    "packages, elements, diagrams, presentations, identifiers, relationships, constraints, stereotypes, profiles, and traceability",
+    "shared model workflow, simultaneous editors, version control, merge semantics, conflict resolution, and lock ownership",
+    "home-folder read/write access, project root, file chooser, recent files, autosave or recovery data, and least-access boundary",
+    "imports, external profiles, untrusted model documents, parser limits, references, generated code expectations, and provenance",
+    "PNG, SVG, PDF or clipboard export, hidden model metadata, fonts, links, labels, confidential architecture, and redaction",
+    "diagram styling, automatic layout, bulk edits, element deletion, undo scope, validation, restore rehearsal, and rollback"
+  ]
+}

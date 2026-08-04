@@ -2433,5 +2433,10 @@
     "file": "forge-sparks-notifications.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.mardojai.ForgeSparks.svg",
     "sourceType": "official-project-asset"
+  },
+  "gaphor-modeling": {
+    "file": "gaphor-modeling.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gaphor.Gaphor.svg",
+    "sourceType": "official-project-asset"
   }
 }
