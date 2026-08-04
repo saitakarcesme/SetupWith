@@ -77,7 +77,7 @@ for (const app of selectedCatalog) {
     },
     preferences: app.config,
     secrets: app.secrets.map((key) => ({ key, reference: secretAlias(key) })),
-    permissionCheckpoints: [
+    permissionCheckpoints: app.permissionCheckpoints ?? [
       "administrator access",
       "configuration overwrite",
       "service or daemon changes",

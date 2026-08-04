@@ -42,6 +42,7 @@ export function getOfficialSource(app) {
 }
 
 export function getComplexity(app) {
+  if (app.complexity) return app.complexity;
   if (app.mayInstallDrivers || app.mayInstallKernelComponents) {
     return "Advanced";
   }
@@ -55,6 +56,7 @@ export function getComplexity(app) {
 }
 
 export function getInstallTime(app) {
+  if (app.installTime) return app.installTime;
   if (app.delivery === "source") return "5–10 min";
   if (app.delivery === "pwa") return "2–5 min";
   if (app.category === "Games & Launchers" || app.category === "Devices & Hardware") {
@@ -67,6 +69,7 @@ export function getInstallTime(app) {
 }
 
 export function buildGeneratedPrompt(app) {
+  if (app.prompt) return app.prompt;
   if (!app.setup) {
     throw new Error(`Missing structured setup guidance for ${app.slug}`);
   }

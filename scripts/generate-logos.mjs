@@ -13,6 +13,7 @@ const professionalCatalogThreePath = resolve(root, "src/data/professional-catalo
 const overridesPath = resolve(root, "src/data/logo-overrides.json");
 const consumerOverridesPath = resolve(root, "src/data/consumer-logo-overrides.json");
 const outputDir = resolve(root, "public/app-logos");
+const selectedSlug = process.env.CATALOG_LOGO_SLUG;
 
 const catalog = [
   ...JSON.parse(await readFile(catalogPath, "utf8")),
@@ -114,11 +115,24 @@ const fetchAsset = async (url, name) => {
   return assertSafeSvg(toEmbeddedSvg(name, mimeType, bytes), name);
 };
 
-await rm(outputDir, { recursive: true, force: true });
+if (!selectedSlug) {
+  await rm(outputDir, { recursive: true, force: true });
+}
 await mkdir(outputDir, { recursive: true });
 
-const manifest = {};
-for (const app of catalog) {
+const manifestPath = resolve(outputDir, "manifest.json");
+const manifest = selectedSlug
+  ? JSON.parse(await readFile(manifestPath, "utf8"))
+  : {};
+const selectedCatalog = selectedSlug
+  ? catalog.filter((app) => app.slug === selectedSlug)
+  : catalog;
+
+if (selectedSlug && selectedCatalog.length !== 1) {
+  throw new Error(`Expected exactly one app for CATALOG_LOGO_SLUG=${selectedSlug}; received ${selectedCatalog.length}`);
+}
+
+for (const app of selectedCatalog) {
   const icon = app.simpleIconSlug ? iconsBySlug.get(app.simpleIconSlug) : undefined;
   let svg;
   let source;
@@ -151,5 +165,5 @@ for (const app of catalog) {
   manifest[app.slug] = { file: fileName, source, sourceType };
 }
 
-await writeFile(resolve(outputDir, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
-console.log(`Generated ${catalog.length} local, source-attributed app logos.`);
+await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+console.log(`Generated ${selectedCatalog.length} local, source-attributed app logo${selectedCatalog.length === 1 ? "" : "s"}.`);
