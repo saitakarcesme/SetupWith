@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–20 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "project_packages",
+    "package_versions",
+    "shell_init_hook",
+    "global_shell_integration"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "administrator access",
+    "Nix installation or daemon changes",
+    "WSL2 creation or configuration",
+    "shell startup file edits",
+    "project configuration or lock-file overwrite",
+    "global package and PATH integration",
+    "large Nix store downloads",
+    "init-hook or project-script execution"
+  ]
+}

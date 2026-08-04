@@ -1,0 +1,16 @@
+{
+  "index": 429,
+  "name": "Devbox",
+  "slug": "devbox",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/jetify-com/devbox",
+    "installUrl": "https://www.jetify.com/docs/devbox/installing-devbox/"
+  },
+  "website": "https://www.jetify.com/devbox",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Reproducible, per-project development environments powered by Nix packages without requiring users to write Nix expressions.",
+  "accent": "#280459",
+  "simpleIconSlug": "devbox"
+}

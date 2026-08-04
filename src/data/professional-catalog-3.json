@@ -1822,5 +1822,58 @@
       "safety": "Do not install WSL, the privileged service, repository keys, KVM group changes, system profiles, or CLI links; switch container engines or Kubernetes versions; reset Kubernetes; factory-reset data; expose non-loopback ports; or replace the active Docker and kubeconfig contexts without separate approval.",
       "verify": "Confirm signature, version, virtualization readiness, rdctl state, selected engine, Kubernetes enablement, CLI paths, Docker and kubeconfig contexts, and localhost-only networking; avoid pulling images or starting workloads, and prove all pre-existing runtimes, clusters, snapshots, volumes, profiles, and contexts remain unchanged."
     }
+  },
+  {
+    "index": 429,
+    "name": "Devbox",
+    "slug": "devbox",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/jetify-com/devbox",
+      "installUrl": "https://www.jetify.com/docs/devbox/installing-devbox/"
+    },
+    "website": "https://www.jetify.com/devbox",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Reproducible, per-project development environments powered by Nix packages without requiring users to write Nix expressions.",
+    "accent": "#280459",
+    "simpleIconSlug": "devbox",
+    "secrets": [],
+    "config": [
+      "project_packages",
+      "package_versions",
+      "shell_init_hook",
+      "global_shell_integration"
+    ],
+    "installTime": "5–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "administrator access",
+      "Nix installation or daemon changes",
+      "WSL2 creation or configuration",
+      "shell startup file edits",
+      "project configuration or lock-file overwrite",
+      "global package and PATH integration",
+      "large Nix store downloads",
+      "init-hook or project-script execution"
+    ],
+    "prompt": "Set up Devbox from Jetify's verified installation documentation (https://www.jetify.com/docs/devbox/installing-devbox/). Start by detecting the operating system, architecture, interactive shell, available disk space, an existing `devbox` executable, and whether Nix is installed in single-user or multi-user mode. On Windows, continue only inside an already-working WSL2 distribution; do not present Devbox as a native Windows installation. Report the selected Devbox release and installer checksum or pinned Nix reference before making changes.\n\nPreserve every existing Nix profile, channel, flake registry, daemon and trust setting, store path, Devbox global profile, project `devbox.json`, `devbox.lock`, `.devbox` directory, shell startup file, environment variable, init hook, script, and cached package. Before changing a project, show its Git status and make a restorable copy of setup-owned configuration. Apply only the requested project packages, pinned package versions, shell init hook, or global shell integration; explain that project packages are isolated while global integration changes the host shell's PATH. No credential references are needed for this setup.\n\nDownload Jetify's installer to a temporary file and inspect it instead of piping network content directly into a shell. Ask separately before installing Nix, enabling or reconfiguring the Nix daemon, using administrator privileges, creating WSL2, editing a shell startup file, adding global packages, downloading a large closure, or overwriting project configuration. Never run an unfamiliar project's init hook or script during installation. Do not update a lock file, change flake trust, enable experimental Nix features, pass `--allow-insecure`, garbage-collect the Nix store, delete profiles, or remove `.devbox` data without explicit approval. If prerequisites are unsupported, stop and link to the closest official installation path.\n\nVerify `devbox version`, `nix --version`, the resolved executable path, platform mode, Nix daemon state, and the list of profiles before and after setup. For an existing project, inspect configuration without evaluating hooks. Otherwise initialize a disposable empty directory, inspect the generated JSON and lock file, enter an empty Devbox shell, and exit without adding packages. Prove that no pre-existing project lock, global profile, shell file, daemon setting, or store path was removed. Finish with changed paths, downloaded store size, verification evidence, manual steps, and rollback commands that remove only setup-created files and restore backups.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install Devbox as a non-root user from Jetify's documented installer or a pinned Nix profile, treat Nix as a separate dependency, and on Windows operate only inside an already-configured WSL2 distribution rather than pretending a native Windows binary is available.",
+      "preserve": "all existing Nix profiles, channels, flakes, daemon configuration, trust settings, store paths, Devbox global state, project devbox.json and devbox.lock files, .devbox directories, shell startup files, environment variables, init hooks, scripts, and cached packages",
+      "safety": "Do not pipe the installer into a shell before downloading and reviewing it; install Nix, enable its daemon, create WSL2, edit shell startup files, add global packages, run project init hooks or scripts, garbage-collect the Nix store, update locks, or allow insecure packages without separate approval.",
+      "verify": "Confirm the Devbox and Nix versions, executable source, platform mode, and unchanged profiles; validate an existing project with read-only configuration inspection, or initialize a disposable empty directory and enter a shell without adding packages, then prove no project lock, global profile, shell file, daemon setting, or Nix store path was removed."
+    }
   }
 ]

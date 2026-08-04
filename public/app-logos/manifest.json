@@ -2138,5 +2138,10 @@
     "file": "rancher-desktop.svg",
     "source": "https://rancher.com/brand-guidelines/",
     "sourceType": "simple-icons-official-glyph"
+  },
+  "devbox": {
+    "file": "devbox.svg",
+    "source": "https://github.com/jetify-com/devbox/blob/c3cab01d7375726f0121a25fc0f5c838484246f7/docs/app/static/img/devbox_logo_light.svg",
+    "sourceType": "simple-icons-official-glyph"
   }
 }
