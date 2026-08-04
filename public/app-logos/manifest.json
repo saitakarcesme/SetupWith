@@ -2478,5 +2478,10 @@
     "file": "gnome-mahjongg.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Mahjongg.svg",
     "sourceType": "official-project-asset"
+  },
+  "mousai-song-recognition": {
+    "file": "mousai-song-recognition.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.seadve.Mousai.svg",
+    "sourceType": "official-project-asset"
   }
 }

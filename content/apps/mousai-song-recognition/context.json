@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "audio_capture_scope",
+    "fingerprint_service",
+    "history_privacy",
+    "provider_navigation"
+  ],
+  "secrets": [
+    {
+      "key": "mousai_audd_api_token",
+      "reference": "secret://mousai/audd-api-token"
+    }
+  ],
+  "permissionCheckpoints": [
+    "microphone or desktop-audio source, selected device or stream, PipeWire portal, application scope, and capture indicator",
+    "bystander consent, conversations, meetings, calls, protected media, background audio, recording law, and stop control",
+    "audio clip duration, encoding, AudD API endpoint, TLS, retention, account, trial quota, token scope, and deletion policy",
+    "offline recognition queue, stored clip or fingerprint, retry behavior, metered network, expiration, cancellation, and purge",
+    "recognized title and artist, confidence, alternate match, false-positive handling, repertoire history, timestamps, and privacy",
+    "in-app preview, volume, output route, autoplay, copyrighted audio, third-party request, cache, and playback controls",
+    "external music providers, deep links, browser profile, account session, region, tracking parameters, and redirect validation",
+    "microphone permission revocation, desktop-audio portal grants, history deletion, API-token revocation, logs, and rollback"
+  ]
+}

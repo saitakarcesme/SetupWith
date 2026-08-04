@@ -1,0 +1,17 @@
+{
+  "index": 497,
+  "name": "Mousai",
+  "slug": "mousai-song-recognition",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/SeaDve/Mousai",
+    "installUrl": "https://flathub.org/apps/io.github.seadve.Mousai"
+  },
+  "website": "https://apps.gnome.org/Mousai/",
+  "category": "Music & Streaming",
+  "vertical": "software",
+  "description": "Song-recognition client using the AudD API with microphone or desktop-audio capture, offline queueing, local recognition history, in-app previews, and links to multiple listening providers.",
+  "accent": "#9141AC",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.seadve.Mousai.svg",
+  "logoSourceType": "official-project-asset"
+}
