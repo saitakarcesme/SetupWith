@@ -4610,5 +4610,60 @@
       "safety": "Never decode untrusted custom sounds, expose filenames, combine gains without clipping review, play unexpected audio, switch outputs, make medical claims, enable hidden autostart, publish new MPRIS state, or inhibit sleep without file, codec, volume, route, visibility, power, and comfort review.",
       "verify": "Verify Blanket source, app ID, origin, commit, runtime, executable, bundled sounds, files and permissions offline, then prove audio reads, decoders, streams, routes, presets, MPRIS, login items, inhibitors, power policy, notifications and network state are unchanged."
     }
+  },
+  {
+    "index": 481,
+    "name": "Pika Backup",
+    "slug": "pika-backup",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/pika-backup",
+      "installUrl": "https://flathub.org/apps/org.gnome.World.PikaBackup"
+    },
+    "website": "https://apps.gnome.org/PikaBackup/",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "Borg-powered personal backup client for encrypted local or remote repositories, scheduled archives, browsing, selective recovery, pruning, and compaction.",
+    "accent": "#F6D32D",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.PikaBackup.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "backup_repository_passphrase",
+      "backup_remote_ssh_key"
+    ],
+    "config": [
+      "repository_ownership",
+      "backup_scope",
+      "schedule_policy",
+      "recovery_procedure"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "existing Borg repositories, archive inventory, repository version, encryption mode, ownership, and exclusive access",
+      "local drive, removable media, network mount, SSH URL, server identity, host key, port, and credential storage",
+      "source folders, exclusions, hidden files, caches, mounted filesystems, symlinks, one-filesystem boundary, and estimated size",
+      "repository passphrase, recovery key, key export, password manager, unattended schedule access, and loss consequences",
+      "scheduled frequency, missed-run handling, background permission, metered network, battery, sleep, and drive availability",
+      "retention policy, archive pruning, compaction, freed-space estimate, concurrent writers, locks, and irreversible deletion",
+      "archive browsing, FUSE mount, temporary extraction, destination conflicts, permissions, timestamps, and selective restore",
+      "integrity check, sample recovery, complete-system limitation, notification privacy, logs, and rollback"
+    ],
+    "prompt": "Set up Pika Backup from its official GNOME project and verified Flathub listing (https://apps.gnome.org/PikaBackup/). Inventory Linux architecture, Flatpak scopes, existing Pika Backup package and data paths, Borg repository count and ownership, local or remote destinations, source-root count, schedule state, exclusion policy, secret-store boundary and available capacity without opening archives, printing paths or reading passphrases. Install stable `org.gnome.World.PikaBackup` from verified Flathub in the existing ownership scope. Do not compile Borg or Pika Backup, launch the app, attach a drive, contact an SSH host, create or upgrade a repository, unlock an archive or run a backup during setup.\n\nPreserve every repository URL, Borg ID, encryption mode, archive, lock, key, passphrase reference, source selection, exclusion, schedule, retention rule and notification setting. Repository names and file paths can expose identities and sensitive projects; redact them from diagnostics. Never assume an existing Borg repository is disposable or owned exclusively by Pika Backup. Do not break a lock, migrate formats, prune archives, compact segments or repair data without a separately reviewed maintenance plan and a second verified copy.\n\nBefore any future repository connection show destination type, owner, exact host identity, pinned SSH host key, TLS or SSH transport, credential source, repository version, free-space estimate and concurrent-writer policy. Encryption protects archive contents only while its key and passphrase remain recoverable; require an approved offline key-recovery plan before enabling unattended schedules. Exclusions must be reviewed against hidden files, application state, mount boundaries and symlinks. Pika Backup targets personal files and is not a complete system-recovery image.\n\nA green backup result is not proof of recovery. Define a non-destructive verification that checks repository integrity within resource limits, lists archive metadata without exposing filenames, restores a small approved sample to a new protected directory, compares hashes and removes nothing automatically. Keep schedules and background access unchanged until that recovery drill passes. Verify provenance, app ID, origin, commit, runtime, executable, bundled Borg version, files and permissions offline. Prove no drive mount, secret access, network connection, repository lock, archive, schedule, prune, compact, restore, notification or filesystem state changed. On failure, rollback only the new Pika Backup ref in its original scope; preserve runtimes, remotes, overrides, repositories, keys and all backup data.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.World.PikaBackup from verified Flathub in the existing scope without source builds, launch, drives, remote contact, repository creation, migration, unlock, backup, pruning, compaction, or restore.",
+      "preserve": "all repository identities, URLs, archives, locks, encryption keys, passphrase references, source folders, exclusions, schedules, retention rules, notifications, remotes, overrides, and scope ownership",
+      "safety": "Never expose paths, lose recovery keys, trust unknown hosts, cross mount boundaries, break locks, mutate repository formats, prune or compact archives, or claim recovery readiness without ownership, key, host, exclusion, retention, capacity, integrity, and sample-restore review.",
+      "verify": "Verify Pika Backup and Borg provenance, app ID, origin, commit, runtime, executable, files and permissions offline, then prove drives, secrets, networks, locks, archives, schedules, maintenance, restores, notifications and filesystem state are unchanged."
+    }
   }
 ]

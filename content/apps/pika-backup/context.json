@@ -1,0 +1,41 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "repository_ownership",
+    "backup_scope",
+    "schedule_policy",
+    "recovery_procedure"
+  ],
+  "secrets": [
+    {
+      "key": "backup_repository_passphrase",
+      "reference": "secret://backup/repository-passphrase"
+    },
+    {
+      "key": "backup_remote_ssh_key",
+      "reference": "secret://backup/remote-ssh-key"
+    }
+  ],
+  "permissionCheckpoints": [
+    "existing Borg repositories, archive inventory, repository version, encryption mode, ownership, and exclusive access",
+    "local drive, removable media, network mount, SSH URL, server identity, host key, port, and credential storage",
+    "source folders, exclusions, hidden files, caches, mounted filesystems, symlinks, one-filesystem boundary, and estimated size",
+    "repository passphrase, recovery key, key export, password manager, unattended schedule access, and loss consequences",
+    "scheduled frequency, missed-run handling, background permission, metered network, battery, sleep, and drive availability",
+    "retention policy, archive pruning, compaction, freed-space estimate, concurrent writers, locks, and irreversible deletion",
+    "archive browsing, FUSE mount, temporary extraction, destination conflicts, permissions, timestamps, and selective restore",
+    "integrity check, sample recovery, complete-system limitation, notification privacy, logs, and rollback"
+  ]
+}

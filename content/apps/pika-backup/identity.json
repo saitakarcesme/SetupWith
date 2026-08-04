@@ -1,0 +1,17 @@
+{
+  "index": 481,
+  "name": "Pika Backup",
+  "slug": "pika-backup",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/pika-backup",
+    "installUrl": "https://flathub.org/apps/org.gnome.World.PikaBackup"
+  },
+  "website": "https://apps.gnome.org/PikaBackup/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Borg-powered personal backup client for encrypted local or remote repositories, scheduled archives, browsing, selective recovery, pruning, and compaction.",
+  "accent": "#F6D32D",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.PikaBackup.svg",
+  "logoSourceType": "official-project-asset"
+}
