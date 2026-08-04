@@ -1,0 +1,17 @@
+{
+  "index": 528,
+  "name": "Binary",
+  "slug": "binary-base-converter",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/fizzyizzy05/binary",
+    "installUrl": "https://flathub.org/apps/io.github.fizzyizzy05.binary"
+  },
+  "website": "https://apps.gnome.org/Binary/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Small GNOME utility for converting integer values between binary, decimal, and hexadecimal representations with immediate keyboard-friendly output.",
+  "accent": "#26A269",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.fizzyizzy05.binary.svg",
+  "logoSourceType": "official-project-asset"
+}

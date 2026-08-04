@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Intermediate",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "input_grammar",
+    "width_and_signedness",
+    "conversion_fidelity",
+    "clipboard_policy"
+  ],
+  "secrets": [
+    {
+      "key": "binary_sensitive_numeric_input_reference",
+      "reference": "secret://binary/sensitive-numeric-input-reference"
+    }
+  ],
+  "permissionCheckpoints": [
+    "source and target base, accepted prefixes, case, separators, whitespace, sign, leading zeros, empty input, and invalid-character policy",
+    "integer precision, maximum digits, arbitrary precision, fixed bit width, signedness, two's-complement interpretation, overflow, and truncation",
+    "binary, decimal and hexadecimal normalization, canonical output, zero representation, negative values, round-trip equality, and test vectors",
+    "numeric input sensitivity, cryptographic keys, account and device identifiers, memory retention, diagnostics, recent values, and redaction",
+    "clipboard read and write behavior, primary selection, auto-copy, overwrite warning, format labels, paste sanitation, and screen sharing",
+    "keyboard shortcuts, input focus, locale digits, monospace rendering, grouping, accessibility labels, large-output navigation, and contrast",
+    "offline behavior, network absence, telemetry, filesystem and portal permissions, background processes, and least privilege",
+    "input clearing, process memory, clipboard cleanup, preferences reset, app data deletion, uninstall, and rollback"
+  ]
+}

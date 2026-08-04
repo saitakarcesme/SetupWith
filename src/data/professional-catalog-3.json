@@ -7101,5 +7101,59 @@
       "safety": "Never blur offline and web origins, refresh docs silently, expose development interests, rank fuzzy matches as exact, omit SDK versions, execute examples, restore sensitive web tabs, mix storage partitions, activate custom schemes, leak local queries, or change browser defaults.",
       "verify": "Verify Biblioteca source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove tabs, documentation, indexes, searches, renders, execution, networks, assets, clipboards, downloads, histories and caches are unchanged."
     }
+  },
+  {
+    "index": 528,
+    "name": "Binary",
+    "slug": "binary-base-converter",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/fizzyizzy05/binary",
+      "installUrl": "https://flathub.org/apps/io.github.fizzyizzy05.binary"
+    },
+    "website": "https://apps.gnome.org/Binary/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Small GNOME utility for converting integer values between binary, decimal, and hexadecimal representations with immediate keyboard-friendly output.",
+    "accent": "#26A269",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.fizzyizzy05.binary.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "binary_sensitive_numeric_input_reference"
+    ],
+    "config": [
+      "input_grammar",
+      "width_and_signedness",
+      "conversion_fidelity",
+      "clipboard_policy"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Intermediate",
+    "permissionCheckpoints": [
+      "source and target base, accepted prefixes, case, separators, whitespace, sign, leading zeros, empty input, and invalid-character policy",
+      "integer precision, maximum digits, arbitrary precision, fixed bit width, signedness, two's-complement interpretation, overflow, and truncation",
+      "binary, decimal and hexadecimal normalization, canonical output, zero representation, negative values, round-trip equality, and test vectors",
+      "numeric input sensitivity, cryptographic keys, account and device identifiers, memory retention, diagnostics, recent values, and redaction",
+      "clipboard read and write behavior, primary selection, auto-copy, overwrite warning, format labels, paste sanitation, and screen sharing",
+      "keyboard shortcuts, input focus, locale digits, monospace rendering, grouping, accessibility labels, large-output navigation, and contrast",
+      "offline behavior, network absence, telemetry, filesystem and portal permissions, background processes, and least privilege",
+      "input clearing, process memory, clipboard cleanup, preferences reset, app data deletion, uninstall, and rollback"
+    ],
+    "prompt": "Set up Binary from its official project and verified Flathub listing (https://apps.gnome.org/Binary/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, saved source and target base choices, numeric-width and signedness policy presence, recent-value count, clipboard-access declaration, sandbox overrides and backup coverage without reading or revealing any numeric input, converted output, clipboard text, identifier, key material or usage history. Install stable `io.github.fizzyizzy05.binary` from verified Flathub in the existing ownership scope. Do not compile from source, launch Binary, restore an input, parse or convert a value, infer width, read or write the clipboard, update recents, emit a notification or access a network or filesystem portal during setup.\n\nPreserve all preferences, input and output state, history, clipboard contents, window state, permissions, remotes, overrides and scope ownership. Numeric strings can be cryptographic keys, hardware identifiers or account numbers; redact them and never use real secrets as conversion tests. Installation must not reinterpret an existing negative value, strip significant leading zeros, infer two's complement, truncate to a machine word, auto-copy output or register itself as a handler.\n\nBefore later conversion, require explicit source and target bases and define accepted prefixes, separators, case, whitespace, sign and leading-zero behavior. State whether arithmetic is arbitrary precision or fixed width. Signed magnitude and two's-complement bit patterns are different interpretations; require an explicit bit width before two's-complement decoding and report overflow rather than truncating. Preserve a canonical zero and negative-value representation. Validate with public boundary vectors covering zero, powers of two, maximum widths, mixed case, invalid digits and round trips across every supported base.\n\nClipboard paste must be explicit, sanitized for control and invisible characters and shown before parsing. Copy must label the target base, require user action and avoid overwriting unrelated clipboard data during tests. Binary conversion does not validate a cryptographic key, memory address, permission mask or protocol field; those require domain-specific width and semantics. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no input restoration, parse, conversion, width inference, clipboard access, recent-state write, notification, portal or network request occurred. On failure, rollback only the new Binary ref in its original scope; preserve shared runtimes, remotes, overrides, preferences, numeric state, history, clipboard and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.github.fizzyizzy05.binary from verified Flathub in the existing scope without source builds, launch, input restoration, parsing, conversion, width inference, clipboard access, recents, notifications, portals, filesystems, or networks.",
+      "preserve": "all base, width and signedness preferences, input and output state, history, clipboard contents, window state, permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose numeric secrets, infer two's complement without width, strip meaningful zeros, accept invalid digits, truncate overflow, confuse representations with domain validity, restore sensitive input, auto-copy output, overwrite the clipboard during tests, or grant unnecessary network and filesystem access.",
+      "verify": "Verify Binary source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove inputs, parsers, conversions, width decisions, clipboards, recents, notifications, portals, filesystems and networks are unchanged."
+    }
   }
 ]

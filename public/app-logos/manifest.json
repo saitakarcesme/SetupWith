@@ -2633,5 +2633,10 @@
     "file": "biblioteca-gnome-docs.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.Biblioteca.svg",
     "sourceType": "official-project-asset"
+  },
+  "binary-base-converter": {
+    "file": "binary-base-converter.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.fizzyizzy05.binary.svg",
+    "sourceType": "official-project-asset"
   }
 }
