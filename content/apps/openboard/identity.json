@@ -1,0 +1,17 @@
+{
+  "index": 454,
+  "name": "OpenBoard",
+  "slug": "openboard",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/OpenBoard-org/OpenBoard",
+    "installUrl": "https://openboard.ch/en/download"
+  },
+  "website": "https://openboard.ch/",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Interactive classroom whiteboard for pen displays and projectors with document libraries, handwriting, PDF and media import, web widgets, desktop capture, and recorded presentations.",
+  "accent": "#00A6D6",
+  "logoUrl": "https://raw.githubusercontent.com/OpenBoard-org/OpenBoard/master/resources/images/OpenBoard.png",
+  "logoSourceType": "official-project-asset"
+}

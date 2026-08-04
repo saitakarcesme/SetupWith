@@ -3181,5 +3181,59 @@
       "safety": "Never copy or replace a PDF, change attach mode, rewrite paths, recover or remove autosaves, overwrite exports, print, record audio, recalibrate devices, execute Lua or LaTeX tools, open links, or expose clipboard data without a complete preview and approval.",
       "verify": "Verify provenance or checksum, version, executable, method, paths and plugins without user content, then prove no journal, PDF, autosave, cache, association, input map, permission, process, plugin, audio, print or export state changed."
     }
+  },
+  {
+    "index": 454,
+    "name": "OpenBoard",
+    "slug": "openboard",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/OpenBoard-org/OpenBoard",
+      "installUrl": "https://openboard.ch/en/download"
+    },
+    "website": "https://openboard.ch/",
+    "category": "Productivity",
+    "vertical": "work",
+    "description": "Interactive classroom whiteboard for pen displays and projectors with document libraries, handwriting, PDF and media import, web widgets, desktop capture, and recorded presentations.",
+    "accent": "#00A6D6",
+    "logoUrl": "https://raw.githubusercontent.com/OpenBoard-org/OpenBoard/master/resources/images/OpenBoard.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "documents",
+      "interactive_display",
+      "web_widgets",
+      "podcast"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "OpenBoard document library, page, trash, and recovery changes",
+      "PDF, printable file, UBZ, UBX, image, audio, and video import",
+      "document export, duplication, rename, move, and deletion",
+      "web widget, embedded browser, cookie, download, and page capture",
+      "desktop, window, region, webcam, and screen capture",
+      "microphone, system audio, podcast recording, and media output",
+      "interactive whiteboard, pen tablet, projector, and display calibration",
+      "file association, virtual printer, cache, and legacy-data migration"
+    ],
+    "prompt": "Set up OpenBoard from its official download page (https://openboard.ch/en/download). Detect Windows 10+, macOS 12+, or Debian 12, architecture, package managers, existing OpenBoard or Open-Sankoré installation, document library, profiles, caches, interactive displays, pen tablets, projectors, dual-screen layout, cameras, microphones, media backends, virtual printers and file associations. Install only the current stable official package for the supported platform and architecture. Do not select a development branch, community package for an officially supported platform, or migrate legacy libraries without approval.\n\nInstall without starting a lesson, creating a board document, opening the library or changing handlers for UBZ, UBX or PDF files. Preserve every document, page, annotation, embedded resource, background, thumbnail, folder, trash item, favorite, widget, podcast, recording, cache, preference, toolbar, pen setting, calibration and recent item. OpenBoard may maintain its document library rather than asking for a normal Save operation; never assume closing a test document leaves storage untouched. Inventory library paths and hashes before any functional launch.\n\nPrintable-file, PDF, UBZ and UBX import can create converted documents and extracted assets; export, duplication, rename, move and deletion can alter the library. Do not import or export real teaching material merely to test installation. Treat web widgets as remote applications: they can run JavaScript, store cookies, follow links, download files and display private or untrusted content. Never add a widget, enable cookie persistence, sign in, capture a web page, trust a certificate, grant browser permissions or expose student data. Desktop mode, region capture and page capture can record other applications, notifications and credentials.\n\nPodcast recording can capture the board, microphone and system media into persistent files. Do not request microphone, camera, screen-recording or accessibility access; do not start a recording or select an output folder. Preserve display arrangement, projector resolution, pen mapping and interactive-whiteboard calibration, and never install hardware drivers or recalibrate a classroom device for verification. Verify publisher or package provenance, checksum when provided, package version, executable, bundle files, supported platform and data locations from package metadata without launching the normal GUI. Confirm no document, cache, handler, cookie, capture, device grant, calibration, media file, process or network connection changed. Roll back only the installed application and setup-owned shortcuts.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the current stable official OpenBoard package for a supported platform without launching a lesson, creating documents, changing file handlers, migrating legacy data, configuring devices, adding widgets, or granting capture permissions.",
+      "preserve": "all documents, pages, annotations, resources, backgrounds, thumbnails, folders, trash, favorites, widgets, recordings, caches, preferences, toolbars, pens, calibrations, displays, handlers, virtual printers, recent items, and legacy libraries",
+      "safety": "Never import, convert, export, move or delete teaching material; run web widgets; persist cookies; capture screens; record audio or video; expose student data; install drivers; or recalibrate devices without an exact scope preview and approval.",
+      "verify": "Verify provenance, checksum, package version, executable, bundle, platform and data locations without the normal GUI, then prove no library, cache, handler, cookie, capture, grant, calibration, media, process or network state changed."
+    }
   }
 ]

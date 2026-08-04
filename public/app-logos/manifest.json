@@ -2263,5 +2263,10 @@
     "file": "xournalpp.svg",
     "source": "https://raw.githubusercontent.com/xournalpp/xournalpp/master/ui/pixmaps/com.github.xournalpp.xournalpp.svg",
     "sourceType": "official-project-asset"
+  },
+  "openboard": {
+    "file": "openboard.svg",
+    "source": "https://raw.githubusercontent.com/OpenBoard-org/OpenBoard/master/resources/images/OpenBoard.png",
+    "sourceType": "official-project-asset"
   }
 }
