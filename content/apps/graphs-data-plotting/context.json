@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "data_provenance",
+    "transformation_ledger",
+    "fit_assumptions",
+    "publication_export"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "source dataset owner, license, classification, checksum, format, delimiter, encoding, units, missing values, and uncertainty",
+    "CSV or other tabular data, XRDML, project imports, equations, parser behavior, row limits, malformed values, and locale",
+    "selection, cut, translate, multiply, centre, smooth and custom transformations, order of operations, parameters, and reversibility",
+    "equation domain, sampling interval, resolution, discontinuities, singularities, numerical overflow, and generated-data provenance",
+    "curve-fit model, initial values, bounds, weighting, residuals, uncertainty, convergence, overfitting, and excluded observations",
+    "axes, scales, units, truncation, normalization, error bars, labels, legend, stylesheet, color accessibility, and visual honesty",
+    "project file, source snapshots, transformation history, reproducibility notes, version control, autosave, and backup",
+    "raster or vector export, embedded metadata, fonts, publication destination, reviewer approval, overwrite, and rollback"
+  ]
+}

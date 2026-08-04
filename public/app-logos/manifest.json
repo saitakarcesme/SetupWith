@@ -2443,5 +2443,10 @@
     "file": "gradia-screenshot-annotator.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/be.alexandervanhee.gradia.svg",
     "sourceType": "official-project-asset"
+  },
+  "graphs-data-plotting": {
+    "file": "graphs-data-plotting.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/se.sjoerd.Graphs.svg",
+    "sourceType": "official-project-asset"
   }
 }

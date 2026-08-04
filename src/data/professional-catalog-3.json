@@ -5089,5 +5089,57 @@
       "safety": "Never expose screenshot content, trust visual crops, use reversible blur as redaction, retain hidden metadata, misstate annotations, render secret-bearing code, overwrite originals, or upload without ownership, audience, crop, flattening, metadata, second-review, destination, retention, and deletion review.",
       "verify": "Verify Gradia source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove images, portals, caches, clipboard, exports, networks, uploads and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 490,
+    "name": "Graphs",
+    "slug": "graphs-data-plotting",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/Graphs",
+      "installUrl": "https://flathub.org/apps/se.sjoerd.Graphs"
+    },
+    "website": "https://apps.gnome.org/Graphs/",
+    "category": "Data & Databases",
+    "vertical": "software",
+    "description": "Scientific plotting and data-manipulation application with multi-format import, equation generation, selection and smoothing operations, custom transforms, curve fitting, stylesheets, and vector export.",
+    "accent": "#3584E4",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/se.sjoerd.Graphs.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "data_provenance",
+      "transformation_ledger",
+      "fit_assumptions",
+      "publication_export"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "source dataset owner, license, classification, checksum, format, delimiter, encoding, units, missing values, and uncertainty",
+      "CSV or other tabular data, XRDML, project imports, equations, parser behavior, row limits, malformed values, and locale",
+      "selection, cut, translate, multiply, centre, smooth and custom transformations, order of operations, parameters, and reversibility",
+      "equation domain, sampling interval, resolution, discontinuities, singularities, numerical overflow, and generated-data provenance",
+      "curve-fit model, initial values, bounds, weighting, residuals, uncertainty, convergence, overfitting, and excluded observations",
+      "axes, scales, units, truncation, normalization, error bars, labels, legend, stylesheet, color accessibility, and visual honesty",
+      "project file, source snapshots, transformation history, reproducibility notes, version control, autosave, and backup",
+      "raster or vector export, embedded metadata, fonts, publication destination, reviewer approval, overwrite, and rollback"
+    ],
+    "prompt": "Set up Graphs from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Graphs/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, project-file count, approved import roots, stylesheet count, autosave behavior and export destinations without opening datasets, reading labels or exposing scientific results. Install stable `se.sjoerd.Graphs` from verified Flathub in the existing ownership scope. Do not compile from source, launch Graphs, import a file, evaluate an equation, transform or fit data, alter a stylesheet or export a plot during setup.\n\nPreserve source datasets, project files, equations, selections, transformation order and parameters, fit definitions, stylesheets, axes, units, annotations, autosaves and exports byte-for-byte. Never overwrite raw measurements or silently reinterpret delimiter, decimal locale, missing value, uncertainty or unit. Treat CSV, XRDML, project and style files as untrusted structured input; before parsing show provenance, checksum, license, encoding, schema, expected dimensions, parser limits and a protected duplicate destination.\n\nEvery select, cut, translate, multiply, centre, smooth or custom transformation changes the evidentiary meaning of data. Record an immutable ledger with input checksum, operation, parameters, affected range, output checksum and reviewer. Equation-generated series require domain, sampling interval, resolution, units, discontinuity and overflow checks. Curve fitting requires an explicit model rationale, initial values, bounds, weighting, residual inspection, uncertainty, convergence status and disclosure of excluded observations; a converged curve is not proof of causality or model validity.\n\nPlots can mislead through truncated axes, inconsistent units, hidden normalization, absent uncertainty, inaccessible colors or smoothing. Review visual encoding and underlying transformed values before publication. Vector exports may retain editable text and metadata; verify fonts, links and destination classification. Verify Graphs provenance, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no dataset read, parser invocation, equation evaluation, transformation, fit, project write, stylesheet, clipboard, export or filesystem state changed. On failure, rollback only the new Graphs ref in its original scope; preserve runtimes, remotes, overrides, data, projects and published artifacts.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable se.sjoerd.Graphs from verified Flathub in the existing scope without source builds, launch, dataset parsing, equation evaluation, transformations, fitting, project writes, stylesheet changes, clipboard access, or exports.",
+      "preserve": "all raw datasets, checksums, project files, equations, selections, transformation order and parameters, fit definitions, stylesheets, axes, units, annotations, autosaves, exports, remotes, overrides, and scope ownership",
+      "safety": "Never expose results, overwrite raw data, guess formats or units, transform without a ledger, evaluate unsafe domains, present convergence as validity, hide uncertainty or exclusions, distort axes, or publish unreviewed metadata without provenance, schema, numerical, model, visual, reproducibility, and destination review.",
+      "verify": "Verify Graphs source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove datasets, parsers, equations, transformations, fits, projects, stylesheets, clipboard, exports and filesystem state are unchanged."
+    }
   }
 ]
