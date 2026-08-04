@@ -3019,5 +3019,59 @@
       "safety": "Never reassign project folders, save or clean levels, overwrite or delete frames, render or export, clear recovery data, connect production devices, modify shared palettes, contact version control, or submit farm jobs without a complete path and operation preview plus approval.",
       "verify": "Verify provenance, checksum, version, executable, bundle, Stuff, project roots and tools with an empty offline launch, then prove no project, asset, preference, backup, temp scene, cache, device, repository, render task or network state changed."
     }
+  },
+  {
+    "index": 451,
+    "name": "Hydrogen",
+    "slug": "hydrogen",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/hydrogen-music/hydrogen",
+      "installUrl": "https://github.com/hydrogen-music/hydrogen/releases/latest"
+    },
+    "website": "https://hydrogen-music.org/",
+    "category": "Music & Streaming",
+    "vertical": "creative",
+    "description": "Pattern-based drum machine and software synthesizer with layered sample kits, song and pattern sequencing, JACK and MIDI integration, session management, and multitrack export.",
+    "accent": "#96C11F",
+    "logoUrl": "https://raw.githubusercontent.com/hydrogen-music/hydrogen/main/data/img/gray/icon.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "audio",
+      "midi",
+      "drumkits",
+      "sessions"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "audio driver, device, sample-rate, and buffer changes",
+      "JACK server startup, transport, timebase, and port connections",
+      "MIDI device, port, channel, mapping, and feedback changes",
+      "OSC listener, port, and remote-control exposure",
+      "song, pattern, sample, drumkit, playlist, and session writes",
+      "online drumkit list access, download, and installation",
+      "audio, MIDI, LilyPond, and per-instrument export",
+      "NSM, JACK session, cache, and user-data cleanup"
+    ],
+    "prompt": "Set up Hydrogen from its official release repository and manual (https://hydrogen-music.org/documentation/manual/manual_en.html). Detect Windows, macOS, or Linux, architecture, package managers, existing Hydrogen installation, audio servers and devices, JACK state and graph, MIDI ports, OSC listeners, NSM or JACK sessions, configuration and user-data paths, songs, patterns, playlists, samples, drumkits and export folders. Install the current stable signed package or checksummed official release. Do not build the main branch, add an audio server, change drivers, or install optional codecs automatically.\n\nInstall without launching the graphical application or loading a song, playlist or kit. Preserve every `.h2song`, `.h2pattern`, `.h2playlist` and `.h2drumkit`, external sample, custom instrument, automation curve, tempo map, mixer state, session folder, linked kit, preference, recent file, export, MIDI map and audio connection. Do not create or migrate user data, replace the last-loaded kit, scan sound libraries, contact the online kit list, or write a default configuration during setup.\n\nHydrogen's automatic audio mode can open a device, and selecting JACK may start the JACK server and connect stereo or per-instrument ports. Do not start or stop audio services, seize ALSA/OSS devices, change sample rate or buffer size, connect JACK ports, enable transport or timebase, open MIDI input/output, send feedback, bind controls, or expose an OSC port without showing the exact device and graph diff and obtaining approval. Treat downloaded drumkits and their samples as untrusted content; show source, license, hashes, extracted paths and overwrite behavior before installation. Never overwrite a song, replace or delete a kit, relocate samples, repair session links, or assume a broken link is unused.\n\nExport can create a stereo mix, individual instrument tracks, MIDI or LilyPond files and may overwrite destinations. Require an explicit range, format, sample rate, depth, compression, destination and collision report before any later export. Verify publisher or package provenance, checksum, `hydrogen --version`, executable, method, library paths and data locations using CLI flags that do not start audio, MIDI, OSC, JACK or the GUI. Confirm no process, port, device, connection, song, kit, sample, session, config, cache or output changed. Roll back only the installed application and setup-owned shortcuts while preserving all creative assets and audio infrastructure.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the current stable signed or checksummed Hydrogen package without launching it, loading projects, creating user data, starting audio services, connecting devices, downloading kits, or adding codecs.",
+      "preserve": "all songs, patterns, playlists, drumkits, samples, instruments, automation, mixer and session state, linked assets, preferences, recent files, exports, MIDI maps, JACK graph, audio settings, devices, ports, caches, and existing installation ownership",
+      "safety": "Never seize audio hardware, start JACK, connect audio or MIDI, expose OSC, replace projects or kits, download untrusted samples, alter sessions, or export and overwrite media without an exact device, graph, asset, license, and destination preview plus approval.",
+      "verify": "Verify provenance or checksum, version, executable, method, libraries and data paths with non-launching CLI output, then prove no audio, MIDI, OSC, JACK, file, asset, session, config, cache or export state changed."
+    }
   }
 ]

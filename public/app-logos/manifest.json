@@ -2248,5 +2248,10 @@
     "file": "opentoonz.svg",
     "source": "https://raw.githubusercontent.com/opentoonz/opentoonz/master/toonz/sources/toonz/icons/dark/misc/315x77/opentoonz_logo.svg",
     "sourceType": "official-project-asset"
+  },
+  "hydrogen": {
+    "file": "hydrogen.svg",
+    "source": "https://raw.githubusercontent.com/hydrogen-music/hydrogen/main/data/img/gray/icon.svg",
+    "sourceType": "official-project-asset"
   }
 }

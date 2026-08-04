@@ -1,0 +1,17 @@
+{
+  "index": 451,
+  "name": "Hydrogen",
+  "slug": "hydrogen",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/hydrogen-music/hydrogen",
+    "installUrl": "https://github.com/hydrogen-music/hydrogen/releases/latest"
+  },
+  "website": "https://hydrogen-music.org/",
+  "category": "Music & Streaming",
+  "vertical": "creative",
+  "description": "Pattern-based drum machine and software synthesizer with layered sample kits, song and pattern sequencing, JACK and MIDI integration, session management, and multitrack export.",
+  "accent": "#96C11F",
+  "logoUrl": "https://raw.githubusercontent.com/hydrogen-music/hydrogen/main/data/img/gray/icon.svg",
+  "logoSourceType": "official-project-asset"
+}
