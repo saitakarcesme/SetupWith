@@ -2523,5 +2523,10 @@
     "file": "railway-travel-planner.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/de.schmidhuberj.DieBahn.svg",
     "sourceType": "official-project-asset"
+  },
+  "shortwave-internet-radio": {
+    "file": "shortwave-internet-radio.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/de.haeckerfelix.Shortwave.svg",
+    "sourceType": "official-project-asset"
   }
 }

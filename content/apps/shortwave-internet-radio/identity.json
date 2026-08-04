@@ -1,0 +1,17 @@
+{
+  "index": 506,
+  "name": "Shortwave",
+  "slug": "shortwave-internet-radio",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/Shortwave",
+    "installUrl": "https://flathub.org/apps/de.haeckerfelix.Shortwave"
+  },
+  "website": "https://apps.gnome.org/Shortwave/",
+  "category": "Music & Streaming",
+  "vertical": "software",
+  "description": "GNOME internet-radio player with a large station directory, personal library, discovery, automatic track recognition and saving, recordings, and playback to supported network devices.",
+  "accent": "#FF7800",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/de.haeckerfelix.Shortwave.svg",
+  "logoSourceType": "official-project-asset"
+}

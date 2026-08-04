@@ -5940,5 +5940,57 @@
       "safety": "Never expose travel patterns, query providers unexpectedly, confuse stations or timezones, treat cached schedules as realtime truth, hide transfer assumptions, follow unreviewed booking links, purchase tickets, leak route details on a lock screen, or erase saved journeys without explicit privacy and retention review.",
       "verify": "Verify Railway source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove networks, providers, stations, routes, bookmarks, caches, links, calendars, notifications and location are unchanged."
     }
+  },
+  {
+    "index": 506,
+    "name": "Shortwave",
+    "slug": "shortwave-internet-radio",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/Shortwave",
+      "installUrl": "https://flathub.org/apps/de.haeckerfelix.Shortwave"
+    },
+    "website": "https://apps.gnome.org/Shortwave/",
+    "category": "Music & Streaming",
+    "vertical": "software",
+    "description": "GNOME internet-radio player with a large station directory, personal library, discovery, automatic track recognition and saving, recordings, and playback to supported network devices.",
+    "accent": "#FF7800",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/de.haeckerfelix.Shortwave.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "station_library_privacy",
+      "stream_network_policy",
+      "recording_retention",
+      "network_playback_targets"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "station directory provider, search terms, station identifiers, library interests, request logging, telemetry, and retention",
+      "stream URL origin, HTTPS or cleartext HTTP, redirects, playlists, final media hosts, tracking parameters, and mixed content",
+      "audio MIME type, codec, bitrate, malformed stream behavior, decoder sandbox, buffering, retry limits, and bandwidth",
+      "automatic track recognition, metadata accuracy, station-supplied titles, artwork endpoints, saved tracks, and privacy",
+      "recording start and stop authority, duration cap, destination, format, storage quota, partial files, naming, copyright, and retention",
+      "local network discovery, multicast traffic, Chromecast or other receiver identity, pairing, household privacy, and target confirmation",
+      "audio output route, initial volume, MPRIS controls, media keys, lock-screen metadata, notifications, sounds, and unexpected playback",
+      "library removal, recording deletion, cache and artwork cleanup, exports, backups, reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Shortwave from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Shortwave/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, library and recording counts, aggregate recording and cache bytes, station-directory policy, output route, last volume, network-device discovery state, and notification policy without listing station names, stream URLs, track titles, listening history, receiver names, network addresses or filenames. Install stable `de.haeckerfelix.Shortwave` from verified Flathub in the existing ownership scope. Do not compile from source, launch Shortwave, search the station directory, resolve or open a stream, recognize a track, download artwork, discover receivers, record audio, change MPRIS state, emit sound, or modify the library during setup.\n\nPreserve the station library, saved tracks, recordings, partial files, playback and volume state, output selection, receiver preferences, cache, notification choices, remotes, overrides and scope ownership. A radio library and listening history can disclose language, religion, politics or location; redact them from diagnostics and lock-screen metadata. Station names, titles, artwork and playlist contents are remote untrusted metadata. Installation must not clean caches, rename recordings, repair the library, resume playback or select a network speaker.\n\nBefore later playback, require station-directory provenance, request-retention terms, the initial stream URL, each playlist and redirect hop, final media hosts, HTTPS or explicit cleartext exception, MIME and codec expectations, bitrate and retry limits. Treat streams as hostile decoder input and never install codecs automatically. Track recognition and artwork may contact additional services; disclose endpoints and allow disabling. Recording requires explicit start and stop, destination, format, duration and byte quota, partial-file handling, retention and local copyright review. Network playback requires a bounded discovery window and confirmation of the exact receiver; do not cast based only on a friendly name.\n\nConfirm the physical output route and start at muted or low volume before any later audio. Verify provenance, app ID, origin, commit, runtime, executable, files and sandbox permissions offline. Prove no DNS request, directory search, stream connection, decoder, metadata lookup, artwork fetch, multicast discovery, receiver contact, recording, library write, MPRIS change, notification or audio occurred. On failure, rollback only the new Shortwave ref in its original scope; preserve shared runtimes, remotes, overrides, library, recordings, cache, output state and receiver preferences.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable de.haeckerfelix.Shortwave from verified Flathub in the existing scope without source builds, launch, directory searches, streams, decoders, recognition, artwork, receiver discovery, recording, MPRIS, notifications, audio, or library writes.",
+      "preserve": "all station-library entries, saved tracks, recordings, partial files, playback and volume state, output route, receiver preferences, cache, notifications, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose listening interests, trust remote metadata or redirects, permit silent cleartext streams, install codecs automatically, create retry storms, contact recognition services unexpectedly, record without legal and storage review, cast to an ambiguous device, or play sudden audio without endpoint, decoder, recording, network-target and output approval.",
+      "verify": "Verify Shortwave source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove directories, streams, decoders, metadata, artwork, discovery, receivers, recordings, libraries, MPRIS, notifications and audio are unchanged."
+    }
   }
 ]
