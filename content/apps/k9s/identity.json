@@ -1,0 +1,18 @@
+{
+  "index": 432,
+  "name": "K9s",
+  "slug": "k9s",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/derailed/k9s",
+    "installUrl": "https://k9scli.io/topics/install/"
+  },
+  "website": "https://k9scli.io/",
+  "category": "DevOps & Cloud",
+  "vertical": "software",
+  "description": "Terminal user interface for navigating, observing, and administering Kubernetes resources across kubeconfig contexts and namespaces.",
+  "accent": "#4369C7",
+  "simpleIconSlug": "kubernetes",
+  "logoUrl": "https://raw.githubusercontent.com/derailed/k9s/master/assets/logo.png",
+  "logoSourceType": "official-project-asset"
+}

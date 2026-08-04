@@ -1983,5 +1983,60 @@
       "safety": "Never resize or delete a profile, switch its runtime, mount host paths, expose ports, enable Kubernetes or GPU support, install companion CLIs, pull images, or change Docker and kubeconfig contexts without approval.",
       "verify": "Verify package provenance and version, then inspect profile status and configuration without starting workloads; if approved, test only a new named profile and confirm all prior runtimes, data, and contexts remain unchanged."
     }
+  },
+  {
+    "index": 432,
+    "name": "K9s",
+    "slug": "k9s",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/derailed/k9s",
+      "installUrl": "https://k9scli.io/topics/install/"
+    },
+    "website": "https://k9scli.io/",
+    "category": "DevOps & Cloud",
+    "vertical": "software",
+    "description": "Terminal user interface for navigating, observing, and administering Kubernetes resources across kubeconfig contexts and namespaces.",
+    "accent": "#4369C7",
+    "simpleIconSlug": "kubernetes",
+    "logoUrl": "https://raw.githubusercontent.com/derailed/k9s/master/assets/logo.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "read_only",
+      "default_namespace",
+      "refresh_rate",
+      "skin"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "Kubernetes context connection",
+      "namespace selection",
+      "cluster resource mutation",
+      "log and secret viewing",
+      "port forwarding",
+      "pod or node shell creation",
+      "plugin command execution",
+      "clipboard and screen-dump output"
+    ],
+    "prompt": "Set up K9s from the official derailed/k9s release and installation documentation (https://k9scli.io/topics/install/). Detect the operating system, architecture, shell, terminal capabilities, package managers, existing `k9s` and `kubectl` binaries, K9s configuration paths, and kubeconfig file locations without reading credential values. Prefer a checksummed release or the documented Homebrew, distribution, Winget, Scoop, or Chocolatey package. Avoid development `go install`, devmode Snap, Webi scripts, and third-party Docker Desktop extensions unless explicitly selected with their provenance risk understood.\n\nPreserve every kubeconfig file and current context, cluster and namespace selection, RBAC identity, K9s config, per-cluster settings, aliases, hotkeys, views, skins, plugins, logs, screen dumps, benchmarks, and port-forward state. Back up only files that an approved change will touch. Apply the requested read-only mode, default namespace, refresh rate, or skin without replacing unrelated YAML. Keep the port-forward address on loopback and node-shell feature gate disabled unless separately approved. Treat plugins as arbitrary host commands whose environment can contain cluster, context, namespace, resource, and kubeconfig details.\n\nDo not connect to any cluster until its server endpoint, current context, namespace, and authenticated identity are shown and approved. Never reveal kubeconfig tokens or certificates; view, decode, edit, delete, scale, restart, exec into, attach to, or port-forward a resource; create a shell pod; copy data through OSC52; run Popeye or image scans; execute a plugin; or change context automatically. Read-only mode reduces accidental mutation but does not prevent sensitive resource, log, or Secret visibility, so request permission before loading cluster data. Do not grant or broaden RBAC permissions for K9s.\n\nVerify package provenance, `k9s version`, executable path, and `k9s info` configuration locations while offline. Validate YAML syntax and plugin command definitions without executing them. If cluster access is approved, launch with an explicit context and namespace plus `--readonly`, observe only non-sensitive resource metadata, then exit without changing current kubeconfig context. Confirm audit evidence shows no API mutation, port forward, shell pod, plugin process, screen dump, clipboard transfer, or configuration write. Roll back only setup-owned config and the installed binary, restore backups, and preserve all kubeconfigs, contexts, RBAC bindings, and cluster resources.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install a checksummed K9s release from an official package channel, inspect kubeconfig locations and local configuration offline, and never connect to an implicit current context during setup.",
+      "preserve": "all kubeconfigs, current contexts, namespaces, RBAC identities, K9s configuration, aliases, hotkeys, views, skins, plugins, logs, screen dumps, benchmarks, and existing port forwards",
+      "safety": "Never mutate or expose cluster resources, view secrets or sensitive logs, execute plugins, create pod or node shells, start port forwards, copy through OSC52, or broaden RBAC without separate approval.",
+      "verify": "Verify binary provenance, version, configuration paths, and YAML offline; if access is approved, use an explicit context and namespace in read-only mode and prove no API mutation or local state change occurred."
+    }
   }
 ]

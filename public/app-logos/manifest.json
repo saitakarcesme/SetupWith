@@ -2153,5 +2153,10 @@
     "file": "colima.svg",
     "source": "https://raw.githubusercontent.com/abiosoft/colima/main/colima.png",
     "sourceType": "official-project-asset"
+  },
+  "k9s": {
+    "file": "k9s.svg",
+    "source": "https://raw.githubusercontent.com/derailed/k9s/master/assets/logo.png",
+    "sourceType": "official-project-asset"
   }
 }
