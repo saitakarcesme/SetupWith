@@ -1,0 +1,16 @@
+{
+  "index": 427,
+  "name": "Warp",
+  "slug": "warp-terminal",
+  "source": {
+    "type": "website",
+    "url": "https://www.warp.dev/",
+    "installUrl": "https://www.warp.dev/download"
+  },
+  "website": "https://www.warp.dev/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Cross-platform terminal and agentic development environment with structured command blocks, collaboration, workflows, and optional AI features.",
+  "accent": "#01A4FF",
+  "simpleIconSlug": "warp"
+}

@@ -1742,5 +1742,45 @@
       "safety": "Do not change the default terminal, edit shell startup files, enable SSH wrappers, install remote terminfo, load untrusted themes, replace fonts, add third-party repositories, or build from an unpinned Zig toolchain without separate review and approval.",
       "verify": "Confirm the package signature or distribution provenance and Ghostty version, validate the effective configuration with Ghostty's show-config action, launch one local shell, check TERM and resource discovery, reload the config, and prove no startup file, default-terminal setting, or remote host changed."
     }
+  },
+  {
+    "index": 427,
+    "name": "Warp",
+    "slug": "warp-terminal",
+    "source": {
+      "type": "website",
+      "url": "https://www.warp.dev/",
+      "installUrl": "https://www.warp.dev/download"
+    },
+    "website": "https://www.warp.dev/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Cross-platform terminal and agentic development environment with structured command blocks, collaboration, workflows, and optional AI features.",
+    "accent": "#01A4FF",
+    "simpleIconSlug": "warp",
+    "secrets": [],
+    "config": [
+      "startup_shell",
+      "telemetry_enabled",
+      "crash_reporting",
+      "settings_sync"
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": true,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Choose Warp's signed platform package or documented package-manager channel for the detected architecture, verify Metal, ConPTY, glibc, and graphics prerequisites, and do not add a Linux repository or replace a stable build with Warp Preview without approval.",
+      "preserve": "the current login shell, terminal profiles, imported themes and shortcuts, Warp local state, privacy choices, crash-reporting preference, account session, cloud-synced settings, workflows, agent profiles, command history, and default-terminal associations",
+      "safety": "Keep first launch signed out and offline-capable; stop before browser authentication, SSO, importing another terminal's settings, enabling telemetry or crash reports, syncing settings, indexing repositories, running an agent, sharing sessions, installing the Oz CLI, or changing PATH and default-terminal integration.",
+      "verify": "Confirm package signature, Warp version, architecture, graphics or ConPTY readiness, and selected startup shell; open a disposable local session, execute only a harmless printf command, inspect privacy toggles and network log, then verify no login, cloud sync, repository index, telemetry opt-in, or shell file change occurred."
+    }
   }
 ]

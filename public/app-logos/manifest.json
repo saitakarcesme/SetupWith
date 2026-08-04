@@ -2128,5 +2128,10 @@
     "file": "ghostty.svg",
     "source": "https://github.com/ghostty-org/website/blob/7093f052a2f35e0247fcb828ede644ed74a749a0/public/ghostty-logo.svg",
     "sourceType": "simple-icons-official-glyph"
+  },
+  "warp-terminal": {
+    "file": "warp-terminal.svg",
+    "source": "https://warp.dev",
+    "sourceType": "simple-icons-official-glyph"
   }
 }
