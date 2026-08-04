@@ -1,0 +1,17 @@
+{
+  "index": 467,
+  "name": "Pods",
+  "slug": "pods-container-manager",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/marhkb/pods",
+    "installUrl": "https://flathub.org/apps/com.github.marhkb.Pods"
+  },
+  "website": "https://github.com/marhkb/pods",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "GNOME frontend for local or remote Podman and Docker engines with image, container, pod, log, process, build, terminal, and lifecycle management.",
+  "accent": "#CDAB8F",
+  "logoUrl": "https://raw.githubusercontent.com/marhkb/pods/main/data/icons/com.github.marhkb.Pods.svg",
+  "logoSourceType": "official-project-asset"
+}

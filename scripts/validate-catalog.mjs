@@ -120,7 +120,7 @@ assert(consumerCatalog.length === 100, `Consumer expansion must contain 100 entr
 assert(firstPartyCatalog.length === 1, `First-party catalog must contain SetupWith; received ${firstPartyCatalog.length}`);
 assert(professionalCatalogOne.length === 40, `Professional catalog part one must contain 40 entries; received ${professionalCatalogOne.length}`);
 assert(professionalCatalogTwo.length === 41, `Professional catalog part two must contain 41 entries; received ${professionalCatalogTwo.length}`);
-assert(professionalCatalogThree.length === 84, `Professional catalog part three must contain 84 entries; received ${professionalCatalogThree.length}`);
+assert(professionalCatalogThree.length === 85, `Professional catalog part three must contain 85 entries; received ${professionalCatalogThree.length}`);
 assert(
   catalog.length === baseCatalog.length + additions.length + consumerCatalog.length + firstPartyCatalog.length +
     professionalCatalogOne.length + professionalCatalogTwo.length + professionalCatalogThree.length,

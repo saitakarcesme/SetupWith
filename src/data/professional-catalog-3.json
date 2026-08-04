@@ -3868,5 +3868,57 @@
       "safety": "Never execute or trust AppImages by filename, move or replace binaries, extract assets, create launchers, follow weak update endpoints, expose home, add handlers or aliases, update in place, or trash versions without provenance, hash, path, permission, retention, and rollback review.",
       "verify": "Verify Gear Lever source, app ID, origin, commit, runtime, files, executable and permissions via metadata, then prove AppImage bytes and modes, entries, icons, handlers, aliases, network state and managed directories are unchanged."
     }
+  },
+  {
+    "index": 467,
+    "name": "Pods",
+    "slug": "pods-container-manager",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/marhkb/pods",
+      "installUrl": "https://flathub.org/apps/com.github.marhkb.Pods"
+    },
+    "website": "https://github.com/marhkb/pods",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "GNOME frontend for local or remote Podman and Docker engines with image, container, pod, log, process, build, terminal, and lifecycle management.",
+    "accent": "#CDAB8F",
+    "logoUrl": "https://raw.githubusercontent.com/marhkb/pods/main/data/icons/com.github.marhkb.Pods.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "engine_connections",
+      "registry_policy",
+      "runtime_inventory",
+      "destructive_controls"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "Podman or Docker engine type, version, rootless or rootful mode, and socket ownership",
+      "local Unix socket or remote TCP endpoint, TLS verification, SSH tunnel, and authentication",
+      "containers, pods, images, volumes, networks, ports, health checks, and dependent workloads",
+      "registry search, credentials, auth files, image names, tags, digests, signatures, and pulls or pushes",
+      "Dockerfile or Containerfile build context, ignore rules, secrets, cache, and generated image",
+      "host mounts, devices, capabilities, privileged mode, user namespace, environment, and published ports",
+      "logs, processes, terminal exec sessions, clipboard, commands, and sensitive runtime output",
+      "bulk start, stop, pause, kill, delete, force removal, image or volume prune, and rollback"
+    ],
+    "prompt": "Set up Pods from its official repository and verified Flathub listing (https://github.com/marhkb/pods). Inventory Linux architecture, Flatpak scopes, existing Pods package and preferences, Podman and Docker installations, rootless and rootful sockets, remote engine definitions, TLS material, registry auth files, containers, pods, images, volumes, networks, build contexts and running workloads. Install stable `com.github.marhkb.Pods` from the verified Flathub origin in the existing ownership scope. Do not install a nightly artifact or source build, install or reconfigure a container engine, enable a socket, or add a connection during setup.\n\nInstall without launching Pods or connecting to any engine. Preserve connection definitions, certificates, SSH details, registry credentials, image stores, tags and digests, container filesystems, pods, volumes, networks, port mappings, health configuration, logs and preferences. Never display secret environment variables, registry tokens, labels, commands, mounted file contents or container logs in setup output. A Unix engine socket grants control equivalent to the engine owner; a rootful socket can cross the host privilege boundary. Do not expose either socket to the Flatpak until its exact path, owner, mode and engine scope are reviewed.\n\nDo not search registries, pull or push images, build a Containerfile, create or start workloads, open a terminal, execute commands, stream logs, map ports, mount host paths, attach devices, add capabilities or create privileged containers. Before any future engine mutation show endpoint identity, TLS verification, rootless/rootful status, exact image digest, registry trust, build context exclusions, container user, requested mounts, devices, capabilities, secrets, networks, published interfaces and cleanup boundary. Treat experimental Docker support independently from Podman and never reuse a connection assumption across engines.\n\nBulk lifecycle actions and pruning can destroy multiple workloads or irrecoverable volume data. Never stop, kill, delete, force-remove, untag or prune anything as a setup test. Verify Pods provenance, app ID, origin, installed commit, runtime, executable, files and declared permissions using Flatpak metadata offline. Compare preflight engine socket, process and object inventories and prove no connection, auth file, image, container, pod, volume, network, process, port, mount or network request changed. If verification fails, rollback only the newly installed Pods ref in its original scope; preserve shared runtimes, remotes, engine packages, sockets and all container state.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.github.marhkb.Pods from verified Flathub in the existing scope without nightly builds, source compilation, engine installation, socket enablement, launch, engine connections, or sandbox grants.",
+      "preserve": "all engine connections, sockets, TLS and SSH settings, registry auth, containers, pods, images, tags, digests, volumes, networks, ports, mounts, logs, build contexts, preferences, remotes, runtimes, and scope ownership",
+      "safety": "Never connect to unreviewed engines, expose rootful sockets, leak runtime data, pull or build images, execute commands, publish ports, mount host paths, grant privileges, mutate workloads, perform bulk actions, or prune state without endpoint, identity, digest, privilege, dependency, and recovery review.",
+      "verify": "Verify Pods source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove sockets, processes, connections, auth, images, containers, pods, volumes, networks, ports, mounts and network state are unchanged."
+    }
   }
 ]

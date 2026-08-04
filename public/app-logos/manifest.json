@@ -2328,5 +2328,10 @@
     "file": "gear-lever.svg",
     "source": "https://raw.githubusercontent.com/mijorus/gearlever/master/data/icons/hicolor/scalable/apps/it.mijorus.gearlever.svg",
     "sourceType": "official-project-asset"
+  },
+  "pods-container-manager": {
+    "file": "pods-container-manager.svg",
+    "source": "https://raw.githubusercontent.com/marhkb/pods/main/data/icons/com.github.marhkb.Pods.svg",
+    "sourceType": "official-project-asset"
   }
 }
