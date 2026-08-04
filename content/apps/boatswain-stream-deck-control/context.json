@@ -1,0 +1,41 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "15–30 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "device_binding",
+    "profile_action_graph",
+    "external_integration_auth",
+    "execution_guardrails"
+  ],
+  "secrets": [
+    {
+      "key": "boatswain_obs_websocket_credential",
+      "reference": "secret://boatswain/obs-websocket-credential"
+    },
+    {
+      "key": "boatswain_network_action_credential",
+      "reference": "secret://boatswain/network-action-credential"
+    }
+  ],
+  "permissionCheckpoints": [
+    "Stream Deck model, USB vendor and product ID, serial reference, firmware, key and dial layout, ownership, udev access, and intended operator",
+    "profile, page, folder and action graph, key coordinates, state transitions, multi-device mapping, active profile, and deterministic import",
+    "custom icon and sound source, license, checksum, image decoder limits, audio route, volume, duration, cache, and sensitive visual content",
+    "music-player commands, MPRIS destination, play, pause, skip and volume side effects, active session identity, and accidental control prevention",
+    "OBS WebSocket host, TLS, certificate, port, protocol version, scene and source scope, credential reference, replay protection, and least privilege",
+    "network request method, final URL, DNS and redirects, headers, body, credential reference, timeout, response cap, idempotency, and SSRF defense",
+    "file or application action, canonical target, arguments, environment, working directory, URI handlers, confirmation, process and privilege boundary",
+    "device disconnect, stuck key, repeated press, action cancellation, profile export, backup, reset, USB release, uninstall, and rollback"
+  ]
+}

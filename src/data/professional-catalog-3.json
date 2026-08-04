@@ -7155,5 +7155,60 @@
       "safety": "Never expose numeric secrets, infer two's complement without width, strip meaningful zeros, accept invalid digits, truncate overflow, confuse representations with domain validity, restore sensitive input, auto-copy output, overwrite the clipboard during tests, or grant unnecessary network and filesystem access.",
       "verify": "Verify Binary source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove inputs, parsers, conversions, width decisions, clipboards, recents, notifications, portals, filesystems and networks are unchanged."
     }
+  },
+  {
+    "index": 529,
+    "name": "Boatswain",
+    "slug": "boatswain-stream-deck-control",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/boatswain",
+      "installUrl": "https://flathub.org/apps/com.feaneron.Boatswain"
+    },
+    "website": "https://apps.gnome.org/Boatswain/",
+    "category": "Devices & Hardware",
+    "vertical": "software",
+    "description": "GNOME controller for Elgato Stream Deck hardware with pages, profiles, custom icons, media and sound actions, OBS control, network requests, score counters, file opening, and application launching.",
+    "accent": "#1A5FB4",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.feaneron.Boatswain.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "boatswain_obs_websocket_credential",
+      "boatswain_network_action_credential"
+    ],
+    "config": [
+      "device_binding",
+      "profile_action_graph",
+      "external_integration_auth",
+      "execution_guardrails"
+    ],
+    "installTime": "15–30 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "Stream Deck model, USB vendor and product ID, serial reference, firmware, key and dial layout, ownership, udev access, and intended operator",
+      "profile, page, folder and action graph, key coordinates, state transitions, multi-device mapping, active profile, and deterministic import",
+      "custom icon and sound source, license, checksum, image decoder limits, audio route, volume, duration, cache, and sensitive visual content",
+      "music-player commands, MPRIS destination, play, pause, skip and volume side effects, active session identity, and accidental control prevention",
+      "OBS WebSocket host, TLS, certificate, port, protocol version, scene and source scope, credential reference, replay protection, and least privilege",
+      "network request method, final URL, DNS and redirects, headers, body, credential reference, timeout, response cap, idempotency, and SSRF defense",
+      "file or application action, canonical target, arguments, environment, working directory, URI handlers, confirmation, process and privilege boundary",
+      "device disconnect, stuck key, repeated press, action cancellation, profile export, backup, reset, USB release, uninstall, and rollback"
+    ],
+    "prompt": "Set up Boatswain from its official project and verified Flathub listing (https://apps.gnome.org/Boatswain/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, compatible Stream Deck count by model class, USB-access declaration, profile, page and action counts by action type, custom-asset byte totals, OBS and network credential-reference presence, sandbox overrides and backup coverage without opening devices or revealing serials, key labels, icons, sounds, URLs, scene names, file paths, commands, request bodies, tokens or operator workflows. Install stable `com.feaneron.Boatswain` from verified Flathub in the existing ownership scope. Do not compile from source, launch Boatswain, claim a USB interface, illuminate a key, change a profile, decode an icon, play sound, control media or OBS, send a network request, open a file, launch an application, modify a score or execute any configured action during setup.\n\nPreserve every device binding, profile, page, key position, action graph, icon, sound, counter, integration setting, USB rule, permission, remote, override and scope ownership. A Stream Deck press can trigger irreversible external behavior; profile imports are executable configuration, not harmless themes. Redact device serials, endpoints, credentials and action payloads. Installation must not attach the first matching USB device, remap active controls, auto-run an action, switch OBS scenes, alter media playback or install broad udev rules.\n\nBefore later device use, match vendor ID, product ID, model, key layout and a locally retained serial reference to the intended operator. Preview a complete profile diff and reject actions whose coordinates do not exist on that model. Treat custom icons as untrusted image input and sound effects as controlled audio with reviewed route, duration and low initial volume. Debounce repeated keys, cap action rate and define disconnect and cancellation behavior. Validate only with a synthetic profile and mocked endpoints while the real device remains unclaimed.\n\nFor OBS, pin host, protocol, TLS certificate and narrowly scoped credential; identify each scene or source mutation. For network actions, require method, final HTTPS URL, redirect rule, headers, body, timeout, response cap, idempotency and SSRF denial. File and application actions need a canonical target, argument and environment preview with no shell interpolation. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no USB claim, display write, profile change, asset decode, audio, MPRIS, OBS, network, file, process or counter mutation occurred. On failure, rollback only the new Boatswain ref in its original scope; preserve shared runtimes, remotes, overrides, devices, profiles, assets, integrations, rules and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.feaneron.Boatswain from verified Flathub in the existing scope without source builds, launch, USB claims, device displays, profile changes, asset decoding, audio, media, OBS, networks, files, applications, scores, or actions.",
+      "preserve": "all device bindings, profiles, pages, key positions, action graphs, icons, sounds, counters, integration settings, USB rules, permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never treat profiles as passive, expose device serials or credentials, attach the wrong deck, remap live controls, install broad USB rules, trust custom assets, play sudden audio, mutate OBS or media accidentally, permit SSRF, interpolate commands through a shell, or repeat stuck-key actions.",
+      "verify": "Verify Boatswain source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove USB devices, displays, profiles, assets, audio, media, OBS, networks, files, processes and counters are untouched."
+    }
   }
 ]

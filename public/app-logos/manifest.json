@@ -2638,5 +2638,10 @@
     "file": "binary-base-converter.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.fizzyizzy05.binary.svg",
     "sourceType": "official-project-asset"
+  },
+  "boatswain-stream-deck-control": {
+    "file": "boatswain-stream-deck-control.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/com.feaneron.Boatswain.svg",
+    "sourceType": "official-project-asset"
   }
 }
