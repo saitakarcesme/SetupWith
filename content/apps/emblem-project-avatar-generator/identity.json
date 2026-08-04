@@ -1,0 +1,17 @@
+{
+  "index": 540,
+  "name": "Emblem",
+  "slug": "emblem-project-avatar-generator",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/design/emblem",
+    "installUrl": "https://flathub.org/apps/org.gnome.design.Emblem"
+  },
+  "website": "https://apps.gnome.org/Emblem/",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "GNOME project-avatar generator that turns a selected symbolic icon into a distinctive visual identity for Matrix rooms and Git forges.",
+  "accent": "#E66100",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.design.Emblem.svg",
+  "logoSourceType": "official-project-asset"
+}

@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Intermediate",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "symbolic_icon_source",
+    "color_and_contrast",
+    "avatar_geometry",
+    "export_integrity"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "symbolic icon source, name, author, package, version, checksum, license, modification rights, trademark, and project association",
+    "project, Matrix room or forge identity, naming collision, impersonation risk, existing avatar ownership, community approval, and accessibility needs",
+    "foreground and background colors, gradient if supported, contrast, light and dark contexts, color-vision deficiency, and monochrome fallback",
+    "icon scale, padding, alignment, stroke weight, square and circular crop safe area, small-size legibility, and high-density rendering",
+    "output format and dimensions offered by the app, transparency, color profile, metadata, antialiasing, deterministic rendering, and checksum",
+    "destination directory, filename, existing asset collision, symbolic links, permissions, atomic write, export preview, and free space",
+    "Matrix room or Git forge upload boundary, network absence, account authorization, cache invalidation, propagation delay, and no automatic publishing",
+    "source attribution, asset replacement, old-avatar restoration, generated-file deletion, app reset, uninstall, backups, and rollback"
+  ]
+}

@@ -2693,5 +2693,10 @@
     "file": "elastic-spring-animation-designer.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.Elastic.svg",
     "sourceType": "official-project-asset"
+  },
+  "emblem-project-avatar-generator": {
+    "file": "emblem-project-avatar-generator.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.design.Emblem.svg",
+    "sourceType": "official-project-asset"
   }
 }
