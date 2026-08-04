@@ -2488,5 +2488,10 @@
     "file": "obfuscate-image-redaction.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.belmoussaoui.Obfuscate.svg",
     "sourceType": "official-project-asset"
+  },
+  "paper-clip-pdf-metadata": {
+    "file": "paper-clip-pdf-metadata.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.diegoivan.pdf_metadata_editor.svg",
+    "sourceType": "official-project-asset"
   }
 }

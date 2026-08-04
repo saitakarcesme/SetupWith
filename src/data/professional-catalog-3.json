@@ -5566,5 +5566,59 @@
       "safety": "Never inspect without authority, overwrite originals, miss indirect identifiers, trust blur or pixelation, retain underlying pixels or metadata, ignore animation or pages, or share without owner, subject, disclosure, region, flattening, OCR/barcode, second-review, destination, retention, and checksum verification.",
       "verify": "Verify Obfuscate source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove images, portals, temporary data, censoring, clipboard, exports, metadata, networks and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 499,
+    "name": "Paper Clip",
+    "slug": "paper-clip-pdf-metadata",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/Diego-Ivan/Paper-Clip",
+      "installUrl": "https://flathub.org/apps/io.github.diegoivan.pdf_metadata_editor"
+    },
+    "website": "https://apps.gnome.org/PdfMetadataEditor/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "PDF metadata editor for title, author, creator, producer, creation and modification dates, keywords, encrypted documents, and synchronization between PDF fields and Dublin Core XMP metadata.",
+    "accent": "#1C71D8",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.diegoivan.pdf_metadata_editor.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "paper_clip_pdf_password"
+    ],
+    "config": [
+      "metadata_authority",
+      "encryption_boundary",
+      "signature_integrity",
+      "sanitization_scope"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "PDF owner, authoritative copy, checksum, classification, retention, edit authorization, backup, and output destination",
+      "title, author, creator, producer, creation and modification dates, keywords, custom fields, PDF Info, XMP, and Dublin Core mapping",
+      "encrypted document, user or owner password, permission flags, secret storage, decrypted temporary data, and re-encryption expectations",
+      "digital signatures, certification level, timestamps, incremental updates, signed byte ranges, validation status, and invalidation consent",
+      "malformed PDF objects, embedded files, JavaScript, forms, annotations, links, fonts, parser limits, and no-render processing",
+      "metadata removal versus true sanitization, historical revisions, thumbnails, attachments, comments, file-system metadata, and backups",
+      "date format, timezone, encoding, Unicode normalization, keyword separators, conflicting schemas, validation, and round-trip behavior",
+      "save-as versus overwrite, atomic write, permissions, ownership, checksum comparison, viewer compatibility, audit record, and rollback"
+    ],
+    "prompt": "Set up Paper Clip from its official repository and verified Flathub listing (https://apps.gnome.org/PdfMetadataEditor/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, approved PDF roots, document count, encrypted-file presence, signature-policy presence and output conventions without opening PDFs, extracting metadata, rendering pages or reading passwords. Install stable `io.github.diegoivan.pdf_metadata_editor` from verified Flathub—the project states Flathub is its only official distribution—in the existing ownership scope. Do not compile from source, launch Paper Clip, parse a PDF, unlock a document, change metadata or save output during setup.\n\nPreserve every source PDF byte-for-byte, including encryption, signatures, permissions, Info dictionary, XMP packets, embedded files, annotations and timestamps. Before a future edit require document ownership, exact checksum, authoritative copy, approved output path and a protected backup. Never overwrite the sole original. Treat malformed PDF structure as untrusted parser input; apply file-size/object/decompression limits and do not execute JavaScript, follow links, extract attachments or render content merely to edit metadata.\n\nDefine which schema is authoritative for title, author, creator, producer, creation/modification dates and keywords. Paper Clip can synchronize Dublin Core XMP with PDF equivalents, so preview every field-level change, encoding, timezone and conflict before write. Changing any byte can invalidate a digital signature or certification; inspect signed byte ranges and validation state first, and stop unless the signature owner explicitly accepts invalidation. For encrypted documents, request the minimum required password through a protected prompt, never log it, and ensure temporary decrypted content is not persisted.\n\nMetadata editing is not complete document sanitization. Removed values may remain in incremental revisions, backups, thumbnails, attachments, comments, application histories or filesystem metadata. Do not claim anonymity from a clean visible field list. Save atomically to a new file, reopen with two independent readers, compare page count and structural checks, validate intended metadata and re-check signatures/encryption. Verify app provenance, ID, origin, runtime, executable, files and permissions offline. Prove no PDF read, password access, metadata parse, signature check, temporary file, save or filesystem state changed. On failure, rollback only the new Paper Clip ref; preserve runtimes, remotes, overrides and all documents.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.github.diegoivan.pdf_metadata_editor from verified Flathub in the existing scope without unofficial packages, source builds, launch, PDF parsing or rendering, password access, metadata edits, signature checks, temporary files, or saves.",
+      "preserve": "all PDF bytes, encryption, signatures, permissions, Info and XMP metadata, Dublin Core fields, attachments, annotations, timestamps, backups, ownership, remotes, overrides, and scope ownership",
+      "safety": "Never trust PDF input, overwrite originals, expose passwords, sync conflicting schemas silently, invalidate signatures without consent, confuse metadata editing with sanitization, or save without ownership, checksum, backup, schema, encryption, signature, parser, atomic-write, and independent-reader review.",
+      "verify": "Verify Paper Clip source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove PDFs, passwords, metadata, signatures, temporary data, saves and filesystem state are unchanged."
+    }
   }
 ]

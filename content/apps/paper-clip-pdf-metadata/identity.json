@@ -1,0 +1,17 @@
+{
+  "index": 499,
+  "name": "Paper Clip",
+  "slug": "paper-clip-pdf-metadata",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/Diego-Ivan/Paper-Clip",
+    "installUrl": "https://flathub.org/apps/io.github.diegoivan.pdf_metadata_editor"
+  },
+  "website": "https://apps.gnome.org/PdfMetadataEditor/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "PDF metadata editor for title, author, creator, producer, creation and modification dates, keywords, encrypted documents, and synchronization between PDF fields and Dublin Core XMP metadata.",
+  "accent": "#1C71D8",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.diegoivan.pdf_metadata_editor.svg",
+  "logoSourceType": "official-project-asset"
+}

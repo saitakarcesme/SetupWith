@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "metadata_authority",
+    "encryption_boundary",
+    "signature_integrity",
+    "sanitization_scope"
+  ],
+  "secrets": [
+    {
+      "key": "paper_clip_pdf_password",
+      "reference": "secret://paper/clip-pdf-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "PDF owner, authoritative copy, checksum, classification, retention, edit authorization, backup, and output destination",
+    "title, author, creator, producer, creation and modification dates, keywords, custom fields, PDF Info, XMP, and Dublin Core mapping",
+    "encrypted document, user or owner password, permission flags, secret storage, decrypted temporary data, and re-encryption expectations",
+    "digital signatures, certification level, timestamps, incremental updates, signed byte ranges, validation status, and invalidation consent",
+    "malformed PDF objects, embedded files, JavaScript, forms, annotations, links, fonts, parser limits, and no-render processing",
+    "metadata removal versus true sanitization, historical revisions, thumbnails, attachments, comments, file-system metadata, and backups",
+    "date format, timezone, encoding, Unicode normalization, keyword separators, conflicting schemas, validation, and round-trip behavior",
+    "save-as versus overwrite, atomic write, permissions, ownership, checksum comparison, viewer compatibility, audit record, and rollback"
+  ]
+}
