@@ -2802,5 +2802,60 @@
       "safety": "Never execute layout commands, load or authorize plugins, expose terminal data, attach to or terminate sessions, clear history, enable automatic shell startup, or mix installation methods without explicit review and approval.",
       "verify": "Verify checksum or provenance, version, executable, method and PATH with non-launching commands, then prove sessions, processes, sockets, panes, plugins, config, profiles, layouts, clipboard and remote connections did not change."
     }
+  },
+  {
+    "index": 447,
+    "name": "MusicBrainz Picard",
+    "slug": "musicbrainz-picard",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/metabrainz/picard",
+      "installUrl": "https://picard.musicbrainz.org/downloads/"
+    },
+    "website": "https://picard.musicbrainz.org/",
+    "category": "Music & Streaming",
+    "vertical": "software",
+    "description": "Cross-platform music tagger that identifies recordings with MusicBrainz and AcoustID metadata, embeds cover art, and organizes audio libraries through configurable scripts.",
+    "accent": "#BA478F",
+    "simpleIconSlug": "musicbrainz",
+    "logoUrl": "https://raw.githubusercontent.com/metabrainz/picard/master/resources/images/128x128/org.musicbrainz.Picard.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "metadata",
+      "file_naming",
+      "cover_art",
+      "fingerprinting"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "music folder or removable-media access",
+      "tag, embedded image, and audio-file writes",
+      "file rename, move, overwrite, and empty-directory deletion",
+      "MusicBrainz and cover-art network lookups",
+      "AcoustID fingerprint calculation, lookup, and submission",
+      "plugin repository access, installation, enablement, and updates",
+      "file-naming and metadata script changes",
+      "account credentials, API keys, and collection submission"
+    ],
+    "prompt": "Set up MusicBrainz Picard from its official downloads page (https://picard.musicbrainz.org/downloads/). Detect Windows, macOS, or Linux, architecture, package managers, an existing stable or portable installation, configuration, plugins, scripts, naming presets, cache, browser integration, fpcalc, MusicBrainz account, AcoustID API key, and configured music directories. Install the current stable signed package or distribution package; do not choose a beta, daily PPA, unpinned source build, or a second portable copy without approval.\n\nLaunch with no music folders or files loaded. Preserve the entire audio library, filenames, directory layout, timestamps, permissions, extended attributes, tags, embedded artwork, sidecar images and logs, playlists, cues, configuration, naming and metadata scripts, plugins, cache, credentials, API keys, collections, and pending edits. Keep rename files, move files, move additional files, overwrite existing files, delete empty directories, tag writing, cover-art embedding, fingerprint storage, browser commands, and submission features disabled during setup. Do not let the first-run wizard select or reorganize a real library.\n\nPicard's Save operation can rewrite audio metadata, embed images, rename files, move them into generated directories, move wildcard-matched sidecars, overwrite destinations, and remove emptied source directories. Before any later write, require a backup or verified copy, hash the source files, preview old and new tags plus every destination path, check path-length and filesystem compatibility, and obtain approval for the exact batch. Treat file-naming scripts and plugins as code. Never install or enable a registry, URL, local, or third-party plugin without reviewing its source, version and permissions; installed plugins are enabled automatically. Never expose credentials in logs, submit a collection, or send acoustic fingerprints. `Scan` invokes fpcalc and contacts AcoustID for lookup, while Submit uploads fingerprints tied to matched recordings; both require explicit network and privacy approval.\n\nVerify publisher or package provenance, artifact checksum where published, application version, executable, configuration path, install method, bundled fpcalc path, and plugin baseline. Use only a setup-created copy of a small freely redistributable audio sample when functional validation is requested; record before-and-after hashes and delete no source. Otherwise verify startup and preferences without loading media. Confirm no library file, directory, tag, artwork, playlist, cue, cache, plugin, script, account, API key, fingerprint, collection, browser, or network state changed. Roll back only the installed application and setup-owned shortcuts, preserving every existing Picard setting and music asset.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the current stable official or distribution Picard package and launch empty, without selecting a music library, enabling write operations, installing plugins, authenticating, fingerprinting, or submitting data.",
+      "preserve": "all audio files, paths, timestamps, permissions, attributes, tags, artwork, sidecars, playlists, cues, configuration, scripts, plugins, caches, credentials, API keys, collections, pending edits, and existing installation ownership",
+      "safety": "Never save, rename, move, overwrite or delete library content; run scripts or plugins; scan, look up or submit fingerprints; embed art; expose credentials; or reorganize a real library without a reviewed preview, verified backup and explicit approval.",
+      "verify": "Verify provenance, checksum, version, executable, config, method, fpcalc and plugins without real media, then prove no library, metadata, artwork, sidecar, plugin, script, credential, fingerprint, collection, browser or network state changed."
+    }
   }
 ]
