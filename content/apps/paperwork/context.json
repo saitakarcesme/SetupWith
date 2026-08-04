@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "work_directory",
+    "scanner",
+    "ocr",
+    "index"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "document work-directory selection, creation, and migration",
+    "USB, network, or Wi-Fi scanner discovery and page acquisition",
+    "OCR language, hOCR generation, orientation, and re-indexing",
+    "page crop, rotation, color correction, reorder, and deletion",
+    "document import, merge, split, label, export, and deletion",
+    "search index, automatic-label learning, and metadata rebuild",
+    "Nextcloud, Syncthing, shared-folder, and conflict handling",
+    "scanner report, diagnostic, scanned-page, and personal-data submission"
+  ]
+}

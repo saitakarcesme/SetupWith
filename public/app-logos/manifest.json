@@ -2298,5 +2298,10 @@
     "file": "openshot.svg",
     "source": "https://raw.githubusercontent.com/OpenShot/openshot-qt/develop/xdg/openshot-qt.svg",
     "sourceType": "official-project-asset"
+  },
+  "paperwork": {
+    "file": "paperwork.svg",
+    "source": "https://gitlab.gnome.org/World/OpenPaperwork/paperwork/-/raw/master/paperwork-gtk/src/paperwork_gtk/data/paperwork.svg",
+    "sourceType": "official-project-asset"
   }
 }

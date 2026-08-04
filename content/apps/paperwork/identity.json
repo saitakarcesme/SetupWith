@@ -1,0 +1,17 @@
+{
+  "index": 461,
+  "name": "Paperwork",
+  "slug": "paperwork",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/OpenPaperwork/paperwork",
+    "installUrl": "https://www.openpaper.work/en/download/linux"
+  },
+  "website": "https://www.openpaper.work/en/",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Personal document manager that scans or imports papers, performs OCR and orientation detection, builds a searchable index, learns labels, and stores portable JPEG, hOCR, and PDF files locally.",
+  "accent": "#3584E4",
+  "logoUrl": "https://gitlab.gnome.org/World/OpenPaperwork/paperwork/-/raw/master/paperwork-gtk/src/paperwork_gtk/data/paperwork.svg",
+  "logoSourceType": "official-project-asset"
+}
