@@ -2253,5 +2253,10 @@
     "file": "hydrogen.svg",
     "source": "https://raw.githubusercontent.com/hydrogen-music/hydrogen/main/data/img/gray/icon.svg",
     "sourceType": "official-project-asset"
+  },
+  "qownnotes": {
+    "file": "qownnotes.svg",
+    "source": "https://raw.githubusercontent.com/pbek/QOwnNotes/main/icons/icon.svg",
+    "sourceType": "official-project-asset"
   }
 }

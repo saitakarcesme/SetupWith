@@ -1,0 +1,17 @@
+{
+  "index": 452,
+  "name": "QOwnNotes",
+  "slug": "qownnotes",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/pbek/QOwnNotes",
+    "installUrl": "https://www.qownnotes.org/installation/"
+  },
+  "website": "https://www.qownnotes.org/",
+  "category": "Productivity",
+  "vertical": "work",
+  "description": "Local-first Markdown note editor with multiple note folders, backlinks, scripting, optional Nextcloud or ownCloud sharing and history, CalDAV tasks, encryption, and web companion features.",
+  "accent": "#8E44AD",
+  "logoUrl": "https://raw.githubusercontent.com/pbek/QOwnNotes/main/icons/icon.svg",
+  "logoSourceType": "official-project-asset"
+}

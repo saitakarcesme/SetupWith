@@ -3073,5 +3073,59 @@
       "safety": "Never seize audio hardware, start JACK, connect audio or MIDI, expose OSC, replace projects or kits, download untrusted samples, alter sessions, or export and overwrite media without an exact device, graph, asset, license, and destination preview plus approval.",
       "verify": "Verify provenance or checksum, version, executable, method, libraries and data paths with non-launching CLI output, then prove no audio, MIDI, OSC, JACK, file, asset, session, config, cache or export state changed."
     }
+  },
+  {
+    "index": 452,
+    "name": "QOwnNotes",
+    "slug": "qownnotes",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/pbek/QOwnNotes",
+      "installUrl": "https://www.qownnotes.org/installation/"
+    },
+    "website": "https://www.qownnotes.org/",
+    "category": "Productivity",
+    "vertical": "work",
+    "description": "Local-first Markdown note editor with multiple note folders, backlinks, scripting, optional Nextcloud or ownCloud sharing and history, CalDAV tasks, encryption, and web companion features.",
+    "accent": "#8E44AD",
+    "logoUrl": "https://raw.githubusercontent.com/pbek/QOwnNotes/main/icons/icon.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "note_folders",
+      "cloud_accounts",
+      "scripting",
+      "encryption"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "note folder, attachment, trash, and version access",
+      "Nextcloud or ownCloud account and QOwnNotesAPI connection",
+      "note sharing, public-link creation, and CalDAV task changes",
+      "external sync-client folder selection and conflict handling",
+      "script repository access, installation, and custom-action execution",
+      "PGP encryption, decryption, key, and plaintext handling",
+      "browser companion, AI, LanguageTool, and Markdown LSP integration",
+      "import, export, attachment cleanup, and settings reset"
+    ],
+    "prompt": "Set up QOwnNotes from its official installation page (https://www.qownnotes.org/installation/). Detect Windows, macOS, or Linux, architecture, package managers, existing native, portable, AppImage, Snap or Flatpak installation, settings sessions, note folders, external sync clients, Nextcloud or ownCloud accounts, QOwnNotesAPI, CalDAV tasks, scripts, browser companion, PGP tools, AI, LanguageTool and Markdown LSP integrations. Install one stable signed or repository-verified package matching the existing ownership model. Do not add a package repository, switch confinement models, enable automatic updates, or migrate portable settings without approval.\n\nDo not launch the first-run wizard or select a note folder during installation. Preserve every Markdown note, filename, directory, attachment, embedded image, link, tag, bookmark, workspace, layout, search, trash item, version, sync conflict, task, share, script, encryption setting, key association, account and application preference. QOwnNotes stores notes as ordinary local files and does not itself synchronize notes or attachments; never claim that connecting QOwnNotesAPI replaces the user's Nextcloud, ownCloud or other filesystem sync client. Do not move a folder into a sync root or enable sharing merely to verify setup.\n\nTreat community scripts and custom actions as executable code with potential file and network access. Do not browse a script repository, install or update a script, invoke `--action`, enable a browser extension, connect AI or grammar services, or launch an LSP before reviewing source, endpoints and data scope. Never use `--clear-settings`. Avoid `--dump-settings` because it can expose environment and account details. `--decrypt-note` prints plaintext, and a decrypt password supplied as an argument can appear in process lists and shell history; never decrypt a real note, print keys or passwords, copy plaintext to the clipboard, or store decrypted output.\n\nBefore any later cloud connection, show server URL, TLS validation, username, requested paths, sharing behavior, CalDAV collections and credential storage. Never create public links, restore or delete server trash, overwrite note versions, resolve sync conflicts, alter tasks, clean orphaned attachments, import notebooks, or bulk-export without a complete diff and backup. Verify publisher or package provenance, checksum where available, `QOwnNotes --version`, executable, method and settings location without starting a normal instance. Confirm no notes, folders, attachments, profiles, accounts, network requests, scripts, plaintext, clipboard, sync state or server data changed. Roll back only the installed application and setup-owned shortcuts.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install one stable signed or verified QOwnNotes package matching existing ownership, without launching setup, selecting note folders, adding repositories, migrating settings, connecting cloud accounts, enabling updates, or installing integrations.",
+      "preserve": "all notes, paths, attachments, links, tags, workspaces, layouts, searches, trash, versions, conflicts, tasks, shares, sync-client state, scripts, encryption and keys, accounts, integrations, settings, and existing installation ownership",
+      "safety": "Never expose settings or plaintext, decrypt real notes, run scripts or actions, enable AI or browser access, connect cloud or CalDAV, create shares, restore or delete versions, resolve conflicts, clean attachments, import, export, or reset settings without a scoped review, backup, and approval.",
+      "verify": "Verify provenance or checksum, version, executable, method and settings location without a normal launch, then prove no note, attachment, account, script, plaintext, clipboard, network, sync-client or server state changed."
+    }
   }
 ]

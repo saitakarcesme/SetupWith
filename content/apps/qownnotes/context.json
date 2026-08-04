@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "note_folders",
+    "cloud_accounts",
+    "scripting",
+    "encryption"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "note folder, attachment, trash, and version access",
+    "Nextcloud or ownCloud account and QOwnNotesAPI connection",
+    "note sharing, public-link creation, and CalDAV task changes",
+    "external sync-client folder selection and conflict handling",
+    "script repository access, installation, and custom-action execution",
+    "PGP encryption, decryption, key, and plaintext handling",
+    "browser companion, AI, LanguageTool, and Markdown LSP integration",
+    "import, export, attachment cleanup, and settings reset"
+  ]
+}
