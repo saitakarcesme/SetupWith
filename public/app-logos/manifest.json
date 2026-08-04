@@ -2578,5 +2578,10 @@
     "file": "tangram-persistent-web-apps.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Tangram.svg",
     "sourceType": "official-project-asset"
+  },
+  "sessions-pomodoro-focus": {
+    "file": "sessions-pomodoro-focus.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/com.pojtinger.felicitas.Sessions.svg",
+    "sourceType": "official-project-asset"
   }
 }

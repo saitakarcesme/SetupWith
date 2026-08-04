@@ -6517,5 +6517,57 @@
       "safety": "Never trust titles or favicons as identity, confuse Unicode hosts, merge account containers, leak SSO cookies, act as the wrong account, grant broad web permissions, restore sensitive tabs unexpectedly, trust remote content, follow hidden redirects, open downloads automatically, expose lock-screen messages, or run unbounded background apps.",
       "verify": "Verify Tangram source, app ID, origin, commit, WebKit runtime, executable, files and permissions offline, then prove networks, tabs, sessions, cookies, storage, service workers, authentication, web permissions, downloads, URI handlers, backgrounds, notifications and state are unchanged."
     }
+  },
+  {
+    "index": 517,
+    "name": "Sessions",
+    "slug": "sessions-pomodoro-focus",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/pojntfx/sessions",
+      "installUrl": "https://flathub.org/apps/com.pojtinger.felicitas.Sessions"
+    },
+    "website": "https://apps.gnome.org/Sessions/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Visual GNOME Pomodoro timer for customizable focus intervals, progress tracking, regular breaks, and a distraction-free desktop or mobile workflow.",
+    "accent": "#E66100",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.pojtinger.felicitas.Sessions.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "work_interval_plan",
+      "break_policy",
+      "notification_and_audio",
+      "progress_privacy"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Intermediate",
+    "permissionCheckpoints": [
+      "work, short-break and long-break durations, cycle count, auto-start behavior, overtime policy, presets, and intended routine",
+      "running-session phase, elapsed and remaining time, paused or alarming state, completion history, streaks, and crash recovery",
+      "monotonic versus wall clock, suspend and resume, sleep, missed alarms, clock correction, timezone and daylight-saving behavior",
+      "desktop and lock-screen notifications, message detail, sound theme, alarm repetition, output device, volume, do-not-disturb, and accessibility",
+      "progress and history sensitivity, task-title avoidance, diagnostic redaction, retention, export, deletion, and shared-device exposure",
+      "background execution, notification portal, audio access, power inhibition, startup behavior, resource use, and least privilege",
+      "break reminders, motion or rest assumptions, interruption handling, accessibility needs, and non-medical productivity boundary",
+      "preset changes, history reset, active-timer cancellation, data backups, app reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Sessions from its official project and verified Flathub listing (https://apps.gnome.org/Sessions/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, configured work and break duration ranges, preset count, current phase, running or paused state, aggregate elapsed and remaining time, completion-history count, notification and audio policy, sandbox overrides and backup coverage without revealing task names, routines, productivity patterns, timestamps, notification text or private history. Install stable `com.pojtinger.felicitas.Sessions` from verified Flathub in the existing ownership scope. Do not compile from source, launch Sessions, start, pause, resume, cancel or complete a timer, advance a phase, restore an alarm, play sound, show a notification, alter progress, or inhibit sleep during setup.\n\nPreserve the exact active-session phase, elapsed and remaining values, paused or alarming state, work and break presets, cycle policy, completion history, notification choices, audio route, remotes, overrides and scope ownership. A focus timer is personal routine data; redact detailed timing and history from diagnostics. Installation must not reinterpret an overdue alarm, auto-start a break, award progress, reset a streak or replace an active session with defaults. Sessions supports a work-rest method, not medical, occupational-health or guaranteed-productivity advice.\n\nBefore later timer use, define work, short-break and long-break durations, cycle count, automatic transitions, overtime and missed-alarm behavior. Specify whether timing uses a monotonic clock across suspend or reconciles wall-clock time after resume; timezone and daylight-saving changes must not silently add or remove a session. Review desktop and lock-screen preview text, sound, repeat count, output device, initial volume and do-not-disturb interaction. Break guidance must accommodate mobility, sensory and attention needs without making health claims. Test lifecycle behavior only with a disposable short-duration session that is clearly excluded from real history.\n\nVerify provenance, app ID, origin, commit, runtime, executable, files and static sandbox permissions offline. Prove no timer transition, elapsed-state write, history mutation, notification, audio, power inhibition, background process, portal or network request occurred. On failure, rollback only the new Sessions ref in its original scope; preserve shared runtimes, remotes, overrides, active timing state, presets, history, notification and audio settings, and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.pojtinger.felicitas.Sessions from verified Flathub in the existing scope without source builds, launch, timer transitions, alarm restoration, audio, notifications, progress writes, sleep inhibition, portals, or networks.",
+      "preserve": "the exact active phase and timing state, pause or alarm state, work and break presets, cycle policy, history, notification and audio choices, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose routine history, replace an active session, reinterpret overdue alarms, confuse monotonic and wall-clock time, auto-start phases unexpectedly, award false progress, bypass do-not-disturb, play sudden audio, make health claims, or impose inaccessible break guidance.",
+      "verify": "Verify Sessions source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove timers, elapsed state, history, notifications, audio, power inhibition, backgrounds, portals and networks are unchanged."
+    }
   }
 ]

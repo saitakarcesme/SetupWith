@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Intermediate",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "work_interval_plan",
+    "break_policy",
+    "notification_and_audio",
+    "progress_privacy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "work, short-break and long-break durations, cycle count, auto-start behavior, overtime policy, presets, and intended routine",
+    "running-session phase, elapsed and remaining time, paused or alarming state, completion history, streaks, and crash recovery",
+    "monotonic versus wall clock, suspend and resume, sleep, missed alarms, clock correction, timezone and daylight-saving behavior",
+    "desktop and lock-screen notifications, message detail, sound theme, alarm repetition, output device, volume, do-not-disturb, and accessibility",
+    "progress and history sensitivity, task-title avoidance, diagnostic redaction, retention, export, deletion, and shared-device exposure",
+    "background execution, notification portal, audio access, power inhibition, startup behavior, resource use, and least privilege",
+    "break reminders, motion or rest assumptions, interruption handling, accessibility needs, and non-medical productivity boundary",
+    "preset changes, history reset, active-timer cancellation, data backups, app reset, uninstall, and rollback"
+  ]
+}

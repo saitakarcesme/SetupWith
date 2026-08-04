@@ -1,0 +1,17 @@
+{
+  "index": 517,
+  "name": "Sessions",
+  "slug": "sessions-pomodoro-focus",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/pojntfx/sessions",
+    "installUrl": "https://flathub.org/apps/com.pojtinger.felicitas.Sessions"
+  },
+  "website": "https://apps.gnome.org/Sessions/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Visual GNOME Pomodoro timer for customizable focus intervals, progress tracking, regular breaks, and a distraction-free desktop or mobile workflow.",
+  "accent": "#E66100",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.pojtinger.felicitas.Sessions.svg",
+  "logoSourceType": "official-project-asset"
+}
