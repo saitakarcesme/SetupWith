@@ -5141,5 +5141,57 @@
       "safety": "Never expose results, overwrite raw data, guess formats or units, transform without a ledger, evaluate unsafe domains, present convergence as validity, hide uncertainty or exclusions, distort axes, or publish unreviewed metadata without provenance, schema, numerical, model, visual, reproducibility, and destination review.",
       "verify": "Verify Graphs source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove datasets, parsers, equations, transformations, fits, projects, stylesheets, clipboard, exports and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 491,
+    "name": "Hieroglyphic",
+    "slug": "hieroglyphic-symbol-finder",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/FineFindus/Hieroglyphic",
+      "installUrl": "https://flathub.org/apps/io.github.finefindus.Hieroglyphic"
+    },
+    "website": "https://apps.gnome.org/Hieroglyphic/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Sketch-based local finder for more than one thousand LaTeX and Typst symbols, with ranked recognition results and optional hardware acceleration on supported NPUs.",
+    "accent": "#613583",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.finefindus.Hieroglyphic.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "recognition_model",
+      "typesetting_target",
+      "symbol_semantics",
+      "clipboard_boundary"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "LaTeX or Typst target, engine, document class, package inventory, compiler version, and project encoding",
+      "hand-drawn sketch, recognition model and data version, ranked candidates, confidence interpretation, and offline processing",
+      "symbol command, Unicode glyph, math or text mode, required package or import, namespace, arguments, and syntax",
+      "visually confusable operators, relations, arrows, alphabets, combining marks, invisible spacing, and semantic intent",
+      "clipboard copy, primary selection, clipboard manager, synchronized clipboard, target editor, and stale-content prevention",
+      "NPU or CPU acceleration, device access, driver provenance, model compatibility, resource use, and deterministic fallback",
+      "accessibility of sketch input and candidate list, keyboard operation, screen reader naming, zoom, and GNOME mobile use",
+      "recent sketch or selection retention, telemetry absence, network isolation, preferences, uninstall, and rollback"
+    ],
+    "prompt": "Set up Hieroglyphic from its official repository and verified Flathub listing (https://apps.gnome.org/Hieroglyphic/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, target typesetting systems, broad engine/package availability, clipboard-manager policy, accelerator availability and accessibility needs without reading documents, sketches or clipboard contents. Install stable `io.github.finefindus.Hieroglyphic` from verified Flathub in the existing ownership scope. Do not compile from source, launch the app, initialize an accelerator, draw a sketch, run recognition, copy a symbol or compile a document during setup.\n\nPreserve preferences, model assets, recent state, clipboard and typesetting projects. Hieroglyphic ranks candidates from a sketch; its top result is a suggestion, not proof of the intended mathematical or textual semantics. Before future insertion show multiple candidates with rendered name, exact LaTeX command or Typst expression, Unicode code point when relevant, math/text mode, required package or import, argument shape and source-model version. Require the author to confirm meaning, especially for visually confusable relations, arrows, Greek letters, combining marks and invisible spacing.\n\nLaTeX and Typst syntax are not interchangeable. Validate the chosen output in the exact engine and project environment using a minimal non-sensitive scratch document, without installing missing packages automatically or enabling shell escape. A command that renders similarly may have different spacing, precedence, accessibility or semantic behavior. Do not rewrite surrounding source, infer imports, replace a Unicode character globally or claim formal correctness from visual appearance.\n\nClipboard operations can overwrite unrelated data or propagate through synchronized managers. Show the exact non-sensitive output and target before copying, and never inspect or clear pre-existing clipboard content. If NPU acceleration is available, use only an existing trusted driver path after explicit review; do not install drivers for this utility, and retain CPU fallback. Verify provenance, app ID, origin, commit, runtime, executable, bundled recognition model, files and permissions offline. Prove no sketch capture, inference, accelerator access, clipboard change, package install, compilation, network request or filesystem state changed. On failure, rollback only the new Hieroglyphic ref in its original scope; preserve runtimes, remotes, overrides, models, clipboard and documents.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.github.finefindus.Hieroglyphic from verified Flathub in the existing scope without source builds, launch, accelerator initialization, sketches, inference, clipboard access, package installation, document edits, or compilation.",
+      "preserve": "all preferences, recognition models, recent state, accelerator configuration, clipboard contents, LaTeX and Typst projects, packages, imports, remotes, overrides, and scope ownership",
+      "safety": "Never trust top-ranked recognition, conflate LaTeX with Typst, overlook confusable or invisible symbols, infer packages, enable shell escape, rewrite source, install accelerator drivers, or overwrite clipboard data without model, candidate, semantics, syntax, engine, dependency, destination, and author review.",
+      "verify": "Verify Hieroglyphic source, app ID, origin, commit, runtime, executable, recognition model, files and permissions offline, then prove sketches, inference, accelerators, clipboard, packages, compilation, networks and filesystem state are unchanged."
+    }
   }
 ]

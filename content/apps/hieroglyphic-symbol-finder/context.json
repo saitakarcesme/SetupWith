@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "recognition_model",
+    "typesetting_target",
+    "symbol_semantics",
+    "clipboard_boundary"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "LaTeX or Typst target, engine, document class, package inventory, compiler version, and project encoding",
+    "hand-drawn sketch, recognition model and data version, ranked candidates, confidence interpretation, and offline processing",
+    "symbol command, Unicode glyph, math or text mode, required package or import, namespace, arguments, and syntax",
+    "visually confusable operators, relations, arrows, alphabets, combining marks, invisible spacing, and semantic intent",
+    "clipboard copy, primary selection, clipboard manager, synchronized clipboard, target editor, and stale-content prevention",
+    "NPU or CPU acceleration, device access, driver provenance, model compatibility, resource use, and deterministic fallback",
+    "accessibility of sketch input and candidate list, keyboard operation, screen reader naming, zoom, and GNOME mobile use",
+    "recent sketch or selection retention, telemetry absence, network isolation, preferences, uninstall, and rollback"
+  ]
+}

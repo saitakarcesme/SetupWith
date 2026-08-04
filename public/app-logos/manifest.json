@@ -2448,5 +2448,10 @@
     "file": "graphs-data-plotting.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/se.sjoerd.Graphs.svg",
     "sourceType": "official-project-asset"
+  },
+  "hieroglyphic-symbol-finder": {
+    "file": "hieroglyphic-symbol-finder.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.finefindus.Hieroglyphic.svg",
+    "sourceType": "official-project-asset"
   }
 }

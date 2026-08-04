@@ -1,0 +1,17 @@
+{
+  "index": 491,
+  "name": "Hieroglyphic",
+  "slug": "hieroglyphic-symbol-finder",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/FineFindus/Hieroglyphic",
+    "installUrl": "https://flathub.org/apps/io.github.finefindus.Hieroglyphic"
+  },
+  "website": "https://apps.gnome.org/Hieroglyphic/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Sketch-based local finder for more than one thousand LaTeX and Typst symbols, with ranked recognition results and optional hardware acceleration on supported NPUs.",
+  "accent": "#613583",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.finefindus.Hieroglyphic.svg",
+  "logoSourceType": "official-project-asset"
+}
