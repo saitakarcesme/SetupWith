@@ -2388,5 +2388,10 @@
     "file": "fragments-bittorrent.svg",
     "source": "https://gitlab.gnome.org/World/Fragments/-/raw/main/data/icons/hicolor/scalable/apps/de.haeckerfelix.Fragments.svg",
     "sourceType": "official-project-asset"
+  },
+  "newsflash-rss": {
+    "file": "newsflash-rss.svg",
+    "source": "https://gitlab.com/news-flash/news_flash_gtk/-/raw/main/data/icons/hicolor/io.gitlab.news_flash.NewsFlash.svg",
+    "sourceType": "official-project-asset"
   }
 }

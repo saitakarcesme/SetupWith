@@ -1,0 +1,17 @@
+{
+  "index": 479,
+  "name": "NewsFlash",
+  "slug": "newsflash-rss",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.com/news-flash/news_flash_gtk",
+    "installUrl": "https://flathub.org/apps/io.gitlab.news_flash.NewsFlash"
+  },
+  "website": "https://gitlab.com/news-flash/news_flash_gtk",
+  "category": "Browsers & Internet",
+  "vertical": "software",
+  "description": "GTK RSS and Atom reader with local feeds or web-service synchronization, offline article storage, search, tags, notifications, sharing, and full-content extraction.",
+  "accent": "#F6D32D",
+  "logoUrl": "https://gitlab.com/news-flash/news_flash_gtk/-/raw/main/data/icons/hicolor/io.gitlab.news_flash.NewsFlash.svg",
+  "logoSourceType": "official-project-asset"
+}

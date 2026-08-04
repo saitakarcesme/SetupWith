@@ -4503,5 +4503,60 @@
       "safety": "Never expose torrent activity, read clipboard data, trust metadata, auto-start or trash sources, download unauthorized content, open payloads, connect to remote engines, enable port forwarding, or mutate firewalls without source, hash, file tree, legality, storage, endpoint, credential, network, and deletion review.",
       "verify": "Verify Fragments source, app ID, origin, commit, runtime, executable, backend, files and permissions offline, then prove daemons, remotes, clipboard, torrents, trackers, peers, ports, downloads, trash, notifications and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 479,
+    "name": "NewsFlash",
+    "slug": "newsflash-rss",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.com/news-flash/news_flash_gtk",
+      "installUrl": "https://flathub.org/apps/io.gitlab.news_flash.NewsFlash"
+    },
+    "website": "https://gitlab.com/news-flash/news_flash_gtk",
+    "category": "Browsers & Internet",
+    "vertical": "software",
+    "description": "GTK RSS and Atom reader with local feeds or web-service synchronization, offline article storage, search, tags, notifications, sharing, and full-content extraction.",
+    "accent": "#F6D32D",
+    "logoUrl": "https://gitlab.com/news-flash/news_flash_gtk/-/raw/main/data/icons/hicolor/io.gitlab.news_flash.NewsFlash.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "feed_service_password",
+      "feed_service_api_token"
+    ],
+    "config": [
+      "backend_selection",
+      "sync_conflict_policy",
+      "content_privacy",
+      "retention_rules"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "local RSS, Miniflux, Fever, FreshRSS, NewsBlur, Inoreader, Feedbin, Nextcloud News, or other backend",
+      "server URL, TLS, redirects, username, password, API token, OAuth browser, and secret storage",
+      "subscriptions, folders, tags, read/unread, starred, archived, deleted, and first-sync direction",
+      "OPML import or export, feed URL inventory, private feeds, credentials in URLs, and duplicate handling",
+      "RSS/Atom XML, article HTML, WebKit rendering, scripts, remote images, tracking pixels, links, and cookies",
+      "full-article grabber, site rules, custom domain files, paywalls, publisher access, and network requests",
+      "offline article database, retention, search index, media cache, attachments, disk use, and cleanup",
+      "desktop notifications, article titles, sharing targets, clipboard, external browser, and rollback"
+    ],
+    "prompt": "Set up NewsFlash from its official project and verified Flathub listing (https://gitlab.com/news-flash/news_flash_gtk). Inventory Linux architecture, Flatpak scopes, existing NewsFlash package and data paths, configured backend type, server origin, secret-store boundary, local database, OPML policy, notification settings, content-grabber rules and retention preferences without opening feeds, credentials or article content. Install stable `io.gitlab.news_flash.NewsFlash` from verified Flathub in the existing ownership scope. Do not install Snap or unsupported distro builds, compile from source, launch NewsFlash, authenticate, add a feed, import OPML or start synchronization.\n\nPreserve subscriptions, feed URLs, folders, tags, read/unread and starred states, offline articles, search index, media cache, service credentials, cookies, custom extraction rules and preferences. Subscription lists reveal political, health, religious and professional interests; never print feed titles/URLs or OPML contents in diagnostics. Do not migrate from FeedReader, deduplicate subscriptions, clear caches or choose a default service. Local RSS and each web backend have different identity and conflict semantics.\n\nBefore future service connection show exact HTTPS server, certificate verification, redirects, authentication/OAuth flow, requested API scope, secret storage and the direction and conflict rules for initial sync. Never assume the server is authoritative for deletions, read state or tags. Preview the counts of local-only and remote-only changes without content, and require a backup before bidirectional merge. OPML may contain private or credential-bearing URLs; export only to an approved protected destination.\n\nTreat feed XML and article HTML as untrusted web content. Do not render articles, load remote images/tracking pixels, execute navigation, open an external browser or fetch full content during setup. The full-article grabber can contact publisher pages and use domain-specific rules; it does not bypass paywalls and must not be used to evade access controls. Keep notifications off for verification because titles can appear on a locked screen. Verify NewsFlash provenance, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no secret access, server request, feed parse, sync mutation, OPML operation, article render, cache, notification, share, clipboard or browser state changed. On failure, rollback only the new NewsFlash ref in its original scope; preserve runtimes, remotes, overrides, databases, credentials and all subscriptions.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.gitlab.news_flash.NewsFlash from verified Flathub in the existing scope without unsupported packages, source builds, launch, authentication, feed additions, OPML, migrations, synchronization, rendering, content grabs, or notifications.",
+      "preserve": "all subscriptions, URLs, folders, tags, read and starred state, offline articles, indexes, caches, credentials, cookies, extraction rules, notifications, service ownership, remotes, overrides, and scope ownership",
+      "safety": "Never expose feed interests, trust one sync side for deletions, merge without backup, leak OPML credentials, render untrusted articles, load trackers, bypass paywalls, fetch full content, show locked-screen titles, share, or open browsers without server, scope, conflict, privacy, renderer, endpoint, and retention review.",
+      "verify": "Verify NewsFlash source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove secrets, servers, feeds, sync, OPML, rendering, caches, notifications, sharing, clipboard and browser state are unchanged."
+    }
   }
 ]
