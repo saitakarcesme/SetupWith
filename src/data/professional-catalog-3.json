@@ -6307,5 +6307,57 @@
       "safety": "Never expose reading interests, infer private language choices, surface sensitive desktop suggestions, treat language editions as equivalent, omit revision context, present Wikipedia as authoritative advice, trust remote media or links, open URI handlers automatically, retain unexplained home access, or clear personal data without explicit scope review.",
       "verify": "Verify Wike source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove networks, searches, suggestions, articles, media, tabs, history, bookmarks, links, files, caches and personal-data state are unchanged."
     }
+  },
+  {
+    "index": 513,
+    "name": "Webfont Bundler",
+    "slug": "webfont-bundler-font-face",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/rafaelmardojai/webfont-kit-generator",
+      "installUrl": "https://flathub.org/apps/com.rafaelmardojai.WebfontKitGenerator"
+    },
+    "website": "https://apps.gnome.org/WebfontKitGenerator/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "GNOME utility for converting OTF and TTF fonts into WOFF and WOFF2 self-hosted webfont kits with CSS boilerplate, plus reviewed downloads from Google Fonts.",
+    "accent": "#1A5FB4",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.rafaelmardojai.WebfontKitGenerator.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "font_license_and_provenance",
+      "unicode_subset_coverage",
+      "font_face_mapping",
+      "reproducible_output"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "source font provenance, foundry, license text, embedding and modification rights, redistribution, attribution, trademark, and project scope",
+      "Google Fonts family and version, official API or download endpoint, redirects, metadata, license files, checksums, and self-hosting intent",
+      "OTF or TTF structure, malformed tables, parser trust, font count, collections, variable axes, named instances, and conversion support",
+      "Unicode ranges, scripts, combining marks, shaping, ligatures, emoji, symbols, language corpus, fallback behavior, and missing-glyph tests",
+      "family and PostScript names, weight, style, stretch, variable ranges, synthetic bold or italic, CSS source order, and browser selection",
+      "WOFF and WOFF2 generation, compression, metadata retention, hinting, color glyphs, checksums, deterministic output, and browser compatibility",
+      "CSS @font-face paths, quoting, format hints, font-display, preload and CORS implications, cache versioning, and deployment base URL",
+      "output directory, filename collisions, license inclusion, source preservation, manifests, free space, cleanup, backups, and rollback"
+    ],
+    "prompt": "Set up Webfont Bundler from its official project and verified Flathub listing (https://apps.gnome.org/WebfontKitGenerator/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, saved output preferences, recent-state and partial-output bytes, portal grants, network policy and backup coverage without opening fonts or revealing proprietary family names, filenames, foundries, license contents, project paths, glyph inventories, checksums or generated CSS. Install stable `com.rafaelmardojai.WebfontKitGenerator` from verified Flathub in the existing ownership scope. Do not compile from source, launch the app, select or parse a font, contact Google Fonts, download a family, subset glyphs, convert OTF or TTF, generate CSS, create an output directory, or overwrite files during setup.\n\nPreserve every source font byte, owner, permission and license file, plus existing WOFF/WOFF2 kits, CSS, manifests, output preferences, portal grants, remotes, overrides and scope ownership. Possessing a font does not grant web embedding, modification, conversion or redistribution rights. Require a retained license artifact and explicit project scope before any conversion. Never upload proprietary fonts for analysis, remove copyright or trademark metadata without legal review, or imply that Google Fonts origin eliminates attribution and license obligations.\n\nBefore a later build, require a manifest containing source checksum and version, foundry, license, embedding and modification permissions, target family, weight, style, stretch and variable-axis mappings. Define the required languages, scripts, Unicode ranges, combining marks, shaping rules, ligatures and fallback stack; validate missing glyphs against a reviewed corpus. Treat font files as untrusted binary parser input with table, glyph, recursion, memory and time limits. For Google Fonts, pin exact official endpoints, redirects, version metadata, checksums and accompanying licenses. Generate WOFF and WOFF2 plus CSS deterministically, preserve necessary variation and color tables, and map each face without synthetic style ambiguity.\n\nPreview output names, CSS URLs, `font-display`, preload and CORS implications, collision policy and license placement. Never overwrite sources or an existing kit silently. Verify provenance, app ID, origin, commit, runtime, executable, files and sandbox permissions offline. Prove no font open, parser, network request, download, subset, conversion, CSS generation, temporary file, output collision or state mutation occurred. On failure, rollback only the new Webfont Bundler ref in its original scope; preserve shared runtimes, remotes, overrides, source fonts, licenses, existing kits, CSS, manifests, portal grants and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.rafaelmardojai.WebfontKitGenerator from verified Flathub in the existing scope without source builds, launch, font selection or parsing, Google Fonts traffic, downloads, subsetting, conversion, CSS generation, outputs, or overwrites.",
+      "preserve": "all source font and license bytes, owners and permissions, existing WOFF and WOFF2 kits, CSS, manifests, output preferences, portal grants, backups, remotes, overrides, and scope ownership",
+      "safety": "Never convert or redistribute without license rights, expose proprietary fonts, trust malformed tables, omit scripts or combining marks, break shaping, flatten variable axes accidentally, map CSS faces ambiguously, hide CORS or preload effects, produce irreproducible kits, omit license artifacts, collide outputs, or overwrite sources.",
+      "verify": "Verify Webfont Bundler source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove fonts, parsers, networks, downloads, subsets, conversions, CSS, temporary files, outputs and state are unchanged."
+    }
   }
 ]

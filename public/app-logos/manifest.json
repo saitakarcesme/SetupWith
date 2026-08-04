@@ -2558,5 +2558,10 @@
     "file": "wike-wikipedia-reader.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/com.github.hugolabe.Wike.svg",
     "sourceType": "official-project-asset"
+  },
+  "webfont-bundler-font-face": {
+    "file": "webfont-bundler-font-face.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/com.rafaelmardojai.WebfontKitGenerator.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "index": 513,
+  "name": "Webfont Bundler",
+  "slug": "webfont-bundler-font-face",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/rafaelmardojai/webfont-kit-generator",
+    "installUrl": "https://flathub.org/apps/com.rafaelmardojai.WebfontKitGenerator"
+  },
+  "website": "https://apps.gnome.org/WebfontKitGenerator/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "GNOME utility for converting OTF and TTF fonts into WOFF and WOFF2 self-hosted webfont kits with CSS boilerplate, plus reviewed downloads from Google Fonts.",
+  "accent": "#1A5FB4",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.rafaelmardojai.WebfontKitGenerator.svg",
+  "logoSourceType": "official-project-asset"
+}

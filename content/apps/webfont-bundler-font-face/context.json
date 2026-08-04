@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "font_license_and_provenance",
+    "unicode_subset_coverage",
+    "font_face_mapping",
+    "reproducible_output"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "source font provenance, foundry, license text, embedding and modification rights, redistribution, attribution, trademark, and project scope",
+    "Google Fonts family and version, official API or download endpoint, redirects, metadata, license files, checksums, and self-hosting intent",
+    "OTF or TTF structure, malformed tables, parser trust, font count, collections, variable axes, named instances, and conversion support",
+    "Unicode ranges, scripts, combining marks, shaping, ligatures, emoji, symbols, language corpus, fallback behavior, and missing-glyph tests",
+    "family and PostScript names, weight, style, stretch, variable ranges, synthetic bold or italic, CSS source order, and browser selection",
+    "WOFF and WOFF2 generation, compression, metadata retention, hinting, color glyphs, checksums, deterministic output, and browser compatibility",
+    "CSS @font-face paths, quoting, format hints, font-display, preload and CORS implications, cache versioning, and deployment base URL",
+    "output directory, filename collisions, license inclusion, source preservation, manifests, free space, cleanup, backups, and rollback"
+  ]
+}
