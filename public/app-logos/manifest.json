@@ -2343,5 +2343,10 @@
     "file": "dialect-translation.svg",
     "source": "https://raw.githubusercontent.com/dialect-app/dialect/main/data/app.drey.Dialect.svg",
     "sourceType": "official-project-asset"
+  },
+  "frog-ocr": {
+    "file": "frog-ocr.svg",
+    "source": "https://raw.githubusercontent.com/TenderOwl/Frog/master/data/icons/com.github.tenderowl.frog.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -4026,5 +4026,57 @@
       "safety": "Never transmit text, probe endpoints, weaken TLS, fall back providers, reveal keys or history, access the clipboard, enable search, retain samples, or synthesize speech without provider, operator, content, retention, secret, endpoint, and audio review.",
       "verify": "Verify Dialect source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove providers, secrets, endpoints, history, clipboard, search, audio processes and network state are unchanged."
     }
+  },
+  {
+    "index": 470,
+    "name": "Frog",
+    "slug": "frog-ocr",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/TenderOwl/Frog",
+      "installUrl": "https://flathub.org/apps/com.github.tenderowl.frog"
+    },
+    "website": "https://getfrog.app/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "GNOME OCR utility for extracting text and decoding QR codes from selected screen regions, images, videos, websites, PDFs, photos, and clipboard content.",
+    "accent": "#62A0EA",
+    "logoUrl": "https://raw.githubusercontent.com/TenderOwl/Frog/master/data/icons/com.github.tenderowl.frog.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "capture_privacy",
+      "ocr_languages",
+      "qr_handling",
+      "telemetry_policy"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "screen-capture portal, selected region, active window, monitor contents, and session indicator",
+      "opened, dropped, or pasted images, clipboard ownership, temporary files, and metadata",
+      "primary and secondary OCR languages, bundled English model, language-pack downloads, and model source",
+      "extracted text, layout, confidence, retention, copy, command-line auto-copy, and diagnostics",
+      "QR payload decoding, URL classification, automatic link following, custom schemes, and credentials",
+      "share targets, email, social services, Instapaper, Pocket, Telegram, and text disclosure",
+      "anonymous usage data, opt-out state, event scope, endpoint, identifier, and network requests",
+      "text-to-speech status, online services, audio output, file cleanup, and rollback"
+    ],
+    "prompt": "Set up Frog from its official project and verified Flathub listing (https://getfrog.app/). Inventory Linux architecture, desktop portal implementation, Flatpak scopes, existing Frog package and preferences, OCR languages and model files, telemetry opt-out state, clipboard behavior, QR link handling, sharing settings, command-line shortcuts and any prior temporary-data location. Install stable `com.github.tenderowl.frog` from the verified Flathub origin in the existing ownership scope. Do not install the Snap, a source build or a delayed CI artifact, and do not launch Frog or request a screen-capture session during setup.\n\nPreserve all language choices, models, preferences, telemetry state, QR behavior, shortcuts and temporary-file policy. Screen regions and pasted images can contain passwords, messages, financial records, health data, private video frames or unreleased work. Do not capture a test region, open or drop an image, inspect clipboard contents, invoke the extract-to-clipboard command, retain OCR output or include recognized text in diagnostics. Verify temporary paths and model inventories only by names and hashes, never by rendering private inputs.\n\nA QR payload is untrusted data and may encode credentials, payment requests, Wi-Fi secrets, custom URI schemes or phishing URLs. Decode only after the source image is approved; never automatically follow a decoded link, resolve a hostname, invoke a handler or copy a secret payload. Before any future share action show the exact extracted text, target application or service, endpoint, account context and redactions. Sharing to email, social networks, Pocket, Instapaper or Telegram is separate from local OCR and must never be inferred from extraction consent.\n\nLanguage packs and anonymous usage reporting can create network requests. Do not download models, enable telemetry, test an endpoint or change an existing opt-out choice. Treat text-to-speech as unavailable unless current metadata proves an offline path; do not send OCR text to speech services or open audio output. Verify Frog provenance, app ID, origin, installed commit, runtime, executable, files and declared permissions through Flatpak metadata offline. Prove no portal session, screenshot, clipboard value, model, OCR output, QR handler, telemetry setting, temporary file, process, audio device or network request changed. On failure, rollback only the new Frog ref in its original scope; retain shared runtimes, remotes, overrides, models and user data.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.github.tenderowl.frog from verified Flathub in the existing scope without Snap, source or CI builds, launch, screen capture, image access, clipboard reads, model downloads, QR decoding, telemetry changes, sharing, or speech.",
+      "preserve": "all OCR language choices, model files, telemetry opt-out, QR behavior, sharing preferences, shortcuts, clipboard policy, temporary-data settings, portal state, remotes, overrides, and scope ownership",
+      "safety": "Never capture private screens, read images or clipboard data, retain OCR text, auto-follow QR payloads, invoke handlers, share extracted content, download models, alter telemetry, or synthesize speech without source, content, endpoint, account, redaction, and retention review.",
+      "verify": "Verify Frog source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove portals, screenshots, clipboard, models, OCR output, QR handlers, telemetry, temporary files, processes, audio and network state are unchanged."
+    }
   }
 ]

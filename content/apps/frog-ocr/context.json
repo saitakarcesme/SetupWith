@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "capture_privacy",
+    "ocr_languages",
+    "qr_handling",
+    "telemetry_policy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "screen-capture portal, selected region, active window, monitor contents, and session indicator",
+    "opened, dropped, or pasted images, clipboard ownership, temporary files, and metadata",
+    "primary and secondary OCR languages, bundled English model, language-pack downloads, and model source",
+    "extracted text, layout, confidence, retention, copy, command-line auto-copy, and diagnostics",
+    "QR payload decoding, URL classification, automatic link following, custom schemes, and credentials",
+    "share targets, email, social services, Instapaper, Pocket, Telegram, and text disclosure",
+    "anonymous usage data, opt-out state, event scope, endpoint, identifier, and network requests",
+    "text-to-speech status, online services, audio output, file cleanup, and rollback"
+  ]
+}

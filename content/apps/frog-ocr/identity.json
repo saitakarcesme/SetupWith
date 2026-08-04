@@ -1,0 +1,17 @@
+{
+  "index": 470,
+  "name": "Frog",
+  "slug": "frog-ocr",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/TenderOwl/Frog",
+    "installUrl": "https://flathub.org/apps/com.github.tenderowl.frog"
+  },
+  "website": "https://getfrog.app/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "GNOME OCR utility for extracting text and decoding QR codes from selected screen regions, images, videos, websites, PDFs, photos, and clipboard content.",
+  "accent": "#62A0EA",
+  "logoUrl": "https://raw.githubusercontent.com/TenderOwl/Frog/master/data/icons/com.github.tenderowl.frog.svg",
+  "logoSourceType": "official-project-asset"
+}
