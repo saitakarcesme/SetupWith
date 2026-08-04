@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "channels",
+    "target_platforms",
+    "environments",
+    "global_tools"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "shell PATH and completion changes",
+    "workspace manifest initialization or modification",
+    "lockfile solve and update",
+    "package and environment downloads",
+    "private channel authentication",
+    "task execution",
+    "global tool and trampoline installation",
+    "environment or cache cleanup"
+  ]
+}

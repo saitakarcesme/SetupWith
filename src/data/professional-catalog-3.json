@@ -2585,5 +2585,60 @@
       "safety": "Never enable remote input, clipboard sharing, background service, startup, firewall access, peer trust, certificate regeneration, portal or accessibility grants, compatibility downgrade, or TLS bypass without separate scope and approval.",
       "verify": "Verify provenance, version, paths, grants, services, processes, listeners, firewall, certificate fingerprint and peers offline; any later two-host test must disable clipboard, verify fingerprints out of band and retain a local escape path."
     }
+  },
+  {
+    "index": 443,
+    "name": "Pixi",
+    "slug": "pixi",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/prefix-dev/pixi",
+      "installUrl": "https://pixi.prefix.dev/latest/installation/"
+    },
+    "website": "https://pixi.prefix.dev/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Cross-platform package and workspace manager for reproducible Conda and PyPI environments, tasks, lockfiles, multi-platform projects, and global tools.",
+    "accent": "#FCD006",
+    "simpleIconSlug": "condaforge",
+    "logoUrl": "https://raw.githubusercontent.com/prefix-dev/pixi/main/docs/assets/pixi-logo.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "channels",
+      "target_platforms",
+      "environments",
+      "global_tools"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "shell PATH and completion changes",
+      "workspace manifest initialization or modification",
+      "lockfile solve and update",
+      "package and environment downloads",
+      "private channel authentication",
+      "task execution",
+      "global tool and trampoline installation",
+      "environment or cache cleanup"
+    ],
+    "prompt": "Set up Pixi from the official prefix.dev installation guide (https://pixi.prefix.dev/latest/installation/). Detect Windows, macOS, or Linux, architecture, shell and profile files, package managers, existing Pixi binary and home, Conda or Mamba configuration, `.netrc`, keyring providers, global tools, cached packages, and workspaces containing `pixi.toml`, `pyproject.toml`, `pixi.lock`, or `.pixi`. Prefer Homebrew, Winget, Scoop, MSI, or a checksummed standalone release. If using the official script, download and inspect it first; do not pipe network content into a shell or bypass PowerShell execution policy automatically.\n\nInstall the Pixi binary without initializing a workspace, editing shell profiles, generating completion, authenticating, solving, downloading, or creating environments. Preserve manifests, lockfiles, channel order, platform constraints, environment directories, caches, global manifests and trampolines, configuration, credentials, shell activation, tasks, CI files, and every uncommitted change. Apply only approved channels, target platforms, environments, or global tools, and preview exact manifest plus lockfile diffs before mutation. Never mix an installation method's self-update mechanism with its package manager.\n\nTreat workspace tasks and package build scripts as arbitrary code. Stop before `pixi run`, `exec`, `shell`, `install`, `update`, `upgrade`, `reinstall`, `import`, `build`, `upload`, or dependency changes. A normal install may update both the lockfile and environment; use locked or frozen behavior only when explicitly requested and explain the difference. Never disable TLS verification, embed credentials in a channel or download URL, print `.netrc`, enable a subprocess keyring without review, trust an unknown channel, or send secrets into cache keys and logs. Global tools add executables to PATH and require separate approval.\n\nVerify artifact checksum, `pixi --version`, resolved executable, installation method, Pixi home and PATH precedence. Inspect an existing workspace with read-only metadata and list commands that do not solve, install or run tasks; do not create a sample environment because package execution is not required to validate installation. Confirm no network request, manifest, lockfile, environment, cache, global trampoline, credential, shell profile, completion or Git state changed. Roll back only the binary and setup-owned PATH entry, preserving Pixi home, environments and caches; never invoke the documented clean commands or recursively remove managed data automatically.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install a checksummed Pixi binary through a documented package or reviewed installer, and do not initialize workspaces, edit profiles, authenticate, solve locks, download packages, create environments, or add completions.",
+      "preserve": "all manifests, lockfiles, channels, platforms, environments, caches, global tools and trampolines, configuration, credentials, shell activation, tasks, CI files, installation method, and uncommitted changes",
+      "safety": "Never run tasks or package scripts, solve or update locks, install or clean environments, disable TLS, expose credentials, trust unknown channels, upload packages, add global tools, or modify shell profiles without separate review and approval.",
+      "verify": "Verify checksum, version, binary, installation method, home and PATH, then inspect workspace metadata read-only and prove no network request, manifest, lock, environment, cache, trampoline, credential, profile, completion or Git state changed."
+    }
   }
 ]

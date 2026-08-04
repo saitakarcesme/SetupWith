@@ -1,0 +1,18 @@
+{
+  "index": 443,
+  "name": "Pixi",
+  "slug": "pixi",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/prefix-dev/pixi",
+    "installUrl": "https://pixi.prefix.dev/latest/installation/"
+  },
+  "website": "https://pixi.prefix.dev/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Cross-platform package and workspace manager for reproducible Conda and PyPI environments, tasks, lockfiles, multi-platform projects, and global tools.",
+  "accent": "#FCD006",
+  "simpleIconSlug": "condaforge",
+  "logoUrl": "https://raw.githubusercontent.com/prefix-dev/pixi/main/docs/assets/pixi-logo.svg",
+  "logoSourceType": "official-project-asset"
+}

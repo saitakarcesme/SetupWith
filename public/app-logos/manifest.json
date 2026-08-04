@@ -2208,5 +2208,10 @@
     "file": "deskflow.svg",
     "source": "https://raw.githubusercontent.com/deskflow/deskflow/master/src/apps/res/icons/deskflow-light/apps/64/org.deskflow.deskflow.svg",
     "sourceType": "official-project-asset"
+  },
+  "pixi": {
+    "file": "pixi.svg",
+    "source": "https://raw.githubusercontent.com/prefix-dev/pixi/main/docs/assets/pixi-logo.svg",
+    "sourceType": "official-project-asset"
   }
 }
