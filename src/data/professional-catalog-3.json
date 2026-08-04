@@ -328,7 +328,7 @@
       "installUrl": "https://www.microsoft.com/edge/download"
     },
     "website": "https://www.microsoft.com/edge/",
-    "category": "OS Utilities & Desktop Enhancement",
+    "category": "System Utilities",
     "vertical": "browsers",
     "description": "Chromium-based browser with profiles, tracking prevention, enterprise policy support, and cross-device synchronization.",
     "accent": "#0C7BDC",
