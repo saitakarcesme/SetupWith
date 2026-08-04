@@ -1,0 +1,18 @@
+{
+  "index": 444,
+  "name": "Responsively App",
+  "slug": "responsively-app",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/responsively-org/responsively-app",
+    "installUrl": "https://responsively.app/download"
+  },
+  "website": "https://responsively.app/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Electron-based responsive web development browser with synchronized multi-device previews, mirrored interaction, custom device profiles, shared inspection, and screenshots.",
+  "accent": "#CE342C",
+  "simpleIconSlug": "googlechrome",
+  "logoUrl": "https://raw.githubusercontent.com/responsively-org/responsively-app/main/desktop-app/assets/icon.svg",
+  "logoSourceType": "official-project-asset"
+}

@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "native",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "device_profiles",
+    "preview_layout",
+    "interaction_mirroring",
+    "developer_tools"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "website or local-development URL loading",
+    "mirrored click, scroll, and form interaction",
+    "cookies, storage, authentication, and certificates",
+    "developer-tools inspection",
+    "custom device and user-agent profiles",
+    "multi-device screenshot capture",
+    "browser extension installation",
+    "external links, downloads, and device permissions"
+  ]
+}

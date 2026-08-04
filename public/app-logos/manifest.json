@@ -2213,5 +2213,10 @@
     "file": "pixi.svg",
     "source": "https://raw.githubusercontent.com/prefix-dev/pixi/main/docs/assets/pixi-logo.svg",
     "sourceType": "official-project-asset"
+  },
+  "responsively-app": {
+    "file": "responsively-app.svg",
+    "source": "https://raw.githubusercontent.com/responsively-org/responsively-app/main/desktop-app/assets/icon.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -2640,5 +2640,60 @@
       "safety": "Never run tasks or package scripts, solve or update locks, install or clean environments, disable TLS, expose credentials, trust unknown channels, upload packages, add global tools, or modify shell profiles without separate review and approval.",
       "verify": "Verify checksum, version, binary, installation method, home and PATH, then inspect workspace metadata read-only and prove no network request, manifest, lock, environment, cache, trampoline, credential, profile, completion or Git state changed."
     }
+  },
+  {
+    "index": 444,
+    "name": "Responsively App",
+    "slug": "responsively-app",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/responsively-org/responsively-app",
+      "installUrl": "https://responsively.app/download"
+    },
+    "website": "https://responsively.app/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Electron-based responsive web development browser with synchronized multi-device previews, mirrored interaction, custom device profiles, shared inspection, and screenshots.",
+    "accent": "#CE342C",
+    "simpleIconSlug": "googlechrome",
+    "logoUrl": "https://raw.githubusercontent.com/responsively-org/responsively-app/main/desktop-app/assets/icon.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "device_profiles",
+      "preview_layout",
+      "interaction_mirroring",
+      "developer_tools"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "website or local-development URL loading",
+      "mirrored click, scroll, and form interaction",
+      "cookies, storage, authentication, and certificates",
+      "developer-tools inspection",
+      "custom device and user-agent profiles",
+      "multi-device screenshot capture",
+      "browser extension installation",
+      "external links, downloads, and device permissions"
+    ],
+    "prompt": "Set up Responsively App from its official repository and download page (https://responsively.app/download). Detect Windows, macOS, or Linux, architecture, package managers, existing stable or legacy installation, application data, custom device profiles, layouts, cached sessions, browser extension, proxy and certificate settings. Install the signed stable desktop release, official Homebrew cask, Winget, Chocolatey, RPM, or AppImage appropriate to the platform. Do not build from an unpinned branch, install the browser extension, or migrate legacy profile data automatically.\n\nLaunch to an empty or offline state without loading a user URL. Preserve device profiles, preview layouts, favorites and recent URLs, cookies, local and session storage, cache, authentication state, certificates, proxy settings, screenshots, downloads, developer-tools preferences, extension data, and application configuration. Apply only approved device profiles, layout, interaction mirroring, or developer-tools setting. Show device name, viewport, pixel ratio, user agent and touch behavior before adding or changing a custom profile.\n\nResponsively mirrors interactions across multiple embedded browser views. A single click, form submission, navigation, scroll or keyboard action can therefore affect every preview and may repeat a destructive operation. Disable mirroring until the exact test page and actions are approved. Before loading any URL, show scheme, resolved host, port, path, redirect policy, proxy and whether it is loopback, development, staging or production. Never sign in, use production accounts, submit real forms, accept untrusted certificates, expose local files, grant camera/microphone/location/notification/clipboard permissions, open external protocols, download files, or paste credentials.\n\nDeveloper tools and screenshots can expose DOM content, tokens, cookies, request headers and private data. Use only a setup-created static page on loopback or a local file containing public sample content for verification; block outbound requests and do not reuse the user's browser profile. Verify publisher, version, executable and data paths, processes, listeners, proxy, certificate and extension baselines. Confirm synchronized viewport rendering without clicking actionable controls, then close and remove only the disposable sample. Prove no URL history, cookie, storage, login, screenshot, download, permission, profile, extension or certificate changed. Roll back the installed app and setup-owned settings while preserving all existing profiles and browser data.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install the official stable Responsively desktop package for the detected platform, and do not build development code, install its browser extension, migrate legacy profiles, or load a user URL during setup.",
+      "preserve": "all device profiles, layouts, recents, cookies, storage, cache, authentication, certificates, proxies, screenshots, downloads, developer-tools preferences, extension data, legacy data, and application configuration",
+      "safety": "Never mirror unreviewed interactions, access production, sign in, submit forms, trust certificates, expose files, grant device permissions, open protocols, download, paste secrets, inspect sensitive data, capture screenshots, or install extensions without approval.",
+      "verify": "Verify publisher, version, paths, processes, listeners, proxy, certificates and extensions using only a public disposable loopback page, then prove no history, cookie, storage, login, screenshot, download, grant, profile, extension or trust state changed."
+    }
   }
 ]
