@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–25 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "code_execution_sandbox",
+    "project_and_session_storage",
+    "network_and_bus_policy",
+    "preview_isolation"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "example or project source, author, license, checksum, language, dependencies, trust level, review status, and execution intent",
+    "JavaScript, Rust, Python and Vala interpreter or compiler, version, subprocesses, build scripts, environment, arguments, and resource limits",
+    "Flatpak filesystem, network, session and system D-Bus, display, audio, portals, devices and host-service permissions, with least privilege",
+    "live GTK, CSS and declarative UI preview, widget side effects, URI handlers, accessibility, clipboard, notifications, and teardown behavior",
+    "autosave, sessions and projects, destination, ownership, source confidentiality, crash recovery, overwrite scope, backups, and restore test",
+    "code diagnostics, completion and formatter, language servers, external tools, source mutation, generated files, network fetches, and version pinning",
+    "terminal and build output, environment and path leakage, tokens, credentials, ANSI control sequences, output cap, retention, and redaction",
+    "stopping runaway code, child-process cleanup, network denial, reset, project deletion, runtimes, uninstall, and rollback"
+  ]
+}

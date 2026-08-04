@@ -2568,5 +2568,10 @@
     "file": "wordbook-offline-dictionary.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/dev.mufeed.Wordbook.svg",
     "sourceType": "official-project-asset"
+  },
+  "gnome-workbench-prototyping": {
+    "file": "gnome-workbench-prototyping.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Workbench.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "index": 515,
+  "name": "Workbench",
+  "slug": "gnome-workbench-prototyping",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/workbenchdev/Workbench",
+    "installUrl": "https://flathub.org/apps/re.sonny.Workbench"
+  },
+  "website": "https://apps.gnome.org/Workbench/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "GNOME learning and prototyping environment with live GTK and CSS previews, a large example library, JavaScript, Rust, Python and Vala support, autosaved projects, diagnostics, formatting, and terminal output.",
+  "accent": "#3584E4",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Workbench.svg",
+  "logoSourceType": "official-project-asset"
+}

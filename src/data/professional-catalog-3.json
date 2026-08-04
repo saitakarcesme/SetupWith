@@ -6411,5 +6411,57 @@
       "safety": "Never expose lookup interests, treat definitions as professional advice, collapse distinct senses, confuse homophones with synonyms, hide dataset age, replace lexical data unexpectedly, capture surrounding selected text, access the clipboard implicitly, play sudden audio, or violate the fully offline boundary.",
       "verify": "Verify Wordbook source, app ID, origin, commit, runtime, executable, bundled data, files and permissions offline, then prove databases, lookups, random words, history, favorites, selected text, speech, audio, networks, updates and notifications are unchanged."
     }
+  },
+  {
+    "index": 515,
+    "name": "Workbench",
+    "slug": "gnome-workbench-prototyping",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/workbenchdev/Workbench",
+      "installUrl": "https://flathub.org/apps/re.sonny.Workbench"
+    },
+    "website": "https://apps.gnome.org/Workbench/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "GNOME learning and prototyping environment with live GTK and CSS previews, a large example library, JavaScript, Rust, Python and Vala support, autosaved projects, diagnostics, formatting, and terminal output.",
+    "accent": "#3584E4",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Workbench.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "code_execution_sandbox",
+      "project_and_session_storage",
+      "network_and_bus_policy",
+      "preview_isolation"
+    ],
+    "installTime": "10–25 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "example or project source, author, license, checksum, language, dependencies, trust level, review status, and execution intent",
+      "JavaScript, Rust, Python and Vala interpreter or compiler, version, subprocesses, build scripts, environment, arguments, and resource limits",
+      "Flatpak filesystem, network, session and system D-Bus, display, audio, portals, devices and host-service permissions, with least privilege",
+      "live GTK, CSS and declarative UI preview, widget side effects, URI handlers, accessibility, clipboard, notifications, and teardown behavior",
+      "autosave, sessions and projects, destination, ownership, source confidentiality, crash recovery, overwrite scope, backups, and restore test",
+      "code diagnostics, completion and formatter, language servers, external tools, source mutation, generated files, network fetches, and version pinning",
+      "terminal and build output, environment and path leakage, tokens, credentials, ANSI control sequences, output cap, retention, and redaction",
+      "stopping runaway code, child-process cleanup, network denial, reset, project deletion, runtimes, uninstall, and rollback"
+    ],
+    "prompt": "Set up Workbench from its official project and verified Flathub listing (https://apps.gnome.org/Workbench/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, saved-session and project counts, aggregate autosave bytes, configured language runtimes, sandbox overrides, network and D-Bus permission presence, terminal-output retention and backup coverage without reading source code, project names, file paths, terminal text, environment values, diagnostics, recent examples or secrets. Install stable `re.sonny.Workbench` from verified Flathub in the existing ownership scope. Do not compile from source, launch Workbench, restore a session, load an example, parse a project, render a preview, run JavaScript, Rust, Python or Vala, invoke a compiler or formatter, start a terminal, access a bus, contact a network, or autosave during setup.\n\nPreserve every project and session byte, ownership, permissions, autosave and recovery state, runtime choices, formatter settings, terminal history, sandbox overrides, remotes and scope ownership. Workbench is an execution environment, not a passive editor: examples, preview markup, CSS, build scripts and language code can create subprocesses, access portals, invoke URI handlers or communicate over D-Bus. Treat all non-bundled code as untrusted. Redact source, paths, environment and terminal output; never place real credentials in a prototype.\n\nBefore later execution, require source provenance and checksum, license, reviewed language and entry point, exact runtime or compiler versions, dependency and network-fetch plan, arguments, environment allowlist, working directory, filesystem mounts, D-Bus names, portal access, CPU, memory, process, output and timeout limits. Deny network by default. Run only disposable synthetic projects for validation. Review live GTK/CSS and declarative previews for widget signals, URI activation, clipboard, notifications, audio and accessibility effects. Formatters and diagnostics that mutate source require a diff preview and recoverable autosave snapshot.\n\nSanitize terminal ANSI controls and cap retained output; terminate child process groups on cancel or preview close. Verify provenance, app ID, origin, commit, runtime, executable, files and static sandbox permissions offline. Prove no project or session read, runtime process, compiler, formatter, preview, terminal, environment inspection, filesystem write, bus call, portal, network request, autosave or notification occurred. On failure, rollback only the new Workbench ref in its original scope; preserve shared runtimes, remotes, overrides, projects, sessions, autosaves, terminal state and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable re.sonny.Workbench from verified Flathub in the existing scope without source builds, launch, session restore, examples, project parsing, previews, language execution, compilers, formatters, terminals, buses, networks, portals, or autosaves.",
+      "preserve": "all project and session bytes, owners and permissions, autosave and recovery state, runtime and formatter choices, terminal history, sandbox overrides, backups, remotes, and scope ownership",
+      "safety": "Never treat prototype code as passive, trust external examples, inherit secrets, fetch dependencies unexpectedly, expose source or terminal output, grant broad filesystems or buses, run without resource caps, allow preview side effects, mutate source without a diff, retain hostile ANSI output, or leave child processes running.",
+      "verify": "Verify Workbench source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove projects, sessions, runtimes, compilers, formatters, previews, terminals, environments, filesystems, buses, portals, networks and autosaves are unchanged."
+    }
   }
 ]
