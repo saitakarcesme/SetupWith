@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "sensitive_region_inventory",
+    "redaction_strength",
+    "flattened_output",
+    "disclosure_review"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "image owner, subjects, consent, classification, intended audience, sharing channel, retention, and legal disclosure boundary",
+    "faces, names, addresses, account numbers, screens, badges, reflections, QR codes, barcodes, backgrounds, and indirect identifiers",
+    "source dimensions, crop, orientation, color profile, alpha, animation or multipage status, embedded thumbnails, and metadata",
+    "censor region geometry, edge padding, opacity or transformation strength, zoom level, anti-aliasing, and recoverability",
+    "working copy, original preservation, undo data, temporary files, autosave, clipboard, recent files, and crash recovery",
+    "output format, raster flattening, recompression, metadata stripping, filename, destination permissions, overwrite, and checksum",
+    "reopen test, multiple zoom levels, OCR or barcode scan, contrast enhancement, second reviewer, and residual disclosure",
+    "sharing destination, access control, expiration, revocation limits, cached copies, publication approval, and rollback"
+  ]
+}

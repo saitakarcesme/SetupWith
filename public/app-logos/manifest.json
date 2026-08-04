@@ -2483,5 +2483,10 @@
     "file": "mousai-song-recognition.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.seadve.Mousai.svg",
     "sourceType": "official-project-asset"
+  },
+  "obfuscate-image-redaction": {
+    "file": "obfuscate-image-redaction.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/com.belmoussaoui.Obfuscate.svg",
+    "sourceType": "official-project-asset"
   }
 }

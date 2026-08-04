@@ -5514,5 +5514,57 @@
       "safety": "Never capture conversations or broad system audio, ignore bystander consent, upload without AudD retention review, treat offline queueing as private, spend quota silently, present matches as proof, autoplay previews, or trust provider links without source, duration, consent, endpoint, token, queue, confidence, output, and redirect review.",
       "verify": "Verify Mousai source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove audio, portals, tokens, queues, APIs, history, previews, browsers and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 498,
+    "name": "Obfuscate",
+    "slug": "obfuscate-image-redaction",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/Obfuscate",
+      "installUrl": "https://flathub.org/apps/com.belmoussaoui.Obfuscate"
+    },
+    "website": "https://apps.gnome.org/Obfuscate/",
+    "category": "Security & Privacy",
+    "vertical": "software",
+    "description": "Focused GNOME image-redaction utility for censoring private visual information before an image is shared or published.",
+    "accent": "#C01C28",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.belmoussaoui.Obfuscate.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "sensitive_region_inventory",
+      "redaction_strength",
+      "flattened_output",
+      "disclosure_review"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "image owner, subjects, consent, classification, intended audience, sharing channel, retention, and legal disclosure boundary",
+      "faces, names, addresses, account numbers, screens, badges, reflections, QR codes, barcodes, backgrounds, and indirect identifiers",
+      "source dimensions, crop, orientation, color profile, alpha, animation or multipage status, embedded thumbnails, and metadata",
+      "censor region geometry, edge padding, opacity or transformation strength, zoom level, anti-aliasing, and recoverability",
+      "working copy, original preservation, undo data, temporary files, autosave, clipboard, recent files, and crash recovery",
+      "output format, raster flattening, recompression, metadata stripping, filename, destination permissions, overwrite, and checksum",
+      "reopen test, multiple zoom levels, OCR or barcode scan, contrast enhancement, second reviewer, and residual disclosure",
+      "sharing destination, access control, expiration, revocation limits, cached copies, publication approval, and rollback"
+    ],
+    "prompt": "Set up Obfuscate from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Obfuscate/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, approved image roots, recent-file count, temporary-data location, clipboard policy and organization redaction standard without opening images, listing filenames or examining sensitive regions. Install stable `com.belmoussaoui.Obfuscate` from verified Flathub in the existing ownership scope. Do not compile from source, launch Obfuscate, import an image, grant broader file access, apply censorship, write temporary previews, copy, save or share during setup.\n\nPreserve every original image, timestamp, permission, metadata record and existing edited copy. Installation is not authorization to inspect or censor content. Before future work establish the owner, subject consent, disclosure purpose, audience and exact information categories to remove. Review not only obvious text and faces but reflections, backgrounds, badges, screens, addresses, account identifiers, QR/barcodes and combinations of innocuous details that can re-identify a person. Always edit a protected duplicate and never overwrite the sole original.\n\nA visual effect is not automatically secure redaction. Blur and pixelation can leave recognizable structure, while an editor may retain underlying pixels in undo state, alpha, thumbnails, temporary files or metadata. Use an organization-approved opaque treatment with sufficient edge padding, flatten to a new raster output, strip metadata and embedded thumbnails, and avoid formats or workflows that preserve editable layers. Animated or multipage inputs require every frame or page to be handled by a suitable reviewed tool rather than assuming the visible frame is complete.\n\nClose and reopen only the exported copy, inspect it at several zoom and contrast levels, run approved OCR and barcode checks, verify dimensions/metadata, and require a second reviewer who understands the disclosure boundary. Sharing creates copies that may not be revocable; confirm destination access, retention and final checksum separately. Verify Obfuscate provenance, app ID, origin, commit, runtime, executable, files and permissions offline. Prove no image read, portal grant, temporary file, censor operation, clipboard, export, metadata change, network request or filesystem state changed. On failure, rollback only the new Obfuscate ref in its original scope; preserve runtimes, remotes, overrides, originals and edited files.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.belmoussaoui.Obfuscate from verified Flathub in the existing scope without source builds, launch, image reads, new file grants, censorship, temporary previews, clipboard access, saves, metadata changes, sharing, or networks.",
+      "preserve": "all original and edited images, timestamps, permissions, metadata, dimensions, profiles, temporary-data policy, recent-file state, clipboard contents, remotes, overrides, and scope ownership",
+      "safety": "Never inspect without authority, overwrite originals, miss indirect identifiers, trust blur or pixelation, retain underlying pixels or metadata, ignore animation or pages, or share without owner, subject, disclosure, region, flattening, OCR/barcode, second-review, destination, retention, and checksum verification.",
+      "verify": "Verify Obfuscate source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove images, portals, temporary data, censoring, clipboard, exports, metadata, networks and filesystem state are unchanged."
+    }
   }
 ]
