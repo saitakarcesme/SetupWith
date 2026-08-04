@@ -1,0 +1,17 @@
+{
+  "index": 527,
+  "name": "Biblioteca",
+  "slug": "biblioteca-gnome-docs",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/workbenchdev/Biblioteca",
+    "installUrl": "https://flathub.org/apps/app.drey.Biblioteca"
+  },
+  "website": "https://apps.gnome.org/Biblioteca/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "Adaptive GNOME documentation reader with a bundled offline library, fuzzy search, tabs, dark mode, and optional web browsing.",
+  "accent": "#9141AC",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.Biblioteca.svg",
+  "logoSourceType": "official-project-asset"
+}

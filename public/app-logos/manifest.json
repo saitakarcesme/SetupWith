@@ -2628,5 +2628,10 @@
     "file": "audio-sharing-rtsp-stream.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/de.haeckerfelix.AudioSharing.svg",
     "sourceType": "official-project-asset"
+  },
+  "biblioteca-gnome-docs": {
+    "file": "biblioteca-gnome-docs.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.Biblioteca.svg",
+    "sourceType": "official-project-asset"
   }
 }

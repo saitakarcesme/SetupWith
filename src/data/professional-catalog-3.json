@@ -7049,5 +7049,57 @@
       "safety": "Never capture microphones accidentally, stream calls or notifications without consent, bind every interface, treat a hidden RTSP path as authentication, expose QR codes, assume LAN users are trusted, reroute audio, retain clients after stop, run invisibly in background, or leave sockets and firewall rules behind.",
       "verify": "Verify Audio Sharing source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove audio servers, nodes, captures, sockets, firewalls, advertisements, QR codes, clients, packets, playback and power state are untouched."
     }
+  },
+  {
+    "index": 527,
+    "name": "Biblioteca",
+    "slug": "biblioteca-gnome-docs",
+    "source": {
+      "type": "website",
+      "url": "https://github.com/workbenchdev/Biblioteca",
+      "installUrl": "https://flathub.org/apps/app.drey.Biblioteca"
+    },
+    "website": "https://apps.gnome.org/Biblioteca/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "Adaptive GNOME documentation reader with a bundled offline library, fuzzy search, tabs, dark mode, and optional web browsing.",
+    "accent": "#9141AC",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/app.drey.Biblioteca.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "bundled_documentation_provenance",
+      "offline_and_web_boundary",
+      "fuzzy_search_privacy",
+      "tab_and_session_isolation"
+    ],
+    "installTime": "10–25 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "bundled GNOME library, API and SDK documentation versions, package provenance, build commit, checksums, licenses, languages, and release age",
+      "offline document origin, optional web origin, URL display, redirects, TLS, content security, remote resources, and origin labeling",
+      "fuzzy-search query, normalization, ranking, symbol ambiguity, selected documentation version, history, retention, and diagnostic redaction",
+      "tabs, restored pages, scroll positions, web and offline partitioning, cookies, local storage, cache, service workers, and private state",
+      "HTML, CSS, images, fonts, code samples, active content, custom URI schemes, clipboard, downloads, parser and renderer limits",
+      "code examples, shell commands, deprecated APIs, platform assumptions, version labels, copy behavior, and non-execution boundary",
+      "network permission, DNS, telemetry absence, filesystem and portal grants, external browser handoff, and least privilege",
+      "documentation refresh, cache eviction, tab closure, history clearing, offline rollback, app reset, uninstall, and backups"
+    ],
+    "prompt": "Set up Biblioteca from its official project and verified Flathub listing (https://apps.gnome.org/Biblioteca/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, bundled documentation release and checksum-set presence, offline-book and SDK-version counts, tab count by offline or web class, fuzzy-search history count, aggregate web and document-cache bytes, network permission presence, sandbox overrides and backup coverage without reading pages or revealing queries, API symbols, tab titles, URLs, cookies, browsing state, project interests or copied code. Install stable `app.drey.Biblioteca` from verified Flathub in the existing ownership scope. Do not compile from source, launch Biblioteca, restore tabs, open documentation, build or read a search index, issue a fuzzy query, render HTML, execute a code sample, resolve a hostname, fetch web content, load a remote asset, access the clipboard, download a file or change history during setup.\n\nPreserve the bundled documentation bytes and version mapping, tabs, scroll positions, bookmarks, search and web history, cookies, caches, display choices, permissions, remotes, overrides and scope ownership. Offline and web pages require unmistakable origin labels; identical titles do not establish identical versions or trust. Installation must not refresh bundled docs from the network, silently restore a sensitive web tab, merge web state with offline navigation, prefer a newer-looking API over the selected SDK or make Biblioteca a browser default.\n\nBefore later use, verify each bundled documentation package's source commit, checksum, license, SDK version, language and publication date. Label results with their exact version and warn when APIs are deprecated or mismatched with the developer's target. Fuzzy matching may rank similarly named symbols; show the matched text and owning library rather than treating the first result as exact. Code samples and commands are reference text, never automatically executable or safe for the current environment. Validate rendering using synthetic documentation, not private project manuals.\n\nFor optional web browsing, require an exact HTTPS origin and visible final URL, isolate cookies, storage and service workers from offline tabs, block active custom schemes and confirm external-browser handoff. Do not send local search queries or SDK identifiers to remote sites. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no tab restore, page or index read, search, render, code execution, DNS, web fetch, remote asset, clipboard, download, history or cache mutation occurred. On failure, rollback only the new Biblioteca ref in its original scope; preserve shared runtimes, remotes, overrides, documentation, tabs, histories, bookmarks, web state, settings and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable app.drey.Biblioteca from verified Flathub in the existing scope without source builds, launch, tab restoration, docs or index reads, fuzzy searches, HTML rendering, code execution, DNS, web content, remote assets, clipboard, downloads, histories, or caches.",
+      "preserve": "all bundled documentation and version mappings, tabs, scroll positions, bookmarks, search and web histories, cookies, caches, display choices, permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never blur offline and web origins, refresh docs silently, expose development interests, rank fuzzy matches as exact, omit SDK versions, execute examples, restore sensitive web tabs, mix storage partitions, activate custom schemes, leak local queries, or change browser defaults.",
+      "verify": "Verify Biblioteca source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove tabs, documentation, indexes, searches, renders, execution, networks, assets, clipboards, downloads, histories and caches are unchanged."
+    }
   }
 ]

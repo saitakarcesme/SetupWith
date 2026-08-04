@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–25 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "bundled_documentation_provenance",
+    "offline_and_web_boundary",
+    "fuzzy_search_privacy",
+    "tab_and_session_isolation"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "bundled GNOME library, API and SDK documentation versions, package provenance, build commit, checksums, licenses, languages, and release age",
+    "offline document origin, optional web origin, URL display, redirects, TLS, content security, remote resources, and origin labeling",
+    "fuzzy-search query, normalization, ranking, symbol ambiguity, selected documentation version, history, retention, and diagnostic redaction",
+    "tabs, restored pages, scroll positions, web and offline partitioning, cookies, local storage, cache, service workers, and private state",
+    "HTML, CSS, images, fonts, code samples, active content, custom URI schemes, clipboard, downloads, parser and renderer limits",
+    "code examples, shell commands, deprecated APIs, platform assumptions, version labels, copy behavior, and non-execution boundary",
+    "network permission, DNS, telemetry absence, filesystem and portal grants, external browser handoff, and least privilege",
+    "documentation refresh, cache eviction, tab closure, history clearing, offline rollback, app reset, uninstall, and backups"
+  ]
+}
