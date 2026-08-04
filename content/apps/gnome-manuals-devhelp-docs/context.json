@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Intermediate",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "documentation_source",
+    "index_integrity",
+    "search_privacy",
+    "external_link_policy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "Devhelp book source, SDK or runtime identity, package, version, architecture, documentation root, ownership, checksum, and license",
+    "book manifest, chapters, symbols, languages, duplicate namespaces, cross-reference targets, version precedence, and stale-document detection",
+    "HTML, CSS, images, fonts, embedded resources, malformed markup, active content, URI schemes, parser isolation, and rendering limits",
+    "index destination, file and symbol counts, tokenizer, locale, deterministic build, concurrency, corruption detection, disk use, and atomic replacement",
+    "search queries, viewed symbols, navigation history, bookmarks, recent manuals, project inference, local retention, and diagnostic redaction",
+    "external web links, source-code links, mail addresses, final host, network boundary, browser handoff, redirects, and confirmation",
+    "filesystem grants, host SDK and Flatpak runtime discovery, symbolic links, removable roots, portals, network permission, and least privilege",
+    "index rebuild, source removal, orphan cleanup, cache and history deletion, backup, app reset, uninstall, and rollback"
+  ]
+}

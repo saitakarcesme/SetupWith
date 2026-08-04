@@ -6943,5 +6943,57 @@
       "safety": "Never expose message payloads, confuse bus reachability with authorization, activate services while surveying, trust introspection XML, identify unrelated processes, mutate properties casually, call methods without side-effect review, transfer real secrets, retain broad signal monitors, or bypass D-Bus and polkit policy.",
       "verify": "Verify D-Spy source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove buses, names, services, introspection, properties, methods, signals, messages, descriptors, privilege prompts and exports are untouched."
     }
+  },
+  {
+    "index": 525,
+    "name": "Manuals",
+    "slug": "gnome-manuals-devhelp-docs",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/GNOME/manuals",
+      "installUrl": "https://flathub.org/apps/org.gnome.Manuals"
+    },
+    "website": "https://apps.gnome.org/Manuals/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "GNOME developer-documentation reader that indexes Devhelp manuals and provides SDK-aware browsing, full-text search, navigation, and reference viewing.",
+    "accent": "#26A269",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Manuals.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "documentation_source",
+      "index_integrity",
+      "search_privacy",
+      "external_link_policy"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Intermediate",
+    "permissionCheckpoints": [
+      "Devhelp book source, SDK or runtime identity, package, version, architecture, documentation root, ownership, checksum, and license",
+      "book manifest, chapters, symbols, languages, duplicate namespaces, cross-reference targets, version precedence, and stale-document detection",
+      "HTML, CSS, images, fonts, embedded resources, malformed markup, active content, URI schemes, parser isolation, and rendering limits",
+      "index destination, file and symbol counts, tokenizer, locale, deterministic build, concurrency, corruption detection, disk use, and atomic replacement",
+      "search queries, viewed symbols, navigation history, bookmarks, recent manuals, project inference, local retention, and diagnostic redaction",
+      "external web links, source-code links, mail addresses, final host, network boundary, browser handoff, redirects, and confirmation",
+      "filesystem grants, host SDK and Flatpak runtime discovery, symbolic links, removable roots, portals, network permission, and least privilege",
+      "index rebuild, source removal, orphan cleanup, cache and history deletion, backup, app reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Manuals from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Manuals/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, discovered SDK and Devhelp-book counts by version class, aggregate index and cache bytes, bookmark and history counts, filesystem grants, network permission presence, sandbox overrides and backup coverage without reading documentation content or revealing manual titles, symbol names, search queries, viewed APIs, project paths, usernames, source links or inferred development work. Install stable `org.gnome.Manuals` from verified Flathub in the existing ownership scope. Do not compile from source, launch Manuals, scan SDK roots, enumerate books, parse Devhelp or HTML files, build an index, search, restore history, render a page, follow a link, open a browser, access a portal or contact a network during setup.\n\nPreserve every documentation source byte, package and version association, existing index, cache, bookmark, history, display preference, permission, remote, override and scope ownership. Developer searches and viewed symbols can reveal confidential projects or vulnerabilities; redact them from diagnostics. Installation must not merge books from incompatible SDK versions, prefer an unversioned manual over a pinned runtime, remove an orphaned index, traverse symlinks beyond approved roots or make Manuals the default documentation handler without review.\n\nBefore a later index build, require each Devhelp root's owner, SDK or runtime ID, architecture, package version, checksum and license. Parse manifests and HTML as untrusted local content with file, markup-depth, image, font, memory and time limits; disable active content and nonessential URI schemes. Resolve duplicate namespaces and cross-references by explicit SDK version rather than newest-looking filenames. Build deterministically into a new destination, cap disk use and atomically swap only after book, chapter, symbol and broken-link counts pass. Test with a disposable synthetic manual, not proprietary documentation.\n\nDefine local search-history retention and bookmark behavior. Label the exact SDK and package version beside results so outdated APIs are not presented as current; documentation is version-specific and may contain errors. External source and web links require final-host preview and confirmation, without carrying local queries or file paths. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no root scan, book enumeration, parser, index write, search, history or bookmark read, page render, link activation, portal or network request occurred. On failure, rollback only the new Manuals ref in its original scope; preserve shared runtimes, remotes, overrides, documentation, indexes, histories, bookmarks, settings and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.Manuals from verified Flathub in the existing scope without source builds, launch, SDK scans, book enumeration, parsing, indexing, searches, history restoration, rendering, links, browsers, portals, or networks.",
+      "preserve": "every documentation source and SDK-version association, index, cache, bookmark, history, display preference, permission, backup, remote, override, and scope ownership",
+      "safety": "Never expose development interests, merge incompatible SDK books, trust documentation markup, traverse unapproved roots, resolve duplicate symbols by filename alone, replace indexes non-atomically, present stale APIs without version labels, leak local queries to links, or change default handlers silently.",
+      "verify": "Verify Manuals source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove roots, books, parsers, indexes, searches, histories, bookmarks, renders, links, portals and networks are unchanged."
+    }
   }
 ]

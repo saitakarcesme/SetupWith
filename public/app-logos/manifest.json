@@ -2618,5 +2618,10 @@
     "file": "d-spy-dbus-explorer.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.dspy.svg",
     "sourceType": "official-project-asset"
+  },
+  "gnome-manuals-devhelp-docs": {
+    "file": "gnome-manuals-devhelp-docs.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Manuals.svg",
+    "sourceType": "official-project-asset"
   }
 }
