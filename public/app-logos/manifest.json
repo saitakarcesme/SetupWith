@@ -2678,5 +2678,10 @@
     "file": "constrict-target-size-video.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.wartybix.Constrict.svg",
     "sourceType": "official-project-asset"
+  },
+  "drum-machine-pattern-sequencer": {
+    "file": "drum-machine-pattern-sequencer.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.revisto.drum-machine.svg",
+    "sourceType": "official-project-asset"
   }
 }

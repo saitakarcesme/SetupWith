@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–25 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "pattern_timing",
+    "sample_and_midi_mapping",
+    "mix_playback_safety",
+    "export_fidelity"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "pattern pages, step resolution, beats and bars, active cells, BPM, tempo changes, loop boundary, page order, and timing grid",
+    "built-in and custom sample source, checksum, license, format, sample rate, channels, bit depth, duration, decoder trust, and missing files",
+    "instrument row, sample assignment, MIDI note number, channel, duplicate mappings, velocity behavior, note length, and external-device expectations",
+    "master and per-sample gain if available, clipping, headroom, simultaneous hits, audio output, latency, buffer, metering, and safe initial volume",
+    "play, stop, loop and page transitions, scheduler clock, underruns, suspend, tempo accuracy, stuck notes, and deterministic transport",
+    "pattern save and load, version, relative sample paths, portability, collision, autosave, clear pattern versus reset defaults, and recovery",
+    "WAV, FLAC, Ogg, MP3 and MIDI export choice, codec availability, render range, tail, normalization, metadata, output path, and compatibility",
+    "export verification, cancellation, partial output cleanup, sample preservation, backup, app reset, uninstall, and rollback"
+  ]
+}

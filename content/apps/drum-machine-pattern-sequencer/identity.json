@@ -1,0 +1,17 @@
+{
+  "index": 537,
+  "name": "Drum Machine",
+  "slug": "drum-machine-pattern-sequencer",
+  "source": {
+    "type": "website",
+    "url": "https://github.com/revisto/drum-machine",
+    "installUrl": "https://flathub.org/apps/io.github.revisto.drum-machine"
+  },
+  "website": "https://apps.gnome.org/DrumMachine/",
+  "category": "Music & Streaming",
+  "vertical": "creative",
+  "description": "Grid-based drum pattern sequencer with unlimited pages, built-in and custom samples, MIDI note mapping, BPM and master-volume controls, pattern persistence, playback, and audio or MIDI export.",
+  "accent": "#C061CB",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.revisto.drum-machine.svg",
+  "logoSourceType": "official-project-asset"
+}
