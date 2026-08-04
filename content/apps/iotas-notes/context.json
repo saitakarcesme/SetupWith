@@ -1,0 +1,41 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "10–20 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "note_storage",
+    "sync_authority",
+    "search_exposure",
+    "backup_restore"
+  ],
+  "secrets": [
+    {
+      "key": "iotas_nextcloud_username",
+      "reference": "secret://iotas/nextcloud-username"
+    },
+    {
+      "key": "iotas_nextcloud_app_password",
+      "reference": "secret://iotas/nextcloud-app-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "local SQLite database, FTS index, note and category counts, constant-save behavior, partial loading, and data ownership",
+    "Nextcloud Notes REST API origin, redirects, TLS, account, app password, API compatibility, collection scope, and secret storage",
+    "offline edits, remote edits, note IDs, timestamps, basic conflict detection, duplicates, deletions, tombstones, and first-sync authority",
+    "Markdown source, formatted preview, task-list mutation, links, images, syntax highlighting, untrusted content, and external navigation",
+    "GNOME Shell search provider, note titles or snippets, lock-screen and overview exposure, indexing, and per-user session privacy",
+    "spell checking, dictionary language, personal-word storage, document content access, network dictionaries, and retention",
+    "CLI backup and restore, plain-file export, archive destination, permissions, completeness, checksum, destructive replacement, and rehearsal",
+    "PDF, ODT and HTML preview export, renderer, metadata, fonts, embedded links, destination overwrite, recent files, and rollback"
+  ]
+}

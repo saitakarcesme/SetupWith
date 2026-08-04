@@ -5193,5 +5193,60 @@
       "safety": "Never trust top-ranked recognition, conflate LaTeX with Typst, overlook confusable or invisible symbols, infer packages, enable shell escape, rewrite source, install accelerator drivers, or overwrite clipboard data without model, candidate, semantics, syntax, engine, dependency, destination, and author review.",
       "verify": "Verify Hieroglyphic source, app ID, origin, commit, runtime, executable, recognition model, files and permissions offline, then prove sketches, inference, accelerators, clipboard, packages, compilation, networks and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 492,
+    "name": "Iotas",
+    "slug": "iotas-notes",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/iotas",
+      "installUrl": "https://flathub.org/apps/org.gnome.World.Iotas"
+    },
+    "website": "https://apps.gnome.org/Iotas/",
+    "category": "Productivity",
+    "vertical": "software",
+    "description": "Mobile-first Markdown-capable note app with SQLite FTS storage, constant saves, categories and favorites, offline editing, Nextcloud Notes REST synchronization, Shell search, backup, restore, and preview exports.",
+    "accent": "#1A5FB4",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Iotas.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "iotas_nextcloud_username",
+      "iotas_nextcloud_app_password"
+    ],
+    "config": [
+      "note_storage",
+      "sync_authority",
+      "search_exposure",
+      "backup_restore"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "local SQLite database, FTS index, note and category counts, constant-save behavior, partial loading, and data ownership",
+      "Nextcloud Notes REST API origin, redirects, TLS, account, app password, API compatibility, collection scope, and secret storage",
+      "offline edits, remote edits, note IDs, timestamps, basic conflict detection, duplicates, deletions, tombstones, and first-sync authority",
+      "Markdown source, formatted preview, task-list mutation, links, images, syntax highlighting, untrusted content, and external navigation",
+      "GNOME Shell search provider, note titles or snippets, lock-screen and overview exposure, indexing, and per-user session privacy",
+      "spell checking, dictionary language, personal-word storage, document content access, network dictionaries, and retention",
+      "CLI backup and restore, plain-file export, archive destination, permissions, completeness, checksum, destructive replacement, and rehearsal",
+      "PDF, ODT and HTML preview export, renderer, metadata, fonts, embedded links, destination overwrite, recent files, and rollback"
+    ],
+    "prompt": "Set up Iotas from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Iotas/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, local SQLite database presence, note/category counts, FTS and GNOME Shell search state, Nextcloud account count, offline-edit status, secret-store boundary and backup freshness without reading note titles, bodies, categories, search terms or credentials. Install stable `org.gnome.World.Iotas` from verified Flathub in the existing ownership scope. Do not compile from source, launch Iotas, open or migrate the database, authenticate, synchronize, index notes, run backup/restore or render/export content during setup.\n\nPreserve every note, ID, body, Markdown source, task state, category, favorite, timestamp, sync token, conflict copy, deletion marker, FTS record, preference and credential reference. Iotas constantly saves and large collections may be partially loaded; never infer that unloaded notes are absent or that closing without an explicit export creates a recovery point. Back up the SQLite database and associated state consistently before migration or synchronization, then verify the backup checksum and rehearse restoration only against an isolated profile.\n\nNextcloud Notes sync uses its REST API rather than WebDAV and provides basic conflict detection. Before first connection show the exact HTTPS origin, certificate and redirects, account identity, dedicated app-password storage, API version, note counts on each side and a content-redacted preview of local-only, remote-only, changed, conflicted and deleted records. Declare one initial authority and explicit rules for simultaneous edits, IDs, timestamps, duplicates and tombstones. Never let newest timestamp or server deletion win silently; preserve both versions when uncertain.\n\nGNOME Shell search and FTS indexes can expose titles or snippets outside the editor. Keep the Shell provider disabled until session privacy and indexing scope are approved. Treat Markdown links and rendered HTML as untrusted; do not fetch images or navigate during verification. PDF, ODT and HTML export can retain metadata and links. Verify provenance, app ID, origin, commit, runtime, executable, database schema, files and permissions offline. Prove no database read/write, index, secret access, API request, sync token, preview, task toggle, backup, restore, export, Shell result or filesystem state changed. On failure, rollback only the new Iotas ref in its original scope; preserve runtimes, remotes, overrides, databases, notes and credentials.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.World.Iotas from verified Flathub in the existing scope without source builds, launch, database access or migration, authentication, sync, indexing, rendering, backup, restore, Shell search, or exports.",
+      "preserve": "all notes, IDs, Markdown, task state, categories, favorites, timestamps, sync tokens, conflicts, tombstones, SQLite and FTS data, credentials, search settings, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose note content, assume partial loading means absence, migrate without restore-tested backup, let timestamp or deletion win implicitly, leak titles through Shell search, trust rendered links, fetch remote content, or restore/export without database, authority, conflict, privacy, renderer, metadata, and destination review.",
+      "verify": "Verify Iotas source, app ID, origin, commit, runtime, executable, database schema, files and permissions offline, then prove databases, indexes, secrets, APIs, sync, previews, tasks, backups, restores, exports, Shell results and filesystem state are unchanged."
+    }
   }
 ]

@@ -2453,5 +2453,10 @@
     "file": "hieroglyphic-symbol-finder.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.finefindus.Hieroglyphic.svg",
     "sourceType": "official-project-asset"
+  },
+  "iotas-notes": {
+    "file": "iotas-notes.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Iotas.svg",
+    "sourceType": "official-project-asset"
   }
 }

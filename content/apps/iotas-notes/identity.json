@@ -1,0 +1,17 @@
+{
+  "index": 492,
+  "name": "Iotas",
+  "slug": "iotas-notes",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/iotas",
+    "installUrl": "https://flathub.org/apps/org.gnome.World.Iotas"
+  },
+  "website": "https://apps.gnome.org/Iotas/",
+  "category": "Productivity",
+  "vertical": "software",
+  "description": "Mobile-first Markdown-capable note app with SQLite FTS storage, constant saves, categories and favorites, offline editing, Nextcloud Notes REST synchronization, Shell search, backup, restore, and preview exports.",
+  "accent": "#1A5FB4",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.World.Iotas.svg",
+  "logoSourceType": "official-project-asset"
+}
