@@ -4078,5 +4078,57 @@
       "safety": "Never capture private screens, read images or clipboard data, retain OCR text, auto-follow QR payloads, invoke handlers, share extracted content, download models, alter telemetry, or synthesize speech without source, content, endpoint, account, redaction, and retention review.",
       "verify": "Verify Frog source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove portals, screenshots, clipboard, models, OCR output, QR handlers, telemetry, temporary files, processes, audio and network state are unchanged."
     }
+  },
+  {
+    "index": 471,
+    "name": "Impression",
+    "slug": "impression-image-writer",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.com/adhami3310/Impression",
+      "installUrl": "https://flathub.org/apps/io.gitlab.adhami3310.Impression"
+    },
+    "website": "https://apps.gnome.org/Impression/",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "Minimal GNOME utility for writing local or downloaded disk images, including Linux and Windows installer media, to removable drives.",
+    "accent": "#FFB63F",
+    "logoUrl": "https://gitlab.com/adhami3310/Impression/-/raw/main/data/resources/icons/hicolor/scalable/apps/io.gitlab.adhami3310.Impression.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "image_provenance",
+      "device_identity",
+      "backup_gate",
+      "write_verification"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "High Risk",
+    "permissionCheckpoints": [
+      "image URL or local path, publisher, release, signature, checksum, compression, and architecture",
+      "device node, persistent ID, vendor, model, serial, capacity, transport, removable flag, and topology",
+      "mounted partitions, filesystems, encryption containers, LVM or RAID membership, and active swap",
+      "target-drive backup completeness, restore test, recovery destination, and irreversible data loss",
+      "UDisks or polkit authorization, raw block access, unmount requests, exclusive use, and open handles",
+      "Linux ISO, IMG, XZ, Windows installer transformation, partition table, boot records, and expected layout",
+      "write progress, cancellation semantics, kernel buffers, sync, read-back verification, and safe eject",
+      "download cache, partial image cleanup, diagnostic logs, target reselection, and rollback limitations"
+    ],
+    "prompt": "Set up Impression from its official GitLab project and verified Flathub listing (https://gitlab.com/adhami3310/Impression). Inventory Linux architecture, Flatpak user and system scopes, existing Impression package, UDisks/polkit availability, image-download preferences and removable-device access policy without opening any block device. Install only stable `io.gitlab.adhami3310.Impression` from the verified Flathub origin in the existing ownership scope; upstream supports Flatpak as its official package. Do not launch Impression, enumerate media through its UI, select an image, download a distribution or request authorization during setup.\n\nPreserve all disks, partition tables, filesystems, encryption headers, volume metadata, boot records, mounts, swap state and image files byte-for-byte. Raw image writing overwrites the target and is not reversible by uninstalling Impression. Never use a write as installation verification. Before any future write require a separately verified backup and show the image's canonical HTTPS source, publisher, release, architecture, file size, format, signature and published checksum; reject truncated downloads, unexplained redirects and checksum mismatch. Treat Windows installer media transformation separately from a byte-for-byte Linux image write.\n\nNever identify a target by `/dev/sdX` alone because device nodes can change. Immediately before approval re-resolve persistent ID, vendor, model, serial, exact byte capacity, USB/SD transport, removable flag, parent/child topology, mounted partitions, encryption, LVM/RAID membership, swap and open handles. Refuse system disks, ambiguous serials, multipath devices, mounted targets and any drive containing the only backup. Present the destructive confirmation with source and target side by side; authorization must name the persistent target identity, not merely say 'continue'.\n\nDo not unmount, write, cancel an active write, repartition, format, sync or eject during setup. Cancellation may leave unusable partial media, and buffered writes are incomplete until synchronization finishes. Verify Impression provenance, app ID, origin, installed commit, runtime, executable, files and declared permissions through Flatpak metadata offline. Compare preflight block topology, mount table and image hashes and prove no authorization prompt, download, device open, unmount, write, cache file or network request occurred. If package verification fails, rollback only the new Impression ref in its original scope; never attempt to 'rollback' media by writing another image, and preserve runtimes, remotes, overrides, images and every device.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.gitlab.adhami3310.Impression from verified Flathub in the existing scope without alternate packages, launch, device enumeration, image selection or downloads, authorization, unmounts, raw access, writes, sync, or eject.",
+      "preserve": "all disks, persistent identities, partition tables, filesystems, encryption and volume metadata, boot records, mounts, swap, open handles, image files, checksums, caches, polkit state, remotes, overrides, and scope ownership",
+      "safety": "Never trust volatile device nodes, target system or ambiguous disks, write without verified backup, accept weak image provenance, transform Windows media as a raw copy, unmount, authorize, cancel writes, or infer recoverability without source, checksum, persistent identity, topology, backup, and data-loss review.",
+      "verify": "Verify Impression source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove block topology, mounts, image hashes, authorization, downloads, device opens, writes, caches and network state are unchanged."
+    }
   }
 ]

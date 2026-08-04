@@ -2348,5 +2348,10 @@
     "file": "frog-ocr.svg",
     "source": "https://raw.githubusercontent.com/TenderOwl/Frog/master/data/icons/com.github.tenderowl.frog.svg",
     "sourceType": "official-project-asset"
+  },
+  "impression-image-writer": {
+    "file": "impression-image-writer.svg",
+    "source": "https://gitlab.com/adhami3310/Impression/-/raw/main/data/resources/icons/hicolor/scalable/apps/io.gitlab.adhami3310.Impression.svg",
+    "sourceType": "official-project-asset"
   }
 }

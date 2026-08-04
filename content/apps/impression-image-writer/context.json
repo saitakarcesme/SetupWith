@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "High Risk",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "image_provenance",
+    "device_identity",
+    "backup_gate",
+    "write_verification"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "image URL or local path, publisher, release, signature, checksum, compression, and architecture",
+    "device node, persistent ID, vendor, model, serial, capacity, transport, removable flag, and topology",
+    "mounted partitions, filesystems, encryption containers, LVM or RAID membership, and active swap",
+    "target-drive backup completeness, restore test, recovery destination, and irreversible data loss",
+    "UDisks or polkit authorization, raw block access, unmount requests, exclusive use, and open handles",
+    "Linux ISO, IMG, XZ, Windows installer transformation, partition table, boot records, and expected layout",
+    "write progress, cancellation semantics, kernel buffers, sync, read-back verification, and safe eject",
+    "download cache, partial image cleanup, diagnostic logs, target reselection, and rollback limitations"
+  ]
+}

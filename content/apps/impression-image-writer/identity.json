@@ -1,0 +1,17 @@
+{
+  "index": 471,
+  "name": "Impression",
+  "slug": "impression-image-writer",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.com/adhami3310/Impression",
+    "installUrl": "https://flathub.org/apps/io.gitlab.adhami3310.Impression"
+  },
+  "website": "https://apps.gnome.org/Impression/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Minimal GNOME utility for writing local or downloaded disk images, including Linux and Windows installer media, to removable drives.",
+  "accent": "#FFB63F",
+  "logoUrl": "https://gitlab.com/adhami3310/Impression/-/raw/main/data/resources/icons/hicolor/scalable/apps/io.gitlab.adhami3310.Impression.svg",
+  "logoSourceType": "official-project-asset"
+}
