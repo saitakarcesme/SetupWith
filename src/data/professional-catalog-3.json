@@ -6889,5 +6889,59 @@
       "safety": "Never expose configuration values, bypass schemas or locks, confuse user and effective values, coerce GVariant types, ignore live listeners, assume batch atomicity, reset a subtree accidentally, migrate orphaned keys, alter managed policy, or substitute direct editing for an application's validated UI.",
       "verify": "Verify Dconf Editor source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove backends, keys, values, writes, resets, locks, listeners, exports, restarts and policies are unchanged."
     }
+  },
+  {
+    "index": 524,
+    "name": "D-Spy",
+    "slug": "d-spy-dbus-explorer",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/GNOME/d-spy",
+      "installUrl": "https://flathub.org/apps/org.gnome.dspy"
+    },
+    "website": "https://apps.gnome.org/Dspy/",
+    "category": "Developer Tools",
+    "vertical": "software",
+    "description": "GNOME developer tool for exploring session and system D-Bus connections, owned names, object paths, interfaces, methods, properties, and signals.",
+    "accent": "#9141AC",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.dspy.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "d_spy_message_payload_reference"
+    ],
+    "config": [
+      "bus_scope",
+      "introspection_privacy",
+      "method_call_controls",
+      "signal_monitor_limits"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "session, system, accessibility, peer or custom bus address, transport, namespace, user context, container boundary, and authorization",
+      "well-known and unique names, ownership changes, activatable services, object paths, interfaces, members, signatures, annotations, and provenance",
+      "introspection XML trust, recursion, object-tree breadth, service activation, timeout, malformed signatures, resource limits, and cache",
+      "method destination, path, interface, member, typed arguments, file descriptors, expected reply, side effects, identity, and explicit authorization",
+      "properties with read or write access, sensitive values, state mutation, change notification, race conditions, and restore plan",
+      "signals and message payloads, credentials metadata, account identifiers, clipboard content, notification text, diagnostics, filtering, rate, and retention",
+      "D-Bus policy, portal boundaries, polkit prompts, privileged services, denial handling, least bus access, and no-bypass requirement",
+      "monitor stop, subscription cleanup, activated-service shutdown, cache clearing, export deletion, app reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up D-Spy from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Dspy/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, declared session and system bus access, saved-filter count, aggregate introspection-cache bytes, sandbox overrides and backup coverage without connecting to a bus or revealing bus addresses, names, object paths, interfaces, members, process identities, property values, signal payloads, file descriptors, tokens or message contents. Install stable `org.gnome.dspy` from verified Flathub in the existing ownership scope. Do not compile from source, launch D-Spy, connect to any bus, list names, activate a service, introspect an object, read or write a property, call a method, subscribe to a signal, monitor traffic, receive a file descriptor, invoke polkit or export data during setup.\n\nPreserve all saved bus choices, filters, bookmarks, cached introspection, window state, permissions, remotes, overrides and scope ownership. D-Bus inspection can expose account identities, notification text, clipboard-related data and privileged service structure. Redact names and payloads. Installation must not activate a dormant service, claim a name, add a match rule, leave a subscription active or broaden session, system, accessibility or peer-bus access. A sandbox permission to connect is not authorization to inspect or invoke every reachable service.\n\nBefore later exploration, require the exact bus type or reviewed custom address, user and container context, purpose, permitted destinations and retention window. Introspect only approved services with object-depth, object-count, byte and timeout limits; treat XML, signatures and annotations as untrusted. Distinguish well-known names from transient unique owners and record ownership changes without identifying unrelated processes. Use a disposable synthetic bus service for validation so production services are neither activated nor queried.\n\nMethod calls and writable properties are mutations: require destination, path, interface, member, exact typed arguments, expected reply, side-effect statement and authorization. Never send real secrets or file descriptors in a test. Signal monitoring needs a narrow match, payload redaction, rate and byte caps, expiry and deterministic unsubscribe. Respect D-Bus and polkit denials rather than attempting bypass. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no bus connection, name listing, activation, introspection, property access, method call, signal rule, message receipt, descriptor transfer, privilege prompt or export occurred. On failure, rollback only the new D-Spy ref in its original scope; preserve shared runtimes, remotes, overrides, filters, bookmarks, caches and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.dspy from verified Flathub in the existing scope without source builds, launch, bus connections, name listing, service activation, introspection, properties, method calls, signals, monitoring, descriptors, polkit, or exports.",
+      "preserve": "all saved bus choices, filters, bookmarks, introspection caches, window state, permissions, backups, remotes, overrides, and scope ownership",
+      "safety": "Never expose message payloads, confuse bus reachability with authorization, activate services while surveying, trust introspection XML, identify unrelated processes, mutate properties casually, call methods without side-effect review, transfer real secrets, retain broad signal monitors, or bypass D-Bus and polkit policy.",
+      "verify": "Verify D-Spy source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove buses, names, services, introspection, properties, methods, signals, messages, descriptors, privilege prompts and exports are untouched."
+    }
   }
 ]

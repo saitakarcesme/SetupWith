@@ -2613,5 +2613,10 @@
     "file": "dconf-editor-settings-database.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/ca.desrt.dconf-editor.svg",
     "sourceType": "official-project-asset"
+  },
+  "d-spy-dbus-explorer": {
+    "file": "d-spy-dbus-explorer.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.dspy.svg",
+    "sourceType": "official-project-asset"
   }
 }

@@ -1,0 +1,37 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "bus_scope",
+    "introspection_privacy",
+    "method_call_controls",
+    "signal_monitor_limits"
+  ],
+  "secrets": [
+    {
+      "key": "d_spy_message_payload_reference",
+      "reference": "secret://d/spy-message-payload-reference"
+    }
+  ],
+  "permissionCheckpoints": [
+    "session, system, accessibility, peer or custom bus address, transport, namespace, user context, container boundary, and authorization",
+    "well-known and unique names, ownership changes, activatable services, object paths, interfaces, members, signatures, annotations, and provenance",
+    "introspection XML trust, recursion, object-tree breadth, service activation, timeout, malformed signatures, resource limits, and cache",
+    "method destination, path, interface, member, typed arguments, file descriptors, expected reply, side effects, identity, and explicit authorization",
+    "properties with read or write access, sensitive values, state mutation, change notification, race conditions, and restore plan",
+    "signals and message payloads, credentials metadata, account identifiers, clipboard content, notification text, diagnostics, filtering, rate, and retention",
+    "D-Bus policy, portal boundaries, polkit prompts, privileged services, denial handling, least bus access, and no-bypass requirement",
+    "monitor stop, subscription cleanup, activated-service shutdown, cache clearing, export deletion, app reset, uninstall, and rollback"
+  ]
+}

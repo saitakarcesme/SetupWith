@@ -1,0 +1,17 @@
+{
+  "index": 524,
+  "name": "D-Spy",
+  "slug": "d-spy-dbus-explorer",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/d-spy",
+    "installUrl": "https://flathub.org/apps/org.gnome.dspy"
+  },
+  "website": "https://apps.gnome.org/Dspy/",
+  "category": "Developer Tools",
+  "vertical": "software",
+  "description": "GNOME developer tool for exploring session and system D-Bus connections, owned names, object paths, interfaces, methods, properties, and signals.",
+  "accent": "#9141AC",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.dspy.svg",
+  "logoSourceType": "official-project-asset"
+}
