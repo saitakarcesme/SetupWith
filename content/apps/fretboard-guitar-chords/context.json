@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Beginner",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "chord_notation",
+    "fretboard_input",
+    "voicing_variants",
+    "local_bookmarks"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "official GitHub repository, verified Flathub identity, app ID, stable branch, manifest source, commit, runtime, and checksum",
+    "existing package scope, application data, bookmark count, last-view state, settings ownership, sandbox overrides, and backup coverage",
+    "instrument assumption, standard guitar tuning, string and fret count, handedness, capo position, and unsupported alternate tunings",
+    "chord symbol, root, accidental spelling, quality, extension, inversion, omitted notes, slash bass, and locale-specific notation",
+    "interactive fret positions, impossible combinations, muted and open strings, barre interpretation, duplicate pitches, and accidental input",
+    "voicing alternatives, playable range, hand span, skill level, ergonomic suitability, and the distinction between reference and instruction",
+    "bookmark name, chord content, ordering, persistence, import or export absence, profile ownership, and deletion boundary",
+    "display scaling, color contrast, note-name readability, keyboard navigation, screen-reader labels, reset, uninstall, and rollback"
+  ]
+}

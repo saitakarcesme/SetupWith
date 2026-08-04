@@ -7788,5 +7788,57 @@
       "safety": "Never expose unreleased branding, choose symbols silently, violate licenses or trademarks, impersonate projects, omit community approval, create inaccessible contrast, crop critical marks, render nondeterministically, collide filenames, overwrite avatars, conflate generation with publishing, authenticate, or upload automatically.",
       "verify": "Verify Emblem source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove assets, selections, renders, palettes, avatars, portals, files, networks, uploads and remote identities are unchanged."
     }
+  },
+  {
+    "index": 541,
+    "name": "Fretboard",
+    "slug": "fretboard-guitar-chords",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/bragefuglseth/fretboard",
+      "installUrl": "https://flathub.org/apps/dev.bragefuglseth.Fretboard"
+    },
+    "website": "https://apps.gnome.org/Fretboard/",
+    "category": "Music & Streaming",
+    "vertical": "creative",
+    "description": "GNOME guitar-chord reference that accepts chord names or notes plotted on an interactive fretboard, shows alternative voicings, and keeps local bookmarks.",
+    "accent": "#613583",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/dev.bragefuglseth.Fretboard.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "chord_notation",
+      "fretboard_input",
+      "voicing_variants",
+      "local_bookmarks"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Beginner",
+    "permissionCheckpoints": [
+      "official GitHub repository, verified Flathub identity, app ID, stable branch, manifest source, commit, runtime, and checksum",
+      "existing package scope, application data, bookmark count, last-view state, settings ownership, sandbox overrides, and backup coverage",
+      "instrument assumption, standard guitar tuning, string and fret count, handedness, capo position, and unsupported alternate tunings",
+      "chord symbol, root, accidental spelling, quality, extension, inversion, omitted notes, slash bass, and locale-specific notation",
+      "interactive fret positions, impossible combinations, muted and open strings, barre interpretation, duplicate pitches, and accidental input",
+      "voicing alternatives, playable range, hand span, skill level, ergonomic suitability, and the distinction between reference and instruction",
+      "bookmark name, chord content, ordering, persistence, import or export absence, profile ownership, and deletion boundary",
+      "display scaling, color contrast, note-name readability, keyboard navigation, screen-reader labels, reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Fretboard from its official GitHub repository and verified Flathub listing (https://apps.gnome.org/Fretboard/). Inventory Linux architecture, Flatpak scopes, an existing `dev.bragefuglseth.Fretboard` ref, application-data ownership, bookmark and settings counts, locale, notation preference, display scale, sandbox overrides and backup coverage without revealing saved chord names, fret positions or practice material. Install the stable verified Flathub ref in the existing ownership scope. Do not compile from source, launch Fretboard, query a chord, plot notes, change a voicing, create a bookmark, reset settings or inspect bookmark contents during setup.\n\nPreserve every saved chord, bookmark order, last-view state, accidental spelling, notation preference, window state, permission, remote, override and scope owner. Fretboard is a local chord reference: it does not need a microphone, audio capture, MIDI access, an instrument connection, an account or network access after installation. Do not grant those capabilities or infer a user’s songs from bookmark names.\n\nBefore a later lookup, confirm standard guitar tuning, string and fret assumptions, handedness, capo position, root spelling, chord quality, extensions, inversion and slash bass. Treat plotted notes as intentional input and show the resulting symbol plus alternative interpretations before saving. A mathematically valid voicing may still be physically unsuitable; label muted/open strings and barres, present alternatives, and leave ergonomic or teaching judgments to the musician. Test only with an agreed public example such as an unsaved C-major chord.\n\nVerify the repository owner, app ID, Flathub verification, manifest source, commit, runtime, executable, files, checksum and declared permissions offline. Confirm no chord query, fret input, bookmark write, microphone request, audio session, network connection or settings mutation occurred. If installation fails, rollback only the newly installed Fretboard ref in its original scope; preserve shared runtimes, remotes, overrides, bookmarks, settings and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable dev.bragefuglseth.Fretboard from its verified Flathub listing in the existing scope without source builds, launch, chord lookup, fret input, voicing changes, bookmark writes, resets, microphone, audio, MIDI, account, or network grants.",
+      "preserve": "all saved chords, bookmark order, view state, notation and accidental preferences, window state, permissions, backups, remotes, overrides, shared runtimes, and scope ownership",
+      "safety": "Never expose practice material, assume alternate tuning or capo state, silently reinterpret enharmonic spelling, save accidental fret input, promise physical playability, or grant microphone, audio, MIDI, account, or network capabilities that Fretboard does not require.",
+      "verify": "Verify repository ownership, app ID, Flathub verification, manifest source, commit, runtime, executable, files, checksum and permissions offline, then prove chord, fretboard, bookmark, microphone, audio, network and settings state are unchanged."
+    }
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "index": 541,
+  "name": "Fretboard",
+  "slug": "fretboard-guitar-chords",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/bragefuglseth/fretboard",
+    "installUrl": "https://flathub.org/apps/dev.bragefuglseth.Fretboard"
+  },
+  "website": "https://apps.gnome.org/Fretboard/",
+  "category": "Music & Streaming",
+  "vertical": "creative",
+  "description": "GNOME guitar-chord reference that accepts chord names or notes plotted on an interactive fretboard, shows alternative voicings, and keeps local bookmarks.",
+  "accent": "#613583",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/dev.bragefuglseth.Fretboard.svg",
+  "logoSourceType": "official-project-asset"
+}

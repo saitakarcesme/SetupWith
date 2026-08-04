@@ -2698,5 +2698,10 @@
     "file": "emblem-project-avatar-generator.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.design.Emblem.svg",
     "sourceType": "official-project-asset"
+  },
+  "fretboard-guitar-chords": {
+    "file": "fretboard-guitar-chords.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/dev.bragefuglseth.Fretboard.svg",
+    "sourceType": "official-project-asset"
   }
 }
