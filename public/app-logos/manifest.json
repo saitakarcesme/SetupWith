@@ -2468,5 +2468,10 @@
     "file": "komikku-comics-reader.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/info.febvre.Komikku.svg",
     "sourceType": "official-project-asset"
+  },
+  "lorem-placeholder-text": {
+    "file": "lorem-placeholder-text.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.design.Lorem.svg",
+    "sourceType": "official-project-asset"
   }
 }

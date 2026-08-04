@@ -1,0 +1,17 @@
+{
+  "index": 495,
+  "name": "Lorem",
+  "slug": "lorem-placeholder-text",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/design/lorem",
+    "installUrl": "https://flathub.org/apps/org.gnome.design.Lorem"
+  },
+  "website": "https://apps.gnome.org/Lorem/",
+  "category": "Design & Media",
+  "vertical": "software",
+  "description": "Focused GNOME utility for generating familiar Lorem Ipsum placeholder text for temporary layout, typography, mockup, and prototyping work.",
+  "accent": "#C061CB",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.design.Lorem.svg",
+  "logoSourceType": "official-project-asset"
+}

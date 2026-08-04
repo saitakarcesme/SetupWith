@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "placeholder_scope",
+    "content_labeling",
+    "clipboard_hygiene",
+    "production_exclusion"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "prototype owner, destination document, requested placeholder extent, language expectation, audience, and expiration date",
+    "generated Lorem Ipsum content, paragraph boundaries, whitespace, Unicode normalization, length, and repeatability",
+    "clipboard write, primary selection, clipboard manager history, synchronized devices, target application, and stale data",
+    "mockup labels, accessibility names, alt text, form instructions, validation messages, legal text, and user-facing semantics",
+    "test fixtures, snapshots, source repositories, localization catalogs, analytics, search indexing, and accidental production inclusion",
+    "visual density, font coverage, line breaking, right-to-left layouts, realistic content variance, and internationalization limits",
+    "placeholder marking, review checklist, lint rule, replacement owner, build gate, deadline, and removal evidence",
+    "preferences, recent output retention, network isolation, telemetry absence, uninstall, application data, and rollback"
+  ]
+}
