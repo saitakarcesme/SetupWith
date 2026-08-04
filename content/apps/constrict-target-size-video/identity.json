@@ -1,0 +1,17 @@
+{
+  "index": 536,
+  "name": "Constrict",
+  "slug": "constrict-target-size-video",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/World/Constrict",
+    "installUrl": "https://flathub.org/apps/io.github.wartybix.Constrict"
+  },
+  "website": "https://apps.gnome.org/Constrict/",
+  "category": "Design & Media",
+  "vertical": "creative",
+  "description": "Local batch video compressor that calculates bitrate, resolution, frame-rate and audio settings to meet a chosen output size using H.264, HEVC, AV1, or VP9 while retaining useful quality.",
+  "accent": "#1C71D8",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.wartybix.Constrict.svg",
+  "logoSourceType": "official-project-asset"
+}

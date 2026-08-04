@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "15–45 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "target_budget_model",
+    "codec_container_compatibility",
+    "batch_output_policy",
+    "quality_validation"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "source video owner, checksum, container, duration, dimensions, frame rate, video, audio and subtitle streams, metadata, rotation, and trust",
+    "target byte limit, tolerance, container overhead, audio and subtitle budget, average video bitrate, minimum viable bitrate, and impossibility detection",
+    "H.264, HEVC, AV1 or VP9 codec, encoder implementation, profile, level, pixel format, hardware acceleration, determinism, and receiver compatibility",
+    "resolution and frame-rate caps, aspect ratio, even dimensions, scaling, deinterlacing, variable frame rate, HDR, color metadata, and visual motion needs",
+    "audio channel layout, mono preservation, codec, bitrate, sample rate, loudness, language tracks, synchronization, and accessibility",
+    "bulk queue order, unique source identity, output directory, filename and extension, collision policy, partial files, retries, free space, and atomic publish",
+    "local processing, CPU, GPU, memory, temperature, battery, duration estimate, cancellation, pass count, temporary data, and resource limits",
+    "actual output bytes, stream inventory, duration, A/V sync, decode test, representative quality review, original preservation, cleanup, and rollback"
+  ]
+}

@@ -7528,5 +7528,57 @@
       "safety": "Never expose repository context, replace editors silently, interpolate shell commands, confuse editor and sequence-editor roles, touch real repositories during tests, mix operation contracts, include comments or diffs, rewrite trailers unexpectedly, save on abort, continue VCS operations, or claim a commit was made.",
       "verify": "Verify Commit source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove configs, repositories, indexes, worktrees, messages, diffs, pending operations, temporary files and VCS processes are unchanged."
     }
+  },
+  {
+    "index": 536,
+    "name": "Constrict",
+    "slug": "constrict-target-size-video",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/Constrict",
+      "installUrl": "https://flathub.org/apps/io.github.wartybix.Constrict"
+    },
+    "website": "https://apps.gnome.org/Constrict/",
+    "category": "Design & Media",
+    "vertical": "creative",
+    "description": "Local batch video compressor that calculates bitrate, resolution, frame-rate and audio settings to meet a chosen output size using H.264, HEVC, AV1, or VP9 while retaining useful quality.",
+    "accent": "#1C71D8",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/io.github.wartybix.Constrict.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "target_budget_model",
+      "codec_container_compatibility",
+      "batch_output_policy",
+      "quality_validation"
+    ],
+    "installTime": "15–45 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "source video owner, checksum, container, duration, dimensions, frame rate, video, audio and subtitle streams, metadata, rotation, and trust",
+      "target byte limit, tolerance, container overhead, audio and subtitle budget, average video bitrate, minimum viable bitrate, and impossibility detection",
+      "H.264, HEVC, AV1 or VP9 codec, encoder implementation, profile, level, pixel format, hardware acceleration, determinism, and receiver compatibility",
+      "resolution and frame-rate caps, aspect ratio, even dimensions, scaling, deinterlacing, variable frame rate, HDR, color metadata, and visual motion needs",
+      "audio channel layout, mono preservation, codec, bitrate, sample rate, loudness, language tracks, synchronization, and accessibility",
+      "bulk queue order, unique source identity, output directory, filename and extension, collision policy, partial files, retries, free space, and atomic publish",
+      "local processing, CPU, GPU, memory, temperature, battery, duration estimate, cancellation, pass count, temporary data, and resource limits",
+      "actual output bytes, stream inventory, duration, A/V sync, decode test, representative quality review, original preservation, cleanup, and rollback"
+    ],
+    "prompt": "Set up Constrict from its official project and verified Flathub listing (https://apps.gnome.org/Constrict/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, encoder availability by codec class, hardware-acceleration presence, queue and partial-output counts, aggregate temporary bytes, output-directory policy, sandbox overrides and backup coverage without opening media or revealing filenames, frames, thumbnails, metadata, subtitles, audio, durations, project subjects or private paths. Install stable `io.github.wartybix.Constrict` from verified Flathub in the existing ownership scope. Do not compile from source, launch Constrict, enumerate media, open or decode a video, probe streams, calculate a target bitrate from user content, generate a thumbnail, start an encoder, reserve output names, create temporary files, overwrite output, consume GPU resources or play compressed media during setup.\n\nPreserve every source and prior output byte, stream, timestamp, metadata field, owner and permission, plus queues, partial files, encoder preferences, remotes, overrides and scope ownership. Target-size compression is lossy and may be impossible at an acceptable quality; installation must not infer a byte limit, discard audio or subtitles, reduce frame rate or resolution, flatten HDR, change rotation, replace an original or resume a stale partial encode. Media content and paths are private; redact them.\n\nBefore a later job, require an exact target byte limit and tolerance. Subtract verified container, audio, subtitle and metadata overhead before calculating average video bitrate, and reject nonpositive or below-policy budgets rather than looping indefinitely. Pin H.264, HEVC, AV1 or VP9 encoder, version, profile, level, pixel format and container compatibility. Define scaling with preserved aspect ratio and legal dimensions, frame-rate cap, variable-frame-rate handling, HDR and color metadata. Audio decisions must retain language, channel layout, synchronization and accessibility needs; mono input must not become stereo without reason. Validate planning with synthetic media.\n\nFor a batch, bind each checksum to a unique output name, preview collisions and free-space needs, cap retries, passes, CPU, GPU, memory and temperature, and write to a temporary destination before atomic publish. Cancellation must terminate the full encoder process group and remove only owned temporaries. Verify output size, streams, duration, timestamps, A/V sync and complete decode, then perform representative visual and audio review; byte compliance alone is not quality. Verify installation provenance and static permissions offline, proving no source read, probe, decode, calculation, encode, temporary write, collision, hardware job or playback occurred. On failure, rollback only the new Constrict ref; preserve shared runtimes, originals, outputs, queues, preferences and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable io.github.wartybix.Constrict from verified Flathub in the existing scope without source builds, launch, media enumeration, opens, probes, target calculations, thumbnails, encoders, output reservations, temporaries, overwrites, GPU jobs, or playback.",
+      "preserve": "every source and prior output byte, stream, timestamp, metadata field, owner and permission, queue, partial file, encoder preference, backup, remote, override, and scope ownership",
+      "safety": "Never expose media, infer target size, promise impossible quality, ignore container overhead, loop retries, discard streams, break A/V sync, flatten HDR, distort aspect ratio, overwrite originals, collide batch outputs, leave encoder children running, or treat byte compliance as sufficient validation.",
+      "verify": "Verify Constrict source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove sources, probes, decoders, calculations, encoders, temporaries, outputs, hardware jobs and playback are unchanged."
+    }
   }
 ]

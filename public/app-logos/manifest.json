@@ -2673,5 +2673,10 @@
     "file": "commit-message-editor.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/re.sonny.Commit.svg",
     "sourceType": "official-project-asset"
+  },
+  "constrict-target-size-video": {
+    "file": "constrict-target-size-video.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/io.github.wartybix.Constrict.svg",
+    "sourceType": "official-project-asset"
   }
 }
