@@ -2173,5 +2173,10 @@
     "file": "meld.svg",
     "source": "https://gitlab.gnome.org/GNOME/meld/-/raw/main/data/icons/hicolor/scalable/apps/org.gnome.Meld.svg",
     "sourceType": "official-project-asset"
+  },
+  "kopia": {
+    "file": "kopia.svg",
+    "source": "https://raw.githubusercontent.com/kopia/kopia/master/icons/kopia-app-1024.svg",
+    "sourceType": "official-project-asset"
   }
 }

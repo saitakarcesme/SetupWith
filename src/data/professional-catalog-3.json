@@ -2200,5 +2200,62 @@
       "safety": "Never replace, insert, copy, delete, save, stage, resolve, commit, push, traverse unrelated symlinks or mounts, or enable filters that hide differences without a preview and explicit approval.",
       "verify": "Verify provenance, version, paths, and integrations, then compare disposable files without applying or saving changes and prove their hashes, Git status, configuration, filters, and user data remain unchanged."
     }
+  },
+  {
+    "index": 436,
+    "name": "Kopia",
+    "slug": "kopia",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/kopia/kopia",
+      "installUrl": "https://kopia.io/docs/installation/"
+    },
+    "website": "https://kopia.io/",
+    "category": "Security & Privacy",
+    "vertical": "software",
+    "description": "Encrypted snapshot backup and restore system with CLI and desktop UI support for local, network, cloud, object-storage, and repository-server targets.",
+    "accent": "#2F80FF",
+    "simpleIconSlug": "kopia",
+    "logoUrl": "https://raw.githubusercontent.com/kopia/kopia/master/icons/kopia-app-1024.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "KOPIA_PASSWORD"
+    ],
+    "config": [
+      "install_variant",
+      "repository_provider",
+      "snapshot_policy",
+      "retention_policy"
+    ],
+    "installTime": "10–20 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "CLI versus KopiaUI installation",
+      "repository creation or connection",
+      "repository password generation and backup",
+      "cloud or network credential access",
+      "snapshot source selection",
+      "schedule and retention policy activation",
+      "maintenance and content deletion",
+      "restore destination overwrite"
+    ],
+    "prompt": "Set up Kopia from its official installation documentation and signed release channel (https://kopia.io/docs/installation/). Detect Windows, macOS, or Linux, architecture, package managers, existing `kopia` and KopiaUI installations, connected repository configuration, scheduled jobs, services, and storage mounts without reading credentials. Distinguish CLI, desktop KopiaUI, web UI/server, and container deployment. Prefer the stable channel and verify the release checksum plus Kopia builder signature; do not select testing, unstable, source, or server mode unless explicitly requested.\n\nInstall only the approved CLI or desktop variant. Preserve repository configuration, encryption parameters, repository format, passwords, cloud credentials, caches, logs, policies, snapshot manifests, maintenance ownership, schedules, services, mounted snapshots, source data, and restore destinations. Never create or connect a repository during installation. Before later repository work, show provider, path or endpoint, new versus existing status, expected capacity, encryption and hashing defaults, username/hostname identity, and whether other clients share it. Repository format choices and password recovery consequences must be explained before creation.\n\nThe repository password encrypts all backup data and cannot be recovered if lost. Use only the opaque `secret://kopia/password` reference through a secure interactive prompt or permission-restricted secret provider; never place it in a command, environment dump, shell history, compose file, log, or committed configuration. Ask separately before accessing cloud or NAS credentials, selecting snapshot sources, scheduling backups, changing retention, running maintenance, deleting snapshots or content, mounting a snapshot, starting a server, exposing a port, disabling TLS or CSRF checks, or restoring files. Never make a repository's sole copy on the source disk.\n\nVerify package signature, version, executable/UI paths, configuration permissions, processes, services, listeners, and absence of repository connections. Use help and version commands only; do not create a test repository with a throwaway password because that does not validate recovery. If a repository is later approved, require a documented password-backup location and perform read-only status plus snapshot listing before any write. A restore test must target a new empty directory and compare hashes without overwriting originals. Roll back only setup-installed binaries, services, and configuration, preserving repositories, snapshots, caches, credentials, policies, schedules, and source files.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "native",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install only the approved Kopia CLI or desktop UI from a stable signed release, verify its checksum and builder signature, and do not create, connect, migrate, or serve a repository during installation.",
+      "preserve": "all repositories, encryption parameters, format settings, passwords, provider credentials, caches, logs, policies, snapshots, maintenance ownership, schedules, services, mounts, source data, and restore destinations",
+      "safety": "Never expose or lose the unrecoverable repository password, change retention, run maintenance, delete content, start a server, weaken TLS or CSRF, mount snapshots, schedule backups, or overwrite restore targets without separate approval.",
+      "verify": "Verify signature, version, paths, permissions, processes, listeners and disconnected state; any later restore test must use a new empty directory and prove repository, snapshot, source, policy, and original data remain unchanged."
+    }
   }
 ]

@@ -1,0 +1,18 @@
+{
+  "index": 436,
+  "name": "Kopia",
+  "slug": "kopia",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/kopia/kopia",
+    "installUrl": "https://kopia.io/docs/installation/"
+  },
+  "website": "https://kopia.io/",
+  "category": "Security & Privacy",
+  "vertical": "software",
+  "description": "Encrypted snapshot backup and restore system with CLI and desktop UI support for local, network, cloud, object-storage, and repository-server targets.",
+  "accent": "#2F80FF",
+  "simpleIconSlug": "kopia",
+  "logoUrl": "https://raw.githubusercontent.com/kopia/kopia/master/icons/kopia-app-1024.svg",
+  "logoSourceType": "official-project-asset"
+}
