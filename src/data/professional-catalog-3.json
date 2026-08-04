@@ -4130,5 +4130,61 @@
       "safety": "Never trust volatile device nodes, target system or ambiguous disks, write without verified backup, accept weak image provenance, transform Windows media as a raw copy, unmount, authorize, cancel writes, or infer recoverability without source, checksum, persistent identity, topology, backup, and data-loss review.",
       "verify": "Verify Impression source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove block topology, mounts, image hashes, authorization, downloads, device opens, writes, caches and network state are unchanged."
     }
+  },
+  {
+    "index": 472,
+    "name": "Authenticator",
+    "slug": "gnome-authenticator",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/World/Authenticator",
+      "installUrl": "https://flathub.org/apps/com.belmoussaoui.Authenticator"
+    },
+    "website": "https://apps.gnome.org/Authenticator/",
+    "category": "Security & Privacy",
+    "vertical": "software",
+    "description": "GNOME two-factor code generator supporting TOTP, HOTP, Steam tokens, multiple HMAC algorithms, QR enrollment, application locking, search, and backup migration.",
+    "accent": "#5E5C64",
+    "logoUrl": "https://gitlab.gnome.org/World/Authenticator/-/raw/master/data/icons/com.belmoussaoui.Authenticator.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [
+      "otp_seed",
+      "backup_password",
+      "application_lock_password"
+    ],
+    "config": [
+      "token_inventory",
+      "keyring_boundary",
+      "backup_policy",
+      "exposure_controls"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "High Risk",
+    "permissionCheckpoints": [
+      "TOTP, HOTP, Steam secret seed, issuer, account label, algorithm, digits, period, and counter",
+      "secret-service collection, keyring portal, host-keyring fallback, lock state, and migration",
+      "application lock password, auto-lock timeout, session state, recovery path, and password loss",
+      "camera portal, screenshot or image QR import, otpauth URI, duplicate detection, and seed disclosure",
+      "FreeOTP+, Aegis encrypted or plain-text, andOTP, Google Authenticator, Raivo, and other backup formats",
+      "backup encryption, destination, permissions, synchronized folders, retention, and restore validation",
+      "favicon downloads, provider database, network identifiers, metered connections, and provider-name leakage",
+      "GNOME Shell search results, notifications, code copy, clipboard lifetime, clock accuracy, and rollback"
+    ],
+    "prompt": "Set up Authenticator from its official GNOME project and verified Flathub listing (https://gitlab.gnome.org/World/Authenticator). Inventory Linux architecture, Flatpak scopes, existing Authenticator package and data paths, secret-service availability, keyring portal and fallback behavior, application-lock state, backup policy, favicon-download preference, search-provider state and system clock source without reading any account or seed. Install stable `com.belmoussaoui.Authenticator` from verified Flathub in the existing ownership scope. Do not build from source, launch the app, unlock a keyring, import a token or generate a code during setup.\n\nPreserve every TOTP, HOTP and Steam record, issuer, account label, secret seed, HMAC algorithm, digit count, period, HOTP counter, favorite, icon, lock preference and keyring item byte-for-byte. OTP seeds are account takeover credentials; never print, hash for diagnostics, copy, validate against a live service or expose them through process arguments. Do not change system time, NTP, timezone or HOTP counters. Clock accuracy can affect TOTP validity, but time configuration is outside this package-only setup.\n\nQR images and `otpauth` URIs contain the seed. Do not request camera access, capture a screenshot, open an image, parse a URI or inspect the clipboard. Backup and restore formats differ: some exports may be plaintext, some encrypted, and importing can duplicate or overwrite records. Before any future export or restore show format, encryption, password handling, destination permissions, synchronized-folder status, included issuers, duplicate strategy and tested recovery plan without exposing secrets. Never create a backup as an installation test.\n\nFavicon downloads can reveal provider names and Shell search can expose account labels or short-lived codes in the desktop overview and notifications. Keep both in their current state; do not fetch icons, query search, copy a code or alter clipboard lifetime. Verify package provenance, app ID, origin, commit, runtime, executable, files and permissions offline without opening the app database or keyring. Prove no keyring unlock, seed access, counter, backup, camera portal, screenshot, icon request, search result, notification, clipboard or network state changed. On failure, rollback only the new Authenticator ref in its original scope; preserve shared runtimes, remotes, overrides, databases, keyrings and all recovery material.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.belmoussaoui.Authenticator from verified Flathub in the existing scope without source builds, launch, keyring unlock, seed access, token import, QR capture, backups, code generation, favicon requests, search queries, or clock changes.",
+      "preserve": "all TOTP, HOTP and Steam seeds, issuers, labels, algorithms, digits, periods, counters, favorites, icons, lock settings, keyring items, databases, backups, search and clipboard preferences, clock state, remotes, overrides, and scope ownership",
+      "safety": "Never expose or test OTP seeds, increment counters, change time, scan QR enrollment, create plaintext exports, restore unreviewed backups, unlock keyrings, fetch provider icons, expose Shell results, or copy codes without credential, format, encryption, destination, recovery, and visibility review.",
+      "verify": "Verify Authenticator source, app ID, origin, commit, runtime, executable, files and permissions offline without opening secret stores, then prove keyrings, seeds, counters, backups, portals, icons, search, notifications, clipboard, clock and network state are unchanged."
+    }
   }
 ]

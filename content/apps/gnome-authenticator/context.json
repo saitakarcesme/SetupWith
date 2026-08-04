@@ -1,0 +1,45 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "High Risk",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "token_inventory",
+    "keyring_boundary",
+    "backup_policy",
+    "exposure_controls"
+  ],
+  "secrets": [
+    {
+      "key": "otp_seed",
+      "reference": "secret://otp/seed"
+    },
+    {
+      "key": "backup_password",
+      "reference": "secret://backup/password"
+    },
+    {
+      "key": "application_lock_password",
+      "reference": "secret://application/lock-password"
+    }
+  ],
+  "permissionCheckpoints": [
+    "TOTP, HOTP, Steam secret seed, issuer, account label, algorithm, digits, period, and counter",
+    "secret-service collection, keyring portal, host-keyring fallback, lock state, and migration",
+    "application lock password, auto-lock timeout, session state, recovery path, and password loss",
+    "camera portal, screenshot or image QR import, otpauth URI, duplicate detection, and seed disclosure",
+    "FreeOTP+, Aegis encrypted or plain-text, andOTP, Google Authenticator, Raivo, and other backup formats",
+    "backup encryption, destination, permissions, synchronized folders, retention, and restore validation",
+    "favicon downloads, provider database, network identifiers, metered connections, and provider-name leakage",
+    "GNOME Shell search results, notifications, code copy, clipboard lifetime, clock accuracy, and rollback"
+  ]
+}
