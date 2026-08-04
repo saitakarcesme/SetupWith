@@ -1,0 +1,34 @@
+{
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Advanced",
+  "delivery": "package-manager",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "manager",
+    "openers",
+    "keymap",
+    "plugins"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "filesystem browsing and hidden-file access",
+    "copy, cut, paste, overwrite, rename, trash, and permanent deletion",
+    "symlink, relative symlink, and hardlink creation",
+    "external opener, previewer, preloader, and shell command execution",
+    "Lua plugin and flavor installation or update",
+    "archive extraction and media thumbnail generation",
+    "shell wrapper and parent working-directory changes",
+    "optional dependency and clipboard-tool installation"
+  ]
+}

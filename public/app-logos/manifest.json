@@ -2233,5 +2233,10 @@
     "file": "musicbrainz-picard.svg",
     "source": "https://raw.githubusercontent.com/metabrainz/picard/master/resources/images/128x128/org.musicbrainz.Picard.png",
     "sourceType": "official-project-asset"
+  },
+  "yazi": {
+    "file": "yazi.svg",
+    "source": "https://raw.githubusercontent.com/sxyazi/yazi/main/assets/logo.png",
+    "sourceType": "official-project-asset"
   }
 }

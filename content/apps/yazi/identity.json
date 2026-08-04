@@ -1,0 +1,17 @@
+{
+  "index": 448,
+  "name": "Yazi",
+  "slug": "yazi",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/sxyazi/yazi",
+    "installUrl": "https://yazi-rs.github.io/docs/installation/"
+  },
+  "website": "https://yazi-rs.github.io/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Asynchronous terminal file manager with image and media previews, bulk file operations, configurable openers and keymaps, Lua plugins, and shell working-directory integration.",
+  "accent": "#FFB454",
+  "logoUrl": "https://raw.githubusercontent.com/sxyazi/yazi/main/assets/logo.png",
+  "logoSourceType": "official-project-asset"
+}

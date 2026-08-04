@@ -2857,5 +2857,59 @@
       "safety": "Never save, rename, move, overwrite or delete library content; run scripts or plugins; scan, look up or submit fingerprints; embed art; expose credentials; or reorganize a real library without a reviewed preview, verified backup and explicit approval.",
       "verify": "Verify provenance, checksum, version, executable, config, method, fpcalc and plugins without real media, then prove no library, metadata, artwork, sidecar, plugin, script, credential, fingerprint, collection, browser or network state changed."
     }
+  },
+  {
+    "index": 448,
+    "name": "Yazi",
+    "slug": "yazi",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/sxyazi/yazi",
+      "installUrl": "https://yazi-rs.github.io/docs/installation/"
+    },
+    "website": "https://yazi-rs.github.io/",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "Asynchronous terminal file manager with image and media previews, bulk file operations, configurable openers and keymaps, Lua plugins, and shell working-directory integration.",
+    "accent": "#FFB454",
+    "logoUrl": "https://raw.githubusercontent.com/sxyazi/yazi/main/assets/logo.png",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "manager",
+      "openers",
+      "keymap",
+      "plugins"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "filesystem browsing and hidden-file access",
+      "copy, cut, paste, overwrite, rename, trash, and permanent deletion",
+      "symlink, relative symlink, and hardlink creation",
+      "external opener, previewer, preloader, and shell command execution",
+      "Lua plugin and flavor installation or update",
+      "archive extraction and media thumbnail generation",
+      "shell wrapper and parent working-directory changes",
+      "optional dependency and clipboard-tool installation"
+    ],
+    "prompt": "Set up Yazi from its official installation guide (https://yazi-rs.github.io/docs/installation/). Detect Windows, macOS, or Linux, architecture, terminal graphics protocol, package managers, existing `yazi` and `ya` binaries, configuration directory, `YAZI_CONFIG_HOME`, keymaps, openers, previewers, plugins, flavors, shell wrapper, `file(1)`, and optional tools such as ffmpeg, 7-Zip, jq, Poppler, fd, ripgrep, fzf, zoxide, resvg, ImageMagick and clipboard helpers. Install the latest stable packaged or checksummed official binaries. Do not select nightly, `--HEAD`, edge channels, classic Snap confinement, unofficial repositories, or optional dependencies without an explicit feature-by-feature choice.\n\nInstall only Yazi and its required file-type detector. Do not launch it in the home directory, write `yazi.toml`, `keymap.toml`, `theme.toml` or `init.lua`, install plugins or flavors, generate shell integration, or alter terminal settings. Preserve every file and directory, selections and yank state, trash, metadata, permissions, links, mounts, network shares, configuration, keymaps, openers, preview cache, plugin data, shell profiles, clipboard and current working directory. Never use a real directory to demonstrate navigation or file operations.\n\nYazi can copy, cut, overwrite, rename, trash and permanently delete selections; create symbolic and hard links; extract archives; run `;` and `:` shell commands; and invoke configured openers, previewers and preloaders. Treat all opener strings, keymap actions, `init.lua`, Lua plugins and downloaded flavors as executable code. Before enabling any of them, show source revision, resolved command, arguments, selected paths, destination, overwrite behavior, environment and subprocess privileges. Do not preview sensitive documents because external thumbnailers may parse untrusted content and caches can retain it. Never traverse private mounts, follow surprising symlinks, execute files, modify trash, send paths to clipboard, or allow a background task to outlive verification.\n\nThe suggested `y` shell wrapper writes a temporary cwd file and changes the parent shell directory on exit; do not install it automatically or use it for validation. Verify package provenance or checksum, `yazi --version`, `ya --version`, resolved binaries, method, PATH and required `file` executable without opening the TUI. Confirm no file operation, task, opener, preview, plugin, cache, clipboard write, shell-profile edit, terminal-mode change or working-directory change occurred. Roll back only setup-owned binaries, packages and PATH entries, retaining all pre-existing Yazi configuration and filesystem state.",
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ],
+    "delivery": "package-manager",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable packaged or checksummed Yazi binaries plus only the required file detector, without nightly channels, optional tools, launch, configuration, plugins, flavors, shell wrappers, or terminal changes.",
+      "preserve": "all filesystem content, metadata, permissions, links, mounts, shares, selections, yank and trash state, configuration, keymaps, openers, plugins, caches, shell profiles, clipboard, terminal state, cwd, and existing installation ownership",
+      "safety": "Never copy, cut, overwrite, rename, link, trash or delete files; execute openers or shell actions; parse sensitive previews; install Lua code; traverse private storage; edit profiles; or change the parent cwd without an exact preview and approval.",
+      "verify": "Verify provenance or checksum, versions, binaries, method, PATH and file detector without launching the TUI, then prove no file, task, process, preview, cache, plugin, clipboard, profile, terminal or cwd state changed."
+    }
   }
 ]
