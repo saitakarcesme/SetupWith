@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "screen_capture_scope",
+    "color_space_assumptions",
+    "format_precision",
+    "clipboard_privacy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "Wayland or X11 session, screenshot or color-picker portal, compositor support, monitor inventory, and capture permission",
+    "visible windows, notifications, passwords, messages, customer data, protected content, and screen-cleaning procedure",
+    "source color format, alpha channel, bit depth, transfer function, white point, ICC profile, HDR, and gamut",
+    "Hex, RGB, HSV, HSL, CMYK, XYZ, CIE Lab and custom format templates, rounding, clamping, and precision",
+    "HSL editor changes, original versus edited value, out-of-gamut conversion, perceptual difference, and undo expectations",
+    "clipboard copy, primary selection, clipboard manager history, remote desktop, screen sharing, and unintended disclosure",
+    "design-token target, CSS syntax, print versus display workflow, proofing, accessibility contrast, and brand approval",
+    "saved preferences, custom formats, recent color state, reset, uninstall, application-data retention, and rollback"
+  ]
+}

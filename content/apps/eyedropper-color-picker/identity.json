@@ -1,0 +1,17 @@
+{
+  "index": 485,
+  "name": "Eyedropper",
+  "slug": "eyedropper-color-picker",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/FineFindus/eyedropper",
+    "installUrl": "https://flathub.org/apps/com.github.finefindus.eyedropper"
+  },
+  "website": "https://apps.gnome.org/Eyedropper/",
+  "category": "Design & Media",
+  "vertical": "software",
+  "description": "GNOME color picker and HSL editor that accepts screen-picked or entered colors and converts among Hex, RGB, HSV, HSL, CMYK, XYZ, CIE Lab, and other formats.",
+  "accent": "#9141AC",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.github.finefindus.eyedropper.svg",
+  "logoSourceType": "official-project-asset"
+}

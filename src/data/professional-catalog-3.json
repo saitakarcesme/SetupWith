@@ -4824,5 +4824,57 @@
       "safety": "Never expose routine names, invent workouts, imply medical clearance, escalate unfamiliar exertion, ignore stop symptoms, start unexpected timers, play loud cues, switch outputs, or modify power behavior without participant, activity, environment, interval, audio, accessibility, and emergency review.",
       "verify": "Verify Exercise Timer source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove audio, routes, presets, timers, notifications, inhibitors, display settings and filesystem state are unchanged."
     }
+  },
+  {
+    "index": 485,
+    "name": "Eyedropper",
+    "slug": "eyedropper-color-picker",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/FineFindus/eyedropper",
+      "installUrl": "https://flathub.org/apps/com.github.finefindus.eyedropper"
+    },
+    "website": "https://apps.gnome.org/Eyedropper/",
+    "category": "Design & Media",
+    "vertical": "software",
+    "description": "GNOME color picker and HSL editor that accepts screen-picked or entered colors and converts among Hex, RGB, HSV, HSL, CMYK, XYZ, CIE Lab, and other formats.",
+    "accent": "#9141AC",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/com.github.finefindus.eyedropper.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "screen_capture_scope",
+      "color_space_assumptions",
+      "format_precision",
+      "clipboard_privacy"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "Wayland or X11 session, screenshot or color-picker portal, compositor support, monitor inventory, and capture permission",
+      "visible windows, notifications, passwords, messages, customer data, protected content, and screen-cleaning procedure",
+      "source color format, alpha channel, bit depth, transfer function, white point, ICC profile, HDR, and gamut",
+      "Hex, RGB, HSV, HSL, CMYK, XYZ, CIE Lab and custom format templates, rounding, clamping, and precision",
+      "HSL editor changes, original versus edited value, out-of-gamut conversion, perceptual difference, and undo expectations",
+      "clipboard copy, primary selection, clipboard manager history, remote desktop, screen sharing, and unintended disclosure",
+      "design-token target, CSS syntax, print versus display workflow, proofing, accessibility contrast, and brand approval",
+      "saved preferences, custom formats, recent color state, reset, uninstall, application-data retention, and rollback"
+    ],
+    "prompt": "Set up Eyedropper from its official repository and verified Flathub listing (https://apps.gnome.org/Eyedropper/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, Wayland or X11 session, portal implementation, monitor color-profile presence, clipboard-manager policy and custom-format count without taking a screenshot, reading the clipboard or exposing format contents. Install stable `com.github.finefindus.eyedropper` from verified Flathub in the existing ownership scope. Do not compile from source, launch the app, request screen capture, sample a pixel, edit a color or copy any value during setup.\n\nPreserve custom output formats, precision choices, last color, editor state, theme and portal decisions. A screen picker may expose pixels from messages, credentials, customer records or protected media even when only one color is wanted. Before future capture require a clean desktop, hidden notifications, closed sensitive windows, confirmed monitor, smallest portal scope and an approved pixel location. Never automate broad screenshots, bypass a portal denial or sample another person's display or remote session without authorization.\n\nRecord the source color's notation, alpha, assumed color space, transfer function, white point, bit depth and ICC profile before conversion. Hex, RGB, HSL and HSV are representations or models, while CMYK output depends on an actual print condition; XYZ and CIE Lab require explicit reference assumptions. Do not present a numerical conversion as device-independent brand truth, preserve more precision than the input supports or silently discard alpha. Flag clipping and out-of-gamut results, and compare the original and edited values separately.\n\nClipboard copying can persist in managers and synchronized devices. Show the exact non-sensitive value and destination before copying, avoid primary-selection surprises and clear only a setup-created test value if approved. Eyedropper does not replace contrast testing, calibrated proofing or brand review. Verify provenance, app ID, origin, commit, runtime, executable, portal declarations, files and permissions offline. Prove no screenshot, pixel sample, clipboard read/write, custom format, recent color, display profile, network or filesystem state changed. On failure, rollback only the new Eyedropper ref in its original scope; preserve runtimes, remotes, overrides, formats and desktop privacy settings.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable com.github.finefindus.eyedropper from verified Flathub in the existing scope without source builds, launch, portal requests, screenshots, pixel sampling, color edits, clipboard access, format changes, or profile changes.",
+      "preserve": "all custom formats, precision settings, last and edited colors, alpha, theme, portal decisions, color profiles, clipboard policy, remotes, overrides, and scope ownership",
+      "safety": "Never capture sensitive pixels, bypass portal denial, read or persist clipboard data, discard alpha, omit profile assumptions, claim device-independent accuracy, hide gamut clipping, or treat conversion as accessibility or print proof without capture, consent, color-space, precision, destination, and validation review.",
+      "verify": "Verify Eyedropper source, app ID, origin, commit, runtime, executable, portal declarations, files and permissions offline, then prove screenshots, pixels, clipboard, formats, recent colors, profiles, networks and filesystem state are unchanged."
+    }
   }
 ]
