@@ -2258,5 +2258,10 @@
     "file": "qownnotes.svg",
     "source": "https://raw.githubusercontent.com/pbek/QOwnNotes/main/icons/icon.svg",
     "sourceType": "official-project-asset"
+  },
+  "xournalpp": {
+    "file": "xournalpp.svg",
+    "source": "https://raw.githubusercontent.com/xournalpp/xournalpp/master/ui/pixmaps/com.github.xournalpp.xournalpp.svg",
+    "sourceType": "official-project-asset"
   }
 }

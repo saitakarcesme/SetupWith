@@ -1,0 +1,17 @@
+{
+  "index": 453,
+  "name": "Xournal++",
+  "slug": "xournalpp",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/xournalpp/xournalpp",
+    "installUrl": "https://xournalpp.github.io/installation/"
+  },
+  "website": "https://xournalpp.github.io/",
+  "category": "Productivity",
+  "vertical": "creative",
+  "description": "Handwriting and PDF annotation application with stylus and touch input, layered journals, audio notes, geometric and LaTeX tools, autosave recovery, export, and Lua plugins.",
+  "accent": "#4A90D9",
+  "logoUrl": "https://raw.githubusercontent.com/xournalpp/xournalpp/master/ui/pixmaps/com.github.xournalpp.xournalpp.svg",
+  "logoSourceType": "official-project-asset"
+}
