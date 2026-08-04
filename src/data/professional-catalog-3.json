@@ -4290,5 +4290,57 @@
       "safety": "Never treat hash equality as publisher trust, use weak algorithms as authenticity proof, read special or unreviewed remote files, hydrate cloud data, follow unsafe links, export private paths, or install host extensions without file, algorithm, reference, I/O, disclosure, and extension review.",
       "verify": "Verify Collision source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove no user file was opened, hydrated or hashed and no portals, reports, clipboard, extensions, mounts, processes or network state changed."
     }
+  },
+  {
+    "index": 475,
+    "name": "Identity",
+    "slug": "identity-media-compare",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/YaLTeR/identity",
+      "installUrl": "https://flathub.org/apps/org.gnome.gitlab.YaLTeR.Identity"
+    },
+    "website": "https://apps.gnome.org/Identity/",
+    "category": "Design & Media",
+    "vertical": "software",
+    "description": "GNOME utility for synchronized visual comparison of multiple image or video versions using tabs, rows, columns, zoom, playback, and media properties.",
+    "accent": "#8FF0A4",
+    "logoUrl": "https://gitlab.gnome.org/YaLTeR/identity/-/raw/main/data/icons/org.gnome.gitlab.YaLTeR.Identity.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "media_inventory",
+      "decoder_isolation",
+      "comparison_layout",
+      "disclosure_controls"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "image and video paths, ownership, hashes, symlinks, mounts, cloud placeholders, and portal grants",
+      "untrusted image decoder, glycin sandbox, GStreamer plugins, codecs, hardware acceleration, and GPU access",
+      "AVIF, JPEG XL, WebP, high-bit-depth, alpha, color space, orientation, and metadata interpretation",
+      "video playback, audio tracks, timestamps, seek synchronization, rotation tags, and resource consumption",
+      "tab, row, column, synchronized zoom and pan, pixelated display, scale, and comparison assumptions",
+      "window title, tab tooltip, media properties, full path, filename, dimensions, duration, and privacy",
+      "copy-current-file clipboard, drag-and-drop in or out, destination application, and temporary data",
+      "file associations, recent documents, command-line display or zoom flags, launch, and rollback"
+    ],
+    "prompt": "Set up Identity from its official GNOME GitLab project and verified Flathub listing (https://gitlab.gnome.org/YaLTeR/identity). Inventory Linux architecture, Flatpak scopes, existing Identity package, portal grants, recent-file and association state, decoder stack, hardware acceleration and comparison preferences without opening or decoding any media. Install stable `org.gnome.gitlab.YaLTeR.Identity` from verified Flathub in the existing ownership scope. Do not compile from source, launch Identity, pass CLI display/zoom flags, open a file or claim image/video associations during setup.\n\nPreserve every image and video byte-for-byte with paths, ownership, timestamps, metadata, color profiles, orientation, alpha and linked sidecars. Do not scan directories, follow unreviewed symlinks, hydrate cloud placeholders, mount remote storage, read thumbnails or create recent-document entries. Media may reveal identities, locations, unpublished work or medical imagery; never expose filenames, full paths, dimensions, duration or properties in diagnostics. Window titles and tab tooltips can disclose names and paths during future use, so review display context before opening sensitive material.\n\nTreat image and video files as untrusted parser input. Identity uses modern image loaders including glycin and video pipelines using GStreamer and optional GPU acceleration. Do not decode an AVIF, JPEG XL, WebP, SVG, high-bit-depth image or video merely to verify installation; do not install codecs, enable hardware paths or open an audio device. Before future comparison show each exact input hash and trust source, decoder/plugin path, sandbox boundary, expected color-space/orientation handling, audio behavior and resource limits. Visual similarity is not byte equality and color-management differences must not be reported as file corruption.\n\nDo not copy the current file to the clipboard, drag media out to another app, synchronize playback, inspect properties or change tab/row/column preferences. Verify Identity provenance, app ID, origin, installed commit, runtime, executable, files and declared permissions offline. Prove no media read, placeholder hydration, decoder process, GPU or audio activity, portal grant, recent entry, clipboard, association or network request changed. On failure, rollback only the new Identity ref in its original scope; preserve shared runtimes, remotes, overrides, media, decoder packages and desktop integration.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.gitlab.YaLTeR.Identity from verified Flathub in the existing scope without source builds, launch, media access, CLI display flags, codec installation, hardware-path changes, portal grants, recent entries, or associations.",
+      "preserve": "all images, videos, paths, bytes, metadata, color profiles, orientation, sidecars, placeholders, mounts, comparison preferences, decoder and GPU settings, recent files, clipboard, associations, remotes, overrides, and scope ownership",
+      "safety": "Never decode untrusted media as a test, hydrate cloud files, expose names or paths, install codecs, enable GPU or audio, infer byte equality from appearance, copy files, drag data out, or claim associations without input, decoder, sandbox, privacy, color, resource, and destination review.",
+      "verify": "Verify Identity source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove media reads, hydration, decoders, GPU, audio, portals, recent entries, clipboard, associations and network state are unchanged."
+    }
   }
 ]

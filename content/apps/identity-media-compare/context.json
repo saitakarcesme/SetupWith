@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "media_inventory",
+    "decoder_isolation",
+    "comparison_layout",
+    "disclosure_controls"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "image and video paths, ownership, hashes, symlinks, mounts, cloud placeholders, and portal grants",
+    "untrusted image decoder, glycin sandbox, GStreamer plugins, codecs, hardware acceleration, and GPU access",
+    "AVIF, JPEG XL, WebP, high-bit-depth, alpha, color space, orientation, and metadata interpretation",
+    "video playback, audio tracks, timestamps, seek synchronization, rotation tags, and resource consumption",
+    "tab, row, column, synchronized zoom and pan, pixelated display, scale, and comparison assumptions",
+    "window title, tab tooltip, media properties, full path, filename, dimensions, duration, and privacy",
+    "copy-current-file clipboard, drag-and-drop in or out, destination application, and temporary data",
+    "file associations, recent documents, command-line display or zoom flags, launch, and rollback"
+  ]
+}

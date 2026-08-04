@@ -1,0 +1,17 @@
+{
+  "index": 475,
+  "name": "Identity",
+  "slug": "identity-media-compare",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/YaLTeR/identity",
+    "installUrl": "https://flathub.org/apps/org.gnome.gitlab.YaLTeR.Identity"
+  },
+  "website": "https://apps.gnome.org/Identity/",
+  "category": "Design & Media",
+  "vertical": "software",
+  "description": "GNOME utility for synchronized visual comparison of multiple image or video versions using tabs, rows, columns, zoom, playback, and media properties.",
+  "accent": "#8FF0A4",
+  "logoUrl": "https://gitlab.gnome.org/YaLTeR/identity/-/raw/main/data/icons/org.gnome.gitlab.YaLTeR.Identity.svg",
+  "logoSourceType": "official-project-asset"
+}

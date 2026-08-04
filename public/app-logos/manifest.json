@@ -2368,5 +2368,10 @@
     "file": "collision-hash-checker.svg",
     "source": "https://raw.githubusercontent.com/GeopJr/Collision/main/data/icons/dev.geopjr.Collision.svg",
     "sourceType": "official-project-asset"
+  },
+  "identity-media-compare": {
+    "file": "identity-media-compare.svg",
+    "source": "https://gitlab.gnome.org/YaLTeR/identity/-/raw/main/data/icons/org.gnome.gitlab.YaLTeR.Identity.svg",
+    "sourceType": "official-project-asset"
   }
 }
