@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–10 min",
+  "complexity": "Guided",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "appimage_inventory",
+    "managed_directory",
+    "desktop_integration",
+    "update_policy"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "existing AppImage paths, ownership, hashes, executable bits, and duplicate versions",
+    "Gear Lever Flatpak scope, filesystem grants, portals, and managed application directory",
+    "AppImage publisher, signature, checksum, embedded update information, and executable trust",
+    "file move or copy, rename, replacement, side-by-side retention, and free disk space",
+    "desktop entry, icon extraction, launch command, working directory, categories, and menu visibility",
+    "file association, drag-and-drop, open-with registration, CLI alias, and shell integration",
+    "GitHub, GitLab, Codeberg, Forgejo, FTP, or static update endpoint and redirect chain",
+    "trash, removal, restored original path, stale integration cleanup, and rollback"
+  ]
+}

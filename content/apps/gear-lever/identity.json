@@ -1,0 +1,17 @@
+{
+  "index": 466,
+  "name": "Gear Lever",
+  "slug": "gear-lever",
+  "source": {
+    "type": "github",
+    "url": "https://github.com/mijorus/gearlever",
+    "installUrl": "https://flathub.org/apps/it.mijorus.gearlever"
+  },
+  "website": "https://gearlever.mijorus.it/",
+  "category": "System Utilities",
+  "vertical": "software",
+  "description": "Linux AppImage manager for organizing portable applications, generating desktop integration, and handling source-aware updates or side-by-side versions.",
+  "accent": "#E8A645",
+  "logoUrl": "https://raw.githubusercontent.com/mijorus/gearlever/master/data/icons/hicolor/scalable/apps/it.mijorus.gearlever.svg",
+  "logoSourceType": "official-project-asset"
+}

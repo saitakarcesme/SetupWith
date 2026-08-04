@@ -2323,5 +2323,10 @@
     "file": "warehouse-flatpak.svg",
     "source": "https://raw.githubusercontent.com/flattool/warehouse/main/data/icons/hicolor/scalable/apps/io.github.flattool.Warehouse.svg",
     "sourceType": "official-project-asset"
+  },
+  "gear-lever": {
+    "file": "gear-lever.svg",
+    "source": "https://raw.githubusercontent.com/mijorus/gearlever/master/data/icons/hicolor/scalable/apps/it.mijorus.gearlever.svg",
+    "sourceType": "official-project-asset"
   }
 }

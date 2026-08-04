@@ -3816,5 +3816,57 @@
       "safety": "Never batch destructive operations, delete data, restore snapshots, downgrade or remove packages, alter masks or pins, mutate remotes, classify leftovers, launch apps, or claim handlers without exact target, scope, dependency, privacy, elevation, and reversal review.",
       "verify": "Verify Warehouse source, app ID, origin, commit, runtime, executable, files and permissions through metadata, then prove refs, runtimes, remotes, masks, pins, policies, data, snapshots, handlers, processes and network state are unchanged."
     }
+  },
+  {
+    "index": 466,
+    "name": "Gear Lever",
+    "slug": "gear-lever",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/mijorus/gearlever",
+      "installUrl": "https://flathub.org/apps/it.mijorus.gearlever"
+    },
+    "website": "https://gearlever.mijorus.it/",
+    "category": "System Utilities",
+    "vertical": "software",
+    "description": "Linux AppImage manager for organizing portable applications, generating desktop integration, and handling source-aware updates or side-by-side versions.",
+    "accent": "#E8A645",
+    "logoUrl": "https://raw.githubusercontent.com/mijorus/gearlever/master/data/icons/hicolor/scalable/apps/it.mijorus.gearlever.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "appimage_inventory",
+      "managed_directory",
+      "desktop_integration",
+      "update_policy"
+    ],
+    "installTime": "5–10 min",
+    "complexity": "Guided",
+    "permissionCheckpoints": [
+      "existing AppImage paths, ownership, hashes, executable bits, and duplicate versions",
+      "Gear Lever Flatpak scope, filesystem grants, portals, and managed application directory",
+      "AppImage publisher, signature, checksum, embedded update information, and executable trust",
+      "file move or copy, rename, replacement, side-by-side retention, and free disk space",
+      "desktop entry, icon extraction, launch command, working directory, categories, and menu visibility",
+      "file association, drag-and-drop, open-with registration, CLI alias, and shell integration",
+      "GitHub, GitLab, Codeberg, Forgejo, FTP, or static update endpoint and redirect chain",
+      "trash, removal, restored original path, stale integration cleanup, and rollback"
+    ],
+    "prompt": "Set up Gear Lever using its official documentation and verified Flathub package (https://gearlever.mijorus.it/docs/overview/). Inventory Linux architecture, desktop, Flatpak user and system scopes, existing Gear Lever package, AppImage files, managed folders, executable bits, hashes, desktop entries, extracted icons, open-with associations, CLI aliases and known update metadata. Install stable `it.mijorus.gearlever` from the verified Flathub origin in the scope matching current ownership. Do not install a development build, build from source, launch Gear Lever, open an AppImage or claim its file association.\n\nPreserve every AppImage at its exact path with its name, bytes, mode, owner and timestamp; preserve existing desktop entries, icons, launch arguments, working directories and update preferences. Setup must not scan broad home folders, move or copy portable apps into a managed directory, rename duplicates, extract embedded assets, toggle executability or clean stale launchers. If a custom managed directory already exists, verify its ownership and free space from metadata only and never replace it with Gear Lever's default.\n\nTreat each AppImage as untrusted native executable content, not as a harmless archive. Before any future integration or update, show the resolved file path, publisher evidence, cryptographic hash, signature or published checksum when available, architecture, required FUSE behavior, requested filesystem reach, embedded update source, redirect chain, target filename, whether the old version is retained and the exact desktop entry that would be written. Never execute an AppImage to discover metadata, trust a filename as identity, follow an unauthenticated FTP update, overwrite the only known-good version or expose the entire home directory to the Flatpak.\n\nDo not create menu entries, extract icons, add shell aliases, register open-with handlers, update in place, keep side-by-side copies, trash applications or remove launchers during setup. Verify Gear Lever provenance, app ID, origin, installed commit, runtime, files, executable and declared permissions through Flatpak metadata without running it. Compare the preflight AppImage and integration inventories and prove no executable bit, portable binary, desktop entry, icon, handler, alias, network request or managed-folder content changed. If verification fails, rollback only the newly installed Gear Lever ref in its original scope; retain all AppImages, shared runtimes, remotes, overrides and integration files.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable it.mijorus.gearlever from verified Flathub in the existing scope without development builds, source compilation, launch, AppImage scanning, file associations, managed-folder changes, or integration.",
+      "preserve": "all AppImages, paths, names, bytes, hashes, modes, owners, timestamps, managed folders, desktop entries, icons, commands, working directories, handlers, aliases, update metadata, remotes, overrides, and scope ownership",
+      "safety": "Never execute or trust AppImages by filename, move or replace binaries, extract assets, create launchers, follow weak update endpoints, expose home, add handlers or aliases, update in place, or trash versions without provenance, hash, path, permission, retention, and rollback review.",
+      "verify": "Verify Gear Lever source, app ID, origin, commit, runtime, files, executable and permissions via metadata, then prove AppImage bytes and modes, entries, icons, handlers, aliases, network state and managed directories are unchanged."
+    }
   }
 ]
