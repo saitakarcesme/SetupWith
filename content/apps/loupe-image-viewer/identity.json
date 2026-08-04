@@ -1,0 +1,17 @@
+{
+  "index": 521,
+  "name": "Loupe",
+  "slug": "loupe-image-viewer",
+  "source": {
+    "type": "website",
+    "url": "https://gitlab.gnome.org/GNOME/loupe",
+    "installUrl": "https://flathub.org/apps/org.gnome.Loupe"
+  },
+  "website": "https://apps.gnome.org/Loupe/",
+  "category": "Design & Media",
+  "vertical": "software",
+  "description": "GNOME image viewer for exploring pictures and metadata with quick, non-destructive-reviewable crop, rotation, and flip operations.",
+  "accent": "#3584E4",
+  "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Loupe.svg",
+  "logoSourceType": "official-project-asset"
+}

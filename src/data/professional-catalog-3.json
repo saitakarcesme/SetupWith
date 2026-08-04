@@ -6729,5 +6729,57 @@
       "safety": "Never treat a terminal as passive, reveal commands or secrets, inherit the agent environment, source unreviewed startup files, interrupt jobs, replay history, trust escape sequences, open links automatically, paste control-bearing text, broaden host access, or change defaults silently.",
       "verify": "Verify Console source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove PTYs, shells, processes, signals, histories, environments, clipboards, links, filesystems, networks and notifications are unchanged."
     }
+  },
+  {
+    "index": 521,
+    "name": "Loupe",
+    "slug": "loupe-image-viewer",
+    "source": {
+      "type": "website",
+      "url": "https://gitlab.gnome.org/GNOME/loupe",
+      "installUrl": "https://flathub.org/apps/org.gnome.Loupe"
+    },
+    "website": "https://apps.gnome.org/Loupe/",
+    "category": "Design & Media",
+    "vertical": "software",
+    "description": "GNOME image viewer for exploring pictures and metadata with quick, non-destructive-reviewable crop, rotation, and flip operations.",
+    "accent": "#3584E4",
+    "logoUrl": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Loupe.svg",
+    "logoSourceType": "official-project-asset",
+    "secrets": [],
+    "config": [
+      "image_decode_limits",
+      "metadata_privacy",
+      "edit_transaction_policy",
+      "color_and_orientation_fidelity"
+    ],
+    "installTime": "5–15 min",
+    "complexity": "Advanced",
+    "permissionCheckpoints": [
+      "image source, ownership, filename, extension, signature, MIME, checksum, format, animation, trust level, and intended viewing scope",
+      "decoder isolation, file and pixel byte caps, dimensions, frame count, recursion, decompression ratio, ICC profile, malformed chunks, and timeout",
+      "EXIF, XMP and IPTC metadata, GPS, timestamps, device identifiers, thumbnails, faces, comments, privacy review, stripping, and retention",
+      "EXIF orientation, crop rectangle, rotation, flip, aspect ratio, alpha, bit depth, HDR, color space, ICC conversion, and rendering fidelity",
+      "edit destination, original preservation, sidecar versus rewrite, output format, quality, metadata policy, filename collision, atomic write, and free space",
+      "adjacent-image navigation, directory enumeration, removable media, symbolic links, portals, recent files, thumbnail caches, and least filesystem access",
+      "animated or very large images, CPU and memory limits, presentation and zoom behavior, accessibility, screen sharing, and sensitive-content exposure",
+      "undo, partial or failed write recovery, cache and recent-item clearing, backups, app reset, uninstall, and rollback"
+    ],
+    "prompt": "Set up Loupe from its official GNOME project and verified Flathub listing (https://apps.gnome.org/Loupe/). Inventory Linux architecture, Flatpak scopes, existing package and data paths, recent-item and thumbnail-cache counts, aggregate cache bytes, portal grants, supported decoder classes, edit-policy presence, sandbox overrides and backup coverage without opening images or revealing filenames, directory names, pixels, thumbnails, EXIF, GPS, timestamps, device identifiers, faces, edits or private subjects. Install stable `org.gnome.Loupe` from verified Flathub in the existing ownership scope. Do not compile from source, launch Loupe, enumerate a directory, open or decode an image, generate a thumbnail, read metadata, navigate to an adjacent file, render animation, crop, rotate, flip, rewrite a file, update recents or invoke a portal during setup.\n\nPreserve every original and edited image byte, owner, permission, timestamp and metadata field, plus sidecars, recent state, thumbnail caches, display preferences, remotes, overrides and scope ownership. Image files are untrusted parser input even when their extension and MIME appear familiar. Never expose embedded GPS, camera identifiers, timestamps, faces or hidden thumbnails in diagnostics. Installation must not apply EXIF orientation destructively, regenerate a lossy image, strip profiles or metadata, traverse sibling files, or replace the default image handler without review.\n\nBefore later viewing, validate signature and final format independently from the filename; enforce file-byte, pixel, dimension, frame, recursion, decompression, memory and time limits in decoder isolation. Decide whether animation is allowed. Review EXIF, XMP and IPTC fields before any export or share. Treat orientation as a display transform until an explicit edit. Define color-space, ICC, HDR, alpha and bit-depth behavior so the preview and saved output are not silently different. Use a synthetic corpus for decoder testing, including malformed and oversized fixtures, without touching user media.\n\nFor crop, rotation or flip, preview the exact transform, destination, format, quality and metadata result. Preserve the original by default, use an atomic write, prevent symlink and filename collisions, verify available space and compare decoded dimensions and checksum after save. Verify provenance, app ID, origin, commit, runtime, executable, files and static permissions offline. Prove no directory enumeration, file or metadata read, decode, thumbnail, render, adjacent navigation, edit, write, recent-item or cache mutation occurred. On failure, rollback only the new Loupe ref in its original scope; preserve shared runtimes, remotes, overrides, images, metadata, sidecars, caches and backups.",
+    "platforms": [
+      "Linux"
+    ],
+    "delivery": "store",
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false,
+    "setup": {
+      "install": "Install stable org.gnome.Loupe from verified Flathub in the existing scope without source builds, launch, directory enumeration, image or metadata reads, decoding, thumbnails, adjacent navigation, animation, edits, writes, recents, caches, or portals.",
+      "preserve": "every original and edited image byte, owner, permission, timestamp and metadata field, sidecars, recents, thumbnails, display and color preferences, backups, remotes, overrides, and scope ownership",
+      "safety": "Never trust extensions, expose location metadata, traverse siblings unexpectedly, decode without resource limits, confuse orientation with pixels, mishandle color profiles, strip metadata silently, overwrite originals, follow symlinks, save non-atomically, or change the default handler without review.",
+      "verify": "Verify Loupe source, app ID, origin, commit, runtime, executable, files and permissions offline, then prove directories, images, metadata, decoders, thumbnails, renders, edits, writes, recents, caches and portals are unchanged."
+    }
   }
 ]

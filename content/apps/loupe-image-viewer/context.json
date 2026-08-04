@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    "Linux"
+  ],
+  "installTime": "5–15 min",
+  "complexity": "Advanced",
+  "delivery": "store",
+  "safety": {
+    "requiresSignIn": false,
+    "requiresElevation": false,
+    "mayInstallDrivers": false,
+    "mayInstallKernelComponents": false,
+    "mayRequireRestart": false
+  },
+  "preferences": [
+    "image_decode_limits",
+    "metadata_privacy",
+    "edit_transaction_policy",
+    "color_and_orientation_fidelity"
+  ],
+  "secrets": [],
+  "permissionCheckpoints": [
+    "image source, ownership, filename, extension, signature, MIME, checksum, format, animation, trust level, and intended viewing scope",
+    "decoder isolation, file and pixel byte caps, dimensions, frame count, recursion, decompression ratio, ICC profile, malformed chunks, and timeout",
+    "EXIF, XMP and IPTC metadata, GPS, timestamps, device identifiers, thumbnails, faces, comments, privacy review, stripping, and retention",
+    "EXIF orientation, crop rectangle, rotation, flip, aspect ratio, alpha, bit depth, HDR, color space, ICC conversion, and rendering fidelity",
+    "edit destination, original preservation, sidecar versus rewrite, output format, quality, metadata policy, filename collision, atomic write, and free space",
+    "adjacent-image navigation, directory enumeration, removable media, symbolic links, portals, recent files, thumbnail caches, and least filesystem access",
+    "animated or very large images, CPU and memory limits, presentation and zoom behavior, accessibility, screen sharing, and sensitive-content exposure",
+    "undo, partial or failed write recovery, cache and recent-item clearing, backups, app reset, uninstall, and rollback"
+  ]
+}

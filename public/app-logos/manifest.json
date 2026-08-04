@@ -2598,5 +2598,10 @@
     "file": "gnome-console-terminal.svg",
     "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Console.svg",
     "sourceType": "official-project-asset"
+  },
+  "loupe-image-viewer": {
+    "file": "loupe-image-viewer.svg",
+    "source": "https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Loupe.svg",
+    "sourceType": "official-project-asset"
   }
 }
